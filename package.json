@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "scripts": {
+    "lint": "mctl lint",
+    "test": "mctl test",
+    "commit": "mctl commit",
+    "format": "mctl format",
+    "typecheck": "mctl typecheck",
+    "checkcommit": "mctl precommit"
+  },
+  "devDependencies": {
+    "@monstrs/mctl": "0.1.66",
+    "husky": "3.1.0",
+    "lerna": "3.19.0",
+    "typescript": "3.7.2"
+  },
+  "workspaces": [
+    "frontend/**/*",
+    "backend/**/*",
+    "types/**/*"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "mctl precommit",
+      "commit-msg": "mctl commitmsg"
+    }
+  }
+}

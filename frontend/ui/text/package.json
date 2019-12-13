@@ -1,0 +1,19 @@
+{
+  "name": "@ui/text",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@design/ui": "0.0.0",
+    "@types/styled-system": "5.1.4",
+    "@ui/theme": "0.0.0"
+  },
+  "peerDependencies": {
+    "@storybook/addon-knobs": "^5.1.0",
+    "@storybook/react": "^5.1.0",
+    "@emotion/styled": "^10.0.0",
+    "styled-system": "^5.1.0",
+    "react": "^16.9.0"
+  }
+}
