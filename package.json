@@ -24,5 +24,6 @@
       "pre-commit": "mctl precommit",
       "commit-msg": "mctl commitmsg"
     }
-  }
+  },
+  "version": "0.0.1"
 }
