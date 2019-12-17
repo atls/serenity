@@ -3,12 +3,8 @@
   "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",
-  "scripts": {
-    "figma:sync": "figma-theme-cli -o src/theme nd3pHKYGwXCMQskUMBgZXi"
-  },
   "devDependencies": {
     "@design/ui": "0.0.1",
-    "@monstrs/figma-theme-cli": "0.1.7",
     "@storybook/react": "5.2.6",
     "@types/styled-system": "5.1.4",
     "@types/webpack-env": "1.14.1"
