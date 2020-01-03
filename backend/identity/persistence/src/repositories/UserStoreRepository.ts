@@ -16,30 +16,15 @@ export class UserStoreRepository extends WriteRepository<UserEntity, User> {
     private readonly logger: Logger,
     private readonly bus: Bus
   ) {
+    // @ts-ignore
     super(UserEntity, User, connection, bus, logger)
   }
 
-  async getByEmailAddress(email: string): Promise<any> {
+  async getByPhoneNumber(phone: string): Promise<any> {
     const writeModel = await this.repository.findOne({
       where: {
-        email: {
-          address: email,
-        },
-      },
-    })
-
-    if (!writeModel) {
-      return null
-    }
-
-    return this.toAggregateRoot(writeModel)
-  }
-
-  async getByEmailVerificationToken(token: string): Promise<any> {
-    const writeModel = await this.repository.findOne({
-      where: {
-        email: {
-          verificationToken: token,
+        phone: {
+          number: phone,
         },
       },
     })

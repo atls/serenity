@@ -1,1 +1,6 @@
+export * from './EmailVerificationRequested'
+export * from './EmailVerificationComplete'
+export * from './ProfileCreated'
+export * from './ResetPasswordComplete'
+export * from './ResetPasswordRequested'
 export * from './UserRegistered'

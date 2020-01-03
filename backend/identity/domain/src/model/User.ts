@@ -11,32 +11,32 @@ import {
   ResetPasswordRequested,
   UserRegistered,
 } from '../events'
-import { Address }                       from './Address'
 import { ContactInformation }            from './ContactInformation'
 import { Credentials }                   from './Credentials'
 import { Email }                         from './Email'
-import { PersonalInformation }           from './PersonalInformation'
-import { Photo }                         from './Photo'
+import { Phone }                         from './Phone'
 import { Profile }                       from './Profile'
 
 export interface UserProperties extends AggregateRootProperties {
-  email: Email
+  phone: Phone
   credentials: Credentials
 }
 
 export class User extends AggregateRoot implements UserProperties {
+  phone: Phone
+
   email: Email
 
   credentials: Credentials
 
   profile: Profile
 
-  static async register(id: Uuid, email: Email, credentials: Credentials): Promise<User> {
+  static async register(id: Uuid, phone: Phone, credentials: Credentials): Promise<User> {
     const user = new User(id)
 
     await credentials.encryptPassword()
 
-    const userRegistered = new UserRegistered(id, email, credentials)
+    const userRegistered = new UserRegistered(id, phone, credentials)
 
     user.when(userRegistered)
 
@@ -58,14 +58,14 @@ export class User extends AggregateRoot implements UserProperties {
   requestResetPassword() {
     this.credentials.generateResetToken()
 
-    this.when(new ResetPasswordRequested(this.id, this.email, this.credentials.resetToken))
+    this.when(new ResetPasswordRequested(this.id, this.phone, this.credentials.resetToken))
   }
 
   async completeResetPassword(password) {
     await this.credentials.changePassword(password)
     this.credentials.clearResetToken()
 
-    this.when(new ResetPasswordComplete(this.id, this.email))
+    this.when(new ResetPasswordComplete(this.id, this.phone))
   }
 
   public verifyPassword(password) {
@@ -78,28 +78,12 @@ export class User extends AggregateRoot implements UserProperties {
     }
   }
 
-  public changeProfilePhoto(photo: Photo) {
-    this.profile.changePhoto(photo)
-  }
-
-  public changeProfilePersonalInformation(personalInformation: PersonalInformation) {
-    this.profile.changePersonalInformation(personalInformation)
-  }
-
   public changeProfileContactInformation(contactInformation: ContactInformation) {
     this.profile.changeContactInformation(contactInformation)
   }
 
-  public changeAddress(address: Address) {
-    this.profile.changeAddress(address)
-  }
-
-  public changeWebsite(website: string) {
-    this.profile.changeWebsite(website)
-  }
-
   protected whenUserRegistered(event: UserRegistered): void {
-    this.email = event.email
+    this.phone = event.phone
     this.credentials = event.credentials
   }
 

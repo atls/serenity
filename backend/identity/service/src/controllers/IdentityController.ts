@@ -46,7 +46,7 @@ export class IdentityController {
     if (!result) {
       return {
         errors: {
-          email: 'Email не найден',
+          phone: 'Телефон не найден',
         },
       }
     }

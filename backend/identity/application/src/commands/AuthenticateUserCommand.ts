@@ -1,5 +1,5 @@
 export class AuthenticateUserCommand {
-  email: string
+  phone: string
 
   password: string
 }

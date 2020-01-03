@@ -20,39 +20,22 @@ message Email {
   bool verified = 2;
 }
 
-message PersonalInformation {
-  string firstName = 1;
-  string lastName = 2;
-}
-
 message Phone {
   string number = 1;
-}
-
-message Address {
-  string formatted = 1;
 }
 
 message ContactInformation {
   Phone phone = 1;
 }
 
-message Photo {
-  string id = 1;
-}
-
 message Profile {
   string type = 1;
-  Photo photo = 2;
-  PersonalInformation personalInformation = 3;
-  ContactInformation contactInformation = 4;
-  Address address = 5;
-  string website = 6;
+  ContactInformation contactInformation = 2;
 }
 
 message User {
   string id = 1;
-  Email email = 2;
+  Phone phone = 2;
   Profile profile = 3;
 }
 
@@ -70,13 +53,13 @@ message VerifyEmailResponse {
 }
 
 message RegisterRequest {
-  string email = 1;
+  string phone = 1;
   string password = 2;
   string confirmPassword = 3;
 }
 
 message RegisterErrors {
-  string email = 1;
+  string phone = 1;
   string password = 2;
   string confirmPassword = 3;
 }
@@ -87,12 +70,12 @@ message RegisterResponse {
 }
 
 message AuthenticateRequest {
-  string email = 1;
+  string phone = 1;
   string password = 2;
 }
 
 message AuthenticateErrors {
-  string email = 1;
+  string phone = 1;
   string password = 2;
 }
 
@@ -102,11 +85,11 @@ message AuthenticateResponse {
 }
 
 message ResetPasswordRequest {
-  string email = 1;
+  string phone = 1;
 }
 
 message ResetPasswordErrors {
-  string email = 1;
+  string phone = 1;
 }
 
 message ResetPasswordResponse {
@@ -133,15 +116,11 @@ message ChangePasswordResponse {
 message CreateProfileRequest {
   string id = 1;
   string type = 2;
-  string firstName = 3;
-  string lastName = 4;
 }
 
 message CreateProfileErrors {
   string id = 1;
   string type = 2;
-  string firstName = 3;
-  string lastName = 4;
 }
 
 message CreateProfileResponse {
@@ -166,22 +145,12 @@ message GetUsersResponse {
 
 message UpdateProfileRequest {
   string id = 1;
-  string firstName = 2;
-  string lastName = 3;
-  string phone = 4;
-  string photoId = 5;
-  string address = 6;
-  string website = 7;
+  string phone = 2;
 }
 
 message UpdateProfileErrors {
   string id = 1;
-  string firstName = 2;
-  string lastName = 3;
-  string phone = 4;
-  string photoId = 5;
-  string address = 6;
-  string website = 7;
+  string phone = 2;
 }
 
 message UpdateProfileResponse {

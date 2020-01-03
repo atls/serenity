@@ -1,4 +1,5 @@
 export enum ProfileType {
-  specialist = 'specialist',
-  customer = 'customer',
+  network = 'network',
+  salon = 'salon',
+  private = 'private',
 }

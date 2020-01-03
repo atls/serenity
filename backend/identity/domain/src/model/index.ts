@@ -1,2 +1,7 @@
+export * from './ContactInformation'
 export * from './Credentials'
+export * from './Email'
 export * from './Phone'
+export * from './Profile'
+export * from './ProfileType'
+export * from './User'
