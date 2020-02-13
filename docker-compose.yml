@@ -1,0 +1,51 @@
+version: '3.7'
+
+services:
+  traefik:
+    image: aunited/traefik:sy
+    command: --api --docker
+    ports:
+      - 80:80
+      - 443:443
+      - 8080:8080
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      default:
+      traefik:
+        ipv4_address: 172.16.101.99
+
+  yarn:
+    image: node:13-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - modules:/workspace/node_modules
+      - yarncache:/workspace/.yarn-cache
+    environment:
+      - YARN_CACHE_FOLDER=/workspace/.yarn-cache
+    entrypoint: yarn
+
+  private-gateway:
+    image: node:13-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - modules:/workspace/node_modules
+    entrypoint: yarn run private-gateway:dev
+    labels:
+      - 'traefik.frontend.rule=Host:private-gateway.sy.local.aunited.dev'
+      - 'traefik.protocol=http'
+      - 'traefik.port=3000'
+
+volumes:
+  modules:
+  yarncache:
+
+networks:
+  traefik:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.101.0/24
