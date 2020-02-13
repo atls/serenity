@@ -6,7 +6,8 @@
     "commit": "mctl commit",
     "format": "mctl format",
     "typecheck": "mctl typecheck",
-    "checkcommit": "mctl precommit"
+    "checkcommit": "mctl precommit",
+    "private-gateway:dev": "yarn workspace @private-gateway/app dev"
   },
   "devDependencies": {
     "@monstrs/mctl": "0.1.66",
