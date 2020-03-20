@@ -1,0 +1,15 @@
+{
+  "name": "@private-gateway/some",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@nestjs/common": "6.9.0",
+    "@nestjs/graphql": "6.5.3",
+    "type-graphql": "0.17.5"
+  },
+  "devDependencies": {
+    "@types/node": "12.12.7",
+    "typescript": "3.7.2"
+  }
+}
