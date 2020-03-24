@@ -26,6 +26,36 @@ services:
       - YARN_CACHE_FOLDER=/workspace/.yarn-cache
     entrypoint: yarn
 
+  identity:
+    image: node:13-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - modules:/workspace/node_modules
+    entrypoint: yarn run identity:dev
+    depends_on:
+      - db
+      - rabbitmq
+    ports:
+      - 3002:50051
+
+  db:
+    image: postgres:12.2-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+    ports:
+      - 3001:5432
+
+  rabbitmq:
+    image: rabbitmq:3.8.3-alpine
+    restart: always
+    environment:
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: password
+
   private-gateway:
     image: node:13-alpine
     working_dir: /workspace
