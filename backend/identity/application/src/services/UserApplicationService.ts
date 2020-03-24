@@ -1,8 +1,8 @@
 import uuid                                                      from 'uuid/v4'
-import { Injectable }                                            from '@nestjs/common'
 
 import { ContactInformation, Credentials, Phone, Profile, User } from '@identity/domain'
 import { UserStoreRepository }                                   from '@identity/persistence'
+import { Injectable }                                            from '@nestjs/common'
 
 import {
   AuthenticateUserCommand,
@@ -79,5 +79,9 @@ export class UserApplicationService {
     await this.userRepository.save(user)
 
     return user.profile
+  }
+
+  async verifyEmail(command: any) {
+    return {}
   }
 }

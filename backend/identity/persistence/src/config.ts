@@ -10,6 +10,7 @@ const config: ConnectionOptions = {
   database: process.env.DB_NAME || 'db',
   username: process.env.DB_USERNAME || 'postgres',
   password: process.env.DB_PASSWORD || 'password',
+  port: Number(process.env.DB_PORT) || 5432,
   entities: [User],
   migrations,
   migrationsRun: true,
