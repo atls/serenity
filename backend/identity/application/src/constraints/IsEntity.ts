@@ -16,11 +16,11 @@ interface IsEntityOptions {
 export class IsEntityConstraint implements ValidatorConstraintInterface {
   constructor(private readonly connection: Connection) {}
 
-  getEntity(entity, property, value) {
+  async getEntity(entity, property, value) {
     try {
-      return this.connection.manager
+      return await this.connection.manager
         .createQueryBuilder(entity, 'target')
-        .where(`LOWER(${property}) = LOWER(:value)`, { value })
+        .where(`LOWER("target"."${property}") = LOWER(:value)`, { value })
         .getOne()
     } catch (error) {
       console.log(error) // eslint-disable-line no-console

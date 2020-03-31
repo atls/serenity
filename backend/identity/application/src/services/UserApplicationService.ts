@@ -1,8 +1,8 @@
-import uuid                                                      from 'uuid/v4'
+import uuid                                                             from 'uuid/v4'
 
-import { ContactInformation, Credentials, Phone, Profile, User } from '@identity/domain'
-import { UserStoreRepository }                                   from '@identity/persistence'
-import { Injectable }                                            from '@nestjs/common'
+import { ContactInformation, Credentials, Email, Phone, Profile, User } from '@identity/domain'
+import { UserStoreRepository }                                          from '@identity/persistence'
+import { Injectable }                                                   from '@nestjs/common'
 
 import {
   AuthenticateUserCommand,
@@ -21,7 +21,8 @@ export class UserApplicationService {
     const user = await User.register(
       uuid(),
       new Phone(command.phone),
-      new Credentials(command.password)
+      new Credentials(command.password),
+      new Email(command.email)
     )
 
     user.requestEmailVerification()

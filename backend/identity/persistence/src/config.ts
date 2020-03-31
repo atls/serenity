@@ -14,7 +14,7 @@ const config: ConnectionOptions = {
   entities: [User],
   migrations,
   migrationsRun: true,
-  synchronize: false,
+  synchronize: true,
   logging: false,
   cli: {
     migrationsDir: 'src/migrations',

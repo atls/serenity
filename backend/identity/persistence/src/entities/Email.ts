@@ -6,8 +6,10 @@ export class Email extends EmailEntity {
   @Column({ unique: true })
   address: string
 
-  @Column()
-  verified: boolean = false
+  @Column({
+    default: false,
+  })
+  verified: boolean
 
   @Column({ nullable: true })
   verificationToken: string

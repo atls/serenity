@@ -31,8 +31,17 @@ export class User extends AggregateRoot implements UserProperties {
 
   profile: Profile
 
-  static async register(id: Uuid, phone: Phone, credentials: Credentials): Promise<User> {
+  static async register(
+    id: Uuid,
+    phone: Phone,
+    credentials: Credentials,
+    email: Email
+  ): Promise<User> {
     const user = new User(id)
+
+    user.phone = phone
+    user.credentials = credentials
+    user.email = email
 
     await credentials.encryptPassword()
 
@@ -44,6 +53,8 @@ export class User extends AggregateRoot implements UserProperties {
   }
 
   requestEmailVerification() {
+    console.dir(this, { depth: null })
+
     this.email.generateVerificationToken()
 
     this.when(new EmailVerificationRequested(this.id, this.email))
