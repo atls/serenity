@@ -56,12 +56,14 @@ message RegisterRequest {
   string phone = 1;
   string password = 2;
   string confirmPassword = 3;
+  string email = 4;
 }
 
 message RegisterErrors {
   string phone = 1;
   string password = 2;
   string confirmPassword = 3;
+  string email = 4;
 }
 
 message RegisterResponse {
