@@ -6,15 +6,15 @@
   "main": "src/index.ts",
   "devDependencies": {
     "@design/ui": "0.0.1",
+    "@styled-system/should-forward-prop": "^5.1.4",
     "@types/styled-system": "5.1.4",
     "@ui/icons": "0.0.1",
-    "@ui/text": "0.0.1"
+    "@ui/text": "0.0.1",
+    "styled-tools": "^1.7.0"
   },
   "peerDependencies": {
     "@emotion/styled": "^10.0.0",
-    "@styled-system/should-forward-prop": "^5.1.0",
-    "styled-system": "^5.1.0",
-    "styled-tools": "^1.7.0",
-    "react": "^16.9.0"
+    "react": "^16.9.0",
+    "styled-system": "^5.1.0"
   }
 }

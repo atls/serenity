@@ -1,7 +1,9 @@
 import { DataLoaderInterceptor } from '@monstrs/nestjs-dataloader'
-import { Module }                from '@nestjs/common'
 import { APP_INTERCEPTOR }       from '@nestjs/core'
 import { GraphQLModule }         from '@nestjs/graphql'
+
+import { Module }                from '@nestjs/common'
+import { SomeModule }            from '@private-gateway/some'
 
 const playground = process.env.NODE_ENV !== 'production' || Boolean(process.env.PLAYGROUND)
 
@@ -15,6 +17,7 @@ const playground = process.env.NODE_ENV !== 'production' || Boolean(process.env.
       path: '//',
       cors: false,
     }),
+    SomeModule,
   ],
   providers: [
     {
