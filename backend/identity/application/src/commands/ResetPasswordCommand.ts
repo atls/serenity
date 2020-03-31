@@ -1,3 +1,3 @@
 export class ResetPasswordCommand {
-  phone: string
+  email: string
 }

@@ -1,5 +1,4 @@
 import { MapValidationErrorsInterceptor }                        from '@monstrs/nestjs-map-errors-interceptor'
-import { Controller, UseInterceptors, UsePipes, ValidationPipe } from '@nestjs/common'
 import { GrpcMethod }                                            from '@nestjs/microservices'
 
 import {
@@ -12,6 +11,7 @@ import {
   UserApplicationService,
   VerifyEmailCommand,
 } from '@identity/application'
+import { Controller, UseInterceptors, UsePipes, ValidationPipe } from '@nestjs/common'
 
 @Controller()
 @UseInterceptors(MapValidationErrorsInterceptor)
@@ -46,7 +46,7 @@ export class IdentityController {
     if (!result) {
       return {
         errors: {
-          phone: 'Телефон не найден',
+          email: 'Email не найден',
         },
       }
     }

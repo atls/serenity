@@ -14,38 +14,26 @@ import {
 import { ContactInformation }            from './ContactInformation'
 import { Credentials }                   from './Credentials'
 import { Email }                         from './Email'
-import { Phone }                         from './Phone'
 import { Profile }                       from './Profile'
 
 export interface UserProperties extends AggregateRootProperties {
-  phone: Phone
+  email: Email
   credentials: Credentials
 }
 
 export class User extends AggregateRoot implements UserProperties {
-  phone: Phone
-
   email: Email
 
   credentials: Credentials
 
   profile: Profile
 
-  static async register(
-    id: Uuid,
-    phone: Phone,
-    credentials: Credentials,
-    email: Email
-  ): Promise<User> {
+  static async register(id: Uuid, email: Email, credentials: Credentials): Promise<User> {
     const user = new User(id)
-
-    user.phone = phone
-    user.credentials = credentials
-    user.email = email
 
     await credentials.encryptPassword()
 
-    const userRegistered = new UserRegistered(id, phone, credentials)
+    const userRegistered = new UserRegistered(id, email, credentials)
 
     user.when(userRegistered)
 
@@ -53,8 +41,6 @@ export class User extends AggregateRoot implements UserProperties {
   }
 
   requestEmailVerification() {
-    console.dir(this, { depth: null })
-
     this.email.generateVerificationToken()
 
     this.when(new EmailVerificationRequested(this.id, this.email))
@@ -69,14 +55,14 @@ export class User extends AggregateRoot implements UserProperties {
   requestResetPassword() {
     this.credentials.generateResetToken()
 
-    this.when(new ResetPasswordRequested(this.id, this.phone, this.credentials.resetToken))
+    this.when(new ResetPasswordRequested(this.id, this.email, this.credentials.resetToken))
   }
 
   async completeResetPassword(password) {
     await this.credentials.changePassword(password)
     this.credentials.clearResetToken()
 
-    this.when(new ResetPasswordComplete(this.id, this.phone))
+    this.when(new ResetPasswordComplete(this.id, this.email))
   }
 
   public verifyPassword(password) {
@@ -94,7 +80,7 @@ export class User extends AggregateRoot implements UserProperties {
   }
 
   protected whenUserRegistered(event: UserRegistered): void {
-    this.phone = event.phone
+    this.email = event.email
     this.credentials = event.credentials
   }
 

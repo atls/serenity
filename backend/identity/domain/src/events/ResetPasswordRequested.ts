@@ -1,7 +1,7 @@
 import { Event } from '@node-ts/bus-messages'
 import { Uuid }  from '@node-ts/ddd-types'
 
-import { Phone } from '../model'
+import { Email } from '../model'
 
 export class ResetPasswordRequested extends Event {
   static readonly NAME = 'identity/reset-password-requested'
@@ -10,7 +10,7 @@ export class ResetPasswordRequested extends Event {
 
   $version = 0
 
-  constructor(readonly userId: Uuid, readonly phone: Phone, readonly resetToken: string) {
+  constructor(readonly userId: Uuid, readonly email: Email, readonly resetToken: string) {
     super()
   }
 }

@@ -2967,7 +2967,7 @@
   dependencies:
     uuid "3.3.3"
 
-"@node-ts/bus-core@^0.4.7", "@node-ts/bus-core@^0.4.9":
+"@node-ts/bus-core@0.4.9", "@node-ts/bus-core@^0.4.7", "@node-ts/bus-core@^0.4.9":
   version "0.4.9"
   resolved "https://registry.yarnpkg.com/@node-ts/bus-core/-/bus-core-0.4.9.tgz#222a4b158c6ac53955ba980ec0a53d893c5d06d6"
   integrity sha512-vUKJIXVkltpoiLcVmAU4fcYnJX7AR1z/oxRYBNnEcPf9MMBKYnr/SdWLADz+gDVo6CLMjqD/sJTQUJKjTPGukg==
@@ -2988,6 +2988,17 @@
   dependencies:
     tslib "^1.9.3"
 
+"@node-ts/bus-postgres@0.3.10":
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/@node-ts/bus-postgres/-/bus-postgres-0.3.10.tgz#b99f652f64eb15b2e87c735efd3965f6ad115b40"
+  integrity sha512-4aznuHIXacSWwM18i9di6R6fkhs45iedkNNIvH3A9nkJF7Y95MB2Or7vo/ysqg6gEM3421jCZq5y6VAxMJYKQw==
+  dependencies:
+    "@node-ts/bus-core" "^0.4.9"
+    "@node-ts/bus-messages" "^0.1.10"
+    pg "^7.9.0"
+    tslib "^1.9.3"
+    uuid "^3.3.2"
+
 "@node-ts/bus-rabbitmq@^0.3.7":
   version "0.3.9"
   resolved "https://registry.yarnpkg.com/@node-ts/bus-rabbitmq/-/bus-rabbitmq-0.3.9.tgz#8097b687affd7fe49eaefd8d14334a2b84e03602"
@@ -2996,6 +3007,15 @@
     "@node-ts/bus-core" "^0.4.9"
     "@node-ts/bus-messages" "^0.1.10"
     amqplib "^0.5.3"
+    tslib "^1.9.3"
+    uuid "^3.3.2"
+
+"@node-ts/bus-workflow@0.4.9":
+  version "0.4.9"
+  resolved "https://registry.yarnpkg.com/@node-ts/bus-workflow/-/bus-workflow-0.4.9.tgz#dfceb971d077157da057a636be3af15aea122141"
+  integrity sha512-LzzM4EEMRtzCKSIV/bSAxTsVyO7maoQD6hvY5MKmZMF72YulpWNE2uee7ou0Qur749brFwbod06ikxmj0V3gzg==
+  dependencies:
+    "@node-ts/bus-messages" "^0.1.10"
     tslib "^1.9.3"
     uuid "^3.3.2"
 
@@ -3018,7 +3038,7 @@
     reflect-metadata "^0.1.13"
     typeorm "^0.2.14"
 
-"@node-ts/logger-core@^0.1.0":
+"@node-ts/logger-core@0.1.0", "@node-ts/logger-core@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@node-ts/logger-core/-/logger-core-0.1.0.tgz#27a5520f7a83d671a897fcbbda8f7deb269a43f4"
   integrity sha512-BlfjHLRHvPZNfaSBelo6yyK6ZKvMqUei5tvd5ezaHxbKHSN5xGQM2TRASfQ0jhvRlYdVIezk7aH8CeD6F9aylg==
@@ -14289,6 +14309,16 @@ pg-int8@1.0.1:
   resolved "https://registry.yarnpkg.com/pg-int8/-/pg-int8-1.0.1.tgz#943bd463bf5b71b4170115f80f8efc9a0c0eb78c"
   integrity sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==
 
+pg-packet-stream@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/pg-packet-stream/-/pg-packet-stream-1.1.0.tgz#e45c3ae678b901a2873af1e17b92d787962ef914"
+  integrity sha512-kRBH0tDIW/8lfnnOyTwKD23ygJ/kexQVXZs7gEyBljw4FYqimZFxnMMx50ndZ8In77QgfGuItS5LLclC2TtjYg==
+
+pg-pool@^2.0.10:
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/pg-pool/-/pg-pool-2.0.10.tgz#842ee23b04e86824ce9d786430f8365082d81c4a"
+  integrity sha512-qdwzY92bHf3nwzIUcj+zJ0Qo5lpG/YxchahxIN8+ZVmXqkahKXsnl2aiJPHLYN9o5mB/leG+Xh6XKxtP7e0sjg==
+
 pg-pool@^2.0.7:
   version "2.0.9"
   resolved "https://registry.yarnpkg.com/pg-pool/-/pg-pool-2.0.9.tgz#7ed69a27e204f99e9804a851404db6aa908a6dea"
@@ -14314,6 +14344,20 @@ pg@7.13.0:
     packet-reader "1.0.0"
     pg-connection-string "0.1.3"
     pg-pool "^2.0.7"
+    pg-types "^2.1.0"
+    pgpass "1.x"
+    semver "4.3.2"
+
+pg@^7.9.0:
+  version "7.18.2"
+  resolved "https://registry.yarnpkg.com/pg/-/pg-7.18.2.tgz#4e219f05a00aff4db6aab1ba02f28ffa4513b0bb"
+  integrity sha512-Mvt0dGYMwvEADNKy5PMQGlzPudKcKKzJds/VbOeZJpb6f/pI3mmoXX0JksPgI3l3JPP/2Apq7F36O63J7mgveA==
+  dependencies:
+    buffer-writer "2.0.0"
+    packet-reader "1.0.0"
+    pg-connection-string "0.1.3"
+    pg-packet-stream "^1.1.0"
+    pg-pool "^2.0.10"
     pg-types "^2.1.0"
     pgpass "1.x"
     semver "4.3.2"

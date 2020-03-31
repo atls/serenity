@@ -11,6 +11,7 @@ import {
   RegisterUserCommand,
   ResetPasswordCommand,
   UpdateProfileCommand,
+  VerifyEmailCommand,
 } from '../commands'
 
 @Injectable()
@@ -20,9 +21,8 @@ export class UserApplicationService {
   async register(command: RegisterUserCommand): Promise<any> {
     const user = await User.register(
       uuid(),
-      new Phone(command.phone),
-      new Credentials(command.password),
-      new Email(command.email)
+      new Email(command.email),
+      new Credentials(command.password)
     )
 
     user.requestEmailVerification()
@@ -32,8 +32,18 @@ export class UserApplicationService {
     return user
   }
 
+  async verifyEmail(command: VerifyEmailCommand): Promise<any> {
+    const user = await this.userRepository.getByEmailVerificationToken(command.token)
+
+    user.completeEmailVerification()
+
+    await this.userRepository.save(user)
+
+    return user
+  }
+
   async authenticate(command: AuthenticateUserCommand): Promise<any> {
-    const user = await this.userRepository.getByPhoneNumber(command.phone)
+    const user = await this.userRepository.getByEmailAddress(command.email)
 
     if (user && (await user.verifyPassword(command.password))) {
       return user
@@ -43,7 +53,7 @@ export class UserApplicationService {
   }
 
   async resetPassword(command: ResetPasswordCommand): Promise<any> {
-    const user = await this.userRepository.getByPhoneNumber(command.phone)
+    const user = await this.userRepository.getByEmailAddress(command.email)
 
     user.requestResetPassword()
 
@@ -80,9 +90,5 @@ export class UserApplicationService {
     await this.userRepository.save(user)
 
     return user.profile
-  }
-
-  async verifyEmail(command: any) {
-    return {}
   }
 }

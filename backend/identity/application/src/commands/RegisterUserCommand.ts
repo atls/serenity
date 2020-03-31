@@ -1,24 +1,27 @@
-import { IsEmail, IsMobilePhone, MinLength } from 'class-validator'
+import { IsEmail, MinLength }              from 'class-validator'
 
-import { User }                              from '@identity/persistence'
+import { User }                            from '@identity/persistence'
 
-import messages                              from '../messages'
-import { IsEntityNotExists, IsFieldEqual }   from '../constraints'
+import messages                            from '../messages'
+import { IsEntityNotExists, IsFieldEqual } from '../constraints'
 
 export class RegisterUserCommand {
-  @IsMobilePhone('ru-RU', {
-    message: messages.invalidPhone.defaultMessage,
-  })
+  @IsEmail(
+    {},
+    {
+      message: messages.invalidEmail.defaultMessage,
+    }
+  )
   @IsEntityNotExists(
     {
       entity: User,
-      field: 'profileContactInformationPhoneNumber',
+      field: '"emailAddress"',
     },
     {
-      message: messages.phoneAlreadyExists.defaultMessage,
+      message: messages.emailAlreadyExists.defaultMessage,
     }
   )
-  phone: string
+  email: string
 
   @MinLength(5, {
     message: messages.minLength.defaultMessage,
@@ -29,21 +32,4 @@ export class RegisterUserCommand {
     message: messages.doNotMatch.defaultMessage,
   })
   confirmPassword: string
-
-  @IsEmail(
-    {},
-    {
-      message: messages.invalidEmail.defaultMessage,
-    }
-  )
-  @IsEntityNotExists(
-    {
-      entity: User,
-      field: 'emailAddress',
-    },
-    {
-      message: messages.emailAlreadyExists.defaultMessage,
-    }
-  )
-  email: string
 }

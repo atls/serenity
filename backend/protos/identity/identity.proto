@@ -35,7 +35,7 @@ message Profile {
 
 message User {
   string id = 1;
-  Phone phone = 2;
+  Email email = 2;
   Profile profile = 3;
 }
 
@@ -53,17 +53,15 @@ message VerifyEmailResponse {
 }
 
 message RegisterRequest {
-  string phone = 1;
+  string email = 1;
   string password = 2;
   string confirmPassword = 3;
-  string email = 4;
 }
 
 message RegisterErrors {
-  string phone = 1;
+  string email = 1;
   string password = 2;
   string confirmPassword = 3;
-  string email = 4;
 }
 
 message RegisterResponse {
@@ -72,12 +70,12 @@ message RegisterResponse {
 }
 
 message AuthenticateRequest {
-  string phone = 1;
+  string email = 1;
   string password = 2;
 }
 
 message AuthenticateErrors {
-  string phone = 1;
+  string email = 1;
   string password = 2;
 }
 
@@ -87,11 +85,11 @@ message AuthenticateResponse {
 }
 
 message ResetPasswordRequest {
-  string phone = 1;
+  string email = 1;
 }
 
 message ResetPasswordErrors {
-  string phone = 1;
+  string email = 1;
 }
 
 message ResetPasswordResponse {

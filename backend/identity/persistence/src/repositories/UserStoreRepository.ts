@@ -1,10 +1,10 @@
 import { Bus }                from '@monstrs/nestjs-bus'
 import { Logger }             from '@monstrs/nestjs-logger'
-import { Injectable }         from '@nestjs/common'
 import { WriteRepository }    from '@node-ts/ddd'
 import { Connection }         from 'typeorm'
 
 import { User as UserEntity } from '@identity/domain'
+import { Injectable }         from '@nestjs/common'
 
 import { User }               from '../entities'
 
@@ -20,11 +20,27 @@ export class UserStoreRepository extends WriteRepository<UserEntity, User> {
     super(UserEntity, User, connection, bus, logger)
   }
 
-  async getByPhoneNumber(phone: string): Promise<any> {
+  async getByEmailAddress(email: string): Promise<any> {
     const writeModel = await this.repository.findOne({
       where: {
-        phone: {
-          number: phone,
+        email: {
+          address: email,
+        },
+      },
+    })
+
+    if (!writeModel) {
+      return null
+    }
+
+    return this.toAggregateRoot(writeModel)
+  }
+
+  async getByEmailVerificationToken(token: string): Promise<any> {
+    const writeModel = await this.repository.findOne({
+      where: {
+        email: {
+          verificationToken: token,
         },
       },
     })

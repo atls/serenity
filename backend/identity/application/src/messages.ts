@@ -25,10 +25,6 @@ export default {
     id: `${name}.email_not_exists`,
     defaultMessage: 'Email не найден',
   },
-  phoneAlreadyExists: {
-    id: `${name}.phone_already_exists`,
-    defaultMessage: 'Телефон не найден',
-  },
   doNotMatch: {
     id: `${name}.do_not_match`,
     defaultMessage: 'Пароли не совпадают',
