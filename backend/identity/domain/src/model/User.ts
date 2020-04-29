@@ -11,9 +11,12 @@ import {
   ResetPasswordRequested,
   UserRegistered,
 } from '../events'
+import { Address }                       from './Address'
 import { ContactInformation }            from './ContactInformation'
 import { Credentials }                   from './Credentials'
 import { Email }                         from './Email'
+import { PersonalInformation }           from './PersonalInformation'
+import { Photo }                         from './Photo'
 import { Profile }                       from './Profile'
 
 export interface UserProperties extends AggregateRootProperties {
@@ -75,8 +78,24 @@ export class User extends AggregateRoot implements UserProperties {
     }
   }
 
+  public changeProfilePhoto(photo: Photo) {
+    this.profile.changePhoto(photo)
+  }
+
+  public changeProfilePersonalInformation(personalInformation: PersonalInformation) {
+    this.profile.changePersonalInformation(personalInformation)
+  }
+
   public changeProfileContactInformation(contactInformation: ContactInformation) {
     this.profile.changeContactInformation(contactInformation)
+  }
+
+  public changeAddress(address: Address) {
+    this.profile.changeAddress(address)
+  }
+
+  public changeWebsite(website: string) {
+    this.profile.changeWebsite(website)
   }
 
   protected whenUserRegistered(event: UserRegistered): void {
