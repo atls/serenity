@@ -33,6 +33,3 @@ jobs:
 
       - name: Lint
         run: yarn mctl check:lint
-
-      - name: Test
-        run: yarn mctl check:test
