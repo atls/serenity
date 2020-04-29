@@ -20,17 +20,34 @@ message Email {
   bool verified = 2;
 }
 
+message PersonalInformation {
+  string firstName = 1;
+  string lastName = 2;
+}
+
 message Phone {
   string number = 1;
+}
+
+message Address {
+  string formatted = 1;
 }
 
 message ContactInformation {
   Phone phone = 1;
 }
 
+message Photo {
+  string id = 1;
+}
+
 message Profile {
   string type = 1;
-  ContactInformation contactInformation = 2;
+  Photo photo = 2;
+  PersonalInformation personalInformation = 3;
+  ContactInformation contactInformation = 4;
+  Address address = 5;
+  string website = 6;
 }
 
 message User {
@@ -116,11 +133,15 @@ message ChangePasswordResponse {
 message CreateProfileRequest {
   string id = 1;
   string type = 2;
+  string firstName = 3;
+  string lastName = 4;
 }
 
 message CreateProfileErrors {
   string id = 1;
   string type = 2;
+  string firstName = 3;
+  string lastName = 4;
 }
 
 message CreateProfileResponse {
@@ -145,12 +166,22 @@ message GetUsersResponse {
 
 message UpdateProfileRequest {
   string id = 1;
-  string phone = 2;
+  string firstName = 2;
+  string lastName = 3;
+  string phone = 4;
+  string photoId = 5;
+  string address = 6;
+  string website = 7;
 }
 
 message UpdateProfileErrors {
   string id = 1;
-  string phone = 2;
+  string firstName = 2;
+  string lastName = 3;
+  string phone = 4;
+  string photoId = 5;
+  string address = 6;
+  string website = 7;
 }
 
 message UpdateProfileResponse {
