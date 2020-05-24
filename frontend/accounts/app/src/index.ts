@@ -26,7 +26,7 @@ const bootstrap = async () => {
       secret: process.env.SESSION_SECRET || 'session-secret',
       saveUninitialized: true,
       cookie: {
-        domain: process.env.SESSION_COOKIE_DOMAIN || '.local.topmasters.monstrs.dev',
+        domain: process.env.SESSION_COOKIE_DOMAIN || '.local.sy.aunited.dev',
       },
       store: new RedisStore({
         host: process.env.REDIS_HOST || 'redis',
