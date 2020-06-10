@@ -2,7 +2,6 @@
   "name": "@ui/layout",
   "version": "0.0.1",
   "license": "MIT",
-  "private": true,
   "main": "src/index.ts",
   "peerDependencies": {
     "@emotion/styled": "^10.0.0",
