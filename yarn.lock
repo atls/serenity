@@ -241,17 +241,17 @@
     styled-system "5.1.4"
     text-mask-addons "3.8.0"
 
-"@atlantis-lab/next-app-with-emotion@^0.2.0":
+"@atlantis-lab/next-app-with-emotion@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-emotion/-/next-app-with-emotion-0.2.0.tgz#3830472976996dfb3cd3da7e9fd531b429e56f67"
   integrity sha512-RrNbb9lHEE5RGMJuCpgSxxdburbH113xLnhjRowYrsgk/cXAVk/xs8GrZV8OSmM/XrUKPAYoSnLp+SX/QZyoQw==
 
-"@atlantis-lab/next-app-with-helmet@^0.2.0":
+"@atlantis-lab/next-app-with-helmet@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-helmet/-/next-app-with-helmet-0.2.0.tgz#63a8a9d0529e24ee091066eae6e28754fccb4836"
   integrity sha512-2WEcX1hnOVAVcQUssAHrq6b5i1fIdQLdTBcVcdvHc8JqFW0I8jmFeVfqJZwrxopsqIO/igvoqAo1sWYL/9GE7g==
 
-"@atlantis-lab/next-app-with-intl@^0.2.1":
+"@atlantis-lab/next-app-with-intl@0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-intl/-/next-app-with-intl-0.2.1.tgz#a7edb9c59d3a1c8130a12b84d38aacc364ecb698"
   integrity sha512-FNZ5lB6SjMP/gzWwjnUkNhuw8A/SPzKUYD07TNoCCN5Uc5FuvIfjoFgMdXfZANFzkwC8PiOZuskEX15TKvCEJA==
@@ -266,17 +266,17 @@
     "@lerna/project" "^3.16.0"
     globby "^11.0.0"
 
-"@atlantis-lab/next-document-with-emotion@^0.2.0":
+"@atlantis-lab/next-document-with-emotion@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@atlantis-lab/next-document-with-emotion/-/next-document-with-emotion-0.2.0.tgz#6aaafaeff87d61b5710aa177e48a26e4bb9e4b91"
   integrity sha512-IVPz5xlWXHJCtHoz6FGj5IaFhLQrucvyL/zuUTYis5uEQNOFBjXjerjGGvfyLK41R3fuQfSX4PVE3jTvRh/Lew==
 
-"@atlantis-lab/next-document-with-helmet@^0.2.0":
+"@atlantis-lab/next-document-with-helmet@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@atlantis-lab/next-document-with-helmet/-/next-document-with-helmet-0.2.0.tgz#d9c89b3035278d134f1fa5c35ba80b2565996fe1"
   integrity sha512-59rfeGrYfFnvRk9PKNaclLzJ48q38uTRXZLtRtwXoh1Q8jPKGuGJBeLyoRNC43hTqdp3gf8Q/UrlWy7+BcHLlQ==
 
-"@atlantis-lab/react-locale@^0.1.2":
+"@atlantis-lab/react-locale@0.1.2", "@atlantis-lab/react-locale@^0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@atlantis-lab/react-locale/-/react-locale-0.1.2.tgz#179cdfc73f6890185bdfe5342bfe9d1ec9c68a37"
   integrity sha512-Iwf8cp7IGVS/P8jQKe8NuwhlGd5q+4IEallxQiTxUCGXStVrhh39ClowLwc4uHGRTHxpFfw/MxR8JrSxjCiK2A==
@@ -2950,7 +2950,7 @@
     execa "3.4.0"
     tslib "^1"
 
-"@monstrs/mctl@^0.1.82":
+"@monstrs/mctl@0.1.82":
   version "0.1.82"
   resolved "https://registry.yarnpkg.com/@monstrs/mctl/-/mctl-0.1.82.tgz#0ea234c8c88a3c827398397cdd373f9032818261"
   integrity sha512-RwzKhYd03n+NLuTRA31+nC+/l1HdroK/8sMsSKnDNqER+sR29guyGen1PQyZUl2HcuE7xjQQ2N2GcahQDOZU2A==
@@ -3765,7 +3765,7 @@
     react-lifecycles-compat "^3.0.4"
     react-select "^3.0.0"
 
-"@storybook/addon-knobs@^5.1.0":
+"@storybook/addon-knobs@5.3.18":
   version "5.3.18"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-5.3.18.tgz#60365bb179699cd8dc91df8be947469266012847"
   integrity sha512-X0WxGKoso3j5mS4c4enM8BvCjbO6Wwfxc++swQTqtANpBZ8k+w0piiEF1fiJf+ssgEAWe5brgIqnQ9kiBGLqKA==
@@ -4337,7 +4337,7 @@
   dependencies:
     "@styled-system/core" "^5.1.2"
 
-"@styled-system/should-forward-prop@^5.1.4":
+"@styled-system/should-forward-prop@5.1.5":
   version "5.1.5"
   resolved "https://registry.yarnpkg.com/@styled-system/should-forward-prop/-/should-forward-prop-5.1.5.tgz#c392008c6ae14a6eb78bf1932733594f7f7e5c76"
   integrity sha512-+rPRomgCGYnUIaFabDoOgpSDc4UUJ1KsmlnzcEp0tu5lFrBQKgZclSo18Z1URhaZm7a6agGtS5Xif7tuC2s52Q==
@@ -9562,7 +9562,7 @@ emotion-theming@^10.0.14, emotion-theming@^10.0.19:
     "@emotion/weak-memoize" "0.2.5"
     hoist-non-react-statics "^3.3.0"
 
-emotion@^10.0.23:
+emotion@10.0.27:
   version "10.0.27"
   resolved "https://registry.yarnpkg.com/emotion/-/emotion-10.0.27.tgz#f9ca5df98630980a23c819a56262560562e5d75e"
   integrity sha512-2xdDzdWWzue8R8lu4G76uWX5WhyQuzATon9LmNeCy/2BHVC6dsEpfhN1a0qhELgtDVdjyEA6J8Y/VlI5ZnaH0g==
@@ -11888,7 +11888,7 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-husky@^4.2.5:
+husky@4.2.5:
   version "4.2.5"
   resolved "https://registry.yarnpkg.com/husky/-/husky-4.2.5.tgz#2b4f7622673a71579f901d9885ed448394b5fa36"
   integrity sha512-SYZ95AjKcX7goYVZtVZF2i6XiZcHknw50iXvY7b0MiGoj5RwdgRQNEHdb+gPDPCXKlzwrybjFjkL6FOj8uRhZQ==
@@ -13602,7 +13602,7 @@ left-pad@^1.3.0:
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.3.0.tgz#5b8a3a7765dfe001261dde915589e782f8c94d1e"
   integrity sha512-XI5MPzVNApjAyhQzphX8BkmKsKUxD4LdyK24iZeQGinBN9yTQT3bFlCBy/aVx2HrNcqQGsdot8ghrjyrvMCoEA==
 
-lerna@^3.22.1:
+lerna@3.22.1:
   version "3.22.1"
   resolved "https://registry.yarnpkg.com/lerna/-/lerna-3.22.1.tgz#82027ac3da9c627fd8bf02ccfeff806a98e65b62"
   integrity sha512-vk1lfVRFm+UuEFA7wkLKeSF7Iz13W+N/vFd48aW2yuS7Kv0RbNm2/qcDPV863056LMfkRlsEe+QYOw3palj5Lg==
@@ -14775,7 +14775,7 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-next@^9.1.6:
+next@9.4.2:
   version "9.4.2"
   resolved "https://registry.yarnpkg.com/next/-/next-9.4.2.tgz#5d086aaaf9d683b457f615073dca39ed96a78cce"
   integrity sha512-T/3Rmz/R++OyrWNZ3ZQn+RR9Tbu6DWxZGVXUc+2z4/FxIkeZXggB/494i3IsAssiK1Fu8WVDIwYxOWQ0RgITUg==
@@ -19305,7 +19305,7 @@ styled-system@^5.1.5:
     "@styled-system/variant" "^5.1.5"
     object-assign "^4.1.1"
 
-styled-tools@^1.7.0:
+styled-tools@1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/styled-tools/-/styled-tools-1.7.1.tgz#1c9a586f49c8aa85d18aa5ca26ac01250e7fc6c5"
   integrity sha512-F0ANrxYgc6rMO5npJmOWu8+jvHDlOuu31JGeWIHBVuPJ2mUCpLLAN5dN+4MC+OBIdJAJ/BpsfFuxKnOWq7YAJQ==
@@ -20082,15 +20082,15 @@ typescript@3.7.2:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.2.tgz#27e489b95fa5909445e9fef5ee48d81697ad18fb"
   integrity sha512-ml7V7JfiN2Xwvcer+XAf2csGO1bPBdRbFCkYBczNZggrBZ9c7G3riSUeJmqEU5uOtXNPMhE3n+R4FA/3YOAWOQ==
 
+typescript@3.9.5:
+  version "3.9.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
+  integrity sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
+
 typescript@^3.0.1, typescript@^3.2.4:
   version "3.9.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.3.tgz#d3ac8883a97c26139e42df5e93eeece33d610b8a"
   integrity sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
-
-typescript@^3.9.5:
-  version "3.9.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
-  integrity sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
 
 ua-parser-js@^0.7.18:
   version "0.7.21"
