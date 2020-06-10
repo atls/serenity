@@ -7,10 +7,10 @@
   "devDependencies": {
     "@design/ui": "0.0.1",
     "@types/styled-system": "5.1.4",
+    "@storybook/addon-knobs": "^5.1.0",
     "@ui/theme": "0.0.1"
   },
   "peerDependencies": {
-    "@storybook/addon-knobs": "^5.1.0",
     "@storybook/react": "^5.1.0",
     "@emotion/styled": "^10.0.0",
     "styled-system": "^5.1.0",
