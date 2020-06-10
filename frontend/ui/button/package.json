@@ -5,11 +5,11 @@
   "main": "src/index.ts",
   "devDependencies": {
     "@design/ui": "0.1.0",
-    "@styled-system/should-forward-prop": "^5.1.4",
+    "@styled-system/should-forward-prop": "5.1.5",
     "@types/styled-system": "5.1.4",
     "@ui/icons": "0.0.2",
     "@ui/text": "0.1.0",
-    "styled-tools": "^1.7.0"
+    "styled-tools": "1.7.1"
   },
   "peerDependencies": {
     "@emotion/styled": "^10.0.0",
