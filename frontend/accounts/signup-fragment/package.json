@@ -1,0 +1,16 @@
+{
+  "name": "@accounts/signup-fragment",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "devDependencies": {
+    "@ui/button": "0.0.1",
+    "@atlantis-lab/input": "0.3.0",
+    "@ui/layout": "0.0.1",
+    "@ui/text": "0.0.1"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-intl": "^3.2.0"
+  }
+}

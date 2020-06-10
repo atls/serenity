@@ -1,0 +1,7 @@
+{
+  "extends": "@monstrs/tsconfig/tsconfig.service.json",
+  "compilerOptions": {
+    "outDir": "./dist"
+  },
+  "include": ["src"]
+}
