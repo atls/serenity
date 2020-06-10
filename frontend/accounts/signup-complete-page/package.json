@@ -1,0 +1,20 @@
+{
+  "name": "@accounts/signup-complete-page",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "devDependencies": {
+    "@testing-library/react": "9.3.2",
+    "@ui/button": "0.0.1",
+    "@ui/icons": "0.0.1",
+    "@atlantis-lab/input": "0.3.0",
+    "@ui/layout": "0.0.1",
+    "@ui/link": "0.0.1",
+    "@ui/text": "0.0.1"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-helmet": "^5.2.0",
+    "react-intl": "^3.2.0"
+  }
+}

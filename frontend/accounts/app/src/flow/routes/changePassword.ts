@@ -1,5 +1,5 @@
 import originalUrl from 'original-url'
-import { hydra }   from '@monstrs/hydra-client'
+import hydra       from '@oryd/hydra-client'
 import { format }  from 'url'
 
 export const changePassword = action => async (req, res) => {
@@ -11,7 +11,7 @@ export const changePassword = action => async (req, res) => {
     try {
       const challenge = req.query.login_challenge || req.session.login_challenge
 
-      const acceptLoginRequest = await hydra.acceptLoginRequest(challenge, {
+      const acceptLoginRequest = await new hydra.acceptLoginRequest(challenge, {
         subject: result.result.id,
         remember: true,
         remember_for: 3600,

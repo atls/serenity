@@ -1,4 +1,4 @@
-import { hydra } from '@monstrs/hydra-client'
+import { hydra } from '@oryd/hydra-client'
 
 export const signin = identify => async (req, res) => {
   const result: any = await identify(req.body)
