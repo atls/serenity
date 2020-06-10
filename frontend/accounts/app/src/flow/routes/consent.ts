@@ -1,4 +1,4 @@
-import { hydra } from '@monstrs/hydra-client'
+import { hydra } from '@oryd/hydra-client'
 
 export const consent = async (req, res) => {
   const { consent_challenge: consentChallenge } = req.query

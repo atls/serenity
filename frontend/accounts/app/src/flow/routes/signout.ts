@@ -1,4 +1,4 @@
-import { hydra } from '@monstrs/hydra-client'
+import { hydra } from '@oryd/hydra-client'
 
 export const signout = async (req, res) => {
   if (!req.query.logout_challenge) {

@@ -1,5 +1,5 @@
 import querystring        from 'querystring'
-import { hydra }          from '@monstrs/hydra-client'
+import { hydra }          from '@oryd/hydra-client'
 import { format, parse }  from 'url'
 
 import { getRedirectUrl } from '../utils'

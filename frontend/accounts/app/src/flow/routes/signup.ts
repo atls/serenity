@@ -1,5 +1,5 @@
 import originalUrl from 'original-url'
-import { hydra }   from '@monstrs/hydra-client'
+import { hydra }   from '@oryd/hydra-client'
 import { format }  from 'url'
 
 export const signup = register => async (req, res) => {

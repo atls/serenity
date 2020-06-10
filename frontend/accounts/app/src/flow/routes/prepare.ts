@@ -1,4 +1,4 @@
-import { hydra }    from '@monstrs/hydra-client'
+import { hydra }    from '@oryd/hydra-client'
 
 import { getState } from '../utils'
 
