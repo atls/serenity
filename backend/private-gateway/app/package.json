@@ -1,6 +1,6 @@
 {
   "name": "@private-gateway/app",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
@@ -14,6 +14,7 @@
     "@nestjs/core": "6.10.5",
     "@nestjs/graphql": "6.5.3",
     "@nestjs/platform-express": "6.10.5",
+    "@private-gateway/some": "0.0.1",
     "apollo-server-express": "2.14.2",
     "class-transformer": "0.2.3",
     "dataloader": "2.0.0",
@@ -21,8 +22,7 @@
     "graphql-tools": "4.0.6",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3",
-    "type-graphql": "0.17.5",
-    "@private-gateway/some": "0.0.0"
+    "type-graphql": "0.17.5"
   },
   "devDependencies": {
     "@monstrs/server-scripts": "0.1.3",

@@ -1,10 +1,10 @@
 {
   "name": "@ui/theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "src/index.ts",
   "devDependencies": {
-    "@design/ui": "0.0.1",
+    "@design/ui": "0.1.0",
     "@storybook/react": "5.2.6",
     "@types/styled-system": "5.1.4",
     "@types/webpack-env": "1.14.1"

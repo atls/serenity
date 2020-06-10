@@ -1,14 +1,13 @@
 {
   "name": "@ui/drawer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
-  "private": true,
   "main": "src/index.ts",
   "devDependencies": {
-    "@design/ui": "0.0.1",
-    "@ui/button": "0.0.1",
-    "@ui/icons": "0.0.1",
-    "@ui/link": "0.0.1",
+    "@design/ui": "0.1.0",
+    "@ui/button": "0.1.0",
+    "@ui/icons": "0.0.2",
+    "@ui/link": "0.0.2",
     "emotion": "^10.0.23",
     "next": "^9.1.6"
   },
