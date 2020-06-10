@@ -7,14 +7,16 @@
     "format": "mctl format",
     "typecheck": "mctl typecheck",
     "checkcommit": "mctl precommit",
+    "accounts:dev": "yarn workspace @accounts/app dev",
+    "cookie-store:dev": "yarn workspace @accounts/cookie-store dev",
     "identity:dev": "yarn workspace @identity/service dev",
     "private-gateway:dev": "yarn workspace @private-gateway/app dev"
   },
   "devDependencies": {
-    "@monstrs/mctl": "0.1.66",
-    "husky": "3.1.0",
-    "lerna": "3.19.0",
-    "typescript": "3.7.2"
+    "@monstrs/mctl": "^0.1.82",
+    "husky": "^4.2.5",
+    "lerna": "^3.22.1",
+    "typescript": "^3.9.5"
   },
   "workspaces": [
     "frontend/**/*",
