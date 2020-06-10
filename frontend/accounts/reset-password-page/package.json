@@ -1,0 +1,17 @@
+{
+  "name": "@accounts/reset-password-page",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "devDependencies": {
+    "@accounts/reset-password-fragment": "0.0.1",
+    "@ui/icons": "0.0.1",
+    "@ui/layout": "0.0.1",
+    "@ui/link": "0.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-helmet": "^5.2.0",
+    "react-intl": "^3.2.0"
+  }
+}
