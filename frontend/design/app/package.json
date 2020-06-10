@@ -1,6 +1,6 @@
 {
   "name": "@design/app",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "dev": "start-storybook -p 8001 -c ./",
@@ -19,15 +19,15 @@
     "@storybook/theming": "5.2.6",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.4",
-    "@ui/drawer": "0.0.1",
-    "@ui/theme": "0.0.1",
+    "@types/webpack-env": "1.14.1",
+    "@ui/drawer": "0.1.0",
+    "@ui/theme": "0.0.2",
     "babel-loader": "8.0.6",
     "react": "16.12.0",
     "react-docgen-typescript-loader": "3.6.0",
     "react-dom": "16.12.0",
     "react-intl": "3.9.1",
     "ts-loader": "6.2.1",
-    "typescript": "3.7.2",
-    "@types/webpack-env": "1.14.1"
+    "typescript": "3.7.2"
   }
 }
