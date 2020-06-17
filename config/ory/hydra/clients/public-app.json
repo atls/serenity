@@ -1,0 +1,10 @@
+{
+  "client_id": "app",
+  "description": "App client.",
+  "client_secret": "app-client-secret",
+  "scope": "openid offline",
+  "grant_types": ["authorization_code", "refresh_token"],
+  "response_types": ["code", "id_token"],
+  "token_endpoint_auth_method": "client_secret_post",
+  "redirect_uris": ["https://accounts.local.sy.aunited.dev/callback"]
+}
