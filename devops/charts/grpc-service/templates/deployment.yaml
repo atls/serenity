@@ -1,0 +1,56 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: '{{ template "grpc-service.fullname" . }}'
+  labels:
+    app: '{{ template "grpc-service.fullname" . }}'
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+    heritage: "{{ .Release.Service }}"
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: '{{ template "grpc-service.fullname" . }}'
+    spec:
+      {{- if .Values.imagePullSecrets }}
+      imagePullSecrets:
+{{ toYaml .Values.imagePullSecrets | indent 6 }}
+      {{- end }}
+      {{- if .Values.volumes }}
+      volumes:
+{{ toYaml .Values.volumes | indent 6 }}
+      {{- end }}
+      containers:
+      - name: '{{ template "grpc-service.fullname" . }}'
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 50051
+          name: grpc
+          protocol: TCP
+        - containerPort: 3000
+          name: http
+        {{- if .Values.health.enabled }}
+        livenessProbe:
+          httpGet:
+            path: /health/alive
+            port: http
+        readinessProbe:
+          httpGet:
+            path: /health/ready
+            port: http
+        {{- end }}
+        {{- if .Values.envFrom }}
+        envFrom:
+{{ toYaml .Values.envFrom | indent 8 }}
+        {{- end }}
+        {{- if .Values.env }}
+        env:
+{{ toYaml .Values.env | indent 8 }}
+        {{- end }}
+        {{- if .Values.volumeMounts }}
+        volumeMounts:
+{{ toYaml .Values.volumeMounts | indent 8 }}
+        {{- end }}

@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: '{{ template "static-app.fullname" . }}'
+  labels:
+    app: '{{ template "static-app.fullname" . }}'
+    chart: '{{ .Chart.Name }}-{{ .Chart.Version }}'
+    release: '{{ .Release.Name }}'
+    heritage: '{{ .Release.Service }}'
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: '{{ template "static-app.fullname" . }}'
+    spec:
+      containers:
+        - name: '{{ template "static-app.fullname" . }}'
+          image: '{{ .Values.image.repository }}:{{ .Values.image.tag }}'
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+              name: nginx-http

@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  {{- if .Values.service.name }}
+  name: {{ .Values.service.name }}
+  {{- else }}
+  name: {{ template "app.name" . }}
+  {{- end }}
+  labels:
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    app: {{ template "app.name" . }}
+spec:
+  selector:
+    app: {{ template "app.fullname" . }}
+  ports:
+  - port: 3000
+    name: http
+    targetPort: http
