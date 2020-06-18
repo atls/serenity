@@ -1,0 +1,34 @@
+[
+  {
+    "id": "rules:public-gateway",
+    "upstream": {
+      "url": "http://public-gateway:3000"
+    },
+    "match": {
+      "url": "http://public-gateway.local.topmasters.monstrs.dev/<.*>",
+      "methods": ["GET", "POST", "OPTIONS"]
+    },
+    "authenticators": [
+      {
+        "handler": "jwt",
+        "config": {}
+      },
+      {
+        "handler": "noop"
+      }
+    ],
+    "authorizer": {
+      "handler": "allow"
+    },
+    "mutators": [
+      {
+        "handler": "header",
+        "config": {
+          "headers": {
+            "X-User": "{{ print .Subject }}"
+          }
+        }
+      }
+    ]
+  }
+]

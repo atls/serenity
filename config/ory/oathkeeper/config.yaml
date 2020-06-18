@@ -1,0 +1,66 @@
+# Please find the documentation for this file at
+# https://www.ory.sh/docs/oathkeeper/configuration
+
+log:
+  level: debug
+  format: text
+
+profiling: cpu
+
+serve:
+  proxy:
+    port: 4455
+    cors:
+      enabled: true
+      debug: true
+      allowed_origins:
+        - '*'
+
+  api:
+    port: 4456
+
+access_rules:
+  repositories:
+    - file://config/oathkeeper/rules/private-gateway.json
+
+authenticators:
+  cookie_session:
+    enabled: true
+    check_session_url: http://cookie-store:3000
+    only:
+      - connect.sid
+
+  jwt:
+    enabled: true
+    jwks_urls:
+      - file://config/oathkeeper/jwks.json
+
+    # Sets the strategy to be used to validate/match the scope. Supports "hierarchic", "exact", "wildcard", "none". Defaults
+    # to "none".
+    scope_strategy: wildcard
+
+  noop:
+    enabled: true
+
+  unauthorized:
+    enabled: true
+
+authorizers:
+  allow:
+    enabled: true
+
+  deny:
+    enabled: true
+
+mutators:
+  header:
+    enabled: true
+
+  id_token:
+    enabled: true
+    issuer_url: http://oathkeeper:4455
+    jwks_url: file://config/oathkeeper/jwks.json
+    ttl: 99h
+
+  noop:
+    enabled: true
