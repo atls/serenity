@@ -1,0 +1,31 @@
+[
+  {
+    "id": "rules:private-gateway",
+    "upstream": {
+      "url": "http://private-gateway:3000"
+    },
+    "match": {
+      "url": "http://private-gateway.local.topmasters.monstrs.dev/<.*>",
+      "methods": ["GET", "POST", "OPTIONS"]
+    },
+    "authenticators": [
+      {
+        "handler": "jwt",
+        "config": {}
+      }
+    ],
+    "authorizer": {
+      "handler": "allow"
+    },
+    "mutators": [
+      {
+        "handler": "header",
+        "config": {
+          "headers": {
+            "X-User": "{{ print .Subject }}"
+          }
+        }
+      }
+    ]
+  }
+]
