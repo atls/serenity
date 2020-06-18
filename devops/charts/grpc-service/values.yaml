@@ -1,0 +1,8 @@
+image:
+  tag: latest
+
+service:
+  labels: {}
+
+health:
+  enabled: false

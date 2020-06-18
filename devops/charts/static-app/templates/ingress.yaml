@@ -1,0 +1,28 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: '{{ template "static-app.fullname" . }}'
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: 'true'
+    certmanager.k8s.io/cluster-issuer: 'letsencrypt'
+    certmanager.k8s.io/acme-challenge-type: 'http01'
+spec:
+  tls:
+    - hosts:
+        - '{{ .Values.endpoints.hostname }}'
+        - 'www.{{ .Values.endpoints.hostname }}'
+      secretName: '{{ template "static-app.tlsname" . }}'
+  rules:
+    - host: '{{ .Values.endpoints.hostname }}'
+      http:
+        paths:
+          - backend:
+              serviceName: '{{ template "static-app.fullname" . }}'
+              servicePort: 80
+    - host: 'www.{{ .Values.endpoints.hostname }}'
+      http:
+        paths:
+          - backend:
+              serviceName: '{{ template "static-app.fullname" . }}'
+              servicePort: 80
