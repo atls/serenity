@@ -231,14 +231,14 @@
   resolved "https://registry.yarnpkg.com/@apollographql/graphql-playground-html/-/graphql-playground-html-1.6.24.tgz#3ce939cb127fb8aaa3ffc1e90dff9b8af9f2e3dc"
   integrity sha512-8GqG48m1XqyXh4mIZrtB5xOhUwSsh1WsrrsaZQOEYYql3YN9DEu9OOSg0ILzXHZo/h2Q74777YE4YzlArQzQEQ==
 
-"@atlantis-lab/input@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/input/-/input-0.3.0.tgz#05422af47feb88dda44d37f91c1529400d2ab9de"
-  integrity sha512-h6Bak7GICAcGszTvm1hC+EOtu6Zy7SxahLFWgc/dm/dj5gkcZoGiPtNqoy9RI2OpL5aWZLvgK7F5D+lmOtNqaA==
+"@atlantis-lab/input@0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/input/-/input-0.3.3.tgz#ac318d91b299fbfd5e5939cfcdb5143ecf14c27b"
+  integrity sha512-wtRJMJteeDsUxe7RA0R1CBEgR9KTQoRaD38azLOUSaShQqMkwfU9rNbKEX53SNloWh5mhw4RgelW84lDXQI7oA==
   dependencies:
     "@emotion/styled" "10.0.23"
     react-text-mask "5.4.3"
-    styled-system "5.1.4"
+    styled-system "5.1.5"
     text-mask-addons "3.8.0"
 
 "@atlantis-lab/next-app-with-emotion@0.2.0":
@@ -19286,7 +19286,7 @@ styled-system@5.1.4:
     "@styled-system/variant" "^5.1.4"
     object-assign "^4.1.1"
 
-styled-system@^5.1.5:
+styled-system@5.1.5, styled-system@^5.1.5:
   version "5.1.5"
   resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-5.1.5.tgz#e362d73e1dbb5641a2fd749a6eba1263dc85075e"
   integrity sha512-7VoD0o2R3RKzOzPK0jYrVnS8iJdfkKsQJNiLRDjikOpQVqQHns/DXWaPZOH4tIKkhAT7I6wIsy9FWTWh2X3q+A==
