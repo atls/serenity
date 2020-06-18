@@ -21,6 +21,7 @@ serve:
 
 access_rules:
   repositories:
+    - file://config/oathkeeper/rules/public-gateway.json
     - file://config/oathkeeper/rules/private-gateway.json
 
 authenticators:
