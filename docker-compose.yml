@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   traefik:
-    image: aunited/traefik:serenity
+    image: atlantislab/traefik:serenity
     command: --api --docker
     ports:
       - 80:80
@@ -57,7 +57,7 @@ services:
       - MINIO_SECRET_KEY=secretkey
     command: server data
     labels:
-      - 'traefik.frontend.rule=Host:s3.local.serenity.aunited.dev'
+      - 'traefik.frontend.rule=Host:s3.serenity.local.aunited.dev'
       - 'traefik.protocol=http'
       - 'traefik.port=9000'
     depends_on:
@@ -94,19 +94,19 @@ services:
     command: serve all --skip-tls-verify --dangerous-force-http
     environment:
       - LOG_LEVEL=debug
-      - URLS_SELF_ISSUER=https://sso.local.serenity.aunited.dev
-      - URLS_CONSENT=https://accounts.local.serenity.aunited.dev/consent
-      - URLS_LOGIN=https://accounts.local.serenity.aunited.dev/
-      - URLS_LOGOUT=https://accounts.local.serenity.aunited.dev/signout
-      - URLS_POST_LOGOUT_REDIRECT=https://accounts.local.serenity.aunited.dev/signout/complete
-      - URL_POST_LOGOUT_REDIRECT=https://accounts.local.serenity.aunited.dev/signout
+      - URLS_SELF_ISSUER=https://sso.serenity.local.aunited.dev
+      - URLS_CONSENT=https://accounts.serenity.local.aunited.dev/consent
+      - URLS_LOGIN=https://accounts.serenity.local.aunited.dev/
+      - URLS_LOGOUT=https://accounts.serenity.local.aunited.dev/signout
+      - URLS_POST_LOGOUT_REDIRECT=https://accounts.serenity.local.aunited.dev/signout/complete
+      - URL_POST_LOGOUT_REDIRECT=https://accounts.serenity.local.aunited.dev/signout
       - SECRETS_SYSTEM=supersecretvalue
       - OIDC_SUBJECT_TYPE_PAIRWISE_SALT=supersecretvalue
       - OIDC_SUBJECT_TYPES_SUPPORTED=public,pairwise
       - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
     restart: unless-stopped
     labels:
-      - 'traefik.frontend.rule=Host:sso.local.serenity.aunited.dev'
+      - 'traefik.frontend.rule=Host:sso.serenity.local.aunited.dev'
       - 'traefik.protocol=http'
       - 'traefik.port=4444'
     depends_on:
@@ -127,11 +127,11 @@ services:
       - DATABASE_URL=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
     restart: unless-stopped
     labels:
-      - 'traefik.site.frontend.rule=Host:local.serenity.aunited.dev'
-      - 'traefik.admin.frontend.rule=Host:admin.local.serenity.aunited.dev'
-      - 'traefik.cabinet.frontend.rule=Host:cabinet.local.serenity.aunited.dev'
-      - 'traefik.public_gateway.frontend.rule=Host:public-gateway.local.serenity.aunited.dev'
-      - 'traefik.private_gateway.frontend.rule=Host:private-gateway.local.serenity.aunited.dev'
+      - 'traefik.site.frontend.rule=Host:serenity.local.aunited.dev'
+      - 'traefik.admin.frontend.rule=Host:admin.serenity.local.aunited.dev'
+      - 'traefik.cabinet.frontend.rule=Host:cabinet.serenity.local.aunited.dev'
+      - 'traefik.public_gateway.frontend.rule=Host:public-gateway.serenity.local.aunited.dev'
+      - 'traefik.private_gateway.frontend.rule=Host:private-gateway.serenity.local.aunited.dev'
       - 'traefik.port=4455'
     depends_on:
       - oathkeeper-migrate
@@ -151,14 +151,14 @@ services:
     entrypoint: yarn accounts:dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
-      - OAUTH_AUTHORIZATION_URL=https://sso.local.serenity.aunited.dev/oauth2/auth
-      - OAUTH_TOKEN_URL=https://sso.local.serenity.aunited.dev/oauth2/token
-      - OAUTH_USERINFO_URL=https://sso.local.serenity.aunited.dev/userinfo
-      - OAUTH_CALLBACK_URL=https://accounts.local.serenity.aunited.dev/callback
+      - OAUTH_AUTHORIZATION_URL=https://sso.serenity.local.aunited.dev/oauth2/auth
+      - OAUTH_TOKEN_URL=https://sso.serenity.local.aunited.dev/oauth2/token
+      - OAUTH_USERINFO_URL=https://sso.serenity.local.aunited.dev/userinfo
+      - OAUTH_CALLBACK_URL=https://accounts.serenity.local.aunited.dev/callback
       - OAUTH_CLIENT_ID=app
       - OAUTH_CLIENT_SECRET=app-client-secret
     labels:
-      - 'traefik.frontend.rule=Host:accounts.local.serenity.aunited.dev'
+      - 'traefik.frontend.rule=Host:accounts.serenity.local.aunited.dev'
       - 'traefik.protocol=http'
       - 'traefik.port=3000'
     depends_on:
@@ -169,7 +169,7 @@ services:
       - default
       - traefik
     extra_hosts:
-      - 'sso.local.serenity.aunited.dev:172.16.101.99'
+      - 'sso.serenity.local.aunited.dev:172.16.101.99'
 
   cookie-store:
     image: node:alpine
@@ -180,10 +180,10 @@ services:
     entrypoint: yarn cookie-store:dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
-      - OAUTH_AUTHORIZATION_URL=https://sso.local.serenity.aunited.dev/oauth2/auth
-      - OAUTH_TOKEN_URL=https://sso.local.serenity.aunited.dev/oauth2/token
-      - OAUTH_USERINFO_URL=https://sso.local.serenity.aunited.dev/userinfo
-      - OAUTH_CALLBACK_URL=https://accounts.local.serenity.aunited.dev/callback
+      - OAUTH_AUTHORIZATION_URL=https://sso.serenity.local.aunited.dev/oauth2/auth
+      - OAUTH_TOKEN_URL=https://sso.serenity.local.aunited.dev/oauth2/token
+      - OAUTH_USERINFO_URL=https://sso.serenity.local.aunited.dev/userinfo
+      - OAUTH_CALLBACK_URL=https://accounts.serenity.local.aunited.dev/callback
       - OAUTH_CLIENT_ID=app
       - OAUTH_CLIENT_SECRET=app-client-secret
     depends_on:
