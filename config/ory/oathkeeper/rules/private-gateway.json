@@ -5,7 +5,7 @@
       "url": "http://private-gateway:3000"
     },
     "match": {
-      "url": "http://private-gateway.local.topmasters.monstrs.dev/<.*>",
+      "url": "http://private-gateway.local.serenity.aunited.dev/<.*>",
       "methods": ["GET", "POST", "OPTIONS"]
     },
     "authenticators": [
