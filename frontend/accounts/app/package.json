@@ -1,6 +1,6 @@
 {
   "name": "@accounts/app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
@@ -14,8 +14,8 @@
     "@atlantis-lab/next-config-with-workspaces": "^0.2.0",
     "@grpc/proto-loader": "0.5.3",
     "@oryd/hydra-client": "1.4.10",
-    "@protos/common": "0.1.0",
-    "@protos/identity": "0.1.0",
+    "@protos/common": "0.2.0",
+    "@protos/identity": "0.2.0",
     "body-parser": "1.19.0",
     "connect-redis": "3.4.2",
     "cookie-parser": "1.4.4",
@@ -42,7 +42,7 @@
     "@types/passport": "1.0.2",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.4",
-    "@ui/theme": "0.0.2",
+    "@ui/theme": "0.0.3",
     "nodemon": "1.19.4",
     "react": "16.13.1",
     "react-apollo": "3.1.5",

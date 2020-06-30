@@ -1,12 +1,12 @@
 {
   "name": "@protos/identity",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "src/index.ts",
   "license": "MIT",
   "dependencies": {
     "@grpc/proto-loader": "0.5.3",
     "@nestjs/microservices": "6.10.5",
-    "@protos/common": "0.1.0",
+    "@protos/common": "0.2.0",
     "grpc": "1.24.2"
   }
 }
