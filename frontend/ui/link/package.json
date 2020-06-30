@@ -1,11 +1,11 @@
 {
   "name": "@ui/link",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "src/index.tsx",
   "devDependencies": {
-    "@design/ui": "0.1.0",
-    "@ui/text": "0.1.0"
+    "@design/ui": "0.2.0",
+    "@ui/text": "0.2.0"
   },
   "peerDependencies": {
     "@emotion/styled": "^10.0.0",

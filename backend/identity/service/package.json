@@ -1,6 +1,6 @@
 {
   "name": "@identity/service",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
@@ -14,15 +14,15 @@
   },
   "dependencies": {
     "@grpc/proto-loader": "0.5.3",
-    "@identity/application": "0.1.0",
-    "@identity/domain": "0.1.0",
-    "@identity/persistence": "0.1.0",
+    "@identity/application": "0.2.0",
+    "@identity/domain": "0.2.0",
+    "@identity/persistence": "0.2.0",
     "@monstrs/nestjs-bus": "0.1.4",
     "@monstrs/nestjs-map-errors-interceptor": "0.1.0",
     "@nestjs/common": "6.10.5",
     "@nestjs/core": "6.10.5",
     "@nestjs/microservices": "6.10.5",
-    "@protos/identity": "0.1.0",
+    "@protos/identity": "0.2.0",
     "class-validator": "0.11.0",
     "grpc": "1.24.2",
     "reflect-metadata": "0.1.13",
