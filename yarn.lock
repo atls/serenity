@@ -231,12 +231,12 @@
   resolved "https://registry.yarnpkg.com/@apollographql/graphql-playground-html/-/graphql-playground-html-1.6.24.tgz#3ce939cb127fb8aaa3ffc1e90dff9b8af9f2e3dc"
   integrity sha512-8GqG48m1XqyXh4mIZrtB5xOhUwSsh1WsrrsaZQOEYYql3YN9DEu9OOSg0ILzXHZo/h2Q74777YE4YzlArQzQEQ==
 
-"@atlantis-lab/input@0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/input/-/input-0.3.3.tgz#ac318d91b299fbfd5e5939cfcdb5143ecf14c27b"
-  integrity sha512-wtRJMJteeDsUxe7RA0R1CBEgR9KTQoRaD38azLOUSaShQqMkwfU9rNbKEX53SNloWh5mhw4RgelW84lDXQI7oA==
+"@atlantis-lab/input@0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/input/-/input-0.4.0.tgz#d10674aedd426cf4b1a5d10e062fa4ff007d29b8"
+  integrity sha512-hArbwM4PgX8kFz3MN8UkU0rmvp58LhNgeDXv8XEDBIwCoBw5JJFZlgQ3rvOP/m5vvLIO0oATB+3r+yMhje60SA==
   dependencies:
-    "@emotion/styled" "10.0.23"
+    "@emotion/styled" "10.0.27"
     react-text-mask "5.4.3"
     styled-system "5.1.5"
     text-mask-addons "3.8.0"
@@ -1635,7 +1635,7 @@
     "@emotion/styled-base" "^10.0.23"
     babel-plugin-emotion "^10.0.23"
 
-"@emotion/styled@^10.0.14", "@emotion/styled@^10.0.17":
+"@emotion/styled@10.0.27", "@emotion/styled@^10.0.14", "@emotion/styled@^10.0.17":
   version "10.0.27"
   resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-10.0.27.tgz#12cb67e91f7ad7431e1875b1d83a94b814133eaf"
   integrity sha512-iK/8Sh7+NLJzyp9a5+vIQIXTYxfT4yB/OJbjzQanB2RZpvmzBQOHZWhpAMZWYEKRNNbsD6WfBw5sVWkb6WzS/Q==

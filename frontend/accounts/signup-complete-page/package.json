@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "src/index.tsx",
   "devDependencies": {
-    "@atlantis-lab/input": "0.3.3",
+    "@atlantis-lab/input": "0.4.0",
     "@testing-library/react": "9.3.2",
     "@ui/button": "0.2.0",
     "@ui/icons": "0.0.3",
