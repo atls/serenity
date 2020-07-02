@@ -5,7 +5,7 @@
   "main": "src/index.tsx",
   "devDependencies": {
     "@atlantis-lab/input": "0.4.0",
-    "@testing-library/react": "9.3.2",
+    "@testing-library/react": "9.5.0",
     "@ui/button": "0.2.0",
     "@ui/icons": "0.0.3",
     "@ui/layout": "0.0.3",
