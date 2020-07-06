@@ -4989,10 +4989,10 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
-"@types/passport@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@types/passport/-/passport-1.0.2.tgz#f085033e2b301b1f97d4b57bfa73d8e934650c63"
-  integrity sha512-Pf39AYKf8q+YoONym3150cEwfUD66dtwHJWvbeOzKxnA0GZZ/vAXhNWv9vMhKyRQBQZiQyWQnhYBEBlKW6G8wg==
+"@types/passport@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@types/passport/-/passport-1.0.4.tgz#1b35c4e197560d3974fa5f71711b6e9cce0711f0"
+  integrity sha512-h5OfAbfBBYSzjeU0GTuuqYEk9McTgWeGQql9g3gUw2/NNCfD7VgExVRYJVVeU13Twn202Mvk9BT0bUrl30sEgA==
   dependencies:
     "@types/express" "*"
 
