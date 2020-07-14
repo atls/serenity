@@ -1,6 +1,8 @@
-import { hydra } from '@oryd/hydra-client'
+import * as Hydra from '@oryd/hydra-client'
 
 export const signin = identify => async (req, res) => {
+  const hydra = new Hydra.AdminApi('http://hydra:4445')
+
   const result: any = await identify(req.body)
 
   if (result.errors) {
@@ -12,7 +14,7 @@ export const signin = identify => async (req, res) => {
       const acceptLoginRequest = await hydra.acceptLoginRequest(challenge, {
         subject: result.result.id,
         remember: true,
-        remember_for: 3600,
+        rememberFor: 3600,
         context: result.result,
       })
 

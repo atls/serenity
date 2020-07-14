@@ -1,4 +1,4 @@
-FROM node:14-alpine as builder
+FROM node:12-alpine as builder
 
 ADD . /app
 RUN cd /app && yarn install --silent --no-progress
