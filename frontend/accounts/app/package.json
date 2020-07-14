@@ -36,7 +36,7 @@
     "@atlantis-lab/next-app-with-helmet": "0.2.5",
     "@atlantis-lab/next-app-with-intl": "0.2.6",
     "@atlantis-lab/next-document-with-emotion": "0.2.5",
-    "@atlantis-lab/next-document-with-helmet": "0.2.0",
+    "@atlantis-lab/next-document-with-helmet": "0.2.5",
     "@atlantis-lab/react-locale": "0.1.10",
     "@types/express-session": "1.15.16",
     "@types/passport": "1.0.2",
