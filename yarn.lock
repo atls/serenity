@@ -251,10 +251,10 @@
   resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-helmet/-/next-app-with-helmet-0.2.0.tgz#63a8a9d0529e24ee091066eae6e28754fccb4836"
   integrity sha512-2WEcX1hnOVAVcQUssAHrq6b5i1fIdQLdTBcVcdvHc8JqFW0I8jmFeVfqJZwrxopsqIO/igvoqAo1sWYL/9GE7g==
 
-"@atlantis-lab/next-app-with-intl@0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-intl/-/next-app-with-intl-0.2.1.tgz#a7edb9c59d3a1c8130a12b84d38aacc364ecb698"
-  integrity sha512-FNZ5lB6SjMP/gzWwjnUkNhuw8A/SPzKUYD07TNoCCN5Uc5FuvIfjoFgMdXfZANFzkwC8PiOZuskEX15TKvCEJA==
+"@atlantis-lab/next-app-with-intl@0.2.6":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-intl/-/next-app-with-intl-0.2.6.tgz#26cb1b6dc940508314180c4a6e7f195a1304e10d"
+  integrity sha512-m2Yy3ZIxUHUYGoOo7USfVBBR0BMdCTV2seZlRJdnhtEgD27jRCqwUaUQook0LXPRgPGVHXkFR6HPtOKD83jGZA==
   dependencies:
     "@atlantis-lab/react-locale" "^0.1.2"
 
@@ -14888,10 +14888,10 @@ next-compose-plugins@^2.2.0:
   resolved "https://registry.yarnpkg.com/next-compose-plugins/-/next-compose-plugins-2.2.0.tgz#95cd8eb40ab0652070d76572fb648354191628b0"
   integrity sha512-ChUlpT9tWfJ7YxqGw/WQ2T1gf8EeX93n1XqeQw0lkvGa7seszahvF4eOZUJoq7Hetsbzg4UHVnPoCXfXTyQR3g==
 
-next-fonts@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/next-fonts/-/next-fonts-1.1.0.tgz#5981ad5b8db4c6ae101919e2252e8dd2ec5b387a"
-  integrity sha512-Fbo2EROr4Y2T4lfHaHg5LkVse2OmHQIYLptdnnX43YLvOsE2btlarv+zFp6ex45znrVnwNxcAsdYH4N4jGzfeQ==
+next-fonts@0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/next-fonts/-/next-fonts-0.19.0.tgz#0a6d7d8235579d419e55e75a960c17cf19169f51"
+  integrity sha512-1/1GVBtxTEzGA/WYCWetegnVVzSp3tF0aacRY5mc973R6uPogMfid/nkLLlBgFBrFUy8wtv87Sag7vhNNzuSnA==
   dependencies:
     file-loader "^2.0.0"
     url-loader "^1.1.1"
