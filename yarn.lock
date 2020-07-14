@@ -271,10 +271,10 @@
   resolved "https://registry.yarnpkg.com/@atlantis-lab/next-document-with-emotion/-/next-document-with-emotion-0.2.5.tgz#ec8262cd48fc607e1870216a1fdd17ec39d9e29c"
   integrity sha512-qMSl6hFoLZfjNla1hprulF5N1SaqlyJt1IiPkcrHFUGJY+MuEz12/Pam8itzFjO4h1fY6FDbUoZi/fTf4B9WWA==
 
-"@atlantis-lab/next-document-with-helmet@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-document-with-helmet/-/next-document-with-helmet-0.2.0.tgz#d9c89b3035278d134f1fa5c35ba80b2565996fe1"
-  integrity sha512-59rfeGrYfFnvRk9PKNaclLzJ48q38uTRXZLtRtwXoh1Q8jPKGuGJBeLyoRNC43hTqdp3gf8Q/UrlWy7+BcHLlQ==
+"@atlantis-lab/next-document-with-helmet@0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-document-with-helmet/-/next-document-with-helmet-0.2.5.tgz#3e1092600ce3f46a87821983c2a5ea3ddab13256"
+  integrity sha512-O74BDnSOtK+6nbdZRPJPiDjIT+rIZrF9BxJFO9b4IXQV2t+RQIiF4CQ0xTrFzYzKL/wfmL57Ul49EGsaJXrWiQ==
 
 "@atlantis-lab/react-locale@0.1.10":
   version "0.1.10"
@@ -1772,7 +1772,7 @@
   resolved "https://registry.yarnpkg.com/@emotion/sheet/-/sheet-0.9.4.tgz#894374bea39ec30f489bbfc3438192b9774d32e5"
   integrity sha512-zM9PFmgVSqBw4zL101Q0HrBVTGmpAxFZH/pYx/cjJT5advXguvcgjHFTCaIO3enL/xr89vK2bh0Mfyj9aa0ANA==
 
-"@emotion/styled-base@^10.0.23", "@emotion/styled-base@^10.0.27":
+"@emotion/styled-base@^10.0.27":
   version "10.0.31"
   resolved "https://registry.yarnpkg.com/@emotion/styled-base/-/styled-base-10.0.31.tgz#940957ee0aa15c6974adc7d494ff19765a2f742a"
   integrity sha512-wTOE1NcXmqMWlyrtwdkqg87Mu6Rj1MaukEoEmEkHirO5IoHDJ8LgCQL4MjJODgxWxXibGR3opGp1p7YvkNEdXQ==
@@ -1781,14 +1781,6 @@
     "@emotion/is-prop-valid" "0.8.8"
     "@emotion/serialize" "^0.11.15"
     "@emotion/utils" "0.11.3"
-
-"@emotion/styled@10.0.23":
-  version "10.0.23"
-  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-10.0.23.tgz#2f8279bd59b99d82deade76d1046249ddfab7c1b"
-  integrity sha512-gNr04eqBQ2iYUx8wFLZDfm3N8/QUOODu/ReDXa693uyQGy2OqA+IhPJk+kA7id8aOfwAsMuvZ0pJImEXXKtaVQ==
-  dependencies:
-    "@emotion/styled-base" "^10.0.23"
-    babel-plugin-emotion "^10.0.23"
 
 "@emotion/styled@10.0.27", "@emotion/styled@^10.0.14", "@emotion/styled@^10.0.17":
   version "10.0.27"
@@ -6674,7 +6666,7 @@ babel-plugin-dynamic-import-node@^2.3.3:
   dependencies:
     object.assign "^4.1.0"
 
-babel-plugin-emotion@^10.0.14, babel-plugin-emotion@^10.0.23, babel-plugin-emotion@^10.0.27:
+babel-plugin-emotion@^10.0.14, babel-plugin-emotion@^10.0.27:
   version "10.0.33"
   resolved "https://registry.yarnpkg.com/babel-plugin-emotion/-/babel-plugin-emotion-10.0.33.tgz#ce1155dcd1783bbb9286051efee53f4e2be63e03"
   integrity sha512-bxZbTTGz0AJQDHm8k6Rf3RQJ8tX2scsfsRyKVgAbiUPUNIRtlK+7JxP+TAd1kRLABFxe0CFm2VdK4ePkoA9FxQ==
