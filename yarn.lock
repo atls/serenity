@@ -241,10 +241,10 @@
     styled-system "5.1.5"
     text-mask-addons "3.8.0"
 
-"@atlantis-lab/next-app-with-emotion@0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-emotion/-/next-app-with-emotion-0.2.4.tgz#b641d80f3bb9ad76d7ffd54fd9723555155f375f"
-  integrity sha512-BLqzsDjNadhR8XeW+zaZ3/pxKbwZgYdiUEVexS+w+j/Cv2s2INAZbCrLjZlgXqRD6hNYxWxsrFqmtw/F8auAMw==
+"@atlantis-lab/next-app-with-emotion@0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-emotion/-/next-app-with-emotion-0.2.5.tgz#2d1f0390b827bb5ef3a93020c0dfbf5fef39de4c"
+  integrity sha512-pMCEbrLJ7h0lZ6jdVzoXYU10y7v8qb7awIomayKnvGNhSdCuc0ZRe7QmKFn/wO8EYhWtTNyOzioki5HO4AoXXg==
 
 "@atlantis-lab/next-app-with-helmet@0.2.0":
   version "0.2.0"
