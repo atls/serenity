@@ -266,10 +266,10 @@
     "@lerna/project" "^3.16.0"
     globby "^11.0.0"
 
-"@atlantis-lab/next-document-with-emotion@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-document-with-emotion/-/next-document-with-emotion-0.2.0.tgz#6aaafaeff87d61b5710aa177e48a26e4bb9e4b91"
-  integrity sha512-IVPz5xlWXHJCtHoz6FGj5IaFhLQrucvyL/zuUTYis5uEQNOFBjXjerjGGvfyLK41R3fuQfSX4PVE3jTvRh/Lew==
+"@atlantis-lab/next-document-with-emotion@0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-document-with-emotion/-/next-document-with-emotion-0.2.5.tgz#ec8262cd48fc607e1870216a1fdd17ec39d9e29c"
+  integrity sha512-qMSl6hFoLZfjNla1hprulF5N1SaqlyJt1IiPkcrHFUGJY+MuEz12/Pam8itzFjO4h1fY6FDbUoZi/fTf4B9WWA==
 
 "@atlantis-lab/next-document-with-helmet@0.2.0":
   version "0.2.0"
