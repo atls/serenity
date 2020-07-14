@@ -276,10 +276,10 @@
   resolved "https://registry.yarnpkg.com/@atlantis-lab/next-document-with-helmet/-/next-document-with-helmet-0.2.0.tgz#d9c89b3035278d134f1fa5c35ba80b2565996fe1"
   integrity sha512-59rfeGrYfFnvRk9PKNaclLzJ48q38uTRXZLtRtwXoh1Q8jPKGuGJBeLyoRNC43hTqdp3gf8Q/UrlWy7+BcHLlQ==
 
-"@atlantis-lab/react-locale@0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/react-locale/-/react-locale-0.1.5.tgz#31aea917a46b3e0b050110ce06a1ff7281b8924c"
-  integrity sha512-ZeIxTOFPHovNfMPIkNdkXEsW1a9bLx1kXc/VvrEC9bWzf3y3QHnA22dXNWOucvtzU2xhWIrjqJAjHAAOtvHKGA==
+"@atlantis-lab/react-locale@0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/react-locale/-/react-locale-0.1.10.tgz#ebf2de7e404f51d4a8163f04ef8093390b8a7765"
+  integrity sha512-mQJ9tNtRVWgEQVv5iWcbkHCD6jbX4QhnGH+oUTIpb++yUuCRcshaxfb09sEZLmZTns48EMa9sdo95XZAym6R+Q==
 
 "@atlantis-lab/react-locale@^0.1.2":
   version "0.1.2"
