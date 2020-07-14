@@ -29,7 +29,8 @@
     "original-url": "1.2.3",
     "passport": "0.4.0",
     "passport-oauth2": "1.5.0",
-    "passport-oauth2-refresh": "1.1.0"
+    "passport-oauth2-refresh": "1.1.0",
+    "emotion-server": "^10.0.27"
   },
   "devDependencies": {
     "@atlantis-lab/next-app-with-emotion": "0.2.4",

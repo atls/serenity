@@ -6,11 +6,6 @@ export const fontFaces = [
   },
   {
     family: 'Inter',
-    weight: 700,
-    type: 'Bold',
-  },
-  {
-    family: 'Inter',
     weight: 500,
     type: 'Medium',
   },
