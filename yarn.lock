@@ -251,10 +251,10 @@
   resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-helmet/-/next-app-with-helmet-0.2.0.tgz#63a8a9d0529e24ee091066eae6e28754fccb4836"
   integrity sha512-2WEcX1hnOVAVcQUssAHrq6b5i1fIdQLdTBcVcdvHc8JqFW0I8jmFeVfqJZwrxopsqIO/igvoqAo1sWYL/9GE7g==
 
-"@atlantis-lab/next-app-with-intl@0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-intl/-/next-app-with-intl-0.2.1.tgz#a7edb9c59d3a1c8130a12b84d38aacc364ecb698"
-  integrity sha512-FNZ5lB6SjMP/gzWwjnUkNhuw8A/SPzKUYD07TNoCCN5Uc5FuvIfjoFgMdXfZANFzkwC8PiOZuskEX15TKvCEJA==
+"@atlantis-lab/next-app-with-intl@0.2.6":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-intl/-/next-app-with-intl-0.2.6.tgz#26cb1b6dc940508314180c4a6e7f195a1304e10d"
+  integrity sha512-m2Yy3ZIxUHUYGoOo7USfVBBR0BMdCTV2seZlRJdnhtEgD27jRCqwUaUQook0LXPRgPGVHXkFR6HPtOKD83jGZA==
   dependencies:
     "@atlantis-lab/react-locale" "^0.1.2"
 
