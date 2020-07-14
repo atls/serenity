@@ -3307,7 +3307,14 @@
     serialize-error "^4.1.0"
     tslib "^1.9.3"
 
-"@node-ts/bus-messages@0.1.10", "@node-ts/bus-messages@^0.1.0", "@node-ts/bus-messages@^0.1.10", "@node-ts/bus-messages@^0.1.4":
+"@node-ts/bus-messages@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@node-ts/bus-messages/-/bus-messages-0.3.0.tgz#a5e19474e54f24ff683fa4fd8e54e65ecb68ce78"
+  integrity sha512-rrjo6v8dv21kqbYcWFkohmUS7BwIfn6xyCPiAxAvVpdQ2QYdUY1e9XYshWg9PSmlCtKKYh2Hs4kFf4Mj4Yc10A==
+  dependencies:
+    tslib "^1.9.3"
+
+"@node-ts/bus-messages@^0.1.0", "@node-ts/bus-messages@^0.1.10", "@node-ts/bus-messages@^0.1.4":
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/@node-ts/bus-messages/-/bus-messages-0.1.10.tgz#1c3943016ea66d273524e948e137c9ebac9e00f5"
   integrity sha512-+y5zFAtC0NfnBXpbJpt2HXwf3PfS77OktkzxhC5QzNWMEljGcqzPe48RH+VVGBCVbsN3oxnkHd1J7pcOP21RtA==
