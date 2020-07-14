@@ -12,7 +12,7 @@
     "@monstrs/nestjs-dataloader": "0.1.2",
     "@nestjs/common": "6.10.5",
     "@nestjs/core": "6.10.5",
-    "@nestjs/graphql": "6.5.3",
+    "@nestjs/graphql": "6.6.2",
     "@nestjs/platform-express": "6.10.5",
     "@private-gateway/some": "0.0.2",
     "apollo-server-express": "2.14.3",

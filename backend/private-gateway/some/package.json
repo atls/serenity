@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "dependencies": {
     "@nestjs/common": "6.9.0",
-    "@nestjs/graphql": "6.5.3",
+    "@nestjs/graphql": "6.6.2",
     "type-graphql": "0.17.5"
   },
   "devDependencies": {
