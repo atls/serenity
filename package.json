@@ -10,6 +10,7 @@
     "accounts:dev": "yarn workspace @accounts/app dev",
     "cookie-store:dev": "yarn workspace @accounts/cookie-store dev",
     "identity:dev": "yarn workspace @identity/service dev",
+    "mailer:dev": "yarn workspace @mailer/service dev",
     "private-gateway:dev": "yarn workspace @private-gateway/app dev"
   },
   "devDependencies": {
