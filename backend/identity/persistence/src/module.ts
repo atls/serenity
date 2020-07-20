@@ -1,6 +1,7 @@
 import { LoggerModule }        from '@monstrs/nestjs-logger'
-import { Global, Module }      from '@nestjs/common'
 import { TypeOrmModule }       from '@nestjs/typeorm'
+
+import { Global, Module }      from '@nestjs/common'
 
 import config                  from './config'
 import { User }                from './entities'

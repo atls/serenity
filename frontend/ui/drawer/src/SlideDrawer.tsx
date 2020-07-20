@@ -1,10 +1,11 @@
 import ScrollLock                     from 'react-scrolllock'
-import styled                         from '@emotion/styled'
 import document                       from 'global/document'
 import React, { useEffect, useState } from 'react'
 import { motion }                     from 'framer-motion'
 import { createPortal }               from 'react-dom'
 import { color, layout, position }    from 'styled-system'
+
+import styled                         from '@emotion/styled'
 
 const variants = {
   visible: {
