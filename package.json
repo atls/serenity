@@ -14,6 +14,7 @@
     "private-gateway:dev": "yarn workspace @private-gateway/app dev"
   },
   "devDependencies": {
+    "@atlantis-lab/tsconfig": "0.0.21",
     "@monstrs/mctl": "0.1.82",
     "husky": "4.2.5",
     "lerna": "3.22.1",

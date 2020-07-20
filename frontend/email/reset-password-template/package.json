@@ -1,0 +1,15 @@
+{
+  "name": "@email/reset-password-template",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.tsx",
+  "dependencies": {
+    "mjml": "4.5.1",
+    "mjml-react": "1.0.56"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-intl": "^3.2.0"
+  }
+}
