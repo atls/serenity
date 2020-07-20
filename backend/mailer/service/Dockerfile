@@ -1,10 +1,10 @@
-FROM node:14-alpine as builder
+FROM node:alpine as builder
 
 ADD . /app
 RUN cd /app && yarn install --silent --no-progress
 RUN cd /app && yarn workspace @mailer/service build
 
-FROM node:14-alpine
+FROM node:alpine
 
 COPY --from=builder /app/backend/mailer/service/dist /app/dist
 COPY --from=builder /app/backend/mailer/service/package.json /app

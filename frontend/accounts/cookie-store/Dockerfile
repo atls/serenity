@@ -1,10 +1,10 @@
-FROM node:12-alpine as builder
+FROM node:alpine as builder
 
 ADD . /app
 RUN cd /app && yarn install --silent --no-progress
 RUN cd /app/frontend/accounts/cookie-store && yarn run build
 
-FROM node:12-alpine
+FROM node:alpine
 
 COPY --from=builder /app/frontend/accounts/cookie-store/dist /app/dist
 COPY --from=builder /app/frontend/accounts/cookie-store/package.json /app
