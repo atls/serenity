@@ -15,7 +15,7 @@ services:
         ipv4_address: 172.16.101.99
 
   yarn:
-    image: node:12-alpine
+    image: node:alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -65,6 +65,12 @@ services:
     networks:
       - default
       - traefik
+
+  db:
+    image: bitnami/postgresql
+    environment:
+      - POSTGRESQL_PASSWORD=password
+      - POSTGRESQL_DATABASE=db
 
   hydra-migrate:
     image: oryd/hydra:latest
@@ -143,7 +149,7 @@ services:
       - traefik
 
   accounts:
-    image: node:12-alpine
+    image: node:alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -189,25 +195,8 @@ services:
     depends_on:
       - redis
 
-  db:
-    image: bitnami/postgresql
-    environment:
-      - POSTGRESQL_PASSWORD=password
-      - POSTGRESQL_DATABASE=db
-
-  identity-service:
-    image: node:12-alpine
-    working_dir: /workspace
-    volumes:
-      - ./:/workspace
-      - modules:/workspace/node_modules
-    entrypoint: yarn identity:dev
-    depends_on:
-      - rabbitmq
-      - db
-
   private-gateway:
-    image: node:12-alpine
+    image: node:alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -217,6 +206,30 @@ services:
       - 'traefik.frontend.rule=Host:private-gateway.serenity.local.aunited.dev'
       - 'traefik.protocol=http'
       - 'traefik.port=3000'
+
+  identity-service:
+    image: node:alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - modules:/workspace/node_modules
+    entrypoint: yarn identity:dev
+    depends_on:
+      - rabbitmq
+      - db
+
+  mailer-service:
+    image: node:alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - modules:/workspace/node_modules
+    entrypoint: yarn mailer:dev
+    depends_on:
+      - rabbitmq
+      - mailhog
+      - redis
+      - db
 
 volumes:
   modules:
