@@ -1,4 +1,4 @@
-import Hydra from '@oryd/hydra-client'
+import * as Hydra from '@oryd/hydra-client'
 
 export const signout = async (req, res) => {
   const hydra = new Hydra.AdminApi('http://hydra:4445')
