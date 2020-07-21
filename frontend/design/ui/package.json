@@ -7,7 +7,7 @@
     "@types/styled-system": "5.1.4"
   },
   "dependencies": {
-    "@emotion/styled": "10.0.23",
+    "@emotion/styled": "10.0.27",
     "styled-system": "5.1.4"
   },
   "peerDependencies": {
