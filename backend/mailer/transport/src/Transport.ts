@@ -1,5 +1,6 @@
-import { Injectable }                                          from '@nestjs/common'
 import { Transporter as NodemailerTransport, createTransport } from 'nodemailer'
+
+import { Injectable }                                          from '@nestjs/common'
 
 @Injectable()
 export class Transport {

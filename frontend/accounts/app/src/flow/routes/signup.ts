@@ -1,4 +1,4 @@
-import Hydra       from '@oryd/hydra-client'
+import * as Hydra  from '@oryd/hydra-client'
 import originalUrl from 'original-url'
 import { format }  from 'url'
 

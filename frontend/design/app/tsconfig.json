@@ -1,4 +1,4 @@
 {
-  "extends": "@monstrs/tsconfig/tsconfig.service.json",
+  "extends": "@atlantis-lab/tsconfig/tsconfig.service.json",
   "include": ["src"]
 }

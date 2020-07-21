@@ -1,5 +1,6 @@
-import styled                     from '@emotion/styled'
 import { flexbox, layout, space } from 'styled-system'
+
+import styled                     from '@emotion/styled'
 
 export const Column = styled.div(layout, space, flexbox)
 

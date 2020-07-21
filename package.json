@@ -11,9 +11,11 @@
     "cookie-store:dev": "yarn workspace @accounts/cookie-store dev",
     "identity:dev": "yarn workspace @identity/service dev",
     "mailer:dev": "yarn workspace @mailer/service dev",
-    "private-gateway:dev": "yarn workspace @private-gateway/app dev"
+    "private-gateway:dev": "yarn workspace @private-gateway/app dev",
+    "email:dev": "yarn workspace @email/app dev"
   },
   "devDependencies": {
+    "@atlantis-lab/tsconfig": "0.0.21",
     "@monstrs/mctl": "0.1.82",
     "husky": "4.2.5",
     "lerna": "3.22.1",

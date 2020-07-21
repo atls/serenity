@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @ui/theme
 
-
-
-
-
 ## 0.0.2 (2020-06-10)
 
 **Note:** Version bump only for package @ui/theme

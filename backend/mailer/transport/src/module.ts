@@ -1,4 +1,5 @@
 import AWS           from 'aws-sdk'
+
 import { Module }    from '@nestjs/common'
 
 import { Transport } from './Transport'

@@ -15,7 +15,7 @@ services:
         ipv4_address: 172.16.101.99
 
   yarn:
-    image: node:alpine
+    image: node:13.7-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -149,7 +149,7 @@ services:
       - traefik
 
   accounts:
-    image: node:alpine
+    image: node:13.7-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -178,7 +178,7 @@ services:
       - 'sso.serenity.local.aunited.dev:172.16.101.99'
 
   cookie-store:
-    image: node:alpine
+    image: node:13.7-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -195,8 +195,31 @@ services:
     depends_on:
       - redis
 
+  email:
+    image: node:13.7-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - modules:/workspace/node_modules
+    entrypoint: yarn email:dev
+    environment:
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+      - NODE_ICU_DATA=/workspace/node_modules/full-icu
+      - PUBLIC_GATEWAY_URL=${PUBLIC_GATEWAY_URL}
+      - WEB_VERSION_URL=https://email.serenity.local.aunited.dev/s
+      - ACCOUNTS_URL=https://accounts.serenity.local.aunited.dev
+    labels:
+      - 'traefik.frontend.rule=Host:email.serenity.local.aunited.dev'
+      - 'traefik.protocol=http'
+      - 'traefik.port=3000'
+    depends_on:
+      - traefik
+    networks:
+      - default
+      - traefik
+
   private-gateway:
-    image: node:alpine
+    image: node:13.7-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -208,7 +231,7 @@ services:
       - 'traefik.port=3000'
 
   identity-service:
-    image: node:alpine
+    image: node:13.7-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -219,7 +242,7 @@ services:
       - db
 
   mailer-service:
-    image: node:alpine
+    image: node:13.7-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
