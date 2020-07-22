@@ -1,6 +1,5 @@
-import { color, flexbox, layout, position, space, system } from 'styled-system'
-
 import styled                                              from '@emotion/styled'
+import { color, flexbox, layout, position, space, system } from 'styled-system'
 
 const boxSizing = system({
   boxSizing: true,

@@ -1,7 +1,6 @@
 import React                                from 'react'
-import { border, boxShadow, color, layout } from 'styled-system'
-
 import styled                               from '@emotion/styled'
+import { border, boxShadow, color, layout } from 'styled-system'
 
 import { Container }                        from './Container'
 import { Text }                             from './Text'

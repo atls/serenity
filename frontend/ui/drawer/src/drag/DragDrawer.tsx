@@ -1,3 +1,4 @@
+import styled                          from '@emotion/styled'
 import document                        from 'global/document'
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/static-property-placement */
@@ -7,8 +8,6 @@ import React, { Component }            from 'react'
 import ScrollLock, { TouchScrollable } from 'react-scrolllock'
 import { Motion, spring }              from 'react-motion'
 import { createPortal }                from 'react-dom'
-
-import styled                          from '@emotion/styled'
 
 import {
   isClientSide,
