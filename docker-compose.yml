@@ -73,21 +73,21 @@ services:
       - POSTGRESQL_DATABASE=db
 
   hydra-migrate:
-    image: oryd/hydra:latest
+    image: oryd/hydra:v1.6.0
     environment:
       - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
     command: migrate sql -e --yes
     restart: on-failure
 
   oathkeeper-migrate:
-    image: oryd/oathkeeper:v0.19
+    image: oryd/oathkeeper:v0.38.2-beta.1
     environment:
       - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
-    command: help
+    command: migrate sql -e --yes
     restart: on-failure
 
   hydra-configure:
-    image: oryd/hydra:latest
+    image: oryd/hydra:v1.6.0
     environment:
       - HYDRA_ADMIN_URL=http://hydra:4445
     volumes:
@@ -96,10 +96,10 @@ services:
     restart: on-failure
 
   hydra:
-    image: oryd/hydra:latest
+    image: oryd/hydra:v1.6.0
     command: serve all --skip-tls-verify --dangerous-force-http
     environment:
-      - LOG_LEVEL=debug
+      - LOG_LEVEL=trace
       - URLS_SELF_ISSUER=https://sso.serenity.local.aunited.dev
       - URLS_CONSENT=https://accounts.serenity.local.aunited.dev/consent
       - URLS_LOGIN=https://accounts.serenity.local.aunited.dev/
@@ -107,8 +107,8 @@ services:
       - URLS_POST_LOGOUT_REDIRECT=https://accounts.serenity.local.aunited.dev/signout/complete
       - URL_POST_LOGOUT_REDIRECT=https://accounts.serenity.local.aunited.dev/signout
       - SECRETS_SYSTEM=supersecretvalue
-      - OIDC_SUBJECT_TYPE_PAIRWISE_SALT=supersecretvalue
-      - OIDC_SUBJECT_TYPES_SUPPORTED=public,pairwise
+      - OIDC_SUBJECT_IDENTIFIERS_PAIRWISE_SALT=supersecretvalue
+      - OIDC_SUBJECT_IDENTIFIERS_ENABLED=public,pairwise
       - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
     restart: unless-stopped
     labels:
@@ -125,7 +125,7 @@ services:
       - traefik
 
   oathkeeper:
-    image: oryd/oathkeeper:v0.19
+    image: oryd/oathkeeper:v0.38.2-beta.1
     command: serve serve --config /config/oathkeeper/config.yaml
     volumes:
       - ./config/ory:/config
