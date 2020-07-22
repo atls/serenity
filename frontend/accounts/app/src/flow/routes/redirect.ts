@@ -1,11 +1,10 @@
-import * as Hydra         from '@oryd/hydra-client'
 import querystring        from 'querystring'
 import { format, parse }  from 'url'
 
 import { getRedirectUrl } from '../utils'
 
 export const redirect = async (req, res) => {
-  const hydra = new Hydra.AdminApi('http://hydra:4445')
+  const { hydra } = req
 
   if (req.user) {
     res.redirect(getRedirectUrl(req))

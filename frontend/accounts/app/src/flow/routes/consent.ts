@@ -1,9 +1,6 @@
-import * as Hydra from '@oryd/hydra-client'
-
 export const consent = async (req, res) => {
   const { consent_challenge: consentChallenge } = req.query
-
-  const hydra = new Hydra.AdminApi('http://hydra:4445')
+  const { hydra } = req
 
   hydra.getConsentRequest(consentChallenge).then(({ body }) => {
     if (body.skip) {

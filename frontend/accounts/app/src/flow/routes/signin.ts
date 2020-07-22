@@ -1,7 +1,5 @@
-import * as Hydra from '@oryd/hydra-client'
-
 export const signin = identify => async (req, res) => {
-  const hydra = new Hydra.AdminApi('http://hydra:4445')
+  const { hydra } = req
 
   const result: any = await identify(req.body)
 

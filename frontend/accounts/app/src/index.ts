@@ -1,3 +1,4 @@
+import * as Hydra   from '@oryd/hydra-client'
 import connectRedis from 'connect-redis'
 import express      from 'express'
 import session      from 'express-session'
@@ -19,6 +20,10 @@ const bootstrap = async () => {
   await app.prepare()
 
   const server = express()
+
+  server.use((req, res, next) => {
+    req['hydra'] = new Hydra.AdminApi(process.env.HYDRA_ADMIN_URL || 'http://hydra:4445')
+  })
 
   server.use(
     session({

@@ -1,9 +1,8 @@
-import * as Hydra  from '@oryd/hydra-client'
 import originalUrl from 'original-url'
 import { format }  from 'url'
 
 export const signup = register => async (req, res) => {
-  const hydra = new Hydra.AdminApi('http://hydra:4445')
+  const { hydra } = req
 
   const result: any = await register(req.body)
 
