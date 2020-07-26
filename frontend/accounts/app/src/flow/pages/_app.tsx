@@ -1,11 +1,11 @@
 import App                                   from 'next/app'
 import React                                 from 'react'
 import compose                               from 'recompose/compose'
+
+import { ThemeProvider, injectGlobalStyles } from '@ui/theme'
 import { withEmotion }                       from '@atlantis-lab/next-app-with-emotion'
 import { withHelmet }                        from '@atlantis-lab/next-app-with-helmet'
 import { withIntl }                          from '@atlantis-lab/next-app-with-intl'
-
-import { ThemeProvider, injectGlobalStyles } from '@ui/theme'
 
 class AccountsApp extends App {
   static async getInitialProps({ Component, ctx }: any): Promise<any> {

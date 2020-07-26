@@ -15,7 +15,7 @@ services:
         ipv4_address: 172.16.101.99
 
   yarn:
-    image: node:14-alpine
+    image: node:13.7-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -66,22 +66,21 @@ services:
       - default
       - traefik
 
-  hydra-migrate:
-    image: oryd/hydra:latest
+  db:
+    image: bitnami/postgresql
     environment:
-      - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
-    command: migrate sql -e --yes
-    restart: on-failure
+      - POSTGRESQL_PASSWORD=password
+      - POSTGRESQL_DATABASE=db
 
-  oathkeeper-migrate:
-    image: oryd/oathkeeper:v0.38.2-beta.1
+  hydra-migrate:
+    image: oryd/hydra:v1.6.0
     environment:
       - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
     command: migrate sql -e --yes
     restart: on-failure
 
   hydra-configure:
-    image: oryd/hydra:latest
+    image: oryd/hydra:v1.6.0
     environment:
       - HYDRA_ADMIN_URL=http://hydra:4445
     volumes:
@@ -90,10 +89,10 @@ services:
     restart: on-failure
 
   hydra:
-    image: oryd/hydra:latest
+    image: oryd/hydra:v1.6.0
     command: serve all --skip-tls-verify --dangerous-force-http
     environment:
-      - LOG_LEVEL=debug
+      - LOG_LEVEL=trace
       - URLS_SELF_ISSUER=https://sso.serenity.local.aunited.dev
       - URLS_CONSENT=https://accounts.serenity.local.aunited.dev/consent
       - URLS_LOGIN=https://accounts.serenity.local.aunited.dev/
@@ -101,8 +100,8 @@ services:
       - URLS_POST_LOGOUT_REDIRECT=https://accounts.serenity.local.aunited.dev/signout/complete
       - URL_POST_LOGOUT_REDIRECT=https://accounts.serenity.local.aunited.dev/signout
       - SECRETS_SYSTEM=supersecretvalue
-      - OIDC_SUBJECT_TYPE_PAIRWISE_SALT=supersecretvalue
-      - OIDC_SUBJECT_TYPES_SUPPORTED=public,pairwise
+      - OIDC_SUBJECT_IDENTIFIERS_PAIRWISE_SALT=supersecretvalue
+      - OIDC_SUBJECT_IDENTIFIERS_ENABLED=public,pairwise
       - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
     restart: unless-stopped
     labels:
@@ -143,7 +142,7 @@ services:
       - traefik
 
   accounts:
-    image: node:14-alpine
+    image: node:13.7-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -172,7 +171,7 @@ services:
       - 'sso.serenity.local.aunited.dev:172.16.101.99'
 
   cookie-store:
-    image: node:alpine
+    image: node:13.7-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -189,25 +188,31 @@ services:
     depends_on:
       - redis
 
-  db:
-    image: postgres:11-alpine
-    environment:
-      - POSTGRESQL_PASSWORD=password
-      - POSTGRESQL_DATABASE=db
-
-  identity-service:
-    image: node:14-alpine
+  email:
+    image: node:13.7-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn identity:dev
+    entrypoint: yarn email:dev
+    environment:
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+      - NODE_ICU_DATA=/workspace/node_modules/full-icu
+      - PUBLIC_GATEWAY_URL=${PUBLIC_GATEWAY_URL}
+      - WEB_VERSION_URL=https://email.serenity.local.aunited.dev/s
+      - ACCOUNTS_URL=https://accounts.serenity.local.aunited.dev
+    labels:
+      - 'traefik.frontend.rule=Host:email.serenity.local.aunited.dev'
+      - 'traefik.protocol=http'
+      - 'traefik.port=3000'
     depends_on:
-      - rabbitmq
-      - db
+      - traefik
+    networks:
+      - default
+      - traefik
 
   private-gateway:
-    image: node:14-alpine
+    image: node:13.7-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -217,6 +222,30 @@ services:
       - 'traefik.frontend.rule=Host:private-gateway.serenity.local.aunited.dev'
       - 'traefik.protocol=http'
       - 'traefik.port=3000'
+
+  identity-service:
+    image: node:13.7-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - modules:/workspace/node_modules
+    entrypoint: yarn identity:dev
+    depends_on:
+      - rabbitmq
+      - db
+
+  mailer-service:
+    image: node:13.7-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - modules:/workspace/node_modules
+    entrypoint: yarn mailer:dev
+    depends_on:
+      - rabbitmq
+      - mailhog
+      - redis
+      - db
 
 volumes:
   modules:

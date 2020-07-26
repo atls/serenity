@@ -1,3 +1,4 @@
+import * as Hydra   from '@oryd/hydra-client'
 import connectRedis from 'connect-redis'
 import express      from 'express'
 import session      from 'express-session'
@@ -33,6 +34,13 @@ const bootstrap = async () => {
       }),
     })
   )
+
+  server.use((req, res, next) => {
+    // eslint-disable-next-line dot-notation
+    req['hydra'] = new Hydra.AdminApi(process.env.HYDRA_ADMIN_URL || 'http://hydra:4445')
+
+    next()
+  })
 
   server.use(flow(actions))
 

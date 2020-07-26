@@ -1,8 +1,8 @@
 import React                                                  from 'react'
-import { select, text, withKnobs }                            from '@storybook/addon-knobs'
 import { colors, fontSizes, fontWeights, fonts, lineHeights } from '@ui/theme/src/theme'
 
 import { Column, Layout }                                     from '@design/ui'
+import { select, text, withKnobs }                            from '@storybook/addon-knobs'
 
 import { Text }                                               from '../Text'
 

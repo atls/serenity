@@ -5,18 +5,12 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # 0.2.0 (2020-06-30)
 
-
 ### Features
 
-* **accounts:** signup page init ([0a076f5](https://github.com/atlantisunited/serenity/commit/0a076f5fe60eb6cd005008c7bafdafb2b048627e))
-
-
-
-
+- **accounts:** signup page init ([0a076f5](https://github.com/atlantisunited/serenity/commit/0a076f5fe60eb6cd005008c7bafdafb2b048627e))
 
 # 0.1.0 (2020-06-10)
 
-
 ### Features
 
-* **accounts:** signup page init ([0a076f5](https://github.com/atlantisunited/serenity/commit/0a076f5fe60eb6cd005008c7bafdafb2b048627e))
+- **accounts:** signup page init ([0a076f5](https://github.com/atlantisunited/serenity/commit/0a076f5fe60eb6cd005008c7bafdafb2b048627e))

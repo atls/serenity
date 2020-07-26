@@ -11,6 +11,6 @@
     "styled-system": "5.1.4"
   },
   "peerDependencies": {
-    "react": "^16.9.0"
+    "react": "16.13.1"
   }
 }

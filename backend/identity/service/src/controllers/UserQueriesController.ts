@@ -1,7 +1,7 @@
-import { Controller }         from '@nestjs/common'
 import { GrpcMethod }         from '@nestjs/microservices'
 
 import { UserQueriesService } from '@identity/application'
+import { Controller }         from '@nestjs/common'
 
 @Controller()
 export class UserQueriesController {

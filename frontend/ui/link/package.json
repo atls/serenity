@@ -10,7 +10,7 @@
   "peerDependencies": {
     "@emotion/styled": "^10.0.0",
     "next": "^9.0.5",
-    "react": "^16.9.0",
+    "react": "16.13.1",
     "styled-tools": "^1.7.0"
   }
 }

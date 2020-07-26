@@ -3,5 +3,5 @@ import { create } from '@storybook/theming'
 
 export default create({
   brandImage: require('./logo.svg'),
-  brandTitle: 'AVisits',
+  brandTitle: 'Atlantis',
 })

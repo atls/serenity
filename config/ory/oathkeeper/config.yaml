@@ -27,18 +27,20 @@ access_rules:
 authenticators:
   cookie_session:
     enabled: true
-    check_session_url: http://cookie-store:3000
-    only:
-      - connect.sid
+    config:
+      check_session_url: http://cookie-store:3000
+      only:
+        - connect.sid
 
   jwt:
     enabled: true
-    jwks_urls:
-      - file://config/oathkeeper/jwks.json
+    config:
+      jwks_urls:
+        - file://config/oathkeeper/jwks.json
 
-    # Sets the strategy to be used to validate/match the scope. Supports "hierarchic", "exact", "wildcard", "none". Defaults
-    # to "none".
-    scope_strategy: wildcard
+      # Sets the strategy to be used to validate/match the scope. Supports "hierarchic", "exact", "wildcard", "none". Defaults
+      # to "none".
+      scope_strategy: wildcard
 
   noop:
     enabled: true
@@ -56,12 +58,16 @@ authorizers:
 mutators:
   header:
     enabled: true
+    config:
+      headers:
+        X-User: '{{ print .Subject }}'
 
   id_token:
     enabled: true
-    issuer_url: http://oathkeeper:4455
-    jwks_url: file://config/oathkeeper/jwks.json
-    ttl: 99h
+    config:
+      issuer_url: http://oathkeeper:4455
+      jwks_url: file://config/oathkeeper/jwks.json
+      ttl: 99h
 
   noop:
     enabled: true

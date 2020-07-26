@@ -1,16 +1,19 @@
+import * as Hydra         from '@oryd/hydra-client'
 import querystring        from 'querystring'
-import { hydra }          from '@oryd/hydra-client'
 import { format, parse }  from 'url'
 
 import { getRedirectUrl } from '../utils'
 
 export const redirect = async (req, res) => {
+  const { hydra }: { hydra: Hydra.AdminApi } = req
   if (req.user) {
     res.redirect(getRedirectUrl(req))
   } else if (req.query.login_challenge) {
     let target = '/signin'
 
-    const { request_url: requestUrl } = await hydra.getLoginRequest(req.query.login_challenge)
+    const {
+      body: { requestUrl },
+    } = await hydra.getLoginRequest(req.query.login_challenge)
 
     if (requestUrl) {
       const { query } = parse(requestUrl)

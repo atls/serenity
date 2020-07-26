@@ -1,4 +1,4 @@
-import prettierConfig   from '@monstrs/prettier-config'
+import prettierConfig   from '@atlantis-lab/prettier-config'
 import svgr             from '@svgr/core'
 import camelcase        from 'camelcase'
 import fs               from 'fs-extra-promise'

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "../common/common.proto";
+
+package mailer;
+
+service MailerService {
+  rpc getSending (getSendingRequest) returns (Sending) {}
+}
+
+message Sending {
+  string id = 1;
+  string template = 2;
+  string payload = 3;
+}
+
+message getSendingRequest {
+  string id = 1;
+}

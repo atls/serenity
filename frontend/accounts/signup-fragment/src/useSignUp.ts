@@ -65,9 +65,11 @@ export const useSignUp = () => {
     if (body.errors) {
       dispatch({ type: 'SET_ERRORS', errors: body.errors })
     } else {
-      const { redirect_to } = body
+      const {
+        body: { redirectTo },
+      } = body
 
-      window.location.href = redirect_to
+      window.location.href = redirectTo
     }
   }, [state])
 

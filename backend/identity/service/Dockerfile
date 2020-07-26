@@ -1,10 +1,10 @@
-FROM node:13-alpine as builder
+FROM node:alpine as builder
 
 ADD . /app
 RUN cd /app && yarn install --silent --no-progress
 RUN cd /app && yarn workspace @identity/service build
 
-FROM node:13-alpine
+FROM node:alpine
 
 COPY --from=builder /app/backend/identity/service/dist /app/dist
 COPY --from=builder /app/backend/identity/service/package.json /app

@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '13.1'
+          node-version: '13.7'
 
       - name: Install
         run: yarn install

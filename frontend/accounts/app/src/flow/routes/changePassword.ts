@@ -1,9 +1,10 @@
+import * as Hydra  from '@oryd/hydra-client'
 import originalUrl from 'original-url'
-import hydra       from '@oryd/hydra-client'
 import { format }  from 'url'
 
 export const changePassword = action => async (req, res) => {
   const result: any = await action({ ...req.body, token: req.params.token })
+  const { hydra }: { hydra: Hydra.AdminApi } = req
 
   if (result.errors) {
     res.json(result)
@@ -11,10 +12,10 @@ export const changePassword = action => async (req, res) => {
     try {
       const challenge = req.query.login_challenge || req.session.login_challenge
 
-      const acceptLoginRequest = await new hydra.acceptLoginRequest(challenge, {
+      const acceptLoginRequest = await hydra.acceptLoginRequest(challenge, {
         subject: result.result.id,
         remember: true,
-        remember_for: 3600,
+        rememberFor: 3600,
         context: result.result,
       })
 

@@ -1,7 +1,7 @@
 import React                   from 'react'
+import { Input }               from '@ui/input'
 
 import { Button }              from '@ui/button'
-import { Input }               from '@ui/input'
 import { Box, Column, Layout } from '@ui/layout'
 import { Text }                from '@ui/text'
 

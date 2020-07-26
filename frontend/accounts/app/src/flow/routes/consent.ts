@@ -1,19 +1,20 @@
-import { hydra } from '@oryd/hydra-client'
+import * as Hydra from '@oryd/hydra-client'
 
 export const consent = async (req, res) => {
+  const { hydra }: { hydra: Hydra.AdminApi } = req
   const { consent_challenge: consentChallenge } = req.query
 
   const response = await hydra.getConsentRequest(consentChallenge)
 
   const acceptResponse = await hydra.acceptConsentRequest(consentChallenge, {
-    grant_access_token_audience: response.requested_access_token_audience,
-    grant_scope: response.requested_scope,
-    remember_for: 3600,
+    grantAccessTokenAudience: response.body.requestedAccessTokenAudience,
+    grantScope: response.body.requestedScope,
+    rememberFor: 3600,
     remember: true,
     session: {
-      access_token: response.context || {},
+      accessToken: response.body.context || {},
     },
   })
 
-  res.redirect(acceptResponse.redirect_to)
+  res.redirect(acceptResponse.body.redirectTo)
 }
