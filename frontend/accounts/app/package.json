@@ -13,7 +13,7 @@
   "dependencies": {
     "@atlantis-lab/next-config-with-workspaces": "^0.2.0",
     "@grpc/proto-loader": "0.5.5",
-    "@oryd/hydra-client": "1.4.10",
+    "@oryd/hydra-client": "1.6.0",
     "@protos/common": "0.2.0",
     "@protos/identity": "0.2.0",
     "body-parser": "1.19.0",

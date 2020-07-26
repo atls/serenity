@@ -3760,10 +3760,10 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@oryd/hydra-client@1.4.10":
-  version "1.4.10"
-  resolved "https://registry.yarnpkg.com/@oryd/hydra-client/-/hydra-client-1.4.10.tgz#007dce0367dcdff55607ee75c7cd27a0b9f52bf9"
-  integrity sha512-wNie8XjnGtTgIjmqhfPZv5L3skOcSKUSA/I0I3kCD41rW48NSIu66S0Awob7vOXRVyVSZWW7gdDfdLzttOMp8A==
+"@oryd/hydra-client@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@oryd/hydra-client/-/hydra-client-1.6.0.tgz#c1b27799653732de4e1ef6c79d74ca68b851a108"
+  integrity sha512-vVx+suhcCaGD2SdaFg2mCWUVXWHPgyeDMzaTRR5I8Lf55P1ix/SXdvDX7q0mK/DFiRaQTTNGJOTwkhDcCTO/vQ==
   dependencies:
     "@types/bluebird" "*"
     "@types/request" "*"
