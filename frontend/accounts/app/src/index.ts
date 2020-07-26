@@ -21,10 +21,6 @@ const bootstrap = async () => {
 
   const server = express()
 
-  server.use((req, res, next) => {
-    req['hydra'] = new Hydra.AdminApi(process.env.HYDRA_ADMIN_URL || 'http://hydra:4445')
-  })
-
   server.use(
     session({
       resave: false,
@@ -38,6 +34,13 @@ const bootstrap = async () => {
       }),
     })
   )
+
+  server.use((req, res, next) => {
+    // eslint-disable-next-line dot-notation
+    req['hydra'] = new Hydra.AdminApi(process.env.HYDRA_ADMIN_URL || 'http://hydra:4445')
+
+    next()
+  })
 
   server.use(flow(actions))
 

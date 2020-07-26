@@ -1,22 +1,20 @@
-export const consent = async (req, res) => {
-  const { consent_challenge: consentChallenge } = req.query
-  const { hydra } = req
+import * as Hydra from '@oryd/hydra-client'
 
-  hydra.getConsentRequest(consentChallenge).then(({ body }) => {
-    if (body.skip) {
-      return hydra
-        .acceptConsentRequest(consentChallenge, {
-          grantScope: body.requestedScope,
-          grantAccessTokenAudience: body.requestedAccessTokenAudience,
-          rememberFor: 3600,
-          remember: true,
-          session: {
-            accessToken: { ...body.context },
-          },
-        })
-        .then(({ body }) => {
-          res.redirect(body.redirectTo)
-        })
-    }
+export const consent = async (req, res) => {
+  const { hydra }: { hydra: Hydra.AdminApi } = req
+  const { consent_challenge: consentChallenge } = req.query
+
+  const response = await hydra.getConsentRequest(consentChallenge)
+
+  const acceptResponse = await hydra.acceptConsentRequest(consentChallenge, {
+    grantAccessTokenAudience: response.body.requestedAccessTokenAudience,
+    grantScope: response.body.requestedScope,
+    rememberFor: 3600,
+    remember: true,
+    session: {
+      accessToken: response.body.context || {},
+    },
   })
+
+  res.redirect(acceptResponse.body.redirectTo)
 }

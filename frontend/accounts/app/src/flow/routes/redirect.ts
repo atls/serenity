@@ -1,11 +1,11 @@
+import * as Hydra         from '@oryd/hydra-client'
 import querystring        from 'querystring'
 import { format, parse }  from 'url'
 
 import { getRedirectUrl } from '../utils'
 
 export const redirect = async (req, res) => {
-  const { hydra } = req
-
+  const { hydra }: { hydra: Hydra.AdminApi } = req
   if (req.user) {
     res.redirect(getRedirectUrl(req))
   } else if (req.query.login_challenge) {

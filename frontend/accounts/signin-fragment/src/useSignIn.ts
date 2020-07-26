@@ -25,6 +25,8 @@ const reducer = (state, action) => {
   return state
 }
 
+const redirectTo = (body: any) => body.body.redirectTo
+
 export const useSignIn = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
@@ -56,8 +58,8 @@ export const useSignIn = () => {
 
     if (body.errors) {
       dispatch({ type: 'SET_ERRORS', errors: body.errors })
-    } else if (body.redirect_to) {
-      window.location.href = body.redirect_to
+    } else if (redirectTo(body)) {
+      window.location.href = redirectTo(body)
     }
   }, [state])
 
