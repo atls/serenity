@@ -79,13 +79,6 @@ services:
     command: migrate sql -e --yes
     restart: on-failure
 
-  oathkeeper-migrate:
-    image: oryd/oathkeeper:v0.38.2-beta.1
-    environment:
-      - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
-    command: migrate sql -e --yes
-    restart: on-failure
-
   hydra-configure:
     image: oryd/hydra:v1.6.0
     environment:
