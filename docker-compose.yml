@@ -133,7 +133,6 @@ services:
       - 'traefik.private_gateway.frontend.rule=Host:private-gateway.serenity.local.aunited.dev'
       - 'traefik.port=4455'
     depends_on:
-      - oathkeeper-migrate
       - cookie-store
       - traefik
       - db

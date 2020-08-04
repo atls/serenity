@@ -1,5 +1,5 @@
-import { Bus }                from '@monstrs/nestjs-bus'
-import { Logger }             from '@monstrs/nestjs-logger'
+import { Bus }                from '@atlantis-lab/nestjs-bus'
+import { Logger }             from '@atlantis-lab/nestjs-logger'
 import { WriteRepository }    from '@node-ts/ddd'
 import { Connection }         from 'typeorm'
 

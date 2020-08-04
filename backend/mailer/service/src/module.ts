@@ -1,4 +1,4 @@
-import { BusModule }                                      from '@monstrs/nestjs-bus'
+import { BusModule }                                      from '@atlantis-lab/nestjs-bus'
 
 import { ApiModule }                                      from '@mailer/api'
 import { DbModule }                                       from '@mailer/db'

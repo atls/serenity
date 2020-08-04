@@ -1,4 +1,4 @@
-import { LoggerModule }        from '@monstrs/nestjs-logger'
+import { LoggerModule }        from '@atlantis-lab/nestjs-logger'
 import { TypeOrmModule }       from '@nestjs/typeorm'
 
 import { Global, Module }      from '@nestjs/common'
