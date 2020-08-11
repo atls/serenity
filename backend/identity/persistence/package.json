@@ -12,7 +12,7 @@
   "dependencies": {
     "@identity/domain": "0.2.0",
     "@monstrs/nestjs-bus": "0.1.4",
-    "@monstrs/nestjs-logger": "0.1.2",
+    "@monstrs/nestjs-logger": "0.1.4",
     "@nestjs/common": "6.10.5",
     "@nestjs/typeorm": "6.2.0",
     "@node-ts/ddd": "0.1.4",
