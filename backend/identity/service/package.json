@@ -17,7 +17,7 @@
     "@identity/application": "0.2.0",
     "@identity/domain": "0.2.0",
     "@identity/persistence": "0.2.0",
-    "@monstrs/nestjs-bus": "0.1.4",
+    "@monstrs/nestjs-bus": "0.1.15",
     "@monstrs/nestjs-map-errors-interceptor": "0.1.0",
     "@nestjs/common": "6.10.5",
     "@nestjs/core": "6.10.5",

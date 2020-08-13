@@ -3437,15 +3437,16 @@
     "@oclif/plugin-plugins" "1.7.8"
     tslib "^1"
 
-"@monstrs/nestjs-bus@0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@monstrs/nestjs-bus/-/nestjs-bus-0.1.4.tgz#4eb480d496238c7bb60ede1c88b49df695b422c2"
-  integrity sha512-RhpHPhUnGLpK/4XgX5uCnT5YzCd6PVMfatCErLxzpqqOY0O7rko8K2U3Sjz8yQn5LhXjTpEmuJUuNgZ2vYOa3w==
+"@monstrs/nestjs-bus@0.1.15":
+  version "0.1.15"
+  resolved "https://registry.yarnpkg.com/@monstrs/nestjs-bus/-/nestjs-bus-0.1.15.tgz#c62607f38131a3a70ce994562cbd4cdcde73f2ac"
+  integrity sha512-+ytI+DlD9oXqY/Z+oXq+ADZmMTVVaKKbhZAYqu7L/Q4gQ4h3O41WMUVDXRyrwjmQCd2+qSvFMSIu4V3kaJBhSA==
   dependencies:
-    "@node-ts/bus-core" "^0.4.7"
-    "@node-ts/bus-messages" "^0.1.10"
-    "@node-ts/bus-rabbitmq" "^0.3.7"
+    "@node-ts/bus-core" "^0.5.2"
+    "@node-ts/bus-messages" "^0.2.2"
+    "@node-ts/bus-rabbitmq" "^0.5.1"
     "@node-ts/logger-core" "^0.1.0"
+    amqp-connection-manager "^3.2.0"
     amqplib "^0.5.5"
     inversify "^5.0.1"
 
@@ -3667,7 +3668,7 @@
   resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-9.5.1.tgz#fe257fafe1a7f1c0c6e818017fa65b5ee45c5eca"
   integrity sha512-A19z/E6f08RXfBRc2STQ+5qo7iSPif7mNcww9dZAVli3Idu4umGP5dbpL71Hz1vyRs1eMUEylXTpXsY2WzY07g==
 
-"@node-ts/bus-core@0.4.9", "@node-ts/bus-core@^0.4.7", "@node-ts/bus-core@^0.4.9":
+"@node-ts/bus-core@0.4.9", "@node-ts/bus-core@^0.4.9":
   version "0.4.9"
   resolved "https://registry.yarnpkg.com/@node-ts/bus-core/-/bus-core-0.4.9.tgz#222a4b158c6ac53955ba980ec0a53d893c5d06d6"
   integrity sha512-vUKJIXVkltpoiLcVmAU4fcYnJX7AR1z/oxRYBNnEcPf9MMBKYnr/SdWLADz+gDVo6CLMjqD/sJTQUJKjTPGukg==
@@ -3680,6 +3681,20 @@
     reflect-metadata "^0.1.13"
     serialize-error "^4.1.0"
     tslib "^1.9.3"
+
+"@node-ts/bus-core@^0.5.2", "@node-ts/bus-core@^0.5.9":
+  version "0.5.9"
+  resolved "https://registry.yarnpkg.com/@node-ts/bus-core/-/bus-core-0.5.9.tgz#1ace58f2ad1669354a3548a842005d3c660b84d3"
+  integrity sha512-LWWf2WA3yaBHKOfe0qaUievMQVLrIWjvF1Y5lRyp1ePmLvvnypmZmLBim4IH920tmfNWJDQ3CjGKYnvsPx1rgg==
+  dependencies:
+    "@node-ts/bus-messages" "^0.2.3"
+    "@types/node" "^12.12.37"
+    autobind-decorator "^2.4.0"
+    class-transformer "^0.2.3"
+    inversify "^5.0.1"
+    reflect-metadata "^0.1.13"
+    serialize-error "^4.1.0"
+    tslib "^1.11.1"
 
 "@node-ts/bus-messages@0.3.0":
   version "0.3.0"
@@ -3695,7 +3710,7 @@
   dependencies:
     tslib "^1.9.3"
 
-"@node-ts/bus-messages@^0.2.2":
+"@node-ts/bus-messages@^0.2.2", "@node-ts/bus-messages@^0.2.3":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@node-ts/bus-messages/-/bus-messages-0.2.3.tgz#93eea4832b30e46d8b7244b6b19e75d4c765c5ae"
   integrity sha512-Wx15syvIqajVOaXyPA28d1DfxxHgLuPJjpw+IQ8HfSi6L96bvp7QuRntWitE8ck6K5zAvjs8b1L21MXgD6dTtQ==
@@ -3713,13 +3728,13 @@
     tslib "^1.9.3"
     uuid "^3.3.2"
 
-"@node-ts/bus-rabbitmq@^0.3.7":
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/@node-ts/bus-rabbitmq/-/bus-rabbitmq-0.3.9.tgz#8097b687affd7fe49eaefd8d14334a2b84e03602"
-  integrity sha512-cIHKsZTXa9X4wfpky3uKflSgdwbcNGocteFp29p71szvtfFF7mbKicxBv6pm99J13PogrOEK/bZKyX+AR2kvug==
+"@node-ts/bus-rabbitmq@^0.5.1":
+  version "0.5.8"
+  resolved "https://registry.yarnpkg.com/@node-ts/bus-rabbitmq/-/bus-rabbitmq-0.5.8.tgz#aaeaa27cd5419792ce670187ce0a5da4a15d6132"
+  integrity sha512-lTTqpE/2dDZzSpWkDzg7VJqnLpVxhZwWuLuiEXLmnLbGhjUtdMtdLpS6NXfVeL+IkQDR/92r4xGodbk/bpb5MQ==
   dependencies:
-    "@node-ts/bus-core" "^0.4.9"
-    "@node-ts/bus-messages" "^0.1.10"
+    "@node-ts/bus-core" "^0.5.9"
+    "@node-ts/bus-messages" "^0.2.3"
     amqplib "^0.5.3"
     tslib "^1.9.3"
     uuid "^3.3.2"
@@ -5322,7 +5337,7 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.28.tgz#0e36d718a29355ee51cec83b42d921299200f6d9"
   integrity sha512-dzjES1Egb4c1a89C7lKwQh8pwjYmlOAG9dW1pBgxEk57tMrLnssOfEthz8kdkNaBd7lIqQx7APm5+mZ619IiCQ==
 
-"@types/node@^12.0.0", "@types/node@^12.6.2":
+"@types/node@^12.0.0", "@types/node@^12.12.37", "@types/node@^12.6.2":
   version "12.12.54"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.54.tgz#a4b58d8df3a4677b6c08bfbc94b7ad7a7a5f82d1"
   integrity sha512-ge4xZ3vSBornVYlDnk7yZ0gK6ChHf/CHB7Gl1I0Jhah8DDnEQqBzgohYG4FX4p81TNirSETOiSyn+y1r9/IR6w==
@@ -6237,6 +6252,13 @@ alphanum-sort@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
+
+amqp-connection-manager@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/amqp-connection-manager/-/amqp-connection-manager-3.2.0.tgz#83534360533a48183113f8213af0d230c7b8d461"
+  integrity sha512-CnxBqUXd6ft4DbGs8YXNp0hDZgWiDQAghxG6JRJuxGbGEQdAjsb4oRR9PWBqO5V/Gssp7lDKigXX+DtSczID2w==
+  dependencies:
+    promise-breaker "^5.0.0"
 
 amqplib@^0.5.3, amqplib@^0.5.5:
   version "0.5.6"
@@ -8403,7 +8425,7 @@ class-transformer@0.3.1:
   resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.3.1.tgz#ee681a5439ff2230fc57f5056412d3befa70d597"
   integrity sha512-cKFwohpJbuMovS8xVLmn8N2AUbAuc8pVo4zEfsUVo8qgECOogns1WVk/FkOZoxhOPTyTYFckuoH+13FO+MQ8GA==
 
-class-transformer@^0.2.0:
+class-transformer@^0.2.0, class-transformer@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.2.3.tgz#598c92ca71dcca73f91ccb875d74a3847ccfa32d"
   integrity sha512-qsP+0xoavpOlJHuYsQJsN58HXSl8Jvveo+T37rEvCEeRfMWoytAyR0Ua/YsFgpM6AZYZ/og2PJwArwzJl1aXtQ==
@@ -18146,6 +18168,11 @@ progress@^2.0.0:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
+promise-breaker@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/promise-breaker/-/promise-breaker-5.0.0.tgz#58e8541f1619554057da95a211794d7834d30c1d"
+  integrity sha512-mgsWQuG4kJ1dtO6e/QlNDLFtMkMzzecsC69aI5hlLEjGHFNpHrvGhFi4LiK5jg2SMQj74/diH+wZliL9LpGsyA==
+
 promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
@@ -21394,7 +21421,7 @@ tslib@>=1.9.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.1.tgz#410eb0d113e5b6356490eec749603725b021b43e"
   integrity sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==
 
-tslib@^1, tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
+tslib@^1, tslib@^1.10.0, tslib@^1.11.1, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
