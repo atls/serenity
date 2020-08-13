@@ -321,11 +321,6 @@
   resolved "https://registry.yarnpkg.com/@atlantis-lab/react-auth/-/react-auth-0.1.13.tgz#35c27291bf23da0e3893306f2f87ee33376c9f97"
   integrity sha512-q8a9e3c20wYAqxrUeRwOjewt6HXuDzEgEWKheqWoaUxds642ffJFHwrps7DQtTf3q82E/QhfJOAvrCNVqusIpg==
 
-"@atlantis-lab/react-locale@0.1.10":
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/react-locale/-/react-locale-0.1.10.tgz#ebf2de7e404f51d4a8163f04ef8093390b8a7765"
-  integrity sha512-mQJ9tNtRVWgEQVv5iWcbkHCD6jbX4QhnGH+oUTIpb++yUuCRcshaxfb09sEZLmZTns48EMa9sdo95XZAym6R+Q==
-
 "@atlantis-lab/react-locale@0.1.11", "@atlantis-lab/react-locale@^0.1.2":
   version "0.1.11"
   resolved "https://registry.yarnpkg.com/@atlantis-lab/react-locale/-/react-locale-0.1.11.tgz#d724335dc2a8e441b347fdc64e93273f9b39b67d"
