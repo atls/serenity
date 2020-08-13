@@ -326,10 +326,10 @@
   resolved "https://registry.yarnpkg.com/@atlantis-lab/react-locale/-/react-locale-0.1.11.tgz#d724335dc2a8e441b347fdc64e93273f9b39b67d"
   integrity sha512-YHCE33B78zOybSYLMfXmJbwlYOWY7nuavMpu7hSMzwnCRFNbaPTZol5VXZ2XM0jmV0/sY9IYd8JwQlHQN1pf8Q==
 
-"@atlantis-lab/react-modals@0.1.10":
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/react-modals/-/react-modals-0.1.10.tgz#debed446600f7beead510a04073a564e8889db8f"
-  integrity sha512-Od08Kw5e6TiGnGp91tb5rUmnVTNzFPyXW5LhOc9i/I7aye60RL9KtFEcAxHSi8mOt6Bdx1NB48b67hibq2vyQA==
+"@atlantis-lab/react-modals@0.1.12":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/react-modals/-/react-modals-0.1.12.tgz#b39c93cf83455af920cd952c82ba1bbfbdbcb75f"
+  integrity sha512-TDdOrcF6ECorTWx5lexitJeJNmRzzutskpPHVo2FTdY5qb8NIXliRzbFZ5wVYJNgZ3Bgy8KM6nw8J1QsmS2Oow==
 
 "@atlantis-lab/tsconfig@0.0.21":
   version "0.0.21"
