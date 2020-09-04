@@ -22,7 +22,7 @@
     "graphql-tools": "4.0.6",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3",
-    "type-graphql": "0.17.5"
+    "type-graphql": "1.0.0"
   },
   "devDependencies": {
     "@monstrs/server-scripts": "0.1.3",
