@@ -6,7 +6,7 @@
   "dependencies": {
     "@nestjs/common": "6.9.0",
     "@nestjs/graphql": "6.5.3",
-    "type-graphql": "0.17.5"
+    "type-graphql": "0.17.6"
   },
   "devDependencies": {
     "@types/node": "12.12.7",
