@@ -210,6 +210,16 @@ services:
       - default
       - traefik
 
+  public-gateway:
+    image: node:alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - modules:/workspace/node_modules
+    entrypoint: yarn public-gateway:dev
+    depends_on:
+      - oathkeeper
+
   private-gateway:
     image: node:13.7-alpine
     working_dir: /workspace
