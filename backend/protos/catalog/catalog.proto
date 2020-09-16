@@ -1,0 +1,141 @@
+syntax = "proto3";
+
+import "../common/common.proto";
+
+package catalog;
+
+service CatalogService {
+  rpc getCategoryGroups (GetCategoryGroupsRequest) returns (GetCategoryGroupsResponse) {}
+  rpc getCategories (GetCategoriesRequest) returns (GetCategoriesResponse) {}
+  rpc createCategoryGroup (CreateCategoryGroupRequest) returns (CreateCategoryGroupResponse) {}
+  rpc updateCategoryGroup (UpdateCategoryGroupRequest) returns (UpdateCategoryGroupResponse) {}
+  rpc deleteCategoryGroup (DeleteCategoryGroupRequest) returns (DeleteCategoryGroupResponse) {}
+  rpc createCategory (CreateCategoryRequest) returns (CreateCategoryResponse) {}
+  rpc updateCategory (UpdateCategoryRequest) returns (UpdateCategoryResponse) {}
+  rpc deleteCategory (DeleteCategoryRequest) returns (DeleteCategoryResponse) {}
+}
+
+message Category {
+  string id = 1;
+  string name = 2;
+}
+
+message CategoryGroup {
+  string id = 1;
+  string name = 2;
+  repeated Category children = 3;
+}
+
+message CategoryGroupsFilter {
+  repeated string id = 1;
+  string search = 2;
+}
+
+message GetCategoryGroupsRequest {
+  common.Pager pager = 1;
+  common.Order order = 2;
+  CategoryGroupsFilter filters = 3;
+}
+
+message GetCategoryGroupsResponse {
+  repeated CategoryGroup rows = 1;
+  common.PageInfo pageInfo = 2;
+}
+
+message CategoriesFilter {
+  repeated string id = 1;
+  string search = 2;
+}
+
+message GetCategoriesRequest {
+  common.Pager pager = 1;
+  common.Order order = 2;
+  CategoriesFilter filters = 3;
+}
+
+message GetCategoriesResponse {
+  repeated Category rows = 1;
+  common.PageInfo pageInfo = 2;
+}
+
+message CreateCategoryGroupRequest {
+  string name = 1;
+}
+
+message CreateCategoryGroupErrors {
+  string name = 1;
+}
+
+message CreateCategoryGroupResponse {
+  CreateCategoryGroupErrors errors = 1;
+  CategoryGroup result = 2;
+}
+
+message UpdateCategoryGroupRequest {
+  string id = 1;
+  string name = 2;
+}
+
+message UpdateCategoryGroupErrors {
+  string id = 1;
+  string name = 2;
+}
+
+message UpdateCategoryGroupResponse {
+  UpdateCategoryGroupErrors errors = 1;
+  CategoryGroup result = 2;
+}
+
+message DeleteCategoryGroupRequest {
+  string id = 1;
+}
+
+message DeleteCategoryGroupErrors {
+  string id = 1;
+}
+
+message DeleteCategoryGroupResponse {
+  DeleteCategoryGroupErrors errors = 1;
+}
+
+message CreateCategoryRequest {
+  string name = 1;
+  string groupId = 2;
+}
+
+message CreateCategoryErrors {
+  string name = 1;
+  string groupId = 2;
+}
+
+message CreateCategoryResponse {
+  CreateCategoryErrors errors = 1;
+  Category result = 2;
+}
+
+message UpdateCategoryRequest {
+  string id = 1;
+  string name = 2;
+}
+
+message UpdateCategoryErrors {
+  string id = 1;
+  string name = 2;
+}
+
+message UpdateCategoryResponse {
+  UpdateCategoryErrors errors = 1;
+  Category result = 2;
+}
+
+message DeleteCategoryRequest {
+  string id = 1;
+}
+
+message DeleteCategoryErrors {
+  string id = 1;
+}
+
+message DeleteCategoryResponse {
+  DeleteCategoryErrors errors = 1;
+}

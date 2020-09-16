@@ -222,6 +222,18 @@ services:
       - 'traefik.protocol=http'
       - 'traefik.port=3000'
 
+  catalog-service:
+    image: node:alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - modules:/workspace/node_modules
+    entrypoint: yarn catalog:dev
+    depends_on:
+      - rabbitmq
+      - redis
+      - db
+
   identity-service:
     image: node:13.7-alpine
     working_dir: /workspace
