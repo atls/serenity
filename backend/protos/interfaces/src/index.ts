@@ -858,3 +858,143 @@ export namespace identity {
     result?: identity.Profile | null
   }
 }
+
+/** Namespace files. */
+export namespace files {
+  /** Contains all the RPC service clients. */
+  export interface ClientFactory {
+    /**
+     * Returns the FilesService service client.
+     */
+    getFilesService(): files.FilesService
+  }
+
+  /** Builder for an RPC service server. */
+  export interface ServerBuilder {
+    /**
+     * Adds a FilesService service implementation.
+     * @param impl FilesService service implementation
+     */
+    addFilesService(impl: files.FilesService): files.ServerBuilder
+  }
+
+  /** Constructs a new FilesService service. */
+  export interface FilesService {
+    /**
+     * Calls getFiles.
+     * @param request GetFilesRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    getFiles(
+      request: files.GetFilesRequest,
+      metadata?: grpc.Metadata
+    ): Observable<files.GetFilesResponse>
+
+    /**
+     * Calls createUpload.
+     * @param request CreateUploadRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    createUpload(
+      request: files.CreateUploadRequest,
+      metadata?: grpc.Metadata
+    ): Observable<files.CreateUploadResponse>
+
+    /**
+     * Calls confirmUpload.
+     * @param request ConfirmUploadRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    confirmUpload(
+      request: files.ConfirmUploadRequest,
+      metadata?: grpc.Metadata
+    ): Observable<files.ConfirmUploadResponse>
+  }
+
+  /** Properties of a FilesFilter. */
+  export interface FilesFilter {
+    /** FilesFilter id */
+    id?: string[] | null
+  }
+
+  /** Properties of a File. */
+  export interface File {
+    /** File id */
+    id?: string | null
+
+    /** File url */
+    url?: string | null
+  }
+
+  /** Properties of an UploadField. */
+  export interface UploadField {
+    /** UploadField key */
+    key?: string | null
+
+    /** UploadField value */
+    value?: string | null
+  }
+
+  /** Properties of an Upload. */
+  export interface Upload {
+    /** Upload id */
+    id?: string | null
+
+    /** Upload url */
+    url?: string | null
+
+    /** Upload fields */
+    fields?: files.UploadField[] | null
+  }
+
+  /** Properties of a CreateUploadRequest. */
+  export interface CreateUploadRequest {
+    /** CreateUploadRequest type */
+    type?: string | null
+
+    /** CreateUploadRequest name */
+    name?: string | null
+  }
+
+  /** Properties of a CreateUploadResponse. */
+  export interface CreateUploadResponse {
+    /** CreateUploadResponse result */
+    result?: files.Upload | null
+  }
+
+  /** Properties of a ConfirmUploadRequest. */
+  export interface ConfirmUploadRequest {
+    /** ConfirmUploadRequest id */
+    id?: string | null
+  }
+
+  /** Properties of a ConfirmUploadResponse. */
+  export interface ConfirmUploadResponse {
+    /** ConfirmUploadResponse result */
+    result?: files.File | null
+  }
+
+  /** Properties of a GetFilesRequest. */
+  export interface GetFilesRequest {
+    /** GetFilesRequest pager */
+    pager?: common.Pager | null
+
+    /** GetFilesRequest order */
+    order?: common.Order | null
+
+    /** GetFilesRequest filters */
+    filters?: files.FilesFilter | null
+  }
+
+  /** Properties of a GetFilesResponse. */
+  export interface GetFilesResponse {
+    /** GetFilesResponse rows */
+    rows?: files.File[] | null
+
+    /** GetFilesResponse pageInfo */
+    pageInfo?: common.PageInfo | null
+  }
+}
