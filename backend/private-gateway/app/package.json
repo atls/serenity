@@ -1,6 +1,6 @@
 {
   "name": "@private-gateway/app",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
@@ -14,7 +14,7 @@
     "@nestjs/core": "6.10.5",
     "@nestjs/graphql": "6.5.3",
     "@nestjs/platform-express": "6.10.5",
-    "@private-gateway/catalog": "0.0.0",
+    "@private-gateway/catalog": "0.1.0",
     "apollo-server-express": "2.14.3",
     "class-transformer": "0.3.1",
     "dataloader": "2.0.0",

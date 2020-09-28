@@ -1,6 +1,6 @@
 {
   "name": "@files/service",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
@@ -13,15 +13,15 @@
     "@types/node": "12.12.14"
   },
   "dependencies": {
-    "@files/application": "0.0.0",
-    "@files/persistence": "0.0.0",
+    "@files/application": "0.0.1",
+    "@files/persistence": "0.0.1",
     "@grpc/proto-loader": "0.5.3",
     "@monstrs/nestjs-bus": "0.1.4",
     "@monstrs/nestjs-map-errors-interceptor": "0.1.0",
     "@nestjs/common": "6.10.5",
     "@nestjs/core": "6.10.5",
     "@nestjs/microservices": "6.10.5",
-    "@protos/files": "0.0.0",
+    "@protos/files": "0.0.1",
     "grpc": "1.24.2",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3",

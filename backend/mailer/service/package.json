@@ -1,6 +1,6 @@
 {
   "name": "@mailer/service",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
@@ -13,18 +13,18 @@
     "@types/node": "12.12.14"
   },
   "dependencies": {
-    "@grpc/proto-loader": "0.5.3",
-    "@identity/domain": "0.2.0",
-    "@mailer/api": "0.0.0",
-    "@mailer/db": "0.0.0",
-    "@mailer/renderer": "0.0.0",
-    "@mailer/transport": "0.0.0",
     "@atlantis-lab/nestjs-bus": "0.1.6",
+    "@grpc/proto-loader": "0.5.3",
+    "@identity/domain": "0.3.0",
+    "@mailer/api": "0.1.0",
+    "@mailer/db": "0.1.0",
+    "@mailer/renderer": "0.1.0",
+    "@mailer/transport": "0.1.0",
     "@nestjs/common": "6.10.5",
     "@nestjs/core": "6.10.5",
     "@nestjs/typeorm": "6.2.0",
     "@node-ts/bus-core": "0.4.9",
-    "@protos/mailer": "0.0.0",
+    "@protos/mailer": "0.1.0",
     "class-validator": "0.11.0",
     "grpc": "1.24.2",
     "reflect-metadata": "0.1.13",

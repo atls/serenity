@@ -1,6 +1,6 @@
 {
   "name": "@accounts/app",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
@@ -14,11 +14,12 @@
     "@atlantis-lab/next-config-with-workspaces": "^0.2.0",
     "@grpc/proto-loader": "0.5.5",
     "@oryd/hydra-client": "1.6.0",
-    "@protos/common": "0.2.0",
-    "@protos/identity": "0.2.0",
+    "@protos/common": "0.3.0",
+    "@protos/identity": "0.3.0",
     "body-parser": "1.19.0",
     "connect-redis": "3.4.2",
     "cookie-parser": "1.4.4",
+    "emotion-server": "^10.0.27",
     "express": "^4.17.1",
     "express-session": "1.17.0",
     "grpc": "1.24.2",
@@ -29,8 +30,7 @@
     "original-url": "1.2.3",
     "passport": "0.4.0",
     "passport-oauth2": "1.5.0",
-    "passport-oauth2-refresh": "1.1.0",
-    "emotion-server": "^10.0.27"
+    "passport-oauth2-refresh": "1.1.0"
   },
   "devDependencies": {
     "@atlantis-lab/next-app-with-emotion": "0.2.5",
@@ -43,7 +43,7 @@
     "@types/passport": "1.0.4",
     "@types/react": "16.9.43",
     "@types/react-dom": "16.9.8",
-    "@ui/theme": "0.0.3",
+    "@ui/theme": "0.0.4",
     "nodemon": "1.19.4",
     "react": "16.13.1",
     "react-apollo": "3.1.5",
