@@ -1,10 +1,10 @@
 {
   "name": "@protos/files",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "src/index.ts",
   "license": "MIT",
   "dependencies": {
     "@nestjs/microservices": "6.10.5",
-    "@protos/common": "0.2.0"
+    "@protos/common": "0.3.0"
   }
 }

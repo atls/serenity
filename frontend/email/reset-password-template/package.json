@@ -1,8 +1,7 @@
 {
   "name": "@email/reset-password-template",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
-  "private": true,
   "main": "src/index.tsx",
   "dependencies": {
     "mjml": "4.5.1",

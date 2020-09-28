@@ -1,11 +1,11 @@
 {
   "name": "@files/application",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",
   "devDependencies": {
-    "@files/domain": "0.0.0",
-    "@files/persistence": "0.0.0",
+    "@files/domain": "0.0.1",
+    "@files/persistence": "0.0.1",
     "@google-cloud/storage": "4.3.1",
     "@monstrs/nestjs-map-errors-interceptor": "0.1.0",
     "@monstrs/nestjs-signed-url": "0.1.3",

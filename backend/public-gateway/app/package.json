@@ -1,6 +1,6 @@
 {
   "name": "@public-gateway/app",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
@@ -16,10 +16,10 @@
     "@nestjs/graphql": "6.5.3",
     "@nestjs/microservices": "6.10.5",
     "@nestjs/platform-express": "6.10.5",
-    "@protos/interfaces": "0.0.0",
-    "@public-gateway/catalog": "0.0.0",
-    "@public-gateway/files": "0.0.0",
-    "@public-gateway/identity": "0.0.0",
+    "@protos/interfaces": "0.1.0",
+    "@public-gateway/catalog": "0.1.0",
+    "@public-gateway/files": "0.0.1",
+    "@public-gateway/identity": "0.1.0",
     "apollo-server-express": "2.9.12",
     "dataloader": "2.0.0",
     "graphql": "14.5.8",

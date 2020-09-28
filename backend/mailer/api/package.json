@@ -1,10 +1,10 @@
 {
   "name": "@mailer/api",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "src/index.ts",
   "devDependencies": {
-    "@mailer/db": "0.0.0",
+    "@mailer/db": "0.1.0",
     "@nestjs/common": "6.10.5",
     "@nestjs/core": "6.10.5",
     "@nestjs/microservices": "6.10.5",

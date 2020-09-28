@@ -1,14 +1,14 @@
 {
   "name": "@private-gateway/catalog",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "src/index.ts",
   "dependencies": {
     "@nestjs/common": "6.10.5",
     "@nestjs/graphql": "6.5.3",
     "@nestjs/microservices": "6.10.5",
-    "@protos/catalog": "0.0.0",
-    "@protos/interfaces": "0.0.0",
+    "@protos/catalog": "0.1.0",
+    "@protos/interfaces": "0.1.0",
     "rxjs": "6.5.3",
     "type-graphql": "0.17.5"
   },
