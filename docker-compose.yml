@@ -268,6 +268,28 @@ services:
       - redis
       - db
 
+  files-service:
+    image: node:13.7-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - modules:/workspace/node_modules
+    entrypoint: yarn files:dev
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/workspace/credentials.json
+      - GCS_BUCKET=${GCS_BUCKET}
+      - FILES_REGION=eu-central-1
+      - FILES_ENDPOINT=https://s3.serenity.local.aunited.dev
+      - FILES_ACCESS_KEY=accesskey
+      - FILES_SECRET_KEY=secretkey
+      - FILES_BUCKET=dev
+    depends_on:
+      - rabbitmq
+      - s3
+      - db
+    extra_hosts:
+      - 's3.serenity.local.aunited.dev:172.16.101.99'
+
 volumes:
   modules:
   yarncache:

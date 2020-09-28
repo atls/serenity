@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+import "../common/common.proto";
+
+package files;
+
+service FilesService {
+  rpc getFiles (GetFilesRequest) returns (GetFilesResponse) {}
+  rpc createUpload (CreateUploadRequest) returns (CreateUploadResponse) {}
+  rpc confirmUpload (ConfirmUploadRequest) returns (ConfirmUploadResponse) {}
+}
+
+message FilesFilter {
+  repeated string id = 1;
+}
+
+message File {
+  string id = 1;
+  string url = 2;
+}
+
+message UploadField {
+  string key = 1;
+  string value = 2;
+}
+
+message Upload {
+  string id = 1;
+  string url = 2;
+  repeated UploadField fields = 3;
+}
+
+message CreateUploadRequest {
+  string type = 1;
+  string name = 2;
+}
+
+message CreateUploadResponse {
+  Upload result = 1;
+}
+
+message ConfirmUploadRequest {
+  string id = 1;
+}
+
+message ConfirmUploadResponse {
+  File result = 1;
+}
+
+message GetFilesRequest {
+  common.Pager pager = 1;
+  common.Order order = 2;
+  FilesFilter filters = 3;
+}
+
+message GetFilesResponse {
+  repeated File rows = 1;
+  common.PageInfo pageInfo = 2;
+}

@@ -12,6 +12,9 @@ export class UpdateProfileInput {
   phone: string
 
   @Field({ nullable: true })
+  photoId: string
+
+  @Field({ nullable: true })
   address: string
 
   @Field({ nullable: true })

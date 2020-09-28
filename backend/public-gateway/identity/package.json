@@ -7,6 +7,7 @@
     "@nestjs/common": "6.10.5",
     "@nestjs/graphql": "6.5.3",
     "@nestjs/microservices": "6.10.5",
+    "@protos/files": "0.0.0",
     "@protos/identity": "0.2.0",
     "@protos/interfaces": "0.0.0",
     "rxjs": "6.5.3",
