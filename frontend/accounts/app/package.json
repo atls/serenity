@@ -53,6 +53,6 @@
     "recompose": "0.30.0",
     "ts-node": "8.5.2",
     "typescript": "3.7.2",
-    "universal-cookie": "4.0.2"
+    "universal-cookie": "4.0.4"
   }
 }
