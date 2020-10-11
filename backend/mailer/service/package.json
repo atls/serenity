@@ -13,7 +13,7 @@
     "@types/node": "12.12.14"
   },
   "dependencies": {
-    "@atlantis-lab/nestjs-bus": "0.1.6",
+    "@monstrs/nestjs-bus": "0.1.4",
     "@grpc/proto-loader": "0.5.3",
     "@identity/domain": "0.3.0",
     "@mailer/api": "0.1.0",

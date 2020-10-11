@@ -1,4 +1,4 @@
-import { BusModule }                                 from '@atlantis-lab/nestjs-bus'
+import { BusModule }                                 from '@monstrs/nestjs-bus'
 
 import { ApplicationModule, IsEntityConstraint }     from '@identity/application'
 import { PersistenceModule }                         from '@identity/persistence'
