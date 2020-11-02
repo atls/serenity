@@ -17,7 +17,7 @@
     "@catalog/domain": "0.1.0",
     "@catalog/persistence": "0.1.0",
     "@godaddy/terminus": "4.3.1",
-    "@grpc/proto-loader": "0.5.3",
+    "@grpc/proto-loader": "0.5.5",
     "@monstrs/nestjs-bus": "0.1.4",
     "@monstrs/nestjs-bus-health": "0.1.0",
     "@monstrs/nestjs-map-errors-interceptor": "0.1.0",
