@@ -15,6 +15,6 @@
     "pg": "7.13.0",
     "ts-node": "8.5.2",
     "typeorm": "0.2.19",
-    "typescript": "3.7.2"
+    "typescript": "3.9.7"
   }
 }
