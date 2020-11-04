@@ -3582,10 +3582,10 @@
     amqplib "^0.5.5"
     inversify "^5.0.1"
 
-"@monstrs/nestjs-dataloader@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@monstrs/nestjs-dataloader/-/nestjs-dataloader-0.1.2.tgz#4bda922ad41d073bbd81e4f15286113857fee14e"
-  integrity sha512-KhSyw7A2/kkCmC0w2DDlcqyT4+v2hpG5r+36a5R69VsI9NYUm6Wxg6LmM1kAnz7DfJKFrN2d899R+tnfYRAYNw==
+"@monstrs/nestjs-dataloader@0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@monstrs/nestjs-dataloader/-/nestjs-dataloader-0.1.4.tgz#0fc83a85ecc1d3e2a651835a8686e2da49a44973"
+  integrity sha512-D6x6FLxaKR0zsIeC/7O+CjziyWy1lkhLvNnKE2XgAcZRVs8a0Dag+tQpcxTCl05156hZex9ePDxI6qIYE9bmqg==
 
 "@monstrs/nestjs-logger@0.1.2":
   version "0.1.2"
@@ -3595,10 +3595,10 @@
     pino "^5.13.2"
     pino-pretty "^3.2.1"
 
-"@monstrs/nestjs-map-errors-interceptor@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@monstrs/nestjs-map-errors-interceptor/-/nestjs-map-errors-interceptor-0.1.0.tgz#c95816ded24ac12e83f4d7484c36fd0bdebf909d"
-  integrity sha512-9bwekqiITJThnav4VE9yYUh+HHvJBsYQY4mLEApwWgC3pW4X4okR7Y3d+QwbhvOcy3QaLGS9DrVNCxpL2UPKNQ==
+"@monstrs/nestjs-map-errors-interceptor@0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@monstrs/nestjs-map-errors-interceptor/-/nestjs-map-errors-interceptor-0.1.3.tgz#8107f75de634aabeaf4449e9a664c69ce21236da"
+  integrity sha512-eAjl5NVX3ufCSHvgSfnLHR5MPkIPcDzB83P3CRuFmnoIXbMejKxjd+fbJkptosMZEa6D6w5ufsPNV08RgnAIIw==
 
 "@monstrs/nestjs-signed-url@0.1.3":
   version "0.1.3"
@@ -3628,14 +3628,15 @@
     import-sort-parser-typescript "^6.0.0"
     import-sort-style "^6.0.0"
 
-"@monstrs/server-scripts@0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@monstrs/server-scripts/-/server-scripts-0.1.3.tgz#b8a4b2d5cb287c030b7b985911bca6d33085ceed"
-  integrity sha512-09xyrKQmb2z8RKByiGqjtV4tK2xhsDKJc3w7/U9KbL3NNccRP0aAWuRARoIMsTRJ9nNBOYUhtXqfBo7CMkCenw==
+"@monstrs/server-scripts@0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@monstrs/server-scripts/-/server-scripts-0.1.5.tgz#aff0848a124856ab8c5da3bb8f628cc45df75460"
+  integrity sha512-sypAI5Yb6YVmNKndQRl35eZWHgQI3yh+OnoZcIkYCa2mMqn7naCca64PDFfS9GDJvqtrOsy6ESdFk+GLrNSv9A==
   dependencies:
     chalk "^2.4.2"
     file-loader "^4.0.0"
     glob-promise "^3.4.0"
+    pnp-webpack-plugin "^1.6.0"
     react-dev-utils "^9.0.1"
     start-server-webpack-plugin "^2.2.5"
     ts-loader "^6.0.4"
@@ -19734,7 +19735,7 @@ pnp-webpack-plugin@1.4.3:
   dependencies:
     ts-pnp "^1.1.2"
 
-pnp-webpack-plugin@1.6.4:
+pnp-webpack-plugin@1.6.4, pnp-webpack-plugin@^1.6.0:
   version "1.6.4"
   resolved "https://registry.yarnpkg.com/pnp-webpack-plugin/-/pnp-webpack-plugin-1.6.4.tgz#c9711ac4dc48a685dabafc86f8b6dd9f8df84149"
   integrity sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==
