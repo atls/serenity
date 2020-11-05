@@ -3919,15 +3919,6 @@
     tslib "^1.9.3"
     uuid "^3.3.2"
 
-"@node-ts/bus-workflow@0.6.3":
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/@node-ts/bus-workflow/-/bus-workflow-0.6.3.tgz#6e6731005a910cd09169bc78886b21d816a20b49"
-  integrity sha512-Eiw2p7xnhUEJJtq0SUQLD8dFvhRximlonNidWSvu4kAIwZPf467odQ1+1VKtA3BSMUpo9lUHcxFmz4eY5nH3Eg==
-  dependencies:
-    "@node-ts/bus-messages" "^0.3.0"
-    tslib "^1.9.3"
-    uuid "^3.3.2"
-
 "@node-ts/ddd-types@0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@node-ts/ddd-types/-/ddd-types-0.1.2.tgz#26c7080ea2584c9c687369cf0db5ac6545a03aa4"
