@@ -8,7 +8,7 @@
     "compile": "ts-node --project=./tsconfig.compile.json svgr.ts"
   },
   "peerDependencies": {
-    "@atlantis-lab/prettier-config": "^0.0.18",
+    "@atlantis-lab/prettier-config": "^0.0.18 || ^0.1.0",
     "prettier": "^1.18.0",
     "react": "16.13.1"
   },
