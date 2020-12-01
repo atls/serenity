@@ -352,10 +352,10 @@
   resolved "https://registry.yarnpkg.com/@atlantis-lab/react-modals/-/react-modals-0.1.12.tgz#b39c93cf83455af920cd952c82ba1bbfbdbcb75f"
   integrity sha512-TDdOrcF6ECorTWx5lexitJeJNmRzzutskpPHVo2FTdY5qb8NIXliRzbFZ5wVYJNgZ3Bgy8KM6nw8J1QsmS2Oow==
 
-"@atlantis-lab/tsconfig@0.0.23":
-  version "0.0.23"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/tsconfig/-/tsconfig-0.0.23.tgz#0e41276663b14d0e2475bbf672c974c6810f0805"
-  integrity sha512-CAIy1zJrDbIGAeT/ClPXRvjqdWaH4C/8dVWshEzA8fRMyMrsVvr0ilrYvp6DeIFxc9Kvab/WNRUKo2hscBzitg==
+"@atlantis-lab/tsconfig@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/tsconfig/-/tsconfig-0.1.2.tgz#3365c6e2b4a1a2fe396c1208a41a66aa69f67375"
+  integrity sha512-GR3AxPnaC3drLf+65SsW07c3HsaSJYdoU2mIj5Dtw6dsiu6JboCSjiX1k3l+rF2DsF75c7+gNL+f5EB2SmV12A==
 
 "@babel/code-frame@7.10.4", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.5.5":
   version "7.10.4"
@@ -19539,12 +19539,7 @@ pg-int8@1.0.1:
   resolved "https://registry.yarnpkg.com/pg-int8/-/pg-int8-1.0.1.tgz#943bd463bf5b71b4170115f80f8efc9a0c0eb78c"
   integrity sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==
 
-pg-packet-stream@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/pg-packet-stream/-/pg-packet-stream-1.1.0.tgz#e45c3ae678b901a2873af1e17b92d787962ef914"
-  integrity sha512-kRBH0tDIW/8lfnnOyTwKD23ygJ/kexQVXZs7gEyBljw4FYqimZFxnMMx50ndZ8In77QgfGuItS5LLclC2TtjYg==
-
-pg-pool@^2.0.10, pg-pool@^2.0.7:
+pg-pool@^2.0.7:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/pg-pool/-/pg-pool-2.0.10.tgz#842ee23b04e86824ce9d786430f8365082d81c4a"
   integrity sha512-qdwzY92bHf3nwzIUcj+zJ0Qo5lpG/YxchahxIN8+ZVmXqkahKXsnl2aiJPHLYN9o5mB/leG+Xh6XKxtP7e0sjg==
