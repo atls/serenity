@@ -1,0 +1,459 @@
+syntax = "proto3";
+
+import "../common/common.proto";
+
+package collaboration;
+
+service CollaborationService {
+  rpc getCustomers (GetCustomersRequest) returns (GetCustomersResponse) {}
+  rpc getSpecialists (GetSpecialistsRequest) returns (GetSpecialistsResponse) {}
+  rpc getDiscussions (GetDiscussionsRequest) returns (GetDiscussionsResponse) {}
+  rpc getChatDiscussions (GetDiscussionsRequest) returns (GetDiscussionsResponse) {}
+  rpc updateSpecialist (UpdateSpecialistRequest) returns (UpdateSpecialistResponse) {}
+  rpc changeAccountType (ChangeAccountTypeRequest) returns (ChangeAccountTypeResponse) {}
+  rpc createProject (CreateProjectRequest) returns (CreateProjectResponse) {}
+  rpc updateProject (UpdateProjectRequest) returns (UpdateProjectResponse) {}
+  rpc getProjects (GetProjectsRequest) returns (GetProjectsResponse) {}
+  rpc addProjectReply (AddProjectReplyRequest) returns (AddProjectReplyResponse) {}
+  rpc rejectProjectReply (RejectProjectReplyRequest) returns (RejectProjectReplyResponse) {}
+  rpc confirmProjectReply (ConfirmProjectReplyRequest) returns (ConfirmProjectReplyResponse) {}
+  rpc getReplies (GetRepliesRequest) returns (GetRepliesResponse) {}
+  rpc addReplyMessage (AddReplyMessageRequest) returns (AddReplyMessageResponse) {}
+  rpc changeReplyStatus (ChangeReplyStatusRequest) returns (ChangeReplyStatusResponse) {}
+  rpc chooseSpecialist (ChooseSpecialistRequest) returns (ChooseSpecialistResponse) {}
+  rpc completeProject (CompleteProjectRequest) returns (CompleteProjectResponse) {}
+  rpc publishProject (PublishProjectRequest) returns (PublishProjectResponse) {}
+  rpc getReviews (GetReviewsRequest) returns (GetReviewsResponse) {}
+  rpc addDiscussionMessage (AddDiscussionMessageRequest) returns (AddDiscussionMessageResponse) {}
+}
+
+message ProjectsFilter {
+  repeated string id = 1;
+  repeated string customerId = 2;
+}
+
+message GetProjectsRequest {
+  common.Pager pager = 1;
+  common.Order order = 2;
+  ProjectsFilter filters = 3;
+}
+
+message GetProjectsResponse {
+  repeated Project rows = 1;
+  common.PageInfo pageInfo = 2;
+}
+
+message Address {
+  string formatted = 1;
+}
+
+message Customer {
+  string id = 1;
+  int32 openProjects = 2;
+  int32 completedProjects = 3;
+}
+
+message Interaction {
+  string formOfWork = 1;
+  string numberOfEmployees = 2;
+  string name = 3;
+}
+
+message Specialisation {
+  repeated string main = 1;
+  repeated string additional = 2;
+}
+
+message Account {
+  string type = 1;
+  bool replyLimited = 2;
+}
+
+message Specialist {
+  string id = 1;
+  Interaction interaction = 2;
+  Specialisation specialisation = 3;
+  string description = 4;
+  int32 rating = 5;
+  int32 reviewCount = 6;
+  int32 completedProjects = 7;
+  Account account = 8;
+}
+
+message Project {
+  string id = 1;
+  string name = 2;
+  string categoryId = 3;
+  string description = 4;
+  repeated string photos = 5;
+  Address address = 6;
+  string beginningOfWork = 7;
+  int32 budget = 8;
+  bool legalEntitiesOnly = 9;
+  string customerId = 10;
+  string worksheet = 11;
+  string status = 12;
+  int32 replyCount = 13;
+  double publicationDate = 14;
+}
+
+message Message {
+  string id = 1;
+  string authorId = 2;
+  string content = 3;
+  bool read = 4;
+  double publicationDate = 5;
+}
+
+message Discussion {
+  string id = 1;
+  string customerId = 2;
+  string specialistId = 3;
+  repeated Message messages = 4;
+}
+
+message Reply {
+  string id = 1;
+  string projectId = 2;
+  Discussion discussion = 3;
+  string status = 4;
+}
+
+message Review {
+  string id = 1;
+  string projectId = 2;
+  string replyId = 3;
+  string customerId = 4;
+  string specialistId = 5;
+  int32 rating = 6;
+  string comment = 7;
+}
+
+message CustomersFilter {
+  repeated string id = 1;
+}
+
+message GetCustomersRequest {
+  common.Pager pager = 1;
+  common.Order order = 2;
+  CustomersFilter filters = 3;
+}
+
+message GetCustomersResponse {
+  repeated Customer rows = 1;
+  common.PageInfo pageInfo = 2;
+}
+
+message SpecialistsFilter {
+  repeated string id = 1;
+}
+
+message GetSpecialistsRequest {
+  common.Pager pager = 1;
+  common.Order order = 2;
+  SpecialistsFilter filters = 3;
+}
+
+message GetSpecialistsResponse {
+  repeated Specialist rows = 1;
+  common.PageInfo pageInfo = 2;
+}
+
+message DiscussionsFilter {
+  repeated string id = 1;
+  repeated string customerId = 2;
+  repeated string specialistId = 3;
+}
+
+message GetDiscussionsRequest {
+  common.Pager pager = 1;
+  common.Order order = 2;
+  DiscussionsFilter filters = 3;
+}
+
+message GetDiscussionsResponse {
+  repeated Discussion rows = 1;
+  common.PageInfo pageInfo = 2;
+}
+
+message UpdateSpecialistRequest {
+  string id = 1;
+  string formOfWork = 2;
+  string numberOfEmployees = 3;
+  string companyName = 4;
+  repeated string mainSpecialisation = 5;
+  repeated string additionalSpecialisation = 6;
+  string description = 7;
+}
+
+message UpdateSpecialistErrors {
+  string id = 1;
+  string formOfWork = 2;
+  string numberOfEmployees = 3;
+  string companyName = 4;
+  string mainSpecialisation = 5;
+  string additionalSpecialisation = 6;
+  string description = 7;
+}
+
+message UpdateSpecialistResponse {
+  UpdateSpecialistErrors errors = 1;
+  Specialist result = 2;
+}
+
+message ChangeAccountTypeRequest {
+  string specialistId = 1;
+  string type = 2;
+}
+
+message ChangeAccountTypeErrors {
+  string specialistId = 1;
+  string type = 2;
+}
+
+message ChangeAccountTypeResponse {
+  ChangeAccountTypeErrors errors = 1;
+  Specialist result = 2;
+}
+
+message CreateProjectRequest {
+  string customerId = 1;
+  string name = 2;
+  string categoryId = 3;
+  string description = 4;
+  repeated string photos = 5;
+  string address = 6;
+  string beginningOfWork = 7;
+  int32 budget = 8;
+  bool legalEntitiesOnly = 9;
+  string worksheet = 10;
+}
+
+message CreateProjectErrors {
+  string customerId = 1;
+  string name = 2;
+  string category = 3;
+  string description = 4;
+  string photos = 5;
+  string address = 6;
+  string beginningOfWork = 7;
+  string budget = 8;
+  string legalEntitiesOnly = 9;
+}
+
+message CreateProjectResponse {
+  CreateProjectErrors errors = 1;
+  Project result = 2;
+}
+
+message UpdateProjectRequest {
+  string id = 1;
+  string customerId = 2;
+  string name = 3;
+  string description = 4;
+  repeated string photos = 5;
+  string address = 6;
+  string beginningOfWork = 7;
+  int32 budget = 8;
+  bool legalEntitiesOnly = 9;
+  string worksheet = 10;
+}
+
+message UpdateProjectErrors {
+  string id = 1;
+  string customerId = 2;
+  string name = 3;
+  string description = 4;
+  string photos = 5;
+  string address = 6;
+  string beginningOfWork = 7;
+  string budget = 8;
+  string legalEntitiesOnly = 9;
+}
+
+message UpdateProjectResponse {
+  UpdateProjectErrors errors = 1;
+  Project result = 2;
+}
+
+message AddProjectReplyRequest {
+  string specialistId = 1;
+  string projectId = 2;
+  string message = 3;
+}
+
+message AddProjectReplyErrors {
+  string specialistId = 1;
+  string projectId = 2;
+  string message = 3;
+}
+
+message AddProjectReplyResponse {
+  AddProjectReplyErrors errors = 1;
+  Reply result = 2;
+}
+
+message RejectProjectReplyRequest {
+  string specialistId = 1;
+  string projectId = 2;
+}
+
+message RejectProjectReplyErrors {
+  string specialistId = 1;
+  string projectId = 2;
+}
+
+message RejectProjectReplyResponse {
+  RejectProjectReplyErrors errors = 1;
+  Reply result = 2;
+}
+
+message ConfirmProjectReplyRequest {
+  string specialistId = 1;
+  string projectId = 2;
+}
+
+message ConfirmProjectReplyErrors {
+  string specialistId = 1;
+  string projectId = 2;
+}
+
+message ConfirmProjectReplyResponse {
+  ConfirmProjectReplyErrors errors = 1;
+  Reply result = 2;
+}
+
+message RepliesFilter {
+  repeated string id = 1;
+  repeated string projectId = 2;
+  repeated string specialistId = 3;
+}
+
+message GetRepliesRequest {
+  common.Pager pager = 1;
+  common.Order order = 2;
+  RepliesFilter filters = 3;
+}
+
+message GetRepliesResponse {
+  repeated Reply rows = 1;
+  common.PageInfo pageInfo = 2;
+}
+
+message ReviewsFilter {
+  repeated string id = 1;
+  repeated string projectId = 2;
+  repeated string specialistId = 3;
+}
+
+message GetReviewsRequest {
+  common.Pager pager = 1;
+  common.Order order = 2;
+  ReviewsFilter filters = 3;
+}
+
+message GetReviewsResponse {
+  repeated Review rows = 1;
+  common.PageInfo pageInfo = 2;
+}
+
+message AddReplyMessageRequest {
+  string replyId = 1;
+  string authorId = 2;
+  string message = 3;
+}
+
+message AddReplyMessageErrors {
+  string replyId = 1;
+  string authorId = 2;
+  string message = 3;
+}
+
+message AddReplyMessageResponse {
+  AddReplyMessageErrors errors = 1;
+  Message result = 2;
+}
+
+message ChangeReplyStatusRequest {
+  string replyId = 1;
+  string status = 2;
+  string customerId = 3;
+}
+
+message ChangeReplyStatusErrors {
+  string replyId = 1;
+  string status = 2;
+}
+
+message ChangeReplyStatusResponse {
+  ChangeReplyStatusErrors errors = 1;
+  Reply result = 2;
+}
+
+message ChooseSpecialistRequest {
+  string replyId = 1;
+  string customerId = 2;
+}
+
+message ChooseSpecialistErrors {
+  string replyId = 1;
+  string customerId = 2;
+}
+
+message ChooseSpecialistResponse {
+  ChooseSpecialistErrors errors = 1;
+  Project result = 2;
+}
+
+message PublishProjectRequest {
+  string projectId = 1;
+  string customerId = 2;
+}
+
+message PublishProjectErrors {
+  string projectId = 1;
+  string customerId = 2;
+}
+
+message PublishProjectResponse {
+  PublishProjectErrors errors = 1;
+  Project result = 2;
+}
+
+message CompleteProjectRequest {
+  string projectId = 1;
+  string customerId = 2;
+  int32 rating = 3;
+  string comment = 4;
+}
+
+message CompleteProjectErrors {
+  string projectId = 1;
+  string customerId = 2;
+  string rating = 3;
+  string comment = 4;
+}
+
+message CompleteProjectResponse {
+  CompleteProjectErrors errors = 1;
+  Review result = 2;
+}
+
+message AddDiscussionMessageRequest {
+  string specialistId = 1;
+  string customerId = 2;
+  string authorId = 3;
+  string message = 4;
+}
+
+message AddDiscussionMessageErrors {
+  string specialistId = 1;
+  string customerId = 2;
+  string authorId = 3;
+  string message = 4;
+}
+
+message AddDiscussionMessageResponse {
+  AddDiscussionMessageErrors errors = 1;
+  Message result = 2;
+}
