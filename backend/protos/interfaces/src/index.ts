@@ -998,3 +998,1131 @@ export namespace files {
     pageInfo?: common.PageInfo | null
   }
 }
+
+/** Namespace collaboration. */
+export namespace collaboration {
+  /** Contains all the RPC service clients. */
+  export interface ClientFactory {
+    /**
+     * Returns the CollaborationService service client.
+     */
+    getCollaborationService(): collaboration.CollaborationService
+  }
+
+  /** Builder for an RPC service server. */
+  export interface ServerBuilder {
+    /**
+     * Adds a CollaborationService service implementation.
+     * @param impl CollaborationService service implementation
+     */
+    addCollaborationService(impl: collaboration.CollaborationService): collaboration.ServerBuilder
+  }
+
+  /** Constructs a new CollaborationService service. */
+  export interface CollaborationService {
+    /**
+     * Calls getCustomers.
+     * @param request GetCustomersRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    getCustomers(
+      request: collaboration.GetCustomersRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.GetCustomersResponse>
+
+    /**
+     * Calls getSpecialists.
+     * @param request GetSpecialistsRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    getSpecialists(
+      request: collaboration.GetSpecialistsRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.GetSpecialistsResponse>
+
+    /**
+     * Calls getDiscussions.
+     * @param request GetDiscussionsRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    getDiscussions(
+      request: collaboration.GetDiscussionsRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.GetDiscussionsResponse>
+
+    /**
+     * Calls getChatDiscussions.
+     * @param request GetDiscussionsRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    getChatDiscussions(
+      request: collaboration.GetDiscussionsRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.GetDiscussionsResponse>
+
+    /**
+     * Calls updateSpecialist.
+     * @param request UpdateSpecialistRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    updateSpecialist(
+      request: collaboration.UpdateSpecialistRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.UpdateSpecialistResponse>
+
+    /**
+     * Calls changeAccountType.
+     * @param request ChangeAccountTypeRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    changeAccountType(
+      request: collaboration.ChangeAccountTypeRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.ChangeAccountTypeResponse>
+
+    /**
+     * Calls createProject.
+     * @param request CreateProjectRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    createProject(
+      request: collaboration.CreateProjectRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.CreateProjectResponse>
+
+    /**
+     * Calls updateProject.
+     * @param request UpdateProjectRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    updateProject(
+      request: collaboration.UpdateProjectRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.UpdateProjectResponse>
+
+    /**
+     * Calls getProjects.
+     * @param request GetProjectsRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    getProjects(
+      request: collaboration.GetProjectsRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.GetProjectsResponse>
+
+    /**
+     * Calls addProjectReply.
+     * @param request AddProjectReplyRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    addProjectReply(
+      request: collaboration.AddProjectReplyRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.AddProjectReplyResponse>
+
+    /**
+     * Calls rejectProjectReply.
+     * @param request RejectProjectReplyRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    rejectProjectReply(
+      request: collaboration.RejectProjectReplyRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.RejectProjectReplyResponse>
+
+    /**
+     * Calls confirmProjectReply.
+     * @param request ConfirmProjectReplyRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    confirmProjectReply(
+      request: collaboration.ConfirmProjectReplyRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.ConfirmProjectReplyResponse>
+
+    /**
+     * Calls getReplies.
+     * @param request GetRepliesRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    getReplies(
+      request: collaboration.GetRepliesRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.GetRepliesResponse>
+
+    /**
+     * Calls addReplyMessage.
+     * @param request AddReplyMessageRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    addReplyMessage(
+      request: collaboration.AddReplyMessageRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.AddReplyMessageResponse>
+
+    /**
+     * Calls changeReplyStatus.
+     * @param request ChangeReplyStatusRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    changeReplyStatus(
+      request: collaboration.ChangeReplyStatusRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.ChangeReplyStatusResponse>
+
+    /**
+     * Calls chooseSpecialist.
+     * @param request ChooseSpecialistRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    chooseSpecialist(
+      request: collaboration.ChooseSpecialistRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.ChooseSpecialistResponse>
+
+    /**
+     * Calls completeProject.
+     * @param request CompleteProjectRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    completeProject(
+      request: collaboration.CompleteProjectRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.CompleteProjectResponse>
+
+    /**
+     * Calls publishProject.
+     * @param request PublishProjectRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    publishProject(
+      request: collaboration.PublishProjectRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.PublishProjectResponse>
+
+    /**
+     * Calls getReviews.
+     * @param request GetReviewsRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    getReviews(
+      request: collaboration.GetReviewsRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.GetReviewsResponse>
+
+    /**
+     * Calls addDiscussionMessage.
+     * @param request AddDiscussionMessageRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    addDiscussionMessage(
+      request: collaboration.AddDiscussionMessageRequest,
+      metadata?: grpc.Metadata
+    ): Observable<collaboration.AddDiscussionMessageResponse>
+  }
+
+  /** Properties of a ProjectsFilter. */
+  export interface ProjectsFilter {
+    /** ProjectsFilter id */
+    id?: string[] | null
+
+    /** ProjectsFilter customerId */
+    customerId?: string[] | null
+  }
+
+  /** Properties of a GetProjectsRequest. */
+  export interface GetProjectsRequest {
+    /** GetProjectsRequest pager */
+    pager?: common.Pager | null
+
+    /** GetProjectsRequest order */
+    order?: common.Order | null
+
+    /** GetProjectsRequest filters */
+    filters?: collaboration.ProjectsFilter | null
+  }
+
+  /** Properties of a GetProjectsResponse. */
+  export interface GetProjectsResponse {
+    /** GetProjectsResponse rows */
+    rows?: collaboration.Project[] | null
+
+    /** GetProjectsResponse pageInfo */
+    pageInfo?: common.PageInfo | null
+  }
+
+  /** Properties of an Address. */
+  export interface Address {
+    /** Address formatted */
+    formatted?: string | null
+  }
+
+  /** Properties of a Customer. */
+  export interface Customer {
+    /** Customer id */
+    id?: string | null
+
+    /** Customer openProjects */
+    openProjects?: number | null
+
+    /** Customer completedProjects */
+    completedProjects?: number | null
+  }
+
+  /** Properties of an Interaction. */
+  export interface Interaction {
+    /** Interaction formOfWork */
+    formOfWork?: string | null
+
+    /** Interaction numberOfEmployees */
+    numberOfEmployees?: string | null
+
+    /** Interaction name */
+    name?: string | null
+  }
+
+  /** Properties of a Specialisation. */
+  export interface Specialisation {
+    /** Specialisation main */
+    main?: string[] | null
+
+    /** Specialisation additional */
+    additional?: string[] | null
+  }
+
+  /** Properties of an Account. */
+  export interface Account {
+    /** Account type */
+    type?: string | null
+
+    /** Account replyLimited */
+    replyLimited?: boolean | null
+  }
+
+  /** Properties of a Specialist. */
+  export interface Specialist {
+    /** Specialist id */
+    id?: string | null
+
+    /** Specialist interaction */
+    interaction?: collaboration.Interaction | null
+
+    /** Specialist specialisation */
+    specialisation?: collaboration.Specialisation | null
+
+    /** Specialist description */
+    description?: string | null
+
+    /** Specialist rating */
+    rating?: number | null
+
+    /** Specialist reviewCount */
+    reviewCount?: number | null
+
+    /** Specialist completedProjects */
+    completedProjects?: number | null
+
+    /** Specialist account */
+    account?: collaboration.Account | null
+  }
+
+  /** Properties of a Project. */
+  export interface Project {
+    /** Project id */
+    id?: string | null
+
+    /** Project name */
+    name?: string | null
+
+    /** Project categoryId */
+    categoryId?: string | null
+
+    /** Project description */
+    description?: string | null
+
+    /** Project photos */
+    photos?: string[] | null
+
+    /** Project address */
+    address?: collaboration.Address | null
+
+    /** Project beginningOfWork */
+    beginningOfWork?: string | null
+
+    /** Project budget */
+    budget?: number | null
+
+    /** Project legalEntitiesOnly */
+    legalEntitiesOnly?: boolean | null
+
+    /** Project customerId */
+    customerId?: string | null
+
+    /** Project worksheet */
+    worksheet?: string | null
+
+    /** Project status */
+    status?: string | null
+
+    /** Project replyCount */
+    replyCount?: number | null
+
+    /** Project publicationDate */
+    publicationDate?: number | null
+  }
+
+  /** Properties of a Message. */
+  export interface Message {
+    /** Message id */
+    id?: string | null
+
+    /** Message authorId */
+    authorId?: string | null
+
+    /** Message content */
+    content?: string | null
+
+    /** Message read */
+    read?: boolean | null
+
+    /** Message publicationDate */
+    publicationDate?: number | null
+  }
+
+  /** Properties of a Discussion. */
+  export interface Discussion {
+    /** Discussion id */
+    id?: string | null
+
+    /** Discussion customerId */
+    customerId?: string | null
+
+    /** Discussion specialistId */
+    specialistId?: string | null
+
+    /** Discussion messages */
+    messages?: collaboration.Message[] | null
+  }
+
+  /** Properties of a Reply. */
+  export interface Reply {
+    /** Reply id */
+    id?: string | null
+
+    /** Reply projectId */
+    projectId?: string | null
+
+    /** Reply discussion */
+    discussion?: collaboration.Discussion | null
+
+    /** Reply status */
+    status?: string | null
+  }
+
+  /** Properties of a Review. */
+  export interface Review {
+    /** Review id */
+    id?: string | null
+
+    /** Review projectId */
+    projectId?: string | null
+
+    /** Review replyId */
+    replyId?: string | null
+
+    /** Review customerId */
+    customerId?: string | null
+
+    /** Review specialistId */
+    specialistId?: string | null
+
+    /** Review rating */
+    rating?: number | null
+
+    /** Review comment */
+    comment?: string | null
+  }
+
+  /** Properties of a CustomersFilter. */
+  export interface CustomersFilter {
+    /** CustomersFilter id */
+    id?: string[] | null
+  }
+
+  /** Properties of a GetCustomersRequest. */
+  export interface GetCustomersRequest {
+    /** GetCustomersRequest pager */
+    pager?: common.Pager | null
+
+    /** GetCustomersRequest order */
+    order?: common.Order | null
+
+    /** GetCustomersRequest filters */
+    filters?: collaboration.CustomersFilter | null
+  }
+
+  /** Properties of a GetCustomersResponse. */
+  export interface GetCustomersResponse {
+    /** GetCustomersResponse rows */
+    rows?: collaboration.Customer[] | null
+
+    /** GetCustomersResponse pageInfo */
+    pageInfo?: common.PageInfo | null
+  }
+
+  /** Properties of a SpecialistsFilter. */
+  export interface SpecialistsFilter {
+    /** SpecialistsFilter id */
+    id?: string[] | null
+  }
+
+  /** Properties of a GetSpecialistsRequest. */
+  export interface GetSpecialistsRequest {
+    /** GetSpecialistsRequest pager */
+    pager?: common.Pager | null
+
+    /** GetSpecialistsRequest order */
+    order?: common.Order | null
+
+    /** GetSpecialistsRequest filters */
+    filters?: collaboration.SpecialistsFilter | null
+  }
+
+  /** Properties of a GetSpecialistsResponse. */
+  export interface GetSpecialistsResponse {
+    /** GetSpecialistsResponse rows */
+    rows?: collaboration.Specialist[] | null
+
+    /** GetSpecialistsResponse pageInfo */
+    pageInfo?: common.PageInfo | null
+  }
+
+  /** Properties of a DiscussionsFilter. */
+  export interface DiscussionsFilter {
+    /** DiscussionsFilter id */
+    id?: string[] | null
+
+    /** DiscussionsFilter customerId */
+    customerId?: string[] | null
+
+    /** DiscussionsFilter specialistId */
+    specialistId?: string[] | null
+  }
+
+  /** Properties of a GetDiscussionsRequest. */
+  export interface GetDiscussionsRequest {
+    /** GetDiscussionsRequest pager */
+    pager?: common.Pager | null
+
+    /** GetDiscussionsRequest order */
+    order?: common.Order | null
+
+    /** GetDiscussionsRequest filters */
+    filters?: collaboration.DiscussionsFilter | null
+  }
+
+  /** Properties of a GetDiscussionsResponse. */
+  export interface GetDiscussionsResponse {
+    /** GetDiscussionsResponse rows */
+    rows?: collaboration.Discussion[] | null
+
+    /** GetDiscussionsResponse pageInfo */
+    pageInfo?: common.PageInfo | null
+  }
+
+  /** Properties of an UpdateSpecialistRequest. */
+  export interface UpdateSpecialistRequest {
+    /** UpdateSpecialistRequest id */
+    id?: string | null
+
+    /** UpdateSpecialistRequest formOfWork */
+    formOfWork?: string | null
+
+    /** UpdateSpecialistRequest numberOfEmployees */
+    numberOfEmployees?: string | null
+
+    /** UpdateSpecialistRequest companyName */
+    companyName?: string | null
+
+    /** UpdateSpecialistRequest mainSpecialisation */
+    mainSpecialisation?: string[] | null
+
+    /** UpdateSpecialistRequest additionalSpecialisation */
+    additionalSpecialisation?: string[] | null
+
+    /** UpdateSpecialistRequest description */
+    description?: string | null
+  }
+
+  /** Properties of an UpdateSpecialistErrors. */
+  export interface UpdateSpecialistErrors {
+    /** UpdateSpecialistErrors id */
+    id?: string | null
+
+    /** UpdateSpecialistErrors formOfWork */
+    formOfWork?: string | null
+
+    /** UpdateSpecialistErrors numberOfEmployees */
+    numberOfEmployees?: string | null
+
+    /** UpdateSpecialistErrors companyName */
+    companyName?: string | null
+
+    /** UpdateSpecialistErrors mainSpecialisation */
+    mainSpecialisation?: string | null
+
+    /** UpdateSpecialistErrors additionalSpecialisation */
+    additionalSpecialisation?: string | null
+
+    /** UpdateSpecialistErrors description */
+    description?: string | null
+  }
+
+  /** Properties of an UpdateSpecialistResponse. */
+  export interface UpdateSpecialistResponse {
+    /** UpdateSpecialistResponse errors */
+    errors?: collaboration.UpdateSpecialistErrors | null
+
+    /** UpdateSpecialistResponse result */
+    result?: collaboration.Specialist | null
+  }
+
+  /** Properties of a ChangeAccountTypeRequest. */
+  export interface ChangeAccountTypeRequest {
+    /** ChangeAccountTypeRequest specialistId */
+    specialistId?: string | null
+
+    /** ChangeAccountTypeRequest type */
+    type?: string | null
+  }
+
+  /** Properties of a ChangeAccountTypeErrors. */
+  export interface ChangeAccountTypeErrors {
+    /** ChangeAccountTypeErrors specialistId */
+    specialistId?: string | null
+
+    /** ChangeAccountTypeErrors type */
+    type?: string | null
+  }
+
+  /** Properties of a ChangeAccountTypeResponse. */
+  export interface ChangeAccountTypeResponse {
+    /** ChangeAccountTypeResponse errors */
+    errors?: collaboration.ChangeAccountTypeErrors | null
+
+    /** ChangeAccountTypeResponse result */
+    result?: collaboration.Specialist | null
+  }
+
+  /** Properties of a CreateProjectRequest. */
+  export interface CreateProjectRequest {
+    /** CreateProjectRequest customerId */
+    customerId?: string | null
+
+    /** CreateProjectRequest name */
+    name?: string | null
+
+    /** CreateProjectRequest categoryId */
+    categoryId?: string | null
+
+    /** CreateProjectRequest description */
+    description?: string | null
+
+    /** CreateProjectRequest photos */
+    photos?: string[] | null
+
+    /** CreateProjectRequest address */
+    address?: string | null
+
+    /** CreateProjectRequest beginningOfWork */
+    beginningOfWork?: string | null
+
+    /** CreateProjectRequest budget */
+    budget?: number | null
+
+    /** CreateProjectRequest legalEntitiesOnly */
+    legalEntitiesOnly?: boolean | null
+
+    /** CreateProjectRequest worksheet */
+    worksheet?: string | null
+  }
+
+  /** Properties of a CreateProjectErrors. */
+  export interface CreateProjectErrors {
+    /** CreateProjectErrors customerId */
+    customerId?: string | null
+
+    /** CreateProjectErrors name */
+    name?: string | null
+
+    /** CreateProjectErrors category */
+    category?: string | null
+
+    /** CreateProjectErrors description */
+    description?: string | null
+
+    /** CreateProjectErrors photos */
+    photos?: string | null
+
+    /** CreateProjectErrors address */
+    address?: string | null
+
+    /** CreateProjectErrors beginningOfWork */
+    beginningOfWork?: string | null
+
+    /** CreateProjectErrors budget */
+    budget?: string | null
+
+    /** CreateProjectErrors legalEntitiesOnly */
+    legalEntitiesOnly?: string | null
+  }
+
+  /** Properties of a CreateProjectResponse. */
+  export interface CreateProjectResponse {
+    /** CreateProjectResponse errors */
+    errors?: collaboration.CreateProjectErrors | null
+
+    /** CreateProjectResponse result */
+    result?: collaboration.Project | null
+  }
+
+  /** Properties of an UpdateProjectRequest. */
+  export interface UpdateProjectRequest {
+    /** UpdateProjectRequest id */
+    id?: string | null
+
+    /** UpdateProjectRequest customerId */
+    customerId?: string | null
+
+    /** UpdateProjectRequest name */
+    name?: string | null
+
+    /** UpdateProjectRequest description */
+    description?: string | null
+
+    /** UpdateProjectRequest photos */
+    photos?: string[] | null
+
+    /** UpdateProjectRequest address */
+    address?: string | null
+
+    /** UpdateProjectRequest beginningOfWork */
+    beginningOfWork?: string | null
+
+    /** UpdateProjectRequest budget */
+    budget?: number | null
+
+    /** UpdateProjectRequest legalEntitiesOnly */
+    legalEntitiesOnly?: boolean | null
+
+    /** UpdateProjectRequest worksheet */
+    worksheet?: string | null
+  }
+
+  /** Properties of an UpdateProjectErrors. */
+  export interface UpdateProjectErrors {
+    /** UpdateProjectErrors id */
+    id?: string | null
+
+    /** UpdateProjectErrors customerId */
+    customerId?: string | null
+
+    /** UpdateProjectErrors name */
+    name?: string | null
+
+    /** UpdateProjectErrors description */
+    description?: string | null
+
+    /** UpdateProjectErrors photos */
+    photos?: string | null
+
+    /** UpdateProjectErrors address */
+    address?: string | null
+
+    /** UpdateProjectErrors beginningOfWork */
+    beginningOfWork?: string | null
+
+    /** UpdateProjectErrors budget */
+    budget?: string | null
+
+    /** UpdateProjectErrors legalEntitiesOnly */
+    legalEntitiesOnly?: string | null
+  }
+
+  /** Properties of an UpdateProjectResponse. */
+  export interface UpdateProjectResponse {
+    /** UpdateProjectResponse errors */
+    errors?: collaboration.UpdateProjectErrors | null
+
+    /** UpdateProjectResponse result */
+    result?: collaboration.Project | null
+  }
+
+  /** Properties of an AddProjectReplyRequest. */
+  export interface AddProjectReplyRequest {
+    /** AddProjectReplyRequest specialistId */
+    specialistId?: string | null
+
+    /** AddProjectReplyRequest projectId */
+    projectId?: string | null
+
+    /** AddProjectReplyRequest message */
+    message?: string | null
+  }
+
+  /** Properties of an AddProjectReplyErrors. */
+  export interface AddProjectReplyErrors {
+    /** AddProjectReplyErrors specialistId */
+    specialistId?: string | null
+
+    /** AddProjectReplyErrors projectId */
+    projectId?: string | null
+
+    /** AddProjectReplyErrors message */
+    message?: string | null
+  }
+
+  /** Properties of an AddProjectReplyResponse. */
+  export interface AddProjectReplyResponse {
+    /** AddProjectReplyResponse errors */
+    errors?: collaboration.AddProjectReplyErrors | null
+
+    /** AddProjectReplyResponse result */
+    result?: collaboration.Reply | null
+  }
+
+  /** Properties of a RejectProjectReplyRequest. */
+  export interface RejectProjectReplyRequest {
+    /** RejectProjectReplyRequest specialistId */
+    specialistId?: string | null
+
+    /** RejectProjectReplyRequest projectId */
+    projectId?: string | null
+  }
+
+  /** Properties of a RejectProjectReplyErrors. */
+  export interface RejectProjectReplyErrors {
+    /** RejectProjectReplyErrors specialistId */
+    specialistId?: string | null
+
+    /** RejectProjectReplyErrors projectId */
+    projectId?: string | null
+  }
+
+  /** Properties of a RejectProjectReplyResponse. */
+  export interface RejectProjectReplyResponse {
+    /** RejectProjectReplyResponse errors */
+    errors?: collaboration.RejectProjectReplyErrors | null
+
+    /** RejectProjectReplyResponse result */
+    result?: collaboration.Reply | null
+  }
+
+  /** Properties of a ConfirmProjectReplyRequest. */
+  export interface ConfirmProjectReplyRequest {
+    /** ConfirmProjectReplyRequest specialistId */
+    specialistId?: string | null
+
+    /** ConfirmProjectReplyRequest projectId */
+    projectId?: string | null
+  }
+
+  /** Properties of a ConfirmProjectReplyErrors. */
+  export interface ConfirmProjectReplyErrors {
+    /** ConfirmProjectReplyErrors specialistId */
+    specialistId?: string | null
+
+    /** ConfirmProjectReplyErrors projectId */
+    projectId?: string | null
+  }
+
+  /** Properties of a ConfirmProjectReplyResponse. */
+  export interface ConfirmProjectReplyResponse {
+    /** ConfirmProjectReplyResponse errors */
+    errors?: collaboration.ConfirmProjectReplyErrors | null
+
+    /** ConfirmProjectReplyResponse result */
+    result?: collaboration.Reply | null
+  }
+
+  /** Properties of a RepliesFilter. */
+  export interface RepliesFilter {
+    /** RepliesFilter id */
+    id?: string[] | null
+
+    /** RepliesFilter projectId */
+    projectId?: string[] | null
+
+    /** RepliesFilter specialistId */
+    specialistId?: string[] | null
+  }
+
+  /** Properties of a GetRepliesRequest. */
+  export interface GetRepliesRequest {
+    /** GetRepliesRequest pager */
+    pager?: common.Pager | null
+
+    /** GetRepliesRequest order */
+    order?: common.Order | null
+
+    /** GetRepliesRequest filters */
+    filters?: collaboration.RepliesFilter | null
+  }
+
+  /** Properties of a GetRepliesResponse. */
+  export interface GetRepliesResponse {
+    /** GetRepliesResponse rows */
+    rows?: collaboration.Reply[] | null
+
+    /** GetRepliesResponse pageInfo */
+    pageInfo?: common.PageInfo | null
+  }
+
+  /** Properties of a ReviewsFilter. */
+  export interface ReviewsFilter {
+    /** ReviewsFilter id */
+    id?: string[] | null
+
+    /** ReviewsFilter projectId */
+    projectId?: string[] | null
+
+    /** ReviewsFilter specialistId */
+    specialistId?: string[] | null
+  }
+
+  /** Properties of a GetReviewsRequest. */
+  export interface GetReviewsRequest {
+    /** GetReviewsRequest pager */
+    pager?: common.Pager | null
+
+    /** GetReviewsRequest order */
+    order?: common.Order | null
+
+    /** GetReviewsRequest filters */
+    filters?: collaboration.ReviewsFilter | null
+  }
+
+  /** Properties of a GetReviewsResponse. */
+  export interface GetReviewsResponse {
+    /** GetReviewsResponse rows */
+    rows?: collaboration.Review[] | null
+
+    /** GetReviewsResponse pageInfo */
+    pageInfo?: common.PageInfo | null
+  }
+
+  /** Properties of an AddReplyMessageRequest. */
+  export interface AddReplyMessageRequest {
+    /** AddReplyMessageRequest replyId */
+    replyId?: string | null
+
+    /** AddReplyMessageRequest authorId */
+    authorId?: string | null
+
+    /** AddReplyMessageRequest message */
+    message?: string | null
+  }
+
+  /** Properties of an AddReplyMessageErrors. */
+  export interface AddReplyMessageErrors {
+    /** AddReplyMessageErrors replyId */
+    replyId?: string | null
+
+    /** AddReplyMessageErrors authorId */
+    authorId?: string | null
+
+    /** AddReplyMessageErrors message */
+    message?: string | null
+  }
+
+  /** Properties of an AddReplyMessageResponse. */
+  export interface AddReplyMessageResponse {
+    /** AddReplyMessageResponse errors */
+    errors?: collaboration.AddReplyMessageErrors | null
+
+    /** AddReplyMessageResponse result */
+    result?: collaboration.Message | null
+  }
+
+  /** Properties of a ChangeReplyStatusRequest. */
+  export interface ChangeReplyStatusRequest {
+    /** ChangeReplyStatusRequest replyId */
+    replyId?: string | null
+
+    /** ChangeReplyStatusRequest status */
+    status?: string | null
+
+    /** ChangeReplyStatusRequest customerId */
+    customerId?: string | null
+  }
+
+  /** Properties of a ChangeReplyStatusErrors. */
+  export interface ChangeReplyStatusErrors {
+    /** ChangeReplyStatusErrors replyId */
+    replyId?: string | null
+
+    /** ChangeReplyStatusErrors status */
+    status?: string | null
+  }
+
+  /** Properties of a ChangeReplyStatusResponse. */
+  export interface ChangeReplyStatusResponse {
+    /** ChangeReplyStatusResponse errors */
+    errors?: collaboration.ChangeReplyStatusErrors | null
+
+    /** ChangeReplyStatusResponse result */
+    result?: collaboration.Reply | null
+  }
+
+  /** Properties of a ChooseSpecialistRequest. */
+  export interface ChooseSpecialistRequest {
+    /** ChooseSpecialistRequest replyId */
+    replyId?: string | null
+
+    /** ChooseSpecialistRequest customerId */
+    customerId?: string | null
+  }
+
+  /** Properties of a ChooseSpecialistErrors. */
+  export interface ChooseSpecialistErrors {
+    /** ChooseSpecialistErrors replyId */
+    replyId?: string | null
+
+    /** ChooseSpecialistErrors customerId */
+    customerId?: string | null
+  }
+
+  /** Properties of a ChooseSpecialistResponse. */
+  export interface ChooseSpecialistResponse {
+    /** ChooseSpecialistResponse errors */
+    errors?: collaboration.ChooseSpecialistErrors | null
+
+    /** ChooseSpecialistResponse result */
+    result?: collaboration.Project | null
+  }
+
+  /** Properties of a PublishProjectRequest. */
+  export interface PublishProjectRequest {
+    /** PublishProjectRequest projectId */
+    projectId?: string | null
+
+    /** PublishProjectRequest customerId */
+    customerId?: string | null
+  }
+
+  /** Properties of a PublishProjectErrors. */
+  export interface PublishProjectErrors {
+    /** PublishProjectErrors projectId */
+    projectId?: string | null
+
+    /** PublishProjectErrors customerId */
+    customerId?: string | null
+  }
+
+  /** Properties of a PublishProjectResponse. */
+  export interface PublishProjectResponse {
+    /** PublishProjectResponse errors */
+    errors?: collaboration.PublishProjectErrors | null
+
+    /** PublishProjectResponse result */
+    result?: collaboration.Project | null
+  }
+
+  /** Properties of a CompleteProjectRequest. */
+  export interface CompleteProjectRequest {
+    /** CompleteProjectRequest projectId */
+    projectId?: string | null
+
+    /** CompleteProjectRequest customerId */
+    customerId?: string | null
+
+    /** CompleteProjectRequest rating */
+    rating?: number | null
+
+    /** CompleteProjectRequest comment */
+    comment?: string | null
+  }
+
+  /** Properties of a CompleteProjectErrors. */
+  export interface CompleteProjectErrors {
+    /** CompleteProjectErrors projectId */
+    projectId?: string | null
+
+    /** CompleteProjectErrors customerId */
+    customerId?: string | null
+
+    /** CompleteProjectErrors rating */
+    rating?: string | null
+
+    /** CompleteProjectErrors comment */
+    comment?: string | null
+  }
+
+  /** Properties of a CompleteProjectResponse. */
+  export interface CompleteProjectResponse {
+    /** CompleteProjectResponse errors */
+    errors?: collaboration.CompleteProjectErrors | null
+
+    /** CompleteProjectResponse result */
+    result?: collaboration.Review | null
+  }
+
+  /** Properties of an AddDiscussionMessageRequest. */
+  export interface AddDiscussionMessageRequest {
+    /** AddDiscussionMessageRequest specialistId */
+    specialistId?: string | null
+
+    /** AddDiscussionMessageRequest customerId */
+    customerId?: string | null
+
+    /** AddDiscussionMessageRequest authorId */
+    authorId?: string | null
+
+    /** AddDiscussionMessageRequest message */
+    message?: string | null
+  }
+
+  /** Properties of an AddDiscussionMessageErrors. */
+  export interface AddDiscussionMessageErrors {
+    /** AddDiscussionMessageErrors specialistId */
+    specialistId?: string | null
+
+    /** AddDiscussionMessageErrors customerId */
+    customerId?: string | null
+
+    /** AddDiscussionMessageErrors authorId */
+    authorId?: string | null
+
+    /** AddDiscussionMessageErrors message */
+    message?: string | null
+  }
+
+  /** Properties of an AddDiscussionMessageResponse. */
+  export interface AddDiscussionMessageResponse {
+    /** AddDiscussionMessageResponse errors */
+    errors?: collaboration.AddDiscussionMessageErrors | null
+
+    /** AddDiscussionMessageResponse result */
+    result?: collaboration.Message | null
+  }
+}
