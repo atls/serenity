@@ -16,6 +16,7 @@
     "@nestjs/graphql": "6.5.3",
     "@nestjs/microservices": "6.10.5",
     "@nestjs/platform-express": "6.10.5",
+    "@protos/hits": "0.0.0",
     "@protos/interfaces": "0.1.0",
     "@public-gateway/catalog": "0.1.0",
     "@public-gateway/files": "0.0.1",

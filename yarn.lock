@@ -3595,6 +3595,11 @@
     pino "^5.13.2"
     pino-pretty "^3.2.1"
 
+"@monstrs/nestjs-map-errors-interceptor@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@monstrs/nestjs-map-errors-interceptor/-/nestjs-map-errors-interceptor-0.1.0.tgz#c95816ded24ac12e83f4d7484c36fd0bdebf909d"
+  integrity sha512-9bwekqiITJThnav4VE9yYUh+HHvJBsYQY4mLEApwWgC3pW4X4okR7Y3d+QwbhvOcy3QaLGS9DrVNCxpL2UPKNQ==
+
 "@monstrs/nestjs-map-errors-interceptor@0.1.3":
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@monstrs/nestjs-map-errors-interceptor/-/nestjs-map-errors-interceptor-0.1.3.tgz#8107f75de634aabeaf4449e9a664c69ce21236da"
@@ -3627,6 +3632,22 @@
     import-sort "^6.0.0"
     import-sort-parser-typescript "^6.0.0"
     import-sort-style "^6.0.0"
+
+"@monstrs/server-scripts@0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@monstrs/server-scripts/-/server-scripts-0.1.3.tgz#b8a4b2d5cb287c030b7b985911bca6d33085ceed"
+  integrity sha512-09xyrKQmb2z8RKByiGqjtV4tK2xhsDKJc3w7/U9KbL3NNccRP0aAWuRARoIMsTRJ9nNBOYUhtXqfBo7CMkCenw==
+  dependencies:
+    chalk "^2.4.2"
+    file-loader "^4.0.0"
+    glob-promise "^3.4.0"
+    react-dev-utils "^9.0.1"
+    start-server-webpack-plugin "^2.2.5"
+    ts-loader "^6.0.4"
+    ts-node "^8.3.0"
+    webpack "^4.35.3"
+    webpack-dev-server "^3.7.2"
+    webpack-node-externals "^1.7.2"
 
 "@monstrs/server-scripts@0.1.5":
   version "0.1.5"
@@ -3859,6 +3880,20 @@
   resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-9.5.3.tgz#a14fb6489d412b201b98aa44716fb8727ca4c6ae"
   integrity sha512-W3VKOqbg+4Kw+k6M/SODf+WIzwcx60nAemGV1nNPa/yrDtAS2YcJfqiswrJ3+2nJHzqefAFWn4XOfM0fy8ww2Q==
 
+"@node-ts/bus-core@0.4.9", "@node-ts/bus-core@^0.4.7", "@node-ts/bus-core@^0.4.9":
+  version "0.4.9"
+  resolved "https://registry.yarnpkg.com/@node-ts/bus-core/-/bus-core-0.4.9.tgz#222a4b158c6ac53955ba980ec0a53d893c5d06d6"
+  integrity sha512-vUKJIXVkltpoiLcVmAU4fcYnJX7AR1z/oxRYBNnEcPf9MMBKYnr/SdWLADz+gDVo6CLMjqD/sJTQUJKjTPGukg==
+  dependencies:
+    "@node-ts/bus-messages" "^0.1.4"
+    "@types/node" "^12.0.0"
+    autobind-decorator "^2.4.0"
+    class-transformer "^0.2.0"
+    inversify "^5.0.1"
+    reflect-metadata "^0.1.13"
+    serialize-error "^4.1.0"
+    tslib "^1.9.3"
+
 "@node-ts/bus-core@0.6.3":
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/@node-ts/bus-core/-/bus-core-0.6.3.tgz#e2434bc6f13051224a42b2e861b39fe218e106ab"
@@ -3872,20 +3907,6 @@
     reflect-metadata "^0.1.13"
     serialize-error "^4.1.0"
     tslib "^1.11.1"
-
-"@node-ts/bus-core@^0.4.7", "@node-ts/bus-core@^0.4.9":
-  version "0.4.9"
-  resolved "https://registry.yarnpkg.com/@node-ts/bus-core/-/bus-core-0.4.9.tgz#222a4b158c6ac53955ba980ec0a53d893c5d06d6"
-  integrity sha512-vUKJIXVkltpoiLcVmAU4fcYnJX7AR1z/oxRYBNnEcPf9MMBKYnr/SdWLADz+gDVo6CLMjqD/sJTQUJKjTPGukg==
-  dependencies:
-    "@node-ts/bus-messages" "^0.1.4"
-    "@types/node" "^12.0.0"
-    autobind-decorator "^2.4.0"
-    class-transformer "^0.2.0"
-    inversify "^5.0.1"
-    reflect-metadata "^0.1.13"
-    serialize-error "^4.1.0"
-    tslib "^1.9.3"
 
 "@node-ts/bus-messages@0.1.10", "@node-ts/bus-messages@^0.1.0", "@node-ts/bus-messages@^0.1.10", "@node-ts/bus-messages@^0.1.4":
   version "0.1.10"
@@ -3908,6 +3929,17 @@
   dependencies:
     tslib "^1.9.3"
 
+"@node-ts/bus-postgres@0.3.10":
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/@node-ts/bus-postgres/-/bus-postgres-0.3.10.tgz#b99f652f64eb15b2e87c735efd3965f6ad115b40"
+  integrity sha512-4aznuHIXacSWwM18i9di6R6fkhs45iedkNNIvH3A9nkJF7Y95MB2Or7vo/ysqg6gEM3421jCZq5y6VAxMJYKQw==
+  dependencies:
+    "@node-ts/bus-core" "^0.4.9"
+    "@node-ts/bus-messages" "^0.1.10"
+    pg "^7.9.0"
+    tslib "^1.9.3"
+    uuid "^3.3.2"
+
 "@node-ts/bus-rabbitmq@^0.3.7":
   version "0.3.9"
   resolved "https://registry.yarnpkg.com/@node-ts/bus-rabbitmq/-/bus-rabbitmq-0.3.9.tgz#8097b687affd7fe49eaefd8d14334a2b84e03602"
@@ -3916,6 +3948,15 @@
     "@node-ts/bus-core" "^0.4.9"
     "@node-ts/bus-messages" "^0.1.10"
     amqplib "^0.5.3"
+    tslib "^1.9.3"
+    uuid "^3.3.2"
+
+"@node-ts/bus-workflow@0.4.9":
+  version "0.4.9"
+  resolved "https://registry.yarnpkg.com/@node-ts/bus-workflow/-/bus-workflow-0.4.9.tgz#dfceb971d077157da057a636be3af15aea122141"
+  integrity sha512-LzzM4EEMRtzCKSIV/bSAxTsVyO7maoQD6hvY5MKmZMF72YulpWNE2uee7ou0Qur749brFwbod06ikxmj0V3gzg==
+  dependencies:
+    "@node-ts/bus-messages" "^0.1.10"
     tslib "^1.9.3"
     uuid "^3.3.2"
 
@@ -19530,7 +19571,12 @@ pg-int8@1.0.1:
   resolved "https://registry.yarnpkg.com/pg-int8/-/pg-int8-1.0.1.tgz#943bd463bf5b71b4170115f80f8efc9a0c0eb78c"
   integrity sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==
 
-pg-pool@^2.0.7:
+pg-packet-stream@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/pg-packet-stream/-/pg-packet-stream-1.1.0.tgz#e45c3ae678b901a2873af1e17b92d787962ef914"
+  integrity sha512-kRBH0tDIW/8lfnnOyTwKD23ygJ/kexQVXZs7gEyBljw4FYqimZFxnMMx50ndZ8In77QgfGuItS5LLclC2TtjYg==
+
+pg-pool@^2.0.10, pg-pool@^2.0.7:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/pg-pool/-/pg-pool-2.0.10.tgz#842ee23b04e86824ce9d786430f8365082d81c4a"
   integrity sha512-qdwzY92bHf3nwzIUcj+zJ0Qo5lpG/YxchahxIN8+ZVmXqkahKXsnl2aiJPHLYN9o5mB/leG+Xh6XKxtP7e0sjg==
@@ -19555,6 +19601,20 @@ pg@7.13.0:
     packet-reader "1.0.0"
     pg-connection-string "0.1.3"
     pg-pool "^2.0.7"
+    pg-types "^2.1.0"
+    pgpass "1.x"
+    semver "4.3.2"
+
+pg@^7.9.0:
+  version "7.18.2"
+  resolved "https://registry.yarnpkg.com/pg/-/pg-7.18.2.tgz#4e219f05a00aff4db6aab1ba02f28ffa4513b0bb"
+  integrity sha512-Mvt0dGYMwvEADNKy5PMQGlzPudKcKKzJds/VbOeZJpb6f/pI3mmoXX0JksPgI3l3JPP/2Apq7F36O63J7mgveA==
+  dependencies:
+    buffer-writer "2.0.0"
+    packet-reader "1.0.0"
+    pg-connection-string "0.1.3"
+    pg-packet-stream "^1.1.0"
+    pg-pool "^2.0.10"
     pg-types "^2.1.0"
     pgpass "1.x"
     semver "4.3.2"
@@ -23841,6 +23901,17 @@ ts-node@8.10.2, ts-node@^8.3.0:
     source-map-support "^0.5.17"
     yn "3.1.1"
 
+ts-node@8.5.2:
+  version "8.5.2"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-8.5.2.tgz#434f6c893bafe501a30b32ac94ee36809ba2adce"
+  integrity sha512-W1DK/a6BGoV/D4x/SXXm6TSQx6q3blECUzd5TN+j56YEMX3yPVMpHsICLedUw3DvGF3aTQ8hfdR9AKMaHjIi+A==
+  dependencies:
+    arg "^4.1.0"
+    diff "^4.0.1"
+    make-error "^1.1.1"
+    source-map-support "^0.5.6"
+    yn "^3.0.0"
+
 ts-pnp@^1.1.2, ts-pnp@^1.1.6:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
@@ -24090,6 +24161,11 @@ typeorm@^0.2.14:
     xml2js "^0.4.17"
     yargonaut "^1.1.2"
     yargs "^13.2.1"
+
+typescript@3.7.2:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.2.tgz#27e489b95fa5909445e9fef5ee48d81697ad18fb"
+  integrity sha512-ml7V7JfiN2Xwvcer+XAf2csGO1bPBdRbFCkYBczNZggrBZ9c7G3riSUeJmqEU5uOtXNPMhE3n+R4FA/3YOAWOQ==
 
 typescript@3.9.7, typescript@^3.0.1:
   version "3.9.7"
@@ -25422,7 +25498,7 @@ yarn@^1.15.0:
   resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.4.tgz#01c1197ca5b27f21edc8bc472cd4c8ce0e5a470e"
   integrity sha512-oYM7hi/lIWm9bCoDMEWgffW8aiNZXCWeZ1/tGy0DWrN6vmzjCXIKu2Y21o8DYVBUtiktwKcNoxyGl/2iKLUNGA==
 
-yn@3.1.1:
+yn@3.1.1, yn@^3.0.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/yn/-/yn-3.1.1.tgz#1e87401a09d767c1d5eab26a6e4c185182d2eb50"
   integrity sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==

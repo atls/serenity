@@ -7,13 +7,15 @@ import { CatalogModule }         from '@public-gateway/catalog'
 import { FilesModule }           from '@public-gateway/files'
 import { IdentityModule }        from '@public-gateway/identity'
 
+import { ActivityMiddleware }    from './middleware'
+
 const playground =
   process.env.NODE_ENV !== 'production' || Boolean(process.env.PLAYGROUND)
     ? {
-        settings: {
-          'request.credentials': 'include',
-        },
-      }
+      settings: {
+        'request.credentials': 'include',
+      },
+    }
     : false
 
 @Module({
@@ -34,6 +36,7 @@ const playground =
     FilesModule,
   ],
   providers: [
+    ActivityMiddleware,
     {
       provide: APP_INTERCEPTOR,
       useClass: DataLoaderInterceptor,
