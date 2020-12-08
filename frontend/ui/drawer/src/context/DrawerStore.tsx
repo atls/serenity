@@ -1,4 +1,4 @@
-import EventEmitter from 'events'
+import { EventEmitter } from 'events'
 
 export class DrawerStore extends EventEmitter {
   private drawers: Map<string, boolean> = new Map()
