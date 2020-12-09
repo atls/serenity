@@ -19,6 +19,7 @@
     "@protos/hits": "0.0.0",
     "@protos/interfaces": "0.1.0",
     "@public-gateway/catalog": "0.1.0",
+    "@public-gateway/collaboration": "0.0.0",
     "@public-gateway/files": "0.0.1",
     "@public-gateway/identity": "0.1.0",
     "apollo-server-express": "2.9.12",

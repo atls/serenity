@@ -3582,6 +3582,11 @@
     amqplib "^0.5.5"
     inversify "^5.0.1"
 
+"@monstrs/nestjs-dataloader@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@monstrs/nestjs-dataloader/-/nestjs-dataloader-0.1.2.tgz#4bda922ad41d073bbd81e4f15286113857fee14e"
+  integrity sha512-KhSyw7A2/kkCmC0w2DDlcqyT4+v2hpG5r+36a5R69VsI9NYUm6Wxg6LmM1kAnz7DfJKFrN2d899R+tnfYRAYNw==
+
 "@monstrs/nestjs-dataloader@0.1.4":
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/@monstrs/nestjs-dataloader/-/nestjs-dataloader-0.1.4.tgz#0fc83a85ecc1d3e2a651835a8686e2da49a44973"

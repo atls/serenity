@@ -12,6 +12,7 @@
     "catalog:dev": "yarn workspace @catalog/service dev",
     "files:dev": "yarn workspace @files/service dev",
     "identity:dev": "yarn workspace @identity/service dev",
+    "collaboration:dev": "yarn workspace @collaboration/service dev",
     "mailer:dev": "yarn workspace @mailer/service dev",
     "public-gateway:dev": "yarn workspace @public-gateway/app dev",
     "private-gateway:dev": "yarn workspace @private-gateway/app dev",
