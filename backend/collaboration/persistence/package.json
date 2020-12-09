@@ -17,7 +17,7 @@
     "@nestjs/typeorm": "6.2.0",
     "@node-ts/ddd": "0.1.4",
     "@node-ts/ddd-types": "0.1.2",
-    "pg": "7.13.0",
+    "pg": "8.5.1",
     "ts-node": "8.5.2",
     "typeorm": "0.2.19",
     "typescript": "3.7.2"
