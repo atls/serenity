@@ -1,6 +1,7 @@
 import { NestFactory }        from '@nestjs/core'
 import { oathkeeperAuth }     from '@monstrs/oathkeeper-auth'
 
+import { ActivityMiddleware } from './middleware'
 import { ApplicationModule }  from './module'
 
 declare const module: any
@@ -16,6 +17,8 @@ const bootstrap = async () => {
       )
     )
   }
+
+  app.use(app.get(ActivityMiddleware).use)
 
   await app.listen(process.env.PORT || 3000)
 

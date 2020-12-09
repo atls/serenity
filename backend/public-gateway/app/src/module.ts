@@ -8,13 +8,15 @@ import { CollaborationModule }   from '@public-gateway/collaboration'
 import { FilesModule }           from '@public-gateway/files'
 import { IdentityModule }        from '@public-gateway/identity'
 
+import { ActivityMiddleware }    from './middleware'
+
 const playground =
   process.env.NODE_ENV !== 'production' || Boolean(process.env.PLAYGROUND)
     ? {
-        settings: {
-          'request.credentials': 'include',
-        },
-      }
+      settings: {
+        'request.credentials': 'include',
+      },
+    }
     : false
 
 @Module({
@@ -36,6 +38,7 @@ const playground =
     CollaborationModule,
   ],
   providers: [
+    ActivityMiddleware,
     {
       provide: APP_INTERCEPTOR,
       useClass: DataLoaderInterceptor,
