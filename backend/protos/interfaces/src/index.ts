@@ -2126,3 +2126,152 @@ export namespace collaboration {
     result?: collaboration.Message | null
   }
 }
+
+/** Namespace hits. */
+export namespace hits {
+  /** Contains all the RPC service clients. */
+  export interface ClientFactory {
+    /**
+     * Returns the HitsService service client.
+     */
+    getHitsService(): hits.HitsService
+  }
+
+  /** Builder for an RPC service server. */
+  export interface ServerBuilder {
+    /**
+     * Adds a HitsService service implementation.
+     * @param impl HitsService service implementation
+     */
+    addHitsService(impl: hits.HitsService): hits.ServerBuilder
+  }
+
+  /** Constructs a new HitsService service. */
+  export interface HitsService {
+    /**
+     * Calls getCounters.
+     * @param request GetCountersRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    getCounters(
+      request: hits.GetCountersRequest,
+      metadata?: grpc.Metadata
+    ): Observable<hits.GetCountersResponse>
+
+    /**
+     * Calls getActivities.
+     * @param request GetActivitiesRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    getActivities(
+      request: hits.GetActivitiesRequest,
+      metadata?: grpc.Metadata
+    ): Observable<hits.GetActivitiesResponse>
+
+    /**
+     * Calls trackActivity.
+     * @param request TrackActivityRequest message or plain object
+     * @param metadata Optional metadata
+     * @returns Promise
+     */
+    trackActivity(
+      request: hits.TrackActivityRequest,
+      metadata?: grpc.Metadata
+    ): Observable<hits.TrackActivityResponse>
+  }
+
+  /** Properties of a CountersFilter. */
+  export interface CountersFilter {
+    /** CountersFilter id */
+    id?: string[] | null
+  }
+
+  /** Properties of a Counter. */
+  export interface Counter {
+    /** Counter id */
+    id?: string | null
+
+    /** Counter value */
+    value?: number | null
+  }
+
+  /** Properties of a GetCountersRequest. */
+  export interface GetCountersRequest {
+    /** GetCountersRequest pager */
+    pager?: common.Pager | null
+
+    /** GetCountersRequest order */
+    order?: common.Order | null
+
+    /** GetCountersRequest filters */
+    filters?: hits.CountersFilter | null
+  }
+
+  /** Properties of a GetCountersResponse. */
+  export interface GetCountersResponse {
+    /** GetCountersResponse rows */
+    rows?: hits.Counter[] | null
+
+    /** GetCountersResponse pageInfo */
+    pageInfo?: common.PageInfo | null
+  }
+
+  /** Properties of an ActivitiesFilter. */
+  export interface ActivitiesFilter {
+    /** ActivitiesFilter id */
+    id?: string[] | null
+  }
+
+  /** Properties of an Activity. */
+  export interface Activity {
+    /** Activity id */
+    id?: string | null
+
+    /** Activity last */
+    last?: number | null
+  }
+
+  /** Properties of a GetActivitiesRequest. */
+  export interface GetActivitiesRequest {
+    /** GetActivitiesRequest pager */
+    pager?: common.Pager | null
+
+    /** GetActivitiesRequest order */
+    order?: common.Order | null
+
+    /** GetActivitiesRequest filters */
+    filters?: hits.ActivitiesFilter | null
+  }
+
+  /** Properties of a GetActivitiesResponse. */
+  export interface GetActivitiesResponse {
+    /** GetActivitiesResponse rows */
+    rows?: hits.Activity[] | null
+
+    /** GetActivitiesResponse pageInfo */
+    pageInfo?: common.PageInfo | null
+  }
+
+  /** Properties of a TrackActivityRequest. */
+  export interface TrackActivityRequest {
+    /** TrackActivityRequest id */
+    id?: string | null
+  }
+
+  /** Properties of a TrackActivityErrors. */
+  export interface TrackActivityErrors {
+    /** TrackActivityErrors id */
+    id?: string | null
+  }
+
+  /** Properties of a TrackActivityResponse. */
+  export interface TrackActivityResponse {
+    /** TrackActivityResponse errors */
+    errors?: hits.TrackActivityErrors | null
+
+    /** TrackActivityResponse result */
+    result?: hits.Activity | null
+  }
+}
