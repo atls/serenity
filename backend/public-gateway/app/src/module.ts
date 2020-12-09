@@ -4,6 +4,7 @@ import { APP_INTERCEPTOR }       from '@nestjs/core'
 import { GraphQLModule }         from '@nestjs/graphql'
 
 import { CatalogModule }         from '@public-gateway/catalog'
+import { CollaborationModule }   from '@public-gateway/collaboration'
 import { FilesModule }           from '@public-gateway/files'
 import { IdentityModule }        from '@public-gateway/identity'
 
@@ -32,6 +33,7 @@ const playground =
     IdentityModule,
     CatalogModule,
     FilesModule,
+    CollaborationModule,
   ],
   providers: [
     {
