@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
+about: Если нужна новая фича
 title: '[feature]'
 labels: feature
 assignees: TorinAsakura
