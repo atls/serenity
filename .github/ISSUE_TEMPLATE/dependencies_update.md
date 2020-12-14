@@ -1,6 +1,6 @@
 ---
 name: Dependencies update
-about: Create a report to help us improve
+about: Уборка и вынос мусора
 title: '[dependencies]'
 labels: dependencies
 assignees: TorinAsakura
