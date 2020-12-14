@@ -3,6 +3,4 @@ contact_links:
   - name: Our Convention
     url: https://github.com/atlantis-lab/convention
     about: Please ask and answer questions about proccess here.
-  - name: Serenity Project
-    url: https://github.com/atlantis-lab/serenity
-    about: Our Holy Grail Repo based on *DD methodologies
+  
