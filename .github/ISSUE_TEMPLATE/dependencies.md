@@ -1,6 +1,6 @@
 ---
 name: Dependencies update
-about: Уборка и вынос мусора
+about: Уборка номера
 title: '[dependencies]'
 labels: dependencies
 assignees: TorinAsakura
