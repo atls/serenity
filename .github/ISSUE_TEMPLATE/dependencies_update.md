@@ -1,7 +1,7 @@
 ---
 name: Dependencies update
 about: Create a report to help us improve
-title: [dependencies]
+title: '[dependencies]'
 labels: dependencies
 assignees: TorinAsakura
 ---
