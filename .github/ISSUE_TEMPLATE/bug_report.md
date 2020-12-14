@@ -1,7 +1,7 @@
 ---
 name: Bug report
-about: Create a report to help us improve
-title: "[bug]"
+about: Если обнаружен баг
+title: '[bug]'
 labels: bug
 assignees: TorinAsakura
 
