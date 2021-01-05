@@ -25,8 +25,6 @@ const reducer = (state, action) => {
   return state
 }
 
-const redirectTo = (body: any) => body.body.redirectTo
-
 export const useSignIn = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
 

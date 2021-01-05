@@ -1,7 +1,7 @@
 import React                        from 'react'
-import { Input }                    from '@atlantis-lab/input'
 
 import { Button }                   from '@ui/button'
+import { Input }                    from '@ui/input'
 import { Box, Column, Layout, Row } from '@ui/layout'
 import { NextLink as Link }         from '@ui/link'
 import { Text }                     from '@ui/text'
