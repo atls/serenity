@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "devDependencies": {
     "@design/ui": "0.3.0",
-    "@storybook/react": "5.2.6",
+    "@storybook/react": "5.3.21",
     "@types/styled-system": "5.1.4",
     "@types/webpack-env": "1.15.2"
   },
