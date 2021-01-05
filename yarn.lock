@@ -3761,10 +3761,10 @@
   resolved "https://registry.yarnpkg.com/@monstrs/nestjs-map-errors-interceptor/-/nestjs-map-errors-interceptor-0.1.3.tgz#8107f75de634aabeaf4449e9a664c69ce21236da"
   integrity sha512-eAjl5NVX3ufCSHvgSfnLHR5MPkIPcDzB83P3CRuFmnoIXbMejKxjd+fbJkptosMZEa6D6w5ufsPNV08RgnAIIw==
 
-"@monstrs/nestjs-signed-url@0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@monstrs/nestjs-signed-url/-/nestjs-signed-url-0.1.3.tgz#2bfc9b4aa9a6c1ba1518ffda445e54bc17548555"
-  integrity sha512-+LQL6YnIJ5pd8SMcpI4CL44+zijgMrJonaF4yBnZPkcb6NcJWrMmRrpIWkG5AmewGdeCzJCKSwjpYT8+RqZbJA==
+"@monstrs/nestjs-signed-url@0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@monstrs/nestjs-signed-url/-/nestjs-signed-url-0.1.4.tgz#5b7bc4a4502ac25acc1ac58b6554943762a5f314"
+  integrity sha512-Kdu9Kg5uqOSgELUHToL5iuTPj4/vy/YfOcV/A91S7es8ZvcnN8MNbbm7tBSEdnFhUSg2grgPQIPoHMpq3jdEhQ==
 
 "@monstrs/oathkeeper-auth@0.1.0":
   version "0.1.0"
