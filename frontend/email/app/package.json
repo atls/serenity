@@ -30,7 +30,7 @@
     "@atlantis-lab/next-document-with-emotion": "0.2.7",
     "@atlantis-lab/next-document-with-helmet": "0.2.8",
     "@atlantis-lab/react-auth": "0.1.13",
-    "@atlantis-lab/react-locale": "0.1.11",
+    "@atlantis-lab/react-locale": "0.1.23",
     "@email/email-verification-template": "0.1.0",
     "@email/reset-password-template": "0.1.0",
     "@types/react": "16.9.2",

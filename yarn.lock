@@ -327,10 +327,12 @@
   resolved "https://registry.yarnpkg.com/@atlantis-lab/react-auth/-/react-auth-0.1.15.tgz#bde30e9b94a423b74c043d6fcd5130121ea2d13c"
   integrity sha512-YBo1GwfBDI4gysHOh8CDxKeqIKs6cWGNWFVC/JiWz6r+hiHgGtXz0v3Etad0wu0m4DMQAPktScI2Z19ln8R3dA==
 
-"@atlantis-lab/react-locale@0.1.11":
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/react-locale/-/react-locale-0.1.11.tgz#d724335dc2a8e441b347fdc64e93273f9b39b67d"
-  integrity sha512-YHCE33B78zOybSYLMfXmJbwlYOWY7nuavMpu7hSMzwnCRFNbaPTZol5VXZ2XM0jmV0/sY9IYd8JwQlHQN1pf8Q==
+"@atlantis-lab/react-locale@0.1.23":
+  version "0.1.23"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/react-locale/-/react-locale-0.1.23.tgz#6cbbf6c92bba2c19598a31a63ffbb162b19f30f3"
+  integrity sha512-tqx4djFR1mNIfZEVy5Yq0o6Fdp72HXyIIaQnZvZZiadkwaqqq36qmYBgBFkm8S4r1azLxWlZNXXGye1x5vVF1Q==
+  dependencies:
+    react "^16.13.1"
 
 "@atlantis-lab/react-locale@^0.1.2":
   version "0.1.13"
@@ -21493,7 +21495,7 @@ react@16.13.1:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
 
-react@^16.8.3, react@^16.9.0:
+react@^16.13.1, react@^16.8.3, react@^16.9.0:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
   integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
