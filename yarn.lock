@@ -317,10 +317,12 @@
   resolved "https://registry.yarnpkg.com/@atlantis-lab/next-document-with-helmet/-/next-document-with-helmet-0.2.8.tgz#f7945a9febecc464cea4a5d7674793717cc74e15"
   integrity sha512-3pOwLQk/ImnjbbyFCsy8/Pv8ks9ojr+P4YGzWhds927l9BiQCv0AQtPnDsT49tmZlWwfc2Guq1b7wDuoP5p8IA==
 
-"@atlantis-lab/react-auth@0.1.13":
-  version "0.1.13"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/react-auth/-/react-auth-0.1.13.tgz#35c27291bf23da0e3893306f2f87ee33376c9f97"
-  integrity sha512-q8a9e3c20wYAqxrUeRwOjewt6HXuDzEgEWKheqWoaUxds642ffJFHwrps7DQtTf3q82E/QhfJOAvrCNVqusIpg==
+"@atlantis-lab/react-auth@0.1.25":
+  version "0.1.25"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/react-auth/-/react-auth-0.1.25.tgz#de75187cd5f867d2644758f61c1c3e5450094501"
+  integrity sha512-JD6t2PEtGjTweSwa+bP35OPhHsy5gWs1KDtfy3gHwqcImyqi1B4pli9aOUUxA3WI7hBseMIF9AooX+QHM/zthQ==
+  dependencies:
+    react "^16.13.1"
 
 "@atlantis-lab/react-auth@^0.1.4":
   version "0.1.15"
@@ -21493,7 +21495,7 @@ react@16.13.1:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
 
-react@^16.8.3, react@^16.9.0:
+react@^16.13.1, react@^16.8.3, react@^16.9.0:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
   integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
