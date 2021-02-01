@@ -1,5 +1,4 @@
 {
-  "lerna": "3.22.1",
   "packages": ["frontend/**/*", "backend/**/*"],
   "npmClient": "yarn",
   "useWorkspaces": true,
@@ -9,7 +8,7 @@
       "allowBranch": "chore/release",
       "conventionalCommits": true,
       "exact": true,
-      "message": "chore(release): %s"
+      "message": "chore(release): publish"
     }
   }
 }

@@ -1,15 +1,15 @@
-name: Checks
+name: Checking
 
 on:
   pull_request:
     paths:
       - '**'
+      - '!.github/**'
+      - '!devops/**'
 
 jobs:
-  run:
-    name: Run
+  checking:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -22,8 +22,14 @@ jobs:
       - name: Install
         run: yarn install
 
-      - name: TypeCheck
+      - name: Build
+        run: yarn build
+
+      - name: Typecheck
         run: yarn typecheck
 
       - name: Lint
         run: yarn lint
+
+      - name: Test
+        run: yarn test

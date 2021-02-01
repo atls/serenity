@@ -1,0 +1,41 @@
+name: Publish
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - dev
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Configure GPG Key
+        run: |
+          mkdir -p ~/.gnupg/
+          printf "$GPG_SIGNING_KEY" | base64 --decode > ~/.gnupg/private.key
+          gpg --import ~/.gnupg/private.key
+        env:
+          GPG_SIGNING_KEY: ${{ secrets.GPG_SIGNING_KEY }}
+
+      - name: Configure Git
+        run: |
+          git config --local user.email $GIT_EMAIL
+          git config --local user.name $GIT_USER
+          git config --local user.signingkey $GPG_KEY_ID
+          git config --local commit.gpgsign true
+        env:
+          GIT_USER: ${{ secrets.GIT_USER }}
+          GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID}}
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Release
+        run: yarn lerna version --yes
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
