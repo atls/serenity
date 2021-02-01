@@ -19,7 +19,7 @@
     "email:dev": "yarn workspace @email/app dev"
   },
   "devDependencies": {
-    "@atlantis-lab/tsconfig": "0.1.2",
+    "@atlantis-lab/actl": "^0.4.8",
     "@monstrs/mctl": "0.1.82",
     "husky": "4.2.5",
     "lerna": "3.22.1",
