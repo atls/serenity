@@ -4046,7 +4046,21 @@
   resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-9.5.5.tgz#fe559b5ca51c038cb7840e0d669a6d7ef01fe4eb"
   integrity sha512-Gz5z0+ID+KAGto6Tkgv1a340damEw3HG6ANLKwNi5/QSHqQ3JUAVxMuhz3qnL54505I777evpzL89ofWEMIWKw==
 
-"@node-ts/bus-core@0.4.9", "@node-ts/bus-core@^0.4.7", "@node-ts/bus-core@^0.4.9":
+"@node-ts/bus-core@0.6.5":
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/@node-ts/bus-core/-/bus-core-0.6.5.tgz#a8a4255f617f4009016becc08e69505e0746155e"
+  integrity sha512-AKGEeDspW6v6lLrtbCs85GPRqIpS2t/Kuh5NmiK/VOn4wxluG5Rfn4MeqF05Dc995q21KEWp3w5RojudviESaw==
+  dependencies:
+    "@node-ts/bus-messages" "^0.3.1"
+    "@types/node" "^12.12.39"
+    autobind-decorator "^2.4.0"
+    class-transformer "^0.3.1"
+    inversify "^5.0.1"
+    reflect-metadata "^0.1.13"
+    serialize-error "^4.1.0"
+    tslib "^1.11.1"
+
+"@node-ts/bus-core@^0.4.7", "@node-ts/bus-core@^0.4.9":
   version "0.4.9"
   resolved "https://registry.yarnpkg.com/@node-ts/bus-core/-/bus-core-0.4.9.tgz#222a4b158c6ac53955ba980ec0a53d893c5d06d6"
   integrity sha512-vUKJIXVkltpoiLcVmAU4fcYnJX7AR1z/oxRYBNnEcPf9MMBKYnr/SdWLADz+gDVo6CLMjqD/sJTQUJKjTPGukg==
@@ -4060,20 +4074,6 @@
     serialize-error "^4.1.0"
     tslib "^1.9.3"
 
-"@node-ts/bus-core@0.6.3":
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/@node-ts/bus-core/-/bus-core-0.6.3.tgz#e2434bc6f13051224a42b2e861b39fe218e106ab"
-  integrity sha512-JkRBZgTy8tAUGs0rkizbeUzYxitCLeRpEdATKD+Y4RMkXdERhOX6fiZ67GRMEj2s0ihT9JLPgG9UZ+vvcRhmrQ==
-  dependencies:
-    "@node-ts/bus-messages" "^0.3.0"
-    "@types/node" "^12.12.37"
-    autobind-decorator "^2.4.0"
-    class-transformer "^0.2.3"
-    inversify "^5.0.1"
-    reflect-metadata "^0.1.13"
-    serialize-error "^4.1.0"
-    tslib "^1.11.1"
-
 "@node-ts/bus-messages@0.1.10", "@node-ts/bus-messages@^0.1.0", "@node-ts/bus-messages@^0.1.10", "@node-ts/bus-messages@^0.1.4":
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/@node-ts/bus-messages/-/bus-messages-0.1.10.tgz#1c3943016ea66d273524e948e137c9ebac9e00f5"
@@ -4081,7 +4081,7 @@
   dependencies:
     tslib "^1.9.3"
 
-"@node-ts/bus-messages@0.3.0", "@node-ts/bus-messages@^0.3.0":
+"@node-ts/bus-messages@0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@node-ts/bus-messages/-/bus-messages-0.3.0.tgz#a5e19474e54f24ff683fa4fd8e54e65ecb68ce78"
   integrity sha512-rrjo6v8dv21kqbYcWFkohmUS7BwIfn6xyCPiAxAvVpdQ2QYdUY1e9XYshWg9PSmlCtKKYh2Hs4kFf4Mj4Yc10A==
@@ -4094,6 +4094,13 @@
   integrity sha512-Wx15syvIqajVOaXyPA28d1DfxxHgLuPJjpw+IQ8HfSi6L96bvp7QuRntWitE8ck6K5zAvjs8b1L21MXgD6dTtQ==
   dependencies:
     tslib "^1.9.3"
+
+"@node-ts/bus-messages@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@node-ts/bus-messages/-/bus-messages-0.3.1.tgz#91c0fe2d62f5c282e002640fc37d6907ac65d6bf"
+  integrity sha512-y+sHpaLmk4e/amZdTSDrG/4R1FIYLM3EC9dbTxSpIttLSi2El4DUm0GTi1iX2yXzweVo56FmhzQLephF6jKoIw==
+  dependencies:
+    tslib "^1.13.0"
 
 "@node-ts/bus-postgres@0.3.10":
   version "0.3.10"
@@ -5758,10 +5765,15 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.50.tgz#7a20902af591282aa9176baefc37d4372131c32d"
   integrity sha512-vwX+/ija9xKc/z9VqMCdbf4WYcMTGsI0I/L/6shIF3qXURxZOhPQlPRHtjTpiNhAwn0paMJzlOQqw6mAGEQnTA==
 
-"@types/node@^12.0.0", "@types/node@^12.12.37", "@types/node@^12.6.2":
+"@types/node@^12.0.0", "@types/node@^12.6.2":
   version "12.19.11"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.19.11.tgz#9220ab4b20d91169eb78f456dbfcbabee89dfb50"
   integrity sha512-bwVfNTFZOrGXyiQ6t4B9sZerMSShWNsGRw8tC5DY1qImUNczS9SjT4G6PnzjCnxsu5Ubj6xjL2lgwddkxtQl5w==
+
+"@types/node@^12.12.39":
+  version "12.19.15"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.19.15.tgz#0de7e978fb43db62da369db18ea088a63673c182"
+  integrity sha512-lowukE3GUI+VSYSu6VcBXl14d61Rp5hA1D+61r16qnwC0lYNSqdxcvRh0pswejorHfS+HgwBasM8jLXz0/aOsw==
 
 "@types/node@^13.7.0":
   version "13.13.38"
@@ -9816,10 +9828,15 @@ class-transformer@0.3.1:
   resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.3.1.tgz#ee681a5439ff2230fc57f5056412d3befa70d597"
   integrity sha512-cKFwohpJbuMovS8xVLmn8N2AUbAuc8pVo4zEfsUVo8qgECOogns1WVk/FkOZoxhOPTyTYFckuoH+13FO+MQ8GA==
 
-class-transformer@^0.2.0, class-transformer@^0.2.3:
+class-transformer@^0.2.0:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.2.3.tgz#598c92ca71dcca73f91ccb875d74a3847ccfa32d"
   integrity sha512-qsP+0xoavpOlJHuYsQJsN58HXSl8Jvveo+T37rEvCEeRfMWoytAyR0Ua/YsFgpM6AZYZ/og2PJwArwzJl1aXtQ==
+
+class-transformer@^0.3.1:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.3.2.tgz#779ef5f124784324b40f8e927c774bd96cdecd4b"
+  integrity sha512-9QY6QXBH/+Gt1C3HBmJCrgY6+EFpIa6aLjfDnlXFx0zQl/HjrCE7qoaI0srNrxpMIfsobCpgUdDG5JYtJOpVsw==
 
 class-utils@^0.3.5:
   version "0.3.6"
