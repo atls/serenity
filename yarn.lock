@@ -255,10 +255,10 @@
     apollo-link-http "^1.5.16"
     isomorphic-unfetch "^3.0.0"
 
-"@atlantis-lab/next-app-with-auth@0.2.8":
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-auth/-/next-app-with-auth-0.2.8.tgz#ef1aae1d4fbccd3cbb0f28674f9e215ab542201e"
-  integrity sha512-tnq9u9zdkFwj8fP8JwaXVKVD+E5GBGlUcPlcZSibnaECmHEqCVqLKvheznMZpZFqGQy5+kPNROzRXRVp58kq2Q==
+"@atlantis-lab/next-app-with-auth@0.2.41":
+  version "0.2.41"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-auth/-/next-app-with-auth-0.2.41.tgz#841bb6d222ad19f51e07dcd6f9effe1a2cf7a667"
+  integrity sha512-SYMowq3r1/rLXckkTx+Dbkh8i6WW0WlI6ZVpFel7EczXSP7DK9e+7l2GQnzJUfphOxk6uB0XTpTD3jlYJqSV/g==
   dependencies:
     "@atlantis-lab/react-auth" "^0.1.4"
 
