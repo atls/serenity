@@ -262,15 +262,10 @@
   dependencies:
     "@atlantis-lab/react-auth" "^0.1.4"
 
-"@atlantis-lab/next-app-with-emotion@0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-emotion/-/next-app-with-emotion-0.2.5.tgz#2d1f0390b827bb5ef3a93020c0dfbf5fef39de4c"
-  integrity sha512-pMCEbrLJ7h0lZ6jdVzoXYU10y7v8qb7awIomayKnvGNhSdCuc0ZRe7QmKFn/wO8EYhWtTNyOzioki5HO4AoXXg==
-
-"@atlantis-lab/next-app-with-emotion@0.2.7":
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-emotion/-/next-app-with-emotion-0.2.7.tgz#fb3492857e988c0bb798a2075a316a82e2beb68b"
-  integrity sha512-IIoUP/DezIumwxjMBBjuoWR7Ten6nKV4paGj/QuQMeX16zl+OJrYXVUCUnOgQw+BRrh/xIwCNif/1jhKip/CcQ==
+"@atlantis-lab/next-app-with-emotion@0.2.40":
+  version "0.2.40"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-emotion/-/next-app-with-emotion-0.2.40.tgz#48613773c2c3525f85e3350465d55d06201f263d"
+  integrity sha512-Gs6P9e5dJ+8t4XbUaw6N7s4/mA8cE9+AHULqd0xtNZukFUQG7D7i0vMhlzjActroRfNbqh7W6GnmueDtbVC6zw==
 
 "@atlantis-lab/next-app-with-helmet@0.2.7":
   version "0.2.7"

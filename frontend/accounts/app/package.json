@@ -33,7 +33,7 @@
     "passport-oauth2-refresh": "1.1.0"
   },
   "devDependencies": {
-    "@atlantis-lab/next-app-with-emotion": "0.2.5",
+    "@atlantis-lab/next-app-with-emotion": "0.2.40",
     "@atlantis-lab/next-app-with-helmet": "0.2.7",
     "@atlantis-lab/next-app-with-intl": "0.2.6",
     "@atlantis-lab/next-document-with-emotion": "0.2.7",
