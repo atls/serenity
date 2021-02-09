@@ -22,7 +22,7 @@
     "next-images": "1.2.0"
   },
   "devDependencies": {
-    "@atlantis-lab/next-app-with-apollo": "0.2.7",
+    "@atlantis-lab/next-app-with-apollo": "0.2.42",
     "@atlantis-lab/next-app-with-auth": "0.2.8",
     "@atlantis-lab/next-app-with-emotion": "0.2.7",
     "@atlantis-lab/next-app-with-helmet": "0.2.7",
