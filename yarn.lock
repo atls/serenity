@@ -272,10 +272,10 @@
   resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-emotion/-/next-app-with-emotion-0.2.7.tgz#fb3492857e988c0bb798a2075a316a82e2beb68b"
   integrity sha512-IIoUP/DezIumwxjMBBjuoWR7Ten6nKV4paGj/QuQMeX16zl+OJrYXVUCUnOgQw+BRrh/xIwCNif/1jhKip/CcQ==
 
-"@atlantis-lab/next-app-with-helmet@0.2.7":
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-helmet/-/next-app-with-helmet-0.2.7.tgz#37d09d401ae5008a12f931898c12b327b7eed8bc"
-  integrity sha512-iKNvmM7ostdKv3hkLn6mJ66N5qdgfkx8MTmDh0XG2ykpxlpUERzqm4PILqsn3Pfmpxf7OiQ5LWQwaebtg0Flyg==
+"@atlantis-lab/next-app-with-helmet@0.2.40":
+  version "0.2.40"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/next-app-with-helmet/-/next-app-with-helmet-0.2.40.tgz#8cee1db95f99c3f99b688afb7654546af58fe433"
+  integrity sha512-gEkExWiPmf5gh5zTL+bKWemvWmC22gCNp9E0hXWOKAEiPFvHSKc3O7myL3mia2mABEuWUnMSNsDp21Uir/ad5w==
 
 "@atlantis-lab/next-app-with-intl@0.2.6":
   version "0.2.6"
