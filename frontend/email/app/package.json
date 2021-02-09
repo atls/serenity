@@ -26,7 +26,7 @@
     "@atlantis-lab/next-app-with-auth": "0.2.8",
     "@atlantis-lab/next-app-with-emotion": "0.2.7",
     "@atlantis-lab/next-app-with-helmet": "0.2.7",
-    "@atlantis-lab/next-app-with-intl": "0.2.9",
+    "@atlantis-lab/next-app-with-intl": "0.2.45",
     "@atlantis-lab/next-document-with-emotion": "0.2.7",
     "@atlantis-lab/next-document-with-helmet": "0.2.8",
     "@atlantis-lab/react-auth": "0.1.13",
