@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@monstrs/server-scripts": "0.1.5",
-    "@types/node": "12.12.14"
+    "@types/node": "12.20.4"
   },
   "dependencies": {
     "@files/application": "0.0.1",

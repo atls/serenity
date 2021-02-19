@@ -7,7 +7,7 @@
     "typeorm": "ts-node `yarn bin typeorm`"
   },
   "devDependencies": {
-    "@types/node": "12.12.14"
+    "@types/node": "12.20.4"
   },
   "dependencies": {
     "@collaboration/domain": "0.0.0",
