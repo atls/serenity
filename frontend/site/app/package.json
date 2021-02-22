@@ -1,0 +1,49 @@
+{
+  "name": "@site/app",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build:tsc": "tsc",
+    "build:next": "next build src && cp -r src/.next dist",
+    "build": "yarn build:tsc && yarn build:next",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@atlantis-lab/next-config-with-workspaces": "^0.2.30",
+    "@formatjs/intl-relativetimeformat": "4.4.3",
+    "@monstrs/oathkeeper-auth": "0.1.0",
+    "express": "^4.17.1",
+    "next": "9.1.1",
+    "next-compose-plugins": "2.2.0",
+    "next-fonts": "0.19.0",
+    "next-images": "1.2.0"
+  },
+  "devDependencies": {
+    "@atlantis-lab/next-app-with-apollo": "^0.2.42",
+    "@atlantis-lab/next-app-with-auth": "^0.2.41",
+    "@atlantis-lab/next-app-with-emotion": "^0.2.40",
+    "@atlantis-lab/next-app-with-helmet": "^0.2.40",
+    "@atlantis-lab/next-app-with-intl": "^0.2.45",
+    "@atlantis-lab/next-app-with-provider": "^0.2.40",
+    "@atlantis-lab/next-app-with-user": "^0.2.41",
+    "@atlantis-lab/next-document-with-emotion": "^0.2.40",
+    "@atlantis-lab/next-document-with-helmet": "^0.2.41",
+    "@atlantis-lab/react-auth": "^0.1.25",
+    "@atlantis-lab/react-locale": "^0.1.23",
+    "@atlantis-lab/react-user": "^0.1.23",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.5",
+    "@ui/theme": "0.0.4",
+    "react": "16.12.0",
+    "react-apollo": "3.1.3",
+    "react-dom": "16.12.0",
+    "react-helmet": "5.2.1",
+    "react-intl": "3.11.0",
+    "recompose": "0.30.0",
+    "ts-node": "8.5.2",
+    "typescript": "3.7.2",
+    "universal-cookie": "4.0.3"
+  }
+}
