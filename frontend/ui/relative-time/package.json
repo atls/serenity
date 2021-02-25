@@ -1,0 +1,12 @@
+{
+  "name": "@ui/relative-time",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.ts",
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-intl": "^3.2.0",
+    "@emotion/styled": "^10.0.0"
+  }
+}
