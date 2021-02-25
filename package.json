@@ -27,7 +27,8 @@
   },
   "workspaces": [
     "frontend/**/*",
-    "backend/**/*"
+    "backend/**/*",
+    "types/**/*"
   ],
   "husky": {
     "hooks": {
