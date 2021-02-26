@@ -33,8 +33,9 @@
     "@atlantis-lab/react-auth": "^0.1.25",
     "@atlantis-lab/react-locale": "^0.1.23",
     "@atlantis-lab/react-user": "^0.1.23",
-    "@types/react": "16.9.2",
-    "@types/react-dom": "16.9.5",
+    "@site/index-page": "0.0.0",
+    "@types/react": "16.14.0",
+    "@types/react-dom": "16.9.6",
     "@ui/chat": "0.0.0",
     "@ui/theme": "0.0.4",
     "react": "16.12.0",
@@ -44,7 +45,7 @@
     "react-intl": "3.11.0",
     "recompose": "0.30.0",
     "ts-node": "8.5.2",
-    "typescript": "3.7.2",
+    "typescript": "^4.2.2",
     "universal-cookie": "4.0.3"
   }
 }

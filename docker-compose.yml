@@ -140,6 +140,51 @@ services:
       - default
       - traefik
 
+  site:
+    image: node:14-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - modules:/workspace/node_modules
+    entrypoint: yarn site:dev
+    environment:
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+      - NODE_ICU_DATA=/workspace/node_modules/full-icu
+      - PUBLIC_GATEWAY_URL=${PUBLIC_GATEWAY_URL}
+    depends_on:
+      - oathkeeper
+    networks:
+      - default
+      - traefik
+    extra_hosts:
+      - 'public-gateway.local.serenity.atls.tech:172.16.101.99'
+
+  site-local:
+    image: node:14-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - modules:/workspace/node_modules
+    entrypoint: yarn site:dev
+    environment:
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+      - NODE_ICU_DATA=/workspace/node_modules/full-icu
+      - PUBLIC_GATEWAY_URL=${PUBLIC_GATEWAY_URL}
+      - DEV_AUTH_TOKEN=${DEV_AUTH_TOKEN}
+      - DEV_AUTH_USER=${DEV_AUTH_USER}
+    labels:
+      - 'traefik.frontend.rule=Host:local.serenity.atls.tech'
+      - 'traefik.protocol=http'
+      - 'traefik.port=3000'
+    depends_on:
+      - traefik
+      - redis
+    networks:
+      - default
+      - traefik
+    extra_hosts:
+      - 'public-gateway.local.serenity.atls.tech:172.16.101.99'
+
   accounts:
     image: node:14-alpine
     working_dir: /workspace
