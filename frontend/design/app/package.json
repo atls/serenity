@@ -9,7 +9,7 @@
   "devDependencies": {
     "@apollo/react-testing": "3.1.4",
     "@atlantis-lab/react-modals": "0.1.12",
-    "@babel/core": "7.10.4",
+    "@babel/core": "7.13.8",
     "@storybook/addon-actions": "5.2.6",
     "@storybook/addon-backgrounds": "5.2.6",
     "@storybook/addon-knobs": "5.2.6",
@@ -22,7 +22,7 @@
     "@types/webpack-env": "1.15.2",
     "@ui/drawer": "0.3.0",
     "@ui/theme": "0.0.4",
-    "babel-loader": "8.1.0",
+    "babel-loader": "8.2.2",
     "react": "16.13.1",
     "react-docgen-typescript-loader": "3.7.2",
     "react-dom": "16.13.1",
