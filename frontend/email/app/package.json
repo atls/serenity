@@ -33,7 +33,7 @@
     "@atlantis-lab/react-locale": "0.1.11",
     "@email/email-verification-template": "0.1.0",
     "@email/reset-password-template": "0.1.0",
-    "@types/react": "16.9.2",
+    "@types/react": "16.14.5",
     "@types/react-dom": "16.9.5",
     "@ui/theme": "0.0.4",
     "emotion-server": "10.0.27",
