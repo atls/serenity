@@ -20,7 +20,7 @@
     "email:dev": "yarn workspace @email/app dev"
   },
   "devDependencies": {
-    "@atlantis-lab/actl": "^0.4.17",
+    "@atlantis-lab/actl": "^0.4.23",
     "husky": "4.2.5",
     "lerna": "3.22.1",
     "typescript": "^4.2.2"
