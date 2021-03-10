@@ -1,0 +1,1552 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home-building worksheet snapshots should match latest render snapshot 1`] = `
+<DocumentFragment>
+  .emotion-4 {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 12px;
+  min-height: 50px;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background-color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+.emotion-4 ul,
+.emotion-4 li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.emotion-4:hover,
+.emotion-4.rc-select-focused {
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+.emotion-4.rc-select-disabled {
+  cursor: not-allowed;
+}
+
+.emotion-4.rc-select-disabled .rc-select-selection {
+  opacity: 0.3;
+  background-color: #dedede;
+}
+
+.emotion-4:hover.rc-select-disabled {
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.emotion-4 .rc-select-arrow {
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 0px;
+  right: 20px;
+}
+
+.emotion-4:hover .rc-select-arrow rect,
+.emotion-4.rc-select-focused .rc-select-arrow rect {
+  fill: #000000;
+}
+
+.emotion-4 .rc-select-selection {
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 40px 5px 20px;
+}
+
+.emotion-4 .rc-select-selection .rc-select-selection__rendered {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4 .rc-select-selection .rc-select-selection__rendered .rc-select-selection__placeholder {
+  position: absolute;
+  top: 50%;
+  margin-top: -7.5px;
+}
+
+.emotion-4 .rc-select-selection__choice {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  float: left;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 5px 10px 5px 15px;
+  margin-right: 5px;
+  margin-top: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: auto;
+}
+
+.emotion-4 .rc-select-selection__choice .rc-select-selection__choice__remove {
+  margin-left: 10px;
+}
+
+.emotion-4 .rc-select-selection__choice .rc-select-selection__choice__remove .rc-select-selection__choice__remove-icon {
+  font-style: normal;
+  color: #9e9e9e;
+  cursor: pointer;
+}
+
+.emotion-4 .rc-select-selection__choice .rc-select-selection__choice__remove .rc-select-selection__choice__remove-icon:hover {
+  color: #000000;
+}
+
+.emotion-4 .rc-select-search {
+  position: static;
+  float: left;
+  width: auto;
+  max-width: 100%;
+  padding: 0;
+  margin-top: 5px;
+  height: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4 .rc-select-search .rc-select-search__field {
+  border: none;
+  font-size: 16px;
+  background: transparent;
+  outline: 0px;
+  width: 2px;
+  padding: 0px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+@media (max-width:640px) {
+  .emotion-4 .rc-select-search .rc-select-search__field {
+    display: none;
+  }
+}
+
+.emotion-4 .rc-select-selection-selected-value {
+  opacity: 1 !important;
+  position: absolute;
+  top: 50%;
+  margin-top: -7.5px;
+}
+
+.emotion-38 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-6 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 20px;
+  -ms-flex-preferred-size: 20px;
+  flex-basis: 20px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-1 {
+  font-weight: 500;
+  line-height: 1.6;
+  font-family: Inter;
+  font-size: 13px;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 16px;
+  -ms-flex-preferred-size: 16px;
+  flex-basis: 16px;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 30px;
+  -ms-flex-preferred-size: 30px;
+  flex-basis: 30px;
+}
+
+.emotion-8 {
+  width: 100%;
+  height: 1px;
+  background: rgb(235,235,235);
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 22px;
+  -ms-flex-preferred-size: 22px;
+  flex-basis: 22px;
+}
+
+.emotion-48 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.emotion-36 {
+  max-width: 180px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-35 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-33 {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-family: Inter;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.08);
+  color: rgb(0,0,0);
+  background-color: rgb(255,255,255);
+  font-size: 12px;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.emotion-33::-webkit-input-placeholder {
+  color: rgb(190,190,190);
+}
+
+.emotion-33::-moz-placeholder {
+  color: rgb(190,190,190);
+}
+
+.emotion-33:-ms-input-placeholder {
+  color: rgb(190,190,190);
+}
+
+.emotion-33::placeholder {
+  color: rgb(190,190,190);
+}
+
+.emotion-34 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: Inter;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.08);
+  color: rgb(0,0,0);
+  background-color: rgb(255,255,255);
+  font-size: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 50px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-left-width: 0;
+}
+
+.emotion-40 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 23px;
+  -ms-flex-preferred-size: 23px;
+  flex-basis: 23px;
+}
+
+.emotion-45 {
+  min-width: 180px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-64 {
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-64 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.emotion-58 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-58 {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-58 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+
+.emotion-57 {
+  font-family: Inter;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  font-size: 12px;
+  padding: 0px 16px;
+  height: 50px;
+  border: 1px solid rgba(0,0,0,0.08);
+  color: rgb(158,158,158);
+  background: rgb(255,255,255);
+  border-radius: 4px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-57:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.emotion-55 {
+  margin-right: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-56 {
+  white-space: normal;
+  color: rgb(153,153,153);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: left;
+  font-family: Inter;
+}
+
+.emotion-59 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 22px;
+  -ms-flex-preferred-size: 22px;
+  flex-basis: 22px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-71 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-71 {
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-71 {
+    -webkit-flex-basis: 22px;
+    -ms-flex-preferred-size: 22px;
+    flex-basis: 22px;
+  }
+}
+
+.emotion-72 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-72 {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-72 {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+
+<div
+    class="emotion-38"
+    display="flex"
+    width="100%"
+  >
+    <div
+      class="emotion-6"
+      display="flex"
+      width="100%"
+    >
+      <div
+        class="emotion-0"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <span
+          class="emotion-1"
+          font-family="primary"
+          font-size="normal"
+          font-weight="medium"
+        >
+          Тип дома:
+        </span>
+      </div>
+      <div
+        class="emotion-3"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-4  rc-select rc-select-enabled"
+        >
+          <div
+            aria-autocomplete="list"
+            aria-controls="test-uuid"
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="rc-select-selection
+            rc-select-selection--single"
+            role="combobox"
+            tabindex="0"
+          >
+            <div
+              class="rc-select-selection__rendered"
+            >
+              <div
+                class="rc-select-selection__placeholder"
+                style="display: block; user-select: none;"
+                unselectable="on"
+              >
+                Выберите
+              </div>
+            </div>
+            <span
+              class="rc-select-arrow"
+              style="user-select: none;"
+              unselectable="on"
+            >
+              <svg
+                color="rgb(153, 153, 153)"
+                height="8"
+                viewBox="0 0 8 6"
+                width="8"
+              >
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                >
+                  <g
+                    fill="rgb(153, 153, 153)"
+                    fill-rule="nonzero"
+                    id="order-(executor)"
+                    transform="translate(-270.000000, -25.000000)"
+                  >
+                    <g
+                      id="nav-bar"
+                    >
+                      <g
+                        id="service-catalog"
+                        transform="translate(152.000000, 8.000000)"
+                      >
+                        <g
+                          id="baseline-keyboard_arrow_down-24px"
+                          transform="translate(114.000000, 12.000000)"
+                        >
+                          <polygon
+                            id="Path"
+                            points="4.94 5.72666667 8 8.78 11.06 5.72666667 12 6.66666667 8 10.6666667 4 6.66666667"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-7"
+      display="flex"
+    />
+    <div
+      class="emotion-8"
+    />
+    <div
+      class="emotion-9"
+      display="flex"
+    />
+    <div
+      class="emotion-6"
+      display="flex"
+      width="100%"
+    >
+      <div
+        class="emotion-0"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <span
+          class="emotion-1"
+          font-family="primary"
+          font-size="normal"
+          font-weight="medium"
+        >
+          Тип фундамента:
+        </span>
+      </div>
+      <div
+        class="emotion-3"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-4  rc-select rc-select-enabled"
+        >
+          <div
+            aria-autocomplete="list"
+            aria-controls="test-uuid"
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="rc-select-selection
+            rc-select-selection--single"
+            role="combobox"
+            tabindex="0"
+          >
+            <div
+              class="rc-select-selection__rendered"
+            >
+              <div
+                class="rc-select-selection__placeholder"
+                style="display: block; user-select: none;"
+                unselectable="on"
+              >
+                Выберите
+              </div>
+            </div>
+            <span
+              class="rc-select-arrow"
+              style="user-select: none;"
+              unselectable="on"
+            >
+              <svg
+                color="rgb(153, 153, 153)"
+                height="8"
+                viewBox="0 0 8 6"
+                width="8"
+              >
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                >
+                  <g
+                    fill="rgb(153, 153, 153)"
+                    fill-rule="nonzero"
+                    id="order-(executor)"
+                    transform="translate(-270.000000, -25.000000)"
+                  >
+                    <g
+                      id="nav-bar"
+                    >
+                      <g
+                        id="service-catalog"
+                        transform="translate(152.000000, 8.000000)"
+                      >
+                        <g
+                          id="baseline-keyboard_arrow_down-24px"
+                          transform="translate(114.000000, 12.000000)"
+                        >
+                          <polygon
+                            id="Path"
+                            points="4.94 5.72666667 8 8.78 11.06 5.72666667 12 6.66666667 8 10.6666667 4 6.66666667"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-7"
+      display="flex"
+    />
+    <div
+      class="emotion-8"
+    />
+    <div
+      class="emotion-9"
+      display="flex"
+    />
+    <div
+      class="emotion-6"
+      display="flex"
+      width="100%"
+    >
+      <div
+        class="emotion-0"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <span
+          class="emotion-1"
+          font-family="primary"
+          font-size="normal"
+          font-weight="medium"
+        >
+          Вид кровельного материала:
+        </span>
+      </div>
+      <div
+        class="emotion-3"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-4  rc-select rc-select-enabled"
+        >
+          <div
+            aria-autocomplete="list"
+            aria-controls="test-uuid"
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="rc-select-selection
+            rc-select-selection--single"
+            role="combobox"
+            tabindex="0"
+          >
+            <div
+              class="rc-select-selection__rendered"
+            >
+              <div
+                class="rc-select-selection__placeholder"
+                style="display: block; user-select: none;"
+                unselectable="on"
+              >
+                Выберите
+              </div>
+            </div>
+            <span
+              class="rc-select-arrow"
+              style="user-select: none;"
+              unselectable="on"
+            >
+              <svg
+                color="rgb(153, 153, 153)"
+                height="8"
+                viewBox="0 0 8 6"
+                width="8"
+              >
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                >
+                  <g
+                    fill="rgb(153, 153, 153)"
+                    fill-rule="nonzero"
+                    id="order-(executor)"
+                    transform="translate(-270.000000, -25.000000)"
+                  >
+                    <g
+                      id="nav-bar"
+                    >
+                      <g
+                        id="service-catalog"
+                        transform="translate(152.000000, 8.000000)"
+                      >
+                        <g
+                          id="baseline-keyboard_arrow_down-24px"
+                          transform="translate(114.000000, 12.000000)"
+                        >
+                          <polygon
+                            id="Path"
+                            points="4.94 5.72666667 8 8.78 11.06 5.72666667 12 6.66666667 8 10.6666667 4 6.66666667"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-7"
+      display="flex"
+    />
+    <div
+      class="emotion-8"
+    />
+    <div
+      class="emotion-9"
+      display="flex"
+    />
+    <div
+      class="emotion-48"
+      display="flex"
+      width="100%"
+    >
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-38"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-2"
+            display="flex"
+          >
+            <span
+              class="emotion-1"
+              font-family="primary"
+              font-size="normal"
+              font-weight="medium"
+            >
+              Площадь дома
+            </span>
+          </div>
+          <div
+            class="emotion-3"
+            display="flex"
+          />
+          <div
+            class="emotion-2"
+            display="flex"
+          >
+            <div
+              class="emotion-36"
+              display="flex"
+            >
+              <div
+                class="emotion-35"
+              >
+                <input
+                  class="emotion-33"
+                  min="0"
+                  placeholder="Введите"
+                  type="number"
+                  value=""
+                />
+                <span
+                  class="emotion-34"
+                  color="black"
+                  font-family="primary"
+                  font-weight="medium"
+                >
+                  м2
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-40"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-38"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-2"
+            display="flex"
+          >
+            <span
+              class="emotion-1"
+              font-family="primary"
+              font-size="normal"
+              font-weight="medium"
+            >
+              Кол-во этажей
+            </span>
+          </div>
+          <div
+            class="emotion-3"
+            display="flex"
+          />
+          <div
+            class="emotion-45"
+            display="flex"
+          >
+            <div
+              class="emotion-4  rc-select rc-select-enabled"
+            >
+              <div
+                aria-autocomplete="list"
+                aria-controls="test-uuid"
+                aria-expanded="false"
+                aria-haspopup="true"
+                class="rc-select-selection
+            rc-select-selection--single"
+                role="combobox"
+                tabindex="0"
+              >
+                <div
+                  class="rc-select-selection__rendered"
+                >
+                  <div
+                    class="rc-select-selection__placeholder"
+                    style="display: block; user-select: none;"
+                    unselectable="on"
+                  >
+                    Выберите
+                  </div>
+                </div>
+                <span
+                  class="rc-select-arrow"
+                  style="user-select: none;"
+                  unselectable="on"
+                >
+                  <svg
+                    color="rgb(153, 153, 153)"
+                    height="8"
+                    viewBox="0 0 8 6"
+                    width="8"
+                  >
+                    <g
+                      fill="none"
+                      fill-rule="evenodd"
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                    >
+                      <g
+                        fill="rgb(153, 153, 153)"
+                        fill-rule="nonzero"
+                        id="order-(executor)"
+                        transform="translate(-270.000000, -25.000000)"
+                      >
+                        <g
+                          id="nav-bar"
+                        >
+                          <g
+                            id="service-catalog"
+                            transform="translate(152.000000, 8.000000)"
+                          >
+                            <g
+                              id="baseline-keyboard_arrow_down-24px"
+                              transform="translate(114.000000, 12.000000)"
+                            >
+                              <polygon
+                                id="Path"
+                                points="4.94 5.72666667 8 8.78 11.06 5.72666667 12 6.66666667 8 10.6666667 4 6.66666667"
+                              />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-7"
+      display="flex"
+    />
+    <div
+      class="emotion-8"
+    />
+    <div
+      class="emotion-9"
+      display="flex"
+    />
+    <div
+      class="emotion-6"
+      display="flex"
+      width="100%"
+    >
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <span
+          class="emotion-1"
+          font-family="primary"
+          font-size="normal"
+          font-weight="medium"
+        >
+          На каком этапе находится проект?
+        </span>
+      </div>
+      <div
+        class="emotion-3"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-64"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-58"
+            display="flex"
+          >
+            <button
+              class="emotion-57"
+            >
+              <span
+                class="emotion-55"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-56"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Планирование
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-59"
+            display="flex"
+          />
+          <div
+            class="emotion-58"
+            display="flex"
+          >
+            <button
+              class="emotion-57"
+            >
+              <span
+                class="emotion-55"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-56"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Составление бюджета
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-9"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-64"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-58"
+            display="flex"
+          >
+            <button
+              class="emotion-57"
+            >
+              <span
+                class="emotion-55"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-56"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Поиск исполнителя
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-71"
+            display="flex"
+          />
+          <div
+            class="emotion-72"
+            display="flex"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-7"
+      display="flex"
+    />
+    <div
+      class="emotion-8"
+    />
+    <div
+      class="emotion-9"
+      display="flex"
+    />
+    <div
+      class="emotion-6"
+      display="flex"
+      width="100%"
+    >
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <span
+          class="emotion-1"
+          font-family="primary"
+          font-size="normal"
+          font-weight="medium"
+        >
+          Дополнительно потребуется:
+        </span>
+      </div>
+      <div
+        class="emotion-3"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-64"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-58"
+            display="flex"
+          >
+            <button
+              class="emotion-57"
+            >
+              <span
+                class="emotion-55"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-56"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Закупка материалов
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-59"
+            display="flex"
+          />
+          <div
+            class="emotion-58"
+            display="flex"
+          >
+            <button
+              class="emotion-57"
+            >
+              <span
+                class="emotion-55"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-56"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Разгрузка и подъем материалов
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-9"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-64"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-58"
+            display="flex"
+          >
+            <button
+              class="emotion-57"
+            >
+              <span
+                class="emotion-55"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-56"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Демонтаж
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-59"
+            display="flex"
+          />
+          <div
+            class="emotion-58"
+            display="flex"
+          >
+            <button
+              class="emotion-57"
+            >
+              <span
+                class="emotion-55"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-56"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Вывоз мусора
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-9"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-64"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-58"
+            display="flex"
+          >
+            <button
+              class="emotion-57"
+            >
+              <span
+                class="emotion-55"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-56"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Уборка после ремонта
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-71"
+            display="flex"
+          />
+          <div
+            class="emotion-72"
+            display="flex"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-7"
+      display="flex"
+    />
+    <div
+      class="emotion-8"
+    />
+  </div>
+</DocumentFragment>
+`;

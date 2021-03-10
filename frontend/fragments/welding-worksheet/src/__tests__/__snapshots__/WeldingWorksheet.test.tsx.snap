@@ -1,0 +1,1319 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
+<DocumentFragment>
+  .emotion-150 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-36 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 20px;
+  -ms-flex-preferred-size: 20px;
+  flex-basis: 20px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-1 {
+  font-weight: 500;
+  line-height: 1.6;
+  font-family: Inter;
+  font-size: 13px;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 16px;
+  -ms-flex-preferred-size: 16px;
+  flex-basis: 16px;
+}
+
+.emotion-13 {
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-13 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-7 {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-7 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+
+.emotion-6 {
+  font-family: Inter;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  font-size: 12px;
+  padding: 0px 16px;
+  height: 50px;
+  border: 1px solid rgba(0,0,0,0.08);
+  color: rgb(158,158,158);
+  background: rgb(255,255,255);
+  border-radius: 4px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-6:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.emotion-4 {
+  margin-right: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-5 {
+  white-space: normal;
+  color: rgb(153,153,153);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: left;
+  font-family: Inter;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 22px;
+  -ms-flex-preferred-size: 22px;
+  flex-basis: 22px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 22px;
+  -ms-flex-preferred-size: 22px;
+  flex-basis: 22px;
+}
+
+.emotion-32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-32 {
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-32 {
+    -webkit-flex-basis: 22px;
+    -ms-flex-preferred-size: 22px;
+    flex-basis: 22px;
+  }
+}
+
+.emotion-33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-33 {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-33 {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+
+.emotion-37 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 30px;
+  -ms-flex-preferred-size: 30px;
+  flex-basis: 30px;
+}
+
+.emotion-38 {
+  width: 100%;
+  height: 1px;
+  background: rgb(235,235,235);
+}
+
+<div
+    class="emotion-150"
+    display="flex"
+    width="100%"
+  >
+    <div
+      class="emotion-36"
+      display="flex"
+      width="100%"
+    >
+      <div
+        class="emotion-0"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <span
+          class="emotion-1"
+          font-family="primary"
+          font-size="normal"
+          font-weight="medium"
+        >
+          Что нужно сварить?
+        </span>
+      </div>
+      <div
+        class="emotion-3"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-13"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Металлические конструкции
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-8"
+            display="flex"
+          />
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Ворота, петли, двери
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-15"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-13"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Каркасы, навесы
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-8"
+            display="flex"
+          />
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Заборы
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-15"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-13"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Трубы отопления и водоснабжения
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-32"
+            display="flex"
+          />
+          <div
+            class="emotion-33"
+            display="flex"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-37"
+      display="flex"
+    />
+    <div
+      class="emotion-38"
+    />
+    <div
+      class="emotion-15"
+      display="flex"
+    />
+    <div
+      class="emotion-36"
+      display="flex"
+      width="100%"
+    >
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <span
+          class="emotion-1"
+          font-family="primary"
+          font-size="normal"
+          font-weight="medium"
+        >
+          Где провести сварку?
+        </span>
+      </div>
+      <div
+        class="emotion-3"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-13"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Внутри помещения
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-8"
+            display="flex"
+          />
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Снаружи
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-37"
+      display="flex"
+    />
+    <div
+      class="emotion-38"
+    />
+    <div
+      class="emotion-15"
+      display="flex"
+    />
+    <div
+      class="emotion-36"
+      display="flex"
+      width="100%"
+    >
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <span
+          class="emotion-1"
+          font-family="primary"
+          font-size="normal"
+          font-weight="medium"
+        >
+          Какая стоит задача?
+        </span>
+      </div>
+      <div
+        class="emotion-3"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-13"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Изготовить новый предмет
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-8"
+            display="flex"
+          />
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Отремонтировать существующий объект
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-15"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-13"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Улучшить существующий объект
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-32"
+            display="flex"
+          />
+          <div
+            class="emotion-33"
+            display="flex"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-37"
+      display="flex"
+    />
+    <div
+      class="emotion-38"
+    />
+    <div
+      class="emotion-15"
+      display="flex"
+    />
+    <div
+      class="emotion-36"
+      display="flex"
+      width="100%"
+    >
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <span
+          class="emotion-1"
+          font-family="primary"
+          font-size="normal"
+          font-weight="medium"
+        >
+          На каком этапе находится проект?
+        </span>
+      </div>
+      <div
+        class="emotion-3"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-13"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Планирование
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-8"
+            display="flex"
+          />
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Составление бюджета
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-15"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-13"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Поиск исполнителя
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-32"
+            display="flex"
+          />
+          <div
+            class="emotion-33"
+            display="flex"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-37"
+      display="flex"
+    />
+    <div
+      class="emotion-38"
+    />
+    <div
+      class="emotion-15"
+      display="flex"
+    />
+    <div
+      class="emotion-36"
+      display="flex"
+      width="100%"
+    >
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <span
+          class="emotion-1"
+          font-family="primary"
+          font-size="normal"
+          font-weight="medium"
+        >
+          Дополнительно потребуется:
+        </span>
+      </div>
+      <div
+        class="emotion-3"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-13"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Закупка материалов
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-8"
+            display="flex"
+          />
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Разгрузка и подъем материалов
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-15"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-13"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Демонтаж
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-8"
+            display="flex"
+          />
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Вывоз мусора
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-15"
+        display="flex"
+      />
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-13"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-7"
+            display="flex"
+          >
+            <button
+              class="emotion-6"
+            >
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  color="#999999"
+                  fill="none"
+                  height="18"
+                  stroke="#999999"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </span>
+              <span
+                class="emotion-5"
+                color="mountainmist"
+                font-family="primary"
+                font-size="tiny"
+                font-weight="semiBold"
+              >
+                Уборка после ремонта
+              </span>
+            </button>
+          </div>
+          <div
+            class="emotion-32"
+            display="flex"
+          />
+          <div
+            class="emotion-33"
+            display="flex"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-37"
+      display="flex"
+    />
+    <div
+      class="emotion-38"
+    />
+  </div>
+</DocumentFragment>
+`;

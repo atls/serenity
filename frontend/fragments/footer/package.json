@@ -1,0 +1,16 @@
+{
+  "name": "@fragments/footer",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "devDependencies": {
+    "@testing-library/react": "9.3.2",
+    "@ui/layout": "0.0.4",
+    "@ui/link": "0.0.4",
+    "@ui/theme": "0.0.4"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-intl": "^3.2.0"
+  }
+}

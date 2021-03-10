@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useUser }                    from '@monstrs/react-user'
+import { useUser }                    from '@atlantis-lab/react-user'
 import { useIntl }                    from 'react-intl'
 
 import { useChat as useUiChat }       from '@ui/chat'

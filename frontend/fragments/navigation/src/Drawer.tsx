@@ -1,5 +1,5 @@
 import React                        from 'react'
-import { WithUser, WithouthUser }   from '@monstrs/react-user'
+import { WithUser, WithouthUser }   from '@atlantis-lab/react-user'
 
 import { Item, Drawer as UIDrawer } from '@ui/drawer'
 import { ArrowRightIcon, LogoIcon } from '@ui/icons'

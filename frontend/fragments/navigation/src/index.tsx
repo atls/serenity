@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react'
-import { useUser }            from '@monstrs/react-user'
+import { useUser }            from '@atlantis-lab/react-user'
 import { useIntl }            from 'react-intl'
 
 import { useDrawer }          from '@ui/drawer'
@@ -20,8 +20,8 @@ export default () => {
   let endpoint = null
 
   if (typeof window !== 'undefined') {
-    endpoint = window.location.hostname.includes('monstrs.tech')
-      ? 'topmasters.monstrs.tech'
+    endpoint = window.location.hostname.includes('atls.tech')
+      ? 'serenity.atls.tech'
       : window.location.hostname
   }
 

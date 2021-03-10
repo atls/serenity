@@ -1,5 +1,5 @@
 import React                                        from 'react'
-import { WithUser, WithouthUser }                   from '@monstrs/react-user'
+import { WithUser, WithouthUser }                   from '@atlantis-lab/react-user'
 
 import Chat                                         from '@fragments/chat'
 import { Button }                                   from '@ui/button'

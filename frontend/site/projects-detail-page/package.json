@@ -1,0 +1,25 @@
+{
+  "name": "@site/projects-detail-page",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "devDependencies": {
+    "@atlantis-lab/react-user": "^0.1.26",
+    "@fragments/catalog": "0.0.0",
+    "@fragments/footer": "0.0.0",
+    "@fragments/navigation": "0.0.0",
+    "@fragments/project-customer": "0.0.0",
+    "@fragments/project-reply": "0.0.0",
+    "@fragments/projects-detail": "0.0.0",
+    "@testing-library/react": "9.3.2",
+    "@ui/layout": "0.0.4"
+  },
+  "peerDependencies": {
+    "@apollo/react-hooks": "^3.1.0",
+    "graphql-tag": "^2.10.0",
+    "next": "^9.0.5",
+    "react": "^16.9.0",
+    "react-helmet": "^5.2.0",
+    "react-intl": "^3.2.0"
+  }
+}

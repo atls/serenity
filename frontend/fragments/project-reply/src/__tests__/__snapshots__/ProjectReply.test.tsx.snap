@@ -1,0 +1,412 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project reply snapshots should match latest render snapshot 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 100%;
+  height: 1px;
+  background: rgb(235,235,235);
+}
+
+<div
+    class="emotion-0"
+  />
+  .emotion-21 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgb(252,252,252);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-20 {
+  max-width: 1200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-20 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-17 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 25px;
+  -ms-flex-preferred-size: 25px;
+  flex-basis: 25px;
+}
+
+.emotion-1 {
+  font-size: 28px;
+  line-height: 1.6;
+  font-family: Inter;
+  font-weight: 400;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 28px;
+  -ms-flex-preferred-size: 28px;
+  flex-basis: 28px;
+}
+
+.emotion-15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px;
+  background-color: rgb(250,250,250);
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.emotion-4 {
+  line-height: 1.6;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 27px;
+  -ms-flex-preferred-size: 27px;
+  flex-basis: 27px;
+}
+
+.emotion-13 {
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-13 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.emotion-7 {
+  font-family: Inter;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  font-size: 12px;
+  padding: 0px 16px;
+  height: 40px;
+  background: rgb(87,87,87);
+  color: rgb(255,255,255);
+  border-radius: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-7:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 16px;
+  -ms-flex-preferred-size: 16px;
+  flex-basis: 16px;
+}
+
+.emotion-11 {
+  font-family: Inter;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  font-size: 12px;
+  padding: 0px 16px;
+  height: 40px;
+  border: 1px solid rgba(0,0,0,0.08);
+  color: rgb(158,158,158);
+  background: rgb(255,255,255);
+  border-radius: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-11:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 40px;
+  -ms-flex-preferred-size: 40px;
+  flex-basis: 40px;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-16 {
+    -webkit-flex-basis: 60px;
+    -ms-flex-preferred-size: 60px;
+    flex-basis: 60px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-16 {
+    -webkit-flex-basis: 80px;
+    -ms-flex-preferred-size: 80px;
+    flex-basis: 80px;
+  }
+}
+
+.emotion-19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-19 {
+    -webkit-flex-basis: 220px;
+    -ms-flex-preferred-size: 220px;
+    flex-basis: 220px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-19 {
+    -webkit-flex-basis: 296px;
+    -ms-flex-preferred-size: 296px;
+    flex-basis: 296px;
+  }
+}
+
+<div
+    class="emotion-21"
+    display="flex"
+  >
+    <div
+      class="emotion-20"
+      display="flex"
+      width="100%"
+    >
+      <div
+        class="emotion-2"
+        display="flex"
+      >
+        <div
+          class="emotion-17"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-0"
+            display="flex"
+          />
+          <div
+            class="emotion-2"
+            display="flex"
+          >
+            <span
+              class="emotion-1"
+              font-family="primary"
+              font-size="giant"
+              font-weight="normal"
+            >
+              Отклик
+            </span>
+          </div>
+          <div
+            class="emotion-3"
+            display="flex"
+          />
+          <div
+            class="emotion-15"
+            display="flex"
+          >
+            <div
+              class="emotion-2"
+              display="flex"
+            >
+              <span
+                class="emotion-4"
+                font-family="primary"
+                font-size="normal"
+                font-weight="normal"
+              >
+                Чтобы откликнуться на этот проект, вам необходимо зарегистрироваться на сервисе как исполнитель. Вы можете сделать это прямо сейчас:
+              </span>
+            </div>
+            <div
+              class="emotion-6"
+              display="flex"
+            />
+            <div
+              class="emotion-2"
+              display="flex"
+            >
+              <div
+                class="emotion-13"
+                display="flex"
+                width="100%"
+              >
+                <div
+                  class="emotion-2"
+                  display="flex"
+                >
+                  <button
+                    class="emotion-7"
+                  >
+                    Зарегистрировать аккаунт
+                  </button>
+                </div>
+                <div
+                  class="emotion-9"
+                  display="flex"
+                />
+                <div
+                  class="emotion-2"
+                  display="flex"
+                >
+                  <button
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-10"
+                      display="flex"
+                    >
+                      Войти
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-16"
+            display="flex"
+          />
+        </div>
+      </div>
+      <div
+        class="emotion-19"
+        display="flex"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

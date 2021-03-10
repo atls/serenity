@@ -1,0 +1,19 @@
+{
+  "name": "@fragments/choose-specialist-modal",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "devDependencies": {
+    "@testing-library/react": "9.3.2",
+    "@ui/avatar": "0.0.0",
+    "@ui/button": "0.3.0",
+    "@ui/layout": "0.0.4",
+    "@ui/modal": "0.0.0",
+    "@ui/text": "0.3.0",
+    "@ui/theme": "0.0.4"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-intl": "^3.2.0"
+  }
+}
