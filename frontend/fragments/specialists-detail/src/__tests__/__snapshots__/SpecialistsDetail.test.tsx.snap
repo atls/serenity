@@ -1,0 +1,1462 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Specialists detail snapshots should match latest render snapshot 1`] = `
+<DocumentFragment>
+  .emotion-98 {
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 46px;
+  -ms-flex-preferred-size: 46px;
+  flex-basis: 46px;
+}
+
+.emotion-17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-16 {
+  max-width: 1200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-16 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-16 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.emotion-15 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 600px;
+  -ms-flex-preferred-size: 600px;
+  flex-basis: 600px;
+}
+
+.emotion-10 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-5 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.emotion-1 {
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 700;
+  font-family: Inter;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-1 {
+    font-size: 32px;
+  }
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 13px;
+  -ms-flex-preferred-size: 13px;
+  flex-basis: 13px;
+}
+
+.emotion-9 {
+  display: block;
+}
+
+.emotion-8 {
+  text-transform: none;
+  color: rgb(102,102,102);
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: Inter;
+  font-weight: 400;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-8 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-8 {
+    font-size: 28px;
+  }
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 40px;
+  -ms-flex-preferred-size: 40px;
+  flex-basis: 40px;
+}
+
+.emotion-13 {
+  background: rgb(216,216,216);
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-13 {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-13 {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 42px;
+  -ms-flex-preferred-size: 42px;
+  flex-basis: 42px;
+}
+
+.emotion-19 {
+  width: 100%;
+  height: 1px;
+  background: rgb(235,235,235);
+}
+
+.emotion-69 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgb(252,252,252);
+}
+
+.emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 32px;
+  -ms-flex-preferred-size: 32px;
+  flex-basis: 32px;
+}
+
+.emotion-64 {
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-64 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-64 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.emotion-30 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-21 {
+  color: rgb(102,102,102);
+  line-height: 1.6;
+  font-weight: 500;
+  font-family: Inter;
+  font-size: 13px;
+}
+
+.emotion-23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 8px;
+  -ms-flex-preferred-size: 8px;
+  flex-basis: 8px;
+}
+
+.emotion-24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-24:last-of-type {
+  padding-right: 0;
+}
+
+.emotion-24 > svg {
+  fill: #CCCCCC;
+}
+
+.emotion-24:nth-of-type(-n+0) > svg {
+  fill: black;
+}
+
+.emotion-32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 20px;
+  -ms-flex-preferred-size: 20px;
+  flex-basis: 20px;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-32 {
+    -webkit-flex-basis: 20px;
+    -ms-flex-preferred-size: 20px;
+    flex-basis: 20px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-32 {
+    -webkit-flex-basis: 56px;
+    -ms-flex-preferred-size: 56px;
+    flex-basis: 56px;
+  }
+}
+
+.emotion-50 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-49 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-33 {
+  white-space: nowrap;
+  color: rgb(102,102,102);
+  line-height: 1.6;
+  font-weight: 500;
+  font-family: Inter;
+  font-size: 13px;
+}
+
+.emotion-35 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 6px;
+  -ms-flex-preferred-size: 6px;
+  flex-basis: 6px;
+}
+
+.emotion-36 {
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 500;
+  font-family: Inter;
+}
+
+.emotion-40 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 56px;
+  -ms-flex-preferred-size: 56px;
+  flex-basis: 56px;
+}
+
+.emotion-48 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-48 {
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-48 {
+    -webkit-flex-basis: 56px;
+    -ms-flex-preferred-size: 56px;
+    flex-basis: 56px;
+  }
+}
+
+.emotion-51 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 20px;
+  -ms-flex-preferred-size: 20px;
+  flex-basis: 20px;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-51 {
+    -webkit-flex-basis: 20px;
+    -ms-flex-preferred-size: 20px;
+    flex-basis: 20px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-51 {
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+  }
+}
+
+.emotion-63 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-62 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-62 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-62 {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+}
+
+.emotion-52 {
+  font-family: Inter;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-size: 12px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0,0,0,0.08);
+  color: rgb(158,158,158);
+  background: rgb(255,255,255);
+  border-radius: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-52:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.emotion-54 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 16px;
+  -ms-flex-preferred-size: 16px;
+  flex-basis: 16px;
+}
+
+.emotion-56 {
+  font-family: Inter;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-size: 12px;
+  padding: 0px 16px;
+  height: 40px;
+  border: 1px solid rgba(0,0,0,0.08);
+  color: rgb(158,158,158);
+  background: rgb(255,255,255);
+  border-radius: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-56:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.emotion-55 {
+  margin-right: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-60 {
+  font-family: Inter;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-size: 12px;
+  padding: 0px 16px;
+  height: 40px;
+  background: rgb(102,102,102);
+  color: rgb(255,255,255);
+  border-radius: 28px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-60:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.emotion-96 {
+  box-sizing: border-box;
+  max-width: 1200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-96 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-96 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .emotion-96 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.emotion-74 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 20px;
+  -ms-flex-preferred-size: 20px;
+  flex-basis: 20px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-74 {
+    -webkit-flex-basis: 20px;
+    -ms-flex-preferred-size: 20px;
+    flex-basis: 20px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-74 {
+    -webkit-flex-basis: 40px;
+    -ms-flex-preferred-size: 40px;
+    flex-basis: 40px;
+  }
+}
+
+.emotion-95 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width:40em) {
+  .emotion-95 {
+    -webkit-flex-basis: 200px;
+    -ms-flex-preferred-size: 200px;
+    flex-basis: 200px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .emotion-95 {
+    -webkit-flex-basis: 256px;
+    -ms-flex-preferred-size: 256px;
+    flex-basis: 256px;
+  }
+}
+
+.emotion-91 {
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding: 16px 0 25px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 4px;
+}
+
+.emotion-76 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.emotion-75 {
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: Inter;
+  font-weight: 400;
+}
+
+.emotion-82 {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
+  font-family: Inter;
+}
+
+.emotion-84 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 26px;
+  -ms-flex-preferred-size: 26px;
+  flex-basis: 26px;
+}
+
+.emotion-89 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-86 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 12px;
+  -ms-flex-preferred-size: 12px;
+  flex-basis: 12px;
+}
+
+.emotion-87 {
+  color: rgb(153,153,153);
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: 600;
+  font-family: Inter;
+}
+
+<div
+    class="emotion-98"
+    display="flex"
+    overflow="hidden"
+    width="100%"
+  >
+    <div
+      class="emotion-0"
+      display="flex"
+    />
+    <div
+      class="emotion-17"
+      display="flex"
+    >
+      <div
+        class="emotion-16"
+        display="flex"
+        width="100%"
+      >
+        <div
+          class="emotion-15"
+          display="flex"
+          width="100%"
+        >
+          <div
+            class="emotion-11"
+            display="flex"
+          >
+            <div
+              class="emotion-10"
+              display="flex"
+              width="100%"
+            >
+              <div
+                class="emotion-2"
+                display="flex"
+              >
+                <div
+                  class="emotion-5"
+                  display="flex"
+                  width="100%"
+                >
+                  <div
+                    class="emotion-2"
+                    display="flex"
+                  >
+                    <span
+                      class="emotion-1"
+                      font-family="primary"
+                      font-size="huge,massive"
+                      font-weight="bold"
+                    />
+                  </div>
+                  <div
+                    class="emotion-3"
+                    display="flex"
+                  />
+                  <div
+                    class="emotion-4"
+                    display="flex"
+                  />
+                </div>
+              </div>
+              <div
+                class="emotion-7"
+                display="flex"
+              />
+              <div
+                class="emotion-9"
+                display="block"
+              >
+                <span
+                  class="emotion-8"
+                  color="stormdust"
+                  font-family="primary"
+                  font-size="extra,large,giant"
+                  font-weight="normal"
+                >
+                  Специализируется: 
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-12"
+            display="flex"
+          />
+          <div
+            class="emotion-4"
+            display="flex"
+          >
+            <div
+              class="emotion-13"
+              color="alto"
+              height="100,100,160"
+              width="100,100,160"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-18"
+      display="flex"
+    />
+    <div
+      class="emotion-19"
+    />
+    <div
+      class="emotion-69"
+      display="flex"
+    >
+      <div
+        class="emotion-10"
+        display="flex"
+        width="100%"
+      >
+        <div
+          class="emotion-20"
+          display="flex"
+        />
+        <div
+          class="emotion-17"
+          display="flex"
+        >
+          <div
+            class="emotion-16"
+            display="flex"
+            width="100%"
+          >
+            <div
+              class="emotion-64"
+              display="flex"
+              width="100%"
+            >
+              <div
+                class="emotion-2"
+                display="flex"
+              >
+                <div
+                  class="emotion-30"
+                  display="flex"
+                  width="100%"
+                >
+                  <div
+                    class="emotion-2"
+                    display="flex"
+                  >
+                    <span
+                      class="emotion-21"
+                      color="stormdust"
+                      font-family="primary"
+                      font-size="normal"
+                      font-weight="medium"
+                    >
+                      Рейтинг
+                    </span>
+                  </div>
+                  <div
+                    class="emotion-23"
+                    display="flex"
+                  />
+                  <div
+                    class="emotion-2"
+                    display="flex"
+                  >
+                    <div
+                      class="emotion-24"
+                      color="black"
+                    >
+                      <svg
+                        fill="rgb(216, 216, 216)"
+                        height="100%"
+                        viewBox="0 0 16 15"
+                        width="100%"
+                      >
+                        <polygon
+                          points="56 99 51.297718 101.472136 52.1957739 96.236068 48.3915479 92.527864 53.648859 91.763932 56 87 58.351141 91.763932 63.6084521 92.527864 59.8042261 96.236068 60.702282 101.472136"
+                          transform="translate(-48.000000, -87.000000)"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="emotion-24"
+                      color="black"
+                    >
+                      <svg
+                        fill="rgb(216, 216, 216)"
+                        height="100%"
+                        viewBox="0 0 16 15"
+                        width="100%"
+                      >
+                        <polygon
+                          points="56 99 51.297718 101.472136 52.1957739 96.236068 48.3915479 92.527864 53.648859 91.763932 56 87 58.351141 91.763932 63.6084521 92.527864 59.8042261 96.236068 60.702282 101.472136"
+                          transform="translate(-48.000000, -87.000000)"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="emotion-24"
+                      color="black"
+                    >
+                      <svg
+                        fill="rgb(216, 216, 216)"
+                        height="100%"
+                        viewBox="0 0 16 15"
+                        width="100%"
+                      >
+                        <polygon
+                          points="56 99 51.297718 101.472136 52.1957739 96.236068 48.3915479 92.527864 53.648859 91.763932 56 87 58.351141 91.763932 63.6084521 92.527864 59.8042261 96.236068 60.702282 101.472136"
+                          transform="translate(-48.000000, -87.000000)"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="emotion-24"
+                      color="black"
+                    >
+                      <svg
+                        fill="rgb(216, 216, 216)"
+                        height="100%"
+                        viewBox="0 0 16 15"
+                        width="100%"
+                      >
+                        <polygon
+                          points="56 99 51.297718 101.472136 52.1957739 96.236068 48.3915479 92.527864 53.648859 91.763932 56 87 58.351141 91.763932 63.6084521 92.527864 59.8042261 96.236068 60.702282 101.472136"
+                          transform="translate(-48.000000, -87.000000)"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="emotion-24"
+                      color="black"
+                    >
+                      <svg
+                        fill="rgb(216, 216, 216)"
+                        height="100%"
+                        viewBox="0 0 16 15"
+                        width="100%"
+                      >
+                        <polygon
+                          points="56 99 51.297718 101.472136 52.1957739 96.236068 48.3915479 92.527864 53.648859 91.763932 56 87 58.351141 91.763932 63.6084521 92.527864 59.8042261 96.236068 60.702282 101.472136"
+                          transform="translate(-48.000000, -87.000000)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="emotion-32"
+                display="flex"
+              />
+              <div
+                class="emotion-50"
+                display="flex"
+              >
+                <div
+                  class="emotion-49"
+                  display="flex"
+                  width="100%"
+                >
+                  <div
+                    class="emotion-2"
+                    display="flex"
+                  >
+                    <div
+                      class="emotion-10"
+                      display="flex"
+                      width="100%"
+                    >
+                      <div
+                        class="emotion-2"
+                        display="flex"
+                      >
+                        <span
+                          class="emotion-33"
+                          color="stormdust"
+                          font-family="primary"
+                          font-size="normal"
+                          font-weight="medium"
+                        >
+                          Отзывов
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-35"
+                        display="flex"
+                      />
+                      <div
+                        class="emotion-2"
+                        display="flex"
+                      >
+                        <span
+                          class="emotion-36"
+                          font-family="primary"
+                          font-size="huge"
+                          font-weight="medium"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-40"
+                    display="flex"
+                  />
+                  <div
+                    class="emotion-2"
+                    display="flex"
+                  >
+                    <div
+                      class="emotion-10"
+                      display="flex"
+                      width="100%"
+                    >
+                      <div
+                        class="emotion-2"
+                        display="flex"
+                      >
+                        <span
+                          class="emotion-33"
+                          color="stormdust"
+                          font-family="primary"
+                          font-size="normal"
+                          font-weight="medium"
+                        >
+                          Выполнено проектов
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-35"
+                        display="flex"
+                      />
+                      <div
+                        class="emotion-2"
+                        display="flex"
+                      >
+                        <span
+                          class="emotion-36"
+                          font-family="primary"
+                          font-size="huge"
+                          font-weight="medium"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-48"
+                    display="flex"
+                  />
+                </div>
+              </div>
+              <div
+                class="emotion-51"
+                display="flex"
+              />
+              <div
+                class="emotion-63"
+                display="flex"
+              >
+                <div
+                  class="emotion-62"
+                  display="flex"
+                  width="100%"
+                >
+                  <div
+                    class="emotion-2"
+                    display="flex"
+                  >
+                    <button
+                      class="emotion-52"
+                    >
+                      <svg
+                        fill="none"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        width="20"
+                      >
+                        <path
+                          d="M14.167 2.5H5.83366C4.91699 2.5 4.17533 3.25 4.17533 4.16667L4.16699 17.5L10.0003 15L15.8337 17.5V4.16667C15.8337 3.25 15.0837 2.5 14.167 2.5Z"
+                          fill="#999999"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div
+                    class="emotion-54"
+                    display="flex"
+                  />
+                  <div
+                    class="emotion-2"
+                    display="flex"
+                  >
+                    <button
+                      class="emotion-56"
+                    >
+                      <span
+                        class="emotion-55"
+                      >
+                        <svg
+                          fill="none"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          width="24"
+                        >
+                          <path
+                            d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+                            fill="#999999"
+                          />
+                        </svg>
+                      </span>
+                      Подписаться
+                    </button>
+                  </div>
+                  <div
+                    class="emotion-54"
+                    display="flex"
+                  />
+                  <div
+                    class="emotion-2"
+                    display="flex"
+                  >
+                    <button
+                      class="emotion-60"
+                    >
+                      <span
+                        class="emotion-55"
+                      >
+                        <svg
+                          color="white"
+                          fill="none"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          width="20"
+                        >
+                          <path
+                            clip-rule="evenodd"
+                            d="M3.33366 1.66669H16.667C17.5837 1.66669 18.3337 2.41669 18.3337 3.33335V13.3334C18.3337 14.25 17.5837 15 16.667 15H5.00033L1.66699 18.3334L1.67533 3.33335C1.67533 2.41669 2.41699 1.66669 3.33366 1.66669ZM15.0003 7.50002H5.00033V9.16669H15.0003V7.50002ZM11.667 11.6667H5.00033V10H11.667V11.6667ZM5.00033 6.66669H15.0003V5.00002H5.00033V6.66669Z"
+                            fill="white"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                      Связаться
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-20"
+          display="flex"
+        />
+      </div>
+    </div>
+    <div
+      class="emotion-19"
+    />
+    <div
+      class="emotion-0"
+      display="flex"
+    />
+    <div
+      class="emotion-17"
+      display="flex"
+    >
+      <div
+        class="emotion-96"
+        display="flex"
+        width="100%"
+      >
+        <div
+          class="emotion-50"
+          display="flex"
+        >
+          <div
+            class="emotion-10"
+            display="flex"
+            width="100%"
+          />
+        </div>
+        <div
+          class="emotion-74"
+          display="flex"
+        />
+        <div
+          class="emotion-95"
+          display="flex"
+        >
+          <div
+            class="emotion-10"
+            display="flex"
+            width="100%"
+          >
+            <div
+              class="emotion-2"
+              display="flex"
+            >
+              <div
+                class="emotion-91"
+                display="flex"
+                width="100%"
+              >
+                <div
+                  class="emotion-76"
+                  display="flex"
+                >
+                  <span
+                    class="emotion-75"
+                    font-family="primary"
+                    font-size="regular"
+                    font-weight="normal"
+                  >
+                    Контакты
+                  </span>
+                </div>
+                <div
+                  class="emotion-54"
+                  display="flex"
+                />
+                <div
+                  class="emotion-19"
+                />
+                <div
+                  class="emotion-54"
+                  display="flex"
+                />
+                <div
+                  class="emotion-76"
+                  display="flex"
+                >
+                  <span
+                    class="emotion-21"
+                    color="stormdust"
+                    font-family="primary"
+                    font-size="normal"
+                    font-weight="medium"
+                  >
+                    Телефон:
+                  </span>
+                </div>
+                <div
+                  class="emotion-76"
+                  display="flex"
+                >
+                  <span
+                    class="emotion-82"
+                    font-family="primary"
+                    font-size="regular"
+                    font-weight="medium"
+                  />
+                </div>
+                <div
+                  class="emotion-84"
+                  display="flex"
+                />
+                <div
+                  class="emotion-76"
+                  display="flex"
+                >
+                  <div
+                    class="emotion-89"
+                    display="flex"
+                    width="100%"
+                  >
+                    <div
+                      class="emotion-2"
+                      display="flex"
+                    >
+                      <svg
+                        height="20"
+                        viewBox="0 0 18 18"
+                        width="20"
+                      >
+                        <g
+                          fill="none"
+                          fill-rule="evenodd"
+                          stroke="none"
+                          stroke-width="1"
+                          transform="translate(-3, -3)"
+                        >
+                          <path
+                            d="M20.5,3 L20.34,3.03 L15,5.1 L9,3 L3.36,4.9 C3.15,4.97 3,5.15 3,5.38 L3,20.5 C3,20.78 3.22,21 3.5,21 L3.66,20.97 L9,18.9 L15,21 L20.64,19.1 C20.85,19.03 21,18.85 21,18.62 L21,3.5 C21,3.22 20.78,3 20.5,3 Z M15,19 L9,16.89 L9,5 L15,7.11 L15,19 Z"
+                            fill="#999999"
+                            fill-rule="nonzero"
+                          />
+                          <polygon
+                            points="0 0 24 0 24 24 0 24"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div
+                      class="emotion-86"
+                      display="flex"
+                    />
+                    <div
+                      class="emotion-2"
+                      display="flex"
+                    >
+                      <span
+                        class="emotion-87"
+                        color="mountainmist"
+                        font-family="primary"
+                        font-size="tiny"
+                        font-weight="semiBold"
+                      >
+                        География работ
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="emotion-50"
+              display="flex"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
