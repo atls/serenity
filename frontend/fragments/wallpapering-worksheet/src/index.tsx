@@ -3,7 +3,7 @@ import { useIntl }               from 'react-intl'
 
 import { WallpaperingWorksheet } from './WallpaperingWorksheet'
 
-export default ({ id = '', value, onChange = a => {} }) => {
+const WallpaperingWorksheetFragment = ({ id = '', value, onChange = a => {} }) => {
   if (id !== '1fd73ea9-c417-4b10-8b1c-cf3664eaa9ba') return null
   const intl = useIntl()
   const data = {
@@ -45,3 +45,6 @@ export default ({ id = '', value, onChange = a => {} }) => {
     />
   )
 }
+
+
+export default WallpaperingWorksheetFragment

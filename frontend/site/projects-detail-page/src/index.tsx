@@ -2,12 +2,12 @@ import React                               from 'react'
 import { useUser }                         from '@atlantis-lab/react-user'
 import { useRouter }                       from 'next/router'
 
-import { ProjectsDetailPage }              from './ProjectsDetailPage'
+import { ProjectsDetailPage as ProjectsDetail }              from './ProjectsDetailPage'
 import { Seo }                             from './Seo'
 import { Track }                           from './Track'
 import { useDataProjects, useDataReplies } from './useData'
 
-export default () => {
+const ProjectsDetailPage = () => {
   const router = useRouter()
   const user = useUser()
   const id = (router && router.query && router.query.id) || null
@@ -17,8 +17,10 @@ export default () => {
   return (
     <>
       <Seo />
-      <ProjectsDetailPage project={project} id={id} replies={replies} />
+      <ProjectsDetail project={project} id={id} replies={replies} />
       <Track id={id} />
     </>
   )
 }
+
+export default ProjectsDetailPage

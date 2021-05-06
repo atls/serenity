@@ -7,7 +7,7 @@ import { useChat as useUiChat }       from '@ui/chat'
 import { Chat }                       from './Chat'
 import { useChat }                    from './useChat'
 
-export default () => {
+const ChatFragment = () => {
   const intl = useIntl()
   const { onAddChat, discussions, ...data } = useChat()
   const [unread, setUnread] = useState(false)
@@ -42,3 +42,5 @@ export default () => {
     />
   )
 }
+
+export default ChatFragment

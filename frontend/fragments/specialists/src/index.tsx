@@ -7,7 +7,7 @@ import { useChat }         from '@ui/chat'
 import { Specialists }     from './Specialists'
 import { useData }         from './useData'
 
-export default ({ activeCategory = '' }) => {
+const SpecialistsFragment = ({ activeCategory = '' }) => {
   const router = useRouter()
   const searchDefaultValue = (router && router.query && router.query.q) || ''
   const [query, onSearch] = useState(searchDefaultValue)
@@ -25,3 +25,6 @@ export default ({ activeCategory = '' }) => {
     />
   )
 }
+
+
+export default SpecialistsFragment

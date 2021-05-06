@@ -3,7 +3,7 @@ import { useIntl }           from 'react-intl'
 
 import { CeilingsWorksheet } from './CeilingsWorksheet'
 
-export default ({ id = '', value, onChange = a => {} }) => {
+const CeilingsWorksheetFragment = ({ id = '', value, onChange = a => {} }) => {
   if (id !== '2abd818f-cae3-4941-97dd-a1187fc47cdd') return null
   const intl = useIntl()
   const data = {
@@ -70,3 +70,6 @@ export default ({ id = '', value, onChange = a => {} }) => {
     />
   )
 }
+
+
+export default CeilingsWorksheetFragment

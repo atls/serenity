@@ -2,6 +2,9 @@ import React            from 'react'
 
 import { ProjectShort } from './ProjectShort'
 
-export default data => {
+const ProjectShortFragment = data => {
   return <ProjectShort {...data} />
 }
+
+
+export default ProjectShortFragment

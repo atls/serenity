@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import { useRouter }       from 'next/router'
 import { useIntl }         from 'react-intl'
 
-import { ProjectsPage }    from './ProjectsPage'
+import { ProjectsPage as Projects }    from './ProjectsPage'
 import { Seo }             from './Seo'
 
-export default () => {
+const ProjectsPage = () => {
   const intl = useIntl()
   const router = useRouter()
   const defaultCategory = (router && router.query && router.query.catId) || ''
@@ -21,7 +21,10 @@ export default () => {
   return (
     <>
       <Seo />
-      <ProjectsPage intl={intl} activeCategory={activeCategory} selectCategory={selectCategory} />
+      <Projects intl={intl} activeCategory={activeCategory} selectCategory={selectCategory} />
     </>
   )
 }
+
+
+export default ProjectsPage
