@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "src/index.tsx",
   "devDependencies": {
-    "@atlantis-lab/react-user": "^0.1.26",
+    "@atlantis-lab/react-user": "0.1.10",
     "@fragments/catalog": "0.0.0",
     "@fragments/footer": "0.0.0",
     "@fragments/navigation": "0.0.0",
@@ -18,8 +18,8 @@
     "@apollo/react-hooks": "^3.1.0",
     "graphql-tag": "^2.10.0",
     "next": "^9.0.5",
-    "react": "^16.9.0",
+    "react": "16.13.1",
     "react-helmet": "^5.2.0",
-    "react-intl": "^3.2.0"
+    "react-intl": "5.3.2"
   }
 }

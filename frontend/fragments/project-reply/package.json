@@ -5,7 +5,7 @@
   "main": "src/index.tsx",
   "devDependencies": {
     "@apollo/react-testing": "3.1.3",
-    "@atlantis-lab/react-user": "^0.1.26",
+    "@atlantis-lab/react-user": "0.1.10",
     "@fragments/choose-specialist-modal": "0.0.0",
     "@testing-library/react": "9.3.2",
     "@ui/avatar": "0.0.0",
@@ -22,7 +22,7 @@
   "peerDependencies": {
     "@apollo/react-hooks": "^3.1.0",
     "graphql-tag": "^2.10.0",
-    "react": "^16.9.0",
-    "react-intl": "^3.2.0"
+    "react": "16.13.1",
+    "react-intl": "5.3.2"
   }
 }
