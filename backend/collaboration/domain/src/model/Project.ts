@@ -186,7 +186,7 @@ export class Project extends AggregateRoot implements ProjectProperties {
   }
 
   incrementReplyCount() {
-    this.replyCount += 1
+    this.replyCount = this.replyCount + 1
   }
 
   protected whenProjectCreated(event: ProjectCreated): void {

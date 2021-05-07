@@ -10,9 +10,9 @@
     "@types/node": "12.12.14"
   },
   "dependencies": {
-    "@monstrs/nestjs-bus": "0.1.4",
     "@atlantis-lab/nestjs-logger": "0.2.5",
     "@identity/domain": "0.3.0",
+    "@monstrs/nestjs-bus": "0.1.4",
     "@nestjs/common": "6.10.5",
     "@nestjs/typeorm": "6.2.0",
     "@node-ts/ddd": "0.1.4",

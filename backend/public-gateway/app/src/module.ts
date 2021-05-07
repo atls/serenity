@@ -7,16 +7,18 @@ import { CatalogModule }         from '@public-gateway/catalog'
 import { CollaborationModule }   from '@public-gateway/collaboration'
 import { FilesModule }           from '@public-gateway/files'
 import { IdentityModule }        from '@public-gateway/identity'
+import { PortfolioModule }       from '@public-gateway/portfolio'
+import { SearchModule }          from '@public-gateway/search'
 
 import { ActivityMiddleware }    from './middleware'
 
 const playground =
   process.env.NODE_ENV !== 'production' || Boolean(process.env.PLAYGROUND)
     ? {
-      settings: {
-        'request.credentials': 'include',
-      },
-    }
+        settings: {
+          'request.credentials': 'include',
+        },
+      }
     : false
 
 @Module({
@@ -32,10 +34,12 @@ const playground =
         user: req.get('x-user'),
       }),
     }),
+    CollaborationModule,
+    PortfolioModule,
     IdentityModule,
     CatalogModule,
+    SearchModule,
     FilesModule,
-    CollaborationModule,
   ],
   providers: [
     ActivityMiddleware,

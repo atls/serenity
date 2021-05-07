@@ -1,12 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "lint": "actl lint",
-    "test": "actl test",
     "commit": "actl commit",
-    "format": "actl format",
-    "typecheck": "actl typecheck",
-    "checkcommit": "actl precommit",
     "site:dev": "yarn workspace @site/app dev",
     "accounts:dev": "yarn workspace @accounts/app dev",
     "cookie-store:dev": "yarn workspace @accounts/cookie-store dev",
@@ -20,20 +15,13 @@
     "email:dev": "yarn workspace @email/app dev"
   },
   "devDependencies": {
-    "@atlantis-lab/actl": "^0.4.23",
-    "husky": "4.2.5",
-    "lerna": "3.22.1",
+    "@atls/actl-cli": "^0.4.38",
+    "husky": "5.2.0",
     "typescript": "^4.2.2"
   },
   "workspaces": [
     "frontend/**/*",
     "backend/**/*",
     "types/**/*"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "actl precommit",
-      "commit-msg": "actl commitmsg"
-    }
-  }
+  ]
 }

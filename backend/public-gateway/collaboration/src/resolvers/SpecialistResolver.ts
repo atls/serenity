@@ -4,7 +4,7 @@ import { Loader }                                    from '@monstrs/nestjs-datal
 import { Injectable }                                from '@nestjs/common'
 import { ResolveProperty, Resolver, Root }           from '@nestjs/graphql'
 
-import { ReviewLoader, UserLoader } from '../dataloaders'
+import { PortfolioLoader, ReviewLoader, UserLoader } from '../dataloaders'
 import { Specialist }                                from '../types'
 
 @Injectable()
@@ -19,6 +19,15 @@ export class SpecialistResolver {
     const user = await userLoader.load(id)
 
     return user.profile
+  }
+
+  @ResolveProperty()
+  portfolio(
+    @Root() { id }: any,
+    @Loader(PortfolioLoader.name)
+    portfolioLoader: DataLoader<any, any>
+  ) {
+    return portfolioLoader.load(id)
   }
 
   @ResolveProperty()

@@ -1,7 +1,4 @@
 {
   "extends": "@atlantis-lab/tsconfig/tsconfig.base.json",
-  "include": ["frontend/**/**/*", "backend/**/**/*"],
-  "compilerOptions": {
-    "skipLibCheck": true
-  }
+  "include": ["frontend/**/**/*", "backend/**/**/*"]
 }

@@ -9,7 +9,7 @@
     "@ui/layout": "0.0.4"
   },
   "peerDependencies": {
-    "react": "^16.9.0",
-    "@emotion/styled": "^10.0.0"
+    "@emotion/styled": "^10.0.0",
+    "react": "^16.9.0"
   }
 }

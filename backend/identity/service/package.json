@@ -13,12 +13,12 @@
     "@types/node": "12.12.14"
   },
   "dependencies": {
-    "@monstrs/nestjs-bus": "0.1.4",
     "@atlantis-lab/nestjs-map-errors-interceptor": "0.1.4",
     "@grpc/proto-loader": "0.5.5",
     "@identity/application": "0.3.0",
     "@identity/domain": "0.3.0",
     "@identity/persistence": "0.3.0",
+    "@monstrs/nestjs-bus": "0.1.4",
     "@nestjs/common": "6.10.5",
     "@nestjs/core": "6.10.5",
     "@nestjs/microservices": "6.10.5",

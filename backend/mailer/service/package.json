@@ -13,13 +13,13 @@
     "@types/node": "12.12.14"
   },
   "dependencies": {
-    "@monstrs/nestjs-bus": "0.1.4",
     "@grpc/proto-loader": "0.5.5",
     "@identity/domain": "0.3.0",
     "@mailer/api": "0.1.0",
     "@mailer/db": "0.1.0",
     "@mailer/renderer": "0.1.0",
     "@mailer/transport": "0.1.0",
+    "@monstrs/nestjs-bus": "0.1.4",
     "@nestjs/common": "6.10.5",
     "@nestjs/core": "6.10.5",
     "@nestjs/typeorm": "6.2.0",

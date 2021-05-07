@@ -4,8 +4,8 @@
   "license": "MIT",
   "main": "src/index.tsx",
   "peerDependencies": {
-    "react": "^16.9.0",
     "@emotion/styled": "^10.0.0",
+    "react": "^16.9.0",
     "styled-system": "^5.1.0",
     "styled-tools": "^1.7.0"
   }

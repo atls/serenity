@@ -5,8 +5,8 @@
   "private": true,
   "main": "src/index.ts",
   "devDependencies": {
-    "@types/rc-trigger": "0.0.0",
     "@design/ui": "0.3.0",
+    "@types/rc-trigger": "0.0.0",
     "rc-trigger": "2.6.5"
   },
   "peerDependencies": {
