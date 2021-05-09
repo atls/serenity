@@ -1,8 +1,13 @@
-import styled   from '@emotion/styled'
+import styled, { StyledComponent } from '@emotion/styled'
+import { LinkHTMLAttributes }      from 'react'
 
-import { Text } from '@ui/text'
+import { Text }                    from '@ui/text'
 
-export const Link = styled<any>(Text.withComponent('a'))({
+type TextProps = typeof Text.defaultProps
+
+export const Link = styled<StyledComponent<LinkHTMLAttributes<any>, TextProps, any>>(
+  Text.withComponent('a'),
+)({
   textDecoration: 'none',
   cursor: 'pointer',
 })

@@ -11,6 +11,13 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
+    "@accounts/change-password-page": "0.3.0",
+    "@accounts/reset-password-complete-page": "0.3.0",
+    "@accounts/reset-password-page": "0.3.0",
+    "@accounts/signin-page": "0.3.0",
+    "@accounts/signup-complete-page": "0.3.0",
+    "@accounts/signup-page": "0.3.0",
+    "@accounts/signup-profile-page": "0.3.0",
     "@atlantis-lab/next-config-with-workspaces": "^0.2.0",
     "@grpc/proto-loader": "0.5.5",
     "@oryd/hydra-client": "1.6.0",

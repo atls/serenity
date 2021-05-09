@@ -18,3 +18,7 @@ export const DropdownTrigger = ({ menu, children }: DropdownItemProps) => (
     <DropdownItemStyled>{children}</DropdownItemStyled>
   </Trigger>
 )
+
+DropdownTrigger.defaultProps = {
+  menu: {},
+}

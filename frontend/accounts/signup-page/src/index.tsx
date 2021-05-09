@@ -6,7 +6,7 @@ import { SignupPage as Signup } from './SignupPage'
 const SignupPage = () => (
   <>
     <Seo />
-    <SignupPage />
+    <Signup />
   </>
 )
 

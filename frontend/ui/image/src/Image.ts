@@ -21,4 +21,4 @@ const StyledImage = styled.img<any>(
   space,
 )
 
-export const Image = (props: ImageProps) => createElement(StyledImage, { ...props })
+export const Image = (props: Partial<ImageProps>) => createElement(StyledImage, { ...props })

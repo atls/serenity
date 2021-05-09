@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-implied-eval */
+
 import RcSelect                                                            from 'rc-select'
 import styled                                                              from '@emotion/styled'
 import React, { useState }                                                 from 'react'
