@@ -1,11 +1,13 @@
-import React                 from 'react'
+import React                                  from 'react'
 
-import { Seo }               from './Seo'
-import { SignupProfilePage } from './SignupProfilePage'
+import { Seo }                                from './Seo'
+import { SignupProfilePage as SignupProfile } from './SignupProfilePage'
 
-export default () => (
+const SignupProfilePage = () => (
   <>
     <Seo />
     <SignupProfilePage />
   </>
 )
+
+export default SignupProfilePage

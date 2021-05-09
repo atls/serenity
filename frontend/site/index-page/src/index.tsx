@@ -6,7 +6,7 @@ import { Seo }                from './Seo'
 const IndexPage = () => (
   <>
     <Seo />
-    <IndexPage />
+    <Index />
   </>
 )
 

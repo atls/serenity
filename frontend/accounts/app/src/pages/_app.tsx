@@ -15,7 +15,7 @@ class AccountsApp extends App {
       props = await Component.getInitialProps(ctx)
     }
 
-    if (!process.browser) {
+    if (!(process as any).browser) {
       const host = ctx.req.headers['x-forwarded-host']
 
       props.accountUrl = `https://${host.replace('accounts.', 'cabinet.')}`

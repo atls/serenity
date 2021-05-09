@@ -98,7 +98,6 @@ const Name = styled.span(({ theme }: any) => ({
   },
 }))
 
-
 export const BaseGallery = ({ images, name = '', onClose }) => {
   const [enableTransition, setEnableTransition] = useState(true)
   const [innerWidth, setInnerWidth] = useState(null)

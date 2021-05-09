@@ -3,7 +3,7 @@ import React                         from 'react'
 import { ResetPasswordCompletePage } from './ResetPasswordCompletePage'
 import { Seo }                       from './Seo'
 
-export default class Page extends React.Component {
+class Page extends React.Component {
   static async getInitialProps(context) {
     if (!process.browser) {
       const host = context.req.headers['x-forwarded-host']
@@ -26,3 +26,5 @@ export default class Page extends React.Component {
     )
   }
 }
+
+export default Page

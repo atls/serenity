@@ -7,6 +7,8 @@ const initialState = {
   errors: {},
 }
 
+const redirectTo = (body: any) => body.body.redirectTo
+
 const reducer = (state, action) => {
   if (action.type === 'CHANGE') {
     return {

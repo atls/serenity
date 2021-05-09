@@ -1,5 +1,5 @@
 import React                        from 'react'
-import { WithUser, WithouthUser }   from '@atlantis-lab/react-user'
+import { WithUser, WithoutUser }    from '@atlantis-lab/react-user'
 
 import { Item, Drawer as UIDrawer } from '@ui/drawer'
 import { ArrowRightIcon, LogoIcon } from '@ui/icons'
@@ -82,9 +82,9 @@ export const Drawer = ({
         <WithUser>
           <Item onClick={onLogout}>{intl.formatMessage(messages.logout)}</Item>
         </WithUser>
-        <WithouthUser>
+        <WithoutUser>
           <Item onClick={onLogin}>{intl.formatMessage(messages.login)}</Item>
-        </WithouthUser>
+        </WithoutUser>
       </Layout>
     </Column>
   </UIDrawer>
