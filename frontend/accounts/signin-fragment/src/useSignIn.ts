@@ -30,12 +30,12 @@ export const useSignIn = () => {
 
   const onChangeEmail = useCallback(
     value => dispatch({ type: 'CHANGE', field: 'email', value }),
-    []
+    [],
   )
 
   const onChangePassword = useCallback(
     value => dispatch({ type: 'CHANGE', field: 'password', value }),
-    []
+    [],
   )
 
   const onSignIn = useCallback(async () => {

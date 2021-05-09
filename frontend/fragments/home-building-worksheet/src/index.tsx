@@ -70,5 +70,4 @@ const HomeBuildingWorksheetFragment = ({ id = '', value, onChange = a => {} }) =
   )
 }
 
-
 export default HomeBuildingWorksheetFragment

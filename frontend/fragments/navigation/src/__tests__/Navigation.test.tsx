@@ -1,8 +1,8 @@
 import React             from 'react'
 import { IntlProvider }  from 'react-intl'
-import { render }        from '@testing-library/react'
 
 import { ThemeProvider } from '@ui/theme'
+import { render }        from '@testing-library/react'
 
 import Navigation        from '..'
 
@@ -14,7 +14,7 @@ describe('Navigation fragment', () => {
           <ThemeProvider>
             <Navigation />
           </ThemeProvider>
-        </IntlProvider>
+        </IntlProvider>,
       )
 
       expect(asFragment()).toMatchSnapshot()

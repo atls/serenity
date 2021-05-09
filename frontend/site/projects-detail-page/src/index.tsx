@@ -1,11 +1,11 @@
-import React                               from 'react'
-import { useUser }                         from '@atlantis-lab/react-user'
-import { useRouter }                       from 'next/router'
+import React                                    from 'react'
+import { useUser }                              from '@atlantis-lab/react-user'
+import { useRouter }                            from 'next/router'
 
-import { ProjectsDetailPage as ProjectsDetail }              from './ProjectsDetailPage'
-import { Seo }                             from './Seo'
-import { Track }                           from './Track'
-import { useDataProjects, useDataReplies } from './useData'
+import { ProjectsDetailPage as ProjectsDetail } from './ProjectsDetailPage'
+import { Seo }                                  from './Seo'
+import { Track }                                from './Track'
+import { useDataProjects, useDataReplies }      from './useData'
 
 const ProjectsDetailPage = () => {
   const router = useRouter()

@@ -34,12 +34,12 @@ export const useSignUpProfile = () => {
 
   const onChangeFirstName = useCallback(
     value => dispatch({ type: 'CHANGE', field: 'firstName', value }),
-    []
+    [],
   )
 
   const onChangeLastName = useCallback(
     value => dispatch({ type: 'CHANGE', field: 'lastName', value }),
-    []
+    [],
   )
 
   const onCreate = useCallback(async () => {

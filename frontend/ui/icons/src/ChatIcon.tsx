@@ -1,7 +1,14 @@
 /* eslint-disable */
 import React from 'react'
-export const ChatIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg width='1em' height='1em' viewBox='0 0 20 20' fill='none' {...props}>
+export const ChatIcon = (props: any) => (
+  <svg
+    width='1em'
+    height='1em'
+    viewBox='0 0 20 20'
+    fill='none'
+    xmlns='http://www.w3.org/2000/svg'
+    {...props}
+  >
     <path
       fillRule='evenodd'
       clipRule='evenodd'

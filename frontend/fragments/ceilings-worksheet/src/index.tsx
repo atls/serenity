@@ -71,5 +71,4 @@ const CeilingsWorksheetFragment = ({ id = '', value, onChange = a => {} }) => {
   )
 }
 
-
 export default CeilingsWorksheetFragment

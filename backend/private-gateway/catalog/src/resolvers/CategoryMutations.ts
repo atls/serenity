@@ -24,7 +24,7 @@ export class CategoryMutations implements OnModuleInit {
   @Mutation(returns => CreateCategoryResponse)
   createCategory(
     @Args('input', new ValidationPipe({ transform: true }))
-    input: CreateCategoryInput
+    input: CreateCategoryInput,
   ) {
     return this.catalogService.createCategory(input)
   }
@@ -32,7 +32,7 @@ export class CategoryMutations implements OnModuleInit {
   @Mutation(returns => UpdateCategoryResponse)
   updateCategory(
     @Args('input', new ValidationPipe({ transform: true }))
-    input: UpdateCategoryInput
+    input: UpdateCategoryInput,
   ) {
     return this.catalogService.updateCategory(input)
   }
@@ -40,7 +40,7 @@ export class CategoryMutations implements OnModuleInit {
   @Mutation(returns => DeleteCategoryResponse)
   deleteCategory(
     @Args('input', new ValidationPipe({ transform: true }))
-    input: DeleteCategoryInput
+    input: DeleteCategoryInput,
   ) {
     return this.catalogService.deleteCategory(input)
   }

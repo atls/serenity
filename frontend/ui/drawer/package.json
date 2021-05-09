@@ -9,7 +9,7 @@
     "@ui/icons": "0.1.0",
     "@ui/link": "0.0.4",
     "emotion": "10.0.27",
-    "next": "9.4.4"
+    "next": "9.5.5"
   },
   "dependencies": {
     "events": "3.0.0",

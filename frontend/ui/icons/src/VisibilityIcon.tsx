@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from 'react'
-export const VisibilityIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg width='1em' height='1em' viewBox='0 0 16 10' {...props}>
+export const VisibilityIcon = (props: any) => (
+  <svg width='1em' height='1em' viewBox='0 0 16 10' xmlns='http://www.w3.org/2000/svg' {...props}>
     <g
       stroke='none'
       strokeWidth={1}

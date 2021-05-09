@@ -181,7 +181,7 @@ export const Specialists = ({
                           mx={16}
                           src={item.images[0].url}
                         />
-                      )
+                      ),
                   )}
                 </Carousel>
               </Layout>

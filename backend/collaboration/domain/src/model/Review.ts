@@ -25,12 +25,12 @@ export class Review extends AggregateRoot implements AggregateRootProperties {
     customerId: string,
     specialistId: string,
     rating: number,
-    comment: string
+    comment: string,
   ) {
     const review = new Review(uuid())
 
     review.when(
-      new ReviewCreated(review.id, projectId, replyId, customerId, specialistId, rating, comment)
+      new ReviewCreated(review.id, projectId, replyId, customerId, specialistId, rating, comment),
     )
 
     return review

@@ -14,7 +14,7 @@ export class MessageEntityRepository extends WriteRepository<MessageEntity, Mess
   constructor(
     private readonly connection: Connection,
     private readonly logger: Logger,
-    private readonly bus: Bus
+    private readonly bus: Bus,
   ) {
     super(MessageEntity, Message, connection, bus, logger)
   }

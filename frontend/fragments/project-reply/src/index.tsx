@@ -61,5 +61,4 @@ const ProjectReplyFragment = ({ id, replies, profile, status = '', ownerName = {
   )
 }
 
-
 export default ProjectReplyFragment

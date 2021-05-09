@@ -15,7 +15,7 @@ export class ChatEntityRepository extends WriteRepository<ChatEntity, Chat> {
   constructor(
     private readonly connection: Connection,
     private readonly logger: Logger,
-    private readonly bus: Bus
+    private readonly bus: Bus,
   ) {
     super(ChatEntity, Chat, connection, bus, logger)
   }

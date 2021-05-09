@@ -481,6 +481,7 @@ export const SpecialistsDetail = ({
                       >
                         <Image
                           maxHeight={[300, 'none']}
+                          // @ts-ignore
                           height={['auto', 300, 480]}
                           maxWidth={['100%', 'none']}
                           src={item.images[0].url}
@@ -503,7 +504,7 @@ export const SpecialistsDetail = ({
                         </Text>
                       </Layout>
                     </Column>
-                  )
+                  ),
               )}
             </Carousel>
           </Layout>

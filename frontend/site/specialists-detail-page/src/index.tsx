@@ -1,9 +1,9 @@
-import React                     from 'react'
-import { useRouter }             from 'next/router'
+import React                                          from 'react'
+import { useRouter }                                  from 'next/router'
 
-import { Seo }                   from './Seo'
+import { Seo }                                        from './Seo'
 import { SpecialistsDetailPage as SpecialistsDetail } from './SpecialistsDetailPage'
-import { useData }               from './useData'
+import { useData }                                    from './useData'
 
 const SpecialistsDetailPage = () => {
   const router = useRouter()
@@ -17,6 +17,5 @@ const SpecialistsDetailPage = () => {
     </>
   )
 }
-
 
 export default SpecialistsDetailPage

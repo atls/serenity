@@ -1,8 +1,8 @@
 import React              from 'react'
-import { MockedProvider } from '@apollo/react-testing'
-import { render }         from '@testing-library/react'
 
+import { MockedProvider } from '@apollo/react-testing'
 import { ThemeProvider }  from '@ui/theme'
+import { render }         from '@testing-library/react'
 
 import Filters            from '..'
 import { query }          from '../useData'
@@ -39,7 +39,7 @@ describe('Filters fragment', () => {
           <ThemeProvider>
             <Filters />
           </ThemeProvider>
-        </MockedProvider>
+        </MockedProvider>,
       )
 
       expect(asFragment()).toMatchSnapshot()

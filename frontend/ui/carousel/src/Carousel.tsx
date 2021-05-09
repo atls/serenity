@@ -25,7 +25,7 @@ const StyledCarousel = styled.div<CarouselProps>(
       pointerEvents: 'none',
     },
   },
-  transition
+  transition,
 )
 
 const Container = styled.div<any>(({ show }) => ({
@@ -38,7 +38,7 @@ const Screen = styled.div(
   {
     display: 'flex',
   },
-  layout
+  layout,
 )
 
 export const Carousel = ({ children, disableButton = false }) => {
@@ -55,7 +55,7 @@ export const Carousel = ({ children, disableButton = false }) => {
   const setWidth = () => {
     setInnerWidth(contentWidth(containerNode.current))
     setChildWidth(
-      Array.prototype.map.call(screenNode.current.children, item => widthWithMargin(item))
+      Array.prototype.map.call(screenNode.current.children, item => widthWithMargin(item)),
     )
     if (!disableButton && innerWidth === fullWidth) {
       setButtonRightDisabled(true)

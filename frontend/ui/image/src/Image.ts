@@ -7,5 +7,5 @@ export const Image = styled.img(
     cursor: true,
   }),
   layout,
-  space
+  space,
 )

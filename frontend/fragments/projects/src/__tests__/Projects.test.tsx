@@ -1,9 +1,9 @@
 import React                     from 'react'
-import { MockedProvider }        from '@apollo/react-testing'
 import { IntlProvider, useIntl } from 'react-intl'
-import { render }                from '@testing-library/react'
 
+import { MockedProvider }        from '@apollo/react-testing'
 import { ThemeProvider }         from '@ui/theme'
+import { render }                from '@testing-library/react'
 
 import { Projects }              from '../Projects'
 
@@ -23,7 +23,7 @@ describe('Projects fragment', () => {
               <TestComponent />
             </ThemeProvider>
           </IntlProvider>
-        </MockedProvider>
+        </MockedProvider>,
       )
 
       expect(asFragment()).toMatchSnapshot()

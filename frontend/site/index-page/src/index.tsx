@@ -1,7 +1,7 @@
-import React         from 'react'
+import React                  from 'react'
 
 import { IndexPage as Index } from './IndexPage'
-import { Seo }       from './Seo'
+import { Seo }                from './Seo'
 
 const IndexPage = () => (
   <>

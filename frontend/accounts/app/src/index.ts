@@ -32,12 +32,12 @@ const bootstrap = async () => {
       store: new RedisStore({
         host: process.env.REDIS_HOST || 'redis',
       }),
-    })
+    }),
   )
 
   server.use((req, res, next) => {
     // eslint-disable-next-line dot-notation
-    req['hydra'] = new Hydra.AdminApi(process.env.HYDRA_ADMIN_URL || 'http://hydra:4445')
+    req.hydra = new Hydra.AdminApi(process.env.HYDRA_ADMIN_URL || 'http://hydra:4445')
 
     next()
   })

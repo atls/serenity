@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from 'react'
-export const PhoneIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg width='1em' height='1em' viewBox='0 0 18 18' {...props}>
+export const PhoneIcon = (props: any) => (
+  <svg width='1em' height='1em' viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg' {...props}>
     <g stroke='none' strokeWidth={1} fill='none' fillRule='evenodd' transform='translate(-3, -3)'>
       <polygon points='0 0 24 0 24 24 0 24' />
       <path

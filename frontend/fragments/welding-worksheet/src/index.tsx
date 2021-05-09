@@ -53,5 +53,4 @@ const WeldingWorksheetFragment = ({ id = '', value, onChange = a => {} }) => {
   )
 }
 
-
 export default WeldingWorksheetFragment

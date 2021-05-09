@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import { useRouter }       from 'next/router'
-import { useIntl }         from 'react-intl'
+import React, { useState }                from 'react'
+import { useRouter }                      from 'next/router'
+import { useIntl }                        from 'react-intl'
 
-import { Seo }             from './Seo'
+import { Seo }                            from './Seo'
 import { SpecialistsPage as Specialists } from './SpecialistsPage'
 
 const SpecialistsPage = () => {
@@ -21,14 +21,9 @@ const SpecialistsPage = () => {
   return (
     <>
       <Seo />
-      <Specialists
-        intl={intl}
-        activeCategory={activeCategory}
-        selectCategory={selectCategory}
-      />
+      <Specialists intl={intl} activeCategory={activeCategory} selectCategory={selectCategory} />
     </>
   )
 }
-
 
 export default SpecialistsPage

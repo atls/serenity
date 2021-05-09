@@ -1,8 +1,8 @@
 import React                     from 'react'
 import { IntlProvider, useIntl } from 'react-intl'
-import { render }                from '@testing-library/react'
 
 import { ThemeProvider }         from '@ui/theme'
+import { render }                from '@testing-library/react'
 
 import { CeilingsWorksheet }     from '../CeilingsWorksheet'
 
@@ -20,7 +20,7 @@ describe('Ceilings worksheet', () => {
           <ThemeProvider>
             <TestComponent />
           </ThemeProvider>
-        </IntlProvider>
+        </IntlProvider>,
       )
 
       expect(asFragment()).toMatchSnapshot()

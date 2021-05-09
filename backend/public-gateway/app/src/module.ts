@@ -1,8 +1,8 @@
-import { DataLoaderInterceptor } from '@monstrs/nestjs-dataloader'
 import { Module }                from '@nestjs/common'
 import { APP_INTERCEPTOR }       from '@nestjs/core'
 import { GraphQLModule }         from '@nestjs/graphql'
 
+import { DataLoaderInterceptor } from '@monstrs/nestjs-dataloader'
 import { CatalogModule }         from '@public-gateway/catalog'
 import { CollaborationModule }   from '@public-gateway/collaboration'
 import { FilesModule }           from '@public-gateway/files'
@@ -13,10 +13,10 @@ import { ActivityMiddleware }    from './middleware'
 const playground =
   process.env.NODE_ENV !== 'production' || Boolean(process.env.PLAYGROUND)
     ? {
-      settings: {
-        'request.credentials': 'include',
-      },
-    }
+        settings: {
+          'request.credentials': 'include',
+        },
+      }
     : false
 
 @Module({

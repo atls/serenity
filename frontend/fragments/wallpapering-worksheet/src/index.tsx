@@ -46,5 +46,4 @@ const WallpaperingWorksheetFragment = ({ id = '', value, onChange = a => {} }) =
   )
 }
 
-
 export default WallpaperingWorksheetFragment

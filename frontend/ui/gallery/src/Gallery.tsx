@@ -55,7 +55,7 @@ const StyledGallery = styled.div<GalleryProps>(
     flexDirection: 'row',
     height: 'auto',
   },
-  transition
+  transition,
 )
 
 const Image = styled.img({
@@ -98,11 +98,6 @@ const Name = styled.span(({ theme }: any) => ({
   },
 }))
 
-export const Gallery = ({ images, name, visible, onClose }) => (
-  <Modal visible={visible} onClose={onClose}>
-    <BaseGallery images={images} name={name} onClose={onClose} />
-  </Modal>
-)
 
 export const BaseGallery = ({ images, name = '', onClose }) => {
   const [enableTransition, setEnableTransition] = useState(true)
@@ -236,3 +231,9 @@ export const BaseGallery = ({ images, name = '', onClose }) => {
     </Container>
   )
 }
+
+export const Gallery = ({ images, name, visible, onClose }) => (
+  <Modal visible={visible} onClose={onClose}>
+    <BaseGallery images={images} name={name} onClose={onClose} />
+  </Modal>
+)

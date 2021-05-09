@@ -19,7 +19,7 @@ export class DiscussionQueriesService {
     @InjectRepository(Discussion)
     private readonly discussionRepository: Repository<Discussion>,
     @InjectRepository(Chat)
-    private readonly chatRepository: Repository<Chat>
+    private readonly chatRepository: Repository<Chat>,
   ) {}
 
   async findAll(pager?: any, filters?: any): Promise<FindAllResponse<Discussion>> {

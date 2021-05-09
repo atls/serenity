@@ -1,11 +1,12 @@
 /* eslint-disable */
 import React from 'react'
-export const StarIcon = (props: React.SVGProps<SVGSVGElement>) => (
+export const StarIcon = (props: any) => (
   <svg
     width='1em'
     height='1em'
     viewBox='0 0 16 15'
     fill={props.color || 'rgb(216, 216, 216)'}
+    xmlns='http://www.w3.org/2000/svg'
     {...props}
   >
     <polygon

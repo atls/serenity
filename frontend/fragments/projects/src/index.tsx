@@ -12,5 +12,4 @@ const ProjectsFragment = ({ activeCategory = '' }) => {
   return <Projects intl={intl} projects={data} onSearch={onSearch} />
 }
 
-
 export default ProjectsFragment

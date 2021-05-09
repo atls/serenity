@@ -1,4 +1,5 @@
 import uuid                    from 'uuid/v4'
+import { Injectable }          from '@nestjs/common'
 
 import {
   Address,
@@ -12,7 +13,6 @@ import {
   User,
 } from '@identity/domain'
 import { UserStoreRepository } from '@identity/persistence'
-import { Injectable }          from '@nestjs/common'
 
 import {
   AuthenticateUserCommand,
@@ -32,7 +32,7 @@ export class UserApplicationService {
     const user = await User.register(
       uuid(),
       new Email(command.email),
-      new Credentials(command.password)
+      new Credentials(command.password),
     )
 
     user.requestEmailVerification()
@@ -86,7 +86,7 @@ export class UserApplicationService {
     const user = await this.userRepository.getById(command.id)
 
     user.createProfile(
-      new Profile(command.type, new PersonalInformation(command.firstName, command.lastName))
+      new Profile(command.type, new PersonalInformation(command.firstName, command.lastName)),
     )
 
     await this.userRepository.save(user)
@@ -98,7 +98,7 @@ export class UserApplicationService {
     const user = await this.userRepository.getById(command.id)
 
     user.changeProfilePersonalInformation(
-      new PersonalInformation(command.firstName, command.lastName)
+      new PersonalInformation(command.firstName, command.lastName),
     )
 
     user.changeProfileContactInformation(new ContactInformation(new Phone(command.phone)))

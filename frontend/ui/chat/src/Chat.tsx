@@ -49,7 +49,7 @@ const Icons = styled.div<ActiveProps>(
     opacity: 0,
     width: 16,
   },
-  activeIcon
+  activeIcon,
 )
 
 const unread = ifProp('unread', ({ theme }: any) => ({
@@ -72,7 +72,7 @@ const ChatItem = styled.div<ItemProps>(
       boxShadow: 'none',
     },
   }),
-  unread
+  unread,
 )
 
 export const Chat = ({
@@ -167,7 +167,7 @@ export const Chat = ({
                                   day: 'numeric',
                                   month: 'numeric',
                                   year: 'numeric',
-                                }
+                                },
                               )}
                           </Text>
                         </Layout>

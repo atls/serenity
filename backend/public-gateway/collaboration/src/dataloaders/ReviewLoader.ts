@@ -1,9 +1,9 @@
 import DataLoader                   from 'dataloader'
-import { NestDataLoader }           from '@monstrs/nestjs-dataloader'
 import { Injectable, OnModuleInit } from '@nestjs/common'
 import { Client, ClientGrpc }       from '@nestjs/microservices'
 import { map }                      from 'rxjs/operators'
 
+import { NestDataLoader }           from '@monstrs/nestjs-dataloader'
 import { clientOptions }            from '@protos/collaboration'
 import { collaboration }            from '@protos/interfaces'
 
@@ -16,7 +16,7 @@ export class ReviewLoader implements NestDataLoader, OnModuleInit {
 
   onModuleInit() {
     this.collaborationService = this.client.getService<collaboration.CollaborationService>(
-      'CollaborationService'
+      'CollaborationService',
     )
   }
 
@@ -25,8 +25,8 @@ export class ReviewLoader implements NestDataLoader, OnModuleInit {
       .getReviews({ filters: { specialistId } })
       .pipe(
         map((data: any) =>
-          specialistId.map(id => data.rows.filter(item => item.specialistId === id))
-        )
+          specialistId.map(id => data.rows.filter(item => item.specialistId === id)),
+        ),
       )
       .toPromise()
   }

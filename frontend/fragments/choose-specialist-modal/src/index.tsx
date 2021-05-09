@@ -9,5 +9,4 @@ const ChooseSpecialistModalFragment = data => {
   return <ChooseSpecialistModal intl={intl} {...data} />
 }
 
-
 export default ChooseSpecialistModalFragment

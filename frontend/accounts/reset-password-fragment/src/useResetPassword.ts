@@ -30,7 +30,7 @@ export const useResetPassword = () => {
 
   const onChangeEmail = useCallback(
     value => dispatch({ type: 'CHANGE', field: 'email', value }),
-    []
+    [],
   )
 
   const onReset = useCallback(async () => {

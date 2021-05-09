@@ -1,7 +1,6 @@
 import { LoggerModule }        from '@atlantis-lab/nestjs-logger'
-import { TypeOrmModule }       from '@nestjs/typeorm'
-
 import { Global, Module }      from '@nestjs/common'
+import { TypeOrmModule }       from '@nestjs/typeorm'
 
 import config                  from './config'
 import { User }                from './entities'

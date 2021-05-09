@@ -16,7 +16,7 @@ const strategy = new OAuth2Strategy(
   },
   (accessToken, refreshToken, params, profile, cb) => {
     cb(null, { accessToken, profile })
-  }
+  },
 )
 
 strategy.userProfile = function(accessToken, done) {
@@ -36,7 +36,7 @@ strategy.userProfile = function(accessToken, done) {
           done(e)
         }
       }
-    }
+    },
   )
 }
 

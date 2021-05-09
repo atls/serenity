@@ -92,7 +92,7 @@ const StyledButton = styled('button', { shouldForwardProp })<StyledButtonProps>(
   border,
   typography,
   bg,
-  flexbox
+  flexbox,
 )
 
 const ContentPart = styled.span({

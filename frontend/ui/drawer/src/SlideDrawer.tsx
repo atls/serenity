@@ -43,7 +43,7 @@ const StyledContainer = styled(motion.div)<any>(
   },
   position,
   layout,
-  color
+  color,
 )
 
 export const SlideDrawer = ({ children, visible, lockScroll = true, direction = '', ...props }) => {
@@ -75,7 +75,7 @@ export const SlideDrawer = ({ children, visible, lockScroll = true, direction = 
             {children}
           </StyledContainer>
         </ScrollLock>,
-        document.body
+        document.body,
       )
     }
   }

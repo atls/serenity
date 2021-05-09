@@ -32,5 +32,4 @@ const SpecialistsDetailFragment = data => {
   )
 }
 
-
 export default SpecialistsDetailFragment

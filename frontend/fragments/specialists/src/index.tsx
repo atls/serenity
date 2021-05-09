@@ -26,5 +26,4 @@ const SpecialistsFragment = ({ activeCategory = '' }) => {
   )
 }
 
-
 export default SpecialistsFragment

@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import { useRouter }       from 'next/router'
-import { useIntl }         from 'react-intl'
+import React, { useState }          from 'react'
+import { useRouter }                from 'next/router'
+import { useIntl }                  from 'react-intl'
 
-import { ProjectsPage as Projects }    from './ProjectsPage'
-import { Seo }             from './Seo'
+import { ProjectsPage as Projects } from './ProjectsPage'
+import { Seo }                      from './Seo'
 
 const ProjectsPage = () => {
   const intl = useIntl()
@@ -25,6 +25,5 @@ const ProjectsPage = () => {
     </>
   )
 }
-
 
 export default ProjectsPage

@@ -8,7 +8,7 @@ import { Desktop }       from './Desktop'
 import { Mobile }        from './Mobile'
 import { useData }       from './useData'
 
-const CatalogFragment =  () => {
+const CatalogFragment = () => {
   const { visible, close } = useDrawer('catalog')
   const { innerWidth } = useWindowSize()
   const data = useData()

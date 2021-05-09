@@ -1,10 +1,7 @@
 import App                                   from 'next/app'
 import compose                               from 'recompose/compose'
 import { withApollo }                        from '@atlantis-lab/next-app-with-apollo'
-import { withAuth }                          from '@atlantis-lab/next-app-with-auth'
-import { withEmotion }                       from '@atlantis-lab/next-app-with-emotion'
 import { withHelmet }                        from '@atlantis-lab/next-app-with-helmet'
-import { withIntl }                          from '@atlantis-lab/next-app-with-intl'
 import { withProvider }                      from '@atlantis-lab/next-app-with-provider'
 import { withUser }                          from '@atlantis-lab/next-app-with-user'
 
@@ -13,6 +10,9 @@ import { ChatProvider }                      from '@ui/chat'
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable global-require */
 import { ThemeProvider, injectGlobalStyles } from '@ui/theme'
+import { withAuth }                          from '@atlantis-lab/next-app-with-auth'
+import { withEmotion }                       from '@atlantis-lab/next-app-with-emotion'
+import { withIntl }                          from '@atlantis-lab/next-app-with-intl'
 
 export const withProviders = compose(
   withApollo({
@@ -41,7 +41,7 @@ export const withProviders = compose(
     injectGlobalStyles,
   }),
   withHelmet(),
-  withProvider(ChatProvider)
+  withProvider(ChatProvider),
 )
 
 export default withProviders(App)

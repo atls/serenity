@@ -1,7 +1,8 @@
 import gql                                              from 'graphql-tag'
-import { useMutation }                                  from '@apollo/react-hooks' // eslint-disable-line import/no-extraneous-dependencies
 /* eslint-disable no-else-return */
 import { useCallback, useEffect, useReducer, useState } from 'react'
+
+import { useMutation }                                  from '@apollo/react-hooks' // eslint-disable-line import/no-extraneous-dependencies
 
 const messageMutation = gql`
   mutation AddProjectReply($input: AddProjectReplyInput!) {
@@ -149,12 +150,12 @@ export const useCreate = (projectId, replies) => {
 
   const onChangeMessage = useCallback(
     value => dispatch({ type: 'CHANGE', field: 'message', value }),
-    []
+    [],
   )
 
   const onChangeComment = useCallback(
     (value, id) => dispatch({ type: 'CHANGE_COMMENTS', id, value }),
-    []
+    [],
   )
 
   const [onSaveMessage, { data: messageData, loading }] = useMutation<any>(messageMutation, {
