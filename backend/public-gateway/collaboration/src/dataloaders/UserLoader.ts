@@ -1,9 +1,9 @@
 import DataLoader                           from 'dataloader'
-import { NestDataLoader, OrderResultByKey } from '@monstrs/nestjs-dataloader'
 import { Injectable, OnModuleInit }         from '@nestjs/common'
 import { Client, ClientGrpc }               from '@nestjs/microservices'
 import { map }                              from 'rxjs/operators'
 
+import { NestDataLoader, OrderResultByKey } from '@monstrs/nestjs-dataloader'
 import { clientOptions }                    from '@protos/identity'
 import { identity }                         from '@protos/interfaces'
 

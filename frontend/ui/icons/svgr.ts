@@ -16,7 +16,7 @@ const svgrTemplate = ({ template }, opts, { componentName, jsx }) => {
   return typeScriptTpl.ast`
  import React from 'react'
 
-    export const ${componentName} = (props: React.SVGProps<SVGSVGElement>) => ${jsx}
+    export const ${componentName} = (props: any) => ${jsx}
   `
 }
 
@@ -27,7 +27,7 @@ const read = files =>
         pascalCase: true,
       }).replace('50+', 'FiftyPlus')}Icon`,
       source: (await fs.readFileAsync(iconPath)).toString(),
-    }))
+    })),
   )
 
 const compile = icons =>
@@ -41,9 +41,9 @@ const compile = icons =>
           template: svgrTemplate,
           replaceAttrValues: replacements[icon.name] || {},
         },
-        { componentName: icon.name.replace('50+', 'FiftyPlus') }
+        { componentName: icon.name.replace('50+', 'FiftyPlus') },
       ),
-    }))
+    })),
   )
 
 const save = async sources => {
@@ -51,19 +51,20 @@ const save = async sources => {
     sources.map(source =>
       fs.writeFileAsync(
         path.join(TARGET_DIR, `${source.name}.tsx`),
+        // @ts-ignore
         `/* eslint-disable */\n${prettier.format(source.code, {
           parser: 'babel',
           ...prettierConfig,
-        })}`
-      )
-    )
+        })}`,
+      ),
+    ),
   )
 }
 
 const createIndex = sources =>
   fs.writeFileAsync(
     path.join(TARGET_DIR, 'index.ts'),
-    sources.map(source => `export * from './${source.name}'`).join('\n')
+    sources.map(source => `export * from './${source.name}'`).join('\n'),
   )
 
 const build = async () => {

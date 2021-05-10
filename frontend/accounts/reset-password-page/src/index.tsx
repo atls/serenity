@@ -1,11 +1,13 @@
-import React                 from 'react'
+import React                                  from 'react'
 
-import { ResetPasswordPage } from './ResetPasswordPage'
-import { Seo }               from './Seo'
+import { ResetPasswordPage as ResetPassword } from './ResetPasswordPage'
+import { Seo }                                from './Seo'
 
-export default () => (
+const ResetPasswordPage = () => (
   <>
     <Seo />
-    <ResetPasswordPage />
+    <ResetPassword />
   </>
 )
+
+export default ResetPasswordPage

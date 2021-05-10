@@ -22,7 +22,7 @@ export class CategoryGroup {
 
   @OneToMany(
     type => Category,
-    category => category.group
+    category => category.group,
   )
   children: Category[]
 

@@ -42,7 +42,7 @@ export class IsEntityConstraint implements ValidatorConstraintInterface {
 
 export const IsEntityExists = (
   options: IsEntityOptions | Function,
-  validationOptions?: ValidationOptions
+  validationOptions?: ValidationOptions,
 ) => {
   return (object: any, propertyName: string) => {
     registerDecorator({
@@ -57,7 +57,7 @@ export const IsEntityExists = (
 
 export const IsEntityNotExists = (
   options: IsEntityOptions | Function,
-  validationOptions?: ValidationOptions
+  validationOptions?: ValidationOptions,
 ) => {
   return (object: any, propertyName: string) => {
     registerDecorator({

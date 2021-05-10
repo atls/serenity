@@ -1,14 +1,14 @@
+import { Injectable }       from '@nestjs/common'
 import { InjectRepository } from '@nestjs/typeorm'
 import { Repository }       from 'typeorm'
 
 import { User }             from '@identity/persistence'
-import { Injectable }       from '@nestjs/common'
 
 @Injectable()
 export class UserQueriesService {
   constructor(
     @InjectRepository(User)
-    private readonly userRepository: Repository<User>
+    private readonly userRepository: Repository<User>,
   ) {}
 
   async getUsers(pager, order, filters) {

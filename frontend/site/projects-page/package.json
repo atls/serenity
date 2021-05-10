@@ -1,0 +1,21 @@
+{
+  "name": "@site/projects-page",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "devDependencies": {
+    "@fragments/catalog": "0.0.0",
+    "@fragments/filters": "0.0.0",
+    "@fragments/footer": "0.0.0",
+    "@fragments/navigation": "0.0.0",
+    "@fragments/projects": "0.0.0",
+    "@testing-library/react": "9.3.2",
+    "@ui/layout": "0.0.4"
+  },
+  "peerDependencies": {
+    "next": "10.0.5",
+    "react": "16.13.1",
+    "react-helmet": "^5.2.0",
+    "react-intl": "5.3.2"
+  }
+}

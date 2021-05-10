@@ -1,0 +1,17 @@
+{
+  "name": "@ui/dropdown",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@types/rc-trigger": "0.0.0",
+    "@design/ui": "0.3.0",
+    "rc-trigger": "2.6.5"
+  },
+  "peerDependencies": {
+    "@emotion/styled": "^10.0.0",
+    "react": "16.13.1",
+    "styled-tools": "^1.7.0"
+  }
+}

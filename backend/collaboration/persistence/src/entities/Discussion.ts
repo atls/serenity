@@ -28,13 +28,13 @@ export class Discussion {
 
   @OneToOne(
     type => Reply,
-    reply => reply.discussion
+    reply => reply.discussion,
   )
   reply: Reply
 
   @OneToMany(
     type => Message,
-    message => message.discussion
+    message => message.discussion,
   )
   messages: Message[]
 

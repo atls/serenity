@@ -1,8 +1,8 @@
-import { MapValidationErrorsInterceptor }                           from '@monstrs/nestjs-map-errors-interceptor'
 import { Controller, UseInterceptors, UsePipes, ValidationPipe }    from '@nestjs/common'
 import { GrpcMethod }                                               from '@nestjs/microservices'
 
 import { ConfirmUploadCommand, CreateUploadCommand, UploadService } from '@files/application'
+import { MapValidationErrorsInterceptor }                           from '@monstrs/nestjs-map-errors-interceptor'
 
 @Controller()
 @UseInterceptors(MapValidationErrorsInterceptor)

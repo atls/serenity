@@ -70,5 +70,5 @@ export const NextSidebarLink = withRouter(
     >
       {children}
     </SidebarLink>
-  )
+  ),
 )

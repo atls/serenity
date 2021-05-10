@@ -1,0 +1,16 @@
+{
+  "name": "@ui/select",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@design/ui": "0.3.0",
+    "@ui/icons": "0.1.0",
+    "rc-select": "9.2.2"
+  },
+  "peerDependencies": {
+    "emotion": "^10.0.0",
+    "react": "16.13.1"
+  }
+}

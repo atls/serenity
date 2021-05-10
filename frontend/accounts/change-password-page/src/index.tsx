@@ -1,11 +1,13 @@
-import React                  from 'react'
+import React                                    from 'react'
 
-import { ChangePasswordPage } from './ChangePasswordPage'
-import { Seo }                from './Seo'
+import { ChangePasswordPage as ChangePassword } from './ChangePasswordPage'
+import { Seo }                                  from './Seo'
 
-export default () => (
+const ChangePasswordPage = () => (
   <>
     <Seo />
-    <ChangePasswordPage />
+    <ChangePassword />
   </>
 )
+
+export default ChangePasswordPage

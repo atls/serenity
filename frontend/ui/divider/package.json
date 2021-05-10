@@ -1,0 +1,15 @@
+{
+  "name": "@ui/divider",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@design/ui": "0.3.0"
+  },
+  "peerDependencies": {
+    "react": "16.13.1",
+    "@emotion/styled": "^10.0.0",
+    "styled-tools": "^1.7.0"
+  }
+}

@@ -1,10 +1,10 @@
 import App                                   from 'next/app'
 import React                                 from 'react'
 import compose                               from 'recompose/compose'
+import { withHelmet }                        from '@atlantis-lab/next-app-with-helmet'
 
 import { ThemeProvider, injectGlobalStyles } from '@ui/theme'
 import { withEmotion }                       from '@atlantis-lab/next-app-with-emotion'
-import { withHelmet }                        from '@atlantis-lab/next-app-with-helmet'
 import { withIntl }                          from '@atlantis-lab/next-app-with-intl'
 
 class AccountsApp extends App {
@@ -15,7 +15,7 @@ class AccountsApp extends App {
       props = await Component.getInitialProps(ctx)
     }
 
-    if (!process.browser) {
+    if (!(process as any).browser) {
       const host = ctx.req.headers['x-forwarded-host']
 
       props.accountUrl = `https://${host.replace('accounts.', 'cabinet.')}`
@@ -40,7 +40,7 @@ export const withProviders = compose(
     Provider: ThemeProvider,
     injectGlobalStyles,
   }),
-  withHelmet()
+  withHelmet(),
 )
 
 export default withProviders(AccountsApp)

@@ -1,7 +1,7 @@
 import React                          from 'react'
+import { storiesOf }                  from '@storybook/react'
 
 import { Column, Layout, List, Text } from '@design/ui'
-import { storiesOf }                  from '@storybook/react'
 
 import { Garniture, Size }            from './components'
 import { fontFaces, fontSizes }       from '../theme'

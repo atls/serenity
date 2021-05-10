@@ -11,6 +11,13 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
+    "@accounts/change-password-page": "0.3.0",
+    "@accounts/reset-password-complete-page": "0.3.0",
+    "@accounts/reset-password-page": "0.3.0",
+    "@accounts/signin-page": "0.3.0",
+    "@accounts/signup-complete-page": "0.3.0",
+    "@accounts/signup-page": "0.3.0",
+    "@accounts/signup-profile-page": "0.3.0",
     "@atlantis-lab/next-config-with-workspaces": "^0.2.0",
     "@grpc/proto-loader": "0.5.5",
     "@oryd/hydra-client": "1.6.0",
@@ -23,7 +30,7 @@
     "express": "^4.17.1",
     "express-session": "1.17.0",
     "grpc": "1.24.2",
-    "next": "^9.4.4",
+    "next": "10.0.5",
     "next-compose-plugins": "^2.2.0",
     "next-fonts": "0.19.0",
     "next-images": "^1.4.0",
@@ -52,7 +59,7 @@
     "react-intl": "5.3.2",
     "recompose": "0.30.0",
     "ts-node": "8.10.2",
-    "typescript": "3.9.7",
+    "typescript": "^4.2.2",
     "universal-cookie": "4.0.4"
   }
 }

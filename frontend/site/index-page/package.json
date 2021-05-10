@@ -1,0 +1,17 @@
+{
+  "name": "@site/index-page",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "devDependencies": {
+    "@fragments/catalog": "0.0.0",
+    "@fragments/main": "0.0.0",
+    "@fragments/navigation": "0.0.0",
+    "@testing-library/react": "9.3.2"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-helmet": "^5.2.1",
+    "react-intl": "5.3.2"
+  }
+}

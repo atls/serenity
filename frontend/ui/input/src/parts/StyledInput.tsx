@@ -74,7 +74,7 @@ const StyledInput = styled('input', { shouldForwardProp })(
   size,
   offset,
   attach,
-  invalid
+  invalid,
 )
 
 StyledInput.defaultProps = {

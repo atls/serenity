@@ -1,11 +1,11 @@
 import { Bus }                            from '@monstrs/nestjs-bus'
 import { Logger }                         from '@monstrs/nestjs-logger'
 import { Injectable }                     from '@nestjs/common'
+import { Uuid }                           from '@node-ts/ddd-types'
 import { Connection }                     from 'typeorm'
 
 import { Discussion as DiscussionEntity } from '@collaboration/domain'
 import { WriteRepository }                from '@node-ts/ddd'
-import { Uuid }                           from '@node-ts/ddd-types'
 
 import { Discussion }                     from '../entities'
 
@@ -15,8 +15,9 @@ export class DiscussionEntityRepository extends WriteRepository<DiscussionEntity
   constructor(
     private readonly connection: Connection,
     private readonly logger: Logger,
-    private readonly bus: Bus
+    private readonly bus: Bus,
   ) {
+    // @ts-ignore
     super(DiscussionEntity, Discussion, connection, bus, logger)
   }
 

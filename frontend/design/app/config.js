@@ -1,6 +1,6 @@
 import React from 'react'
 import { configure, addParameters, addDecorator } from '@storybook/react'
-import { ModalsProvider } from '@monstrs/react-modals'
+import { ModalsProvider } from '@atlantis-lab/react-modals'
 import { ThemeProvider, injectGlobalStyles } from '@ui/theme'
 import { DrawerProvider } from '@ui/drawer'
 import { IntlProvider } from 'react-intl'

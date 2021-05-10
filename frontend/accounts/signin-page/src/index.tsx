@@ -1,9 +1,9 @@
-import React, { useCallback } from 'react'
+import React, { useCallback }   from 'react'
 
-import { Seo }                from './Seo'
-import { SigninPage }         from './SigninPage'
+import { Seo }                  from './Seo'
+import { SigninPage as Signin } from './SigninPage'
 
-export default () => {
+const SigninPage = () => {
   const onBack = useCallback(() => {
     window.location.href = `${window.location.origin.replace('accounts.', '')}`
   }, [])
@@ -11,7 +11,9 @@ export default () => {
   return (
     <>
       <Seo />
-      <SigninPage onBack={onBack} />
+      <Signin onBack={onBack} />
     </>
   )
 }
+
+export default SigninPage

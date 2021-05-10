@@ -1,7 +1,7 @@
 import React                                  from 'react'
+import { storiesOf }                          from '@storybook/react'
 
 import { Column, Layout, List, Sample, Text } from '@design/ui'
-import { storiesOf }                          from '@storybook/react'
 
 import { shadows }                            from '../theme'
 
