@@ -583,6 +583,7 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
                   height="16"
                   viewBox="0 0 12 12"
                   width="16"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <g
                     fill="none"
@@ -624,6 +625,7 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
                   height="16"
                   viewBox="0 0 16 10"
                   width="16"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <g
                     fill="none"

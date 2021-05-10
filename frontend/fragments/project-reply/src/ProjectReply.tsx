@@ -1,5 +1,5 @@
 import React                        from 'react'
-import { WithUser, WithouthUser }   from '@atlantis-lab/react-user'
+import { WithUser, WithoutUser }    from '@atlantis-lab/react-user'
 
 import ChooseSpecialistModal        from '@fragments/choose-specialist-modal'
 import { Avatar }                   from '@ui/avatar'
@@ -433,7 +433,7 @@ export const ProjectReply = ({
         onSave={onChooseSpecialist}
       />
     </WithUser>
-    <WithouthUser>
+    <WithoutUser>
       <Divider />
       <Box justifyContent='center' bg='alabaster'>
         <Row maxWidth={1200} px={[20, 20, 40]} boxSizing='border-box' width='100%'>
@@ -473,6 +473,6 @@ export const ProjectReply = ({
           <Layout flexBasis={['auto', 220, 296]} flexShrink={0} />
         </Row>
       </Box>
-    </WithouthUser>
+    </WithoutUser>
   </>
 )
