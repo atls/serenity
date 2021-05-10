@@ -14,6 +14,7 @@ export class TrackController {
   @Header('Expires', '0')
   async trackJs(@Req() request: Request) {
     if (request.query.resource) {
+      // @ts-ignore
       await this.trackService.view(request.cookies['connect.sid'], request.query.resource)
     }
 
@@ -23,6 +24,7 @@ export class TrackController {
   @Get('/track')
   async track(@Req() request: Request) {
     if (request.query.resource) {
+      // @ts-ignore
       await this.trackService.view(request.cookies['connect.sid'], request.query.resource)
     }
 

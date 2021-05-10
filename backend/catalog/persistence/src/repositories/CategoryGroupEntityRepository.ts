@@ -19,6 +19,7 @@ export class CategoryGroupEntityRepository extends WriteRepository<
     private readonly logger: Logger,
     private readonly bus: Bus,
   ) {
+    // @ts-ignore
     super(CategoryGroupEntity, CategoryGroup, connection, bus, logger)
   }
 }

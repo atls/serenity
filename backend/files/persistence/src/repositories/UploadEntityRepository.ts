@@ -16,6 +16,7 @@ export class UploadEntityRepository extends WriteRepository<UploadEntity, Upload
     private readonly logger: Logger,
     private readonly bus: Bus,
   ) {
+    // @ts-ignore
     super(UploadEntity, Upload, connection, bus, logger)
   }
 }

@@ -16,6 +16,7 @@ export class MessageEntityRepository extends WriteRepository<MessageEntity, Mess
     private readonly logger: Logger,
     private readonly bus: Bus,
   ) {
+    // @ts-ignore
     super(MessageEntity, Message, connection, bus, logger)
   }
 }

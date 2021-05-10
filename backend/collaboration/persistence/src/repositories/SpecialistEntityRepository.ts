@@ -17,6 +17,7 @@ export class SpecialistEntityRepository extends WriteRepository<SpecialistEntity
     private readonly logger: Logger,
     private readonly bus: Bus,
   ) {
+    // @ts-ignore
     super(SpecialistEntity, Specialist, connection, bus, logger)
   }
 

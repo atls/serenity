@@ -16,6 +16,7 @@ export class ReplyEntityRepository extends WriteRepository<ReplyEntity, Reply> {
     private readonly logger: Logger,
     private readonly bus: Bus,
   ) {
+    // @ts-ignore
     super(ReplyEntity, Reply, connection, bus, logger)
   }
 }
