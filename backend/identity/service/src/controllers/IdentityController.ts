@@ -1,3 +1,4 @@
+import { MapValidationErrorsInterceptor }                        from '@atlantis-lab/nestjs-map-errors-interceptor'
 import { Controller, UseInterceptors, UsePipes, ValidationPipe } from '@nestjs/common'
 import { GrpcMethod }                                            from '@nestjs/microservices'
 
@@ -11,7 +12,6 @@ import {
   UserApplicationService,
   VerifyEmailCommand,
 } from '@identity/application'
-import { MapValidationErrorsInterceptor }                        from '@monstrs/nestjs-map-errors-interceptor'
 
 @Controller()
 @UseInterceptors(MapValidationErrorsInterceptor)

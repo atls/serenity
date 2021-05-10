@@ -1,8 +1,8 @@
+/* eslint-disable class-methods-use-this */
+import { AggregateRootProperties } from '@node-ts/ddd-types'
 import { format, parse }           from 'url'
 
 import { AggregateRoot }           from '@node-ts/ddd'
-/* eslint-disable class-methods-use-this */
-import { AggregateRootProperties } from '@node-ts/ddd-types'
 
 import { UploadCreated }           from '../events'
 import { File }                    from './File'

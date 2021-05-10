@@ -412,6 +412,7 @@ export namespace mailer {
   }
 
   /** Properties of a getSendingRequest. */
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   export interface getSendingRequest {
     /** getSendingRequest id */
     id?: string | null

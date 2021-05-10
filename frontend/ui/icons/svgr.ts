@@ -51,6 +51,7 @@ const save = async sources => {
     sources.map(source =>
       fs.writeFileAsync(
         path.join(TARGET_DIR, `${source.name}.tsx`),
+        // @ts-ignore
         `/* eslint-disable */\n${prettier.format(source.code, {
           parser: 'babel',
           ...prettierConfig,

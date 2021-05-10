@@ -11,6 +11,7 @@
     "@protos/catalog": "0.1.0",
     "@protos/collaboration": "0.0.0",
     "@protos/files": "0.0.1",
+    "@protos/hits": "0.0.0",
     "@protos/identity": "0.3.0",
     "@protos/interfaces": "0.1.0",
     "@public-gateway/catalog": "0.1.0",
