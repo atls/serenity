@@ -1,6 +1,6 @@
 {
   "name": "@catalog/service",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
@@ -13,9 +13,9 @@
     "@types/node": "12.12.14"
   },
   "dependencies": {
-    "@catalog/application": "0.1.0",
-    "@catalog/domain": "0.1.0",
-    "@catalog/persistence": "0.1.0",
+    "@catalog/application": "0.1.1",
+    "@catalog/domain": "0.1.1",
+    "@catalog/persistence": "0.1.1",
     "@godaddy/terminus": "4.3.1",
     "@grpc/proto-loader": "0.5.5",
     "@monstrs/nestjs-bus": "0.1.4",
@@ -25,7 +25,7 @@
     "@nestjs/core": "6.10.5",
     "@nestjs/microservices": "6.10.5",
     "@nestjs/terminus": "6.5.3",
-    "@protos/catalog": "0.1.0",
+    "@protos/catalog": "0.1.1",
     "grpc": "1.24.2",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3",

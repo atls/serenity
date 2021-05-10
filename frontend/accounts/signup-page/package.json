@@ -1,13 +1,13 @@
 {
   "name": "@accounts/signup-page",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "MIT",
   "main": "src/index.tsx",
   "devDependencies": {
-    "@accounts/signup-fragment": "0.3.0",
-    "@ui/icons": "0.1.0",
-    "@ui/layout": "0.0.4",
-    "@ui/link": "0.0.4"
+    "@accounts/signup-fragment": "0.3.1",
+    "@ui/icons": "0.1.1",
+    "@ui/layout": "0.0.5",
+    "@ui/link": "0.0.5"
   },
   "dependencies": {
     "react": "16.13.1",

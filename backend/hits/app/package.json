@@ -1,6 +1,6 @@
 {
   "name": "@hits/app",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
@@ -9,8 +9,8 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@hits/commands": "0.0.0",
-    "@hits/persistence": "0.0.0",
+    "@hits/commands": "0.0.1",
+    "@hits/persistence": "0.0.1",
     "@nestjs/common": "6.10.5",
     "@nestjs/core": "6.10.5",
     "@nestjs/platform-express": "6.10.5",

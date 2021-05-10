@@ -1,12 +1,12 @@
 {
   "name": "@site/index-page",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.tsx",
   "devDependencies": {
-    "@fragments/catalog": "0.0.0",
-    "@fragments/main": "0.0.0",
-    "@fragments/navigation": "0.0.0",
+    "@fragments/catalog": "0.0.1",
+    "@fragments/main": "0.0.1",
+    "@fragments/navigation": "0.0.1",
     "@testing-library/react": "9.3.2"
   },
   "dependencies": {

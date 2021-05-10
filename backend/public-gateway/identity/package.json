@@ -1,15 +1,15 @@
 {
   "name": "@public-gateway/identity",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "src/index.ts",
   "dependencies": {
     "@nestjs/common": "6.10.5",
     "@nestjs/graphql": "6.5.3",
     "@nestjs/microservices": "6.10.5",
-    "@protos/files": "0.0.1",
-    "@protos/identity": "0.3.0",
-    "@protos/interfaces": "0.1.0",
+    "@protos/files": "0.0.2",
+    "@protos/identity": "0.3.1",
+    "@protos/interfaces": "0.1.1",
     "rxjs": "6.5.3",
     "type-graphql": "0.17.5"
   },

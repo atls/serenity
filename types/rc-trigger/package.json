@@ -1,6 +1,6 @@
 {
   "name": "@types/rc-trigger",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "TypeScript definitions for rc-trigger",
   "license": "MIT",
   "types": "index",

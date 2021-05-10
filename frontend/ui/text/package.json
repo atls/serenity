@@ -1,13 +1,13 @@
 {
   "name": "@ui/text",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "MIT",
   "main": "src/index.ts",
   "devDependencies": {
-    "@design/ui": "0.3.0",
+    "@design/ui": "0.3.1",
     "@storybook/addon-knobs": "5.3.18",
     "@types/styled-system": "5.1.4",
-    "@ui/theme": "0.0.4"
+    "@ui/theme": "0.0.5"
   },
   "peerDependencies": {
     "@emotion/styled": "^10.0.0",

@@ -1,6 +1,6 @@
 {
   "name": "@collaboration/persistence",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
@@ -10,7 +10,7 @@
     "@types/node": "12.12.14"
   },
   "dependencies": {
-    "@collaboration/domain": "0.0.0",
+    "@collaboration/domain": "0.0.1",
     "@monstrs/nestjs-bus": "0.1.4",
     "@monstrs/nestjs-logger": "0.1.2",
     "@nestjs/common": "6.10.5",

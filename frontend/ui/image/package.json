@@ -1,6 +1,6 @@
 {
   "name": "@ui/image",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "private": true,
   "main": "src/index.ts",

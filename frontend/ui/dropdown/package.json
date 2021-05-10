@@ -1,12 +1,12 @@
 {
   "name": "@ui/dropdown",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "private": true,
   "main": "src/index.ts",
   "devDependencies": {
-    "@types/rc-trigger": "0.0.0",
-    "@design/ui": "0.3.0",
+    "@design/ui": "0.3.1",
+    "@types/rc-trigger": "0.0.1",
     "rc-trigger": "2.6.5"
   },
   "peerDependencies": {

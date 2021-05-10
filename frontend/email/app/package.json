@@ -1,6 +1,6 @@
 {
   "name": "@email/app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
@@ -31,11 +31,11 @@
     "@atlantis-lab/next-document-with-helmet": "0.2.8",
     "@atlantis-lab/react-auth": "0.1.13",
     "@atlantis-lab/react-locale": "0.1.11",
-    "@email/email-verification-template": "0.1.0",
-    "@email/reset-password-template": "0.1.0",
+    "@email/email-verification-template": "0.1.1",
+    "@email/reset-password-template": "0.1.1",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.5",
-    "@ui/theme": "0.0.4",
+    "@ui/theme": "0.0.5",
     "emotion-server": "10.0.27",
     "react": "16.13.1",
     "react-apollo": "3.1.5",

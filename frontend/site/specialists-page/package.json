@@ -1,16 +1,16 @@
 {
   "name": "@site/specialists-page",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.tsx",
   "devDependencies": {
-    "@fragments/catalog": "0.0.0",
-    "@fragments/filters": "0.0.0",
-    "@fragments/footer": "0.0.0",
-    "@fragments/navigation": "0.0.0",
-    "@fragments/specialists": "0.0.0",
+    "@fragments/catalog": "0.0.1",
+    "@fragments/filters": "0.0.1",
+    "@fragments/footer": "0.0.1",
+    "@fragments/navigation": "0.0.1",
+    "@fragments/specialists": "0.0.1",
     "@testing-library/react": "9.3.2",
-    "@ui/layout": "0.0.4"
+    "@ui/layout": "0.0.5"
   },
   "peerDependencies": {
     "next": "10.0.5",

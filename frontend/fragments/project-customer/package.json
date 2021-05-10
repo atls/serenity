@@ -1,19 +1,19 @@
 {
   "name": "@fragments/project-customer",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.tsx",
   "devDependencies": {
     "@apollo/react-testing": "3.1.3",
-    "@ui/divider": "0.0.0",
-    "@ui/layout": "0.0.4",
-    "@ui/link": "0.0.4",
-    "@ui/relative-time": "0.0.0",
-    "@ui/text": "0.3.0",
-    "@ui/avatar": "0.0.0",
-    "@ui/icons": "0.1.0",
     "@testing-library/react": "9.3.2",
-    "@ui/theme": "0.0.4"
+    "@ui/avatar": "0.0.1",
+    "@ui/divider": "0.0.1",
+    "@ui/icons": "0.1.1",
+    "@ui/layout": "0.0.5",
+    "@ui/link": "0.0.5",
+    "@ui/relative-time": "0.0.1",
+    "@ui/text": "0.3.1",
+    "@ui/theme": "0.0.5"
   },
   "peerDependencies": {
     "@apollo/react-hooks": "^3.1.0",

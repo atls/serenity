@@ -1,10 +1,10 @@
 {
   "name": "@protos/catalog",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "src/index.ts",
   "license": "MIT",
   "dependencies": {
     "@nestjs/microservices": "6.10.5",
-    "@protos/common": "0.3.0"
+    "@protos/common": "0.3.1"
   }
 }
