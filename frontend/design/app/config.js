@@ -1,15 +1,17 @@
 import React from 'react'
-import { configure, addParameters, addDecorator } from '@storybook/react'
-import { ModalsProvider } from '@atlantis-lab/react-modals'
-import { ThemeProvider, injectGlobalStyles } from '@ui/theme'
-import { DrawerProvider } from '@ui/drawer'
-import { IntlProvider } from 'react-intl'
 import { MockedProvider } from '@apollo/react-testing'
+import { ModalsProvider } from '@atlantis-lab/react-modals'
+import { IntlProvider } from 'react-intl'
+import { addDecorator, addParameters, configure } from '@storybook/react'
+
+import { DrawerProvider } from '@ui/drawer'
+import { ThemeProvider, injectGlobalStyles } from '@ui/theme'
+
 import theme from './theme'
 
 injectGlobalStyles()
 
-addDecorator(story => (
+addDecorator((story) => (
   <MockedProvider mocks={[]} addTypename={false}>
     <ModalsProvider>
       <DrawerProvider>

@@ -23,9 +23,9 @@ export class ProjectDataService implements OnModuleInit {
   onModuleInit() {
     this.catalogService = this.catalogClient.getService<catalog.CatalogService>('CatalogService')
 
-    this.collaborationService = this.collaborationClient.getService<
-      collaboration.CollaborationService
-    >('CollaborationService')
+    this.collaborationService = this.collaborationClient.getService<collaboration.CollaborationService>(
+      'CollaborationService'
+    )
   }
 
   async handle(projectId: string): Promise<void> {

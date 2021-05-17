@@ -15,7 +15,7 @@ storiesOf('Дизайн Токены', module).add('Типографика', () 
     </Layout>
     <Layout mt={10} mx={10}>
       <List flexDirection='column'>
-        {fontFaces.map(font => (
+        {fontFaces.map((font) => (
           <Garniture
             key={`${font.family} ${font.type}`}
             name={`${font.family} ${font.type}`}
@@ -30,7 +30,7 @@ storiesOf('Дизайн Токены', module).add('Типографика', () 
     </Layout>
     <Layout mt={10} mx={10}>
       <List flexDirection='column'>
-        {Object.keys(fontSizes).map(size => (
+        {Object.keys(fontSizes).map((size) => (
           <Size key={size} name={size} size={fontSizes[size]} />
         ))}
       </List>

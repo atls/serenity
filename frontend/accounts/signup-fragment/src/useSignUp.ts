@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/camelcase */
+/* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable no-else-return */
 import { useCallback, useReducer } from 'react'
 
@@ -31,17 +31,17 @@ export const useSignUp = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const onChangeEmail = useCallback(
-    value => dispatch({ type: 'CHANGE', field: 'email', value }),
+    (value) => dispatch({ type: 'CHANGE', field: 'email', value }),
     []
   )
 
   const onChangePassword = useCallback(
-    value => dispatch({ type: 'CHANGE', field: 'password', value }),
+    (value) => dispatch({ type: 'CHANGE', field: 'password', value }),
     []
   )
 
   const onChangeConfirmPassword = useCallback(
-    value => dispatch({ type: 'CHANGE', field: 'confirmPassword', value }),
+    (value) => dispatch({ type: 'CHANGE', field: 'confirmPassword', value }),
     []
   )
 

@@ -5,7 +5,7 @@ import { useChat }           from '@ui/chat'
 
 import { SpecialistsDetail } from './SpecialistsDetail'
 
-export default data => {
+export default (data) => {
   const intl = useIntl()
   const [visible, setVisible] = useState(false)
   const [name, setName] = useState('')

@@ -8,7 +8,7 @@ import { UserLoader }                      from '../dataloaders'
 import { Review }                          from '../types'
 
 @Injectable()
-@Resolver(of => Review)
+@Resolver((of) => Review)
 export class ReviewResolver {
   @ResolveProperty()
   async customer(

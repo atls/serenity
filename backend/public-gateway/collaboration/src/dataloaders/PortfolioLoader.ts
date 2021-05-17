@@ -18,12 +18,11 @@ export class PortfolioLoader implements NestDataLoader, OnModuleInit {
     this.portfolioService = this.client.getService<portfolio.PortfolioService>('PortfolioService')
   }
 
-  getPortfolio = async (userIds: string[]) => {
-    return this.portfolioService
+  getPortfolio = async (userIds: string[]) =>
+    this.portfolioService
       .getPortfolio({ filters: { userId: userIds } })
-      .pipe(map((data: any) => userIds.map(id => data.rows.filter(item => item.userId === id))))
+      .pipe(map((data: any) => userIds.map((id) => data.rows.filter((item) => item.userId === id))))
       .toPromise()
-  }
 
   generateDataLoader(): DataLoader<any, any> {
     return new DataLoader<string, portfolio.Portfolio>(this.getPortfolio)

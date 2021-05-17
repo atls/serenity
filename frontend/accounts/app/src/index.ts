@@ -35,11 +35,11 @@ const bootstrap = async () => {
     })
   )
 
-  server.use((req, res, next) => {
+  server.use((req, res, nextMid) => {
     // eslint-disable-next-line dot-notation
     req['hydra'] = new Hydra.AdminApi(process.env.HYDRA_ADMIN_URL || 'http://hydra:4445')
 
-    next()
+    nextMid()
   })
 
   server.use(flow(actions))

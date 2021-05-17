@@ -8,7 +8,7 @@ import { ActivityLoader, CustomerLoader, UserLoader } from '../dataloaders'
 import { ProjectOwner }                               from '../types'
 
 @Injectable()
-@Resolver(of => ProjectOwner)
+@Resolver((of) => ProjectOwner)
 export class ProjectOwnerResolver {
   @ResolveProperty()
   async profile(

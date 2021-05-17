@@ -94,14 +94,14 @@ const reducer = (state, action) => {
   } else if (action.type === 'LOAD') {
     const messages = {}
     const discussions = {}
-    action.discussions.forEach(item => {
+    action.discussions.forEach((item) => {
       messages[item.recipient.id] = ''
       discussions[item.recipient.id] = item
     })
 
     return {
       ...state,
-      discussions: Object.keys(discussions).map(item => discussions[item]),
+      discussions: Object.keys(discussions).map((item) => discussions[item]),
       messages,
     }
   }
@@ -128,7 +128,7 @@ export const useChat = () => {
     }
 
     setTimeout(() => pool(), REFETCH_TIMEOUT)
-  }, [])
+  }, [refetch])
 
   const [state, dispatch] = useReducer(reducer, initialState)
 
@@ -151,7 +151,7 @@ export const useChat = () => {
 
   const [saveMessage, { data: messageData, loading }] = useMutation<any>(mutation)
 
-  const onSave = recipientId => {
+  const onSave = (recipientId) => {
     saveMessage({
       variables: {
         input: {

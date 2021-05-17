@@ -22,7 +22,7 @@ export class FilesLoader implements NestDataLoader, OnModuleInit {
   getFiles(id: string[]) {
     return this.filesService
       .getFiles({ filters: { id } })
-      .pipe(map(data => data.rows))
+      .pipe(map((data) => data.rows))
       .toPromise()
   }
 

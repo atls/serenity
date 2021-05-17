@@ -9,7 +9,7 @@
     "@types/styled-system": "5.1.4",
     "@ui/theme": "0.0.4"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@emotion/styled": "^10.0.0",
     "@storybook/react": "^5.1.0",
     "react": "16.13.1",

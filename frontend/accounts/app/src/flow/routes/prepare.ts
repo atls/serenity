@@ -2,7 +2,7 @@ import * as Hydra   from '@oryd/hydra-client'
 
 import { getState } from '../utils'
 
-export const prepare = passport => async (req, res, next) => {
+export const prepare = (passport) => async (req, res, next) => {
   const { hydra }: { hydra: Hydra.AdminApi } = req
   if (!(req.query.login_challenge || req.session.login_challenge)) {
     passport.authenticate('oauth2', { state: getState(req) })(req, res, next)

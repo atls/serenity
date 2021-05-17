@@ -5,20 +5,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # 0.3.0 (2020-09-28)
 
-
 ### Bug Fixes
 
-* fix accounts deps import ([da9d1b2](https://github.com/Atlantis-Lab/serenity/commit/da9d1b2d4c88116a6942cfbd6d2ca20c883a2f5e))
-
+- fix accounts deps import ([da9d1b2](https://github.com/Atlantis-Lab/serenity/commit/da9d1b2d4c88116a6942cfbd6d2ca20c883a2f5e))
 
 ### Features
 
-* **accounts:** reset password page init ([9d3aa3e](https://github.com/Atlantis-Lab/serenity/commit/9d3aa3eec2cc0e955f9c84316d0422a5e328f7f7))
-
-
-
-
-
+- **accounts:** reset password page init ([9d3aa3e](https://github.com/Atlantis-Lab/serenity/commit/9d3aa3eec2cc0e955f9c84316d0422a5e328f7f7))
 
 # 0.2.0 (2020-06-30)
 

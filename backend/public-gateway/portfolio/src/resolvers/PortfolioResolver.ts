@@ -11,7 +11,7 @@ import { ImageLoader }                     from '../dataloaders'
 import { Portfolio }                       from '../types'
 
 @Injectable()
-@Resolver(of => Portfolio)
+@Resolver((of) => Portfolio)
 export class PortfolioResolver {
   @ResolveProperty()
   images(

@@ -16,14 +16,15 @@ export class IsFieldEqualConstraint implements ValidatorConstraintInterface {
   }
 }
 
-export const IsFieldEqual = (target: string, validationOptions?: ValidationOptions) => {
-  return (object: any, propertyName: string) => {
-    registerDecorator({
-      target: object.constructor,
-      options: validationOptions,
-      constraints: [target],
-      propertyName,
-      validator: IsFieldEqualConstraint,
-    })
-  }
+export const IsFieldEqual = (target: string, validationOptions?: ValidationOptions) => (
+  object: any,
+  propertyName: string
+) => {
+  registerDecorator({
+    target: object.constructor,
+    options: validationOptions,
+    constraints: [target],
+    propertyName,
+    validator: IsFieldEqualConstraint,
+  })
 }

@@ -7,11 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @ui/link
 
-
-
-
-
-
 ## 0.0.3 (2020-06-30)
 
 **Note:** Version bump only for package @ui/link

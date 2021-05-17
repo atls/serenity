@@ -11,7 +11,7 @@ import { CategoriesLoader }                from '../dataloaders'
 import { Specialisation }                  from '../types'
 
 @Injectable()
-@Resolver(of => Specialisation)
+@Resolver((of) => Specialisation)
 export class SpecialisationResolver {
   @ResolveProperty()
   main(

@@ -103,11 +103,9 @@ export default class DragDrawer extends Component<DragDrawerProps> {
       this.removeListeners()
 
       setTimeout(() => {
-        this.setState(() => {
-          return {
-            open: false,
-          }
-        })
+        this.setState(() => ({
+          open: false,
+        }))
       }, 300)
     }
 
@@ -119,11 +117,9 @@ export default class DragDrawer extends Component<DragDrawerProps> {
     if (open && !prevProps.open) {
       onOpen()
       /* eslint-disable-next-line react/no-did-update-set-state */
-      this.setState(() => {
-        return {
-          open: true,
-        }
-      })
+      this.setState(() => ({
+        open: true,
+      }))
     }
   }
 
@@ -141,7 +137,7 @@ export default class DragDrawer extends Component<DragDrawerProps> {
     return position
   }
 
-  attachListeners = drawer => {
+  attachListeners = (drawer) => {
     const { dontApplyListeners, getModalRef, direction } = this.props
     const { listenersAttached } = this.state
 
@@ -182,7 +178,7 @@ export default class DragDrawer extends Component<DragDrawerProps> {
     this.setState({ listenersAttached: false })
   }
 
-  tap = event => {
+  tap = (event) => {
     const { pageY, pageX } = event.touches[0]
     const { direction } = this.props
 
@@ -192,15 +188,13 @@ export default class DragDrawer extends Component<DragDrawerProps> {
     this.NEW_POSITION = 0
     this.MOVING_POSITION = 0
 
-    this.setState(() => {
-      return {
-        thumb: start,
-        start,
-      }
-    })
+    this.setState(() => ({
+      thumb: start,
+      start,
+    }))
   }
 
-  drag = event => {
+  drag = (event) => {
     const { direction, notifyWillClose, onDrag } = this.props
     const { thumb, position } = this.state
     const { pageY, pageX } = event.touches[0]
@@ -233,13 +227,10 @@ export default class DragDrawer extends Component<DragDrawerProps> {
 
       // not at the bottom
       if (this.NEGATIVE_SCROLL < newPosition) {
-        this.setState(() => {
-          return {
-            thumb: movingPosition,
-            position:
-              positionThreshold > 0 ? Math.min(newPosition, positionThreshold) : newPosition,
-          }
-        })
+        this.setState(() => ({
+          thumb: movingPosition,
+          position: positionThreshold > 0 ? Math.min(newPosition, positionThreshold) : newPosition,
+        }))
       }
     }
   }
@@ -256,15 +247,13 @@ export default class DragDrawer extends Component<DragDrawerProps> {
         newPosition = this.drawer.scrollWidth
       }
 
-      this.setState(() => {
-        return {
-          position: newPosition,
-        }
-      })
+      this.setState(() => ({
+        position: newPosition,
+      }))
     }
   }
 
-  getNegativeScroll = element => {
+  getNegativeScroll = (element) => {
     const { direction } = this.props
     const size = this.getElementSize()
 
@@ -286,19 +275,15 @@ export default class DragDrawer extends Component<DragDrawerProps> {
 
     if (allowClose === false) {
       // if we aren't going to allow close, let's animate back to the default position
-      return this.setState(() => {
-        return {
-          position: defaultPosition,
-          thumb: 0,
-        }
-      })
+      return this.setState(() => ({
+        position: defaultPosition,
+        thumb: 0,
+      }))
     }
 
-    this.setState(() => {
-      return {
-        position: defaultPosition,
-      }
-    })
+    this.setState(() => ({
+      position: defaultPosition,
+    }))
 
     // cleanup
     this.removeListeners()
@@ -342,7 +327,7 @@ export default class DragDrawer extends Component<DragDrawerProps> {
     )
   }
 
-  getDrawerTransform = value => {
+  getDrawerTransform = (value) => {
     const { direction } = this.props
     if (isDirectionBottom(direction)) {
       return { transform: `translate3d(0, ${value}px, 0)` }
@@ -369,9 +354,9 @@ export default class DragDrawer extends Component<DragDrawerProps> {
     return undefined
   }
 
-  preventDefault = event => event.preventDefault()
+  preventDefault = (event) => event.preventDefault()
 
-  stopPropagation = event => event.stopPropagation()
+  stopPropagation = (event) => event.stopPropagation()
 
   render() {
     const {
@@ -424,28 +409,26 @@ export default class DragDrawer extends Component<DragDrawerProps> {
             translate: hiddenPosition,
           }}
         >
-          {({ translate }) => {
-            return (
-              <StyledDragDrawer
-                id={id}
-                style={containerStyle}
-                onClick={this.hideDrawer}
-                onKeyDown={this.hideDrawer}
-                className={containerElementClass || ''}
-                ref={getContainerRef}
+          {({ translate }) => (
+            <StyledDragDrawer
+              id={id}
+              style={containerStyle}
+              onClick={this.hideDrawer}
+              onKeyDown={this.hideDrawer}
+              className={containerElementClass || ''}
+              ref={getContainerRef}
+            >
+              <div
+                onClick={this.stopPropagation}
+                onKeyDown={this.stopPropagation}
+                style={this.getDrawerTransform(translate)}
+                ref={disableDrag ? undefined : this.attachListeners}
+                className={modalElementClass || ''}
               >
-                <div
-                  onClick={this.stopPropagation}
-                  onKeyDown={this.stopPropagation}
-                  style={this.getDrawerTransform(translate)}
-                  ref={disableDrag ? undefined : this.attachListeners}
-                  className={modalElementClass || ''}
-                >
-                  <TouchScrollable>{children}</TouchScrollable>
-                </div>
-              </StyledDragDrawer>
-            )
-          }}
+                <TouchScrollable>{children}</TouchScrollable>
+              </div>
+            </StyledDragDrawer>
+          )}
         </Motion>
       </ScrollLock>,
       parentElement

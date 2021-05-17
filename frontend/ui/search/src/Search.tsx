@@ -55,7 +55,7 @@ export const Search = ({
   const [interval, setInterval] = useState(null)
   const [value, setValue] = useState(defaultValue)
 
-  const fetchData = fetchValue => {
+  const fetchData = (fetchValue) => {
     if (interval) {
       clearTimeout(interval)
       setInterval(null)
@@ -64,9 +64,9 @@ export const Search = ({
     setInterval(setTimeout(() => onSearch(fetchValue), 500))
   }
 
-  const onChange = changValue => setValue(changValue)
+  const onChange = (changValue) => setValue(changValue)
 
-  const onKeyDown = e => {
+  const onKeyDown = (e) => {
     if (e.keyCode === 13) {
       if (onSelectValue) {
         onSelectValue(value)

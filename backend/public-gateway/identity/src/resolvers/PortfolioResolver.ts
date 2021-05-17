@@ -11,7 +11,7 @@ import { clientOptions }                         from '@protos/portfolio'
 import { User }                                  from '../types'
 
 @Injectable()
-@Resolver(of => User)
+@Resolver((of) => User)
 export class PortfolioResolver implements OnModuleInit {
   @Client(clientOptions)
   private readonly client: ClientGrpc

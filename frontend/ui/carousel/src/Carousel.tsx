@@ -1,13 +1,13 @@
-import styled                                  from '@emotion/styled'
-import React, { useEffect, useRef, useState }  from 'react'
-import { useSwipeable }                        from 'react-swipeable'
-import { layout }                              from 'styled-system'
-import { ifProp }                              from 'styled-tools'
+import styled                                              from '@emotion/styled'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { useSwipeable }                                    from 'react-swipeable'
+import { layout }                                          from 'styled-system'
+import { ifProp }                                          from 'styled-tools'
 
-import { ArrowBackwardIcon, ArrowForwardIcon } from '@ui/icons'
-import { contentWidth, widthWithMargin }       from '@ui/utils'
+import { ArrowBackwardIcon, ArrowForwardIcon }             from '@ui/icons'
+import { contentWidth, widthWithMargin }                   from '@ui/utils'
 
-import { SlideButton }                         from './SlideButton'
+import { SlideButton }                                     from './SlideButton'
 
 interface CarouselProps {
   transition: boolean
@@ -52,10 +52,10 @@ export const Carousel = ({ children, disableButton = false }) => {
   const containerNode = useRef()
   const screenNode = useRef(null)
 
-  const setWidth = () => {
+  const setWidth = useCallback(() => {
     setInnerWidth(contentWidth(containerNode.current))
     setChildWidth(
-      Array.prototype.map.call(screenNode.current.children, item => widthWithMargin(item))
+      Array.prototype.map.call(screenNode.current.children, (item) => widthWithMargin(item))
     )
     if (!disableButton && innerWidth === fullWidth) {
       setButtonRightDisabled(true)
@@ -63,17 +63,17 @@ export const Carousel = ({ children, disableButton = false }) => {
     if (!disableButton && innerWidth !== fullWidth) {
       setButtonRightDisabled(false)
     }
-  }
+  }, [disableButton, innerWidth, fullWidth])
 
   useEffect(() => {
     setFullWidth(contentWidth(screenNode.current))
-  })
+  }, [])
 
   useEffect(() => {
     setTimeout(() => {
       setWidth()
     }, 100)
-  }, [fullWidth])
+  }, [fullWidth, setWidth])
 
   useEffect(() => {
     if (!disableButton) {
@@ -81,9 +81,9 @@ export const Carousel = ({ children, disableButton = false }) => {
       return () => window.removeEventListener('resize', setWidth)
     }
     return undefined
-  }, [])
+  }, [disableButton, setWidth])
 
-  const swiping = data => {
+  const swiping = (data) => {
     if (innerWidth >= fullWidth) {
       return
     }
@@ -110,7 +110,7 @@ export const Carousel = ({ children, disableButton = false }) => {
     setEnableTransition(false)
   }
 
-  const handleClick = direction => {
+  const handleClick = (direction) => {
     let activeSlide = 0
     let activeLeft = 0
     for (;;) {
@@ -156,7 +156,7 @@ export const Carousel = ({ children, disableButton = false }) => {
   }
 
   const handlers = useSwipeable({
-    onSwiping: data => swiping(data),
+    onSwiping: (data) => swiping(data),
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
     trackTouch: true,

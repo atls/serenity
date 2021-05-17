@@ -1,7 +1,7 @@
 import originalUrl from 'original-url'
 import { format }  from 'url'
 
-export const getRedirectUrl = req => {
+export const getRedirectUrl = (req) => {
   if (process.env.DEFAULT_REDIRECT_URL) {
     return process.env.DEFAULT_REDIRECT_URL
   }
@@ -19,7 +19,7 @@ export const getRedirectUrl = req => {
   return null
 }
 
-export const getState = req => {
+export const getState = (req) => {
   const state: any = { target: req._parsedUrl.pathname } // eslint-disable-line no-underscore-dangle
 
   if (req.query.continue) {

@@ -23,9 +23,9 @@ export class SpecialistDataService implements OnModuleInit {
   onModuleInit() {
     this.catalogService = this.catalogClient.getService<catalog.CatalogService>('CatalogService')
 
-    this.collaborationService = this.collaborationClient.getService<
-      collaboration.CollaborationService
-    >('CollaborationService')
+    this.collaborationService = this.collaborationClient.getService<collaboration.CollaborationService>(
+      'CollaborationService'
+    )
   }
 
   async handle(specialistId: string): Promise<void> {
@@ -45,8 +45,8 @@ export class SpecialistDataService implements OnModuleInit {
 
     const body = {
       description: specialist.description,
-      specialisation: categories.map(category => category.name),
-      specialisationId: categories.map(category => category.id),
+      specialisation: categories.map((category) => category.name),
+      specialisationId: categories.map((category) => category.id),
     }
 
     await this.elasticsearchService.index({

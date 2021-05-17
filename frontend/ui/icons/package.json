@@ -7,7 +7,7 @@
     "figma:sync": "figma-assets-cli -o ./ KvLdHIAX2KNeKASJfE98jzRX 0:2154",
     "compile": "ts-node --project=./tsconfig.compile.json svgr.ts"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@atlantis-lab/prettier-config": "^0.0.18 || ^0.1.0",
     "prettier": "^1.18.0",
     "react": "16.13.1"

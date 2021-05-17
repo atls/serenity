@@ -31,7 +31,7 @@ export class ProjectMutations implements OnModuleInit {
     )
   }
 
-  @Mutation(returns => CreateProjectResponse)
+  @Mutation((returns) => CreateProjectResponse)
   createProject(
     @Args('input')
     input: CreateProjectInput,
@@ -40,7 +40,7 @@ export class ProjectMutations implements OnModuleInit {
     return this.collaborationService.createProject({ ...input, customerId })
   }
 
-  @Mutation(returns => UpdateProjectResponse)
+  @Mutation((returns) => UpdateProjectResponse)
   updateProject(
     @Args('input')
     input: UpdateProjectInput,
@@ -49,7 +49,7 @@ export class ProjectMutations implements OnModuleInit {
     return this.collaborationService.updateProject({ ...input, customerId })
   }
 
-  @Mutation(returns => PublishProjectResponse)
+  @Mutation((returns) => PublishProjectResponse)
   publishProject(
     @Args('input')
     input: PublishProjectInput,
@@ -58,7 +58,7 @@ export class ProjectMutations implements OnModuleInit {
     return this.collaborationService.publishProject({ ...input, customerId })
   }
 
-  @Mutation(returns => CompleteProjectResponse)
+  @Mutation((returns) => CompleteProjectResponse)
   completeProject(
     @Args('input')
     input: CompleteProjectInput,

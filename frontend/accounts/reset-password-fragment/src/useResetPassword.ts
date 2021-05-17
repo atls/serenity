@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/camelcase */
+/* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable no-else-return */
 import { useCallback, useReducer } from 'react'
 
@@ -29,7 +29,7 @@ export const useResetPassword = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const onChangeEmail = useCallback(
-    value => dispatch({ type: 'CHANGE', field: 'email', value }),
+    (value) => dispatch({ type: 'CHANGE', field: 'email', value }),
     []
   )
 

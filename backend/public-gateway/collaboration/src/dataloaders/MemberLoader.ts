@@ -24,7 +24,7 @@ export class MemberLoader implements NestDataLoader, OnModuleInit {
   getMembers(ids: string[]) {
     return this.collaborationService
       .getSpecialists({ filters: { id: ids } })
-      .pipe(map(data => data.rows))
+      .pipe(map((data) => data.rows))
       .toPromise()
   }
 

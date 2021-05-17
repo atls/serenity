@@ -31,7 +31,7 @@ export class DiscussionMutations implements OnModuleInit {
     )
   }
 
-  @Mutation(returns => AddDiscussionMessageResponse)
+  @Mutation((returns) => AddDiscussionMessageResponse)
   async addDiscussionMessage(
     @Args('input')
     input: AddDiscussionMessageInput,

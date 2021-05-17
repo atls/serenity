@@ -12,7 +12,7 @@ storiesOf('Дизайн Токены', module).add('Обводки', () => (
     </Layout>
     <Layout mt={15} mx={15}>
       <List>
-        {Object.keys(borders).map(item => (
+        {Object.keys(borders).map((item) => (
           <Sample key={item} name={item} value={borders[item]} border={item} />
         ))}
       </List>

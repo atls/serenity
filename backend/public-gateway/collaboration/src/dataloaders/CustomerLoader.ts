@@ -24,7 +24,7 @@ export class CustomerLoader implements NestDataLoader, OnModuleInit {
   getCustomers(ids: string[]) {
     return this.collaborationService
       .getCustomers({ filters: { id: ids } })
-      .pipe(map(data => data.rows))
+      .pipe(map((data) => data.rows))
       .toPromise()
   }
 

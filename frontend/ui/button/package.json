@@ -11,7 +11,7 @@
     "@ui/text": "0.3.0",
     "styled-tools": "1.7.1"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@emotion/styled": "^10.0.0",
     "react": "16.13.1",
     "styled-system": "^5.1.0"

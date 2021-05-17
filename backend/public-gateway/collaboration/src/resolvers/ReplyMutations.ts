@@ -35,7 +35,7 @@ export class ReplyMutations implements OnModuleInit {
     )
   }
 
-  @Mutation(returns => AddProjectReplyResponse)
+  @Mutation((returns) => AddProjectReplyResponse)
   addProjectReply(
     @Args('input')
     input: AddProjectReplyInput,
@@ -44,7 +44,7 @@ export class ReplyMutations implements OnModuleInit {
     return this.collaborationService.addProjectReply({ ...input, specialistId })
   }
 
-  @Mutation(returns => ConfirmProjectReplyResponse)
+  @Mutation((returns) => ConfirmProjectReplyResponse)
   confirmProjectReply(
     @Args('input')
     input: ConfirmProjectReplyInput,
@@ -56,7 +56,7 @@ export class ReplyMutations implements OnModuleInit {
     })
   }
 
-  @Mutation(returns => RejectProjectReplyResponse)
+  @Mutation((returns) => RejectProjectReplyResponse)
   rejectProjectReply(
     @Args('input')
     input: RejectProjectReplyInput,
@@ -68,7 +68,7 @@ export class ReplyMutations implements OnModuleInit {
     })
   }
 
-  @Mutation(returns => AddReplyMessageResponse)
+  @Mutation((returns) => AddReplyMessageResponse)
   addReplyMessage(
     @Args('input')
     input: AddReplyMessageInput,
@@ -77,7 +77,7 @@ export class ReplyMutations implements OnModuleInit {
     return this.collaborationService.addReplyMessage({ ...input, authorId })
   }
 
-  @Mutation(returns => ChangeReplyStatusResponse)
+  @Mutation((returns) => ChangeReplyStatusResponse)
   changeReplyStatus(
     @Args('input')
     input: ChangeReplyStatusInput,
@@ -86,7 +86,7 @@ export class ReplyMutations implements OnModuleInit {
     return this.collaborationService.changeReplyStatus({ ...input, customerId })
   }
 
-  @Mutation(returns => ChooseSpecialistResponse)
+  @Mutation((returns) => ChooseSpecialistResponse)
   chooseSpecialist(
     @Args('input')
     input: ChooseSpecialistInput,

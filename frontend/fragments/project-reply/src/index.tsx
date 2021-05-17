@@ -24,19 +24,22 @@ export default ({ id, replies, profile, status = '', ownerName = {} }) => {
 
   const onRegistration = useCallback(() => {
     window.location.href = `https://accounts.${endpoint}/signup`
-  }, [])
+  }, [endpoint])
 
   const onLogin = useCallback(() => {
     window.location.href = `https://accounts.${endpoint}/signin`
-  }, [])
+  }, [endpoint])
 
-  const onOpenSpecialist = useCallback(specialistId => {
-    window.location.href = `https://${endpoint}/specialists/${specialistId}`
-  }, [])
+  const onOpenSpecialist = useCallback(
+    (specialistId) => {
+      window.location.href = `https://${endpoint}/specialists/${specialistId}`
+    },
+    [endpoint]
+  )
 
-  const onFilterReplies = filterName => {
+  const onFilterReplies = (filterName) => {
     if (filterName) {
-      setFilteredReplies(replies.filter(reply => reply.status === filterName))
+      setFilteredReplies(replies.filter((reply) => reply.status === filterName))
       setActiveFilter(filterName)
     } else {
       setFilteredReplies(dataReplies)

@@ -19,7 +19,7 @@ export class PortfolioMutations implements OnModuleInit {
     this.portfolioService = this.client.getService<portfolio.PortfolioService>('PortfolioService')
   }
 
-  @Mutation(returns => CreatePortfolioResponse)
+  @Mutation((returns) => CreatePortfolioResponse)
   createPortfolio(
     @Args('input')
     input: CreatePortfolioInput,
@@ -28,7 +28,7 @@ export class PortfolioMutations implements OnModuleInit {
     return this.portfolioService.createPortfolio({ ...input, userId })
   }
 
-  @Mutation(returns => UpdatePortfolioResponse)
+  @Mutation((returns) => UpdatePortfolioResponse)
   updatePortfolio(
     @Args('input')
     input: UpdatePortfolioInput,

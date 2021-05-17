@@ -1,5 +1,5 @@
 import grpc                           from 'grpc'
-/* eslint-disable @typescript-eslint/camelcase */
+/* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable no-underscore-dangle */
 import path                           from 'path'
 import { ClientOptions, Transport }   from '@nestjs/microservices'

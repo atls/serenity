@@ -69,7 +69,7 @@ export const query = gql`
   }
 `
 
-export const useData = id => {
+export const useData = (id) => {
   const { data } = useQuery(query, {
     variables: {
       filters: {

@@ -8,7 +8,7 @@ import { MemberLoader, UserLoader }        from '../dataloaders'
 import { Message }                         from '../types'
 
 @Injectable()
-@Resolver(of => Message)
+@Resolver((of) => Message)
 export class MessageResolver {
   @ResolveProperty()
   async author(

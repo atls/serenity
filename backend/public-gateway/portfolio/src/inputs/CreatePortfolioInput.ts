@@ -5,6 +5,6 @@ export class CreatePortfolioInput {
   @Field()
   name: string
 
-  @Field(type => [ID])
+  @Field((type) => [ID])
   images: string[]
 }

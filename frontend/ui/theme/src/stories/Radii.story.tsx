@@ -12,7 +12,7 @@ storiesOf('Дизайн Токены', module).add('Формы', () => (
     </Layout>
     <Layout mt={15} mx={15}>
       <List>
-        {Object.keys(radii).map(item => (
+        {Object.keys(radii).map((item) => (
           <Sample key={item} name={item} value={radii[item]} borderRadius={item} border='codgray' />
         ))}
       </List>

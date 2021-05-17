@@ -35,6 +35,6 @@ export class UpdateProfileCommand {
 
   @IsOptional()
   @IsUrl()
-  @Transform(value => (value === '' ? null : value))
+  @Transform((value) => (value === '' ? null : value))
   website: string
 }

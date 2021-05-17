@@ -4,7 +4,7 @@ import { boxShadow }   from 'styled-system'
 
 import { StyledInput } from './parts'
 
-const Input = props => (
+const Input = (props) => (
   <StyledInput
     {...props}
     onChange={({ target }) => props.onChange && props.onChange(target.value)}

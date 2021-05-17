@@ -43,29 +43,25 @@ export class IsEntityConstraint implements ValidatorConstraintInterface {
 export const IsEntityExists = (
   options: IsEntityOptions | Function,
   validationOptions?: ValidationOptions
-) => {
-  return (object: any, propertyName: string) => {
-    registerDecorator({
-      target: object.constructor,
-      options: validationOptions,
-      constraints: [options, true],
-      propertyName,
-      validator: IsEntityConstraint,
-    })
-  }
+) => (object: any, propertyName: string) => {
+  registerDecorator({
+    target: object.constructor,
+    options: validationOptions,
+    constraints: [options, true],
+    propertyName,
+    validator: IsEntityConstraint,
+  })
 }
 
 export const IsEntityNotExists = (
   options: IsEntityOptions | Function,
   validationOptions?: ValidationOptions
-) => {
-  return (object: any, propertyName: string) => {
-    registerDecorator({
-      target: object.constructor,
-      options: validationOptions,
-      constraints: [options, false],
-      propertyName,
-      validator: IsEntityConstraint,
-    })
-  }
+) => (object: any, propertyName: string) => {
+  registerDecorator({
+    target: object.constructor,
+    options: validationOptions,
+    constraints: [options, false],
+    propertyName,
+    validator: IsEntityConstraint,
+  })
 }

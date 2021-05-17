@@ -118,7 +118,7 @@ const reducer = (state, action) => {
     const comments = {}
     const { length } = Object.keys(state.comments)
     if (length === 0) {
-      action.replies.forEach(item => {
+      action.replies.forEach((item) => {
         comments[item.id] = ''
       })
     }
@@ -148,7 +148,7 @@ export const useCreate = (projectId, replies) => {
   }, [replies])
 
   const onChangeMessage = useCallback(
-    value => dispatch({ type: 'CHANGE', field: 'message', value }),
+    (value) => dispatch({ type: 'CHANGE', field: 'message', value }),
     []
   )
 
@@ -168,7 +168,7 @@ export const useCreate = (projectId, replies) => {
 
   const [saveComment, { data: commentData }] = useMutation<any>(commentMutation)
 
-  const onSaveComment = id => {
+  const onSaveComment = (id) => {
     dispatch({ type: 'CHANGE', field: 'activeId', value: id })
     saveComment({
       variables: {
@@ -263,7 +263,7 @@ export const useCreate = (projectId, replies) => {
 
       dispatch({
         type: 'LOAD',
-        replies: state.replies.map(item => {
+        replies: state.replies.map((item) => {
           if (item.id === state.activeId) {
             item.discussion.messages.push(responseComment.result)
           }
@@ -271,7 +271,7 @@ export const useCreate = (projectId, replies) => {
         }),
       })
     }
-  }, [responseComment])
+  }, [responseComment, state.activeId, state.comments, state.replies])
 
   const errors =
     (responseMessage && responseMessage.errors) || (responseComment && responseComment.errors) || {}

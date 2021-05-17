@@ -6,7 +6,7 @@ import ReactDragDrawer from './drag'
 
 const DragDrawer: any = ReactDragDrawer
 
-const Container = fill =>
+const Container = (fill) =>
   css({
     minHeight: '100%',
     width: fill ? '100%' : 'calc(100% - 80px)',
@@ -32,18 +32,16 @@ export const Drawer = ({
   visible = false,
   onClose = () => {},
   disable = false,
-}) => {
-  return (
-    <DragDrawer
-      open={visible}
-      direction={direction}
-      modalElementClass={Container(fill)}
-      disable={disable}
-      onRequestClose={() => {
-        onClose()
-      }}
-    >
-      <StyledDrawer>{children}</StyledDrawer>
-    </DragDrawer>
-  )
-}
+}) => (
+  <DragDrawer
+    open={visible}
+    direction={direction}
+    modalElementClass={Container(fill)}
+    disable={disable}
+    onRequestClose={() => {
+      onClose()
+    }}
+  >
+    <StyledDrawer>{children}</StyledDrawer>
+  </DragDrawer>
+)

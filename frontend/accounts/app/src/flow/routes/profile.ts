@@ -1,4 +1,4 @@
-export const profile = createProfile => async (req, res) => {
+export const profile = (createProfile) => async (req, res) => {
   const result: any = await createProfile({
     ...req.body,
     id: req.user.profile.sub,

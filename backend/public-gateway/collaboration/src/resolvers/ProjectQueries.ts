@@ -23,7 +23,7 @@ export class ProjectQueries implements OnModuleInit {
     )
   }
 
-  @Query(returns => ProjectsList)
+  @Query((returns) => ProjectsList)
   projects(
     @Args({ name: 'offset', nullable: true, type: () => Int as any }, new OffsetToPagerPipe())
     pager: Pager,

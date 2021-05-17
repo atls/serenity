@@ -98,12 +98,6 @@ const Name = styled.span(({ theme }: any) => ({
   },
 }))
 
-export const Gallery = ({ images, name, visible, onClose }) => (
-  <Modal visible={visible} onClose={onClose}>
-    <BaseGallery images={images} name={name} onClose={onClose} />
-  </Modal>
-)
-
 export const BaseGallery = ({ images, name = '', onClose }) => {
   const [enableTransition, setEnableTransition] = useState(true)
   const [innerWidth, setInnerWidth] = useState(null)
@@ -129,7 +123,7 @@ export const BaseGallery = ({ images, name = '', onClose }) => {
     return () => window.removeEventListener('resize', setWidth)
   }, [])
 
-  const swiping = data => {
+  const swiping = (data) => {
     if (innerWidth >= fullWidth) {
       return
     }
@@ -154,7 +148,7 @@ export const BaseGallery = ({ images, name = '', onClose }) => {
     setEnableTransition(false)
   }
 
-  const handleClick = direction => {
+  const handleClick = (direction) => {
     setEnableTransition(true)
     let newLeft = 0
     if (direction === 'left') {
@@ -190,7 +184,7 @@ export const BaseGallery = ({ images, name = '', onClose }) => {
   }
 
   const handlers = useSwipeable({
-    onSwiping: data => (widthWindow >= 640 ? {} : swiping(data)),
+    onSwiping: (data) => (widthWindow >= 640 ? {} : swiping(data)),
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
     trackTouch: true,
@@ -214,7 +208,7 @@ export const BaseGallery = ({ images, name = '', onClose }) => {
             style={{ left }}
             transition={enableTransition}
           >
-            {images.map(image => (
+            {images.map((image) => (
               <ImageContainer key={image.id}>
                 <Image src={image.url} />
               </ImageContainer>
@@ -236,3 +230,9 @@ export const BaseGallery = ({ images, name = '', onClose }) => {
     </Container>
   )
 }
+
+export const Gallery = ({ images, name, visible, onClose }) => (
+  <Modal visible={visible} onClose={onClose}>
+    <BaseGallery images={images} name={name} onClose={onClose} />
+  </Modal>
+)

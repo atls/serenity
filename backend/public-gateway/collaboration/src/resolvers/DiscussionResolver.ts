@@ -8,7 +8,7 @@ import { UserLoader }                               from '../dataloaders'
 import { Discussion }                               from '../types'
 
 @Injectable()
-@Resolver(of => Discussion)
+@Resolver((of) => Discussion)
 export class DiscussionResolver {
   @ResolveProperty()
   recipient(

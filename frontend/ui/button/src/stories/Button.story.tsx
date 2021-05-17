@@ -140,7 +140,7 @@ export const Switch = () => (
     <Layout my={15} mx={15}>
       <Row>
         <Layout flexBasis={500}>
-          <SwitchButton value='customer' onChange={f => f}>
+          <SwitchButton value='customer' onChange={(f) => f}>
             <Button value='specialist'>Я исполнитель</Button>
             <Button value='customer'>Я заказчик</Button>
           </SwitchButton>

@@ -23,7 +23,7 @@ export class SpecialistQueries implements OnModuleInit {
     )
   }
 
-  @Query(returns => SpecialistsList)
+  @Query((returns) => SpecialistsList)
   specialists(
     @Args({ name: 'offset', nullable: true, type: () => Int as any }, new OffsetToPagerPipe())
     pager: Pager,

@@ -10,7 +10,7 @@ import { ProjectLoader }                   from '../dataloaders'
 import { Reply }                           from '../types'
 
 @Injectable()
-@Resolver(of => Reply)
+@Resolver((of) => Reply)
 export class ReplyResolver {
   @ResolveProperty()
   project(

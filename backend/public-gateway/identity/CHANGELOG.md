@@ -5,7 +5,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # 0.1.0 (2020-09-28)
 
-
 ### Features
 
-* **backend:** public-gateway init ([6cebb0f](https://github.com/Atlantis-Lab/serenity/commit/6cebb0f19d1b165404efaa68b28acec17ed3d5e2))
+- **backend:** public-gateway init ([6cebb0f](https://github.com/Atlantis-Lab/serenity/commit/6cebb0f19d1b165404efaa68b28acec17ed3d5e2))

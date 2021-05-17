@@ -8,11 +8,7 @@ if (typeof __webpack_require__ === 'function') {
   // @ts-ignore
   const migrationsRequire = require.context('./migrations/', false, /.ts$/)
 
-  migrations = migrationsRequire
-    .keys()
-    .map(migrationsRequire)
-    .map(Object.values)
-    .flat()
+  migrations = migrationsRequire.keys().map(migrationsRequire).map(Object.values).flat()
 }
 
 export default migrations

@@ -23,10 +23,10 @@ export class ReplyLoader implements NestDataLoader, OnModuleInit {
   getReplies = async (projectId: string[]) => {
     const replies = await this.collaborationService
       .getReplies({ filters: { projectId } })
-      .pipe(map(data => data.rows))
+      .pipe(map((data) => data.rows))
       .toPromise()
 
-    return projectId.map(id => replies.filter(reply => reply.projectId === id))
+    return projectId.map((id) => replies.filter((reply) => reply.projectId === id))
   }
 
   generateDataLoader(): DataLoader<any, any> {

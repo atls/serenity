@@ -6,7 +6,7 @@ import { hits }                                     from '@protos/interfaces'
 
 const lastActivity: Map<string, number> = new Map()
 
-const needTrackActivity = id => {
+const needTrackActivity = (id) => {
   if (!lastActivity.has(id)) {
     return true
   }

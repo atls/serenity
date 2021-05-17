@@ -47,14 +47,14 @@ const StyledContainer = styled(motion.div)<any>(
 )
 
 export const SlideDrawer = ({ children, visible, lockScroll = true, direction = '', ...props }) => {
+  const [open, setOpen] = useState(false)
+  const [close, setClose] = useState(false)
+
+  useEffect(() => {
+    if (visible) setOpen(true)
+  }, [visible])
+
   if (typeof window !== 'undefined') {
-    const [open, setOpen] = useState(false)
-    const [close, setClose] = useState(false)
-
-    useEffect(() => {
-      if (visible) setOpen(true)
-    }, [visible])
-
     if (!visible && open) {
       setOpen(false)
       setClose(true)

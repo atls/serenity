@@ -11,7 +11,7 @@ import { collaboration }                         from '@protos/interfaces'
 import { User }                                  from '../types'
 
 @Injectable()
-@Resolver(of => User)
+@Resolver((of) => User)
 export class ProjectsResolver implements OnModuleInit {
   @Client(clientOptions)
   private readonly client: ClientGrpc

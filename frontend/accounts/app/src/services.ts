@@ -23,7 +23,7 @@ const createIdentityService = () => {
 
 const identityService = createIdentityService()
 
-export const identify = body =>
+export const identify = (body) =>
   new Promise((resolve, reject) => {
     identityService.authenticate(body, (error, response) => {
       if (error) {
@@ -34,7 +34,7 @@ export const identify = body =>
     })
   })
 
-export const register = body =>
+export const register = (body) =>
   new Promise((resolve, reject) => {
     identityService.register(body, (error, response) => {
       if (error) {
@@ -45,7 +45,7 @@ export const register = body =>
     })
   })
 
-export const verifyEmail = body =>
+export const verifyEmail = (body) =>
   new Promise((resolve, reject) => {
     identityService.verifyEmail(body, (error, response) => {
       if (error) {
@@ -56,7 +56,7 @@ export const verifyEmail = body =>
     })
   })
 
-export const resetPassword = body =>
+export const resetPassword = (body) =>
   new Promise((resolve, reject) => {
     identityService.resetPassword(body, (error, response) => {
       if (error) {
@@ -67,7 +67,7 @@ export const resetPassword = body =>
     })
   })
 
-export const changePassword = body =>
+export const changePassword = (body) =>
   new Promise((resolve, reject) => {
     identityService.changePassword(body, (error, response) => {
       if (error) {
@@ -78,7 +78,7 @@ export const changePassword = body =>
     })
   })
 
-export const createProfile = body =>
+export const createProfile = (body) =>
   new Promise((resolve, reject) => {
     identityService.createProfile(body, (error, response) => {
       if (error) {

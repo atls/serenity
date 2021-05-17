@@ -155,7 +155,7 @@ export const ProjectReply = ({
                   </Layout>
                 )}
                 {replies.length > 0 &&
-                  replies.map(reply => (
+                  replies.map((reply) => (
                     <Box
                       key={reply.id}
                       my='7px'
@@ -245,7 +245,7 @@ export const ProjectReply = ({
                                                     wordBreak='break-word'
                                                   >
                                                     {replyMessage.member.specialisation.main
-                                                      .map(item => item.name)
+                                                      .map((item) => item.name)
                                                       .join(', ')}
                                                   </Text>
                                                 </Layout>
@@ -283,7 +283,7 @@ export const ProjectReply = ({
                                               status === 'completed'
                                             }
                                             value={reply.status}
-                                            onChange={value =>
+                                            onChange={(value) =>
                                               onChangeStatus(value, status, {
                                                 photo: replyMessage.author.photo,
                                                 personalInformation:
@@ -367,7 +367,7 @@ export const ProjectReply = ({
                           }
                           value={comments[reply.id]}
                           placeholder={intl.formatMessage(messages.commentPlaceholder)}
-                          onChange={value => onChangeComment(value, reply.id)}
+                          onChange={(value) => onChangeComment(value, reply.id)}
                           onEnter={() => onSaveComment(reply.id)}
                         />
                       </Layout>

@@ -55,11 +55,11 @@ export class Specialist extends AggregateRoot implements SpecialistProperties {
   }
 
   incrementReviewCount() {
-    this.reviewCount = this.reviewCount + 1
+    this.reviewCount += 1
   }
 
   incrementCompletedProjects() {
-    this.completedProjects = this.completedProjects + 1
+    this.completedProjects += 1
   }
 
   changeAccountType(type: AccountType) {

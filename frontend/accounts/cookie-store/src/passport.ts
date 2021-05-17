@@ -19,7 +19,7 @@ const strategy = new OAuth2Strategy(
   }
 )
 
-strategy.userProfile = function(accessToken, done) {
+strategy.userProfile = function (accessToken, done) {
   this._oauth2._request(
     'GET',
     process.env.OAUTH_USERINFO_URL,

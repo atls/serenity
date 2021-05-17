@@ -89,7 +89,7 @@ export class DiscussionQueriesService {
     const rows = await this.discussionRepository
       .createQueryBuilder('discussion')
       .leftJoinAndSelect('discussion.messages', 'messages')
-      .where('discussion.id IN (:...id)', { id: chats.map(chat => chat.discussionId) })
+      .where('discussion.id IN (:...id)', { id: chats.map((chat) => chat.discussionId) })
       .getMany()
 
     return {

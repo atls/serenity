@@ -22,7 +22,7 @@ export class CategoryLoader implements NestDataLoader, OnModuleInit {
   getCategories(id: string[]) {
     return this.catalogService
       .getCategories({ filters: { id } })
-      .pipe(map(data => data.rows))
+      .pipe(map((data) => data.rows))
       .toPromise()
   }
 

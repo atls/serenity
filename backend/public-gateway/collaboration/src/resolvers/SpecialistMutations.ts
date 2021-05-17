@@ -21,7 +21,7 @@ export class SpecialistMutations implements OnModuleInit {
     )
   }
 
-  @Mutation(returns => UpdateSpecialistResponse)
+  @Mutation((returns) => UpdateSpecialistResponse)
   updateSpecialist(
     @Args('input')
     input: UpdateSpecialistInput,
@@ -30,7 +30,7 @@ export class SpecialistMutations implements OnModuleInit {
     return this.collaborationService.updateSpecialist({ ...input, id })
   }
 
-  @Mutation(returns => ChangeAccountTypeResponse)
+  @Mutation((returns) => ChangeAccountTypeResponse)
   changeAccountType(
     @Args('input')
     input: ChangeAccountTypeInput,

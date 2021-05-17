@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+
 import { useEffect, useState } from 'react'
 
 interface WindowDimensions {
@@ -32,14 +34,14 @@ export function useWindowSize(): WindowDimensions {
 
   useEffect(() => {
     fetchWindowDimensionsAndSave()
-  }, [])
+  }, [fetchWindowDimensionsAndSave])
 
   useEffect(() => {
     window.addEventListener('resize', fetchWindowDimensionsAndSave)
     return () => {
       window.removeEventListener('resize', fetchWindowDimensionsAndSave)
     }
-  }, [])
+  }, [fetchWindowDimensionsAndSave])
 
   return windowSize
 }

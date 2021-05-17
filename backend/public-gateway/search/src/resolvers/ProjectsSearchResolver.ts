@@ -11,7 +11,7 @@ import { SearchProjectsFilter }                        from '../inputs'
 import { Search }                                      from '../types'
 
 @Injectable()
-@Resolver(of => Search)
+@Resolver((of) => Search)
 export class ProjectsSearchResolver implements OnModuleInit {
   @Client(searchClientOptions)
   private readonly searchClient: ClientGrpc
@@ -26,9 +26,9 @@ export class ProjectsSearchResolver implements OnModuleInit {
   onModuleInit() {
     this.searchService = this.searchClient.getService<search.SearchService>('SearchService')
 
-    this.collaborationService = this.collaborationClient.getService<
-      collaboration.CollaborationService
-    >('CollaborationService')
+    this.collaborationService = this.collaborationClient.getService<collaboration.CollaborationService>(
+      'CollaborationService'
+    )
   }
 
   @ResolveProperty()
@@ -50,7 +50,7 @@ export class ProjectsSearchResolver implements OnModuleInit {
     const { rows } = await this.collaborationService
       .getProjects({
         filters: {
-          id: hits.map(hit => hit.id),
+          id: hits.map((hit) => hit.id),
         },
       })
       .toPromise()

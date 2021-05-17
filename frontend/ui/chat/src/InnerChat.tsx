@@ -95,7 +95,7 @@ export const InnerChat = ({
   return (
     <StyledInnerChat active={activeChat.id === item.recipient.id}>
       <Box flexDirection='column' width='100%' overflowY='scroll' ref={node}>
-        {item.messages.map(message => (
+        {item.messages.map((message) => (
           <ChatMessage
             align={!message.member || owner === message.member.id ? 'right' : 'left'}
             unread={!message.read}

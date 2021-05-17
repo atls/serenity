@@ -41,7 +41,7 @@ export class Project {
   @Column('simple-array')
   photos: string[]
 
-  @Column(type => Address)
+  @Column((type) => Address)
   address: Address
 
   @Column('text', { default: '{}' })

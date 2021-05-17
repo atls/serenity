@@ -53,7 +53,7 @@ const StarContainer = styled.div<StarContainerProps>(
 
 export const ActiveRating = ({
   rating = 0,
-  onChange = el => el,
+  onChange = (el) => el,
   size = 'normal',
   color = '#999999',
 }) => (

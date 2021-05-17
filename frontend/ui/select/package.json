@@ -9,7 +9,7 @@
     "@ui/icons": "0.1.0",
     "rc-select": "9.2.2"
   },
-  "peerDependencies": {
+  "dependencies": {
     "emotion": "^10.0.0",
     "react": "^16.9.0"
   }

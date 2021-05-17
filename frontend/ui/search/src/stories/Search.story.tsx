@@ -11,7 +11,7 @@ export default {
 export const SearchStory = () => {
   const [data, setData] = useState([])
 
-  const onChangeSearch = value => {
+  const onChangeSearch = (value) => {
     const options = []
     if (value) {
       options.push({ value: `${value} first`, name: `${value} first` })
@@ -27,7 +27,7 @@ export const SearchStory = () => {
       </Layout>
       <Layout mt={15} mx={20} maxWidth={400}>
         <Search onSearch={onChangeSearch} placeholder='Placeholder' size='large'>
-          {data.map(item => (
+          {data.map((item) => (
             <Option key={item.value} value={item.value} label={item.name}>
               {item.name}
             </Option>

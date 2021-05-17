@@ -20,9 +20,9 @@ const svgrTemplate = ({ template }, opts, { componentName, jsx }) => {
   `
 }
 
-const read = files =>
+const read = (files) =>
   Promise.all(
-    files.map(async iconPath => ({
+    files.map(async (iconPath) => ({
       name: `${camelcase(path.basename(iconPath, path.extname(iconPath)), {
         pascalCase: true,
       }).replace('50+', 'FiftyPlus')}Icon`,
@@ -30,9 +30,9 @@ const read = files =>
     }))
   )
 
-const compile = icons =>
+const compile = (icons) =>
   Promise.all(
-    icons.map(async icon => ({
+    icons.map(async (icon) => ({
       name: icon.name,
       code: await svgr(
         icon.source.replace(/mask0/g, icon.name),
@@ -46,9 +46,9 @@ const compile = icons =>
     }))
   )
 
-const save = async sources => {
-  return Promise.all(
-    sources.map(source =>
+const save = async (sources) =>
+  Promise.all(
+    sources.map((source) =>
       fs.writeFileAsync(
         path.join(TARGET_DIR, `${source.name}.tsx`),
         `/* eslint-disable */\n${prettier.format(source.code, {
@@ -58,12 +58,11 @@ const save = async sources => {
       )
     )
   )
-}
 
-const createIndex = sources =>
+const createIndex = (sources) =>
   fs.writeFileAsync(
     path.join(TARGET_DIR, 'index.ts'),
-    sources.map(source => `export * from './${source.name}'`).join('\n')
+    sources.map((source) => `export * from './${source.name}'`).join('\n')
   )
 
 const build = async () => {

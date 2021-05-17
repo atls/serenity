@@ -16,7 +16,7 @@ export const IconStory = () => (
     </Layout>
     <Layout mt={15} mx={20}>
       <List>
-        {Object.keys(icons).map(icon => (
+        {Object.keys(icons).map((icon) => (
           <Icon key={icon} name={icon} icon={icons[icon]} />
         ))}
       </List>

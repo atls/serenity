@@ -6,7 +6,7 @@ import { Search }     from '../types'
 
 @Injectable()
 export class SearchQueries {
-  @Query(returns => Search)
+  @Query((returns) => Search)
   search() {
     return {}
   }

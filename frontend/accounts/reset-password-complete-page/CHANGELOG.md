@@ -5,15 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # 0.3.0 (2020-09-28)
 
-
 ### Features
 
-* **accounts:** reset password page init ([9d3aa3e](https://github.com/Atlantis-Lab/serenity/commit/9d3aa3eec2cc0e955f9c84316d0422a5e328f7f7))
-
-
-
-
-
+- **accounts:** reset password page init ([9d3aa3e](https://github.com/Atlantis-Lab/serenity/commit/9d3aa3eec2cc0e955f9c84316d0422a5e328f7f7))
 
 # 0.2.0 (2020-06-30)
 

@@ -24,7 +24,7 @@ export class ProjectLoader implements NestDataLoader, OnModuleInit {
   getProjects(id: string[]) {
     return this.collaborationService
       .getProjects({ filters: { id } })
-      .pipe(map(data => data.rows))
+      .pipe(map((data) => data.rows))
       .toPromise()
   }
 

@@ -19,7 +19,7 @@ export class UploadMutations implements OnModuleInit {
     this.fileService = this.client.getService<files.FilesService>('FilesService')
   }
 
-  @Mutation(returns => CreateUploadResponse)
+  @Mutation((returns) => CreateUploadResponse)
   createUpload(
     @Args('input')
     input: CreateUploadInput
@@ -27,7 +27,7 @@ export class UploadMutations implements OnModuleInit {
     return this.fileService.createUpload(input)
   }
 
-  @Mutation(returns => ConfirmUploadResponse)
+  @Mutation((returns) => ConfirmUploadResponse)
   confirmUpload(
     @Args('input')
     input: ConfirmUploadInput

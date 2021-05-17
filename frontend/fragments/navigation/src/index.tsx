@@ -27,35 +27,35 @@ export default () => {
 
   const onLogin = useCallback(() => {
     window.location.href = `https://accounts.${endpoint}/signin?continue=${window.location.href}`
-  }, [])
+  }, [endpoint])
 
   const onLogout = useCallback(() => {
     window.location.href = `https://accounts.${endpoint}/signout?continue=${window.location.href}`
-  }, [])
+  }, [endpoint])
 
   const onOpenSettings = useCallback(() => {
     window.location.href = `https://cabinet.${endpoint}/`
-  }, [])
+  }, [endpoint])
 
   const onOpenPortfolio = useCallback(() => {
     window.location.href = `https://cabinet.${endpoint}/portfolio`
-  }, [])
+  }, [endpoint])
 
   const onOpenSubscription = useCallback(() => {
     window.location.href = `https://cabinet.${endpoint}/subscription`
-  }, [])
+  }, [endpoint])
 
   const onOpenMyProjects = useCallback(() => {
     window.location.href = `https://cabinet.${endpoint}/projects`
-  }, [])
+  }, [endpoint])
 
   const onOpenNewMyProjects = useCallback(() => {
     window.location.href = `https://cabinet.${endpoint}/projects/new`
-  }, [])
+  }, [endpoint])
 
   const onOpenMyReplies = useCallback(() => {
     window.location.href = `https://cabinet.${endpoint}/replies`
-  }, [])
+  }, [endpoint])
 
   return (
     <Navigation

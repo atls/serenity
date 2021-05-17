@@ -20,7 +20,7 @@ export class CategoryGroupQueriesService {
       const common = `%${filters.search}%`
 
       qb.andWhere(
-        new Brackets(searchQb =>
+        new Brackets((searchQb) =>
           searchQb
             .where('group.name ILIKE :common', { common })
             .orWhere('children.name ILIKE :common', { common })

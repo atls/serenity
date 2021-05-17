@@ -25,7 +25,7 @@ export class Message {
   @Column('text')
   content: string
 
-  @ManyToOne(type => Discussion)
+  @ManyToOne((type) => Discussion)
   @JoinColumn()
   discussion: Discussion | string
 

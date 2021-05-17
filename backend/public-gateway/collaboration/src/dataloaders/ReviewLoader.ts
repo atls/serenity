@@ -20,16 +20,15 @@ export class ReviewLoader implements NestDataLoader, OnModuleInit {
     )
   }
 
-  getReviews = async (specialistId: string[]) => {
-    return this.collaborationService
+  getReviews = async (specialistId: string[]) =>
+    this.collaborationService
       .getReviews({ filters: { specialistId } })
       .pipe(
         map((data: any) =>
-          specialistId.map(id => data.rows.filter(item => item.specialistId === id))
+          specialistId.map((id) => data.rows.filter((item) => item.specialistId === id))
         )
       )
       .toPromise()
-  }
 
   generateDataLoader(): DataLoader<any, any> {
     return new DataLoader<string, collaboration.Review>(this.getReviews)

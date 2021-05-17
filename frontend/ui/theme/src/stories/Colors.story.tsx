@@ -12,7 +12,7 @@ storiesOf('Дизайн Токены', module).add('Цвета', () => (
     </Layout>
     <Layout mt={15} mx={15}>
       <List>
-        {Object.keys(colors).map(item => (
+        {Object.keys(colors).map((item) => (
           <Sample key={item} name={item} value={colors[item]} bg={item} />
         ))}
       </List>

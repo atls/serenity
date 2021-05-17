@@ -8,7 +8,7 @@ import { PortfolioLoader, ReviewLoader, UserLoader } from '../dataloaders'
 import { Specialist }                                from '../types'
 
 @Injectable()
-@Resolver(of => Specialist)
+@Resolver((of) => Specialist)
 export class SpecialistResolver {
   @ResolveProperty()
   async profile(

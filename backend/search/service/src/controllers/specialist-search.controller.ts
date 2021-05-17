@@ -44,7 +44,7 @@ export class SpecialistSearchController {
       body,
     })
 
-    const rows = result.hits.map(hit => ({
+    const rows = result.hits.map((hit) => ({
       id: hit._id,
       score: hit.score,
       source: hit.source,

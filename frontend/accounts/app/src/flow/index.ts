@@ -19,7 +19,7 @@ import {
   verify,
 } from './routes'
 
-export default actions => {
+export default (actions) => {
   const router = Router()
 
   router.use(passport.initialize())

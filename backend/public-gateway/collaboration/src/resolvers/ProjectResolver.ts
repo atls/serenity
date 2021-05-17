@@ -12,7 +12,7 @@ import { CategoryLoader, CounterLoader, FilesLoader, ReplyLoader } from '../data
 import { Project }                                                 from '../types'
 
 @Injectable()
-@Resolver(of => Project)
+@Resolver((of) => Project)
 export class ProjectResolver {
   @ResolveProperty()
   category(

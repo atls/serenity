@@ -47,10 +47,9 @@ const StyledContainer = styled(motion.nav)<ContainerProps>(
 )
 
 export const Modal = ({ children, visible, onClose, opacity = 'large' }) => {
+  const node = useRef(null)
   if (typeof window !== 'undefined') {
-    const node = useRef(null)
-
-    const handleClick = event => {
+    const handleClick = (event) => {
       if (!(node.current && node.current.children[0].contains(event.target))) {
         onClose()
       }

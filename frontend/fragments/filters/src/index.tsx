@@ -7,15 +7,15 @@ export default ({ title = '', activeCategory = '', selectCategory = () => {}, ch
   const data = useData()
   const [activeKey, setActiveKey] = useState([])
 
-  const onChange = value => {
+  const onChange = (value) => {
     setActiveKey(value)
   }
 
   useEffect(() => {
     if (data && activeCategory) {
       const keys = []
-      data.map(item => {
-        item.children.map(child => {
+      data.map((item) => {
+        item.children.map((child) => {
           if (child.id === activeCategory) {
             keys.push(item.id)
           }
@@ -25,7 +25,7 @@ export default ({ title = '', activeCategory = '', selectCategory = () => {}, ch
       })
       setActiveKey(keys)
     }
-  }, [data])
+  }, [data, activeCategory])
 
   return (
     <Filters

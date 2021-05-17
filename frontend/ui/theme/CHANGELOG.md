@@ -5,15 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 0.0.4 (2020-09-28)
 
-
 ### Bug Fixes
 
-* **accounts:** add emotion-server, delete font ([08acf5a](https://github.com/Atlantis-Lab/serenity/commit/08acf5a7169352a606925fdfbbaa18f9917a8106))
-
-
-
-
-
+- **accounts:** add emotion-server, delete font ([08acf5a](https://github.com/Atlantis-Lab/serenity/commit/08acf5a7169352a606925fdfbbaa18f9917a8106))
 
 ## 0.0.3 (2020-06-30)
 
