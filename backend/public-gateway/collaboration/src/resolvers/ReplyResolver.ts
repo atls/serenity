@@ -16,7 +16,7 @@ export class ReplyResolver {
   project(
     @Root() { projectId }: collaboration.Reply,
     @Loader(ProjectLoader.name)
-    projectLoader: DataLoader<any, any>,
+    projectLoader: DataLoader<any, any>
   ) {
     return projectLoader.load(projectId)
   }

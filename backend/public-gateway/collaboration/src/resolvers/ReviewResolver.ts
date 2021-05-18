@@ -15,7 +15,7 @@ export class ReviewResolver {
   async customer(
     @Root() { customerId }: any,
     @Loader(UserLoader.name)
-    userLoader: DataLoader<any, any>,
+    userLoader: DataLoader<any, any>
   ) {
     const user = await userLoader.load(customerId)
 

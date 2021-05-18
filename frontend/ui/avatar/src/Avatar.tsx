@@ -16,7 +16,7 @@ const Avatar = styled.div<AvatarProps>(
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
   }),
-  layout,
+  layout
 )
 
 Avatar.defaultProps = {

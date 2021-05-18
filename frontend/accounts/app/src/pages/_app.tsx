@@ -40,7 +40,7 @@ export const withProviders = compose(
     Provider: ThemeProvider,
     injectGlobalStyles,
   }),
-  withHelmet(),
+  withHelmet()
 )
 
 export default withProviders(AccountsApp)

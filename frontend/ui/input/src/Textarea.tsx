@@ -17,7 +17,7 @@ const Textarea = styled(Input)(
     resize: 'none',
     height: 'auto',
   }),
-  boxShadow,
+  boxShadow
 )
 
 Textarea.defaultProps = {

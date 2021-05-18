@@ -23,7 +23,7 @@ export class ProfileMutations implements OnModuleInit {
   updateProfile(
     @Args('input')
     input: UpdateProfileInput,
-    @Context('user') id: string,
+    @Context('user') id: string
   ) {
     return this.identityService.updateProfile({ ...input, id })
   }

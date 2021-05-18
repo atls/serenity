@@ -30,16 +30,19 @@ const reducer = (state, action) => {
 export const useSignUpProfile = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
-  const onChangeType = useCallback(value => dispatch({ type: 'CHANGE', field: 'type', value }), [])
+  const onChangeType = useCallback(
+    (value) => dispatch({ type: 'CHANGE', field: 'type', value }),
+    []
+  )
 
   const onChangeFirstName = useCallback(
-    value => dispatch({ type: 'CHANGE', field: 'firstName', value }),
-    [],
+    (value) => dispatch({ type: 'CHANGE', field: 'firstName', value }),
+    []
   )
 
   const onChangeLastName = useCallback(
-    value => dispatch({ type: 'CHANGE', field: 'lastName', value }),
-    [],
+    (value) => dispatch({ type: 'CHANGE', field: 'lastName', value }),
+    []
   )
 
   const onCreate = useCallback(async () => {

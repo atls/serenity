@@ -29,8 +29,8 @@ export const useResetPassword = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const onChangeEmail = useCallback(
-    value => dispatch({ type: 'CHANGE', field: 'email', value }),
-    [],
+    (value) => dispatch({ type: 'CHANGE', field: 'email', value }),
+    []
   )
 
   const onReset = useCallback(async () => {

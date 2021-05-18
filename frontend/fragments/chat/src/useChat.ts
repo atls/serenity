@@ -141,7 +141,7 @@ export const useChat = () => {
 
   const onChangeMessage = useCallback(
     (value, id) => dispatch({ type: 'CHANGE_MESSAGES', id, value }),
-    [],
+    []
   )
 
   function onAddChat(value) {

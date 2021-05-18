@@ -15,7 +15,7 @@ export class DiscussionEntityRepository extends WriteRepository<DiscussionEntity
   constructor(
     private readonly connection: Connection,
     private readonly logger: Logger,
-    private readonly bus: Bus,
+    private readonly bus: Bus
   ) {
     // @ts-ignore
     super(DiscussionEntity, Discussion, connection, bus, logger)

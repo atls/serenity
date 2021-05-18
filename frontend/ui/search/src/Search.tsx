@@ -41,7 +41,7 @@ const StyledSearchIcon = styled.div<IconProps>(
     top: 0,
     left: 16,
   },
-  iconSize,
+  iconSize
 )
 
 export const Search = ({

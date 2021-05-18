@@ -16,7 +16,7 @@ export class DiscussionResolver {
     @Root() { customerId, specialistId }: any,
     @Loader(UserLoader.name)
     userLoader: DataLoader<any, any>,
-    @Context('user') userId: string,
+    @Context('user') userId: string
   ) {
     if (userId === customerId) {
       return userLoader.load(specialistId)

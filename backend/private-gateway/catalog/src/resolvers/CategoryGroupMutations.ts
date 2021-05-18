@@ -30,7 +30,7 @@ export class CategoryGroupMutations implements OnModuleInit {
   @Mutation((returns) => CreateCategoryGroupResponse)
   createCategoryGroup(
     @Args('input', new ValidationPipe({ transform: true }))
-    input: CreateCategoryGroupInput,
+    input: CreateCategoryGroupInput
   ) {
     return this.catalogService.createCategoryGroup(input)
   }
@@ -38,7 +38,7 @@ export class CategoryGroupMutations implements OnModuleInit {
   @Mutation((returns) => UpdateCategoryGroupResponse)
   updateCategoryGroup(
     @Args('input', new ValidationPipe({ transform: true }))
-    input: UpdateCategoryGroupInput,
+    input: UpdateCategoryGroupInput
   ) {
     return this.catalogService.updateCategoryGroup(input)
   }
@@ -46,7 +46,7 @@ export class CategoryGroupMutations implements OnModuleInit {
   @Mutation((returns) => DeleteCategoryGroupResponse)
   deleteCategoryGroup(
     @Args('input', new ValidationPipe({ transform: true }))
-    input: DeleteCategoryGroupInput,
+    input: DeleteCategoryGroupInput
   ) {
     return this.catalogService.deleteCategoryGroup(input)
   }

@@ -65,7 +65,7 @@ export namespace catalog {
      */
     getCategoryGroups(
       request: catalog.GetCategoryGroupsRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<catalog.GetCategoryGroupsResponse>
 
     /**
@@ -76,7 +76,7 @@ export namespace catalog {
      */
     getCategories(
       request: catalog.GetCategoriesRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<catalog.GetCategoriesResponse>
 
     /**
@@ -87,7 +87,7 @@ export namespace catalog {
      */
     createCategoryGroup(
       request: catalog.CreateCategoryGroupRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<catalog.CreateCategoryGroupResponse>
 
     /**
@@ -98,7 +98,7 @@ export namespace catalog {
      */
     updateCategoryGroup(
       request: catalog.UpdateCategoryGroupRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<catalog.UpdateCategoryGroupResponse>
 
     /**
@@ -109,7 +109,7 @@ export namespace catalog {
      */
     deleteCategoryGroup(
       request: catalog.DeleteCategoryGroupRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<catalog.DeleteCategoryGroupResponse>
 
     /**
@@ -120,7 +120,7 @@ export namespace catalog {
      */
     createCategory(
       request: catalog.CreateCategoryRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<catalog.CreateCategoryResponse>
 
     /**
@@ -131,7 +131,7 @@ export namespace catalog {
      */
     updateCategory(
       request: catalog.UpdateCategoryRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<catalog.UpdateCategoryResponse>
 
     /**
@@ -142,7 +142,7 @@ export namespace catalog {
      */
     deleteCategory(
       request: catalog.DeleteCategoryRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<catalog.DeleteCategoryResponse>
   }
 
@@ -395,7 +395,7 @@ export namespace mailer {
      */
     getSending(
       request: mailer.getSendingRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<mailer.Sending>
   }
 
@@ -448,7 +448,7 @@ export namespace identity {
      */
     register(
       request: identity.RegisterRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<identity.RegisterResponse>
 
     /**
@@ -459,7 +459,7 @@ export namespace identity {
      */
     authenticate(
       request: identity.AuthenticateRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<identity.AuthenticateResponse>
 
     /**
@@ -470,7 +470,7 @@ export namespace identity {
      */
     verifyEmail(
       request: identity.VerifyEmailRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<identity.VerifyEmailResponse>
 
     /**
@@ -481,7 +481,7 @@ export namespace identity {
      */
     resetPassword(
       request: identity.ResetPasswordRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<identity.ResetPasswordResponse>
 
     /**
@@ -492,7 +492,7 @@ export namespace identity {
      */
     changePassword(
       request: identity.ChangePasswordRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<identity.ChangePasswordResponse>
 
     /**
@@ -503,7 +503,7 @@ export namespace identity {
      */
     createProfile(
       request: identity.CreateProfileRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<identity.CreateProfileResponse>
 
     /**
@@ -514,7 +514,7 @@ export namespace identity {
      */
     getUsers(
       request: identity.GetUsersRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<identity.GetUsersResponse>
 
     /**
@@ -525,7 +525,7 @@ export namespace identity {
      */
     updateProfile(
       request: identity.UpdateProfileRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<identity.UpdateProfileResponse>
   }
 
@@ -889,7 +889,7 @@ export namespace files {
      */
     getFiles(
       request: files.GetFilesRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<files.GetFilesResponse>
 
     /**
@@ -900,7 +900,7 @@ export namespace files {
      */
     createUpload(
       request: files.CreateUploadRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<files.CreateUploadResponse>
 
     /**
@@ -911,7 +911,7 @@ export namespace files {
      */
     confirmUpload(
       request: files.ConfirmUploadRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<files.ConfirmUploadResponse>
   }
 
@@ -1193,7 +1193,7 @@ export namespace collaboration {
      */
     getCustomers(
       request: collaboration.GetCustomersRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.GetCustomersResponse>
 
     /**
@@ -1204,7 +1204,7 @@ export namespace collaboration {
      */
     getSpecialists(
       request: collaboration.GetSpecialistsRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.GetSpecialistsResponse>
 
     /**
@@ -1215,7 +1215,7 @@ export namespace collaboration {
      */
     getDiscussions(
       request: collaboration.GetDiscussionsRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.GetDiscussionsResponse>
 
     /**
@@ -1226,7 +1226,7 @@ export namespace collaboration {
      */
     getChatDiscussions(
       request: collaboration.GetDiscussionsRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.GetDiscussionsResponse>
 
     /**
@@ -1237,7 +1237,7 @@ export namespace collaboration {
      */
     updateSpecialist(
       request: collaboration.UpdateSpecialistRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.UpdateSpecialistResponse>
 
     /**
@@ -1248,7 +1248,7 @@ export namespace collaboration {
      */
     changeAccountType(
       request: collaboration.ChangeAccountTypeRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.ChangeAccountTypeResponse>
 
     /**
@@ -1259,7 +1259,7 @@ export namespace collaboration {
      */
     createProject(
       request: collaboration.CreateProjectRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.CreateProjectResponse>
 
     /**
@@ -1270,7 +1270,7 @@ export namespace collaboration {
      */
     updateProject(
       request: collaboration.UpdateProjectRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.UpdateProjectResponse>
 
     /**
@@ -1281,7 +1281,7 @@ export namespace collaboration {
      */
     getProjects(
       request: collaboration.GetProjectsRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.GetProjectsResponse>
 
     /**
@@ -1292,7 +1292,7 @@ export namespace collaboration {
      */
     addProjectReply(
       request: collaboration.AddProjectReplyRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.AddProjectReplyResponse>
 
     /**
@@ -1303,7 +1303,7 @@ export namespace collaboration {
      */
     rejectProjectReply(
       request: collaboration.RejectProjectReplyRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.RejectProjectReplyResponse>
 
     /**
@@ -1314,7 +1314,7 @@ export namespace collaboration {
      */
     confirmProjectReply(
       request: collaboration.ConfirmProjectReplyRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.ConfirmProjectReplyResponse>
 
     /**
@@ -1325,7 +1325,7 @@ export namespace collaboration {
      */
     getReplies(
       request: collaboration.GetRepliesRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.GetRepliesResponse>
 
     /**
@@ -1336,7 +1336,7 @@ export namespace collaboration {
      */
     addReplyMessage(
       request: collaboration.AddReplyMessageRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.AddReplyMessageResponse>
 
     /**
@@ -1347,7 +1347,7 @@ export namespace collaboration {
      */
     changeReplyStatus(
       request: collaboration.ChangeReplyStatusRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.ChangeReplyStatusResponse>
 
     /**
@@ -1358,7 +1358,7 @@ export namespace collaboration {
      */
     chooseSpecialist(
       request: collaboration.ChooseSpecialistRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.ChooseSpecialistResponse>
 
     /**
@@ -1369,7 +1369,7 @@ export namespace collaboration {
      */
     completeProject(
       request: collaboration.CompleteProjectRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.CompleteProjectResponse>
 
     /**
@@ -1380,7 +1380,7 @@ export namespace collaboration {
      */
     publishProject(
       request: collaboration.PublishProjectRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.PublishProjectResponse>
 
     /**
@@ -1391,7 +1391,7 @@ export namespace collaboration {
      */
     getReviews(
       request: collaboration.GetReviewsRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.GetReviewsResponse>
 
     /**
@@ -1402,7 +1402,7 @@ export namespace collaboration {
      */
     addDiscussionMessage(
       request: collaboration.AddDiscussionMessageRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<collaboration.AddDiscussionMessageResponse>
   }
 
@@ -2321,7 +2321,7 @@ export namespace hits {
      */
     getCounters(
       request: hits.GetCountersRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<hits.GetCountersResponse>
 
     /**
@@ -2332,7 +2332,7 @@ export namespace hits {
      */
     getActivities(
       request: hits.GetActivitiesRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<hits.GetActivitiesResponse>
 
     /**
@@ -2343,7 +2343,7 @@ export namespace hits {
      */
     trackActivity(
       request: hits.TrackActivityRequest,
-      metadata?: grpc.Metadata,
+      metadata?: grpc.Metadata
     ): Observable<hits.TrackActivityResponse>
   }
 

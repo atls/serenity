@@ -28,7 +28,7 @@ const InnerMenu = styled.div<ActiveProps>(
     height: '100%',
     overflow: 'auto',
   },
-  activeInnerMenu,
+  activeInnerMenu
 )
 
 const activeBackward = ifProp('active', { cursor: 'pointer', opacity: 1 })
@@ -41,7 +41,7 @@ const Backward = styled.div<ActiveProps>(
     justifyContent: 'center',
     opacity: 0,
   },
-  activeBackward,
+  activeBackward
 )
 
 export const Listview = ({ data = [], path = '', closeIcon }) => {

@@ -24,7 +24,7 @@ export const combinePureChildren = (children: ReactNode): ReactNode[] => {
 export const divideChildren = (
   children: ReactNode,
   Wrapper,
-  props = {},
+  props = {}
 ): ReactNode | ReactNode[] => {
   if (Children.count(children) > 1) {
     const combinedChildren = combinePureChildren(children)

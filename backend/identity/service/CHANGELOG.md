@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @identity/service
 
-
-
-
-
 # 0.3.0 (2020-09-28)
 
 ### Bug Fixes

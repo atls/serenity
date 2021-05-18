@@ -41,7 +41,7 @@ const Label = styled.div<LabelProps>(
   }),
   typography,
   color,
-  size,
+  size
 )
 
 Label.defaultProps = {

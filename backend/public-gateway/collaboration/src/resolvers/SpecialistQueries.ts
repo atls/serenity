@@ -19,7 +19,7 @@ export class SpecialistQueries implements OnModuleInit {
 
   onModuleInit() {
     this.collaborationService = this.client.getService<collaboration.CollaborationService>(
-      'CollaborationService',
+      'CollaborationService'
     )
   }
 
@@ -29,7 +29,7 @@ export class SpecialistQueries implements OnModuleInit {
     pager: Pager,
 
     @Args({ name: 'filters', nullable: true, type: () => SpecialistsFilter })
-    filters: SpecialistsFilter,
+    filters: SpecialistsFilter
   ) {
     return this.collaborationService.getSpecialists({ pager, filters })
   }

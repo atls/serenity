@@ -31,13 +31,13 @@ export const useChangePassword = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const onChangePassword = useCallback(
-    value => dispatch({ type: 'CHANGE', field: 'password', value }),
-    [],
+    (value) => dispatch({ type: 'CHANGE', field: 'password', value }),
+    []
   )
 
   const onChangeConfirmPassword = useCallback(
-    value => dispatch({ type: 'CHANGE', field: 'confirmPassword', value }),
-    [],
+    (value) => dispatch({ type: 'CHANGE', field: 'confirmPassword', value }),
+    []
   )
 
   const onChange = useCallback(async () => {

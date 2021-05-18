@@ -12,7 +12,7 @@ export const withProviders = compose(
   withEmotion({
     Provider: ThemeProvider,
     injectGlobalStyles,
-  }),
+  })
 )
 
 export default withProviders(App)

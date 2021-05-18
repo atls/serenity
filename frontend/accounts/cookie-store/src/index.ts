@@ -20,7 +20,7 @@ const bootstrap = async () => {
       store: new RedisStore({
         host: process.env.REDIS_HOST || 'redis',
       }),
-    }),
+    })
   )
 
   server.use(passport.initialize())

@@ -55,7 +55,7 @@ const StyledGallery = styled.div<GalleryProps>(
     flexDirection: 'row',
     height: 'auto',
   },
-  transition,
+  transition
 )
 
 const Image = styled.img({

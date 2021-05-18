@@ -15,6 +15,7 @@ const NavigationFragment = () => {
 
   const intl = useIntl()
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const profile = user ? useProfile() : {}
 
   let endpoint = null

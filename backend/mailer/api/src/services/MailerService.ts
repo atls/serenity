@@ -8,7 +8,7 @@ import { Sending }          from '@mailer/db'
 export class MailerService {
   constructor(
     @InjectRepository(Sending)
-    private readonly sendingRepository: Repository<Sending>,
+    private readonly sendingRepository: Repository<Sending>
   ) {}
 
   findSending(id: string): Promise<Sending> {

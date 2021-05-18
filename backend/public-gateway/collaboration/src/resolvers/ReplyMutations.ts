@@ -31,7 +31,7 @@ export class ReplyMutations implements OnModuleInit {
 
   onModuleInit() {
     this.collaborationService = this.client.getService<collaboration.CollaborationService>(
-      'CollaborationService',
+      'CollaborationService'
     )
   }
 
@@ -39,7 +39,7 @@ export class ReplyMutations implements OnModuleInit {
   addProjectReply(
     @Args('input')
     input: AddProjectReplyInput,
-    @Context('user') specialistId: string,
+    @Context('user') specialistId: string
   ) {
     return this.collaborationService.addProjectReply({ ...input, specialistId })
   }
@@ -48,7 +48,7 @@ export class ReplyMutations implements OnModuleInit {
   confirmProjectReply(
     @Args('input')
     input: ConfirmProjectReplyInput,
-    @Context('user') specialistId: string,
+    @Context('user') specialistId: string
   ) {
     return this.collaborationService.confirmProjectReply({
       ...input,
@@ -60,7 +60,7 @@ export class ReplyMutations implements OnModuleInit {
   rejectProjectReply(
     @Args('input')
     input: RejectProjectReplyInput,
-    @Context('user') specialistId: string,
+    @Context('user') specialistId: string
   ) {
     return this.collaborationService.rejectProjectReply({
       ...input,
@@ -72,7 +72,7 @@ export class ReplyMutations implements OnModuleInit {
   addReplyMessage(
     @Args('input')
     input: AddReplyMessageInput,
-    @Context('user') authorId: string,
+    @Context('user') authorId: string
   ) {
     return this.collaborationService.addReplyMessage({ ...input, authorId })
   }
@@ -81,7 +81,7 @@ export class ReplyMutations implements OnModuleInit {
   changeReplyStatus(
     @Args('input')
     input: ChangeReplyStatusInput,
-    @Context('user') customerId: string,
+    @Context('user') customerId: string
   ) {
     return this.collaborationService.changeReplyStatus({ ...input, customerId })
   }
@@ -90,7 +90,7 @@ export class ReplyMutations implements OnModuleInit {
   chooseSpecialist(
     @Args('input')
     input: ChooseSpecialistInput,
-    @Context('user') customerId: string,
+    @Context('user') customerId: string
   ) {
     return this.collaborationService.chooseSpecialist({ ...input, customerId })
   }

@@ -59,7 +59,7 @@ export const ProjectReply = ({
                 <Layout flexBasis={48} alignItems='baseline'>
                   <Text fontSize='giant' lineHeight='medium'>
                     {intl.formatMessage(
-                      profile.type === 'owner' ? messages.responses : messages.yourResponse,
+                      profile.type === 'owner' ? messages.responses : messages.yourResponse
                     )}
                   </Text>
                   {profile.type === 'owner' && (

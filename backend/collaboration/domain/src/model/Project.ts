@@ -89,7 +89,7 @@ export class Project extends AggregateRoot implements ProjectProperties {
     budget: number,
     legalEntitiesOnly: boolean,
     worksheet: string,
-    description?: string,
+    description?: string
   ): Project {
     const project = new Project(id)
 
@@ -105,8 +105,8 @@ export class Project extends AggregateRoot implements ProjectProperties {
         budget,
         legalEntitiesOnly,
         worksheet,
-        description,
-      ),
+        description
+      )
     )
 
     return project
@@ -120,7 +120,7 @@ export class Project extends AggregateRoot implements ProjectProperties {
     budget: number,
     legalEntitiesOnly: boolean,
     worksheet: string,
-    description?: string,
+    description?: string
   ) {
     this.when(
       new ProjectUpdated(
@@ -132,8 +132,8 @@ export class Project extends AggregateRoot implements ProjectProperties {
         budget,
         legalEntitiesOnly,
         worksheet,
-        description,
-      ),
+        description
+      )
     )
   }
 
@@ -182,7 +182,7 @@ export class Project extends AggregateRoot implements ProjectProperties {
       this.customerId,
       reply.specialistId,
       rating,
-      comment,
+      comment
     )
   }
 

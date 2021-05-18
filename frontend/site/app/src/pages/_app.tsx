@@ -41,7 +41,7 @@ export const withProviders = compose(
     injectGlobalStyles,
   }),
   withHelmet(),
-  withProvider(ChatProvider),
+  withProvider(ChatProvider)
 )
 
 export default withProviders(App)

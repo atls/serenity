@@ -6,7 +6,7 @@ import { Text }                    from '@ui/text'
 type TextProps = typeof Text.defaultProps
 
 export const Link = styled<StyledComponent<LinkHTMLAttributes<any>, TextProps, any>>(
-  Text.withComponent('a'),
+  Text.withComponent('a')
 )({
   textDecoration: 'none',
   cursor: 'pointer',

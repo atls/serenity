@@ -16,7 +16,7 @@ export class CustomerLoader implements NestDataLoader, OnModuleInit {
 
   onModuleInit() {
     this.collaborationService = this.client.getService<collaboration.CollaborationService>(
-      'CollaborationService',
+      'CollaborationService'
     )
   }
 

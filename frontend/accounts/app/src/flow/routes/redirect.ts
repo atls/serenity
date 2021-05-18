@@ -32,7 +32,7 @@ export const redirect = async (req, res) => {
       format({
         pathname: target,
         query: req.query,
-      }),
+      })
     )
   } else {
     res.redirect('/signin')

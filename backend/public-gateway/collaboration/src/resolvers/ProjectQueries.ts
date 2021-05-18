@@ -19,7 +19,7 @@ export class ProjectQueries implements OnModuleInit {
 
   onModuleInit() {
     this.collaborationService = this.client.getService<collaboration.CollaborationService>(
-      'CollaborationService',
+      'CollaborationService'
     )
   }
 
@@ -29,7 +29,7 @@ export class ProjectQueries implements OnModuleInit {
     pager: Pager,
 
     @Args({ name: 'filters', nullable: true, type: () => ProjectsFilter })
-    filters: ProjectsFilter,
+    filters: ProjectsFilter
   ) {
     return this.collaborationService.getProjects({ pager, filters })
   }
