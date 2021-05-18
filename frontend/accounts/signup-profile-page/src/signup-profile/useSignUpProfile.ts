@@ -30,19 +30,16 @@ const reducer = (state, action) => {
 export const useSignUpProfile = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
-  const onChangeType = useCallback(
-    (value) => dispatch({ type: 'CHANGE', field: 'type', value }),
-    []
-  )
+  const onChangeType = useCallback(value => dispatch({ type: 'CHANGE', field: 'type', value }), [])
 
   const onChangeFirstName = useCallback(
-    (value) => dispatch({ type: 'CHANGE', field: 'firstName', value }),
-    []
+    value => dispatch({ type: 'CHANGE', field: 'firstName', value }),
+    [],
   )
 
   const onChangeLastName = useCallback(
-    (value) => dispatch({ type: 'CHANGE', field: 'lastName', value }),
-    []
+    value => dispatch({ type: 'CHANGE', field: 'lastName', value }),
+    [],
   )
 
   const onCreate = useCallback(async () => {
@@ -65,7 +62,6 @@ export const useSignUpProfile = () => {
     if (body.errors) {
       dispatch({ type: 'SET_ERRORS', errors: body.errors })
     } else {
-      // eslint-disable-next-line @typescript-eslint/naming-convention
       const { redirect_to } = body
 
       window.location.href = redirect_to

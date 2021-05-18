@@ -1,7 +1,14 @@
 /* eslint-disable */
 import React from 'react'
-export const ForwardArrowLeftIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg width='1em' height='1em' viewBox='0 0 16 16' {...props}>
+export const ForwardArrowLeftIcon = (props: any) => (
+  <svg
+    width='1em'
+    height='1em'
+    viewBox='0 0 16 16'
+    xmlns='http://www.w3.org/2000/svg'
+    xmlnsXlink='http://www.w3.org/1999/xlink'
+    {...props}
+  >
     <g id='Page-1' stroke='none' strokeWidth={1} fill='none' fillRule='evenodd'>
       <g id='login' transform='translate(-44.000000, -44.000000)'>
         <g

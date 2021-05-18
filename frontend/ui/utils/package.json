@@ -1,10 +1,10 @@
 {
   "name": "@ui/utils",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "private": true,
   "main": "src/index.ts",
-  "dependencies": {
-    "react": "^16.9.0"
+  "peerDependencies": {
+    "react": "16.13.1"
   }
 }

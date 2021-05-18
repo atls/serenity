@@ -36,7 +36,7 @@ const StyledInnerChat = styled.div<ActiveProps>(
     height: '100%',
     overflow: 'auto',
   },
-  activeInnerChat
+  activeInnerChat,
 )
 
 const alignment = switchProp('align', ({ theme }) => ({
@@ -73,7 +73,7 @@ const ChatMessage = styled.div<ChatMessageProps>(
     },
     */
   }),
-  alignment
+  alignment,
 )
 
 export const InnerChat = ({

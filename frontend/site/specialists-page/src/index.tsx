@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import { useRouter }       from 'next/router'
-import { useIntl }         from 'react-intl'
+import React, { useState }                from 'react'
+import { useRouter }                      from 'next/router'
+import { useIntl }                        from 'react-intl'
 
-import { Seo }             from './Seo'
-import { SpecialistsPage } from './SpecialistsPage'
+import { Seo }                            from './Seo'
+import { SpecialistsPage as Specialists } from './SpecialistsPage'
 
-export default () => {
+const SpecialistsPage = () => {
   const intl = useIntl()
   const router = useRouter()
   const defaultCategory = (router && router.query && router.query.catId) || ''
@@ -21,11 +21,9 @@ export default () => {
   return (
     <>
       <Seo />
-      <SpecialistsPage
-        intl={intl}
-        activeCategory={activeCategory}
-        selectCategory={selectCategory}
-      />
+      <Specialists intl={intl} activeCategory={activeCategory} selectCategory={selectCategory} />
     </>
   )
 }
+
+export default SpecialistsPage

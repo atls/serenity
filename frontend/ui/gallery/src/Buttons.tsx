@@ -34,7 +34,7 @@ export const SlideButton = styled.div<any>(
     },
   },
   disabled,
-  directions
+  directions,
 )
 
 export const CloseButton = styled.div({

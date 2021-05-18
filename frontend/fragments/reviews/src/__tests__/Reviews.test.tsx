@@ -1,7 +1,7 @@
 import React             from 'react'
-import { render }        from '@testing-library/react'
 
 import { ThemeProvider } from '@ui/theme'
+import { render }        from '@testing-library/react'
 
 import { Reviews }       from '../Reviews'
 
@@ -11,7 +11,7 @@ describe('Reviews', () => {
       const { asFragment } = render(
         <ThemeProvider>
           <Reviews />
-        </ThemeProvider>
+        </ThemeProvider>,
       )
 
       expect(asFragment()).toMatchSnapshot()

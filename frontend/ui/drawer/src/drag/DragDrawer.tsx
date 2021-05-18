@@ -431,7 +431,7 @@ export default class DragDrawer extends Component<DragDrawerProps> {
           )}
         </Motion>
       </ScrollLock>,
-      parentElement
+      parentElement,
     )
   }
 }

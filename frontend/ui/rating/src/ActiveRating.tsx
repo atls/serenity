@@ -48,7 +48,7 @@ const StarContainer = styled.div<StarContainerProps>(
       width: 24,
       height: 24,
     },
-  })
+  }),
 )
 
 export const ActiveRating = ({

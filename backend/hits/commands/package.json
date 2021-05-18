@@ -1,10 +1,10 @@
 {
   "name": "@hits/commands",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",
   "devDependencies": {
-    "@hits/persistence": "0.0.0",
+    "@hits/persistence": "0.0.1",
     "@nestjs/common": "6.10.5",
     "@nestjs/core": "6.10.5",
     "@nestjs/testing": "6.10.5",

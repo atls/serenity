@@ -1,7 +1,14 @@
 /* eslint-disable */
 import React from 'react'
-export const ArrowForwardIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg width='1em' height='1em' viewBox='0 0 24 24' fill='none' {...props}>
+export const ArrowForwardIcon = (props: any) => (
+  <svg
+    width='1em'
+    height='1em'
+    viewBox='0 0 24 24'
+    fill='none'
+    xmlns='http://www.w3.org/2000/svg'
+    {...props}
+  >
     <mask
       id='ArrowForwardIcon'
       mask-type='alpha'

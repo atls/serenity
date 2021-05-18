@@ -17,7 +17,7 @@ const createIdentityService = () => {
 
   return new identity.IdentityService(
     process.env.IDENTITY_SERVICE_URL || 'identity-service:50051',
-    grpc.credentials.createInsecure()
+    grpc.credentials.createInsecure(),
   )
 }
 

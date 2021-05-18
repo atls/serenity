@@ -7,7 +7,7 @@ import { useDrawer }          from '@ui/drawer'
 import { Navigation }         from './Navigation'
 import { useProfile }         from './useProfile'
 
-export default () => {
+const NavigationFragment = () => {
   const user = useUser()
 
   const { visible: visibleMenu, open: openMenu, close: closeMenu } = useDrawer('menu')
@@ -78,3 +78,5 @@ export default () => {
     />
   )
 }
+
+export default NavigationFragment

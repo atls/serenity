@@ -16,7 +16,7 @@ export const signoutComplete = (req, res) => {
           ...url,
           pathname: '/',
           hostname: url.hostname.replace('accounts.', ''),
-        })
+        }),
       )
     }
   }

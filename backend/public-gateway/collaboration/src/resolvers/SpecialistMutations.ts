@@ -17,7 +17,7 @@ export class SpecialistMutations implements OnModuleInit {
 
   onModuleInit() {
     this.collaborationService = this.client.getService<collaboration.CollaborationService>(
-      'CollaborationService'
+      'CollaborationService',
     )
   }
 
@@ -25,7 +25,7 @@ export class SpecialistMutations implements OnModuleInit {
   updateSpecialist(
     @Args('input')
     input: UpdateSpecialistInput,
-    @Context('user') id: string
+    @Context('user') id: string,
   ) {
     return this.collaborationService.updateSpecialist({ ...input, id })
   }
@@ -34,7 +34,7 @@ export class SpecialistMutations implements OnModuleInit {
   changeAccountType(
     @Args('input')
     input: ChangeAccountTypeInput,
-    @Context('user') specialistId: string
+    @Context('user') specialistId: string,
   ) {
     return this.collaborationService.changeAccountType({
       ...input,

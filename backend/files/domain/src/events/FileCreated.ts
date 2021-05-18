@@ -1,5 +1,6 @@
-import { Event } from '@node-ts/bus-messages'
 import { Uuid }  from '@node-ts/ddd-types'
+
+import { Event } from '@node-ts/bus-messages'
 
 export class FileCreated extends Event {
   static readonly NAME = 'files/file-created'
@@ -12,7 +13,7 @@ export class FileCreated extends Event {
     readonly fileId: Uuid,
     readonly type: string,
     readonly name: string,
-    readonly url: string
+    readonly url: string,
   ) {
     super()
   }

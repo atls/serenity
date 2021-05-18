@@ -1,11 +1,13 @@
-import React          from 'react'
+import React                    from 'react'
 
-import { Seo }        from './Seo'
-import { SignupPage } from './SignupPage'
+import { Seo }                  from './Seo'
+import { SignupPage as Signup } from './SignupPage'
 
-export default () => (
+const SignupPage = () => (
   <>
     <Seo />
-    <SignupPage />
+    <Signup />
   </>
 )
+
+export default SignupPage

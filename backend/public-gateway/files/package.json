@@ -1,14 +1,14 @@
 {
   "name": "@public-gateway/files",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "src/index.ts",
   "dependencies": {
     "@nestjs/common": "6.10.5",
     "@nestjs/graphql": "6.5.3",
     "@nestjs/microservices": "6.10.5",
-    "@protos/files": "0.0.1",
-    "@protos/interfaces": "0.1.0",
+    "@protos/files": "0.0.2",
+    "@protos/interfaces": "0.1.1",
     "rxjs": "6.5.3",
     "type-graphql": "0.17.5"
   },

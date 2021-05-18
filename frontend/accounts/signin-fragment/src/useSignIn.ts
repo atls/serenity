@@ -7,6 +7,8 @@ const initialState = {
   errors: {},
 }
 
+const redirectTo = (body: any) => body.body.redirectTo
+
 const reducer = (state, action) => {
   if (action.type === 'CHANGE') {
     return {
@@ -29,13 +31,13 @@ export const useSignIn = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const onChangeEmail = useCallback(
-    (value) => dispatch({ type: 'CHANGE', field: 'email', value }),
-    []
+    value => dispatch({ type: 'CHANGE', field: 'email', value }),
+    [],
   )
 
   const onChangePassword = useCallback(
-    (value) => dispatch({ type: 'CHANGE', field: 'password', value }),
-    []
+    value => dispatch({ type: 'CHANGE', field: 'password', value }),
+    [],
   )
 
   const onSignIn = useCallback(async () => {

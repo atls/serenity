@@ -1,5 +1,6 @@
-import { Event }                                  from '@node-ts/bus-messages'
 import { Uuid }                                   from '@node-ts/ddd-types'
+
+import { Event }                                  from '@node-ts/bus-messages'
 
 import { Company, PrivatePerson, Specialisation } from '../model'
 
@@ -14,7 +15,7 @@ export class SpecialistUpdated extends Event {
     readonly specialistId: Uuid,
     readonly interaction: PrivatePerson | Company,
     readonly specialisation: Specialisation,
-    readonly description: string
+    readonly description: string,
   ) {
     super()
   }

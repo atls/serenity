@@ -5,6 +5,6 @@
   "license": "MIT",
   "dependencies": {
     "@nestjs/microservices": "6.10.5",
-    "@protos/common": "0.3.0"
+    "@protos/common": "0.3.1"
   }
 }

@@ -1,7 +1,8 @@
 import gql                                    from 'graphql-tag'
-import { useMutation, useQuery }              from '@apollo/react-hooks' // eslint-disable-line import/no-extraneous-dependencies
 /* eslint-disable no-else-return */
 import { useCallback, useEffect, useReducer } from 'react'
+
+import { useMutation, useQuery }              from '@apollo/react-hooks' // eslint-disable-line import/no-extraneous-dependencies
 
 export const query = gql`
   query Me {
@@ -140,7 +141,7 @@ export const useChat = () => {
 
   const onChangeMessage = useCallback(
     (value, id) => dispatch({ type: 'CHANGE_MESSAGES', id, value }),
-    []
+    [],
   )
 
   function onAddChat(value) {

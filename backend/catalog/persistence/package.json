@@ -1,6 +1,6 @@
 {
   "name": "@catalog/persistence",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
@@ -10,12 +10,12 @@
     "@types/node": "12.12.14"
   },
   "dependencies": {
-    "@catalog/domain": "0.1.0",
+    "@catalog/domain": "0.1.1",
     "@monstrs/nestjs-bus": "0.1.4",
     "@monstrs/nestjs-logger": "0.1.2",
     "@nestjs/common": "6.10.5",
     "@nestjs/typeorm": "6.2.0",
-    "@node-ts/ddd": "0.1.4",
+    "@node-ts/ddd": "^0.1.6",
     "pg": "8.5.1",
     "ts-node": "8.10.2",
     "typeorm": "0.2.19",

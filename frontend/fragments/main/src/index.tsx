@@ -5,7 +5,7 @@ import { useIntl }            from 'react-intl'
 import { Main }               from './Main'
 import { useData }            from './useData'
 
-export default () => {
+const MainFragment = () => {
   const intl = useIntl()
   const data = useData()
   const router = useRouter()
@@ -28,3 +28,5 @@ export default () => {
     <Main intl={intl} data={data} onSelectOption={onSelectOption} onSelectValue={onSelectValue} />
   )
 }
+
+export default MainFragment

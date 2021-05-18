@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-implied-eval */
+
 import RcSelect                                                            from 'rc-select'
 import styled                                                              from '@emotion/styled'
 import React, { useState }                                                 from 'react'
@@ -39,7 +41,7 @@ const StyledSearchIcon = styled.div<IconProps>(
     top: 0,
     left: 16,
   },
-  iconSize
+  iconSize,
 )
 
 export const Search = ({

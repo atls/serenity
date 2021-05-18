@@ -173,7 +173,7 @@ services:
       - DEV_AUTH_TOKEN=${DEV_AUTH_TOKEN}
       - DEV_AUTH_USER=${DEV_AUTH_USER}
     labels:
-      - 'traefik.frontend.rule=Host:local.serenity.atls.tech'
+      - 'traefik.frontend.rule=Host:serenity.local.atls.tech'
       - 'traefik.protocol=http'
       - 'traefik.port=3000'
     depends_on:

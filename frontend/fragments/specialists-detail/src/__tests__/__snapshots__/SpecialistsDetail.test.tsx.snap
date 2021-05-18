@@ -1008,6 +1008,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                         height="100%"
                         viewBox="0 0 16 15"
                         width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <polygon
                           points="56 99 51.297718 101.472136 52.1957739 96.236068 48.3915479 92.527864 53.648859 91.763932 56 87 58.351141 91.763932 63.6084521 92.527864 59.8042261 96.236068 60.702282 101.472136"
@@ -1024,6 +1025,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                         height="100%"
                         viewBox="0 0 16 15"
                         width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <polygon
                           points="56 99 51.297718 101.472136 52.1957739 96.236068 48.3915479 92.527864 53.648859 91.763932 56 87 58.351141 91.763932 63.6084521 92.527864 59.8042261 96.236068 60.702282 101.472136"
@@ -1040,6 +1042,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                         height="100%"
                         viewBox="0 0 16 15"
                         width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <polygon
                           points="56 99 51.297718 101.472136 52.1957739 96.236068 48.3915479 92.527864 53.648859 91.763932 56 87 58.351141 91.763932 63.6084521 92.527864 59.8042261 96.236068 60.702282 101.472136"
@@ -1056,6 +1059,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                         height="100%"
                         viewBox="0 0 16 15"
                         width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <polygon
                           points="56 99 51.297718 101.472136 52.1957739 96.236068 48.3915479 92.527864 53.648859 91.763932 56 87 58.351141 91.763932 63.6084521 92.527864 59.8042261 96.236068 60.702282 101.472136"
@@ -1072,6 +1076,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                         height="100%"
                         viewBox="0 0 16 15"
                         width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <polygon
                           points="56 99 51.297718 101.472136 52.1957739 96.236068 48.3915479 92.527864 53.648859 91.763932 56 87 58.351141 91.763932 63.6084521 92.527864 59.8042261 96.236068 60.702282 101.472136"
@@ -1210,6 +1215,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                         height="20"
                         viewBox="0 0 20 20"
                         width="20"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
                           d="M14.167 2.5H5.83366C4.91699 2.5 4.17533 3.25 4.17533 4.16667L4.16699 17.5L10.0003 15L15.8337 17.5V4.16667C15.8337 3.25 15.0837 2.5 14.167 2.5Z"
@@ -1237,6 +1243,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                           height="24"
                           viewBox="0 0 24 24"
                           width="24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
                             d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"
@@ -1267,6 +1274,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                           height="20"
                           viewBox="0 0 20 20"
                           width="20"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
                             clip-rule="evenodd"
@@ -1408,6 +1416,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                         height="20"
                         viewBox="0 0 18 18"
                         width="20"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <g
                           fill="none"

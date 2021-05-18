@@ -503,7 +503,7 @@ export const SpecialistsDetail = ({
                         </Text>
                       </Layout>
                     </Column>
-                  )
+                  ),
               )}
             </Carousel>
           </Layout>

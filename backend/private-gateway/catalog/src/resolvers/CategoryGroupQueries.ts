@@ -23,7 +23,7 @@ export class CategoryGroupQueries implements OnModuleInit {
   @Query((returns) => CategoryGroupsList)
   categoryGroups(
     @Args({ name: 'filters', nullable: true, type: () => CategoryGroupsFilter })
-    filters: CategoryGroupsFilter = {}
+    filters: CategoryGroupsFilter = {},
   ) {
     return this.catalogService.getCategoryGroups({ filters })
   }

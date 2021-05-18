@@ -13,7 +13,7 @@
     "@types/node": "12.12.14"
   },
   "dependencies": {
-    "@collaboration/domain": "0.0.0",
+    "@collaboration/domain": "0.0.1",
     "@elastic/elasticsearch": "7.5.0",
     "@godaddy/terminus": "4.3.1",
     "@grpc/proto-loader": "0.5.3",
@@ -27,9 +27,9 @@
     "@nestjs/microservices": "6.10.5",
     "@nestjs/terminus": "6.5.3",
     "@node-ts/bus-core": "0.4.9",
-    "@protos/catalog": "0.1.0",
-    "@protos/collaboration": "0.0.0",
-    "@protos/interfaces": "0.1.0",
+    "@protos/catalog": "0.1.1",
+    "@protos/collaboration": "0.0.1",
+    "@protos/interfaces": "0.1.1",
     "@protos/search": "0.0.0",
     "@types/elasticsearch": "5.0.36",
     "grpc": "1.24.2",

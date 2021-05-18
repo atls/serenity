@@ -1,7 +1,8 @@
-import { AggregateRoot }                              from '@node-ts/ddd'
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-underscore-dangle */
 import { AggregateRootProperties }                    from '@node-ts/ddd-types'
+
+import { AggregateRoot }                              from '@node-ts/ddd'
 
 import { SpecialistRatingUpdated, SpecialistUpdated } from '../events'
 import { Account }                                    from './Account'
@@ -45,7 +46,7 @@ export class Specialist extends AggregateRoot implements SpecialistProperties {
   update(
     interaction: PrivatePerson | Company,
     specialisation: Specialisation,
-    description?: string
+    description?: string,
   ) {
     this.when(new SpecialistUpdated(this.id, interaction, specialisation, description))
   }

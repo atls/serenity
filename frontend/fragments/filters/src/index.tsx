@@ -3,7 +3,12 @@ import React, { useEffect, useState } from 'react'
 import { Filters }                    from './Filters'
 import { useData }                    from './useData'
 
-export default ({ title = '', activeCategory = '', selectCategory = () => {}, check = false }) => {
+const FiltersFragment = ({
+  title = '',
+  activeCategory = '',
+  selectCategory = () => {},
+  check = false,
+}) => {
   const data = useData()
   const [activeKey, setActiveKey] = useState([])
 
@@ -39,3 +44,5 @@ export default ({ title = '', activeCategory = '', selectCategory = () => {}, ch
     />
   )
 }
+
+export default FiltersFragment

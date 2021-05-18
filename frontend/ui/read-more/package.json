@@ -1,15 +1,15 @@
 {
   "name": "@ui/read-more",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "private": true,
   "main": "src/index.ts",
   "devDependencies": {
-    "@design/ui": "0.3.0",
-    "@ui/layout": "0.0.4"
+    "@design/ui": "0.3.1",
+    "@ui/layout": "0.0.5"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@emotion/styled": "^10.0.0",
-    "react": "^16.9.0"
+    "react": "16.13.1"
   }
 }

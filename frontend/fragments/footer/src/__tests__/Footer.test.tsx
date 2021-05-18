@@ -1,8 +1,8 @@
 import React             from 'react'
 import { IntlProvider }  from 'react-intl'
-import { render }        from '@testing-library/react'
 
 import { ThemeProvider } from '@ui/theme'
+import { render }        from '@testing-library/react'
 
 import Footer            from '..'
 
@@ -14,7 +14,7 @@ describe('Footer fragment', () => {
           <ThemeProvider>
             <Footer />
           </ThemeProvider>
-        </IntlProvider>
+        </IntlProvider>,
       )
 
       expect(asFragment()).toMatchSnapshot()

@@ -1,9 +1,9 @@
 import DataLoader                          from 'dataloader'
-import { Loader }                          from '@monstrs/nestjs-dataloader'
 /* eslint-disable class-methods-use-this */
 import { Injectable }                      from '@nestjs/common'
 import { ResolveProperty, Resolver, Root } from '@nestjs/graphql'
 
+import { Loader }                          from '@monstrs/nestjs-dataloader'
 import { collaboration }                   from '@protos/interfaces'
 
 import { ProjectLoader }                   from '../dataloaders'
@@ -16,7 +16,7 @@ export class ReplyResolver {
   project(
     @Root() { projectId }: collaboration.Reply,
     @Loader(ProjectLoader.name)
-    projectLoader: DataLoader<any, any>
+    projectLoader: DataLoader<any, any>,
   ) {
     return projectLoader.load(projectId)
   }

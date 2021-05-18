@@ -628,6 +628,8 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                 height="8"
                 viewBox="0 0 8 6"
                 width="8"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
               >
                 <g
                   fill="none"
@@ -743,6 +745,8 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                 height="8"
                 viewBox="0 0 8 6"
                 width="8"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
               >
                 <g
                   fill="none"
@@ -858,6 +862,8 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                 height="8"
                 viewBox="0 0 8 6"
                 width="8"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
               >
                 <g
                   fill="none"
@@ -1039,6 +1045,8 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                     height="8"
                     viewBox="0 0 8 6"
                     width="8"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
                   >
                     <g
                       fill="none"
@@ -1143,6 +1151,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                   stroke-width="2"
                   viewBox="0 0 24 24"
                   width="18"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <polyline
                     points="20 6 9 17 4 12"
@@ -1184,6 +1193,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                   stroke-width="2"
                   viewBox="0 0 24 24"
                   width="18"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <polyline
                     points="20 6 9 17 4 12"
@@ -1236,6 +1246,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                   stroke-width="2"
                   viewBox="0 0 24 24"
                   width="18"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <polyline
                     points="20 6 9 17 4 12"
@@ -1326,6 +1337,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                   stroke-width="2"
                   viewBox="0 0 24 24"
                   width="18"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <polyline
                     points="20 6 9 17 4 12"
@@ -1367,6 +1379,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                   stroke-width="2"
                   viewBox="0 0 24 24"
                   width="18"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <polyline
                     points="20 6 9 17 4 12"
@@ -1419,6 +1432,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                   stroke-width="2"
                   viewBox="0 0 24 24"
                   width="18"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <polyline
                     points="20 6 9 17 4 12"
@@ -1460,6 +1474,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                   stroke-width="2"
                   viewBox="0 0 24 24"
                   width="18"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <polyline
                     points="20 6 9 17 4 12"
@@ -1512,6 +1527,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                   stroke-width="2"
                   viewBox="0 0 24 24"
                   width="18"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <polyline
                     points="20 6 9 17 4 12"

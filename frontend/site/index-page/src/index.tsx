@@ -1,11 +1,13 @@
-import React         from 'react'
+import React                  from 'react'
 
-import { IndexPage } from './IndexPage'
-import { Seo }       from './Seo'
+import { IndexPage as Index } from './IndexPage'
+import { Seo }                from './Seo'
 
-export default () => (
+const IndexPage = () => (
   <>
     <Seo />
-    <IndexPage />
+    <Index />
   </>
 )
+
+export default IndexPage

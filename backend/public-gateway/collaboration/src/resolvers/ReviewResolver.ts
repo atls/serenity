@@ -1,8 +1,9 @@
 /* eslint-disable class-methods-use-this */
 import DataLoader                          from 'dataloader'
-import { Loader }                          from '@monstrs/nestjs-dataloader'
 import { Injectable }                      from '@nestjs/common'
 import { ResolveProperty, Resolver, Root } from '@nestjs/graphql'
+
+import { Loader }                          from '@monstrs/nestjs-dataloader'
 
 import { UserLoader }                      from '../dataloaders'
 import { Review }                          from '../types'
@@ -14,7 +15,7 @@ export class ReviewResolver {
   async customer(
     @Root() { customerId }: any,
     @Loader(UserLoader.name)
-    userLoader: DataLoader<any, any>
+    userLoader: DataLoader<any, any>,
   ) {
     const user = await userLoader.load(customerId)
 

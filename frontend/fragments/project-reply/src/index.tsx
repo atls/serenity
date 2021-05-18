@@ -4,7 +4,7 @@ import { useIntl }                                 from 'react-intl'
 import { ProjectReply }                            from './ProjectReply'
 import { useCreate }                               from './useCreate'
 
-export default ({ id, replies, profile, status = '', ownerName = {} }) => {
+const ProjectReplyFragment = ({ id, replies, profile, status = '', ownerName = {} }) => {
   const intl = useIntl()
   const [activeFilter, setActiveFilter] = useState('')
   const { replies: dataReplies, ...data } = useCreate(id, replies)
@@ -63,3 +63,5 @@ export default ({ id, replies, profile, status = '', ownerName = {} }) => {
     />
   )
 }
+
+export default ProjectReplyFragment

@@ -23,11 +23,11 @@ export class DiscussionMutations implements OnModuleInit {
 
   onModuleInit() {
     this.collaborationService = this.client.getService<collaboration.CollaborationService>(
-      'CollaborationService'
+      'CollaborationService',
     )
 
     this.identityService = this.identityClient.getService<identity.IdentityService>(
-      'IdentityService'
+      'IdentityService',
     )
   }
 
@@ -35,7 +35,7 @@ export class DiscussionMutations implements OnModuleInit {
   async addDiscussionMessage(
     @Args('input')
     input: AddDiscussionMessageInput,
-    @Context('user') authorId: string
+    @Context('user') authorId: string,
   ) {
     const { rows } = await this.identityService
       .getUsers({ filters: { id: [authorId] } })

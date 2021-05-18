@@ -1,5 +1,5 @@
 import React                                        from 'react'
-import { WithUser, WithouthUser }                   from '@atlantis-lab/react-user'
+import { WithUser, WithoutUser }                    from '@atlantis-lab/react-user'
 
 import Chat                                         from '@fragments/chat'
 import { Button }                                   from '@ui/button'
@@ -83,9 +83,9 @@ export const Navigation = ({
         </WithUser>
       </Layout>
       <Layout>
-        <WithouthUser>
+        <WithoutUser>
           <BaseNavLink onClick={onLogin}>{intl.formatMessage(messages.login)}</BaseNavLink>
-        </WithouthUser>
+        </WithoutUser>
       </Layout>
       <Layout flexBasis={[24, 32, 32]} />
       <Layout display={['flex', 'none']}>
