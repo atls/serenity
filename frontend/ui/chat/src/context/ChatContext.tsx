@@ -8,7 +8,6 @@ export const { Provider, Consumer } = ChatContext
 
 export class ChatProvider extends React.Component {
   store: ChatStore
-  props: any
 
   constructor(props) {
     super(props)

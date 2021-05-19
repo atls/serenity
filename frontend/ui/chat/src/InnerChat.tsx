@@ -89,6 +89,7 @@ export const InnerChat = ({
   const node = useRef(null)
 
   useEffect(() => {
+    // @ts-ignore
     node.current.scrollTop = node.current.scrollHeight
   }, [item])
 

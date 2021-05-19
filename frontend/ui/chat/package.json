@@ -6,6 +6,7 @@
   "main": "src/index.ts",
   "devDependencies": {
     "@design/ui": "0.3.1",
+    "@types/react": "^17.0.6",
     "@ui/avatar": "0.0.1",
     "@ui/button": "0.3.1",
     "@ui/divider": "0.0.1",

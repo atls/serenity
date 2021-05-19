@@ -4,7 +4,7 @@ import { fontFaces }       from './theme'
 import { injectFontFaces } from './utils'
 
 export const injectGlobalStyles = () => {
-  injectFontFaces((fontFaces as any))
+  injectFontFaces(fontFaces as any)
 
   injectGlobal({
     html: {},

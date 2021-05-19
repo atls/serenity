@@ -1,4 +1,5 @@
 {
   "extends": "@atlantis-lab/tsconfig/tsconfig.base.json",
-  "include": ["frontend/**/**/*", "backend/**/**/*"]
+  "include": ["frontend/**/**/*", "backend/**/**/*"],
+  "exclude": ["frontend/**/**/src/stories"]
 }
