@@ -20,6 +20,7 @@ const Avatar = styled.div<AvatarProps>(
 )
 
 Avatar.defaultProps = {
+  // @ts-ignore
   src: null,
   width: 40,
   height: 40,

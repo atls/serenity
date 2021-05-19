@@ -37,7 +37,7 @@ export const Main = ({
             optionFilterProp='label'
             autoFocus
           >
-            {data.map((item) => (
+            {data.map((item: any) => (
               <Option key={item.id} value={item.id} label={item.name}>
                 {item.name}
               </Option>

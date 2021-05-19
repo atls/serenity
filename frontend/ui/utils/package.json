@@ -4,7 +4,7 @@
   "license": "MIT",
   "private": true,
   "main": "src/index.ts",
-  "peerDependencies": {
+  "dependencies": {
     "react": "16.13.1"
   }
 }

@@ -18,7 +18,7 @@ const NavigationFragment = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const profile = user ? useProfile() : {}
 
-  let endpoint = null
+  let endpoint: string | null = null
 
   if (typeof window !== 'undefined') {
     endpoint = window.location.hostname.includes('atls.tech')

@@ -11,7 +11,7 @@ export default {
   title: 'Компоненты|Список категорий',
 }
 
-const data = [
+const data: any = [
   {
     id: 'complexity',
     name: 'Комплексные работы',

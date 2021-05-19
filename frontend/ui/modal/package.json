@@ -6,9 +6,11 @@
   "main": "src/index.ts",
   "dependencies": {
     "@emotion/styled": "^10.0.0",
+    "framer-motion": "^4.1.17",
     "global": "4.4.0",
     "react": "16.13.1",
     "react-dom": "^16.9.0",
+    "react-scrolllock": "^5.0.1",
     "styled-tools": "^1.7.0"
   }
 }

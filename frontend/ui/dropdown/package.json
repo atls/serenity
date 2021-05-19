@@ -9,7 +9,7 @@
     "@types/rc-trigger": "0.0.1",
     "rc-trigger": "2.6.5"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@emotion/styled": "^10.0.0",
     "react": "16.13.1",
     "styled-tools": "^1.7.0"

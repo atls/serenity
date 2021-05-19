@@ -28,7 +28,7 @@ const size = switchProp('size', () => ({
   },
 }))
 
-const offset: styleFn = switchProp('size', ({ prefix, suffix }) => ({
+const offset: styleFn = switchProp('size', ({ prefix, suffix }: any) => ({
   normal: {
     paddingLeft: prefix ? 56 : null,
     paddingRight: suffix ? 56 : null,

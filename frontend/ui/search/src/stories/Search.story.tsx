@@ -12,7 +12,7 @@ export const SearchStory = () => {
   const [data, setData] = useState([])
 
   const onChangeSearch = (value) => {
-    const options = []
+    const options: any = []
     if (value) {
       options.push({ value: `${value} first`, name: `${value} first` })
       options.push({ value: `${value} second`, name: `${value} second` })

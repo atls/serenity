@@ -39,7 +39,7 @@ const StyledInnerChat = styled.div<ActiveProps>(
   activeInnerChat
 )
 
-const alignment = switchProp('align', ({ theme }) => ({
+const alignment = switchProp('align', ({ theme }: any) => ({
   left: {
     borderRadius: '8px 8px 8px 0',
     backgroundColor: theme.colors.gallery,

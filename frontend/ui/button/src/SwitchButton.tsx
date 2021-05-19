@@ -11,7 +11,7 @@ const base: any = ({ theme }) => ({
   borderRadius: theme.radii.extra,
 })
 
-const colors = switchProp('color', ({ theme }) => ({
+const colors = switchProp('color', ({ theme }: any) => ({
   stormdust: {
     background: theme.colors.stormdust,
   },

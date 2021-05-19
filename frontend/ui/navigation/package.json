@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.tsx",
-  "peerDependencies": {
+  "dependencies": {
     "@emotion/styled": "^10.0.0",
     "react": "16.13.1",
     "styled-system": "^5.1.0",
     "styled-tools": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/styled-system": "^5.1.11"
   }
 }

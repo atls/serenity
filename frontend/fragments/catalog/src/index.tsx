@@ -16,11 +16,11 @@ const CatalogFragment = () => {
 
   return (
     <Box height='100%'>
-      <Desktop data={data} visible={visible && innerWidth >= 640} linksPath={linksPath} />
+      <Desktop data={data} visible={visible && innerWidth ? innerWidth : 0 >= 640} linksPath={linksPath} />
       <Mobile
         data={data}
         linksPath={linksPath}
-        visible={visible && innerWidth < 640}
+        visible={visible && innerWidth ? innerWidth : 0 < 640}
         onClose={close}
       />
     </Box>

@@ -76,7 +76,7 @@ export const Listview = ({ data = [], path = '', closeIcon }) => {
           position='absolute'
           overflow='auto'
         >
-          {data.map((item) => {
+          {data.map((item: any) => {
             if (!item.children) {
               return (
                 <Layout key={item.id} flexShrink={0}>
@@ -101,7 +101,7 @@ export const Listview = ({ data = [], path = '', closeIcon }) => {
           })}
           <Layout flexBasis={20} flexShrink={0} />
         </Box>
-        {data.map((item) => {
+        {data.map((item: any) => {
           if (!item.children) return false
 
           return (

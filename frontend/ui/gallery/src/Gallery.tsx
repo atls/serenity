@@ -184,7 +184,7 @@ export const BaseGallery = ({ images, name = '', onClose }) => {
   }
 
   const handlers = useSwipeable({
-    onSwiping: (data) => (widthWindow >= 640 ? {} : swiping(data)),
+    onSwiping: (data) => ((widthWindow as any) >= 640 ? {} : swiping(data)),
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
     trackTouch: true,

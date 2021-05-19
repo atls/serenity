@@ -14,9 +14,9 @@ export const TextStory = () => {
   const example = text('Пример текста', 'Пример текста')
   const color = select('Цвет', colors, colors.chicago)
   const lineHeight = select('Высота', lineHeights, lineHeights.normal)
-  const font = select('Шрифт', fonts, Text.defaultProps.fontFamily)
-  const fontSize = select('Размер', fontSizes, Text.defaultProps.fontSize)
-  const fontWeight = select('Толщина', fontWeights, Text.defaultProps.fontWeight)
+  const font = select('Шрифт', fonts, (Text as any).defaultProps.fontFamily)
+  const fontSize = select('Размер', fontSizes, (Text as any).defaultProps.fontSize)
+  const fontWeight = select('Толщина', fontWeights, (Text as any).defaultProps.fontWeight)
 
   return (
     <Column>

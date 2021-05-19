@@ -258,8 +258,10 @@ export default class DragDrawer extends Component<DragDrawerProps> {
     const size = this.getElementSize()
 
     if (isDirectionBottom(direction) || isDirectionTop(direction)) {
+      // @ts-ignore
       this.NEGATIVE_SCROLL = size - element.scrollHeight - this.MAX_NEGATIVE_SCROLL
     } else {
+      // @ts-ignore
       this.NEGATIVE_SCROLL = size - element.scrollWidth - this.MAX_NEGATIVE_SCROLL
     }
   }
@@ -403,9 +405,11 @@ export default class DragDrawer extends Component<DragDrawerProps> {
       <ScrollLock>
         <Motion
           style={{
+            // @ts-ignore
             translate: spring(opened ? position : hiddenPosition),
           }}
           defaultStyle={{
+            // @ts-ignore
             translate: hiddenPosition,
           }}
         >
@@ -425,6 +429,7 @@ export default class DragDrawer extends Component<DragDrawerProps> {
                 ref={disableDrag ? undefined : this.attachListeners}
                 className={modalElementClass || ''}
               >
+                {/* @ts-ignore */}
                 <TouchScrollable>{children}</TouchScrollable>
               </div>
             </StyledDragDrawer>

@@ -20,8 +20,9 @@ const FiltersFragment = ({
     if (data && activeCategory) {
       const keys = []
       data.map((item) => {
-        item.children.map((child) => {
+        item.children.map((child: any) => {
           if (child.id === activeCategory) {
+            // @ts-ignore
             keys.push(item.id)
           }
           return true

@@ -17,6 +17,7 @@ export const redirect = async (req, res) => {
 
     if (requestUrl) {
       const { query } = parse(requestUrl)
+      // @ts-ignore
       const { state } = querystring.parse(query)
 
       if (state) {

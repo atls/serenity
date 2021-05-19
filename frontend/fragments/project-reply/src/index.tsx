@@ -14,7 +14,7 @@ const ProjectReplyFragment = ({ id, replies, profile, status = '', ownerName = {
     setFilteredReplies(dataReplies)
   }, [dataReplies])
 
-  let endpoint = null
+  let endpoint: string | null = null
 
   if (typeof window !== 'undefined') {
     endpoint = window.location.hostname.includes('atls.tech')
