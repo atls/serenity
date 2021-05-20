@@ -27,6 +27,7 @@ export class FilesLoader implements NestDataLoader, OnModuleInit {
   }
 
   generateDataLoader(): DataLoader<any, any> {
+    // @ts-ignore
     return new DataLoader<string[], files.File[]>(this.getFiles.bind(this))
   }
 }

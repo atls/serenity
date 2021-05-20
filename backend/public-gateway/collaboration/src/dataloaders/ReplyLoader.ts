@@ -26,10 +26,12 @@ export class ReplyLoader implements NestDataLoader, OnModuleInit {
       .pipe(map((data) => data.rows))
       .toPromise()
 
+    // @ts-ignore
     return projectId.map((id) => replies.filter((reply) => reply.projectId === id))
   }
 
   generateDataLoader(): DataLoader<any, any> {
+    // @ts-ignore
     return new DataLoader<string, collaboration.Reply[]>(this.getReplies)
   }
 }

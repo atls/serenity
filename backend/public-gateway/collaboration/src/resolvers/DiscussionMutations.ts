@@ -41,11 +41,12 @@ export class DiscussionMutations implements OnModuleInit {
       .getUsers({ filters: { id: [authorId] } })
       .toPromise()
 
+    // @ts-ignore
     const [sender] = rows
 
     const params: any = { ...input, authorId }
 
-    if (sender.profile.type === 'specialist') {
+    if ((sender as any).profile.type === 'specialist') {
       params.specialistId = authorId
       params.customerId = input.recipientId
     } else {

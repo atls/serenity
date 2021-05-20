@@ -29,6 +29,6 @@ export class ProfilePhotoResolver implements OnModuleInit {
 
     return this.filesService
       .getFiles({ filters: { id: [profile.photo.id] } })
-      .pipe(map((data) => data.rows[0]))
+      .pipe(map((data) => (data as any).rows[0]))
   }
 }

@@ -27,6 +27,7 @@ export class UserLoader implements NestDataLoader, OnModuleInit {
   }
 
   generateDataLoader(): DataLoader<any, any> {
+    // @ts-ignore
     return new DataLoader<string, identity.User>(this.getUsers.bind(this))
   }
 }

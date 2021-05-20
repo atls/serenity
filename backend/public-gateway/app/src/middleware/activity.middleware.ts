@@ -11,7 +11,7 @@ const needTrackActivity = (id) => {
     return true
   }
 
-  return Date.now() - lastActivity.get(id) > 60 * 1000
+  return Date.now() - (lastActivity as any).get(id) > 60 * 1000
 }
 
 @Injectable()

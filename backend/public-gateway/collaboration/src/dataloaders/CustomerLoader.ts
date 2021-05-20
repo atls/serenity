@@ -29,6 +29,7 @@ export class CustomerLoader implements NestDataLoader, OnModuleInit {
   }
 
   generateDataLoader(): DataLoader<any, any> {
+    // @ts-ignore
     return new DataLoader<string, collaboration.Customer>(this.getCustomers.bind(this))
   }
 }

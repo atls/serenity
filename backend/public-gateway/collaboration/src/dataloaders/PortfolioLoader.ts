@@ -25,6 +25,7 @@ export class PortfolioLoader implements NestDataLoader, OnModuleInit {
       .toPromise()
 
   generateDataLoader(): DataLoader<any, any> {
+    // @ts-ignore
     return new DataLoader<string, portfolio.Portfolio>(this.getPortfolio)
   }
 }

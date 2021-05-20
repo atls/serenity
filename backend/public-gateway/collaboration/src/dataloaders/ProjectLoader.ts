@@ -29,6 +29,7 @@ export class ProjectLoader implements NestDataLoader, OnModuleInit {
   }
 
   generateDataLoader(): DataLoader<any, any> {
+    // @ts-ignore
     return new DataLoader<string, collaboration.Project>(this.getProjects.bind(this))
   }
 }

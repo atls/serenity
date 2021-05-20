@@ -31,6 +31,7 @@ export class ReviewLoader implements NestDataLoader, OnModuleInit {
       .toPromise()
 
   generateDataLoader(): DataLoader<any, any> {
+    // @ts-ignore
     return new DataLoader<string, collaboration.Review>(this.getReviews)
   }
 }

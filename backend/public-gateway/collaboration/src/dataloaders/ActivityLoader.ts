@@ -27,6 +27,7 @@ export class ActivityLoader implements NestDataLoader, OnModuleInit {
   }
 
   generateDataLoader(): DataLoader<any, any> {
+    // @ts-ignore
     return new DataLoader<string, hits.Activity[]>(this.getActivities.bind(this))
   }
 }

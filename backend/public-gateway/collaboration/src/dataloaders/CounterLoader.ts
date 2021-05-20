@@ -27,6 +27,7 @@ export class CounterLoader implements NestDataLoader, OnModuleInit {
   }
 
   generateDataLoader(): DataLoader<any, any> {
+    // @ts-ignore
     return new DataLoader<string, hits.Counter[]>(this.getCounters.bind(this))
   }
 }

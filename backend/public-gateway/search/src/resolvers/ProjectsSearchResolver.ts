@@ -41,7 +41,7 @@ export class ProjectsSearchResolver implements OnModuleInit {
   ) {
     const { rows: hits } = await this.searchService.searchProjects({ query, filters }).toPromise()
 
-    if (hits.length === 0) {
+    if ((hits as any).length === 0) {
       return {
         rows: [],
       }
@@ -50,12 +50,13 @@ export class ProjectsSearchResolver implements OnModuleInit {
     const { rows } = await this.collaborationService
       .getProjects({
         filters: {
-          id: hits.map((hit) => hit.id),
+          id: ((hits as any)).map((hit) => hit.id),
         },
       })
       .toPromise()
 
     return {
+      // @ts-ignore
       rows: (rows || []).sort((a, b) => b.publicationDate - a.publicationDate),
     }
   }

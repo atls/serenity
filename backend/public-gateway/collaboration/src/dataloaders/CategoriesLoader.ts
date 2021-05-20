@@ -27,6 +27,7 @@ export class CategoriesLoader implements NestDataLoader, OnModuleInit {
   }
 
   generateDataLoader(): DataLoader<any, any> {
+    // @ts-ignore
     return new DataLoader<string[], catalog.Category[]>(this.getCategories.bind(this))
   }
 }

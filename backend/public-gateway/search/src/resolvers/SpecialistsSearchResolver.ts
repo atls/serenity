@@ -47,7 +47,7 @@ export class SpecialistsSearchResolver implements OnModuleInit {
       .searchSpecialists({ query, filters })
       .toPromise()
 
-    if (hits.length === 0) {
+    if ((hits as any).length === 0) {
       return {
         rows: [],
       }
@@ -56,7 +56,7 @@ export class SpecialistsSearchResolver implements OnModuleInit {
     const { rows } = await this.collaborationService
       .getSpecialists({
         filters: {
-          id: hits.map((hit) => hit.id),
+          id: (hits as any).map((hit) => hit.id),
         },
       })
       .toPromise()
