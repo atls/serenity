@@ -30,6 +30,7 @@ export class SpecialistDataService implements OnModuleInit {
 
   async handle(specialistId: string): Promise<void> {
     const {
+      // @ts-ignore
       rows: [specialist],
     } = await this.collaborationService
       .getSpecialists({ filters: { id: [specialistId] } })
@@ -38,17 +39,18 @@ export class SpecialistDataService implements OnModuleInit {
     const { rows: categories } = await this.catalogService
       .getCategories({
         filters: {
-          id: [...specialist.specialisation.main, ...specialist.specialisation.additional],
+          id: [...(specialist as any).specialisation.main, ...(specialist as any).specialisation.additional],
         },
       })
       .toPromise()
 
     const body = {
-      description: specialist.description,
-      specialisation: categories.map((category) => category.name),
-      specialisationId: categories.map((category) => category.id),
+      description: (categories as any).description,
+      specialisation: (categories as any).map((category) => category.name),
+      specialisationId: (categories as any).map((category) => category.id),
     }
 
+    // @ts-ignore
     await this.elasticsearchService.index({
       index: 'specialists',
       type: 'ciphertrick',

@@ -30,11 +30,14 @@ export class ProjectDataService implements OnModuleInit {
 
   async handle(projectId: string): Promise<void> {
     const {
+      // @ts-ignore
       rows: [project],
     } = await this.collaborationService.getProjects({ filters: { id: [projectId] } }).toPromise()
     const {
+      // @ts-ignore
       rows: [category],
     } = await this.catalogService
+      // @ts-ignore
       .getCategories({ filters: { id: [project.categoryId] } })
       .toPromise()
 
@@ -46,6 +49,7 @@ export class ProjectDataService implements OnModuleInit {
       categoryId: category.id,
     }
 
+    // @ts-ignore
     await this.elasticsearchService.index({
       index: 'projects',
       type: 'ciphertrick',
