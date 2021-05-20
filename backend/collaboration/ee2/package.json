@@ -2,8 +2,8 @@
   "name": "@collaboration/ee2",
   "version": "0.0.1",
   "license": "MIT",
-  "peerDependencies": {
-    "@collaboration/service": "0.0.0",
+  "dependencies": {
+    "@collaboration/service": "0.0.1",
     "@monstrs/nestjs-bus": "0.1.4",
     "@monstrs/nestjs-logger": "0.1.2",
     "@nestjs/microservices": "6.10.1",
