@@ -21,7 +21,7 @@ export class DiscussionEntityRepository extends WriteRepository<DiscussionEntity
     super(DiscussionEntity, Discussion, connection, bus, logger)
   }
 
-  async getByParticipants(customerId: Uuid, specialistId: Uuid): Promise<DiscussionEntity> {
+  async getByParticipants(customerId: Uuid, specialistId: Uuid): Promise<DiscussionEntity | null> {
     const writeModel = await this.repository.findOne({
       where: {
         customerId,

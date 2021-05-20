@@ -60,12 +60,12 @@ describe('project reply', () => {
 
     const { result: reply } = await collaborationService
       .addProjectReply({
-        projectId: project.result.id,
+        projectId: (project as any).result.id,
         specialistId: uuid(),
         message: 'message',
       })
       .toPromise()
 
-    expect(reply.id).toBeDefined()
+    expect((reply as any).id).toBeDefined()
   })
 })

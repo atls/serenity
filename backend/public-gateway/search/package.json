@@ -10,6 +10,7 @@
     "@protos/collaboration": "0.0.1",
     "@protos/interfaces": "0.1.1",
     "@protos/search": "0.0.0",
+    "@public-gateway/collaboration": "workspace:backend/public-gateway/collaboration",
     "rxjs": "6.5.3",
     "type-graphql": "0.17.5"
   },

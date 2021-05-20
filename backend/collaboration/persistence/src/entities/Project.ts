@@ -63,14 +63,14 @@ export class Project {
     type: Date,
     nullable: true,
     transformer: {
-      from(value: Date): number {
+      from(value: Date): number | null {
         if (!value) {
           return null
         }
 
         return value.getTime()
       },
-      to(value: number): Date {
+      to(value: number): Date | null {
         if (!value) {
           return null
         }

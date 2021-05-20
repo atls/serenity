@@ -21,7 +21,7 @@ export class ChatEntityRepository extends WriteRepository<ChatEntity, Chat> {
     super(ChatEntity, Chat, connection, bus, logger)
   }
 
-  async getByParticipants(customerId: Uuid, specialistId: Uuid): Promise<ChatEntity> {
+  async getByParticipants(customerId: Uuid, specialistId: Uuid): Promise<ChatEntity | null> {
     const writeModel = await this.repository.findOne({
       where: {
         customerId,
