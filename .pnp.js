@@ -9579,7 +9579,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/microservices", "virtual:25dbfc4c7f44e251a56a1a52b4e121cc7b7593247609b49709482712aa1a76e91347a1e4ee2ca86eeb881de00167d0bb19459eb5f9689f8902afd316b6d404d4#npm:6.10.5"],
             ["@nestjs/testing", "virtual:25dbfc4c7f44e251a56a1a52b4e121cc7b7593247609b49709482712aa1a76e91347a1e4ee2ca86eeb881de00167d0bb19459eb5f9689f8902afd316b6d404d4#npm:6.10.5"],
             ["@nestjs/typeorm", "virtual:25dbfc4c7f44e251a56a1a52b4e121cc7b7593247609b49709482712aa1a76e91347a1e4ee2ca86eeb881de00167d0bb19459eb5f9689f8902afd316b6d404d4#npm:6.2.0"],
-            ["@node-ts/bus-core", "virtual:5a6321b33e39d4faebbb26dfba51e1de0735d95b41c374be1bea6e0039bdac15a6a4d0fdf5964a0fed21af0bae852c0a23e9459c19ab6d184a8a3585d8950747#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:5a6321b33e39d4faebbb26dfba51e1de0735d95b41c374be1bea6e0039bdac15a6a4d0fdf5964a0fed21af0bae852c0a23e9459c19ab6d184a8a3585d8950747#npm:0.6.3"],
             ["class-validator", "npm:0.11.0"],
             ["typeorm", "npm:0.2.19"],
             ["uuid", "npm:3.4.0"]
@@ -9593,11 +9593,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@collaboration/domain", "workspace:backend/collaboration/domain"],
             ["@nestjs/common", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:6.10.5"],
-            ["@node-ts/bus-core", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.1.10"],
             ["@node-ts/bus-postgres", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.3.10"],
             ["@node-ts/bus-workflow", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.4.9"],
-            ["@node-ts/ddd", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.1.6"],
+            ["@node-ts/ddd", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:0.1.6"],
             ["@node-ts/ddd-types", "npm:0.1.4"],
             ["@node-ts/logger-core", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:0.1.0"],
             ["uuid", "npm:3.4.0"]
@@ -9615,7 +9615,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@monstrs/nestjs-logger", "virtual:5ac937a060cba6febb2b9c642b774ab65a6e212f65f9bc56d23a0a1c6570427875667db5a177f50336e229a071aa9f3ad6c17a2210f6638ed568912c43a16836#npm:0.1.2"],
             ["@nestjs/microservices", "virtual:280f45be2fbf1aa60b87ec1addd87d688dba2a5fa8034169237be81d89763fd72289cecc9b86f510ce0738c65dcafa2510b5812ceb66510c4feccde6b43c544c#npm:6.10.5"],
             ["@nestjs/testing", "virtual:5ac937a060cba6febb2b9c642b774ab65a6e212f65f9bc56d23a0a1c6570427875667db5a177f50336e229a071aa9f3ad6c17a2210f6638ed568912c43a16836#npm:6.10.5"],
-            ["@node-ts/bus-core", "virtual:5a6321b33e39d4faebbb26dfba51e1de0735d95b41c374be1bea6e0039bdac15a6a4d0fdf5964a0fed21af0bae852c0a23e9459c19ab6d184a8a3585d8950747#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:5a6321b33e39d4faebbb26dfba51e1de0735d95b41c374be1bea6e0039bdac15a6a4d0fdf5964a0fed21af0bae852c0a23e9459c19ab6d184a8a3585d8950747#npm:0.6.3"],
             ["@protos/collaboration", "workspace:backend/protos/collaboration"],
             ["@protos/interfaces", "workspace:backend/protos/interfaces"],
             ["reflect-metadata", "npm:0.1.13"],
@@ -11863,7 +11863,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/common", "virtual:4462bcbc60e0372660e40e3b94c6db55c52e42420899ad809625dbf7f33ae12de821b4413608306e491ba2f1ee2fcfa153049b29cd8874b640434797b647dcf2#npm:6.10.5"],
             ["@nestjs/core", "virtual:4462bcbc60e0372660e40e3b94c6db55c52e42420899ad809625dbf7f33ae12de821b4413608306e491ba2f1ee2fcfa153049b29cd8874b640434797b647dcf2#npm:6.10.5"],
             ["@nestjs/typeorm", "virtual:540d41fa75a16bbb36d3f481a02a07475c6b9f3b9cf18b7ccc6d2e8b7c518a6e167ea5feba0573d9ad56d79afe055ba9e607250fa915050de8aee1a5593d36ad#npm:6.2.0"],
-            ["@node-ts/bus-core", "virtual:540d41fa75a16bbb36d3f481a02a07475c6b9f3b9cf18b7ccc6d2e8b7c518a6e167ea5feba0573d9ad56d79afe055ba9e607250fa915050de8aee1a5593d36ad#npm:0.6.3"],
+            ["@node-ts/bus-core", "virtual:5a6321b33e39d4faebbb26dfba51e1de0735d95b41c374be1bea6e0039bdac15a6a4d0fdf5964a0fed21af0bae852c0a23e9459c19ab6d184a8a3585d8950747#npm:0.6.3"],
             ["@protos/mailer", "workspace:backend/protos/mailer"],
             ["@types/node", "npm:14.14.45"],
             ["class-validator", "npm:0.11.0"],
@@ -11938,7 +11938,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@monstrs/nestjs-logger", null],
             ["@nestjs/common", "virtual:4462bcbc60e0372660e40e3b94c6db55c52e42420899ad809625dbf7f33ae12de821b4413608306e491ba2f1ee2fcfa153049b29cd8874b640434797b647dcf2#npm:6.10.5"],
             ["@nestjs/core", "virtual:4462bcbc60e0372660e40e3b94c6db55c52e42420899ad809625dbf7f33ae12de821b4413608306e491ba2f1ee2fcfa153049b29cd8874b640434797b647dcf2#npm:6.10.5"],
-            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.1.10"],
             ["@node-ts/bus-rabbitmq", "virtual:1d5c4eec4ca8da0e696f4473bc83c5daa608fba3bdeb88253a8d071837300a762244e7e56fcec76f3cfe5dfe8b33314583ad8674920d97f5a1289e04638f1ed8#npm:0.3.9"],
             ["@node-ts/logger-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.1.1"],
@@ -11973,7 +11973,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@monstrs/nestjs-logger", null],
             ["@nestjs/common", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:6.10.5"],
             ["@nestjs/core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:6.10.5"],
-            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.1.10"],
             ["@node-ts/bus-rabbitmq", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.3.9"],
             ["@node-ts/logger-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.1.1"],
@@ -12008,7 +12008,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@monstrs/nestjs-logger", "virtual:5a95fa4b89c08ab79154b89973544919e223fa0c4366b1daa1844ad624107f661a255b0250a62f3ba3597cb391e0d11fa589109e832d4e4839cb40203b7e02fc#npm:0.1.2"],
             ["@nestjs/common", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:6.10.5"],
             ["@nestjs/core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:6.10.5"],
-            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.1.10"],
             ["@node-ts/bus-rabbitmq", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.3.9"],
             ["@node-ts/logger-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.1.1"],
@@ -12042,7 +12042,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@monstrs/nestjs-logger", "virtual:5ac937a060cba6febb2b9c642b774ab65a6e212f65f9bc56d23a0a1c6570427875667db5a177f50336e229a071aa9f3ad6c17a2210f6638ed568912c43a16836#npm:0.1.2"],
             ["@nestjs/common", null],
             ["@nestjs/core", "virtual:1a9b3d180b6e9ff49bc067e2f7f45d3684bb73ce65223e58d5f56e6ba6065f40e216c20c0676cb4f740d23f872006b82fc068669100edd17297b06c6f76a0220#npm:6.10.5"],
-            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.1.10"],
             ["@node-ts/bus-rabbitmq", "virtual:1d5c4eec4ca8da0e696f4473bc83c5daa608fba3bdeb88253a8d071837300a762244e7e56fcec76f3cfe5dfe8b33314583ad8674920d97f5a1289e04638f1ed8#npm:0.3.9"],
             ["@node-ts/logger-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.1.1"],
@@ -12076,7 +12076,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@monstrs/nestjs-logger", null],
             ["@nestjs/common", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:6.10.5"],
             ["@nestjs/core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:6.10.5"],
-            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.1.10"],
             ["@node-ts/bus-rabbitmq", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.3.9"],
             ["@node-ts/logger-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.1.1"],
@@ -13556,13 +13556,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@node-ts/bus-core", [
-        ["npm:0.4.9", {
-          "packageLocation": "./.yarn/cache/@node-ts-bus-core-npm-0.4.9-a8eb47d22a-18d745adec.zip/node_modules/@node-ts/bus-core/",
-          "packageDependencies": [
-            ["@node-ts/bus-core", "npm:0.4.9"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:0.6.3", {
           "packageLocation": "./.yarn/cache/@node-ts-bus-core-npm-0.6.3-83b1ea568d-d954e5fd72.zip/node_modules/@node-ts/bus-core/",
           "packageDependencies": [
@@ -13570,24 +13563,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["npm:0.6.5", {
-          "packageLocation": "./.yarn/cache/@node-ts-bus-core-npm-0.6.5-d9696bcf6b-5caa2f204b.zip/node_modules/@node-ts/bus-core/",
+        ["virtual:0c5404ca004b6fac54c89d765587829cac7108a326341bdb8a94131cf01f633f61102f3572fa38f78c638c91a9481e03e01095d86e6d506b2098667d7ee0bcf9#npm:0.6.3", {
+          "packageLocation": "./.yarn/$$virtual/@node-ts-bus-core-virtual-f9383a6cb1/0/cache/@node-ts-bus-core-npm-0.6.3-83b1ea568d-d954e5fd72.zip/node_modules/@node-ts/bus-core/",
           "packageDependencies": [
-            ["@node-ts/bus-core", "npm:0.6.5"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:0c5404ca004b6fac54c89d765587829cac7108a326341bdb8a94131cf01f633f61102f3572fa38f78c638c91a9481e03e01095d86e6d506b2098667d7ee0bcf9#npm:0.6.5", {
-          "packageLocation": "./.yarn/$$virtual/@node-ts-bus-core-virtual-cd2a3cc30e/0/cache/@node-ts-bus-core-npm-0.6.5-d9696bcf6b-5caa2f204b.zip/node_modules/@node-ts/bus-core/",
-          "packageDependencies": [
-            ["@node-ts/bus-core", "virtual:0c5404ca004b6fac54c89d765587829cac7108a326341bdb8a94131cf01f633f61102f3572fa38f78c638c91a9481e03e01095d86e6d506b2098667d7ee0bcf9#npm:0.6.5"],
+            ["@node-ts/bus-core", "virtual:0c5404ca004b6fac54c89d765587829cac7108a326341bdb8a94131cf01f633f61102f3572fa38f78c638c91a9481e03e01095d86e6d506b2098667d7ee0bcf9#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.3.1"],
             ["@node-ts/logger-core", "virtual:0c5404ca004b6fac54c89d765587829cac7108a326341bdb8a94131cf01f633f61102f3572fa38f78c638c91a9481e03e01095d86e6d506b2098667d7ee0bcf9#npm:0.1.1"],
             ["@types/inversify", null],
             ["@types/node", "npm:14.14.45"],
             ["@types/node-ts__logger-core", null],
             ["autobind-decorator", "npm:2.4.0"],
-            ["class-transformer", "npm:0.3.1"],
+            ["class-transformer", "npm:0.2.3"],
             ["inversify", null],
             ["reflect-metadata", "npm:0.1.13"],
             ["serialize-error", "npm:4.1.0"],
@@ -13598,29 +13584,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/inversify",
             "@types/node-ts__logger-core",
             "inversify"
-          ],
-          "linkType": "HARD",
-        }],
-        ["virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.4.9", {
-          "packageLocation": "./.yarn/$$virtual/@node-ts-bus-core-virtual-f0fc5cdf95/0/cache/@node-ts-bus-core-npm-0.4.9-a8eb47d22a-18d745adec.zip/node_modules/@node-ts/bus-core/",
-          "packageDependencies": [
-            ["@node-ts/bus-core", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.4.9"],
-            ["@node-ts/bus-messages", "npm:0.1.10"],
-            ["@node-ts/logger-core", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:0.1.0"],
-            ["@types/inversify", null],
-            ["@types/node", "npm:14.14.45"],
-            ["@types/node-ts__logger-core", null],
-            ["autobind-decorator", "npm:2.4.0"],
-            ["class-transformer", "npm:0.2.3"],
-            ["inversify", "npm:5.0.5"],
-            ["reflect-metadata", "npm:0.1.13"],
-            ["serialize-error", "npm:4.1.0"],
-            ["tslib", "npm:1.14.1"]
-          ],
-          "packagePeers": [
-            "@node-ts/logger-core",
-            "@types/inversify",
-            "@types/node-ts__logger-core"
           ],
           "linkType": "HARD",
         }],
@@ -13647,10 +13610,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:540d41fa75a16bbb36d3f481a02a07475c6b9f3b9cf18b7ccc6d2e8b7c518a6e167ea5feba0573d9ad56d79afe055ba9e607250fa915050de8aee1a5593d36ad#npm:0.6.3", {
-          "packageLocation": "./.yarn/$$virtual/@node-ts-bus-core-virtual-e40b0959d9/0/cache/@node-ts-bus-core-npm-0.6.3-83b1ea568d-d954e5fd72.zip/node_modules/@node-ts/bus-core/",
+        ["virtual:5a6321b33e39d4faebbb26dfba51e1de0735d95b41c374be1bea6e0039bdac15a6a4d0fdf5964a0fed21af0bae852c0a23e9459c19ab6d184a8a3585d8950747#npm:0.6.3", {
+          "packageLocation": "./.yarn/$$virtual/@node-ts-bus-core-virtual-00d28af3b4/0/cache/@node-ts-bus-core-npm-0.6.3-83b1ea568d-d954e5fd72.zip/node_modules/@node-ts/bus-core/",
           "packageDependencies": [
-            ["@node-ts/bus-core", "virtual:540d41fa75a16bbb36d3f481a02a07475c6b9f3b9cf18b7ccc6d2e8b7c518a6e167ea5feba0573d9ad56d79afe055ba9e607250fa915050de8aee1a5593d36ad#npm:0.6.3"],
+            ["@node-ts/bus-core", "virtual:5a6321b33e39d4faebbb26dfba51e1de0735d95b41c374be1bea6e0039bdac15a6a4d0fdf5964a0fed21af0bae852c0a23e9459c19ab6d184a8a3585d8950747#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.3.1"],
             ["@node-ts/logger-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.1.1"],
             ["@types/inversify", null],
@@ -13669,33 +13632,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:5a6321b33e39d4faebbb26dfba51e1de0735d95b41c374be1bea6e0039bdac15a6a4d0fdf5964a0fed21af0bae852c0a23e9459c19ab6d184a8a3585d8950747#npm:0.4.9", {
-          "packageLocation": "./.yarn/$$virtual/@node-ts-bus-core-virtual-86fa0c6d50/0/cache/@node-ts-bus-core-npm-0.4.9-a8eb47d22a-18d745adec.zip/node_modules/@node-ts/bus-core/",
+        ["virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.6.3", {
+          "packageLocation": "./.yarn/$$virtual/@node-ts-bus-core-virtual-39c57b3675/0/cache/@node-ts-bus-core-npm-0.6.3-83b1ea568d-d954e5fd72.zip/node_modules/@node-ts/bus-core/",
           "packageDependencies": [
-            ["@node-ts/bus-core", "virtual:5a6321b33e39d4faebbb26dfba51e1de0735d95b41c374be1bea6e0039bdac15a6a4d0fdf5964a0fed21af0bae852c0a23e9459c19ab6d184a8a3585d8950747#npm:0.4.9"],
-            ["@node-ts/bus-messages", "npm:0.1.10"],
-            ["@node-ts/logger-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.1.1"],
-            ["@types/inversify", null],
-            ["@types/node", "npm:14.14.45"],
-            ["@types/node-ts__logger-core", null],
-            ["autobind-decorator", "npm:2.4.0"],
-            ["class-transformer", "npm:0.2.3"],
-            ["inversify", "npm:5.0.5"],
-            ["reflect-metadata", "npm:0.1.13"],
-            ["serialize-error", "npm:4.1.0"],
-            ["tslib", "npm:1.14.1"]
-          ],
-          "packagePeers": [
-            "@types/inversify",
-            "@types/node-ts__logger-core"
-          ],
-          "linkType": "HARD",
-        }],
-        ["virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.4.9", {
-          "packageLocation": "./.yarn/$$virtual/@node-ts-bus-core-virtual-1f01a920cd/0/cache/@node-ts-bus-core-npm-0.4.9-a8eb47d22a-18d745adec.zip/node_modules/@node-ts/bus-core/",
-          "packageDependencies": [
-            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.4.9"],
-            ["@node-ts/bus-messages", "npm:0.1.10"],
+            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.6.3"],
+            ["@node-ts/bus-messages", "npm:0.3.1"],
             ["@node-ts/logger-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.1.1"],
             ["@types/inversify", null],
             ["@types/node", "npm:14.14.45"],
@@ -13715,11 +13656,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:a5ef226bb62f4153af7370ce581140a3143625ff91b1f15f7db6b64a0e18932405c8def60fb849b1f4ee6aa7eea81761e9e5d03fedbb873e19db9a5c561110db#npm:0.4.9", {
-          "packageLocation": "./.yarn/$$virtual/@node-ts-bus-core-virtual-536e1d1a8f/0/cache/@node-ts-bus-core-npm-0.4.9-a8eb47d22a-18d745adec.zip/node_modules/@node-ts/bus-core/",
+        ["virtual:a5ef226bb62f4153af7370ce581140a3143625ff91b1f15f7db6b64a0e18932405c8def60fb849b1f4ee6aa7eea81761e9e5d03fedbb873e19db9a5c561110db#npm:0.6.3", {
+          "packageLocation": "./.yarn/$$virtual/@node-ts-bus-core-virtual-9c8a48b72b/0/cache/@node-ts-bus-core-npm-0.6.3-83b1ea568d-d954e5fd72.zip/node_modules/@node-ts/bus-core/",
           "packageDependencies": [
-            ["@node-ts/bus-core", "virtual:a5ef226bb62f4153af7370ce581140a3143625ff91b1f15f7db6b64a0e18932405c8def60fb849b1f4ee6aa7eea81761e9e5d03fedbb873e19db9a5c561110db#npm:0.4.9"],
-            ["@node-ts/bus-messages", "npm:0.1.10"],
+            ["@node-ts/bus-core", "virtual:a5ef226bb62f4153af7370ce581140a3143625ff91b1f15f7db6b64a0e18932405c8def60fb849b1f4ee6aa7eea81761e9e5d03fedbb873e19db9a5c561110db#npm:0.6.3"],
+            ["@node-ts/bus-messages", "npm:0.3.1"],
             ["@node-ts/logger-core", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:0.1.0"],
             ["@types/inversify", null],
             ["@types/node", "npm:14.14.45"],
@@ -13786,7 +13727,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@node-ts-bus-postgres-virtual-a5ef226bb6/0/cache/@node-ts-bus-postgres-npm-0.3.10-60975c562a-393be36d4a.zip/node_modules/@node-ts/bus-postgres/",
           "packageDependencies": [
             ["@node-ts/bus-postgres", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.3.10"],
-            ["@node-ts/bus-core", "virtual:a5ef226bb62f4153af7370ce581140a3143625ff91b1f15f7db6b64a0e18932405c8def60fb849b1f4ee6aa7eea81761e9e5d03fedbb873e19db9a5c561110db#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:a5ef226bb62f4153af7370ce581140a3143625ff91b1f15f7db6b64a0e18932405c8def60fb849b1f4ee6aa7eea81761e9e5d03fedbb873e19db9a5c561110db#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.1.10"],
             ["@node-ts/bus-workflow", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.4.9"],
             ["@node-ts/code-standards", null],
@@ -13829,7 +13770,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@node-ts-bus-rabbitmq-virtual-ac56c2f10f/0/cache/@node-ts-bus-rabbitmq-npm-0.3.9-fcdcfedc4f-45fef0774f.zip/node_modules/@node-ts/bus-rabbitmq/",
           "packageDependencies": [
             ["@node-ts/bus-rabbitmq", "virtual:1d5c4eec4ca8da0e696f4473bc83c5daa608fba3bdeb88253a8d071837300a762244e7e56fcec76f3cfe5dfe8b33314583ad8674920d97f5a1289e04638f1ed8#npm:0.3.9"],
-            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.1.10"],
             ["@node-ts/logger-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.1.1"],
             ["@types/inversify", null],
@@ -13858,7 +13799,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@node-ts-bus-rabbitmq-virtual-2e973b5858/0/cache/@node-ts-bus-rabbitmq-npm-0.3.9-fcdcfedc4f-45fef0774f.zip/node_modules/@node-ts/bus-rabbitmq/",
           "packageDependencies": [
             ["@node-ts/bus-rabbitmq", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.3.9"],
-            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.1.10"],
             ["@node-ts/logger-core", "virtual:a3249ae4568a88856944224e63a872f7f6b0a57d08f4e130f0ec02b06b1846fad55c46c4347d2cbf8f4f45accc0db4129866bbf2c601ec479611b9927544c0cb#npm:0.1.1"],
             ["@types/inversify", null],
@@ -13896,7 +13837,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@node-ts-bus-workflow-virtual-e7302f15a4/0/cache/@node-ts-bus-workflow-npm-0.4.9-0607418311-351a3d021c.zip/node_modules/@node-ts/bus-workflow/",
           "packageDependencies": [
             ["@node-ts/bus-workflow", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.4.9"],
-            ["@node-ts/bus-core", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.1.10"],
             ["@node-ts/logger-core", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:0.1.0"],
             ["@types/inversify", null],
@@ -13936,32 +13877,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.1.6", {
-          "packageLocation": "./.yarn/$$virtual/@node-ts-ddd-virtual-5e0d29161d/0/cache/@node-ts-ddd-npm-0.1.6-8cbec089ff-e8fb80fa2c.zip/node_modules/@node-ts/ddd/",
-          "packageDependencies": [
-            ["@node-ts/ddd", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.1.6"],
-            ["@node-ts/bus-core", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.4.9"],
-            ["@node-ts/bus-messages", "npm:0.1.10"],
-            ["@node-ts/ddd-types", "npm:0.1.4"],
-            ["@node-ts/logger-core", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:0.1.0"],
-            ["@types/inversify", null],
-            ["@types/node-ts__bus-core", null],
-            ["@types/node-ts__logger-core", null],
-            ["change-case", "npm:3.1.0"],
-            ["inversify", null],
-            ["reflect-metadata", "npm:0.1.13"],
-            ["typeorm", "npm:0.2.32"]
-          ],
-          "packagePeers": [
-            "@node-ts/bus-core",
-            "@node-ts/logger-core",
-            "@types/inversify",
-            "@types/node-ts__bus-core",
-            "@types/node-ts__logger-core",
-            "inversify"
-          ],
-          "linkType": "HARD",
-        }],
         ["virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:0.1.6", {
           "packageLocation": "./.yarn/$$virtual/@node-ts-ddd-virtual-5586b61e4d/0/cache/@node-ts-ddd-npm-0.1.6-8cbec089ff-e8fb80fa2c.zip/node_modules/@node-ts/ddd/",
           "packageDependencies": [
@@ -13992,7 +13907,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@node-ts-ddd-virtual-0c5404ca00/0/cache/@node-ts-ddd-npm-0.1.6-8cbec089ff-e8fb80fa2c.zip/node_modules/@node-ts/ddd/",
           "packageDependencies": [
             ["@node-ts/ddd", "virtual:5a95fa4b89c08ab79154b89973544919e223fa0c4366b1daa1844ad624107f661a255b0250a62f3ba3597cb391e0d11fa589109e832d4e4839cb40203b7e02fc#npm:0.1.6"],
-            ["@node-ts/bus-core", "virtual:0c5404ca004b6fac54c89d765587829cac7108a326341bdb8a94131cf01f633f61102f3572fa38f78c638c91a9481e03e01095d86e6d506b2098667d7ee0bcf9#npm:0.6.5"],
+            ["@node-ts/bus-core", "virtual:0c5404ca004b6fac54c89d765587829cac7108a326341bdb8a94131cf01f633f61102f3572fa38f78c638c91a9481e03e01095d86e6d506b2098667d7ee0bcf9#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.1.10"],
             ["@node-ts/ddd-types", "npm:0.1.4"],
             ["@node-ts/logger-core", "virtual:0c5404ca004b6fac54c89d765587829cac7108a326341bdb8a94131cf01f633f61102f3572fa38f78c638c91a9481e03e01095d86e6d506b2098667d7ee0bcf9#npm:0.1.1"],
@@ -14016,7 +13931,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@node-ts-ddd-virtual-1af9d75a03/0/cache/@node-ts-ddd-npm-0.1.4-cbf1e85574-94e2c0d9ba.zip/node_modules/@node-ts/ddd/",
           "packageDependencies": [
             ["@node-ts/ddd", "virtual:6fcaecc28645117dcb87b5384a8601f2620eab16bbd5eb483b6d1a474ac49fd0f6a5ee5e84a150020427caa887d07bb518f2f07ee6854df0c25ea71cc8439fed#npm:0.1.4"],
-            ["@node-ts/bus-core", "virtual:0c5404ca004b6fac54c89d765587829cac7108a326341bdb8a94131cf01f633f61102f3572fa38f78c638c91a9481e03e01095d86e6d506b2098667d7ee0bcf9#npm:0.6.5"],
+            ["@node-ts/bus-core", "virtual:0c5404ca004b6fac54c89d765587829cac7108a326341bdb8a94131cf01f633f61102f3572fa38f78c638c91a9481e03e01095d86e6d506b2098667d7ee0bcf9#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.1.10"],
             ["@node-ts/ddd-types", "npm:0.1.4"],
             ["@node-ts/logger-core", "virtual:0c5404ca004b6fac54c89d765587829cac7108a326341bdb8a94131cf01f633f61102f3572fa38f78c638c91a9481e03e01095d86e6d506b2098667d7ee0bcf9#npm:0.1.1"],
@@ -14040,7 +13955,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@node-ts-ddd-virtual-d2f2161ba5/0/cache/@node-ts-ddd-npm-0.1.4-cbf1e85574-94e2c0d9ba.zip/node_modules/@node-ts/ddd/",
           "packageDependencies": [
             ["@node-ts/ddd", "virtual:863533684bb925ca5385bdf02db1112ec5dba28683698d6b28abe5cbb276cd0b318c85842c183e54317e9f382d11dc4235d70ea2800751225c6b53373ad932a7#npm:0.1.4"],
-            ["@node-ts/bus-core", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.1.10"],
             ["@node-ts/ddd-types", "npm:0.1.4"],
             ["@node-ts/logger-core", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:0.1.0"],
@@ -14249,7 +14164,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@portfolio/domain", "workspace:backend/portfolio/domain"],
             ["@nestjs/common", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:6.10.5"],
-            ["@node-ts/bus-core", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:3384f94bdf9c1a64600414f278486dd52b0a3f733653e47c7c6a510efbfb8e67cad630b45315eb309e2442cffdd1787520a0d98121cf7fcee0eedf0534eb0098#npm:0.6.3"],
             ["@node-ts/bus-messages", "npm:0.1.10"],
             ["@node-ts/bus-postgres", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.3.10"],
             ["@node-ts/bus-workflow", "virtual:2d8cc823bb82459ccc78b0edc79640fe0e0ffac85124779cde0deadb8e6ddfba03d6193f6ab39986f226e659158e6de015a7b9e5b299775cfb3bb18a4986c9fa#npm:0.4.9"],
@@ -14872,7 +14787,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/elasticsearch", "virtual:ae20004a527ed4af7457f46abd98d1ee7be1cb09a5ea8b764bca02a5c757fad7a35d8644723bcd17c2a1fd2744165de5c6de3495f7d28be9c11384b427906227#npm:7.0.0"],
             ["@nestjs/microservices", "virtual:4462bcbc60e0372660e40e3b94c6db55c52e42420899ad809625dbf7f33ae12de821b4413608306e491ba2f1ee2fcfa153049b29cd8874b640434797b647dcf2#npm:6.10.5"],
             ["@nestjs/terminus", "virtual:4462bcbc60e0372660e40e3b94c6db55c52e42420899ad809625dbf7f33ae12de821b4413608306e491ba2f1ee2fcfa153049b29cd8874b640434797b647dcf2#npm:6.5.3"],
-            ["@node-ts/bus-core", "virtual:5a6321b33e39d4faebbb26dfba51e1de0735d95b41c374be1bea6e0039bdac15a6a4d0fdf5964a0fed21af0bae852c0a23e9459c19ab6d184a8a3585d8950747#npm:0.4.9"],
+            ["@node-ts/bus-core", "virtual:5a6321b33e39d4faebbb26dfba51e1de0735d95b41c374be1bea6e0039bdac15a6a4d0fdf5964a0fed21af0bae852c0a23e9459c19ab6d184a8a3585d8950747#npm:0.6.3"],
             ["@protos/catalog", "workspace:backend/protos/catalog"],
             ["@protos/collaboration", "workspace:backend/protos/collaboration"],
             ["@protos/interfaces", "workspace:backend/protos/interfaces"],
@@ -18505,13 +18420,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-validator-npm-10.11.3-b726e6d860-8b1c0c744e.zip/node_modules/@types/validator/",
           "packageDependencies": [
             ["@types/validator", "npm:10.11.3"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:13.1.3", {
-          "packageLocation": "./.yarn/cache/@types-validator-npm-13.1.3-4191eefe06-47e1de4aeb.zip/node_modules/@types/validator/",
-          "packageDependencies": [
-            ["@types/validator", "npm:13.1.3"]
           ],
           "linkType": "HARD",
         }]
@@ -25231,16 +25139,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/validator", "npm:10.11.3"],
             ["google-libphonenumber", "npm:3.2.17"],
             ["validator", "npm:12.0.0"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:0.13.1", {
-          "packageLocation": "./.yarn/cache/class-validator-npm-0.13.1-6dc5e76ff9-09a7d83213.zip/node_modules/class-validator/",
-          "packageDependencies": [
-            ["class-validator", "npm:0.13.1"],
-            ["@types/validator", "npm:13.1.3"],
-            ["libphonenumber-js", "npm:1.9.11"],
-            ["validator", "npm:13.5.2"]
           ],
           "linkType": "HARD",
         }]
@@ -35150,15 +35048,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["levn", "npm:0.4.1"],
             ["prelude-ls", "npm:1.2.1"],
             ["type-check", "npm:0.4.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["libphonenumber-js", [
-        ["npm:1.9.11", {
-          "packageLocation": "./.yarn/cache/libphonenumber-js-npm-1.9.11-fe4763fb8e-914bff177b.zip/node_modules/libphonenumber-js/",
-          "packageDependencies": [
-            ["libphonenumber-js", "npm:1.9.11"]
           ],
           "linkType": "HARD",
         }]
@@ -46586,7 +46475,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.14.45"],
             ["@types/semver", "npm:6.2.2"],
             ["@types/types__graphql", null],
-            ["class-validator", "npm:0.13.1"],
+            ["class-validator", "npm:0.11.0"],
             ["glob", "npm:7.1.6"],
             ["graphql", "npm:14.5.8"],
             ["graphql-query-complexity", "virtual:f04f22ddf615569e121d37b095bdd5f64f5fd3dfdb53bd8720becd85dd71bd94fe4b6c06cb93c4256e85f5d4cddc90e4063cb1f41a54278dbd7937b904e16163#npm:0.3.0"],
@@ -46610,7 +46499,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.14.45"],
             ["@types/semver", "npm:6.2.2"],
             ["@types/types__graphql", null],
-            ["class-validator", "npm:0.13.1"],
+            ["class-validator", "npm:0.11.0"],
             ["glob", "npm:7.1.6"],
             ["graphql", "npm:14.5.8"],
             ["graphql-query-complexity", "virtual:b404b14326a1ae3270fc79a72f110639334b2e50d166dd9e8e58a29b77d29eeeaa94f2a17a171ba37a0b99a52bb7b853bf112dd4a4e3226d2c5198642df81423#npm:0.3.0"],
@@ -46633,7 +46522,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.14.45"],
             ["@types/semver", "npm:6.2.2"],
             ["@types/types__graphql", null],
-            ["class-validator", "npm:0.13.1"],
+            ["class-validator", "npm:0.11.0"],
             ["glob", "npm:7.1.6"],
             ["graphql", null],
             ["graphql-query-complexity", "virtual:606aaf81411cd9f0a33af37bdf1bda02160681e40ee605c992ead4982a95c3fdd2d6b3771ab66614c47f81611a1d70da11cf6fd601e0278aa5e4c12ec94728b6#npm:0.3.0"],
@@ -47578,13 +47467,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/validator-npm-12.0.0-69a6146a2b-5e66eedf12.zip/node_modules/validator/",
           "packageDependencies": [
             ["validator", "npm:12.0.0"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:13.5.2", {
-          "packageLocation": "./.yarn/cache/validator-npm-13.5.2-a981b4609f-6da12682ad.zip/node_modules/validator/",
-          "packageDependencies": [
-            ["validator", "npm:13.5.2"]
           ],
           "linkType": "HARD",
         }]

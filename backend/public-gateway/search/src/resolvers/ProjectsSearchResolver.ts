@@ -50,7 +50,7 @@ export class ProjectsSearchResolver implements OnModuleInit {
     const { rows } = await this.collaborationService
       .getProjects({
         filters: {
-          id: ((hits as any)).map((hit) => hit.id),
+          id: (hits as any).map((hit) => hit.id),
         },
       })
       .toPromise()

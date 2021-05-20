@@ -16,6 +16,7 @@ export class PortfolioEntityRepository extends WriteRepository<PortfolioEntity, 
     private readonly logger: Logger,
     private readonly bus: Bus
   ) {
+    // @ts-ignore
     super(PortfolioEntity, Portfolio, connection, bus, logger)
   }
 }

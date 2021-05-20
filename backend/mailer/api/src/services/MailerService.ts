@@ -12,6 +12,7 @@ export class MailerService {
   ) {}
 
   findSending(id: string): Promise<Sending> {
+    // @ts-ignore
     return this.sendingRepository.findOne(id)
   }
 }

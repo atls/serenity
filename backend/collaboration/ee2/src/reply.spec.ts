@@ -29,6 +29,7 @@ describe('project reply', () => {
       imports: [ServiceModule, ClientsModule.register([collaborationClientOptions])],
     })
       .overrideProvider(BUS_SYMBOLS.Transport)
+      // @ts-ignore
       .useValue(new MemoryQueue(new Logger()))
       .compile()
 

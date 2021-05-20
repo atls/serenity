@@ -39,7 +39,10 @@ export class SpecialistDataService implements OnModuleInit {
     const { rows: categories } = await this.catalogService
       .getCategories({
         filters: {
-          id: [...(specialist as any).specialisation.main, ...(specialist as any).specialisation.additional],
+          id: [
+            ...(specialist as any).specialisation.main,
+            ...(specialist as any).specialisation.additional,
+          ],
         },
       })
       .toPromise()

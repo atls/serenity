@@ -5646,44 +5646,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@node-ts/bus-core@npm:*":
-  version: 0.6.5
-  resolution: "@node-ts/bus-core@npm:0.6.5"
-  dependencies:
-    "@node-ts/bus-messages": ^0.3.1
-    "@types/node": ^12.12.39
-    autobind-decorator: ^2.4.0
-    class-transformer: ^0.3.1
-    inversify: ^5.0.1
-    reflect-metadata: ^0.1.13
-    serialize-error: ^4.1.0
-    tslib: ^1.11.1
-  peerDependencies:
-    "@node-ts/logger-core": ^0.0.17
-    inversify: ">= 5.0.1"
-  checksum: 5caa2f204b1c15df818a5adc2304b9e8e9b0d059efe52651fb021080592ce8bc0894478485eefd1c5e9d18d4c6489b9e247f37dfc86d8d93cc1a8c939a4be8b3
-  languageName: node
-  linkType: hard
-
-"@node-ts/bus-core@npm:0.4.9, @node-ts/bus-core@npm:^0.4.0, @node-ts/bus-core@npm:^0.4.7, @node-ts/bus-core@npm:^0.4.9":
-  version: 0.4.9
-  resolution: "@node-ts/bus-core@npm:0.4.9"
-  dependencies:
-    "@node-ts/bus-messages": ^0.1.4
-    "@types/node": ^12.0.0
-    autobind-decorator: ^2.4.0
-    class-transformer: ^0.2.0
-    inversify: ^5.0.1
-    reflect-metadata: ^0.1.13
-    serialize-error: ^4.1.0
-    tslib: ^1.9.3
-  peerDependencies:
-    "@node-ts/logger-core": ^0.0.17
-    inversify: ">= 5.0.1"
-  checksum: 18d745adec9892a8ec79f56dd0300ee12cf4dfcaf730715cb32eeac819e947a3861d0c60399d4b33bbbf5b5bb9fcdfd26ccc3fea3bb3b29e76ceba9b7c9f2048
-  languageName: node
-  linkType: hard
-
 "@node-ts/bus-core@npm:0.6.3":
   version: 0.6.3
   resolution: "@node-ts/bus-core@npm:0.6.3"
@@ -5703,7 +5665,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@node-ts/bus-messages@npm:0.1.10, @node-ts/bus-messages@npm:^0.1.0, @node-ts/bus-messages@npm:^0.1.10, @node-ts/bus-messages@npm:^0.1.4":
+"@node-ts/bus-messages@npm:0.1.10, @node-ts/bus-messages@npm:^0.1.0, @node-ts/bus-messages@npm:^0.1.10":
   version: 0.1.10
   resolution: "@node-ts/bus-messages@npm:0.1.10"
   dependencies:
@@ -5730,7 +5692,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@node-ts/bus-messages@npm:^0.3.0, @node-ts/bus-messages@npm:^0.3.1":
+"@node-ts/bus-messages@npm:^0.3.0":
   version: 0.3.1
   resolution: "@node-ts/bus-messages@npm:0.3.1"
   dependencies:
@@ -8945,13 +8907,6 @@ __metadata:
   version: 10.11.3
   resolution: "@types/validator@npm:10.11.3"
   checksum: 8b1c0c744e0068634e6b1f8af554af2a1f212f3de6d891f88318b317677cb36eb0a25ab6a1ac0df44d682cf95252ff970c9169fab081888a8a66f902f246b1f5
-  languageName: node
-  linkType: hard
-
-"@types/validator@npm:^13.1.3":
-  version: 13.1.3
-  resolution: "@types/validator@npm:13.1.3"
-  checksum: 47e1de4aebd3efbf97deea2d0f72b2308c924f95833c7a18d4f5d7cbd500f875fed9afd85038022ca352e3effb82241de149e5f1cbb32957b99fd7b0484641f3
   languageName: node
   linkType: hard
 
@@ -14146,14 +14101,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"class-transformer@npm:0.3.1, class-transformer@npm:^0.3.1":
+"class-transformer@npm:0.3.1":
   version: 0.3.1
   resolution: "class-transformer@npm:0.3.1"
   checksum: 3ae3ef2510d2822766a97d31eb7ca550dabda56cbfe70968f295420531667ca95b4d84cddfe2dc302abc41c8e26d667d43235b0f4759eee09a007741cc307bc8
   languageName: node
   linkType: hard
 
-"class-transformer@npm:^0.2.0, class-transformer@npm:^0.2.3":
+"class-transformer@npm:^0.2.3":
   version: 0.2.3
   resolution: "class-transformer@npm:0.2.3"
   checksum: e5967902d0d3b142f055608b85236ad099b42445ffbe61d69f8e5d6a5cfed80fe0ee68f7becfc0a821685d7e72d8decc5feb8d45d84d921cbfc11a01b6d895b9
@@ -14180,17 +14135,6 @@ __metadata:
     google-libphonenumber: ^3.1.6
     validator: 12.0.0
   checksum: a7cf106ec95e57db68c7afbffcd4284c18d0d003e3cd7d21c533b63b4a16d88fda4530d16a3d7ee73527bb371bfb918364469694e53a00893b756dcb7fa03f21
-  languageName: node
-  linkType: hard
-
-"class-validator@npm:>=0.9.1":
-  version: 0.13.1
-  resolution: "class-validator@npm:0.13.1"
-  dependencies:
-    "@types/validator": ^13.1.3
-    libphonenumber-js: ^1.9.7
-    validator: ^13.5.2
-  checksum: 09a7d83213ac40b2c57502790701277b323f0977d0e1d5597c1a5a0990a8c9ee04ab75b8e2395a39063c0ee9dd196e1cb900a420ff5808b8a1923de2b8c705fe
   languageName: node
   linkType: hard
 
@@ -22530,13 +22474,6 @@ fsevents@^1.2.7:
     prelude-ls: ~1.1.2
     type-check: ~0.3.2
   checksum: 775861da38dcb7e5f1de5bea2a1c7ffaede6e9e8632cfbac76be145ecb295370f46bb41307613c283d66f1fee5d8cc448ca3323c4a02d0fb1e913b2f78de2abb
-  languageName: node
-  linkType: hard
-
-"libphonenumber-js@npm:^1.9.7":
-  version: 1.9.11
-  resolution: "libphonenumber-js@npm:1.9.11"
-  checksum: 914bff177bfb0b00e18e10f13eeabe5d4d72bd0e31cb20457bffe3a919ebf6276a66588584f0bf7e37949e705b1b7e5419a40817453ab0919f3bd30ac760f5ee
   languageName: node
   linkType: hard
 
@@ -32425,13 +32362,6 @@ resolve@^2.0.0-next.3:
   version: 12.0.0
   resolution: "validator@npm:12.0.0"
   checksum: 5e66eedf12113d20d88b58fbead405909b27a1d35d45fa099622fcee5e93583facbd54c2c4f701461e179565522983591714a9e0fe4eb3efcfe74db6dfe58132
-  languageName: node
-  linkType: hard
-
-"validator@npm:^13.5.2":
-  version: 13.5.2
-  resolution: "validator@npm:13.5.2"
-  checksum: 6da12682ad43456cb3a97d23b35cad0b438d9027a6c6fd824d5c86fead42c28f4e38c67590d8f56ab44e6c612979cbaa5f5cc670cc5fcc5a39d5032fcb642296
   languageName: node
   linkType: hard
 

@@ -24,6 +24,8 @@
   },
   "resolutions": {
     "next": "9.x.x",
+    "class-validator": "0.11.0",
+    "@node-ts/bus-core": "0.6.3",
     "@nestjs/core": "6.10.5",
     "@nestjs/common": "6.10.5",
     "@nestjs/microservices": "6.10.5",
