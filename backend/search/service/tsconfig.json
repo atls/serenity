@@ -1,3 +1,0 @@
-{
-  "extends": "@atlantis-lab/tsconfig/tsconfig.app.json"
-}

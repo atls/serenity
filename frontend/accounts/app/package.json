@@ -29,6 +29,7 @@
     "emotion-server": "^10.0.27",
     "express": "^4.17.1",
     "express-session": "1.17.0",
+    "graphql": "^15.5.0",
     "grpc": "1.24.2",
     "next": "10.0.5",
     "next-compose-plugins": "^2.2.0",

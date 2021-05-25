@@ -1,12 +1,14 @@
 import React                from 'react'
 import { useIntl }          from 'react-intl'
 
-import { SignUpProfile }    from './SignUpProfile'
+import { SignUpProfile as SignupProfilePart }    from './SignUpProfile'
 import { useSignUpProfile } from './useSignUpProfile'
 
-export default () => {
+const SignUpProfile = () => {
   const intl = useIntl()
   const data = useSignUpProfile()
 
-  return <SignUpProfile intl={intl} {...data} />
+  return <SignupProfilePart intl={intl} {...data} />
 }
+
+export default SignUpProfile

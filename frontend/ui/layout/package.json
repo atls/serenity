@@ -6,6 +6,10 @@
   "dependencies": {
     "@emotion/styled": "^10.0.0",
     "@types/styled-system": "^5.1.0",
+    "react": "^17.0.2",
     "styled-system": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17"
   }
 }
