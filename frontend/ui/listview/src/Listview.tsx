@@ -13,6 +13,7 @@ interface ActiveProps {
 
 const activeInnerMenu = ifProp('active', { left: 0 })
 
+// @ts-ignore
 const InnerMenu = styled.div<ActiveProps>(
   {
     display: 'flex',
@@ -33,6 +34,7 @@ const InnerMenu = styled.div<ActiveProps>(
 
 const activeBackward = ifProp('active', { cursor: 'pointer', opacity: 1 })
 
+// @ts-ignore
 const Backward = styled.div<ActiveProps>(
   {
     display: 'flex',

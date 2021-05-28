@@ -27,6 +27,7 @@ const opacities = switchProp('opacity', () => ({
   },
 }))
 
+// @ts-ignore
 const StyledContainer = styled(motion.nav)<ContainerProps>(
   {
     width: '100%',

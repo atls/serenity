@@ -1,5 +1,5 @@
 import React                                    from 'react'
-import { useUser }                              from '@atlantis-lab/react-user'
+import { useUser }                              from '@atls/react-user'
 import { useRouter }                            from 'next/router'
 
 import { ProjectsDetailPage as ProjectsDetail } from './ProjectsDetailPage'

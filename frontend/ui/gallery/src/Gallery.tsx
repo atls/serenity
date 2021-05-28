@@ -48,6 +48,7 @@ const Screen = styled.div({
   maxHeight: '100%',
 })
 
+// @ts-ignore
 const StyledGallery = styled.div<GalleryProps>(
   {
     position: 'relative',
@@ -100,12 +101,12 @@ const Name = styled.span(({ theme }: any) => ({
 
 export const BaseGallery = ({ images, name = '', onClose }) => {
   const [enableTransition, setEnableTransition] = useState(true)
-  const [innerWidth, setInnerWidth] = useState(null)
-  const [fullWidth, setFullWidth] = useState(null)
+  const [innerWidth, setInnerWidth] = useState(0)
+  const [fullWidth, setFullWidth] = useState(0)
   const [buttonLeftDisabled, setButtonLeftDisabled] = useState(true)
   const [buttonRightDisabled, setButtonRightDisabled] = useState(images.length <= 1)
   const [left, setLeft] = useState(0)
-  const containerNode = useRef()
+  const containerNode = useRef(null)
   const screenNode = useRef(null)
   const { innerWidth: widthWindow } = useWindowSize()
 

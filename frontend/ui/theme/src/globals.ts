@@ -1,4 +1,4 @@
-import { injectGlobal }    from 'emotion'
+import { injectGlobal }    from '@emotion/css'
 
 import { fontFaces }       from './theme'
 import { injectFontFaces } from './utils'

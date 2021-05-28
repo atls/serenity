@@ -15,7 +15,8 @@ interface CarouselProps {
 
 const transition = ifProp('transition', { transition: '0.3s' })
 
-const StyledCarousel = styled.div<CarouselProps>(
+// @ts-ignore
+const StyledCarousel = styled.div<any>(
   {
     position: 'relative',
     display: 'flex',
@@ -43,18 +44,19 @@ const Screen = styled.div(
 
 export const Carousel = ({ children, disableButton = false }) => {
   const [enableTransition, setEnableTransition] = useState(true)
-  const [innerWidth, setInnerWidth] = useState(null)
-  const [fullWidth, setFullWidth] = useState(null)
-  const [childWidth, setChildWidth] = useState(null)
+  const [innerWidth, setInnerWidth] = useState(0)
+  const [fullWidth, setFullWidth] = useState(0)
+  const [childWidth, setChildWidth] = useState([])
   const [buttonLeftDisabled, setButtonLeftDisabled] = useState(true)
   const [buttonRightDisabled, setButtonRightDisabled] = useState(false)
   const [left, setLeft] = useState(0)
-  const containerNode = useRef()
+  const containerNode = useRef(null)
   const screenNode = useRef(null)
 
   const setWidth = useCallback(() => {
     setInnerWidth(contentWidth(containerNode.current))
     setChildWidth(
+      // @ts-ignore
       Array.prototype.map.call(screenNode.current.children, (item) => widthWithMargin(item))
     )
     if (!disableButton && innerWidth === fullWidth) {

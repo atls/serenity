@@ -59,10 +59,12 @@ export const Search = ({
 
   const fetchData = (fetchValue) => {
     if (interval) {
+      // @ts-ignore
       clearTimeout(interval)
       setInterval(null)
     }
 
+    // @ts-ignore
     setInterval(setTimeout(() => onSearch(fetchValue), 500))
   }
 

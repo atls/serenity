@@ -18,6 +18,7 @@ const directions = switchProp('direction', () => ({
   },
 }))
 
+// @ts-ignore
 export const SlideButton = styled.div<any>(
   {
     position: 'absolute',

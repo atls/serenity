@@ -18,8 +18,8 @@
     "react-masonry-component": "6.2.1"
   },
   "dependencies": {
-    "@apollo/react-hooks": "^3.0.0",
-    "@emotion/styled": "^10.0.0",
+    "@apollo/client": "^3.3.19",
+    "graphql": "^15.5.0",
     "graphql-tag": "^2.10.0",
     "react": "16.13.1"
   }

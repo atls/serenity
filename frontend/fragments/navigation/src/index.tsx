@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react'
-import { useUser }            from '@atlantis-lab/react-user'
+import { useUser }            from '@atls/react-user'
 import { useIntl }            from 'react-intl'
 
 import { useDrawer }          from '@ui/drawer'

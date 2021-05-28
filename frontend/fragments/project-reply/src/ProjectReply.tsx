@@ -1,5 +1,5 @@
 import React                        from 'react'
-import { WithUser, WithoutUser }    from '@atlantis-lab/react-user'
+import { WithUser, WithoutUser }    from '@atls/react-user'
 
 import ChooseSpecialistModal        from '@fragments/choose-specialist-modal'
 import { Avatar }                   from '@ui/avatar'

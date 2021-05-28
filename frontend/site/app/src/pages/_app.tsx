@@ -1,24 +1,55 @@
+import React, { Component }                  from 'react'
 import App                                   from 'next/app'
 import compose                               from 'recompose/compose'
-import { withApollo }                        from '@atlantis-lab/next-app-with-apollo'
-import { withHelmet }                        from '@atlantis-lab/next-app-with-helmet'
-import { withProvider }                      from '@atlantis-lab/next-app-with-provider'
-import { withUser }                          from '@atlantis-lab/next-app-with-user'
-
+import { CacheProvider }                     from '@emotion/react'
+import createCache                           from '@emotion/cache'
+import { withApollo }                        from '@atls/next-app-with-apollo'
+import { withHelmet }                        from '@atls/next-app-with-helmet'
+import { withUser }                          from '@atls/next-app-with-user'
 import { ChatProvider }                      from '@ui/chat'
+
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable global-require */
 import { ThemeProvider, injectGlobalStyles } from '@ui/theme'
-import { withAuth }                          from '@atlantis-lab/next-app-with-auth'
-import { withEmotion }                       from '@atlantis-lab/next-app-with-emotion'
-import { withIntl }                          from '@atlantis-lab/next-app-with-intl'
+import { withAuth }                          from '@atls/next-app-with-auth'
+import { withIntl }                          from '@atls/next-app-with-intl'
+import { withProvider }                      from '@atls/next-app-with-provider'
+
+const cache = createCache({
+  key: 'emotion-cache'
+})
+
+export const withEmotion =
+  ({ Provider = ThemeProvider, injectGlobalStyles }: any) =>
+    (WrapperComponent) =>
+      class WithEmotion extends Component<any> {
+        constructor(props, context) {
+          super(props, context)
+
+          if (injectGlobalStyles) {
+            injectGlobalStyles()
+          }
+        }
+
+        render() {
+          return (
+            <CacheProvider value={cache}>
+              <Provider>
+                <WrapperComponent {...this.props} />
+              </Provider>
+            </CacheProvider>
+          )
+        }
+      }
+
 
 export const withProviders = compose(
   withApollo({
     uri: (process as any).browser
       ? window.__NEXT_DATA__.props.apolloUrl
       : process.env.PUBLIC_GATEWAY_URL || 'https://public-gateway.local.serenity.atls.tech',
+    // @ts-ignore
     fetch: (uri, options, props) => {
       if (props.token) {
         options.headers.authorization = props.token

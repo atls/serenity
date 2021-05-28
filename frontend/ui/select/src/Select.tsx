@@ -14,7 +14,7 @@ export const Select = ({
 }) => (
   <RcSelect
     className={`${selectStyles} ${rounded ? selectRoundedStyles : ''}`}
-    dropdownClassName={dropdownStyles}
+    dropdownClassName={(dropdownStyles as any)}
     showSearch={false}
     multiple={multiple}
     showArrow

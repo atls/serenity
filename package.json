@@ -16,8 +16,7 @@
   },
   "devDependencies": {
     "@atlantis-lab/tsconfig": "^0.1.12",
-    "@atls/actl-cli": "^0.4.38",
-    "@emotion/core": "^11.0.0",
+    "@atls/actl-cli": "^0.4.43",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.6.0",
     "@types/react": "^17.0.6",
@@ -25,44 +24,23 @@
     "typescript": "^4.2.2"
   },
   "resolutions": {
-    "@atlantis-lab/next-app-with-apollo": "latest",
-    "@atlantis-lab/next-app-with-user": "latest",
-    "@atlantis-lab/next-app-with-ismobile": "latest",
-    "@atlantis-lab/next-app-with-intl": "latest",
-    "@atlantis-lab/next-app-with-emotion": "latest",
-    "@atlantis-lab/next-app-with-auth": "latest",
-    "@apollo/react-ssr": "latest",
-    "@apollo/react-hooks": "latest",
-    "@apollo/client": "latest",
-    "next": "10.0.5",
-    "class-validator": "latest",
-    "@node-ts/bus-core": "latest",
-    "@nestjs/core": "latest",
-    "@nestjs/common": "latest",
-    "@nestjs/microservices": "latest",
-    "@nestjs/testing": "latest",
-    "@nestjs/terminus": "latest",
-    "@emotion/styled": "10.0.27",
-    "type-graphql": "latest",
-    "graphql": "latest",
-    "emotion-server": "10.0.27",
-    "emotion": "10.0.27",
-    "emotion-theming": "10.0.27",
-    "@emotion/core": "10.0.27",
     "@types/jest": "^26.0.23",
     "@types/node": "^14.14.41",
-    "@types/react": "latest",
-    "rxjs": "latest",
-    "react": "latest",
-    "react-intl": "5.3.2",
-    "react-dom": "latest",
-    "webpack": "4.46.0",
+    "@types/react": "^17.0.6",
     "eslint-plugin-import": "2.22.0",
-    "typescript": "3.9.6"
+    "typescript": "4.2.4",
+    "next": "^10.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "workspaces": [
     "frontend/**/*",
     "backend/**/*",
     "types/**/*"
-  ]
+  ],
+  "dependenciesMeta": {
+    "@atls/actl-cli@0.4.43": {
+      "unplugged": true
+    }
+  }
 }
