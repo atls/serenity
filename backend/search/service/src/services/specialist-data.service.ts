@@ -23,9 +23,10 @@ export class SpecialistDataService implements OnModuleInit {
   onModuleInit() {
     this.catalogService = this.catalogClient.getService<catalog.CatalogService>('CatalogService')
 
-    this.collaborationService = this.collaborationClient.getService<collaboration.CollaborationService>(
-      'CollaborationService'
-    )
+    this.collaborationService =
+      this.collaborationClient.getService<collaboration.CollaborationService>(
+        'CollaborationService'
+      )
   }
 
   async handle(specialistId: string): Promise<void> {

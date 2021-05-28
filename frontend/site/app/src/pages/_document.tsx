@@ -27,7 +27,6 @@ export const withEmotion = () => (TargetComponent) =>
     }
   }
 
-
 const withProviders = compose(withEmotion(), withHelmet())
 
 export default withProviders(Document)

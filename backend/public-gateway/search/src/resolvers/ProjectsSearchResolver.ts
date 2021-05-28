@@ -26,9 +26,10 @@ export class ProjectsSearchResolver implements OnModuleInit {
   onModuleInit() {
     this.searchService = this.searchClient.getService<search.SearchService>('SearchService')
 
-    this.collaborationService = this.collaborationClient.getService<collaboration.CollaborationService>(
-      'CollaborationService'
-    )
+    this.collaborationService =
+      this.collaborationClient.getService<collaboration.CollaborationService>(
+        'CollaborationService'
+      )
   }
 
   @ResolveProperty()

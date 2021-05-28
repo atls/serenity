@@ -26,10 +26,10 @@ export const useChat = (id) => {
 
   const open = useMemo(() => store.open.bind(store, id), [id, store])
   const close = useMemo(() => store.close.bind(store, id), [id, store])
-  const openChat = useCallback((recipientId) => store.openChat.bind(store, id, recipientId)(), [
-    id,
-    store,
-  ])
+  const openChat = useCallback(
+    (recipientId) => store.openChat.bind(store, id, recipientId)(),
+    [id, store]
+  )
 
   return { visible, activeChat, open, close, openChat }
 }

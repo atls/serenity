@@ -16,9 +16,8 @@ export class SpecialistMutations implements OnModuleInit {
   private collaborationService: collaboration.CollaborationService
 
   onModuleInit() {
-    this.collaborationService = this.client.getService<collaboration.CollaborationService>(
-      'CollaborationService'
-    )
+    this.collaborationService =
+      this.client.getService<collaboration.CollaborationService>('CollaborationService')
   }
 
   @Mutation((returns) => UpdateSpecialistResponse)

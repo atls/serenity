@@ -54,7 +54,6 @@
     "@ui/theme": "0.0.5",
     "nodemon": "1.19.4",
     "react": "16.13.1",
-    "react-apollo": "3.1.5",
     "react-dom": "16.13.1",
     "react-helmet": "5.2.1",
     "react-intl": "5.3.2",

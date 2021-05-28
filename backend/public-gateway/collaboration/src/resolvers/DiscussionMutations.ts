@@ -22,13 +22,11 @@ export class DiscussionMutations implements OnModuleInit {
   private identityService: identity.IdentityService
 
   onModuleInit() {
-    this.collaborationService = this.client.getService<collaboration.CollaborationService>(
-      'CollaborationService'
-    )
+    this.collaborationService =
+      this.client.getService<collaboration.CollaborationService>('CollaborationService')
 
-    this.identityService = this.identityClient.getService<identity.IdentityService>(
-      'IdentityService'
-    )
+    this.identityService =
+      this.identityClient.getService<identity.IdentityService>('IdentityService')
   }
 
   @Mutation((returns) => AddDiscussionMessageResponse)

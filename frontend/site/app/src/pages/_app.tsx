@@ -1,48 +1,21 @@
-import React, { Component }                  from 'react'
-import App                                   from 'next/app'
-import compose                               from 'recompose/compose'
-import { CacheProvider }                     from '@emotion/react'
-import createCache                           from '@emotion/cache'
-import { withApollo }                        from '@atls/next-app-with-apollo'
-import { withHelmet }                        from '@atls/next-app-with-helmet'
-import { withUser }                          from '@atls/next-app-with-user'
-import { ChatProvider }                      from '@ui/chat'
+import React                  from 'react'
+import App                    from 'next/app'
+import compose                from 'recompose/compose'
+import { withApollo }         from '@atls/next-app-with-apollo'
+import { withHelmet }         from '@atls/next-app-with-helmet'
+import { ChatProvider }       from '@ui/chat'
+
+import { withAuth }           from '../providers'
+import { withEmotion }        from '../providers'
+import { withUser }           from '../providers'
+import { withIntl }           from '../providers'
 
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable global-require */
-import { ThemeProvider, injectGlobalStyles } from '@ui/theme'
-import { withAuth }                          from '@atls/next-app-with-auth'
-import { withIntl }                          from '@atls/next-app-with-intl'
-import { withProvider }                      from '@atls/next-app-with-provider'
-
-const cache = createCache({
-  key: 'emotion-cache'
-})
-
-export const withEmotion =
-  ({ Provider = ThemeProvider, injectGlobalStyles }: any) =>
-    (WrapperComponent) =>
-      class WithEmotion extends Component<any> {
-        constructor(props, context) {
-          super(props, context)
-
-          if (injectGlobalStyles) {
-            injectGlobalStyles()
-          }
-        }
-
-        render() {
-          return (
-            <CacheProvider value={cache}>
-              <Provider>
-                <WrapperComponent {...this.props} />
-              </Provider>
-            </CacheProvider>
-          )
-        }
-      }
-
+import { ThemeProvider }      from '@ui/theme'
+import { injectGlobalStyles } from '@ui/theme'
+import { withProvider }       from '@atls/next-app-with-provider'
 
 export const withProviders = compose(
   withApollo({

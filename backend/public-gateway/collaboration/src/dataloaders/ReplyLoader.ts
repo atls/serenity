@@ -15,9 +15,8 @@ export class ReplyLoader implements NestDataLoader, OnModuleInit {
   private collaborationService: collaboration.CollaborationService
 
   onModuleInit() {
-    this.collaborationService = this.client.getService<collaboration.CollaborationService>(
-      'CollaborationService'
-    )
+    this.collaborationService =
+      this.client.getService<collaboration.CollaborationService>('CollaborationService')
   }
 
   getReplies = async (projectId: string[]) => {

@@ -1,8 +1,8 @@
-import React                from 'react'
-import { useIntl }          from 'react-intl'
+import React                                  from 'react'
+import { useIntl }                            from 'react-intl'
 
-import { SignUpProfile as SignupProfilePart }    from './SignUpProfile'
-import { useSignUpProfile } from './useSignUpProfile'
+import { SignUpProfile as SignupProfilePart } from './SignUpProfile'
+import { useSignUpProfile }                   from './useSignUpProfile'
 
 const SignUpProfile = () => {
   const intl = useIntl()

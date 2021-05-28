@@ -18,9 +18,8 @@ export class MemberResolver {
   private collaborationService: collaboration.CollaborationService
 
   onModuleInit() {
-    this.collaborationService = this.client.getService<collaboration.CollaborationService>(
-      'CollaborationService'
-    )
+    this.collaborationService =
+      this.client.getService<collaboration.CollaborationService>('CollaborationService')
   }
 
   @ResolveProperty()
