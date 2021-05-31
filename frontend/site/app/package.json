@@ -10,6 +10,8 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
+    "@apollo/link-error": "^2.0.0-beta.3",
+    "@atls/next-app-with-apollo": "^0.2.66",
     "@atls/next-config-with-extract-intl-messages": "^0.0.1",
     "@atls/next-config-with-pnp-workspaces": "^0.0.1",
     "@emotion/cache": "^11.4.0",
@@ -30,13 +32,8 @@
   },
   "devDependencies": {
     "@apollo/client": "^3.3.19",
-    "@atls/next-app-with-apollo": "^0.2.66",
-    "@atls/next-app-with-auth": "^0.2.66",
     "@atls/next-app-with-helmet": "^0.2.63",
-    "@atls/next-app-with-intl": "^0.2.70",
     "@atls/next-app-with-provider": "^0.2.63",
-    "@atls/next-app-with-user": "^0.2.66",
-    "@atls/next-document-with-emotion": "^0.2.63",
     "@atls/next-document-with-helmet": "^0.2.64",
     "@atls/react-auth": "^0.1.41",
     "@atls/react-locale": "^0.1.39",

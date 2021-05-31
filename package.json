@@ -38,10 +38,5 @@
     "frontend/**/*",
     "backend/**/*",
     "types/**/*"
-  ],
-  "dependenciesMeta": {
-    "@atls/actl-cli@0.4.43": {
-      "unplugged": true
-    }
-  }
+  ]
 }
