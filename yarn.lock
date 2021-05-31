@@ -5197,6 +5197,7 @@ __metadata:
     "@emotion/css": ^11.1.3
     "@emotion/react": ^11.4.0
     "@emotion/server": ^11.4.0
+    "@emotion/styled": ^11.3.0
     "@formatjs/intl-relativetimeformat": 4.4.3
     "@monstrs/oathkeeper-auth": 0.1.0
     "@site/index-page": 0.0.1
@@ -5204,12 +5205,14 @@ __metadata:
     "@site/projects-page": 0.0.1
     "@site/specialists-detail-page": 0.0.1
     "@site/specialists-page": 0.0.1
+    "@types/events": ^3
     "@types/express": ^4
     "@types/node": ^15.6.0
     "@types/react": 16.9.43
     "@types/react-dom": 16.9.8
     "@ui/chat": 0.0.1
     "@ui/theme": 0.0.5
+    events: ^3.3.0
     express: ^4.17.1
     graphql: ^15.5.0
     next: 10.0.5
@@ -5884,7 +5887,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/events@npm:*":
+"@types/events@npm:*, @types/events@npm:^3":
   version: 3.0.0
   resolution: "@types/events@npm:3.0.0"
   checksum: 1407d79d6d5291caa89f27ef0f180eb133bc5a12f11886bd68f9ef9cffb962a575571d1b4d02d30a7329fe9b85d29b7c10543ed6dc516ad20f9a1e89c1e9c9b8
@@ -6682,6 +6685,7 @@ __metadata:
   dependencies:
     "@emotion/react": ^11.4.0
     "@emotion/styled": ^11.3.0
+    "@types/events": ^3
     "@types/react": ^17.0.6
     "@ui/avatar": 0.0.1
     "@ui/button": 0.3.1
@@ -6691,6 +6695,7 @@ __metadata:
     "@ui/layout": 0.0.5
     "@ui/relative-time": 0.0.1
     "@ui/text": 0.3.1
+    events: ^3.3.0
     react: ^17.0.2
     styled-tools: 1.7.0
   languageName: unknown
@@ -14637,7 +14642,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"events@npm:^3.2.0":
+"events@npm:^3.2.0, events@npm:^3.3.0":
   version: 3.3.0
   resolution: "events@npm:3.3.0"
   checksum: 56fa12567013e85b98782a1d971442ea29df057129d8a94432711fd68303357594ea37bfbe234860e28581a7768f943a8bea88c16b48aa01b96acf804bc01d52

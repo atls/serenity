@@ -4,4 +4,15 @@ const withPlugins = require('next-compose-plugins')
 const withImages = require('next-images')
 const withFonts = require('next-fonts')
 
-module.exports = withPlugins([withWorkspaces, withExtractIntlMessages, withImages, withFonts])
+const { withAliases } = require('./with-config-cjs')
+const { withFutureWebpack5 } = require('./with-config-cjs')
+
+
+module.exports = withPlugins([
+  withFutureWebpack5,
+  withWorkspaces,
+  withExtractIntlMessages,
+  withImages,
+  withFonts,
+  withAliases(['react-intl','@emotion/react','@emotion/styled'])
+])
