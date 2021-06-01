@@ -15,9 +15,10 @@ module.exports = withPlugins([
   withImages,
   withFonts,
   withAliases([
-    'react-intl',
+    '@apollo/client$',
+    '@apollo/client/react/ssr$',
     '@emotion/react',
     '@emotion/styled',
-    '@apollo/client'
+    'react-intl',
   ])
 ])

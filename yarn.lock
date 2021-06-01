@@ -238,7 +238,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@apollo/client@npm:3.3.19":
+"@apollo/client@npm:*, @apollo/client@npm:^3.0.0-beta.23, @apollo/client@npm:^3.3.19, @apollo/client@npm:latest":
   version: 3.3.19
   resolution: "@apollo/client@npm:3.3.19"
   dependencies:
