@@ -1,4 +1,3 @@
-import React                  from 'react'
 import App                    from 'next/app'
 import compose                from 'recompose/compose'
 import { withApollo }         from '@atls/next-app-with-apollo'

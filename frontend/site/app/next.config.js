@@ -17,8 +17,11 @@ module.exports = withPlugins([
   withAliases([
     '@apollo/client$',
     '@apollo/client/react/ssr$',
+    '@apollo/client/core$',
     '@emotion/react',
     '@emotion/styled',
-    'react-intl',
+    'react$',
+    'react/jsx-dev-runtime$',
+    'react-intl'
   ])
 ])

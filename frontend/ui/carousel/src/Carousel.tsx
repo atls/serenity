@@ -9,10 +9,6 @@ import { contentWidth, widthWithMargin }                   from '@ui/utils'
 
 import { SlideButton }                                     from './SlideButton'
 
-interface CarouselProps {
-  transition: boolean
-}
-
 const transition = ifProp('transition', { transition: '0.3s' })
 
 // @ts-ignore

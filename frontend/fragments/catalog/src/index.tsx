@@ -5,7 +5,6 @@ import { useDrawer }     from '@ui/drawer'
 import { useWindowSize } from '@ui/utils'
 
 import { Desktop }       from './Desktop'
-import { Mobile }        from './Mobile'
 import { useData }       from './useData'
 
 const CatalogFragment = () => {
@@ -20,12 +19,6 @@ const CatalogFragment = () => {
         data={data}
         visible={visible && innerWidth ? innerWidth : 0 >= 640}
         linksPath={linksPath}
-      />
-      <Mobile
-        data={data}
-        linksPath={linksPath}
-        visible={visible && innerWidth ? innerWidth : 0 < 640}
-        onClose={close}
       />
     </Box>
   )

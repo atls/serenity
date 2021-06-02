@@ -21,7 +21,7 @@ export function useWindowSize(): WindowDimensions {
 
   const isClient = typeof window !== 'undefined'
 
-  function fetchWindowDimensionsAndSave() {
+  const fetchWindowDimensionsAndSave = () => {
     if (isClient) {
       setWindowSize({
         innerWidth: window.innerWidth,
@@ -34,14 +34,14 @@ export function useWindowSize(): WindowDimensions {
 
   useEffect(() => {
     fetchWindowDimensionsAndSave()
-  }, [fetchWindowDimensionsAndSave])
+  }, [])
 
   useEffect(() => {
     window.addEventListener('resize', fetchWindowDimensionsAndSave)
     return () => {
       window.removeEventListener('resize', fetchWindowDimensionsAndSave)
     }
-  }, [fetchWindowDimensionsAndSave])
+  }, [])
 
   return windowSize
 }

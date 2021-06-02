@@ -1,9 +1,9 @@
 import Cookies                         from 'universal-cookie'
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable react/sort-comp */
-import React, { Component } from 'react'
+import React, { Component }            from 'react'
 import { LocaleProvider, LocaleStore } from '@atls/react-locale'
-import { IntlProvider, useIntl }                from 'react-intl'
+import { IntlProvider }                from 'react-intl'
 
 const DEFAULT_LOCALE = 'ru'
 

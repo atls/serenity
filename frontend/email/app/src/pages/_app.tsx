@@ -14,6 +14,7 @@ const cache = createCache({
 })
 
 export const withEmotion =
+  // eslint-disable-next-line
   ({ Provider = ThemeProvider, injectGlobalStyles }: any) =>
   (WrapperComponent) =>
     class WithEmotion extends Component<any> {

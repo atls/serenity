@@ -597,16 +597,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls/actl-cli@npm:^0.4.43":
-  version: 0.4.43
-  resolution: "@atls/actl-cli@npm:0.4.43"
+"@atls/actl-cli@npm:^0.4.44":
+  version: 0.4.44
+  resolution: "@atls/actl-cli@npm:0.4.44"
   dependencies:
     "@atls/actl-commit": 0.0.40
     "@atls/actl-format": 0.0.16
     "@atls/actl-library": 0.0.3
     "@atls/actl-lint": 0.1.41
-    "@atls/actl-renderer": 0.0.1
-    "@atls/actl-service": 0.0.1
+    "@atls/actl-renderer": 0.0.2
+    "@atls/actl-service": 0.0.2
     "@atls/actl-test": 0.0.29
     "@atls/actl-typecheck": 0.1.40
     clipanion: ^2.6.2
@@ -617,7 +617,7 @@ __metadata:
       optional: true
   bin:
     actl: ./bin/run
-  checksum: 12bf9abc209b303d1d4062edc34b7d5387d2c595f9b6a9dfe6ef14ae2827b8be6dbd75e8df9abcc96fea08288168d6cda2ac803c72f17332484208a843cfd1d0
+  checksum: c1c78ac2bfad4a62b7525943c9e3fd05d1bd994e59edea9d37149071d87c872744b7872ba7ded8087d4355bfa7b23c878708d0c17bc448c5aa9eedffa34a2d38
   languageName: node
   linkType: hard
 
@@ -677,33 +677,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls/actl-renderer@npm:0.0.1":
-  version: 0.0.1
-  resolution: "@atls/actl-renderer@npm:0.0.1"
+"@atls/actl-renderer@npm:0.0.2":
+  version: 0.0.2
+  resolution: "@atls/actl-renderer@npm:0.0.2"
   dependencies:
     "@atls/cli-ui-pretty-logs": 0.0.1
-    "@atls/code-service": 0.0.3
+    "@atls/code-service": 0.0.4
     "@atls/webpack-localtunnel-plugin": 0.0.1
     "@atls/webpack-start-server-plugin": 0.0.1
     clipanion: ^2.6.2
     execa: ^5.0.0
     fs-extra: ^9.1.0
-  checksum: 59dfeecf8ffbca46c18ea652036c1fac8f8118a041e7a4bf606714696e8cc753053bb36e548e54ca8d792b75226f1f5272a894356583eea4882d702e896657ba
+  checksum: 14bedfc501a6a6fd3082666084244c1377c7808b2e1d3e009b7724808475b0572dabb95e3b5346ef35587c9226f71334426c1eb0655b8c6da41f1aa152568f47
   languageName: node
   linkType: hard
 
-"@atls/actl-service@npm:0.0.1":
-  version: 0.0.1
-  resolution: "@atls/actl-service@npm:0.0.1"
+"@atls/actl-service@npm:0.0.2":
+  version: 0.0.2
+  resolution: "@atls/actl-service@npm:0.0.2"
   dependencies:
     "@atls/cli-ui-pretty-logs": 0.0.1
-    "@atls/code-service": 0.0.3
+    "@atls/code-service": 0.0.4
     "@atls/webpack-start-server-plugin": 0.0.1
     blessed: ^0.1.81
     clipanion: ^2.6.2
     react: ^17.0.2
     react-blessed: ^0.6.2
-  checksum: d7eac67713f18643dda7067288ef3222290afa520c3a9add5cb3f0d4a0495fdbace6bf27196f5c4d7f4fea274dd28ab160cff39f851cf8571fb7f7e47471c22e
+  checksum: d21a28e5b67f86f5ee59c385cca4dee2a6ec107464313ac902e470c4fa600498e91d3b864e6b02bf0091e19e3787746535d3506bab6655a8a57040f44cc4351d
   languageName: node
   linkType: hard
 
@@ -835,9 +835,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls/code-service@npm:0.0.3":
-  version: 0.0.3
-  resolution: "@atls/code-service@npm:0.0.3"
+"@atls/code-service@npm:0.0.4":
+  version: 0.0.4
+  resolution: "@atls/code-service@npm:0.0.4"
   dependencies:
     "@atls/code-typescript": 0.0.3
     "@atls/webpack-proto-imports-loader": 0.0.3
@@ -849,7 +849,7 @@ __metadata:
     typescript: ^4.2.4
     webpack: ^5.37.0
     webpack-chain: ^6.5.1
-  checksum: 502a318d56d171501248299d1055baa8cae8c5432c1f1cc9a34756be37c5bdbbf7107909b8bfb1b568d26a589a4a1a08595443442c902cfc367525fdf96e83e8
+  checksum: 8d4a020af14914e0639d7abaec198dc79afe66c2ffbd420cc2c5fac2dab9f946694b2d0f2686ad7761546232708e9bdbe3a47f0a8cb650ad7f370c9b9e3c66c3
   languageName: node
   linkType: hard
 
@@ -907,6 +907,23 @@ __metadata:
     react: ^16.12.0
     react-dom: ^16.9.0
   checksum: 81d3e09a0220b1ca4b2202433ae670f14a67c0f9f2a8f3f2e30f828267c4be26f21b4b5eadc0460ef38f5ec8769cb848f43bf58dae7ed5668b9400d7f6d77ced
+  languageName: node
+  linkType: hard
+
+"@atls/next-app-with-apollo@npm:^0.2.67":
+  version: 0.2.67
+  resolution: "@atls/next-app-with-apollo@npm:0.2.67"
+  dependencies:
+    "@apollo/link-error": ^2.0.0-beta.3
+    "@apollo/link-schema": ^2.0.0-beta.3
+    isomorphic-unfetch: ^3.1.0
+  peerDependencies:
+    "@apollo/client": ^3.0.0-james.33.0
+    "@apollo/react-ssr": ^4.0.0-beta.1
+    graphql: ^14.5.0 || ^15.0.0
+    react: ^16.12.0
+    react-dom: ^16.9.0
+  checksum: 2a25ae18ccff0ae02bcf409bb8e255e59fdc93fca898bd40aa44686f777ce67b26c85b56cbc893286b66ad53175b9897dccf81ebfad91463291e706f697c5e6d
   languageName: node
   linkType: hard
 
@@ -5181,7 +5198,7 @@ __metadata:
   dependencies:
     "@apollo/client": ^3.3.19
     "@apollo/link-error": ^2.0.0-beta.3
-    "@atls/next-app-with-apollo": ^0.2.66
+    "@atls/next-app-with-apollo": ^0.2.67
     "@atls/next-app-with-helmet": ^0.2.63
     "@atls/next-app-with-provider": ^0.2.63
     "@atls/next-config-with-extract-intl-messages": ^0.0.1
@@ -5207,8 +5224,8 @@ __metadata:
     "@types/node": ^15.6.0
     "@types/react": 16.9.43
     "@types/react-dom": 16.9.8
-    "@ui/chat": 0.0.1
-    "@ui/theme": 0.0.5
+    "@ui/chat": "workspace:frontend/ui/chat"
+    "@ui/theme": "workspace:frontend/ui/theme"
     events: ^3.3.0
     express: ^4.17.1
     graphql: ^15.5.0
@@ -25453,7 +25470,7 @@ resolve@^2.0.0-next.3:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@atlantis-lab/tsconfig": ^0.1.12
-    "@atls/actl-cli": ^0.4.43
+    "@atls/actl-cli": ^0.4.44
     "@types/jest": ^26.0.23
     "@types/node": ^15.6.0
     "@types/react": ^17.0.6
