@@ -46,7 +46,7 @@ export const withAuth = () => (WrapperComponent) =>
       return (
         <AuthProvider value={token}>
           <WrapperComponent {...this.props} token={token} />
-      </AuthProvider>
-    )
+        </AuthProvider>
+      )
     }
   }

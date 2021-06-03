@@ -1,9 +1,9 @@
 const withFutureWebpack5 = (nextConfig) => ({
   ...nextConfig,
   future: {
-    webpack5: true
+    webpack5: true,
   },
-  webpack(config,options) {
+  webpack(config, options) {
     if (!config.resolve.fallback) {
       // eslint-disable-next-line
       config.resolve.fallback = {}
@@ -17,7 +17,7 @@ const withFutureWebpack5 = (nextConfig) => ({
     }
 
     return config
-  }
+  },
 })
 
 module.exports = { withFutureWebpack5 }

@@ -1,7 +1,7 @@
 import express            from 'express'
 import next               from 'next'
 import { oathkeeperAuth } from '@monstrs/oathkeeper-auth'
-import path from 'path'
+import path               from 'path'
 
 const bootstrap = async () => {
   const app = next({

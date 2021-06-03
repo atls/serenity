@@ -1,9 +1,9 @@
 import express        from 'express'
 import mjml2html      from 'mjml'
+import path           from 'path'
 import next           from 'next'
 
 import { getSending } from './services'
-import path from 'path'
 
 const bootstrap = async () => {
   const app = next({

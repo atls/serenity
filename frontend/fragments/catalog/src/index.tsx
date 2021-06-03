@@ -8,7 +8,7 @@ import { Desktop }       from './Desktop'
 import { useData }       from './useData'
 
 const CatalogFragment = () => {
-  const { visible, close } = useDrawer('catalog')
+  const { visible } = useDrawer('catalog')
   const { innerWidth } = useWindowSize()
   const data = useData()
   const linksPath = '/specialists?catId='

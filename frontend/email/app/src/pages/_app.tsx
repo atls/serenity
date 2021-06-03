@@ -1,4 +1,3 @@
-import React, { Component }                  from 'react'
 import App                                   from 'next/app'
 import compose                               from 'recompose/compose'
 

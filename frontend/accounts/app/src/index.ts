@@ -3,7 +3,7 @@ import connectRedis from 'connect-redis'
 import express      from 'express'
 import session      from 'express-session'
 import next         from 'next'
-import path from 'path'
+import path         from 'path'
 
 import * as actions from './services'
 import flow         from './flow'

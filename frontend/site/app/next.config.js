@@ -7,7 +7,6 @@ const withFonts = require('next-fonts')
 const { withAliases } = require('./with-config-cjs')
 const { withFutureWebpack5 } = require('./with-config-cjs')
 
-
 module.exports = withPlugins([
   withFutureWebpack5,
   withWorkspaces,
@@ -20,6 +19,6 @@ module.exports = withPlugins([
     '@apollo/client/core$',
     '@emotion/react',
     '@emotion/styled',
-    'react-intl'
-  ])
+    'react-intl',
+  ]),
 ])

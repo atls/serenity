@@ -13,9 +13,5 @@ module.exports = withPlugins([
   withExtractIntlMessages,
   withImages,
   withFonts,
-  withAliases([
-    '@emotion/react',
-    '@emotion/styled',
-    'react-intl'
-  ])
+  withAliases(['@emotion/react', '@emotion/styled', 'react-intl']),
 ])
