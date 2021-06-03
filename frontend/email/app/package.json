@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "@atls/next-app-with-provider": "^0.2.63",
-    "@atls/next-document-with-emotion": "^0.2.63",
     "@atls/next-document-with-helmet": "^0.2.64",
     "@atls/react-auth": "^0.1.41",
     "@atls/react-locale": "^0.1.39",

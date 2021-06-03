@@ -3,11 +3,12 @@ import mjml2html      from 'mjml'
 import next           from 'next'
 
 import { getSending } from './services'
+import path from 'path'
 
 const bootstrap = async () => {
   const app = next({
     dev: process.env.NODE_ENV !== 'production',
-    dir: __dirname,
+    dir: process.env.NODE_ENV !== 'production' ? path.join(__dirname, '../src') : __dirname,
   })
 
   const handle = app.getRequestHandler()

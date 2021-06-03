@@ -5,7 +5,7 @@ import { SignupCompletePage } from './SignupCompletePage'
 
 class Page extends React.Component {
   static async getInitialProps(context) {
-    if (!process.browser) {
+    if (!(process as any).browser) {
       const host = context.req.headers['x-forwarded-host']
 
       return {
