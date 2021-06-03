@@ -16,8 +16,6 @@ module.exports = withPlugins([
   withAliases([
     '@emotion/react',
     '@emotion/styled',
-    'react$',
-    'react/jsx-dev-runtime$',
     'react-intl'
   ])
 ])

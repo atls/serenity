@@ -20,8 +20,6 @@ module.exports = withPlugins([
     '@apollo/client/core$',
     '@emotion/react',
     '@emotion/styled',
-    'react$',
-    'react/jsx-dev-runtime$',
     'react-intl'
   ])
 ])
