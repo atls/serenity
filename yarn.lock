@@ -893,23 +893,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls/next-app-with-apollo@npm:^0.2.66":
-  version: 0.2.66
-  resolution: "@atls/next-app-with-apollo@npm:0.2.66"
-  dependencies:
-    "@apollo/link-error": ^2.0.0-beta.3
-    "@apollo/link-schema": ^2.0.0-beta.3
-    isomorphic-unfetch: ^3.1.0
-  peerDependencies:
-    "@apollo/client": ^3.0.0-james.33.0
-    "@apollo/react-ssr": ^4.0.0-beta.1
-    graphql: ^14.5.0 || ^15.0.0
-    react: ^16.12.0
-    react-dom: ^16.9.0
-  checksum: 81d3e09a0220b1ca4b2202433ae670f14a67c0f9f2a8f3f2e30f828267c4be26f21b4b5eadc0460ef38f5ec8769cb848f43bf58dae7ed5668b9400d7f6d77ced
-  languageName: node
-  linkType: hard
-
 "@atls/next-app-with-apollo@npm:^0.2.67":
   version: 0.2.67
   resolution: "@atls/next-app-with-apollo@npm:0.2.67"
@@ -927,16 +910,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls/next-app-with-auth@npm:^0.2.66":
-  version: 0.2.66
-  resolution: "@atls/next-app-with-auth@npm:0.2.66"
-  dependencies:
-    "@atls/react-auth": 0.1.41
-    react: ^16.12.0
-  checksum: 369f6a9b99100c6db9f3ab3b44690eb8a1c1f9af5f798aabb9962f1d109ab847b42e939304c1a9dcef5a81785a61f7e9472749a5c70b7f79394ede0c0c371e3c
-  languageName: node
-  linkType: hard
-
 "@atls/next-app-with-helmet@npm:^0.2.63":
   version: 0.2.63
   resolution: "@atls/next-app-with-helmet@npm:0.2.63"
@@ -947,34 +920,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls/next-app-with-intl@npm:^0.2.70":
-  version: 0.2.70
-  resolution: "@atls/next-app-with-intl@npm:0.2.70"
-  dependencies:
-    "@atls/react-locale": 0.1.39
-    react: ^16.12.0
-    react-intl: ^5.18.1
-    universal-cookie: ^4.0.0
-  checksum: af5fe9912b0ab4978deb0c3dae362e5efbac412c62aa38f9e9756e8b64ee2cd27a60a5a8864ecd81b97bed5db538cb87f893a7821604d5cb428159238a267754
-  languageName: node
-  linkType: hard
-
 "@atls/next-app-with-provider@npm:^0.2.63":
   version: 0.2.63
   resolution: "@atls/next-app-with-provider@npm:0.2.63"
   peerDependencies:
     react: ^16.12.0
   checksum: 3b7150945f5d1097ae629f6a5a298a716489ae6ce2d402dd56bc10122a236d30fcaab17c80b2d5ab0bc79a392886ae6209b9cdcfb8554d848eb6e61f93a19f12
-  languageName: node
-  linkType: hard
-
-"@atls/next-app-with-user@npm:^0.2.66":
-  version: 0.2.66
-  resolution: "@atls/next-app-with-user@npm:0.2.66"
-  dependencies:
-    "@atls/react-user": ^0.1.39
-    react: ^16.12.0
-  checksum: 1c4d94370defd7843b8c7695a89233b2eb2797c4b95195758a45f369012b7ecaf752236ebd1bb37c7e6ca9e0229a60086cd6562f07effe1a9145f3cfa108a5eb
   languageName: node
   linkType: hard
 
@@ -1042,7 +993,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls/react-auth@npm:0.1.41, @atls/react-auth@npm:^0.1.41":
+"@atls/react-auth@npm:^0.1.41":
   version: 0.1.41
   resolution: "@atls/react-auth@npm:0.1.41"
   dependencies:
@@ -1051,16 +1002,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls/react-auth@npm:^0.1.39":
-  version: 0.1.40
-  resolution: "@atls/react-auth@npm:0.1.40"
-  dependencies:
-    react: 16.14.0
-  checksum: 6c5cef48ef6ba32dcaaa3d6d55aa435d7dd8506042380b422da6b18f0969ad9b8718f020f803e66026bd6afba860a6a9e37b51e8f513e0096814e1cc1d3b5d0b
-  languageName: node
-  linkType: hard
-
-"@atls/react-locale@npm:0.1.39, @atls/react-locale@npm:^0.1.39":
+"@atls/react-locale@npm:^0.1.39":
   version: 0.1.39
   resolution: "@atls/react-locale@npm:0.1.39"
   dependencies:
@@ -1069,16 +1011,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls/react-locale@npm:^0.1.37":
-  version: 0.1.38
-  resolution: "@atls/react-locale@npm:0.1.38"
-  dependencies:
-    react: 16.14.0
-  checksum: 07e2c12a3578ed58ce4e6ec3a514ddbc1fd667c8bd6d782d902ef07e98448c5f1ec4e078d714cce7b190633764899bf3ac4c542383232301be56f7fe77753418
-  languageName: node
-  linkType: hard
-
-"@atls/react-user@npm:^0.1.39, @atls/react-user@npm:^0.1.40":
+"@atls/react-user@npm:^0.1.40":
   version: 0.1.40
   resolution: "@atls/react-user@npm:0.1.40"
   dependencies:
@@ -1996,26 +1929,27 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@email/app@workspace:frontend/email/app"
   dependencies:
-    "@atls/next-app-with-apollo": ^0.2.66
-    "@atls/next-app-with-auth": ^0.2.66
-    "@atls/next-app-with-helmet": ^0.2.63
-    "@atls/next-app-with-intl": ^0.2.70
     "@atls/next-app-with-provider": ^0.2.63
-    "@atls/next-app-with-user": ^0.2.66
     "@atls/next-config-with-extract-intl-messages": ^0.0.1
     "@atls/next-config-with-pnp-workspaces": ^0.0.1
     "@atls/next-document-with-emotion": ^0.2.63
     "@atls/next-document-with-helmet": ^0.2.64
-    "@atls/react-auth": ^0.1.39
-    "@atls/react-locale": ^0.1.37
+    "@atls/react-auth": ^0.1.41
+    "@atls/react-locale": ^0.1.39
     "@email/email-verification-template": 0.1.1
     "@email/reset-password-template": 0.1.1
+    "@emotion/cache": ^11.4.0
+    "@emotion/css": ^11.1.3
+    "@emotion/react": ^11.4.0
     "@emotion/server": ^11.4.0
+    "@emotion/styled": ^11.3.0
     "@grpc/proto-loader": 0.5.5
+    "@types/events": ^3
     "@types/node": ^15.6.1
     "@types/react": 16.9.2
     "@types/react-dom": 16.9.5
     "@ui/theme": 0.0.5
+    events: ^3.3.0
     express: ^4.17.1
     graphql: ^15.5.0
     grpc: 1.24.2
@@ -28515,7 +28449,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"universal-cookie@npm:4.0.4, universal-cookie@npm:^4.0.0, universal-cookie@npm:^4.0.4":
+"universal-cookie@npm:4.0.4, universal-cookie@npm:^4.0.4":
   version: 4.0.4
   resolution: "universal-cookie@npm:4.0.4"
   dependencies:
