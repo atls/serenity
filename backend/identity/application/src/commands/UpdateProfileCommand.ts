@@ -19,6 +19,7 @@ export class UpdateProfileCommand {
 
   @IsOptional()
   @IsMobilePhone('ru-RU', {
+    // @ts-ignore
     message: messages.invalidPhone.defaultMessage,
   })
   readonly phone: string
