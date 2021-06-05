@@ -1,12 +1,14 @@
-import * as Hydra   from '@oryd/hydra-client'
-import connectRedis from 'connect-redis'
-import express      from 'express'
-import session      from 'express-session'
-import next         from 'next'
-import path         from 'path'
+import { AdminApi }      from '@ory/kratos-client'
+import { Configuration } from '@ory/kratos-client'
+import { PublicApi }     from '@ory/kratos-client'
 
-import * as actions from './services'
-import flow         from './flow'
+import connectRedis      from 'connect-redis'
+import express           from 'express'
+import session           from 'express-session'
+import next              from 'next'
+import path              from 'path'
+
+import flow              from './flow'
 
 const RedisStore = connectRedis(session)
 
@@ -28,7 +30,7 @@ const bootstrap = async () => {
       secret: process.env.SESSION_SECRET || 'session-secret',
       saveUninitialized: true,
       cookie: {
-        domain: process.env.SESSION_COOKIE_DOMAIN || '.serenity.local.aunited.dev',
+        domain: process.env.SESSION_COOKIE_DOMAIN || '.serenity.local.atls.tech',
       },
       store: new RedisStore({
         host: process.env.REDIS_HOST || 'redis',
@@ -38,12 +40,21 @@ const bootstrap = async () => {
 
   server.use((req, res, nextMid) => {
     // eslint-disable-next-line dot-notation
-    req['hydra'] = new Hydra.AdminApi(process.env.HYDRA_ADMIN_URL || 'http://hydra:4445')
+    req['kratos'] = {
+      adminApi: new AdminApi(
+        new Configuration({ basePath: process.env.KRATOS_ADMIN_URL || 'http://kratos:4434/' })
+      ),
+      publicApi: new PublicApi(
+        new Configuration({
+          basePath: process.env.KRATOS_PUBLIC_URL || 'https://kratos.serenity.local.atls.tech/',
+        })
+      ),
+    }
 
     nextMid()
   })
 
-  server.use(flow(actions))
+  server.use(flow())
 
   server.get('*', (req, res) => handle(req, res))
 

@@ -1,41 +1,16 @@
-import * as Hydra         from '@oryd/hydra-client'
-import querystring        from 'querystring'
-import { format, parse }  from 'url'
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 
-import { getRedirectUrl } from '../utils'
+import { PublicApi } from '@ory/kratos-client'
 
-export const redirect = async (req, res) => {
-  const { hydra }: { hydra: Hydra.AdminApi } = req
-  if (req.user) {
-    res.redirect(getRedirectUrl(req))
-  } else if (req.query.login_challenge) {
-    let target = '/signin'
+export const redirect = async (req, res, next) => {
+  const { publicApi: kratos }: { publicApi: PublicApi } = req.kratos
 
-    const {
-      body: { requestUrl },
-    } = await hydra.getLoginRequest(req.query.login_challenge)
-
-    if (requestUrl) {
-      const { query } = parse(requestUrl)
-      // @ts-ignore
-      const { state } = querystring.parse(query)
-
-      if (state) {
-        const values = JSON.parse(Buffer.from(state as any, 'base64').toString())
-
-        if (values.target) {
-          target = values.target // eslint-disable-line prefer-destructuring
-        }
-      }
-    }
-
-    res.redirect(
-      format({
-        pathname: target,
-        query: req.query,
-      })
-    )
-  } else {
-    res.redirect('/signin')
-  }
+  kratos
+    .whoami(decodeURIComponent(req.header('Cookie')), req.header('Authorization'))
+    .then(({ status, data }) => {
+      next()
+    })
+    .catch((err) => {
+      err.status === 404 ? res.json(err) : res.redirect('/login')
+    })
 }

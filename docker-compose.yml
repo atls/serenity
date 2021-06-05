@@ -71,51 +71,49 @@ services:
     environment:
       - POSTGRESQL_PASSWORD=password
       - POSTGRESQL_DATABASE=db
+    ports:
+      - 5432:5432
 
-  hydra-migrate:
-    image: oryd/hydra:v1.6.0
-    environment:
-      - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
-    command: migrate sql -e --yes
-    restart: on-failure
-
-  hydra-configure:
-    image: oryd/hydra:v1.6.0
-    environment:
-      - HYDRA_ADMIN_URL=http://hydra:4445
+  kratos-migrate:
+    image: oryd/kratos:v0.5.5-alpha.1
     volumes:
       - ./config/ory:/config
-    command: clients import --skip-tls-verify /config/hydra/clients/public-app.json
-    restart: on-failure
-
-  hydra:
-    image: oryd/hydra:v1.6.0
-    command: serve all --skip-tls-verify --dangerous-force-http
     environment:
-      - LOG_LEVEL=trace
-      - URLS_SELF_ISSUER=https://sso.serenity.local.atls.tech
-      - URLS_CONSENT=https://accounts.serenity.local.atls.tech/consent
-      - URLS_LOGIN=https://accounts.serenity.local.atls.tech/
-      - URLS_LOGOUT=https://accounts.serenity.local.atls.tech/signout
-      - URLS_POST_LOGOUT_REDIRECT=https://accounts.serenity.local.atls.tech/signout/complete
-      - URL_POST_LOGOUT_REDIRECT=https://accounts.serenity.local.atls.tech/signout
-      - SECRETS_SYSTEM=supersecretvalue
-      - OIDC_SUBJECT_IDENTIFIERS_PAIRWISE_SALT=supersecretvalue
-      - OIDC_SUBJECT_IDENTIFIERS_ENABLED=public,pairwise
       - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
-    restart: unless-stopped
-    labels:
-      - 'traefik.frontend.rule=Host:sso.serenity.local.atls.tech'
-      - 'traefik.protocol=http'
-      - 'traefik.port=4444'
+    command: -c /config/kratos/kratos.yml migrate sql -e --yes
+    restart: on-failure
+    networks:
+      - default
     depends_on:
-      - hydra-configure
-      - hydra-migrate
-      - traefik
       - db
+
+  kratos:
+    image: oryd/kratos:v0.5.5-alpha.1
+    environment:
+      - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
+    volumes:
+      - ./config/ory:/config
+    labels:
+      - 'traefik.frontend.rule=Host:kratos.serenity.local.atls.tech'
+      - 'traefik.protocol=http'
+      - 'traefik.port=4433'
     networks:
       - default
       - traefik
+    depends_on:
+      - kratos-migrate
+      - mailslurper
+      - traefik
+      - db
+    restart: unless-stopped
+    command: serve -c /config/kratos/kratos.yml --dev
+
+  mailslurper:
+    image: oryd/mailslurper:latest-smtps
+    ports:
+      - '4436:4436'
+      - '4437:4437'
+
 
   oathkeeper:
     image: oryd/oathkeeper:v0.38.2-beta.1
@@ -190,23 +188,20 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
     entrypoint: yarn accounts:dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
-      - OAUTH_AUTHORIZATION_URL=https://sso.serenity.local.atls.tech/oauth2/auth
-      - OAUTH_TOKEN_URL=https://sso.serenity.local.atls.tech/oauth2/token
-      - OAUTH_USERINFO_URL=https://sso.serenity.local.atls.tech/userinfo
-      - OAUTH_CALLBACK_URL=https://accounts.serenity.local.atls.tech/callback
-      - OAUTH_CLIENT_ID=app
-      - OAUTH_CLIENT_SECRET=app-client-secret
+      - KRATOS_PUBLIC_URL=http://kratos:4433/
+      - KRATOS_BROWSER_URL=https://kratos.serenity.local.atls.tech/
+      - KRATOS_ADMIN_URL=http://kratos:4434/
+      - BASE_URL=https://accounts.serenity.local.atls.tech
     labels:
       - 'traefik.frontend.rule=Host:accounts.serenity.local.atls.tech'
       - 'traefik.protocol=http'
       - 'traefik.port=3000'
     depends_on:
       - traefik
-      - hydra
+      - kratos
       - redis
     networks:
       - default

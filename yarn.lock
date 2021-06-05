@@ -9,13 +9,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@accounts/app@workspace:frontend/accounts/app"
   dependencies:
-    "@accounts/change-password-page": 0.3.1
-    "@accounts/reset-password-complete-page": 0.3.1
-    "@accounts/reset-password-page": 0.3.1
-    "@accounts/signin-page": 0.3.1
-    "@accounts/signup-complete-page": 0.3.1
-    "@accounts/signup-page": 0.3.1
-    "@accounts/signup-profile-page": 0.3.1
+    "@accounts/login-fragment": "workspace:frontend/accounts/login-fragment"
+    "@accounts/login-page": "workspace:frontend/accounts/login-page"
+    "@accounts/recovery-complete-page": "workspace:frontend/accounts/recovery-complete-page"
+    "@accounts/recovery-page": "workspace:frontend/accounts/recovery-page"
+    "@accounts/registration-complete-page": "workspace:frontend/accounts/registration-complete-page"
+    "@accounts/registration-page": "workspace:frontend/accounts/registration-page"
+    "@accounts/registration-profile-page": "workspace:frontend/accounts/registration-profile-page"
     "@atls/next-app-with-helmet": ^0.2.63
     "@atls/next-config-with-extract-intl-messages": ^0.0.1
     "@atls/next-config-with-pnp-workspaces": ^0.0.1
@@ -28,9 +28,10 @@ __metadata:
     "@emotion/server": ^11.4.0
     "@emotion/styled": ^11.3.0
     "@grpc/proto-loader": 0.5.5
-    "@oryd/hydra-client": 1.6.0
+    "@ory/kratos-client": 0.5.5-alpha.2
     "@protos/common": 0.3.1
     "@protos/identity": 0.3.1
+    "@types/cookie": ^0
     "@types/events": ^3
     "@types/express-session": 1.15.16
     "@types/node": ^15.12.0
@@ -40,6 +41,7 @@ __metadata:
     "@ui/theme": 0.0.5
     body-parser: 1.19.0
     connect-redis: 3.4.2
+    cookie: ^0.4.1
     cookie-parser: 1.4.4
     events: ^3.3.0
     express: ^4.17.1
@@ -67,179 +69,162 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@accounts/change-password-fragment@0.3.1, @accounts/change-password-fragment@workspace:frontend/accounts/change-password-fragment":
+"@accounts/login-fragment@0.0.0, @accounts/login-fragment@workspace:frontend/accounts/login-fragment":
   version: 0.0.0-use.local
-  resolution: "@accounts/change-password-fragment@workspace:frontend/accounts/change-password-fragment"
+  resolution: "@accounts/login-fragment@workspace:frontend/accounts/login-fragment"
   dependencies:
-    "@types/react": ^17.0.6
-    "@ui/button": 0.3.1
-    "@ui/input": 0.0.1
-    "@ui/layout": 0.0.5
-    "@ui/text": 0.3.1
-    react: 16.13.1
+    "@ui/button": "workspace:frontend/ui/button"
+    "@ui/input": "workspace:frontend/ui/input"
+    "@ui/layout": "workspace:frontend/ui/layout"
+    "@ui/link": "workspace:frontend/ui/link"
+    "@ui/text": "workspace:frontend/ui/text"
+    react: 16.14.0
     react-intl: 5.3.2
   languageName: unknown
   linkType: soft
 
-"@accounts/change-password-page@0.3.1, @accounts/change-password-page@workspace:frontend/accounts/change-password-page":
+"@accounts/login-page@workspace:frontend/accounts/login-page":
   version: 0.0.0-use.local
-  resolution: "@accounts/change-password-page@workspace:frontend/accounts/change-password-page"
+  resolution: "@accounts/login-page@workspace:frontend/accounts/login-page"
   dependencies:
-    "@accounts/change-password-fragment": 0.3.1
-    "@types/react": ^17.0.6
-    "@ui/icons": 0.1.1
-    "@ui/layout": 0.0.5
-    "@ui/link": 0.0.5
-    react: 16.13.1
+    "@accounts/login-fragment": 0.0.0
+    "@ui/icons": "workspace:frontend/ui/icons"
+    "@ui/layout": "workspace:frontend/ui/layout"
+    react: 16.14.0
     react-helmet: ^5.2.0
     react-intl: 5.3.2
   languageName: unknown
   linkType: soft
 
-"@accounts/cookie-store@workspace:frontend/accounts/cookie-store":
+"@accounts/recovery-complete-page@workspace:frontend/accounts/recovery-complete-page":
   version: 0.0.0-use.local
-  resolution: "@accounts/cookie-store@workspace:frontend/accounts/cookie-store"
-  dependencies:
-    connect-redis: 3.4.2
-    express: ^4.17.1
-    express-session: 1.17.0
-    passport: 0.4.0
-    passport-oauth2: 1.5.0
-    passport-oauth2-refresh: 1.1.0
-    ts-node: 8.10.2
-    typescript: ^4.2.2
-  languageName: unknown
-  linkType: soft
-
-"@accounts/reset-password-complete-page@0.3.1, @accounts/reset-password-complete-page@workspace:frontend/accounts/reset-password-complete-page":
-  version: 0.0.0-use.local
-  resolution: "@accounts/reset-password-complete-page@workspace:frontend/accounts/reset-password-complete-page"
+  resolution: "@accounts/recovery-complete-page@workspace:frontend/accounts/recovery-complete-page"
   dependencies:
     "@testing-library/react": 9.5.0
-    "@types/react": ^17.0.6
-    "@ui/button": 0.3.1
-    "@ui/icons": 0.1.1
-    "@ui/input": 0.0.1
-    "@ui/layout": 0.0.5
-    "@ui/link": 0.0.5
-    "@ui/text": 0.3.1
-    react: 16.13.1
+    "@ui/button": "workspace:frontend/ui/button"
+    "@ui/icons": "workspace:frontend/ui/icons"
+    "@ui/input": "workspace:frontend/ui/input"
+    "@ui/layout": "workspace:frontend/ui/layout"
+    "@ui/link": "workspace:frontend/ui/link"
+    "@ui/text": "workspace:frontend/ui/text"
+    react: 16.14.0
     react-helmet: ^5.2.0
     react-intl: 5.3.2
   languageName: unknown
   linkType: soft
 
-"@accounts/reset-password-fragment@0.3.1, @accounts/reset-password-fragment@workspace:frontend/accounts/reset-password-fragment":
+"@accounts/recovery-fragment@workspace:frontend/accounts/recovery-fragment":
   version: 0.0.0-use.local
-  resolution: "@accounts/reset-password-fragment@workspace:frontend/accounts/reset-password-fragment"
+  resolution: "@accounts/recovery-fragment@workspace:frontend/accounts/recovery-fragment"
   dependencies:
-    "@ui/button": 0.3.1
-    "@ui/input": 0.0.1
-    "@ui/layout": 0.0.5
-    "@ui/text": 0.3.1
-    react: 16.13.1
+    "@ui/button": "workspace:frontend/ui/button"
+    "@ui/input": "workspace:frontend/ui/input"
+    "@ui/layout": "workspace:frontend/ui/layout"
+    "@ui/text": "workspace:frontend/ui/text"
+    react: 16.14.0
     react-intl: 5.3.2
   languageName: unknown
   linkType: soft
 
-"@accounts/reset-password-page@0.3.1, @accounts/reset-password-page@workspace:frontend/accounts/reset-password-page":
+"@accounts/recovery-page@workspace:frontend/accounts/recovery-page":
   version: 0.0.0-use.local
-  resolution: "@accounts/reset-password-page@workspace:frontend/accounts/reset-password-page"
+  resolution: "@accounts/recovery-page@workspace:frontend/accounts/recovery-page"
   dependencies:
-    "@accounts/reset-password-fragment": 0.3.1
-    "@ui/icons": 0.1.1
-    "@ui/layout": 0.0.5
-    "@ui/link": 0.0.5
-    react: 16.13.1
+    "@accounts/recovery-fragment": "workspace:frontend/accounts/recovery-fragment"
+    "@ui/icons": "workspace:frontend/ui/icons"
+    "@ui/layout": "workspace:frontend/ui/layout"
+    "@ui/link": "workspace:frontend/ui/link"
+    react: 16.14.0
     react-helmet: ^5.2.0
     react-intl: 5.3.2
   languageName: unknown
   linkType: soft
 
-"@accounts/signin-fragment@0.3.1, @accounts/signin-fragment@workspace:frontend/accounts/signin-fragment":
+"@accounts/registration-complete-page@workspace:frontend/accounts/registration-complete-page":
   version: 0.0.0-use.local
-  resolution: "@accounts/signin-fragment@workspace:frontend/accounts/signin-fragment"
-  dependencies:
-    "@ui/button": 0.3.1
-    "@ui/input": 0.0.1
-    "@ui/layout": 0.0.5
-    "@ui/link": 0.0.5
-    "@ui/text": 0.3.1
-    react: 16.13.1
-    react-intl: 5.3.2
-  languageName: unknown
-  linkType: soft
-
-"@accounts/signin-page@0.3.1, @accounts/signin-page@workspace:frontend/accounts/signin-page":
-  version: 0.0.0-use.local
-  resolution: "@accounts/signin-page@workspace:frontend/accounts/signin-page"
-  dependencies:
-    "@accounts/signin-fragment": 0.3.1
-    "@ui/icons": 0.1.1
-    "@ui/layout": 0.0.5
-    react: 16.13.1
-    react-helmet: ^5.2.0
-    react-intl: 5.3.2
-  languageName: unknown
-  linkType: soft
-
-"@accounts/signup-complete-page@0.3.1, @accounts/signup-complete-page@workspace:frontend/accounts/signup-complete-page":
-  version: 0.0.0-use.local
-  resolution: "@accounts/signup-complete-page@workspace:frontend/accounts/signup-complete-page"
+  resolution: "@accounts/registration-complete-page@workspace:frontend/accounts/registration-complete-page"
   dependencies:
     "@testing-library/react": 9.5.0
-    "@types/react": ^17.0.6
-    "@ui/button": 0.3.1
-    "@ui/icons": 0.1.1
-    "@ui/input": 0.0.1
-    "@ui/layout": 0.0.5
-    "@ui/link": 0.0.5
-    "@ui/text": 0.3.1
-    react: 16.13.1
+    "@ui/button": "workspace:frontend/ui/button"
+    "@ui/icons": "workspace:frontend/ui/icons"
+    "@ui/input": "workspace:frontend/ui/input"
+    "@ui/layout": "workspace:frontend/ui/layout"
+    "@ui/link": "workspace:frontend/ui/link"
+    "@ui/text": "workspace:frontend/ui/text"
+    react: 16.14.0
     react-helmet: ^5.2.0
     react-intl: 5.3.2
   languageName: unknown
   linkType: soft
 
-"@accounts/signup-fragment@0.3.1, @accounts/signup-fragment@workspace:frontend/accounts/signup-fragment":
+"@accounts/registration-fragment@workspace:frontend/accounts/registration-fragment":
   version: 0.0.0-use.local
-  resolution: "@accounts/signup-fragment@workspace:frontend/accounts/signup-fragment"
+  resolution: "@accounts/registration-fragment@workspace:frontend/accounts/registration-fragment"
   dependencies:
-    "@ui/button": 0.3.1
-    "@ui/input": 0.0.1
-    "@ui/layout": 0.0.5
-    "@ui/text": 0.3.1
-    react: 16.13.1
+    "@ui/button": "workspace:frontend/ui/button"
+    "@ui/input": "workspace:frontend/ui/input"
+    "@ui/layout": "workspace:frontend/ui/layout"
+    "@ui/text": "workspace:frontend/ui/text"
+    react: 16.14.0
     react-intl: 5.3.2
   languageName: unknown
   linkType: soft
 
-"@accounts/signup-page@0.3.1, @accounts/signup-page@workspace:frontend/accounts/signup-page":
+"@accounts/registration-page@workspace:frontend/accounts/registration-page":
   version: 0.0.0-use.local
-  resolution: "@accounts/signup-page@workspace:frontend/accounts/signup-page"
+  resolution: "@accounts/registration-page@workspace:frontend/accounts/registration-page"
   dependencies:
-    "@accounts/signup-fragment": 0.3.1
-    "@ui/icons": 0.1.1
-    "@ui/layout": 0.0.5
-    "@ui/link": 0.0.5
-    react: 16.13.1
+    "@accounts/registration-fragment": "workspace:frontend/accounts/registration-fragment"
+    "@ui/icons": "workspace:frontend/ui/icons"
+    "@ui/layout": "workspace:frontend/ui/layout"
+    "@ui/link": "workspace:frontend/ui/link"
+    react: 16.14.0
     react-helmet: ^5.2.0
     react-intl: 5.3.2
   languageName: unknown
   linkType: soft
 
-"@accounts/signup-profile-page@0.3.1, @accounts/signup-profile-page@workspace:frontend/accounts/signup-profile-page":
+"@accounts/registration-profile-page@workspace:frontend/accounts/registration-profile-page":
   version: 0.0.0-use.local
-  resolution: "@accounts/signup-profile-page@workspace:frontend/accounts/signup-profile-page"
+  resolution: "@accounts/registration-profile-page@workspace:frontend/accounts/registration-profile-page"
   dependencies:
     "@testing-library/react": 9.5.0
-    "@ui/button": 0.3.1
-    "@ui/icons": 0.1.1
-    "@ui/input": 0.0.1
-    "@ui/layout": 0.0.5
-    "@ui/link": 0.0.5
-    "@ui/text": 0.3.1
-    react: 16.13.1
+    "@ui/button": "workspace:frontend/ui/button"
+    "@ui/icons": "workspace:frontend/ui/icons"
+    "@ui/input": "workspace:frontend/ui/input"
+    "@ui/layout": "workspace:frontend/ui/layout"
+    "@ui/link": "workspace:frontend/ui/link"
+    "@ui/text": "workspace:frontend/ui/text"
+    react: 16.14.0
+    react-helmet: ^5.2.0
+    react-intl: 5.3.2
+  languageName: unknown
+  linkType: soft
+
+"@accounts/settings-fragment@workspace:frontend/accounts/settings-fragment":
+  version: 0.0.0-use.local
+  resolution: "@accounts/settings-fragment@workspace:frontend/accounts/settings-fragment"
+  dependencies:
+    "@ui/button": "workspace:frontend/ui/button"
+    "@ui/input": "workspace:frontend/ui/input"
+    "@ui/layout": "workspace:frontend/ui/layout"
+    "@ui/text": "workspace:frontend/ui/text"
+  peerDependencies:
+    react: 16.14.0
+    react-intl: 5.3.2
+  languageName: unknown
+  linkType: soft
+
+"@accounts/settings-page@workspace:frontend/accounts/settings-page":
+  version: 0.0.0-use.local
+  resolution: "@accounts/settings-page@workspace:frontend/accounts/settings-page"
+  dependencies:
+    "@accounts/settings-fragment": "workspace:frontend/accounts/settings-fragment"
+    "@ui/icons": "workspace:frontend/ui/icons"
+    "@ui/layout": "workspace:frontend/ui/layout"
+    "@ui/link": "workspace:frontend/ui/link"
+  peerDependencies:
+    react: 16.14.0
     react-helmet: ^5.2.0
     react-intl: 5.3.2
   languageName: unknown
@@ -4301,16 +4286,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oryd/hydra-client@npm:1.6.0":
-  version: 1.6.0
-  resolution: "@oryd/hydra-client@npm:1.6.0"
+"@ory/kratos-client@npm:0.5.5-alpha.2":
+  version: 0.5.5-alpha.2
+  resolution: "@ory/kratos-client@npm:0.5.5-alpha.2"
   dependencies:
-    "@types/bluebird": "*"
-    "@types/request": "*"
-    bluebird: ^3.5.0
-    request: ^2.81.0
-    rewire: ^3.0.2
-  checksum: b92c6e0ac2e7e02101e007bbabe3cb7370b5d22b2d5e3241b4b660c3b8142c658bd6d3162ca8bed41a93b625773fe751ea10ae15810f911425f45ecd2039a118
+    axios: ^0.19.2
+  checksum: e6fcb2b19e05a629e2b03fa964371dceea795ab2995432c0405b04c03ae1843eaa7cccc81fd5e77ba097b768323a94c97c101794e0e053c1c5b109a93e731cd2
   languageName: node
   linkType: hard
 
@@ -5421,13 +5402,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/bluebird@npm:*":
-  version: 3.5.33
-  resolution: "@types/bluebird@npm:3.5.33"
-  checksum: 45f7adeec6e656501f5b2127d5cc1538d3ae497d06bfa00d8d7f51eb2aa482267b3b4868ac1c75fc84acfad86d2c0d4de8af535cf725156f222d679df9694aff
-  languageName: node
-  linkType: hard
-
 "@types/body-parser@npm:*, @types/body-parser@npm:1.19.0":
   version: 1.19.0
   resolution: "@types/body-parser@npm:1.19.0"
@@ -5470,13 +5444,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/caseless@npm:*":
-  version: 0.12.2
-  resolution: "@types/caseless@npm:0.12.2"
-  checksum: 492343e49987f92550c10efe9052f7307ced5d9c3acf7796cda206909b369746e4fcf3bdb061eed6b27dd03482bb6e3b6ec856aa30c4f565893dc18cc8341027
-  languageName: node
-  linkType: hard
-
 "@types/connect@npm:*":
   version: 3.4.34
   resolution: "@types/connect@npm:3.4.34"
@@ -5490,6 +5457,13 @@ __metadata:
   version: 0.5.3
   resolution: "@types/content-disposition@npm:0.5.3"
   checksum: 1b7d94b19ae8564816233b74df5f662052d393d0fdb317c81d894f5e1e762010c46b1812ce01a1492a72603e182afd18a59673e25ae737efc3e470ba261697d7
+  languageName: node
+  linkType: hard
+
+"@types/cookie@npm:^0":
+  version: 0.4.0
+  resolution: "@types/cookie@npm:0.4.0"
+  checksum: be9ef4172b97878fe38874c47d25bddcc58886fa4e621b3336bf2e08983763b5391a0d0b4ace34372adc3bd44da05ea9bcf885b0f5b5ab56bc72e0baba5e6346
   languageName: node
   linkType: hard
 
@@ -6007,18 +5981,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/request@npm:*":
-  version: 2.48.5
-  resolution: "@types/request@npm:2.48.5"
-  dependencies:
-    "@types/caseless": "*"
-    "@types/node": "*"
-    "@types/tough-cookie": "*"
-    form-data: ^2.5.0
-  checksum: 74f1a250cab068aec594cede9e57508e0b63d46110dd5d62611f087a4c0e9b524884b1d76f128e5ee86d3d91a40587986d85567b567653cd3e30873686ab195d
-  languageName: node
-  linkType: hard
-
 "@types/responselike@npm:*, @types/responselike@npm:^1.0.0":
   version: 1.0.0
   resolution: "@types/responselike@npm:1.0.0"
@@ -6119,13 +6081,6 @@ __metadata:
     "@types/testing-library__dom": "*"
     pretty-format: ^25.1.0
   checksum: 4b810c52276d4810a1e85bb767457d0aa661a2c42e95aba3c89a38f294f76cca72c4f867768e29def3b60157df040ead3054805d268a4449eec8aabdfe8ef326
-  languageName: node
-  linkType: hard
-
-"@types/tough-cookie@npm:*":
-  version: 4.0.0
-  resolution: "@types/tough-cookie@npm:4.0.0"
-  checksum: 5a0cccc6d073b84dbb48d603e692b55ac30cea1653a7fc813e97a3bcaa9edd97c703c15727378d632e416a90178e6da657151eba8175cbb201a9a98de22ac3a8
   languageName: node
   linkType: hard
 
@@ -8954,7 +8909,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.19.0":
+"axios@npm:^0.19.0, axios@npm:^0.19.2":
   version: 0.19.2
   resolution: "axios@npm:0.19.2"
   dependencies:
@@ -9581,7 +9536,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-transform-es2015-block-scoping@npm:^6.24.1, babel-plugin-transform-es2015-block-scoping@npm:^6.26.0":
+"babel-plugin-transform-es2015-block-scoping@npm:^6.24.1":
   version: 6.26.0
   resolution: "babel-plugin-transform-es2015-block-scoping@npm:6.26.0"
   dependencies:
@@ -11980,7 +11935,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cookie@npm:^0.4.0":
+"cookie@npm:^0.4.0, cookie@npm:^0.4.1":
   version: 0.4.1
   resolution: "cookie@npm:0.4.1"
   checksum: b8e0928e3e7aba013087974b33a6eec730b0a68b7ec00fc3c089a56ba2883bcf671252fc2ed64775aa1ca64796b6e1f6fdddba25a66808aef77614d235fd3e06
@@ -14913,17 +14868,6 @@ __metadata:
     tapable: ^1.0.0
     worker-rpc: ^0.1.0
   checksum: 41840cdd7996be2d17e4d49ea01589fb84bb7a973fe55ef9734eb88a1fdbd7f7670e6d4ba38bd1aa0bbd388ff24a538ad54c85bff395f980622b2b74fb1b33bc
-  languageName: node
-  linkType: hard
-
-"form-data@npm:^2.5.0":
-  version: 2.5.1
-  resolution: "form-data@npm:2.5.1"
-  dependencies:
-    asynckit: ^0.4.0
-    combined-stream: ^1.0.6
-    mime-types: ^2.1.12
-  checksum: c46ee9a14a8678b6e0dfafabc96e25237d9f11ced9c51cd371a2b3448f6a3f2fa684b3bbbb35911bae8f5448b3f3c48c73f7f2be791a4ae5aee0eb0ab3cdfec2
   languageName: node
   linkType: hard
 
@@ -24104,7 +24048,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"request@npm:^2.81.0, request@npm:^2.88.0":
+"request@npm:^2.88.0":
   version: 2.88.2
   resolution: "request@npm:2.88.2"
   dependencies:
@@ -24326,16 +24270,6 @@ resolve@^2.0.0-next.3:
   version: 1.0.4
   resolution: "reusify@npm:1.0.4"
   checksum: 08ef02ed0514f020a51131ba2e6c27c66ccebe25d49cfc83467a0d4054db4634a2853480d0895c710b645ab66af1a6fb3e183888306ae559413bd96c69f39ccd
-  languageName: node
-  linkType: hard
-
-"rewire@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "rewire@npm:3.0.2"
-  dependencies:
-    babel-core: ^6.26.0
-    babel-plugin-transform-es2015-block-scoping: ^6.26.0
-  checksum: 715b22e4933966dec41662eb5726ba8153957bc6c8c886171cdff6c70576a84ea5102c75975e79ed6d2b3baec3f3e977703ef9eacf3ebe9f24a40da6f1324ee6
   languageName: node
   linkType: hard
 

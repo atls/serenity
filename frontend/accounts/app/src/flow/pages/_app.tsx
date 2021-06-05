@@ -3,10 +3,10 @@ import React                                 from 'react'
 import compose                               from 'recompose/compose'
 import { withHelmet }                        from '@atls/next-app-with-helmet'
 
-import { ThemeProvider, injectGlobalStyles } from '@ui/theme'
-
 import { withEmotion }                       from '../../providers'
 import { withIntl }                          from '../../providers'
+
+import { ThemeProvider, injectGlobalStyles } from '@ui/theme'
 
 class AccountsApp extends App {
   static async getInitialProps({ Component, ctx }: any): Promise<any> {
