@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState }     from 'react'
 
-import { Form, FormField }          from '@atls/react-kratos-forms'
-import { useKratosData } from '@accounts/utils'
-import { Button }                   from '@ui/button'
-import { Input }                    from '@ui/input'
-import { Box, Column, Layout }      from '@ui/layout'
-import { Text }                     from '@ui/text'
+import { Form, FormField }     from '@atls/react-kratos-forms'
+import { useKratosData }       from '@accounts/utils'
+import { Button }              from '@ui/button'
+import { Input }               from '@ui/input'
+import { Box, Column, Layout } from '@ui/layout'
+import { Text }                from '@ui/text'
 
-import messages                     from './messages'
+import messages                from './messages'
 
 export const Recovery = ({ intl }: any) => {
   const [csrfToken, setCsrfToken] = useState<string>('')
@@ -30,13 +30,7 @@ export const Recovery = ({ intl }: any) => {
           </Layout>
           <Layout flexBasis={[32, 32, 32]} />
           <FormField name='csrf_token'>
-            {({ name, type }) => (
-              <Input
-                name={name}
-                type={type}
-                value={csrfToken}
-              />
-            )}
+            {({ name, type }) => <Input name={name} type={type} value={csrfToken} />}
           </FormField>
           <Layout>
             <FormField name='email'>

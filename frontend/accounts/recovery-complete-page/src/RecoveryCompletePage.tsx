@@ -3,7 +3,7 @@ import React                   from 'react'
 import { LogoIcon }            from '@ui/icons'
 import { Box, Column, Layout } from '@ui/layout'
 
-import ResetPasswordComplete   from './reset-password-complete'
+import RecoveryComplete   from './recovery-complete'
 
 export const RecoveryCompletePage = ({ accountUrl, siteUrl }: any) => (
   <Box bg='rgb(159, 159, 159)' height='100vh'>
@@ -14,7 +14,7 @@ export const RecoveryCompletePage = ({ accountUrl, siteUrl }: any) => (
       </Layout>
       <Layout flexGrow={2} />
       <Layout justifyContent='center'>
-        <ResetPasswordComplete accountUrl={accountUrl} siteUrl={siteUrl} />
+        <RecoveryComplete accountUrl={accountUrl} siteUrl={siteUrl} />
       </Layout>
       <Layout flexGrow={3} />
     </Column>

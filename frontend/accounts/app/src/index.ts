@@ -1,12 +1,12 @@
 import { getKratosClient } from '@atls/kratos-session'
 
-import connectRedis      from 'connect-redis'
-import express           from 'express'
-import session           from 'express-session'
-import next              from 'next'
-import path              from 'path'
+import connectRedis        from 'connect-redis'
+import express             from 'express'
+import session             from 'express-session'
+import next                from 'next'
+import path                from 'path'
 
-import flow              from './flow'
+import flow                from './flow'
 
 const RedisStore = connectRedis(session)
 

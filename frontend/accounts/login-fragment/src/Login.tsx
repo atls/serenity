@@ -10,15 +10,23 @@ import { Text }                     from '@ui/text'
 
 import messages                     from './messages'
 
-export const Login = ({
-  intl,
-}: any) => {
+export const Login = ({ intl }: any) => {
   const [csrfToken, setCsrfToken] = useState<string>('')
-  const [action,setAction] = useState<string>('')
+  const [action, setAction] = useState<string>('')
   const fields = [
     { name: 'csrf_token', type: 'hidden' },
-    { name: 'identifier', type: 'email', placeholder: intl.formatMessage(messages.login), value: '' },
-    { name: 'password', type: 'password', placeholder: intl.formatMessage(messages.password), value: '' }
+    {
+      name: 'identifier',
+      type: 'email',
+      placeholder: intl.formatMessage(messages.login),
+      value: '',
+    },
+    {
+      name: 'password',
+      type: 'password',
+      placeholder: intl.formatMessage(messages.password),
+      value: '',
+    },
   ]
 
   useKratosData({ setCsrfToken, setAction })
@@ -34,17 +42,11 @@ export const Login = ({
           </Layout>
           <Layout flexBasis={[32, 32, 40]} />
           <FormField name='csrf_token'>
-            {({ name, type }) => (
-              <Input
-                name={name}
-                type={type}
-                value={csrfToken}
-              />
-            )}
+            {({ name, type }) => <Input name={name} type={type} value={csrfToken} />}
           </FormField>
           <Layout>
             <FormField name='identifier'>
-              {({ name, type, placeholder },value,onChange) => (
+              {({ name, type, placeholder }, value, onChange) => (
                 <Input
                   name={name}
                   type={type}
@@ -58,7 +60,7 @@ export const Login = ({
           <Layout flexBasis={30} />
           <Layout>
             <FormField name='password'>
-              {({ name, type, placeholder },value,onChange) => (
+              {({ name, type, placeholder }, value, onChange) => (
                 <Input
                   name={name}
                   type={type}

@@ -1,5 +1,7 @@
-import { PublicApi }    from '@ory/kratos-client'
-import { serialize }    from 'cookie'
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
+import { PublicApi }   from '@ory/kratos-client'
+import { serialize }   from 'cookie'
 
 import { flowIdGuard } from '../utils'
 

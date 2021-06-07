@@ -1,24 +1,37 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
-import { Form, FormField } from '@atls/react-kratos-forms'
-import { useKratosData } from '@accounts/utils'
-import { Button }                   from '@ui/button'
-import { Input }                    from '@ui/input'
-import { Box, Column, Layout }      from '@ui/layout'
-import { Text }                     from '@ui/text'
+import { Form, FormField }            from '@atls/react-kratos-forms'
+import { useKratosData }              from '@accounts/utils'
+import { Button }                     from '@ui/button'
+import { Input }                      from '@ui/input'
+import { Box, Column, Layout }        from '@ui/layout'
+import { Text }                       from '@ui/text'
 
-import messages                     from './messages'
+import messages                       from './messages'
 
-export const Registration = ({
-  intl
-}: any) => {
+export const Registration = ({ intl }: any) => {
   const [csrfToken, setCsrfToken] = useState<string>('')
   const [action, setAction] = useState<string>('')
   const fields = [
     { name: 'csrf_token', type: 'hidden' },
-    { name: 'traits.email', type: 'email', placeholder: intl.formatMessage(messages.email), value: '' },
-    { name: 'password', type: 'password', placeholder: intl.formatMessage(messages.enterPassword), value: '' },
-    { name: 'confirmPassword', type: 'password', placeholder: intl.formatMessage(messages.confirmPassword), value: '' },
+    {
+      name: 'traits.email',
+      type: 'email',
+      placeholder: intl.formatMessage(messages.email),
+      value: '',
+    },
+    {
+      name: 'password',
+      type: 'password',
+      placeholder: intl.formatMessage(messages.enterPassword),
+      value: '',
+    },
+    {
+      name: 'confirmPassword',
+      type: 'password',
+      placeholder: intl.formatMessage(messages.confirmPassword),
+      value: '',
+    },
   ]
 
   useKratosData({ setCsrfToken, setAction })
@@ -33,13 +46,7 @@ export const Registration = ({
             </Text>
           </Layout>
           <FormField name='csrf_token'>
-            {({ name, type }) => (
-              <Input
-                name={name}
-                type={type}
-                value={csrfToken}
-              />
-            )}
+            {({ name, type }) => <Input name={name} type={type} value={csrfToken} />}
           </FormField>
           <Layout flexBasis={[32, 32, 32]} />
           <Layout>

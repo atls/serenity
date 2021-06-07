@@ -1,7 +1,7 @@
-import React               from 'react'
-import { useIntl }         from 'react-intl'
+import React            from 'react'
+import { useIntl }      from 'react-intl'
 
-import { Registration }    from './Registration'
+import { Registration } from './Registration'
 
 export default () => {
   const intl = useIntl()
