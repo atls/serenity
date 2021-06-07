@@ -1,16 +1,15 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 
-import { PublicApi } from '@ory/kratos-client'
+import { getKratosSession } from '@atls/kratos-session'
 
 export const redirect = async (req, res, next) => {
-  const { publicApi: kratos }: { publicApi: PublicApi } = req.kratos
 
-  kratos
-    .whoami(decodeURIComponent(req.header('Cookie')), req.header('Authorization'))
-    .then(({ status, data }) => {
+  getKratosSession()
+    .then(session => {
+      if (!session) Promise.reject('No session')
       next()
     })
-    .catch((err) => {
+    .catch(err => {
       err.status === 404 ? res.json(err) : res.redirect('/login')
     })
 }

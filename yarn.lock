@@ -16,6 +16,7 @@ __metadata:
     "@accounts/registration-complete-page": "workspace:frontend/accounts/registration-complete-page"
     "@accounts/registration-page": "workspace:frontend/accounts/registration-page"
     "@accounts/registration-profile-page": "workspace:frontend/accounts/registration-profile-page"
+    "@atls/kratos-session": ^0.0.1
     "@atls/next-app-with-helmet": ^0.2.63
     "@atls/next-config-with-extract-intl-messages": ^0.0.1
     "@atls/next-config-with-pnp-workspaces": ^0.0.1
@@ -28,7 +29,7 @@ __metadata:
     "@emotion/server": ^11.4.0
     "@emotion/styled": ^11.3.0
     "@grpc/proto-loader": 0.5.5
-    "@ory/kratos-client": 0.5.5-alpha.2
+    "@ory/kratos-client": 0.5.5-alpha.4
     "@protos/common": 0.3.1
     "@protos/identity": 0.3.1
     "@types/cookie": ^0
@@ -808,6 +809,16 @@ __metadata:
     deepmerge: ^4.2.2
     typescript: ^4.2.4
   checksum: 66e5e1f531ff04e0be0f7a5f004d4e735f9e95ea6533dd9f75721ae4eed62a743d3a4fc7f8158cf70ddda58bbf3095ba6f9aaa405d5791d60eedf11f49459e76
+  languageName: node
+  linkType: hard
+
+"@atls/kratos-session@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "@atls/kratos-session@npm:0.0.1"
+  dependencies:
+    "@atls/logger": ^0.0.1
+    "@ory/kratos-client": ^0.5.5-alpha.4
+  checksum: 6f5dfa1096b1869684c2523af68635042cf51040f3c6f217bcf7f75925e1aa205176f41deb6ae69d28c64b77481beedb1db238f8eb6ece4b2e5d675cad71019e
   languageName: node
   linkType: hard
 
@@ -4286,12 +4297,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ory/kratos-client@npm:0.5.5-alpha.2":
-  version: 0.5.5-alpha.2
-  resolution: "@ory/kratos-client@npm:0.5.5-alpha.2"
+"@ory/kratos-client@npm:0.5.5-alpha.4, @ory/kratos-client@npm:^0.5.5-alpha.4":
+  version: 0.5.5-alpha.4
+  resolution: "@ory/kratos-client@npm:0.5.5-alpha.4"
   dependencies:
     axios: ^0.19.2
-  checksum: e6fcb2b19e05a629e2b03fa964371dceea795ab2995432c0405b04c03ae1843eaa7cccc81fd5e77ba097b768323a94c97c101794e0e053c1c5b109a93e731cd2
+  checksum: b41a6b4094e49cdb3226e09105250de58cc54b975f6a43e13a66f437aed125409a050479f35cdcc8d487e397cfbc86a4c86271446f68880226b903eb8d44939b
   languageName: node
   linkType: hard
 

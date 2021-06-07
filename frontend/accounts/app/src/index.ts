@@ -1,6 +1,4 @@
-import { AdminApi }      from '@ory/kratos-client'
-import { Configuration } from '@ory/kratos-client'
-import { PublicApi }     from '@ory/kratos-client'
+import { getKratosClient } from '@atls/kratos-session'
 
 import connectRedis      from 'connect-redis'
 import express           from 'express'
@@ -40,16 +38,7 @@ const bootstrap = async () => {
 
   server.use((req, res, nextMid) => {
     // eslint-disable-next-line dot-notation
-    req['kratos'] = {
-      adminApi: new AdminApi(
-        new Configuration({ basePath: process.env.KRATOS_ADMIN_URL || 'http://kratos:4434/' })
-      ),
-      publicApi: new PublicApi(
-        new Configuration({
-          basePath: process.env.KRATOS_PUBLIC_URL || 'https://kratos.serenity.local.atls.tech/',
-        })
-      ),
-    }
+    req['kratos'] = getKratosClient()
 
     nextMid()
   })

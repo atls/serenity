@@ -670,6 +670,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@accounts/registration-complete-page", "workspace:frontend/accounts/registration-complete-page"],
             ["@accounts/registration-page", "workspace:frontend/accounts/registration-page"],
             ["@accounts/registration-profile-page", "workspace:frontend/accounts/registration-profile-page"],
+            ["@atls/kratos-session", "npm:0.0.1"],
             ["@atls/next-app-with-helmet", "virtual:7187b693904c5ebc4d384e0f326e7761660cb55a68c184ac69b302e882f4d55c9410ae1e073eb886c39e75c76aa09941aba9b6abede29500f4baa7bb5c5c651b#npm:0.2.63"],
             ["@atls/next-config-with-extract-intl-messages", "npm:0.0.1"],
             ["@atls/next-config-with-pnp-workspaces", "npm:0.0.1"],
@@ -682,7 +683,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/server", "virtual:7187b693904c5ebc4d384e0f326e7761660cb55a68c184ac69b302e882f4d55c9410ae1e073eb886c39e75c76aa09941aba9b6abede29500f4baa7bb5c5c651b#npm:11.4.0"],
             ["@emotion/styled", "virtual:c5c93093f8cef3b8a1e8570907679e8abeb73e61b995df12280d68a585a58271938abcae548bac7b1c2e9aba43efcf5eaa962e3ed57e157e41fe945948c5938d#npm:11.3.0"],
             ["@grpc/proto-loader", "npm:0.5.5"],
-            ["@ory/kratos-client", "npm:0.5.5-alpha.2"],
+            ["@ory/kratos-client", "npm:0.5.5-alpha.4"],
             ["@protos/common", "workspace:backend/protos/common"],
             ["@protos/identity", "workspace:backend/protos/identity"],
             ["@types/cookie", "npm:0.4.0"],
@@ -1901,6 +1902,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chalk", "npm:4.1.0"],
             ["deepmerge", "npm:4.2.2"],
             ["typescript", "patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=a45b0e"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@atls/kratos-session", [
+        ["npm:0.0.1", {
+          "packageLocation": "./.yarn/cache/@atls-kratos-session-npm-0.0.1-6f1e1ddb0d-6f5dfa1096.zip/node_modules/@atls/kratos-session/",
+          "packageDependencies": [
+            ["@atls/kratos-session", "npm:0.0.1"],
+            ["@atls/logger", "npm:0.0.1"],
+            ["@ory/kratos-client", "npm:0.5.5-alpha.4"]
           ],
           "linkType": "HARD",
         }]
@@ -11924,10 +11936,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@ory/kratos-client", [
-        ["npm:0.5.5-alpha.2", {
-          "packageLocation": "./.yarn/cache/@ory-kratos-client-npm-0.5.5-alpha.2-c43815a224-e6fcb2b19e.zip/node_modules/@ory/kratos-client/",
+        ["npm:0.5.5-alpha.4", {
+          "packageLocation": "./.yarn/cache/@ory-kratos-client-npm-0.5.5-alpha.4-6171ca63af-b41a6b4094.zip/node_modules/@ory/kratos-client/",
           "packageDependencies": [
-            ["@ory/kratos-client", "npm:0.5.5-alpha.2"],
+            ["@ory/kratos-client", "npm:0.5.5-alpha.4"],
             ["axios", "npm:0.19.2"]
           ],
           "linkType": "HARD",

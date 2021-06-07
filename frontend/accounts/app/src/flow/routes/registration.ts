@@ -1,10 +1,10 @@
-import { AdminApi }    from '@ory/kratos-client'
+import { PublicApi }    from '@ory/kratos-client'
 import { serialize }   from 'cookie'
 
 import { flowIdGuard } from '../utils'
 
 export const registration = async (req, res, next) => {
-  const { adminApi: kratos }: { adminApi: AdminApi } = req.kratos
+  const kratos: PublicApi = req.kratos
   const { flow }: { flow: string } = req.query
 
   flowIdGuard(flow, res, 'registration')

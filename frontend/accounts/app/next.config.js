@@ -13,5 +13,5 @@ module.exports = withPlugins([
   withWorkspaces,
   withImages,
   withFonts,
-  withAliases(['@emotion/react', '@emotion/styled', 'react-intl']),
+  withAliases(['@emotion/react', '@emotion/styled', 'react-intl', '@ory/kratos-client']),
 ])
