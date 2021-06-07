@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import { Form, FormField } from '@atls/react-kratos-forms'
+import { useKratosData } from '@accounts/utils'
 import { Button }                   from '@ui/button'
 import { Input }                    from '@ui/input'
 import { Box, Column, Layout }      from '@ui/layout'
@@ -20,20 +21,7 @@ export const Registration = ({
     { name: 'confirmPassword', type: 'password', placeholder: intl.formatMessage(messages.confirmPassword), value: '' },
   ]
 
-  useEffect(() => {
-    const cookieToken = document.cookie
-      .split(';')
-      .filter((cookie) => cookie.split('=')[0].trim() === 'csrf_token')[0]
-      .split('=')[1]
-      .trim()
-    setCsrfToken(decodeURIComponent(cookieToken))
-    setAction(`${window.location.origin.replace(
-      'accounts',
-      'kratos'
-    )}/self-service/registration/methods/password?flow=${window.location.search
-      .split('=')[1]
-      .replace('?', '')}`)
-  }, [])
+  useKratosData({ setCsrfToken, setAction })
 
   return (
     <Form fields={fields} action={action}>

@@ -283,6 +283,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:frontend/accounts/settings-page"
       },
       {
+        "name": "@accounts/utils",
+        "reference": "workspace:frontend/accounts/utils"
+      },
+      {
         "name": "@email/app",
         "reference": "workspace:frontend/email/app"
       },
@@ -526,6 +530,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@accounts/registration-profile-page", ["workspace:frontend/accounts/registration-profile-page"]],
       ["@accounts/settings-fragment", ["virtual:2949c96537454eb2d0155640706fa4acc10780a1c84ed97d3b0971fabcee2abd077bf5299a1bd7b99403fe4b552dce01a73e048627b90e24212ead9b52dced7d#workspace:frontend/accounts/settings-fragment", "workspace:frontend/accounts/settings-fragment"]],
       ["@accounts/settings-page", ["workspace:frontend/accounts/settings-page"]],
+      ["@accounts/utils", ["workspace:frontend/accounts/utils"]],
       ["@catalog/application", ["workspace:backend/catalog/application"]],
       ["@catalog/domain", ["workspace:backend/catalog/domain"]],
       ["@catalog/persistence", ["workspace:backend/catalog/persistence"]],
@@ -730,6 +735,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./frontend/accounts/login-fragment/",
           "packageDependencies": [
             ["@accounts/login-fragment", "workspace:frontend/accounts/login-fragment"],
+            ["@accounts/utils", "workspace:frontend/accounts/utils"],
             ["@atls/react-kratos-forms", "virtual:73e0b41c1841c899b8c2991817e4d59ed04aae12c8d510b3e0a772a64016d76731c14eccaef296369a9d2aec526f067fce19bb48bcf3ebf3ce22e4456c8f69c9#npm:0.0.3"],
             ["@ui/button", "workspace:frontend/ui/button"],
             ["@ui/input", "workspace:frontend/ui/input"],
@@ -781,6 +787,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./frontend/accounts/recovery-fragment/",
           "packageDependencies": [
             ["@accounts/recovery-fragment", "workspace:frontend/accounts/recovery-fragment"],
+            ["@accounts/utils", "workspace:frontend/accounts/utils"],
             ["@atls/react-kratos-forms", "virtual:73e0b41c1841c899b8c2991817e4d59ed04aae12c8d510b3e0a772a64016d76731c14eccaef296369a9d2aec526f067fce19bb48bcf3ebf3ce22e4456c8f69c9#npm:0.0.3"],
             ["@ui/button", "workspace:frontend/ui/button"],
             ["@ui/input", "workspace:frontend/ui/input"],
@@ -832,6 +839,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./frontend/accounts/registration-fragment/",
           "packageDependencies": [
             ["@accounts/registration-fragment", "workspace:frontend/accounts/registration-fragment"],
+            ["@accounts/utils", "workspace:frontend/accounts/utils"],
             ["@atls/react-kratos-forms", "virtual:73e0b41c1841c899b8c2991817e4d59ed04aae12c8d510b3e0a772a64016d76731c14eccaef296369a9d2aec526f067fce19bb48bcf3ebf3ce22e4456c8f69c9#npm:0.0.3"],
             ["@ui/button", "workspace:frontend/ui/button"],
             ["@ui/input", "workspace:frontend/ui/input"],
@@ -883,6 +891,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@accounts-settings-fragment-virtual-4bd065cb71/1/frontend/accounts/settings-fragment/",
           "packageDependencies": [
             ["@accounts/settings-fragment", "virtual:2949c96537454eb2d0155640706fa4acc10780a1c84ed97d3b0971fabcee2abd077bf5299a1bd7b99403fe4b552dce01a73e048627b90e24212ead9b52dced7d#workspace:frontend/accounts/settings-fragment"],
+            ["@accounts/utils", "workspace:frontend/accounts/utils"],
             ["@atls/react-kratos-forms", "virtual:e1bf983029eee70de0b6bce5f575b0d4a18b1d12e5fd57d40bbe3321e7a5151a9a99bd706f6e427a44d3d4723dca3f0897ed47d9c150041eff6e1997d0c188e3#npm:0.0.3"],
             ["@types/react", null],
             ["@types/react-intl", null],
@@ -905,6 +914,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./frontend/accounts/settings-fragment/",
           "packageDependencies": [
             ["@accounts/settings-fragment", "workspace:frontend/accounts/settings-fragment"],
+            ["@accounts/utils", "workspace:frontend/accounts/utils"],
             ["@atls/react-kratos-forms", "virtual:e1bf983029eee70de0b6bce5f575b0d4a18b1d12e5fd57d40bbe3321e7a5151a9a99bd706f6e427a44d3d4723dca3f0897ed47d9c150041eff6e1997d0c188e3#npm:0.0.3"],
             ["@ui/button", "workspace:frontend/ui/button"],
             ["@ui/input", "workspace:frontend/ui/input"],
@@ -923,6 +933,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui/icons", "workspace:frontend/ui/icons"],
             ["@ui/layout", "workspace:frontend/ui/layout"],
             ["@ui/link", "workspace:frontend/ui/link"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@accounts/utils", [
+        ["workspace:frontend/accounts/utils", {
+          "packageLocation": "./frontend/accounts/utils/",
+          "packageDependencies": [
+            ["@accounts/utils", "workspace:frontend/accounts/utils"],
+            ["@types/react", "npm:17.0.8"],
+            ["react", "npm:17.0.2"]
           ],
           "linkType": "SOFT",
         }]
