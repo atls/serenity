@@ -7,11 +7,7 @@ export const login = async (req, res, next) => {
   const kratos: PublicApi = req.kratos
   const { flow }: { flow: string } = req.query
 
-  console.log('Initialized. Flow is',flow)
-
   flowIdGuard(flow, res, 'login')
-
-  console.log('Guard passed, flow is',flow)
 
   kratos
     .getSelfServiceLoginFlow(flow)

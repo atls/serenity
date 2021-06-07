@@ -1,10 +1,10 @@
 import { PublicApi }    from '@ory/kratos-client'
-import { serialize }   from 'cookie'
+import { serialize }    from 'cookie'
 
 import { flowIdGuard } from '../utils'
 
 export const settings = async (req, res, next) => {
-  const { publicApi: kratos }: { publicApi: PublicApi } = req.kratos
+  const kratos: PublicApi = req.kratos
   const { flow }: { flow: string } = req.query
 
   flowIdGuard(flow, res, 'settings')

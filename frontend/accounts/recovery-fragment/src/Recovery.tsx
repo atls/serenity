@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 
+import { Form, FormField }          from '@atls/react-kratos-forms'
 import { Button }                   from '@ui/button'
 import { Input }                    from '@ui/input'
 import { Box, Column, Layout }      from '@ui/layout'
@@ -7,8 +8,13 @@ import { Text }                     from '@ui/text'
 
 import messages                     from './messages'
 
-export const Recovery = ({ intl, email, onChangeEmail, onReset, onChangeCsrfToken }: any) => {
-  const formRef = useRef(null)
+export const Recovery = ({ intl }: any) => {
+  const [csrfToken, setCsrfToken] = useState<string>('')
+  const [action, setAction] = useState<string>('')
+  const fields = [
+    { name: 'csrf_token', type: 'hidden' },
+    { name: 'email', type: 'email', placeholder: intl.formatMessage(messages.email), value: '' },
+  ]
 
   useEffect(() => {
     const cookieToken = document.cookie
@@ -16,17 +22,17 @@ export const Recovery = ({ intl, email, onChangeEmail, onReset, onChangeCsrfToke
       .filter((cookie) => cookie.split('=')[0].trim() === 'csrf_token')[0]
       .split('=')[1]
       .trim()
-    onChangeCsrfToken(decodeURIComponent(cookieToken))
-    formRef.current.action = `${window.location.origin.replace(
+    setCsrfToken(decodeURIComponent(cookieToken))
+    setAction(`${window.location.origin.replace(
       'accounts',
       'kratos'
     )}/self-service/recovery/methods/link?flow=${window.location.search
       .split('=')[1]
-      .replace('?', '')}`
+      .replace('?', '')}`)
   }, [])
 
   return (
-    <form method='POST' ref={formRef}>
+    <Form fields={fields} action={action}>
       <Box width={400} mx={[32, 0]}>
         <Column>
           <Layout>
@@ -35,22 +41,36 @@ export const Recovery = ({ intl, email, onChangeEmail, onReset, onChangeCsrfToke
             </Text>
           </Layout>
           <Layout flexBasis={[32, 32, 32]} />
+          <FormField name='csrf_token'>
+            {({ name, type }) => (
+              <Input
+                name={name}
+                type={type}
+                value={csrfToken}
+              />
+            )}
+          </FormField>
           <Layout>
-            <Input
-              placeholder={intl.formatMessage(messages.email)}
-              value={email}
-              onChange={onChangeEmail}
-              onEnter={onReset}
-            />
+            <FormField name='email'>
+              {({ name, type, placeholder }, value, onChange) => (
+                <Input
+                  name={name}
+                  type={type}
+                  placeholder={placeholder}
+                  value={value}
+                  onChange={onChange}
+                />
+              )}
+            </FormField>
           </Layout>
           <Layout flexBasis={24} />
           <Layout>
-            <Button fill size='large' color='chicago' fontWeight='medium' onClick={onReset}>
+            <Button fill size='large' color='chicago' fontWeight='medium'>
               {intl.formatMessage(messages.sendMail)}
             </Button>
           </Layout>
         </Column>
       </Box>
-    </form>
+    </Form>
   )
 }

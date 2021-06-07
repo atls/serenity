@@ -4,6 +4,7 @@
   "license": "MIT",
   "main": "src/index.tsx",
   "devDependencies": {
+    "@atls/react-kratos-forms": "^0.0.3",
     "@ui/button": "workspace:frontend/ui/button",
     "@ui/input": "workspace:frontend/ui/input",
     "@ui/layout": "workspace:frontend/ui/layout",

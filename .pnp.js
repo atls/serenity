@@ -730,6 +730,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./frontend/accounts/login-fragment/",
           "packageDependencies": [
             ["@accounts/login-fragment", "workspace:frontend/accounts/login-fragment"],
+            ["@atls/react-kratos-forms", "virtual:73e0b41c1841c899b8c2991817e4d59ed04aae12c8d510b3e0a772a64016d76731c14eccaef296369a9d2aec526f067fce19bb48bcf3ebf3ce22e4456c8f69c9#npm:0.0.3"],
             ["@ui/button", "workspace:frontend/ui/button"],
             ["@ui/input", "workspace:frontend/ui/input"],
             ["@ui/layout", "workspace:frontend/ui/layout"],
@@ -780,6 +781,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./frontend/accounts/recovery-fragment/",
           "packageDependencies": [
             ["@accounts/recovery-fragment", "workspace:frontend/accounts/recovery-fragment"],
+            ["@atls/react-kratos-forms", "virtual:73e0b41c1841c899b8c2991817e4d59ed04aae12c8d510b3e0a772a64016d76731c14eccaef296369a9d2aec526f067fce19bb48bcf3ebf3ce22e4456c8f69c9#npm:0.0.3"],
             ["@ui/button", "workspace:frontend/ui/button"],
             ["@ui/input", "workspace:frontend/ui/input"],
             ["@ui/layout", "workspace:frontend/ui/layout"],
@@ -830,6 +832,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./frontend/accounts/registration-fragment/",
           "packageDependencies": [
             ["@accounts/registration-fragment", "workspace:frontend/accounts/registration-fragment"],
+            ["@atls/react-kratos-forms", "virtual:73e0b41c1841c899b8c2991817e4d59ed04aae12c8d510b3e0a772a64016d76731c14eccaef296369a9d2aec526f067fce19bb48bcf3ebf3ce22e4456c8f69c9#npm:0.0.3"],
             ["@ui/button", "workspace:frontend/ui/button"],
             ["@ui/input", "workspace:frontend/ui/input"],
             ["@ui/layout", "workspace:frontend/ui/layout"],
@@ -880,6 +883,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@accounts-settings-fragment-virtual-4bd065cb71/1/frontend/accounts/settings-fragment/",
           "packageDependencies": [
             ["@accounts/settings-fragment", "virtual:2949c96537454eb2d0155640706fa4acc10780a1c84ed97d3b0971fabcee2abd077bf5299a1bd7b99403fe4b552dce01a73e048627b90e24212ead9b52dced7d#workspace:frontend/accounts/settings-fragment"],
+            ["@atls/react-kratos-forms", "virtual:e1bf983029eee70de0b6bce5f575b0d4a18b1d12e5fd57d40bbe3321e7a5151a9a99bd706f6e427a44d3d4723dca3f0897ed47d9c150041eff6e1997d0c188e3#npm:0.0.3"],
             ["@types/react", null],
             ["@types/react-intl", null],
             ["@ui/button", "workspace:frontend/ui/button"],
@@ -901,6 +905,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./frontend/accounts/settings-fragment/",
           "packageDependencies": [
             ["@accounts/settings-fragment", "workspace:frontend/accounts/settings-fragment"],
+            ["@atls/react-kratos-forms", "virtual:e1bf983029eee70de0b6bce5f575b0d4a18b1d12e5fd57d40bbe3321e7a5151a9a99bd706f6e427a44d3d4723dca3f0897ed47d9c150041eff6e1997d0c188e3#npm:0.0.3"],
             ["@ui/button", "workspace:frontend/ui/button"],
             ["@ui/input", "workspace:frontend/ui/input"],
             ["@ui/layout", "workspace:frontend/ui/layout"],
@@ -2177,6 +2182,41 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@atls/react-auth", "npm:0.1.41"],
             ["react", "npm:17.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@atls/react-kratos-forms", [
+        ["npm:0.0.3", {
+          "packageLocation": "./.yarn/cache/@atls-react-kratos-forms-npm-0.0.3-3968f3e2b9-4ef99a231e.zip/node_modules/@atls/react-kratos-forms/",
+          "packageDependencies": [
+            ["@atls/react-kratos-forms", "npm:0.0.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:73e0b41c1841c899b8c2991817e4d59ed04aae12c8d510b3e0a772a64016d76731c14eccaef296369a9d2aec526f067fce19bb48bcf3ebf3ce22e4456c8f69c9#npm:0.0.3", {
+          "packageLocation": "./.yarn/$$virtual/@atls-react-kratos-forms-virtual-1ae7f44658/0/cache/@atls-react-kratos-forms-npm-0.0.3-3968f3e2b9-4ef99a231e.zip/node_modules/@atls/react-kratos-forms/",
+          "packageDependencies": [
+            ["@atls/react-kratos-forms", "virtual:73e0b41c1841c899b8c2991817e4d59ed04aae12c8d510b3e0a772a64016d76731c14eccaef296369a9d2aec526f067fce19bb48bcf3ebf3ce22e4456c8f69c9#npm:0.0.3"],
+            ["@types/react", null],
+            ["react", "npm:17.0.2"]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:e1bf983029eee70de0b6bce5f575b0d4a18b1d12e5fd57d40bbe3321e7a5151a9a99bd706f6e427a44d3d4723dca3f0897ed47d9c150041eff6e1997d0c188e3#npm:0.0.3", {
+          "packageLocation": "./.yarn/$$virtual/@atls-react-kratos-forms-virtual-987037e71e/0/cache/@atls-react-kratos-forms-npm-0.0.3-3968f3e2b9-4ef99a231e.zip/node_modules/@atls/react-kratos-forms/",
+          "packageDependencies": [
+            ["@atls/react-kratos-forms", "virtual:e1bf983029eee70de0b6bce5f575b0d4a18b1d12e5fd57d40bbe3321e7a5151a9a99bd706f6e427a44d3d4723dca3f0897ed47d9c150041eff6e1997d0c188e3#npm:0.0.3"],
+            ["@types/react", null],
+            ["react", null]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
           ],
           "linkType": "HARD",
         }]

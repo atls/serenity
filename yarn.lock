@@ -74,6 +74,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@accounts/login-fragment@workspace:frontend/accounts/login-fragment"
   dependencies:
+    "@atls/react-kratos-forms": ^0.0.3
     "@ui/button": "workspace:frontend/ui/button"
     "@ui/input": "workspace:frontend/ui/input"
     "@ui/layout": "workspace:frontend/ui/layout"
@@ -118,6 +119,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@accounts/recovery-fragment@workspace:frontend/accounts/recovery-fragment"
   dependencies:
+    "@atls/react-kratos-forms": ^0.0.3
     "@ui/button": "workspace:frontend/ui/button"
     "@ui/input": "workspace:frontend/ui/input"
     "@ui/layout": "workspace:frontend/ui/layout"
@@ -162,6 +164,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@accounts/registration-fragment@workspace:frontend/accounts/registration-fragment"
   dependencies:
+    "@atls/react-kratos-forms": ^0.0.3
     "@ui/button": "workspace:frontend/ui/button"
     "@ui/input": "workspace:frontend/ui/input"
     "@ui/layout": "workspace:frontend/ui/layout"
@@ -206,6 +209,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@accounts/settings-fragment@workspace:frontend/accounts/settings-fragment"
   dependencies:
+    "@atls/react-kratos-forms": ^0.0.3
     "@ui/button": "workspace:frontend/ui/button"
     "@ui/input": "workspace:frontend/ui/input"
     "@ui/layout": "workspace:frontend/ui/layout"
@@ -937,6 +941,15 @@ __metadata:
   dependencies:
     react: 16.14.0
   checksum: 6eb8c1069153b7dd86243c5b6637cafa652405e4ae9354068aba863e3a113c4e88e38c97a0aacc2434f5081ab6a8bf3f749689c456859ec85003af718cf80ca0
+  languageName: node
+  linkType: hard
+
+"@atls/react-kratos-forms@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "@atls/react-kratos-forms@npm:0.0.3"
+  peerDependencies:
+    react: ^17.0.1
+  checksum: 4ef99a231e3045ffca364b392c9631f39e98c9ad6f8e29004d06a7dbea30755d0721da6e106372b5982e80dd601c52d2fd11dfef620d82c81da637aa97f63f08
   languageName: node
   linkType: hard
 
