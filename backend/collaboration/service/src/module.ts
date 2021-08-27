@@ -1,4 +1,4 @@
-import { BusModule }         from '@monstrs/nestjs-bus'
+import { BusModule }         from '@atls/nestjs-bus'
 import { Module }            from '@nestjs/common'
 
 import { ApplicationModule } from '@collaboration/application'

@@ -6,7 +6,7 @@ import {
   SpecialistService,
   UpdateSpecialistCommand,
 } from '@collaboration/application'
-import { MapValidationErrorsInterceptor }                        from '@monstrs/nestjs-map-errors-interceptor'
+import { MapValidationErrorsInterceptor }                        from '@atls/nestjs-map-errors-interceptor'
 
 @Controller()
 @UseInterceptors(MapValidationErrorsInterceptor)
