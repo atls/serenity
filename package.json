@@ -9,8 +9,7 @@
     "collaboration:dev": "yarn workspace @collaboration/service dev",
     "mailer:dev": "yarn workspace @mailer/service dev",
     "public-gateway:dev": "yarn workspace @public-gateway/app dev",
-    "private-gateway:dev": "yarn workspace @private-gateway/app dev",
-    "email:dev": "yarn workspace @email/app dev"
+    "private-gateway:dev": "yarn workspace @private-gateway/app dev"
   },
   "devDependencies": {
     "@atlantis-lab/tsconfig": "^0.1.12",
@@ -42,6 +41,7 @@
   "workspaces": [
     "fragments/**/*",
     "site/**/*",
+    "email/**/*",
     "ui/**/*",
     "types/**/*"
   ]

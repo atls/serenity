@@ -1,5 +1,5 @@
 {
-  "name": "@email/app",
+  "name": "@email/renderer-entrypoint",
   "version": "0.1.1",
   "license": "MIT",
   "main": "src/index.ts",

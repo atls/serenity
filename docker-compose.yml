@@ -229,7 +229,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn email:dev
+    entrypoint: yarn workspace @email/renderer-entrypoint dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - NODE_ICU_DATA=/workspace/node_modules/full-icu
