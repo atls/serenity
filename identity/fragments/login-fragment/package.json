@@ -1,0 +1,19 @@
+{
+  "name": "@identity/login-fragment",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "devDependencies": {
+    "@identity/utils": "workspace:identity/utils",
+    "@atls/react-kratos-forms": "^0.0.3",
+    "@ui/button": "workspace:ui/button",
+    "@ui/input": "workspace:ui/input",
+    "@ui/layout": "workspace:ui/layout",
+    "@ui/link": "workspace:ui/link",
+    "@ui/text": "workspace:ui/text"
+  },
+  "dependencies": {
+    "react": "16.14.0",
+    "react-intl": "5.3.2"
+  }
+}

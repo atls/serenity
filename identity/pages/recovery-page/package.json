@@ -1,0 +1,17 @@
+{
+  "name": "@identity/recovery-page",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "devDependencies": {
+    "@identity/recovery-fragment": "workspace:identity/recovery-fragment",
+    "@ui/icons": "workspace:ui/icons",
+    "@ui/layout": "workspace:ui/layout",
+    "@ui/link": "workspace:ui/link"
+  },
+  "dependencies": {
+    "react": "16.14.0",
+    "react-helmet": "^5.2.0",
+    "react-intl": "5.3.2"
+  }
+}
