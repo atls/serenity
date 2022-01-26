@@ -4,8 +4,8 @@ import { Repository }       from 'typeorm'
 
 import { Review }           from '@collaboration/persistence'
 
-import { PageInfo } from '../interfaces'
-import { FindAllResponse } from '../interfaces'
+import { PageInfo }         from '../interfaces'
+import { FindAllResponse }  from '../interfaces'
 
 @Injectable()
 export class ReviewQueriesService {

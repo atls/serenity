@@ -6,7 +6,7 @@ import { serialize }   from 'cookie'
 import { flowIdGuard } from '../utils'
 
 export const settings = async (req, res, next) => {
-  const kratos: PublicApi = req.kratos
+  const { kratos } = req
   const { flow }: { flow: string } = req.query
 
   flowIdGuard(flow, res, 'settings')

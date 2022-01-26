@@ -1,3 +1,3 @@
 export interface PageInfo {
-    hasNext: boolean
-  }
+  hasNext: boolean
+}

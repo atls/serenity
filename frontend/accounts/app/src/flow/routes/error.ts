@@ -5,7 +5,7 @@ import { PublicApi } from '@ory/kratos-client'
 import { isType }    from '../utils'
 
 export const error = async (req, res, next) => {
-  const kratos: PublicApi = req.kratos
+  const { kratos } = req
   const { error: queryError } = req.query
 
   if (!queryError || !isType<string>(queryError)) {

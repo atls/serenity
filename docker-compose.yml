@@ -15,14 +15,11 @@ services:
         ipv4_address: 172.16.101.99
 
   yarn:
-    build: config/yarn
+    image: node:14-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
-      - yarncache:/workspace/.yarn-cache
-    environment:
-      - YARN_CACHE_FOLDER=/workspace/.yarn-cache
+      - unplugged:/workspace/.yarn/unplugged
     entrypoint: yarn
 
   mailhog:
@@ -143,7 +140,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn site:dev
+    entrypoint: yarn workspace @site/renderer-entrypoint dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - NODE_ICU_DATA=/workspace/node_modules/full-icu
@@ -162,7 +159,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn site:dev
+    entrypoint: yarn workspace @site/renderer-entrypoint dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - NODE_ICU_DATA=/workspace/node_modules/full-icu
