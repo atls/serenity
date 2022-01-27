@@ -1,22 +1,20 @@
-import { BusModule }         from '@atls/nestjs-bus'
-import { Module }            from '@nestjs/common'
+import { BusModule }                   from '@atls/nestjs-bus'
+import { Module }                      from '@nestjs/common'
 
-import { ApplicationModule } from '@collaboration/application'
-import { PersistenceModule } from '@collaboration/persistence'
+import { ApplicationModule }           from '@collaboration/application'
+import { PersistenceModule }           from '@collaboration/persistence'
 
-import {
-  CustomerController,
-  CustomerQueriesController,
-  DiscussionController,
-  DiscussionQueriesController,
-  ProjectController,
-  ProjectQueriesController,
-  ReplyController,
-  ReplyQueriesController,
-  ReviewQueriesController,
-  SpecialistController,
-  SpecialistQueriesController,
-} from './controllers'
+import { CustomerController }          from './controllers'
+import { CustomerQueriesController }   from './controllers'
+import { DiscussionController }        from './controllers'
+import { DiscussionQueriesController } from './controllers'
+import { ProjectController }           from './controllers'
+import { ProjectQueriesController }    from './controllers'
+import { ReplyController }             from './controllers'
+import { ReplyQueriesController }      from './controllers'
+import { ReviewQueriesController }     from './controllers'
+import { SpecialistController }        from './controllers'
+import { SpecialistQueriesController } from './controllers'
 
 @Module({
   imports: [

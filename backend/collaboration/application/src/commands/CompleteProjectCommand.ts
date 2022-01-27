@@ -1,4 +1,7 @@
-import { IsInt, IsNotEmpty, Max, Min } from 'class-validator'
+import { IsInt }      from 'class-validator'
+import { IsNotEmpty } from 'class-validator'
+import { Max }        from 'class-validator'
+import { Min }        from 'class-validator'
 
 export class CompleteProjectCommand {
   @IsNotEmpty()

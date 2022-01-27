@@ -1,5 +1,9 @@
-import styled                               from '@emotion/styled'
-import { color, space, system, typography } from 'styled-system'
+import styled         from '@emotion/styled'
+
+import { color }      from 'styled-system'
+import { space }      from 'styled-system'
+import { system }     from 'styled-system'
+import { typography } from 'styled-system'
 
 export const Text = styled.span(
   system({

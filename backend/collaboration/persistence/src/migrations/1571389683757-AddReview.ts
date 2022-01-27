@@ -1,4 +1,5 @@
-import { MigrationInterface, QueryRunner } from 'typeorm'
+import { MigrationInterface } from 'typeorm'
+import { QueryRunner }        from 'typeorm'
 
 export class AddReview1571389683757 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<any> {

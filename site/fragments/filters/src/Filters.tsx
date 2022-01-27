@@ -1,9 +1,12 @@
-import React                   from 'react'
+import React         from 'react'
 
-import { Collapse, Panel }     from '@ui/collapse'
-import { CheckIcon }           from '@ui/icons'
-import { Box, Column, Layout } from '@ui/layout'
-import { Text }                from '@ui/text'
+import { Collapse }  from '@ui/collapse'
+import { Panel }     from '@ui/collapse'
+import { CheckIcon } from '@ui/icons'
+import { Box }       from '@ui/layout'
+import { Column }    from '@ui/layout'
+import { Layout }    from '@ui/layout'
+import { Text }      from '@ui/text'
 
 export const Filters = ({
   data = [],

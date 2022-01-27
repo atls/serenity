@@ -1,11 +1,13 @@
-import React                     from 'react'
-import { IntlProvider, useIntl } from 'react-intl'
+import { MockedProvider } from '@apollo/react-testing'
+import { render }         from '@testing-library/react'
 
-import { MockedProvider }        from '@apollo/react-testing'
-import { ThemeProvider }         from '@ui/theme'
-import { render }                from '@testing-library/react'
+import React              from 'react'
+import { IntlProvider }   from 'react-intl'
+import { useIntl }        from 'react-intl'
 
-import { ProjectReply }          from '../ProjectReply'
+import { ThemeProvider }  from '@ui/theme'
+
+import { ProjectReply }   from '../ProjectReply'
 
 const TestComponent = () => {
   const intl = useIntl()

@@ -1,8 +1,11 @@
-import { Injectable, NestMiddleware, OnModuleInit } from '@nestjs/common'
-import { Client, ClientGrpc }                       from '@nestjs/microservices'
+import { Injectable }     from '@nestjs/common'
+import { NestMiddleware } from '@nestjs/common'
+import { OnModuleInit }   from '@nestjs/common'
+import { Client }         from '@nestjs/microservices'
+import { ClientGrpc }     from '@nestjs/microservices'
 
-import { clientOptions }                            from '@protos/hits'
-import { hits }                                     from '@protos/interfaces'
+import { clientOptions }  from '@protos/hits'
+import { hits }           from '@protos/interfaces'
 
 const lastActivity: Map<string, number> = new Map()
 

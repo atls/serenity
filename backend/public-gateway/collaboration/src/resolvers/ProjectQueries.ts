@@ -1,14 +1,19 @@
-import { Injectable, OnModuleInit } from '@nestjs/common'
-import { Args, Query }              from '@nestjs/graphql'
-import { Client, ClientGrpc }       from '@nestjs/microservices'
-import { Int }                      from 'type-graphql'
+import { Injectable }        from '@nestjs/common'
+import { OnModuleInit }      from '@nestjs/common'
+import { Args }              from '@nestjs/graphql'
+import { Query }             from '@nestjs/graphql'
+import { Client }            from '@nestjs/microservices'
+import { ClientGrpc }        from '@nestjs/microservices'
 
-import { OffsetToPagerPipe, Pager } from '@public-gateway/utils'
-import { clientOptions }            from '@protos/collaboration'
-import { collaboration }            from '@protos/interfaces'
+import { Int }               from 'type-graphql'
 
-import { ProjectsFilter }           from '../inputs'
-import { ProjectsList }             from '../types'
+import { OffsetToPagerPipe } from '@public-gateway/utils'
+import { Pager }             from '@public-gateway/utils'
+import { clientOptions }     from '@protos/collaboration'
+import { collaboration }     from '@protos/interfaces'
+
+import { ProjectsFilter }    from '../inputs'
+import { ProjectsList }      from '../types'
 
 @Injectable()
 export class ProjectQueries implements OnModuleInit {

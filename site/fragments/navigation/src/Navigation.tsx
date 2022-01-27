@@ -1,19 +1,24 @@
-import React                                        from 'react'
-import { WithUser, WithoutUser }                    from '@atls/react-user'
+import { WithUser }                   from '@atls/react-user'
+import { WithoutUser }                from '@atls/react-user'
 
-import Chat                                         from '@fragments/chat'
-import { Button }                                   from '@ui/button'
-import { DrawerProvider }                           from '@ui/drawer'
-import { Hamburger }                                from '@ui/hamburger'
-import { ArrowDownIcon, LogoIcon }                  from '@ui/icons'
-import { Layout, Row }                              from '@ui/layout'
-import { NavLink as BaseNavLink, NextLink as Link } from '@ui/link'
-import { NextNavLink as NavLink }                   from '@ui/link'
-import { Navigation as UINavigation }               from '@ui/navigation'
+import React                          from 'react'
 
-import messages                                     from './messages'
-import { Drawer }                                   from './Drawer'
-import { Profile }                                  from './Profile'
+import Chat                           from '@fragments/chat'
+import { Button }                     from '@ui/button'
+import { DrawerProvider }             from '@ui/drawer'
+import { Hamburger }                  from '@ui/hamburger'
+import { ArrowDownIcon }              from '@ui/icons'
+import { LogoIcon }                   from '@ui/icons'
+import { Layout }                     from '@ui/layout'
+import { Row }                        from '@ui/layout'
+import { NavLink as BaseNavLink }     from '@ui/link'
+import { NextLink as Link }           from '@ui/link'
+import { NextNavLink as NavLink }     from '@ui/link'
+import { Navigation as UINavigation } from '@ui/navigation'
+
+import messages                       from './messages'
+import { Drawer }                     from './Drawer'
+import { Profile }                    from './Profile'
 
 export const Navigation = ({
   intl,

@@ -1,6 +1,8 @@
-import React                  from 'react'
-import styled                 from '@emotion/styled'
-import { ifProp, switchProp } from 'styled-tools'
+import styled         from '@emotion/styled'
+
+import React          from 'react'
+import { ifProp }     from 'styled-tools'
+import { switchProp } from 'styled-tools'
 
 interface LineProps {
   active: boolean
@@ -80,11 +82,15 @@ const Line = styled.div<LineProps>(
   }))
 )
 
+const doNothing = () => {
+  // do nothing
+}
+
 export const Hamburger = ({
   color = 'alto',
   active = false,
-  onOpen = () => {},
-  onClose = () => {},
+  onOpen = doNothing,
+  onClose = doNothing,
 }) => (
   <Container onClick={active ? onClose : onOpen}>
     <Burger color={color}>

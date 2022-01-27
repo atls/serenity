@@ -1,13 +1,12 @@
-/* eslint-disable */
 import React from 'react'
-export const ArrowRightIcon = (props: any) => (
+export const ArrowRightIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     width='1em'
     height='1em'
     viewBox='0 0 24 24'
     fill='none'
-    stroke={props.color || 'rgb(255, 255, 255)'}
+    stroke="\n// eslint-disable-next-line\n{props.color || '#FFFFFF'}"
     strokeWidth={2}
     strokeLinecap='butt'
     strokeLinejoin='bevel'

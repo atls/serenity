@@ -1,14 +1,17 @@
-import React                                       from 'react'
+import React                      from 'react'
 
-import { Avatar }                                  from '@ui/avatar'
-import { Button }                                  from '@ui/button'
-import { Dropdown, DropdownItem, DropdownTrigger } from '@ui/dropdown'
-import { ArrowDownIcon }                           from '@ui/icons'
-import { Layout, Row }                             from '@ui/layout'
-import { NavLink as BaseNavLink }                  from '@ui/link'
-import { Text }                                    from '@ui/text'
+import { Avatar }                 from '@ui/avatar'
+import { Button }                 from '@ui/button'
+import { Dropdown }               from '@ui/dropdown'
+import { DropdownItem }           from '@ui/dropdown'
+import { DropdownTrigger }        from '@ui/dropdown'
+import { ArrowDownIcon }          from '@ui/icons'
+import { Layout }                 from '@ui/layout'
+import { Row }                    from '@ui/layout'
+import { NavLink as BaseNavLink } from '@ui/link'
+import { Text }                   from '@ui/text'
 
-import messages                                    from './messages'
+import messages                   from './messages'
 
 export const Profile = ({
   intl,

@@ -1,9 +1,11 @@
-import React              from 'react'
-import messages           from '@fragments/welding-worksheet/src/messages'
+import messages      from '@fragments/welding-worksheet/src/messages'
 
-import { Column, Layout } from '@ui/layout'
+import React         from 'react'
 
-import { CheckItem }      from './CheckItem'
+import { Column }    from '@ui/layout'
+import { Layout }    from '@ui/layout'
+
+import { CheckItem } from './CheckItem'
 
 export const Welding = ({
   intl,

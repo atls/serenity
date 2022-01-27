@@ -1,9 +1,11 @@
+import { ClientOptions }              from '@nestjs/microservices'
+import { Transport }                  from '@nestjs/microservices'
+import { loadSync }                   from '@grpc/proto-loader'
+
 import grpc                           from 'grpc'
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable no-underscore-dangle */
 import path                           from 'path'
-import { ClientOptions, Transport }   from '@nestjs/microservices'
-import { loadSync }                   from '@grpc/proto-loader'
 
 import { PROTO_PATH as COMMON_PROTO } from '@protos/common'
 

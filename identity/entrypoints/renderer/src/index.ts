@@ -6,8 +6,6 @@ import session             from 'express-session'
 import next                from 'next'
 import path                from 'path'
 
-import flow                from './flow'
-
 const RedisStore = connectRedis(session)
 
 const bootstrap = async () => {
@@ -42,8 +40,6 @@ const bootstrap = async () => {
 
     nextMid()
   })
-
-  server.use(flow())
 
   server.get('*', (req, res) => handle(req, res))
 

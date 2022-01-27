@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
-import { useIntl }         from 'react-intl'
+import React        from 'react'
+import { useState } from 'react'
+import { useIntl }  from 'react-intl'
 
-import { Projects }        from './Projects'
-import { useData }         from './useData'
+import { Projects } from './Projects'
+import { useData }  from './useData'
 
 const ProjectsFragment = ({ activeCategory = '' }) => {
   const [query, onSearch] = useState('')

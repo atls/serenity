@@ -1,9 +1,11 @@
-import { IsEmail, MinLength }              from 'class-validator'
+import { IsEmail }           from 'class-validator'
+import { MinLength }         from 'class-validator'
 
-import { User }                            from '@identity/persistence'
+import { User }              from '@identity/persistence'
 
-import messages                            from '../messages'
-import { IsEntityNotExists, IsFieldEqual } from '../constraints'
+import messages              from '../messages'
+import { IsEntityNotExists } from '../constraints'
+import { IsFieldEqual }      from '../constraints'
 
 export class RegisterUserCommand {
   @IsEmail(

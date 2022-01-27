@@ -1,5 +1,6 @@
-import { Injectable, OnModuleInit } from '@nestjs/common'
-import { ElasticsearchService }     from '@nestjs/elasticsearch'
+import { Injectable }           from '@nestjs/common'
+import { OnModuleInit }         from '@nestjs/common'
+import { ElasticsearchService } from '@nestjs/elasticsearch'
 
 @Injectable()
 export class SpecialistIndexService implements OnModuleInit {

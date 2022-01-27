@@ -1,10 +1,13 @@
-import { Injectable, OnModuleInit }                    from '@nestjs/common'
+import { Injectable }                                  from '@nestjs/common'
+import { OnModuleInit }                                from '@nestjs/common'
 import { ElasticsearchService }                        from '@nestjs/elasticsearch'
-import { Client, ClientGrpc }                          from '@nestjs/microservices'
+import { Client }                                      from '@nestjs/microservices'
+import { ClientGrpc }                                  from '@nestjs/microservices'
 
 import { clientOptions as catalogClientOptions }       from '@protos/catalog'
 import { clientOptions as collaborationClientOptions } from '@protos/collaboration'
-import { catalog, collaboration }                      from '@protos/interfaces'
+import { catalog }                                     from '@protos/interfaces'
+import { collaboration }                               from '@protos/interfaces'
 
 @Injectable()
 export class ProjectDataService implements OnModuleInit {

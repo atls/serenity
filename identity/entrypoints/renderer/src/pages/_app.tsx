@@ -1,12 +1,14 @@
-import App                                   from 'next/app'
-import React                                 from 'react'
-import compose                               from 'recompose/compose'
-import { withHelmet }                        from '@atls/next-app-with-helmet'
+import { withHelmet }         from '@atls/next-app-with-helmet'
 
-import { ThemeProvider, injectGlobalStyles } from '@ui/theme'
+import App                    from 'next/app'
+import React                  from 'react'
+import compose                from 'recompose/compose'
 
-import { withEmotion }                       from '../providers'
-import { withIntl }                          from '../providers'
+import { ThemeProvider }      from '@ui/theme'
+import { injectGlobalStyles } from '@ui/theme'
+
+import { withEmotion }        from '../providers'
+import { withIntl }           from '../providers'
 
 class AccountsApp extends App {
   static async getInitialProps({ Component, ctx }: any): Promise<any> {

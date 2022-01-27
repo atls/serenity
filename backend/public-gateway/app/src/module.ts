@@ -1,8 +1,8 @@
+import { DataLoaderInterceptor } from '@monstrs/nestjs-dataloader'
 import { Module }                from '@nestjs/common'
 import { APP_INTERCEPTOR }       from '@nestjs/core'
 import { GraphQLModule }         from '@nestjs/graphql'
 
-import { DataLoaderInterceptor } from '@monstrs/nestjs-dataloader'
 import { CatalogModule }         from '@public-gateway/catalog'
 import { CollaborationModule }   from '@public-gateway/collaboration'
 import { FilesModule }           from '@public-gateway/files'

@@ -1,6 +1,7 @@
-import { Module }                                     from '@nestjs/common'
+import { Module }                 from '@nestjs/common'
 
-import { UserApplicationService, UserQueriesService } from './services'
+import { UserApplicationService } from './services'
+import { UserQueriesService }     from './services'
 
 @Module({
   providers: [UserApplicationService, UserQueriesService],

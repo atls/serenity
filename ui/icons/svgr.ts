@@ -1,5 +1,6 @@
 import prettierConfig   from '@atlantis-lab/prettier-config'
 import svgr             from '@svgr/core'
+
 import camelcase        from 'camelcase'
 import fs               from 'fs-extra-promise'
 import glob             from 'glob-promise'
@@ -51,12 +52,11 @@ const save = async (sources) =>
     sources.map((source) =>
       fs.writeFileAsync(
         path.join(TARGET_DIR, `${source.name}.tsx`),
-        `/* eslint-disable */\n${prettier.format(source.code, {
+        `${prettier.format(source.code, {
           parser: 'babel',
           ...prettierConfig,
         })}`
-      )
-    )
+      ))
   )
 
 const createIndex = (sources) =>

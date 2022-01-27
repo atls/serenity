@@ -1,18 +1,18 @@
 {
   "name": "@ui/dropdown",
   "version": "0.0.1",
-  "license": "MIT",
   "private": true,
+  "license": "MIT",
   "main": "src/index.ts",
-  "devDependencies": {
-    "@types/rc-trigger": "0.0.1",
-    "@types/react": "^17",
-    "rc-trigger": "5.2.8"
-  },
   "dependencies": {
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "react": "^17.0.2",
     "styled-tools": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/rc-trigger": "0.0.1",
+    "@types/react": "^17",
+    "rc-trigger": "5.2.8"
   }
 }

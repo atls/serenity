@@ -1,11 +1,12 @@
-import { Column }                                from 'typeorm'
+import { Column }                   from 'typeorm'
 
-import { Profile as ProfileEntity, ProfileType } from '@identity/domain'
+import { Profile as ProfileEntity } from '@identity/domain'
+import { ProfileType }              from '@identity/domain'
 
-import { Address }                               from './Address'
-import { ContactInformation }                    from './ContactInformation'
-import { PersonalInformation }                   from './PersonalInformation'
-import { Photo }                                 from './Photo'
+import { Address }                  from './Address'
+import { ContactInformation }       from './ContactInformation'
+import { PersonalInformation }      from './PersonalInformation'
+import { Photo }                    from './Photo'
 
 export class Profile extends ProfileEntity {
   @Column('enum', {

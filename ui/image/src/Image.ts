@@ -1,6 +1,12 @@
-import styled                                             from '@emotion/styled'
-import { ImgHTMLAttributes, createElement }               from 'react'
-import { LayoutProps, SpaceProps, layout, space, system } from 'styled-system'
+import styled                from '@emotion/styled'
+
+import { ImgHTMLAttributes } from 'react'
+import { LayoutProps }       from 'styled-system'
+import { SpaceProps }        from 'styled-system'
+import { createElement }     from 'react'
+import { layout }            from 'styled-system'
+import { space }             from 'styled-system'
+import { system }            from 'styled-system'
 
 interface ImageProps
   extends SpaceProps,

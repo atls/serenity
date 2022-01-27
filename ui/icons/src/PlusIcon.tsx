@@ -1,6 +1,5 @@
-/* eslint-disable */
 import React from 'react'
-export const PlusIcon = (props: any) => (
+export const PlusIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     width='1em'
     height='1em'

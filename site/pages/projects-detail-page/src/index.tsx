@@ -1,11 +1,13 @@
-import React                                    from 'react'
 import { useUser }                              from '@atls/react-user'
+
+import React                                    from 'react'
 import { useRouter }                            from 'next/router'
 
 import { ProjectsDetailPage as ProjectsDetail } from './ProjectsDetailPage'
 import { Seo }                                  from './Seo'
 import { Track }                                from './Track'
-import { useDataProjects, useDataReplies }      from './useData'
+import { useDataProjects }                      from './useData'
+import { useDataReplies }                       from './useData'
 
 const ProjectsDetailPage = () => {
   const router = useRouter()

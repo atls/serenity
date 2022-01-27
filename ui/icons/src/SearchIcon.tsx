@@ -1,6 +1,5 @@
-/* eslint-disable */
 import React from 'react'
-export const SearchIcon = (props: any) => (
+export const SearchIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width='1em' height='1em' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' {...props}>
     <g stroke='none' strokeWidth={1} fill='none' fillRule='evenodd'>
       <g transform='translate(-4, -4)' fill='#999999' fillRule='nonzero'>

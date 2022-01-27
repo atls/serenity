@@ -1,9 +1,11 @@
-import { Injectable }                                                          from '@nestjs/common'
+import { Injectable }               from '@nestjs/common'
 
-import { Category }                                                            from '@catalog/domain'
-import { CategoryEntityRepository }                                            from '@catalog/persistence'
+import { Category }                 from '@catalog/domain'
+import { CategoryEntityRepository } from '@catalog/persistence'
 
-import { CreateCategoryCommand, DeleteCategoryCommand, UpdateCategoryCommand } from '../commands'
+import { CreateCategoryCommand }    from '../commands'
+import { DeleteCategoryCommand }    from '../commands'
+import { UpdateCategoryCommand }    from '../commands'
 
 @Injectable()
 export class CategoryService {

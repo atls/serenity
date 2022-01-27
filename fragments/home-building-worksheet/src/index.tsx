@@ -3,7 +3,11 @@ import { useIntl }               from 'react-intl'
 
 import { HomeBuildingWorksheet } from './HomeBuildingWorksheet'
 
-const HomeBuildingWorksheetFragment = ({ id = '', value, onChange = (a) => {} }) => {
+const doNothing = (a) => {
+  // do nothing
+}
+
+const HomeBuildingWorksheetFragment = ({ id = '', value, onChange = doNothing }) => {
   const intl = useIntl()
   if (id !== '354c5f69-5308-4847-bb62-7c6a022d2c16') return null
   const data = {

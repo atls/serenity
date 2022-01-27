@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
-import { useRouter }       from 'next/router'
-import { useIntl }         from 'react-intl'
+import React           from 'react'
+import { useRouter }   from 'next/router'
+import { useState }    from 'react'
+import { useIntl }     from 'react-intl'
 
-import { useChat }         from '@ui/chat'
+import { useChat }     from '@ui/chat'
 
-import { Specialists }     from './Specialists'
-import { useData }         from './useData'
+import { Specialists } from './Specialists'
+import { useData }     from './useData'
 
 const SpecialistsFragment = ({ activeCategory = '' }) => {
   const router = useRouter()

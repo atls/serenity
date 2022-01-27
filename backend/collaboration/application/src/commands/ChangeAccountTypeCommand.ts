@@ -1,6 +1,7 @@
-import { IsEnum, IsUUID } from 'class-validator'
+import { IsEnum }      from 'class-validator'
+import { IsUUID }      from 'class-validator'
 
-import { AccountType }    from '@collaboration/domain'
+import { AccountType } from '@collaboration/domain'
 
 export class ChangeAccountTypeCommand {
   @IsUUID('4')

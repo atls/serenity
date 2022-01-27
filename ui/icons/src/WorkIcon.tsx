@@ -1,6 +1,5 @@
-/* eslint-disable */
 import React from 'react'
-export const WorkIcon = (props: any) => (
+export const WorkIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width='1em' height='1em' viewBox='0 0 14 13' xmlns='http://www.w3.org/2000/svg' {...props}>
     <g
       stroke='none'

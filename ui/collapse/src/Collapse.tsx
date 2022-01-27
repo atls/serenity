@@ -1,9 +1,10 @@
-import RcCollapse              from 'rc-collapse'
-import React                   from 'react'
+import RcCollapse         from 'rc-collapse'
+import React              from 'react'
 
-import { MinusIcon, PlusIcon } from '@ui/icons'
+import { MinusIcon }      from '@ui/icons'
+import { PlusIcon }       from '@ui/icons'
 
-import { collapseStyles }      from './styles'
+import { collapseStyles } from './styles'
 
 const expandIcon = ({ isActive }) => (
   <div className='arrow'>

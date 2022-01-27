@@ -1,12 +1,18 @@
-import { Injectable, OnModuleInit }                            from '@nestjs/common'
-import { Args, Context, Mutation }                             from '@nestjs/graphql'
-import { Client, ClientGrpc }                                  from '@nestjs/microservices'
+import { Injectable }                from '@nestjs/common'
+import { OnModuleInit }              from '@nestjs/common'
+import { Args }                      from '@nestjs/graphql'
+import { Context }                   from '@nestjs/graphql'
+import { Mutation }                  from '@nestjs/graphql'
+import { Client }                    from '@nestjs/microservices'
+import { ClientGrpc }                from '@nestjs/microservices'
 
-import { clientOptions }                                       from '@protos/collaboration'
-import { collaboration }                                       from '@protos/interfaces'
+import { clientOptions }             from '@protos/collaboration'
+import { collaboration }             from '@protos/interfaces'
 
-import { ChangeAccountTypeInput, UpdateSpecialistInput }       from '../inputs'
-import { ChangeAccountTypeResponse, UpdateSpecialistResponse } from '../types'
+import { ChangeAccountTypeInput }    from '../inputs'
+import { UpdateSpecialistInput }     from '../inputs'
+import { ChangeAccountTypeResponse } from '../types'
+import { UpdateSpecialistResponse }  from '../types'
 
 @Injectable()
 export class SpecialistMutations implements OnModuleInit {

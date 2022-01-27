@@ -1,14 +1,17 @@
-import DataLoader                          from 'dataloader'
-import { Loader }                          from '@monstrs/nestjs-dataloader'
-import { Injectable }                      from '@nestjs/common'
+import { Loader }          from '@monstrs/nestjs-dataloader'
+import { Injectable }      from '@nestjs/common'
 /* eslint-disable class-methods-use-this */
-import { ResolveProperty, Resolver, Root } from '@nestjs/graphql'
+import { ResolveProperty } from '@nestjs/graphql'
+import { Resolver }        from '@nestjs/graphql'
+import { Root }            from '@nestjs/graphql'
 
-import { File }                            from '@public-gateway/files'
-import { portfolio }                       from '@protos/interfaces'
+import DataLoader          from 'dataloader'
 
-import { ImageLoader }                     from '../dataloaders'
-import { Portfolio }                       from '../types'
+import { File }            from '@public-gateway/files'
+import { portfolio }       from '@protos/interfaces'
+
+import { ImageLoader }     from '../dataloaders'
+import { Portfolio }       from '../types'
 
 @Injectable()
 @Resolver((of) => Portfolio)

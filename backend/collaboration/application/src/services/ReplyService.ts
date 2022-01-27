@@ -1,13 +1,12 @@
-import { Injectable }                                       from '@nestjs/common'
+import { Injectable }                 from '@nestjs/common'
 
-import {
-  DiscussionEntityRepository,
-  MessageEntityRepository,
-  ProjectEntityRepository,
-  ReplyEntityRepository,
-} from '@collaboration/persistence'
+import { DiscussionEntityRepository } from '@collaboration/persistence'
+import { MessageEntityRepository }    from '@collaboration/persistence'
+import { ProjectEntityRepository }    from '@collaboration/persistence'
+import { ReplyEntityRepository }      from '@collaboration/persistence'
 
-import { AddReplyMessageCommand, ChangeReplyStatusCommand } from '../commands'
+import { AddReplyMessageCommand }     from '../commands'
+import { ChangeReplyStatusCommand }   from '../commands'
 
 @Injectable()
 export class ReplyService {

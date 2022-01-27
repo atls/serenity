@@ -1,21 +1,23 @@
-import styled                          from '@emotion/styled'
-import document                        from 'global/document'
+import styled                from '@emotion/styled'
+
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/static-property-placement */
 /* eslint-disable react/state-in-constructor */
 /* eslint-disable react/sort-comp */
-import React, { Component }            from 'react'
-import ScrollLock, { TouchScrollable } from 'react-scrolllock'
-import { Motion, spring }              from 'react-motion'
-import { createPortal }                from 'react-dom'
+import React                 from 'react'
+import ScrollLock            from 'react-scrolllock'
+import document              from 'global/document'
+import { Component }         from 'react'
+import { Motion }            from 'react-motion'
+import { TouchScrollable }   from 'react-scrolllock'
+import { createPortal }      from 'react-dom'
+import { spring }            from 'react-motion'
 
-import {
-  isClientSide,
-  isDirectionBottom,
-  isDirectionLeft,
-  isDirectionRight,
-  isDirectionTop,
-} from './helpers'
+import { isClientSide }      from './helpers'
+import { isDirectionBottom } from './helpers'
+import { isDirectionLeft }   from './helpers'
+import { isDirectionRight }  from './helpers'
+import { isDirectionTop }    from './helpers'
 
 const StyledDragDrawer = styled.div({
   position: 'fixed',

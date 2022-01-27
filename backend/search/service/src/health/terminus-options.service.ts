@@ -1,7 +1,8 @@
-import { BusHealthIndicator }                            from '@monstrs/nestjs-bus-health'
-import { ElasticSearchHealthIndicator }                  from '@monstrs/nestjs-elasticsearch-indicator'
-import { Injectable }                                    from '@nestjs/common'
-import { TerminusModuleOptions, TerminusOptionsFactory } from '@nestjs/terminus'
+import { BusHealthIndicator }           from '@monstrs/nestjs-bus-health'
+import { ElasticSearchHealthIndicator } from '@monstrs/nestjs-elasticsearch-indicator'
+import { Injectable }                   from '@nestjs/common'
+import { TerminusModuleOptions }        from '@nestjs/terminus'
+import { TerminusOptionsFactory }       from '@nestjs/terminus'
 
 @Injectable()
 export class TerminusOptionsService implements TerminusOptionsFactory {

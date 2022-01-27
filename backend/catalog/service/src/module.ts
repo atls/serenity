@@ -1,16 +1,14 @@
-import { BusModule }         from '@monstrs/nestjs-bus'
-import { Module }            from '@nestjs/common'
+import { BusModule }                      from '@monstrs/nestjs-bus'
+import { Module }                         from '@nestjs/common'
 
-import { ApplicationModule } from '@catalog/application'
-import { PersistenceModule } from '@catalog/persistence'
+import { ApplicationModule }              from '@catalog/application'
+import { PersistenceModule }              from '@catalog/persistence'
 
-import {
-  CategoryController,
-  CategoryGroupController,
-  CategoryGroupQueriesController,
-  CategoryQueriesController,
-} from './controllers'
-import { HealthModule }      from './health'
+import { CategoryController }             from './controllers'
+import { CategoryGroupController }        from './controllers'
+import { CategoryGroupQueriesController } from './controllers'
+import { CategoryQueriesController }      from './controllers'
+import { HealthModule }                   from './health'
 
 @Module({
   imports: [

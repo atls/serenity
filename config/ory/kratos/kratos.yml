@@ -1,15 +1,15 @@
-version: v0.5.5-alpha.1
+version: v0.7.6-alpha.1
 
 dsn: memory
 
 serve:
   public:
-    base_url: https://kratos.serenity.local.atls.tech/
+    base_url: http://localhost:4434/
     cors:
       enabled: true
       allowed_origins:
-        - 'https://accounts.serenity.local.atls.tech'
-        - 'https://kratos.serenity.local.atls.tech'
+        - 'http://localhost:3000'
+        - 'http://localhost:4434'
       allowed_methods:
         - POST
         - GET
@@ -27,33 +27,85 @@ serve:
     base_url: http://kratos:4434/
 
 selfservice:
-  default_browser_return_url: https://accounts.serenity.local.atls.tech/
+  default_browser_return_url: http://localhost:3000/auth/settings
   whitelisted_return_urls:
-    - https://accounts.serenity.local.atls.tech/
-    - https://kratos.serenity.local.atls.tech/
+    - http://localhost:3000/auth/settings
+    - http://localhost:4434/
 
   methods:
     password:
       enabled: true
+    oidc:
+      enabled: true
+      config:
+        providers:
+          - id: facebook
+            provider: facebook
+            client_id: '303866244514029'
+            client_secret: 361d45fce648970f31e6e8c6da10cff7
+            mapper_url: file:///config/kratos/oidc.facebook.jsonnet
+            scope:
+              - email
+          - id: github
+            provider: github
+            client_id: 81275dec467e38b91401
+            client_secret: 71431865445f90e3d115136b59beb851fb271f39
+            mapper_url: file:///config/kratos/oidc.github.jsonnet
+            scope:
+              - user:email
+          - id: google
+            provider: google
+            client_id: 165294314333-ahgqnldv9aooe55a8cb7uuqsv04oqrem.apps.googleusercontent.com
+            client_secret: eUYzCdbn7oBkrP81L2FqISHH
+            mapper_url: file:///config/kratos/oidc.google.jsonnet
+            scope:
+              - email
+              - profile
+            requested_claims:
+              id_token:
+                email:
+                  essential: true
+                email_verified:
+                  essential: true
+                given_name:
+                  essential: true
+                family_name: null
+          - id: vk
+            provider: vk
+            client_id: '7848134'
+            client_secret: XAk8nBIfARm6gx0CeiIx
+            mapper_url: file:///config/kratos/oidc.vk.jsonnet
+            scope:
+              - email
+          - id: yandex
+            provider: yandex
+            client_id: '468f49dfa2ae44ad9f7a87705c99cc1f'
+            client_secret: '429123e27b1f4e7f88bd4f9f3a512106'
+            mapper_url: file:///config/kratos/oidc.yandex.jsonnet
 
   flows:
     error:
-      ui_url: https://accounts.serenity.local.atls.tech/error
+      ui_url: http://localhost:3000/auth/error
     settings:
-      ui_url: https://accounts.serenity.local.atls.tech/settings
+      ui_url: http://localhost:3000/auth/settings
       privileged_session_max_age: 15m
     recovery:
       enabled: true
-      ui_url: https://accounts.serenity.local.atls.tech/recovery
+      ui_url: http://localhost:3000/auth/recovery
+    verification:
+      enabled: true
+      ui_url: http://localhost:3000/auth/verify
+      after:
+        default_browser_return_url: http://localhost:3000/
     logout:
       after:
-        default_browser_return_url: https://accounts.serenity.local.atls.tech/login
+        default_browser_return_url: http://localhost:3000/auth/login
     login:
-      ui_url: https://accounts.serenity.local.atls.tech/login
+      ui_url: http://localhost:3000/auth/login
       lifespan: 10m
     registration:
       lifespan: 10m
-      ui_url: https://accounts.serenity.local.atls.tech/registration
+      ui_url: http://localhost:3000/auth/registration
       after:
         password:
           hooks:
@@ -64,7 +116,7 @@ selfservice:
 
 session:
   cookie:
-    domain: serenity.local.atls.tech
+    domain: localhost
 
 log:
   level: debug
@@ -78,7 +130,7 @@ secrets:
 hashers:
   argon2:
     parallelism: 1
-    memory: 131072
+    memory: '1GB'
     iterations: 2
     salt_length: 16
     key_length: 16

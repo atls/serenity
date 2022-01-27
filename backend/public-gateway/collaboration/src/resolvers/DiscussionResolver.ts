@@ -1,12 +1,15 @@
-import DataLoader                                   from 'dataloader'
+import { Loader }          from '@monstrs/nestjs-dataloader'
 /* eslint-disable class-methods-use-this */
-import { Injectable }                               from '@nestjs/common'
-import { Context, ResolveProperty, Resolver, Root } from '@nestjs/graphql'
+import { Injectable }      from '@nestjs/common'
+import { Context }         from '@nestjs/graphql'
+import { ResolveProperty } from '@nestjs/graphql'
+import { Resolver }        from '@nestjs/graphql'
+import { Root }            from '@nestjs/graphql'
 
-import { Loader }                                   from '@monstrs/nestjs-dataloader'
+import DataLoader          from 'dataloader'
 
-import { UserLoader }                               from '../dataloaders'
-import { Discussion }                               from '../types'
+import { UserLoader }      from '../dataloaders'
+import { Discussion }      from '../types'
 
 @Injectable()
 @Resolver((of) => Discussion)

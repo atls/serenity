@@ -1,10 +1,14 @@
-import { Column, Entity, PrimaryColumn }      from 'typeorm'
-import { CreateDateColumn, UpdateDateColumn } from 'typeorm'
+import { Column }           from 'typeorm'
+import { Entity }           from 'typeorm'
+import { PrimaryColumn }    from 'typeorm'
+import { CreateDateColumn } from 'typeorm'
+import { UpdateDateColumn } from 'typeorm'
 
 /* eslint-disable no-underscore-dangle */
-import { BeginningOfWork, ProjectStatus }     from '@collaboration/domain'
+import { BeginningOfWork }  from '@collaboration/domain'
+import { ProjectStatus }    from '@collaboration/domain'
 
-import { Address }                            from './Address'
+import { Address }          from './Address'
 
 @Entity()
 export class Project {

@@ -1,7 +1,9 @@
-import styled, { StyledComponent } from '@emotion/styled'
-import { LinkHTMLAttributes }      from 'react'
+import styled                 from '@emotion/styled'
+import { StyledComponent }    from '@emotion/styled'
 
-import { Text }                    from '@ui/text'
+import { LinkHTMLAttributes } from 'react'
+
+import { Text }               from '@ui/text'
 
 type TextProps = typeof Text.defaultProps
 

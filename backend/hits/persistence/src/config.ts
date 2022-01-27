@@ -1,7 +1,9 @@
-import { ConnectionOptions }       from 'typeorm'
+import { ConnectionOptions } from 'typeorm'
 
-import migrations                  from './migrations'
-import { Activity, Counter, View } from './entities'
+import migrations            from './migrations'
+import { Activity }          from './entities'
+import { Counter }           from './entities'
+import { View }              from './entities'
 
 const config: ConnectionOptions = {
   type: 'postgres',

@@ -1,16 +1,16 @@
+import { AggregateRoot }           from '@node-ts/ddd'
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-underscore-dangle */
-import { AggregateRootProperties }                    from '@node-ts/ddd-types'
+import { AggregateRootProperties } from '@node-ts/ddd-types'
 
-import { AggregateRoot }                              from '@node-ts/ddd'
-
-import { SpecialistRatingUpdated, SpecialistUpdated } from '../events'
-import { Account }                                    from './Account'
-import { AccountType }                                from './AccountType'
-import { Company }                                    from './Company'
-import { FormOfWork }                                 from './FormOfWork'
-import { PrivatePerson }                              from './PrivatePerson'
-import { Specialisation }                             from './Specialisation'
+import { SpecialistRatingUpdated } from '../events'
+import { SpecialistUpdated }       from '../events'
+import { Account }                 from './Account'
+import { AccountType }             from './AccountType'
+import { Company }                 from './Company'
+import { FormOfWork }              from './FormOfWork'
+import { PrivatePerson }           from './PrivatePerson'
+import { Specialisation }          from './Specialisation'
 
 export interface SpecialistProperties extends AggregateRootProperties {
   interaction: PrivatePerson | Company

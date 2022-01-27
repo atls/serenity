@@ -15,10 +15,13 @@ const nextConfig = {
   },
 }
 
-module.exports = withPlugins([
-  withWorkspaces,
-  withExtractIntlMessages,
-  withImages,
-  withFonts,
-  withAliases(['@emotion/react', '@emotion/styled', 'react-intl']),
-], nextConfig)
+module.exports = withPlugins(
+  [
+    withWorkspaces,
+    withExtractIntlMessages,
+    withImages,
+    withFonts,
+    withAliases(['@emotion/react', '@emotion/styled', 'react-intl']),
+  ],
+  nextConfig
+)

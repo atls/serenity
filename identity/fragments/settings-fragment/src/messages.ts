@@ -3,20 +3,20 @@ import { defineMessages } from 'react-intl'
 import { name }           from '../package.json'
 
 export default defineMessages({
-  passwordChange: {
-    id: `${name}.password_change`,
-    defaultMessage: 'Сброс пароля',
+  profileSettings: {
+    id: `${name}.profile_settings`,
+    defaultMessage: 'Редактирование профиля',
   },
-  enterPassword: {
-    id: `${name}.enter_password`,
-    defaultMessage: 'Введите пароль',
+  enterNewEmail: {
+    id: `${name}.enter_new_email`,
+    defaultMessage: 'Введите новую почту',
   },
   confirmPassword: {
     id: `${name}.confirm_password`,
     defaultMessage: 'Подтвердите пароль',
   },
-  changePassword: {
-    id: `${name}.change_password`,
-    defaultMessage: 'Изменить пароль',
+  save: {
+    id: `${name}.save`,
+    defaultMessage: 'Сохранить',
   },
 })

@@ -1,12 +1,18 @@
-import { Injectable, OnModuleInit }                         from '@nestjs/common'
-import { Args, Context, Mutation }                          from '@nestjs/graphql'
-import { Client, ClientGrpc }                               from '@nestjs/microservices'
+import { Injectable }              from '@nestjs/common'
+import { OnModuleInit }            from '@nestjs/common'
+import { Args }                    from '@nestjs/graphql'
+import { Context }                 from '@nestjs/graphql'
+import { Mutation }                from '@nestjs/graphql'
+import { Client }                  from '@nestjs/microservices'
+import { ClientGrpc }              from '@nestjs/microservices'
 
-import { portfolio }                                        from '@protos/interfaces'
-import { clientOptions }                                    from '@protos/portfolio'
+import { portfolio }               from '@protos/interfaces'
+import { clientOptions }           from '@protos/portfolio'
 
-import { CreatePortfolioInput, UpdatePortfolioInput }       from '../inputs'
-import { CreatePortfolioResponse, UpdatePortfolioResponse } from '../types'
+import { CreatePortfolioInput }    from '../inputs'
+import { UpdatePortfolioInput }    from '../inputs'
+import { CreatePortfolioResponse } from '../types'
+import { UpdatePortfolioResponse } from '../types'
 
 @Injectable()
 export class PortfolioMutations implements OnModuleInit {

@@ -1,6 +1,6 @@
-import gql          from 'graphql-tag'
-
 import { useQuery } from '@apollo/client' // eslint-disable-line import/no-extraneous-dependencies
+
+import gql          from 'graphql-tag'
 
 export const query = gql`
   query Categorys {

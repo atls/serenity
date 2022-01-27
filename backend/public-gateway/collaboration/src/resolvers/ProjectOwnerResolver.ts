@@ -1,12 +1,16 @@
+import { Loader }          from '@monstrs/nestjs-dataloader'
+import { Injectable }      from '@nestjs/common'
+import { ResolveProperty } from '@nestjs/graphql'
+import { Resolver }        from '@nestjs/graphql'
+import { Root }            from '@nestjs/graphql'
+
 /* eslint-disable class-methods-use-this */
-import DataLoader                                     from 'dataloader'
-import { Injectable }                                 from '@nestjs/common'
-import { ResolveProperty, Resolver, Root }            from '@nestjs/graphql'
+import DataLoader          from 'dataloader'
 
-import { Loader }                                     from '@monstrs/nestjs-dataloader'
-
-import { ActivityLoader, CustomerLoader, UserLoader } from '../dataloaders'
-import { ProjectOwner }                               from '../types'
+import { ActivityLoader }  from '../dataloaders'
+import { CustomerLoader }  from '../dataloaders'
+import { UserLoader }      from '../dataloaders'
+import { ProjectOwner }    from '../types'
 
 @Injectable()
 @Resolver((of) => ProjectOwner)

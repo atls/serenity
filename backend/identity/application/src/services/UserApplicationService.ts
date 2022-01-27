@@ -1,28 +1,25 @@
-import uuid                    from 'uuid/v4'
-import { Injectable }          from '@nestjs/common'
+import { Injectable }              from '@nestjs/common'
 
-import {
-  Address,
-  ContactInformation,
-  Credentials,
-  Email,
-  PersonalInformation,
-  Phone,
-  Photo,
-  Profile,
-  User,
-} from '@identity/domain'
-import { UserStoreRepository } from '@identity/persistence'
+import uuid                        from 'uuid/v4'
 
-import {
-  AuthenticateUserCommand,
-  ChangePasswordCommand,
-  CreateProfileCommand,
-  RegisterUserCommand,
-  ResetPasswordCommand,
-  UpdateProfileCommand,
-  VerifyEmailCommand,
-} from '../commands'
+import { Address }                 from '@identity/domain'
+import { ContactInformation }      from '@identity/domain'
+import { Credentials }             from '@identity/domain'
+import { Email }                   from '@identity/domain'
+import { PersonalInformation }     from '@identity/domain'
+import { Phone }                   from '@identity/domain'
+import { Photo }                   from '@identity/domain'
+import { Profile }                 from '@identity/domain'
+import { User }                    from '@identity/domain'
+import { UserStoreRepository }     from '@identity/persistence'
+
+import { AuthenticateUserCommand } from '../commands'
+import { ChangePasswordCommand }   from '../commands'
+import { CreateProfileCommand }    from '../commands'
+import { RegisterUserCommand }     from '../commands'
+import { ResetPasswordCommand }    from '../commands'
+import { UpdateProfileCommand }    from '../commands'
+import { VerifyEmailCommand }      from '../commands'
 
 @Injectable()
 export class UserApplicationService {

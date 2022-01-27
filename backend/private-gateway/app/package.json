@@ -4,8 +4,8 @@
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "server-scripts start",
     "build": "server-scripts build",
+    "dev": "server-scripts start",
     "start": "node dist/index.js"
   },
   "dependencies": {

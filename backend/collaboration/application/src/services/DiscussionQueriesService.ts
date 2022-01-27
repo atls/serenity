@@ -1,8 +1,10 @@
 import { Injectable }       from '@nestjs/common'
 import { InjectRepository } from '@nestjs/typeorm'
+
 import { Repository }       from 'typeorm'
 
-import { Chat, Discussion } from '@collaboration/persistence'
+import { Chat }             from '@collaboration/persistence'
+import { Discussion }       from '@collaboration/persistence'
 
 import { PageInfo }         from '../interfaces'
 import { FindAllResponse }  from '../interfaces'

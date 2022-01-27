@@ -1,10 +1,11 @@
-import App                                   from 'next/app'
-import compose                               from 'recompose/compose'
+import App                    from 'next/app'
+import compose                from 'recompose/compose'
 
-import { ThemeProvider, injectGlobalStyles } from '@ui/theme'
+import { ThemeProvider }      from '@ui/theme'
+import { injectGlobalStyles } from '@ui/theme'
 
-import { withEmotion }                       from '../providers'
-import { withIntl }                          from '../providers'
+import { withEmotion }        from '../providers'
+import { withIntl }           from '../providers'
 
 export const withProviders = compose(
   withIntl({

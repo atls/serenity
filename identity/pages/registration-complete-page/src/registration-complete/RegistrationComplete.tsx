@@ -1,11 +1,13 @@
-import React                   from 'react'
+import React      from 'react'
 
-import { Button }              from '@ui/button'
-import { Box, Column, Layout } from '@ui/layout'
-import { Link }                from '@ui/link'
-import { Text }                from '@ui/text'
+import { Button } from '@ui/button'
+import { Box }    from '@ui/layout'
+import { Column } from '@ui/layout'
+import { Layout } from '@ui/layout'
+import { Link }   from '@ui/link'
+import { Text }   from '@ui/text'
 
-import messages                from './messages'
+import messages   from './messages'
 
 export const RegistrationComplete = ({ intl, accountUrl, siteUrl }: any) => (
   <Box width={400} mx={[32, 0]}>

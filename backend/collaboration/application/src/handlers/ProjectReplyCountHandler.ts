@@ -1,8 +1,8 @@
 import { HandlesMessage }          from '@monstrs/nestjs-bus'
+import { Handler }                 from '@node-ts/bus-core'
 
 import { ReplyCreated }            from '@collaboration/domain'
 import { ProjectEntityRepository } from '@collaboration/persistence'
-import { Handler }                 from '@node-ts/bus-core'
 
 @HandlesMessage(ReplyCreated)
 export class ProjectReplyCountHandler implements Handler<ReplyCreated> {

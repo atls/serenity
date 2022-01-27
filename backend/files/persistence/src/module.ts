@@ -1,10 +1,13 @@
-import { LoggerModule }                                 from '@monstrs/nestjs-logger'
-import { Global, Module }                               from '@nestjs/common'
-import { TypeOrmModule }                                from '@nestjs/typeorm'
+import { LoggerModule }           from '@monstrs/nestjs-logger'
+import { Global }                 from '@nestjs/common'
+import { Module }                 from '@nestjs/common'
+import { TypeOrmModule }          from '@nestjs/typeorm'
 
-import config                                           from './config'
-import { File, Upload }                                 from './entities'
-import { FileEntityRepository, UploadEntityRepository } from './repositories'
+import config                     from './config'
+import { File }                   from './entities'
+import { Upload }                 from './entities'
+import { FileEntityRepository }   from './repositories'
+import { UploadEntityRepository } from './repositories'
 
 const feature = TypeOrmModule.forFeature([Upload, File])
 

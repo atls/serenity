@@ -1,11 +1,9 @@
-import { Column } from 'typeorm'
+import { Column }                   from 'typeorm'
 
-import {
-  Account as AccountEntity,
-  AccountStat,
-  AccountType,
-  getStateKey,
-} from '@collaboration/domain'
+import { Account as AccountEntity } from '@collaboration/domain'
+import { AccountStat }              from '@collaboration/domain'
+import { AccountType }              from '@collaboration/domain'
+import { getStateKey }              from '@collaboration/domain'
 
 export class Account extends AccountEntity {
   @Column('enum', {

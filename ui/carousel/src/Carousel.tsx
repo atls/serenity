@@ -1,13 +1,20 @@
-import styled                                              from '@emotion/styled'
-import React, { useCallback, useEffect, useRef, useState } from 'react'
-import { useSwipeable }                                    from 'react-swipeable'
-import { layout }                                          from 'styled-system'
-import { ifProp }                                          from 'styled-tools'
+import styled                from '@emotion/styled'
 
-import { ArrowBackwardIcon, ArrowForwardIcon }             from '@ui/icons'
-import { contentWidth, widthWithMargin }                   from '@ui/utils'
+import React                 from 'react'
+import { useCallback }       from 'react'
+import { useEffect }         from 'react'
+import { useRef }            from 'react'
+import { useState }          from 'react'
+import { useSwipeable }      from 'react-swipeable'
+import { layout }            from 'styled-system'
+import { ifProp }            from 'styled-tools'
 
-import { SlideButton }                                     from './SlideButton'
+import { ArrowBackwardIcon } from '@ui/icons'
+import { ArrowForwardIcon }  from '@ui/icons'
+import { contentWidth }      from '@ui/utils'
+import { widthWithMargin }   from '@ui/utils'
+
+import { SlideButton }       from './SlideButton'
 
 const transition = ifProp('transition', { transition: '0.3s' })
 

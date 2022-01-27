@@ -1,9 +1,16 @@
 {
   "name": "@ui/gallery",
   "version": "0.0.1",
-  "license": "MIT",
   "private": true,
+  "license": "MIT",
   "main": "src/index.ts",
+  "dependencies": {
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "react": "^17.0.2",
+    "styled-system": "^5.1.0",
+    "styled-tools": "^1.7.0"
+  },
   "devDependencies": {
     "@types/react": "^17",
     "@types/styled-system": "5.1.4",
@@ -12,12 +19,5 @@
     "@ui/modal": "0.0.1",
     "@ui/utils": "0.0.1",
     "react-swipeable": "6.1.2"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.4.0",
-    "@emotion/styled": "^11.3.0",
-    "react": "^17.0.2",
-    "styled-system": "^5.1.0",
-    "styled-tools": "^1.7.0"
   }
 }

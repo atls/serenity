@@ -1,13 +1,14 @@
-import React           from 'react'
+import React       from 'react'
 
-import Catalog         from '@site/catalog-fragment'
-import Filters         from '@site/filters-fragment'
-import Footer          from '@site/footer-fragment'
-import Navigation      from '@site/navigation-fragment'
-import Specialists     from '@site/specialists-fragment'
-import { Layout, Row } from '@ui/layout'
+import Catalog     from '@site/catalog-fragment'
+import Filters     from '@site/filters-fragment'
+import Footer      from '@site/footer-fragment'
+import Navigation  from '@site/navigation-fragment'
+import Specialists from '@site/specialists-fragment'
+import { Layout }  from '@ui/layout'
+import { Row }     from '@ui/layout'
 
-import messages        from './messages'
+import messages    from './messages'
 
 export const SpecialistsPage = ({ intl, activeCategory, selectCategory }) => (
   <>

@@ -1,20 +1,20 @@
-import { Injectable, OnModuleInit, ValidationPipe } from '@nestjs/common'
-import { Args, Mutation }                           from '@nestjs/graphql'
-import { Client, ClientGrpc }                       from '@nestjs/microservices'
+import { Injectable }                  from '@nestjs/common'
+import { OnModuleInit }                from '@nestjs/common'
+import { ValidationPipe }              from '@nestjs/common'
+import { Args }                        from '@nestjs/graphql'
+import { Mutation }                    from '@nestjs/graphql'
+import { Client }                      from '@nestjs/microservices'
+import { ClientGrpc }                  from '@nestjs/microservices'
 
-import { clientOptions }                            from '@protos/catalog'
-import { catalog }                                  from '@protos/interfaces'
+import { clientOptions }               from '@protos/catalog'
+import { catalog }                     from '@protos/interfaces'
 
-import {
-  CreateCategoryGroupInput,
-  DeleteCategoryGroupInput,
-  UpdateCategoryGroupInput,
-} from '../inputs'
-import {
-  CreateCategoryGroupResponse,
-  DeleteCategoryGroupResponse,
-  UpdateCategoryGroupResponse,
-} from '../types'
+import { CreateCategoryGroupInput }    from '../inputs'
+import { DeleteCategoryGroupInput }    from '../inputs'
+import { UpdateCategoryGroupInput }    from '../inputs'
+import { CreateCategoryGroupResponse } from '../types'
+import { DeleteCategoryGroupResponse } from '../types'
+import { UpdateCategoryGroupResponse } from '../types'
 
 @Injectable()
 export class CategoryGroupMutations implements OnModuleInit {

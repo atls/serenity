@@ -1,4 +1,5 @@
-import React, { useState }   from 'react'
+import React                 from 'react'
+import { useState }          from 'react'
 import { useIntl }           from 'react-intl'
 
 import { useChat }           from '@ui/chat'

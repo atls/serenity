@@ -1,13 +1,18 @@
-import React                                    from 'react'
+import React                from 'react'
 
-import { PersonIcon, VisibilityIcon, WorkIcon } from '@ui/icons'
-import { Label }                                from '@ui/label'
-import { Box, Column, Layout, Row }             from '@ui/layout'
-import { NextLink as Link }                     from '@ui/link'
-import { RelativeTime }                         from '@ui/relative-time'
-import { Text }                                 from '@ui/text'
+import { PersonIcon }       from '@ui/icons'
+import { VisibilityIcon }   from '@ui/icons'
+import { WorkIcon }         from '@ui/icons'
+import { Label }            from '@ui/label'
+import { Box }              from '@ui/layout'
+import { Column }           from '@ui/layout'
+import { Layout }           from '@ui/layout'
+import { Row }              from '@ui/layout'
+import { NextLink as Link } from '@ui/link'
+import { RelativeTime }     from '@ui/relative-time'
+import { Text }             from '@ui/text'
 
-import messages                                 from './messages'
+import messages             from './messages'
 
 export const ProjectShort = ({
   intl,

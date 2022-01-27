@@ -1,10 +1,12 @@
-import React                     from 'react'
-import { IntlProvider, useIntl } from 'react-intl'
+import { render }          from '@testing-library/react'
 
-import { ThemeProvider }         from '@ui/theme'
-import { render }                from '@testing-library/react'
+import React               from 'react'
+import { IntlProvider }    from 'react-intl'
+import { useIntl }         from 'react-intl'
 
-import { FloorsWorksheet }       from '../FloorsWorksheet'
+import { ThemeProvider }   from '@ui/theme'
+
+import { FloorsWorksheet } from '../FloorsWorksheet'
 
 const TestComponent = () => {
   const intl = useIntl()

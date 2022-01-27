@@ -1,8 +1,9 @@
-import { AggregateRoot }                      from '@node-ts/ddd'
+import { AggregateRoot }           from '@node-ts/ddd'
 /* eslint-disable class-methods-use-this */
-import { AggregateRootProperties }            from '@node-ts/ddd-types'
+import { AggregateRootProperties } from '@node-ts/ddd-types'
 
-import { PortfolioCreated, PortfolioUpdated } from '../events'
+import { PortfolioCreated }        from '../events'
+import { PortfolioUpdated }        from '../events'
 
 export interface PortfolioProperties extends AggregateRootProperties {
   userId: string

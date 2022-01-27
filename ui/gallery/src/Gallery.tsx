@@ -1,13 +1,21 @@
-import styled                                             from '@emotion/styled'
-import React, { useEffect, useRef, useState }             from 'react'
-import { useSwipeable }                                   from 'react-swipeable'
-import { ifProp }                                         from 'styled-tools'
+import styled                from '@emotion/styled'
 
-import { ArrowBackwardIcon, ArrowForwardIcon, CloseIcon } from '@ui/icons'
-import { Modal }                                          from '@ui/modal'
-import { contentWidth, useWindowSize }                    from '@ui/utils'
+import React                 from 'react'
+import { useEffect }         from 'react'
+import { useRef }            from 'react'
+import { useState }          from 'react'
+import { useSwipeable }      from 'react-swipeable'
+import { ifProp }            from 'styled-tools'
 
-import { CloseButton, SlideButton }                       from './Buttons'
+import { ArrowBackwardIcon } from '@ui/icons'
+import { ArrowForwardIcon }  from '@ui/icons'
+import { CloseIcon }         from '@ui/icons'
+import { Modal }             from '@ui/modal'
+import { contentWidth }      from '@ui/utils'
+import { useWindowSize }     from '@ui/utils'
+
+import { CloseButton }       from './Buttons'
+import { SlideButton }       from './Buttons'
 
 interface GalleryProps {
   transition: boolean

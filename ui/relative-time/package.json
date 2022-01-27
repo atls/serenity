@@ -1,8 +1,8 @@
 {
   "name": "@ui/relative-time",
   "version": "0.0.1",
-  "license": "MIT",
   "private": true,
+  "license": "MIT",
   "main": "src/index.ts",
   "dependencies": {
     "@emotion/react": "^11.4.0",

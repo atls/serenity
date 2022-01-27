@@ -1,13 +1,18 @@
-import React                               from 'react'
-import styled                              from '@emotion/styled'
-import { ifProp }                          from 'styled-tools'
+import styled                   from '@emotion/styled'
 
-import { Avatar }                          from '@ui/avatar'
-import { CloseIcon, ForwardArrowLeftIcon } from '@ui/icons'
-import { Box, Column, Layout, Row }        from '@ui/layout'
-import { Text }                            from '@ui/text'
+import React                    from 'react'
+import { ifProp }               from 'styled-tools'
 
-import { InnerChat }                       from './InnerChat'
+import { Avatar }               from '@ui/avatar'
+import { CloseIcon }            from '@ui/icons'
+import { ForwardArrowLeftIcon } from '@ui/icons'
+import { Box }                  from '@ui/layout'
+import { Column }               from '@ui/layout'
+import { Layout }               from '@ui/layout'
+import { Row }                  from '@ui/layout'
+import { Text }                 from '@ui/text'
+
+import { InnerChat }            from './InnerChat'
 
 interface ActiveProps {
   active: boolean
@@ -75,6 +80,10 @@ const ChatItem = styled.div<ItemProps>(
   unread
 )
 
+const doNothing = () => {
+  // do nothing
+}
+
 export const Chat = ({
   discussions = [],
   messages = {},
@@ -83,9 +92,9 @@ export const Chat = ({
   disable = false,
   activeChat = {},
   owner = '',
-  onClose = () => {},
-  onSend = () => {},
-  onChange = () => {},
+  onClose = doNothing,
+  onSend = doNothing,
+  onChange = doNothing,
   onOpenChat,
 }: any) => (
   <Container>

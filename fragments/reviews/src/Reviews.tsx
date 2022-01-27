@@ -1,9 +1,12 @@
-import React                        from 'react'
+import React      from 'react'
 
-import { Avatar }                   from '@ui/avatar'
-import { Box, Column, Layout, Row } from '@ui/layout'
-import { Rating }                   from '@ui/rating'
-import { Text }                     from '@ui/text'
+import { Avatar } from '@ui/avatar'
+import { Box }    from '@ui/layout'
+import { Column } from '@ui/layout'
+import { Layout } from '@ui/layout'
+import { Row }    from '@ui/layout'
+import { Rating } from '@ui/rating'
+import { Text }   from '@ui/text'
 
 export const Reviews = ({ reviews = [] }) => (
   <Column>

@@ -1,15 +1,15 @@
-import { Injectable }                                                          from '@nestjs/common'
+import { Injectable }               from '@nestjs/common'
 
-import { Address }                                                             from '@collaboration/domain'
-import {
-  CustomerEntityRepository,
-  ProjectEntityRepository,
-  ReplyEntityRepository,
-  ReviewEntityRepository,
-} from '@collaboration/persistence'
+import { Address }                  from '@collaboration/domain'
+import { CustomerEntityRepository } from '@collaboration/persistence'
+import { ProjectEntityRepository }  from '@collaboration/persistence'
+import { ReplyEntityRepository }    from '@collaboration/persistence'
+import { ReviewEntityRepository }   from '@collaboration/persistence'
 
-import { CompleteProjectCommand, CreateProjectCommand, PublishProjectCommand } from '../commands'
-import { ProjectIdService }                                                    from './ProjectIdService'
+import { CompleteProjectCommand }   from '../commands'
+import { CreateProjectCommand }     from '../commands'
+import { PublishProjectCommand }    from '../commands'
+import { ProjectIdService }         from './ProjectIdService'
 
 @Injectable()
 export class CustomerService {

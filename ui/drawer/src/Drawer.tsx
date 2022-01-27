@@ -1,6 +1,7 @@
-import React           from 'react'
 import styled          from '@emotion/styled'
 import { css }         from '@emotion/react'
+
+import React           from 'react'
 
 import ReactDragDrawer from './drag'
 
@@ -25,12 +26,16 @@ const StyledDrawer = styled.div({
   backgroundColor: '#fff',
 })
 
+const doNothing = () => {
+  // do nothing
+}
+
 export const Drawer = ({
   children,
   fill = false,
   direction = 'left',
   visible = false,
-  onClose = () => {},
+  onClose = doNothing,
   disable = false,
 }) => (
   <DragDrawer

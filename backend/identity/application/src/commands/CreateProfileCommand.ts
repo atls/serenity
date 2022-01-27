@@ -1,8 +1,10 @@
-import { IsEnum, IsNotEmpty, MinLength } from 'class-validator'
+import { IsEnum }      from 'class-validator'
+import { IsNotEmpty }  from 'class-validator'
+import { MinLength }   from 'class-validator'
 
-import { ProfileType }                   from '@identity/domain'
+import { ProfileType } from '@identity/domain'
 
-import messages                          from '../messages'
+import messages        from '../messages'
 
 export class CreateProfileCommand {
   @IsNotEmpty()

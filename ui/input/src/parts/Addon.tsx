@@ -1,8 +1,12 @@
-import styled                                 from '@emotion/styled'
-import { border, color, styleFn, typography } from 'styled-system'
-import { switchProp }                         from 'styled-tools'
+import styled         from '@emotion/styled'
 
-import { AddonProps }                         from './types'
+import { border }     from 'styled-system'
+import { color }      from 'styled-system'
+import { styleFn }    from 'styled-system'
+import { typography } from 'styled-system'
+import { switchProp } from 'styled-tools'
+
+import { AddonProps } from './types'
 
 const base: styleFn = () => ({
   display: 'flex',

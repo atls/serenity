@@ -1,12 +1,17 @@
-import React                        from 'react'
-import { WithUser, WithoutUser }    from '@atls/react-user'
+import { WithUser }           from '@atls/react-user'
+import { WithoutUser }        from '@atls/react-user'
 
-import { Item, Drawer as UIDrawer } from '@ui/drawer'
-import { ArrowRightIcon, LogoIcon } from '@ui/icons'
-import { Column, Layout }           from '@ui/layout'
-import { NextLink as Link }         from '@ui/link'
+import React                  from 'react'
 
-import messages                     from './messages'
+import { Item }               from '@ui/drawer'
+import { Drawer as UIDrawer } from '@ui/drawer'
+import { ArrowRightIcon }     from '@ui/icons'
+import { LogoIcon }           from '@ui/icons'
+import { Column }             from '@ui/layout'
+import { Layout }             from '@ui/layout'
+import { NextLink as Link }   from '@ui/link'
+
+import messages               from './messages'
 
 export const Drawer = ({
   intl,

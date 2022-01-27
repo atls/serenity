@@ -1,6 +1,7 @@
-import React, { createContext } from 'react'
+import React             from 'react'
+import { createContext } from 'react'
 
-import { ChatStore }            from './ChatStore'
+import { ChatStore }     from './ChatStore'
 
 export const ChatContext = createContext(new ChatStore())
 

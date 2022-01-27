@@ -1,9 +1,13 @@
-import { Injectable }                                         from '@nestjs/common'
+import { Injectable }                 from '@nestjs/common'
 
-import { Company, FormOfWork, PrivatePerson, Specialisation } from '@collaboration/domain'
-import { SpecialistEntityRepository }                         from '@collaboration/persistence'
+import { Company }                    from '@collaboration/domain'
+import { FormOfWork }                 from '@collaboration/domain'
+import { PrivatePerson }              from '@collaboration/domain'
+import { Specialisation }             from '@collaboration/domain'
+import { SpecialistEntityRepository } from '@collaboration/persistence'
 
-import { ChangeAccountTypeCommand, UpdateSpecialistCommand }  from '../commands'
+import { ChangeAccountTypeCommand }   from '../commands'
+import { UpdateSpecialistCommand }    from '../commands'
 
 @Injectable()
 export class SpecialistService {

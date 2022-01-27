@@ -1,22 +1,20 @@
 import { Injectable }                 from '@nestjs/common'
 
-import { Address, Discussion, Reply } from '@collaboration/domain'
-import {
-  CustomerEntityRepository,
-  DiscussionEntityRepository,
-  MessageEntityRepository,
-  ProjectEntityRepository,
-  ReplyEntityRepository,
-  SpecialistEntityRepository,
-} from '@collaboration/persistence'
+import { Address }                    from '@collaboration/domain'
+import { Discussion }                 from '@collaboration/domain'
+import { Reply }                      from '@collaboration/domain'
+import { CustomerEntityRepository }   from '@collaboration/persistence'
+import { DiscussionEntityRepository } from '@collaboration/persistence'
+import { MessageEntityRepository }    from '@collaboration/persistence'
+import { ProjectEntityRepository }    from '@collaboration/persistence'
+import { ReplyEntityRepository }      from '@collaboration/persistence'
+import { SpecialistEntityRepository } from '@collaboration/persistence'
 
-import {
-  AddProjectReplyCommand,
-  ChooseSpecialistCommand,
-  ConfirmProjectReplyCommand,
-  RejectProjectReplyCommand,
-  UpdateProjectCommand,
-} from '../commands'
+import { AddProjectReplyCommand }     from '../commands'
+import { ChooseSpecialistCommand }    from '../commands'
+import { ConfirmProjectReplyCommand } from '../commands'
+import { RejectProjectReplyCommand }  from '../commands'
+import { UpdateProjectCommand }       from '../commands'
 
 @Injectable()
 export class ProjectService {

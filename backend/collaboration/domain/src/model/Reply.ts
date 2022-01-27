@@ -1,9 +1,11 @@
-import uuid                                 from 'uuid/v4'
 /* eslint-disable class-methods-use-this */
-import { AggregateRoot }                    from '@node-ts/ddd'
+import { AggregateRoot }      from '@node-ts/ddd'
 
-import { ReplyCreated, ReplyStatusChanged } from '../events'
-import { ReplyStatus }                      from './ReplyStatus'
+import uuid                   from 'uuid/v4'
+
+import { ReplyCreated }       from '../events'
+import { ReplyStatusChanged } from '../events'
+import { ReplyStatus }        from './ReplyStatus'
 
 export class Reply extends AggregateRoot {
   projectId: string

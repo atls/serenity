@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React         from 'react'
+import { useEffect } from 'react'
+import { useState }  from 'react'
 
-import { Filters }                    from './Filters'
-import { useData }                    from './useData'
+import { Filters }   from './Filters'
+import { useData }   from './useData'
 
 const FiltersFragment = ({
   title = '',

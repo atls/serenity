@@ -1,10 +1,12 @@
-import React                   from 'react'
-import Masonry                 from 'react-masonry-component'
+import React                from 'react'
+import Masonry              from 'react-masonry-component'
 
-import { SlideDrawer }         from '@ui/drawer'
-import { Box, Column, Layout } from '@ui/layout'
-import { NextLink as Link }    from '@ui/link'
-import { Text }                from '@ui/text'
+import { SlideDrawer }      from '@ui/drawer'
+import { Box }              from '@ui/layout'
+import { Column }           from '@ui/layout'
+import { Layout }           from '@ui/layout'
+import { NextLink as Link } from '@ui/link'
+import { Text }             from '@ui/text'
 
 export const Desktop = ({ data, visible, linksPath }) => (
   <SlideDrawer visible={visible} top={56}>

@@ -1,8 +1,10 @@
+import { render }                from '@testing-library/react'
+
 import React                     from 'react'
-import { IntlProvider, useIntl } from 'react-intl'
+import { IntlProvider }          from 'react-intl'
+import { useIntl }               from 'react-intl'
 
 import { ThemeProvider }         from '@ui/theme'
-import { render }                from '@testing-library/react'
 
 import { WallpaperingWorksheet } from '../WallpaperingWorksheet'
 

@@ -1,7 +1,12 @@
-import { Transform }                                                       from 'class-transformer'
-import { IsMobilePhone, IsNotEmpty, IsOptional, IsUUID, IsUrl, MinLength } from 'class-validator'
+import { Transform }     from 'class-transformer'
+import { IsMobilePhone } from 'class-validator'
+import { IsNotEmpty }    from 'class-validator'
+import { IsOptional }    from 'class-validator'
+import { IsUUID }        from 'class-validator'
+import { IsUrl }         from 'class-validator'
+import { MinLength }     from 'class-validator'
 
-import messages                                                            from '../messages'
+import messages          from '../messages'
 
 export class UpdateProfileCommand {
   @IsNotEmpty()

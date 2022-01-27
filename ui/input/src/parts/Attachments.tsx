@@ -1,7 +1,9 @@
-import React              from 'react'
-import styled             from '@emotion/styled'
+import styled     from '@emotion/styled'
 
-import { Prefix, Suffix } from './PrefixSuffix'
+import React      from 'react'
+
+import { Prefix } from './PrefixSuffix'
+import { Suffix } from './PrefixSuffix'
 
 const Container = styled.span({
   display: 'flex',

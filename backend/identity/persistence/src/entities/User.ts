@@ -1,8 +1,12 @@
-import { Column, CreateDateColumn, Entity, PrimaryColumn, UpdateDateColumn } from 'typeorm'
+import { Column }           from 'typeorm'
+import { CreateDateColumn } from 'typeorm'
+import { Entity }           from 'typeorm'
+import { PrimaryColumn }    from 'typeorm'
+import { UpdateDateColumn } from 'typeorm'
 
-import { Credentials }                                                       from './Credentials'
-import { Email }                                                             from './Email'
-import { Profile }                                                           from './Profile'
+import { Credentials }      from './Credentials'
+import { Email }            from './Email'
+import { Profile }          from './Profile'
 
 @Entity()
 export class User {

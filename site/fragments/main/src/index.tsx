@@ -1,9 +1,10 @@
-import React, { useCallback } from 'react'
-import { useRouter }          from 'next/router'
-import { useIntl }            from 'react-intl'
+import React           from 'react'
+import { useRouter }   from 'next/router'
+import { useCallback } from 'react'
+import { useIntl }     from 'react-intl'
 
-import { Main }               from './Main'
-import { useData }            from './useData'
+import { Main }        from './Main'
+import { useData }     from './useData'
 
 const MainFragment = () => {
   const intl = useIntl()

@@ -54,21 +54,24 @@ export const NextNavLink = withRouter(({ router, href, children, ...props }: Nex
   </NavLink>
 ))
 
-export const NextSidebarLink = withRouter(
-  ({ router, href, children, ...props }: NextSidebarLinkProps) => (
-    <SidebarLink
-      {...props}
-      href={href}
-      active={router && router.asPath === href}
-      onClick={(event) => {
-        event.preventDefault()
+export const NextSidebarLink = withRouter(({
+  router,
+  href,
+  children,
+  ...props
+}: NextSidebarLinkProps) => (
+  <SidebarLink
+    {...props}
+    href={href}
+    active={router && router.asPath === href}
+    onClick={(event) => {
+      event.preventDefault()
 
-        if (router && href) {
-          router.push(href)
-        }
-      }}
-    >
-      {children}
-    </SidebarLink>
-  )
-)
+      if (router && href) {
+        router.push(href)
+      }
+    }}
+  >
+    {children}
+  </SidebarLink>
+))

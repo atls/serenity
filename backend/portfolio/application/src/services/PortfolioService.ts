@@ -1,9 +1,10 @@
-import { Injectable }                                     from '@nestjs/common'
+import { Injectable }                from '@nestjs/common'
 
-import { Portfolio }                                      from '@portfolio/domain'
-import { PortfolioEntityRepository }                      from '@portfolio/persistence'
+import { Portfolio }                 from '@portfolio/domain'
+import { PortfolioEntityRepository } from '@portfolio/persistence'
 
-import { CreatePortfolioCommand, UpdatePortfolioCommand } from '../commands'
+import { CreatePortfolioCommand }    from '../commands'
+import { UpdatePortfolioCommand }    from '../commands'
 
 @Injectable()
 export class PortfolioService {

@@ -3,7 +3,11 @@ import { useIntl }          from 'react-intl'
 
 import { WeldingWorksheet } from './WeldingWorksheet'
 
-const WeldingWorksheetFragment = ({ id = '', value, onChange = (a) => {} }) => {
+const doNothing = (a) => {
+  // do nothing
+}
+
+const WeldingWorksheetFragment = ({ id = '', value, onChange = doNothing }) => {
   const intl = useIntl()
   if (id !== 'e6e35fc9-a6f8-4dcd-98f2-87b05e5155c9') return null
   const data = {

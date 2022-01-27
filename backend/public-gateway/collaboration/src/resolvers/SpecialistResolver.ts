@@ -1,11 +1,16 @@
-/* eslint-disable class-methods-use-this */
-import DataLoader                                    from 'dataloader'
-import { Loader }                                    from '@monstrs/nestjs-dataloader'
-import { Injectable }                                from '@nestjs/common'
-import { ResolveProperty, Resolver, Root }           from '@nestjs/graphql'
+import { Loader }          from '@monstrs/nestjs-dataloader'
+import { Injectable }      from '@nestjs/common'
+import { ResolveProperty } from '@nestjs/graphql'
+import { Resolver }        from '@nestjs/graphql'
+import { Root }            from '@nestjs/graphql'
 
-import { PortfolioLoader, ReviewLoader, UserLoader } from '../dataloaders'
-import { Specialist }                                from '../types'
+/* eslint-disable class-methods-use-this */
+import DataLoader          from 'dataloader'
+
+import { PortfolioLoader } from '../dataloaders'
+import { ReviewLoader }    from '../dataloaders'
+import { UserLoader }      from '../dataloaders'
+import { Specialist }      from '../types'
 
 @Injectable()
 @Resolver((of) => Specialist)

@@ -1,12 +1,13 @@
-import { Controller, UseInterceptors, UsePipes, ValidationPipe } from '@nestjs/common'
-import { GrpcMethod }                                            from '@nestjs/microservices'
+import { MapValidationErrorsInterceptor } from '@atls/nestjs-map-errors-interceptor'
+import { Controller }                     from '@nestjs/common'
+import { UseInterceptors }                from '@nestjs/common'
+import { UsePipes }                       from '@nestjs/common'
+import { ValidationPipe }                 from '@nestjs/common'
+import { GrpcMethod }                     from '@nestjs/microservices'
 
-import {
-  ChangeAccountTypeCommand,
-  SpecialistService,
-  UpdateSpecialistCommand,
-} from '@collaboration/application'
-import { MapValidationErrorsInterceptor }                        from '@atls/nestjs-map-errors-interceptor'
+import { ChangeAccountTypeCommand }       from '@collaboration/application'
+import { SpecialistService }              from '@collaboration/application'
+import { UpdateSpecialistCommand }        from '@collaboration/application'
 
 @Controller()
 @UseInterceptors(MapValidationErrorsInterceptor)

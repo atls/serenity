@@ -1,9 +1,11 @@
-import React                   from 'react'
+import React            from 'react'
 
-import { LogoIcon }            from '@ui/icons'
-import { Box, Column, Layout } from '@ui/layout'
+import { LogoIcon }     from '@ui/icons'
+import { Box }          from '@ui/layout'
+import { Column }       from '@ui/layout'
+import { Layout }       from '@ui/layout'
 
-import RecoveryComplete        from './recovery-complete'
+import RecoveryComplete from './recovery-complete'
 
 export const RecoveryCompletePage = ({ accountUrl, siteUrl }: any) => (
   <Box bg='rgb(159, 159, 159)' height='100vh'>

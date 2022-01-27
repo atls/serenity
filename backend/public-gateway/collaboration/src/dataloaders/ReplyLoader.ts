@@ -1,11 +1,14 @@
-import DataLoader                   from 'dataloader'
-import { Injectable, OnModuleInit } from '@nestjs/common'
-import { Client, ClientGrpc }       from '@nestjs/microservices'
-import { map }                      from 'rxjs/operators'
+import { NestDataLoader } from '@monstrs/nestjs-dataloader'
+import { Injectable }     from '@nestjs/common'
+import { OnModuleInit }   from '@nestjs/common'
+import { Client }         from '@nestjs/microservices'
+import { ClientGrpc }     from '@nestjs/microservices'
 
-import { NestDataLoader }           from '@monstrs/nestjs-dataloader'
-import { clientOptions }            from '@protos/collaboration'
-import { collaboration }            from '@protos/interfaces'
+import DataLoader         from 'dataloader'
+import { map }            from 'rxjs/operators'
+
+import { clientOptions }  from '@protos/collaboration'
+import { collaboration }  from '@protos/interfaces'
 
 @Injectable()
 export class ReplyLoader implements NestDataLoader, OnModuleInit {

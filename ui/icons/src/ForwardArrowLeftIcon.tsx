@@ -1,6 +1,5 @@
-/* eslint-disable */
 import React from 'react'
-export const ForwardArrowLeftIcon = (props: any) => (
+export const ForwardArrowLeftIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     width='1em'
     height='1em'
@@ -18,7 +17,7 @@ export const ForwardArrowLeftIcon = (props: any) => (
           <polygon id='Path' points='0 0 24 0 24 24 0 24' />
           <polygon
             id='Path'
-            fill={props.color || 'rgb(255, 255, 255)'}
+            fill="\n// eslint-disable-next-line\n{props.color || '#FFFFFF'}"
             fillRule='nonzero'
             points='12 4 10.59 5.41 16.17 11 4 11 4 13 16.17 13 10.59 18.59 12 20 20 12'
           />

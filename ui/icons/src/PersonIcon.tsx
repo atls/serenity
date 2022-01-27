@@ -1,6 +1,5 @@
-/* eslint-disable */
 import React from 'react'
-export const PersonIcon = (props: any) => (
+export const PersonIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width='1em' height='1em' viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg' {...props}>
     <g
       stroke='none'

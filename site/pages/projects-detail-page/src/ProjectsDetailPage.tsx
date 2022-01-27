@@ -1,12 +1,14 @@
-import React                   from 'react'
+import React           from 'react'
 
-import Catalog                 from '@site/catalog-fragment'
-import Footer                  from '@site/footer-fragment'
-import Navigation              from '@site/navigation-fragment'
-import ProjectCustomer         from '@site/project-customer-fragment'
-import ProjectReply            from '@site/project-reply-fragment'
-import ProjectsDetail          from '@site/projects-detail-fragment'
-import { Box, Column, Layout } from '@ui/layout'
+import Catalog         from '@site/catalog-fragment'
+import Footer          from '@site/footer-fragment'
+import Navigation      from '@site/navigation-fragment'
+import ProjectCustomer from '@site/project-customer-fragment'
+import ProjectReply    from '@site/project-reply-fragment'
+import ProjectsDetail  from '@site/projects-detail-fragment'
+import { Box }         from '@ui/layout'
+import { Column }      from '@ui/layout'
+import { Layout }      from '@ui/layout'
 
 export const ProjectsDetailPage = ({ intl, project = {}, id, replies }: any) => (
   <>

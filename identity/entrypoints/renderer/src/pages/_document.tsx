@@ -1,8 +1,9 @@
-import React               from 'react'
-import Document            from 'next/document'
-import compose             from 'recompose/compose'
-import { extractCritical } from '@emotion/server'
 import { withHelmet }      from '@atls/next-document-with-helmet'
+import { extractCritical } from '@emotion/server'
+
+import Document            from 'next/document'
+import React               from 'react'
+import compose             from 'recompose/compose'
 
 export const withEmotion = () => (TargetComponent) =>
   class WithEmotion extends TargetComponent {

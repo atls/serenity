@@ -1,13 +1,17 @@
-import React                        from 'react'
+import React           from 'react'
 
-import { CheckButton }              from '@ui/button'
-import { Divider }                  from '@ui/divider'
-import { Input }                    from '@ui/input'
-import { Box, Column, Layout, Row } from '@ui/layout'
-import { Option, Select }           from '@ui/select'
-import { Text }                     from '@ui/text'
+import { CheckButton } from '@ui/button'
+import { Divider }     from '@ui/divider'
+import { Input }       from '@ui/input'
+import { Box }         from '@ui/layout'
+import { Column }      from '@ui/layout'
+import { Layout }      from '@ui/layout'
+import { Row }         from '@ui/layout'
+import { Option }      from '@ui/select'
+import { Select }      from '@ui/select'
+import { Text }        from '@ui/text'
 
-import messages                     from './messages'
+import messages        from './messages'
 
 const ceilingTypes = {
   stretch: {

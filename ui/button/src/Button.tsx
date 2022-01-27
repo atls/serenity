@@ -1,11 +1,16 @@
-import React                                   from 'react'
-import styled                                  from '@emotion/styled'
-import { createShouldForwardProp }             from '@styled-system/should-forward-prop'
-import { border, flexbox, system, typography } from 'styled-system'
-import { ifProp, switchProp }                  from 'styled-tools'
+import styled                      from '@emotion/styled'
+import { createShouldForwardProp } from '@styled-system/should-forward-prop'
 
-import { StyledButtonProps }                   from './types'
-import { divideChildren }                      from './utils'
+import React                       from 'react'
+import { border }                  from 'styled-system'
+import { flexbox }                 from 'styled-system'
+import { system }                  from 'styled-system'
+import { typography }              from 'styled-system'
+import { ifProp }                  from 'styled-tools'
+import { switchProp }              from 'styled-tools'
+
+import { StyledButtonProps }       from './types'
+import { divideChildren }          from './utils'
 
 const base: any = ({ theme }: any) => ({
   fontFamily: theme.fonts.primary,

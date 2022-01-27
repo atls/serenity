@@ -1,9 +1,11 @@
-import RcSelect                                              from 'rc-select'
-import React                                                 from 'react'
+import RcSelect                from 'rc-select'
+import React                   from 'react'
 
-import { ArrowDownIcon }                                     from '@ui/icons'
+import { ArrowDownIcon }       from '@ui/icons'
 
-import { dropdownStyles, selectRoundedStyles, selectStyles } from './styles'
+import { dropdownStyles }      from './styles'
+import { selectRoundedStyles } from './styles'
+import { selectStyles }        from './styles'
 
 export const Select = ({
   children,

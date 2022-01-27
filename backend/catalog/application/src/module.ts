@@ -1,11 +1,9 @@
-import { Module } from '@nestjs/common'
+import { Module }                      from '@nestjs/common'
 
-import {
-  CategoryGroupQueriesService,
-  CategoryGroupService,
-  CategoryQueriesService,
-  CategoryService,
-} from './services'
+import { CategoryGroupQueriesService } from './services'
+import { CategoryGroupService }        from './services'
+import { CategoryQueriesService }      from './services'
+import { CategoryService }             from './services'
 
 @Module({
   providers: [

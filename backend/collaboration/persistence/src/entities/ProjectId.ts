@@ -1,5 +1,6 @@
 /* eslint-disable no-underscore-dangle */
-import { Entity, PrimaryGeneratedColumn } from 'typeorm'
+import { Entity }                 from 'typeorm'
+import { PrimaryGeneratedColumn } from 'typeorm'
 
 @Entity()
 export class ProjectId {

@@ -1,24 +1,21 @@
-import { BusModule }                                           from '@monstrs/nestjs-bus'
-import { Module }                                              from '@nestjs/common'
-import { ElasticsearchModule }                                 from '@nestjs/elasticsearch'
+import { BusModule }                    from '@monstrs/nestjs-bus'
+import { Module }                       from '@nestjs/common'
+import { ElasticsearchModule }          from '@nestjs/elasticsearch'
 
-import { ProjectSearchController, SpecialistSearchController } from './controllers'
-import {
-  ProjectCompletedHandler,
-  ProjectCreatedHandler,
-  ProjectPublishedHandler,
-  ProjectReplyConfirmedHandler,
-  ProjectReplyRejectedHandler,
-  ProjectUpdatedHandler,
-  SpecialistUpdatedHandler,
-} from './handlers'
-import { HealthModule }                                        from './health'
-import {
-  ProjectDataService,
-  ProjectIndexService,
-  SpecialistDataService,
-  SpecialistIndexService,
-} from './services'
+import { ProjectSearchController }      from './controllers'
+import { SpecialistSearchController }   from './controllers'
+import { ProjectCompletedHandler }      from './handlers'
+import { ProjectCreatedHandler }        from './handlers'
+import { ProjectPublishedHandler }      from './handlers'
+import { ProjectReplyConfirmedHandler } from './handlers'
+import { ProjectReplyRejectedHandler }  from './handlers'
+import { ProjectUpdatedHandler }        from './handlers'
+import { SpecialistUpdatedHandler }     from './handlers'
+import { HealthModule }                 from './health'
+import { ProjectDataService }           from './services'
+import { ProjectIndexService }          from './services'
+import { SpecialistDataService }        from './services'
+import { SpecialistIndexService }       from './services'
 
 @Module({
   imports: [

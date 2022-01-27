@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
+import { useState }  from 'react'
 
 interface WindowDimensions {
   innerWidth: number | null

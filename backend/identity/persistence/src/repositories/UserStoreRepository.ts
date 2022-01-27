@@ -1,10 +1,11 @@
 import { Logger }             from '@atlantis-lab/nestjs-logger'
 import { Bus }                from '@monstrs/nestjs-bus'
 import { Injectable }         from '@nestjs/common'
+import { WriteRepository }    from '@node-ts/ddd'
+
 import { Connection }         from 'typeorm'
 
 import { User as UserEntity } from '@identity/domain'
-import { WriteRepository }    from '@node-ts/ddd'
 
 import { User }               from '../entities'
 

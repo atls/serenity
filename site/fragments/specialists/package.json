@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.tsx",
+  "dependencies": {
+    "graphql": "^15.5.0",
+    "graphql-tag": "^2.10.0",
+    "next": "10.0.5",
+    "react": "16.13.1"
+  },
   "devDependencies": {
     "@apollo/client": "^3.5.8",
     "@apollo/react-testing": "3.1.3",
@@ -19,12 +25,6 @@
     "@ui/text": "0.3.1",
     "@ui/theme": "0.0.5",
     "react-intl": "^5.24.4"
-  },
-  "dependencies": {
-    "graphql": "^15.5.0",
-    "graphql-tag": "^2.10.0",
-    "next": "10.0.5",
-    "react": "16.13.1"
   },
   "peerDependencies": {
     "@apollo/client": "*",

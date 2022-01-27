@@ -1,8 +1,8 @@
 import { HandlesMessage }             from '@monstrs/nestjs-bus'
+import { Handler }                    from '@node-ts/bus-core'
 
 import { ReviewCreated }              from '@collaboration/domain'
 import { SpecialistEntityRepository } from '@collaboration/persistence'
-import { Handler }                    from '@node-ts/bus-core'
 
 import { ReviewQueriesService }       from '../services'
 

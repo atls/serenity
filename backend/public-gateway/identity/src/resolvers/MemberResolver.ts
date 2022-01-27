@@ -1,13 +1,17 @@
 /* eslint-disable class-methods-use-this */
-import { Injectable }                      from '@nestjs/common'
-import { ResolveProperty, Resolver, Root } from '@nestjs/graphql'
-import { Client, ClientGrpc }              from '@nestjs/microservices'
-import { map }                             from 'rxjs/operators'
+import { Injectable }      from '@nestjs/common'
+import { ResolveProperty } from '@nestjs/graphql'
+import { Resolver }        from '@nestjs/graphql'
+import { Root }            from '@nestjs/graphql'
+import { Client }          from '@nestjs/microservices'
+import { ClientGrpc }      from '@nestjs/microservices'
 
-import { clientOptions }                   from '@protos/collaboration'
-import { collaboration }                   from '@protos/interfaces'
+import { map }             from 'rxjs/operators'
 
-import { User }                            from '../types'
+import { clientOptions }   from '@protos/collaboration'
+import { collaboration }   from '@protos/interfaces'
+
+import { User }            from '../types'
 
 @Injectable()
 @Resolver((of) => User)

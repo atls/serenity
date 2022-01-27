@@ -1,13 +1,19 @@
-import styled                       from '@emotion/styled'
-import React, { useEffect, useRef } from 'react'
-import { ifProp, switchProp }       from 'styled-tools'
+import styled           from '@emotion/styled'
 
-import { Divider }                  from '@ui/divider'
-import { SendIcon, ThumbUpIcon }    from '@ui/icons'
-import { Input }                    from '@ui/input'
-import { Box, Layout }              from '@ui/layout'
-import { RelativeTime }             from '@ui/relative-time'
-import { Text }                     from '@ui/text'
+import React            from 'react'
+import { useEffect }    from 'react'
+import { useRef }       from 'react'
+import { ifProp }       from 'styled-tools'
+import { switchProp }   from 'styled-tools'
+
+import { Divider }      from '@ui/divider'
+import { SendIcon }     from '@ui/icons'
+import { ThumbUpIcon }  from '@ui/icons'
+import { Input }        from '@ui/input'
+import { Box }          from '@ui/layout'
+import { Layout }       from '@ui/layout'
+import { RelativeTime } from '@ui/relative-time'
+import { Text }         from '@ui/text'
 
 interface ActiveProps {
   active: boolean
@@ -76,6 +82,10 @@ const ChatMessage = styled.div<ChatMessageProps>(
   alignment
 )
 
+const doNothing = () => {
+  // do nothing
+}
+
 export const InnerChat = ({
   item,
   disable,
@@ -124,14 +134,14 @@ export const InnerChat = ({
           value={inputValue}
           placeholder={placeholder}
           border='none'
-          onEnter={!disable ? onSend : () => {}}
+          onEnter={!disable ? onSend : doNothing}
           onChange={onChange}
           prefix={<ThumbUpIcon width={20} height={20} style={{ cursor: 'pointer ' }} />}
           suffix={
             <SendIcon
               width={20}
               height={20}
-              onClick={!disable ? onSend : () => {}}
+              onClick={!disable ? onSend : doNothing}
               style={{ cursor: 'pointer ' }}
             />
           }

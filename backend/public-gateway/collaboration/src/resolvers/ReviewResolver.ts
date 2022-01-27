@@ -1,12 +1,14 @@
+import { Loader }          from '@monstrs/nestjs-dataloader'
+import { Injectable }      from '@nestjs/common'
+import { ResolveProperty } from '@nestjs/graphql'
+import { Resolver }        from '@nestjs/graphql'
+import { Root }            from '@nestjs/graphql'
+
 /* eslint-disable class-methods-use-this */
-import DataLoader                          from 'dataloader'
-import { Injectable }                      from '@nestjs/common'
-import { ResolveProperty, Resolver, Root } from '@nestjs/graphql'
+import DataLoader          from 'dataloader'
 
-import { Loader }                          from '@monstrs/nestjs-dataloader'
-
-import { UserLoader }                      from '../dataloaders'
-import { Review }                          from '../types'
+import { UserLoader }      from '../dataloaders'
+import { Review }          from '../types'
 
 @Injectable()
 @Resolver((of) => Review)

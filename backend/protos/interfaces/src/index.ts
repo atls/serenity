@@ -1,5 +1,7 @@
 import * as grpc      from 'grpc'
+
 import { Observable } from 'rxjs'
+
 /** Namespace common. */
 export namespace common {
   /** Contains all the RPC service clients. */

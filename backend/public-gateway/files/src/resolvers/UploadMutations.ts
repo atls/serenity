@@ -1,12 +1,17 @@
-import { Injectable, OnModuleInit }                    from '@nestjs/common'
-import { Args, Mutation }                              from '@nestjs/graphql'
-import { Client, ClientGrpc }                          from '@nestjs/microservices'
+import { Injectable }            from '@nestjs/common'
+import { OnModuleInit }          from '@nestjs/common'
+import { Args }                  from '@nestjs/graphql'
+import { Mutation }              from '@nestjs/graphql'
+import { Client }                from '@nestjs/microservices'
+import { ClientGrpc }            from '@nestjs/microservices'
 
-import { clientOptions }                               from '@protos/files'
-import { files }                                       from '@protos/interfaces'
+import { clientOptions }         from '@protos/files'
+import { files }                 from '@protos/interfaces'
 
-import { ConfirmUploadInput, CreateUploadInput }       from '../inputs'
-import { ConfirmUploadResponse, CreateUploadResponse } from '../types'
+import { ConfirmUploadInput }    from '../inputs'
+import { CreateUploadInput }     from '../inputs'
+import { ConfirmUploadResponse } from '../types'
+import { CreateUploadResponse }  from '../types'
 
 @Injectable()
 export class UploadMutations implements OnModuleInit {

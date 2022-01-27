@@ -3,8 +3,10 @@ import { useIntl }  from 'react-intl'
 
 import { Settings } from './Settings'
 
-export default () => {
+const SettingsFragment = () => {
   const intl = useIntl()
 
   return <Settings intl={intl} />
 }
+
+export default SettingsFragment

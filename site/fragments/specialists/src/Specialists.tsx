@@ -1,16 +1,21 @@
-import React                        from 'react'
+import React                from 'react'
 
-import { Avatar }                   from '@ui/avatar'
-import { Button }                   from '@ui/button'
-import { Carousel }                 from '@ui/carousel'
-import { ChatIcon, StarIcon }       from '@ui/icons'
-import { Image }                    from '@ui/image'
-import { Box, Column, Layout, Row } from '@ui/layout'
-import { NextLink as Link }         from '@ui/link'
-import { Option, Search }           from '@ui/search'
-import { Text }                     from '@ui/text'
+import { Avatar }           from '@ui/avatar'
+import { Button }           from '@ui/button'
+import { Carousel }         from '@ui/carousel'
+import { ChatIcon }         from '@ui/icons'
+import { StarIcon }         from '@ui/icons'
+import { Image }            from '@ui/image'
+import { Box }              from '@ui/layout'
+import { Column }           from '@ui/layout'
+import { Layout }           from '@ui/layout'
+import { Row }              from '@ui/layout'
+import { NextLink as Link } from '@ui/link'
+import { Option }           from '@ui/search'
+import { Search }           from '@ui/search'
+import { Text }             from '@ui/text'
 
-import messages                     from './messages'
+import messages             from './messages'
 
 export const Specialists = ({
   intl,

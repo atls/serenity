@@ -1,9 +1,10 @@
-import React                          from 'react'
+import React              from 'react'
 
-import { ChatButton, Chat as UIChat } from '@ui/chat'
-import { SlideDrawer }                from '@ui/drawer'
+import { ChatButton }     from '@ui/chat'
+import { Chat as UIChat } from '@ui/chat'
+import { SlideDrawer }    from '@ui/drawer'
 
-import defaultMessages                from './messages'
+import defaultMessages    from './messages'
 
 export const Chat = ({
   intl,

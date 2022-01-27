@@ -1,7 +1,7 @@
+import { loadSync } from '@grpc/proto-loader'
+
 import grpc         from 'grpc'
 import path         from 'path'
-
-import { loadSync } from '@grpc/proto-loader'
 
 const PROTO_PATH = path.join(path.dirname(require.resolve('@protos/mailer')), '../mailer.proto')
 

@@ -1,11 +1,13 @@
-import React, { useCallback } from 'react'
-import { useUser }            from '@atls/react-user'
-import { useIntl }            from 'react-intl'
+import { useUser }     from '@atls/react-user'
 
-import { useDrawer }          from '@ui/drawer'
+import React           from 'react'
+import { useCallback } from 'react'
+import { useIntl }     from 'react-intl'
 
-import { Navigation }         from './Navigation'
-import { useProfile }         from './useProfile'
+import { useDrawer }   from '@ui/drawer'
+
+import { Navigation }  from './Navigation'
+import { useProfile }  from './useProfile'
 
 const NavigationFragment = () => {
   const user = useUser()

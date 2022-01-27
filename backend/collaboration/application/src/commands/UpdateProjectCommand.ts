@@ -1,6 +1,9 @@
-import { IsEnum, IsNotEmpty, IsUUID, Min } from 'class-validator'
+import { IsEnum }          from 'class-validator'
+import { IsNotEmpty }      from 'class-validator'
+import { IsUUID }          from 'class-validator'
+import { Min }             from 'class-validator'
 
-import { BeginningOfWork }                 from '@collaboration/domain'
+import { BeginningOfWork } from '@collaboration/domain'
 
 export class UpdateProjectCommand {
   @IsNotEmpty()

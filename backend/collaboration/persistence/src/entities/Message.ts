@@ -1,15 +1,13 @@
 /* eslint-disable no-underscore-dangle */
-import {
-  Column,
-  CreateDateColumn,
-  Entity,
-  JoinColumn,
-  ManyToOne,
-  PrimaryColumn,
-  UpdateDateColumn,
-} from 'typeorm'
+import { Column }           from 'typeorm'
+import { CreateDateColumn } from 'typeorm'
+import { Entity }           from 'typeorm'
+import { JoinColumn }       from 'typeorm'
+import { ManyToOne }        from 'typeorm'
+import { PrimaryColumn }    from 'typeorm'
+import { UpdateDateColumn } from 'typeorm'
 
-import { Discussion } from './Discussion'
+import { Discussion }       from './Discussion'
 
 @Entity()
 export class Message {

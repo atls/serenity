@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import { useUser }                    from '@atlantis-lab/react-user'
-import { useIntl }                    from 'react-intl'
+import { useUser }              from '@atlantis-lab/react-user'
 
-import { useChat as useUiChat }       from '@ui/chat'
+import React                    from 'react'
+import { useEffect }            from 'react'
+import { useState }             from 'react'
+import { useIntl }              from 'react-intl'
 
-import { Chat }                       from './Chat'
-import { useChat }                    from './useChat'
+import { useChat as useUiChat } from '@ui/chat'
+
+import { Chat }                 from './Chat'
+import { useChat }              from './useChat'
 
 const ChatFragment = () => {
   const intl = useIntl()

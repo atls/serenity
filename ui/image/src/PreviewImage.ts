@@ -1,5 +1,8 @@
-import styled                        from '@emotion/styled'
-import { background, layout, space } from 'styled-system'
+import styled         from '@emotion/styled'
+
+import { background } from 'styled-system'
+import { layout }     from 'styled-system'
+import { space }      from 'styled-system'
 
 export const PreviewImage = styled.div(
   ({ theme }) => ({

@@ -1,10 +1,15 @@
 /* eslint-disable class-methods-use-this */
-import { Injectable, OnModuleInit }                    from '@nestjs/common'
-import { Args, ResolveProperty, Resolver }             from '@nestjs/graphql'
-import { Client, ClientGrpc }                          from '@nestjs/microservices'
+import { Injectable }                                  from '@nestjs/common'
+import { OnModuleInit }                                from '@nestjs/common'
+import { Args }                                        from '@nestjs/graphql'
+import { ResolveProperty }                             from '@nestjs/graphql'
+import { Resolver }                                    from '@nestjs/graphql'
+import { Client }                                      from '@nestjs/microservices'
+import { ClientGrpc }                                  from '@nestjs/microservices'
 
 import { clientOptions as collaborationClientOptions } from '@protos/collaboration'
-import { collaboration, search }                       from '@protos/interfaces'
+import { collaboration }                               from '@protos/interfaces'
+import { search }                                      from '@protos/interfaces'
 import { clientOptions as searchClientOptions }        from '@protos/search'
 
 import { SearchSpecialistsFilter }                     from '../inputs'

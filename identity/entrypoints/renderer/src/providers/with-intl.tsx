@@ -1,9 +1,12 @@
-import Cookies                         from 'universal-cookie'
+import { LocaleProvider } from '@atls/react-locale'
+import { LocaleStore }    from '@atls/react-locale'
+
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable react/sort-comp */
-import React, { Component }            from 'react'
-import { LocaleProvider, LocaleStore } from '@atls/react-locale'
-import { IntlProvider }                from 'react-intl'
+import React              from 'react'
+import Cookies            from 'universal-cookie'
+import { Component }      from 'react'
+import { IntlProvider }   from 'react-intl'
 
 const DEFAULT_LOCALE = 'ru'
 
@@ -29,8 +32,7 @@ type Options = {
   load?: any
 }
 
-export const withIntl =
-  ({
+export const withIntl = ({
     default: defaultLocale = DEFAULT_LOCALE,
     supported: supportedLocales = [],
     load = (locale: string) => ({}),

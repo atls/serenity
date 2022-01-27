@@ -1,7 +1,8 @@
-import { IsNotEmpty, MinLength } from 'class-validator'
+import { IsNotEmpty }   from 'class-validator'
+import { MinLength }    from 'class-validator'
 
-import messages                  from '../messages'
-import { IsFieldEqual }          from '../constraints'
+import messages         from '../messages'
+import { IsFieldEqual } from '../constraints'
 
 export class ChangePasswordCommand {
   @IsNotEmpty()

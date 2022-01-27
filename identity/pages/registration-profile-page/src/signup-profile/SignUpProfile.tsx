@@ -1,11 +1,14 @@
-import React                    from 'react'
+import React            from 'react'
 
-import { Button, SwitchButton } from '@ui/button'
-import { Input }                from '@ui/input'
-import { Box, Column, Layout }  from '@ui/layout'
-import { Text }                 from '@ui/text'
+import { Button }       from '@ui/button'
+import { SwitchButton } from '@ui/button'
+import { Input }        from '@ui/input'
+import { Box }          from '@ui/layout'
+import { Column }       from '@ui/layout'
+import { Layout }       from '@ui/layout'
+import { Text }         from '@ui/text'
 
-import messages                 from './messages'
+import messages         from './messages'
 
 export const SignUpProfile = ({
   intl,

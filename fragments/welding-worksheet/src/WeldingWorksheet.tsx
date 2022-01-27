@@ -1,11 +1,13 @@
-import React                   from 'react'
+import React           from 'react'
 
-import { CheckButton }         from '@ui/button'
-import { Divider }             from '@ui/divider'
-import { Box, Column, Layout } from '@ui/layout'
-import { Text }                from '@ui/text'
+import { CheckButton } from '@ui/button'
+import { Divider }     from '@ui/divider'
+import { Box }         from '@ui/layout'
+import { Column }      from '@ui/layout'
+import { Layout }      from '@ui/layout'
+import { Text }        from '@ui/text'
 
-import messages                from './messages'
+import messages        from './messages'
 
 export const WeldingWorksheet = ({
   intl,

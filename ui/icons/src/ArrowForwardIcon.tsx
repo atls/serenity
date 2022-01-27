@@ -1,6 +1,5 @@
-/* eslint-disable */
 import React from 'react'
-export const ArrowForwardIcon = (props: any) => (
+export const ArrowForwardIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     width='1em'
     height='1em'
@@ -26,7 +25,13 @@ export const ArrowForwardIcon = (props: any) => (
       />
     </mask>
     <g mask='url(#ArrowForwardIcon)'>
-      <rect x={-28} y={-28} width={80} height={80} fill={props.color || 'rgb(153, 153, 153)'} />
+      <rect
+        x={-28}
+        y={-28}
+        width={80}
+        height={80}
+        fill="\n// eslint-disable-next-line\n{props.color || '#FFFFFF'}"
+      />
     </g>
   </svg>
 )

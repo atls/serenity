@@ -1,9 +1,11 @@
-import React                   from 'react'
+import React          from 'react'
 
-import { LogoIcon }            from '@ui/icons'
-import { Box, Column, Layout } from '@ui/layout'
+import { LogoIcon }   from '@ui/icons'
+import { Box }        from '@ui/layout'
+import { Column }     from '@ui/layout'
+import { Layout }     from '@ui/layout'
 
-import SignupComplete          from './registration-complete'
+import SignupComplete from './registration-complete'
 
 export const RegistrationCompletePage = ({ accountUrl, siteUrl }: any) => (
   <Box bg='rgb(159, 159, 159)' height='100vh'>

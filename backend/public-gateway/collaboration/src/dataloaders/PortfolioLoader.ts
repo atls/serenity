@@ -1,11 +1,14 @@
-import DataLoader                   from 'dataloader'
-import { NestDataLoader }           from '@monstrs/nestjs-dataloader'
-import { Injectable, OnModuleInit } from '@nestjs/common'
-import { Client, ClientGrpc }       from '@nestjs/microservices'
-import { map }                      from 'rxjs/operators'
+import { NestDataLoader } from '@monstrs/nestjs-dataloader'
+import { Injectable }     from '@nestjs/common'
+import { OnModuleInit }   from '@nestjs/common'
+import { Client }         from '@nestjs/microservices'
+import { ClientGrpc }     from '@nestjs/microservices'
 
-import { portfolio }                from '@protos/interfaces'
-import { clientOptions }            from '@protos/portfolio'
+import DataLoader         from 'dataloader'
+import { map }            from 'rxjs/operators'
+
+import { portfolio }      from '@protos/interfaces'
+import { clientOptions }  from '@protos/portfolio'
 
 @Injectable()
 export class PortfolioLoader implements NestDataLoader, OnModuleInit {

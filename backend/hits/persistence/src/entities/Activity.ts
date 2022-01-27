@@ -1,5 +1,7 @@
 /* eslint-disable no-underscore-dangle */
-import { Column, Entity, PrimaryColumn } from 'typeorm'
+import { Column }        from 'typeorm'
+import { Entity }        from 'typeorm'
+import { PrimaryColumn } from 'typeorm'
 
 @Entity()
 export class Activity {

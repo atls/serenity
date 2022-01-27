@@ -1,7 +1,7 @@
 import express        from 'express'
 import mjml2html      from 'mjml'
-import path           from 'path'
 import next           from 'next'
+import path           from 'path'
 
 import { getSending } from './services'
 

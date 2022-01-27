@@ -1,5 +1,6 @@
-import React        from 'react'
 import styled       from '@emotion/styled'
+
+import React        from 'react'
 
 import { ChatIcon } from '@ui/icons'
 
@@ -36,7 +37,11 @@ const StyledChatButton = styled.div(({ theme, unread }: any) => ({
   },
 }))
 
-export const ChatButton = ({ onClick = () => {}, unread = false }) => (
+const doNothing = () => {
+  // do nothing
+}
+
+export const ChatButton = ({ onClick = doNothing, unread = false }) => (
   <StyledChatButton onClick={onClick} unread={unread}>
     <ChatIcon width={20} height={20} color='#999999' />
   </StyledChatButton>

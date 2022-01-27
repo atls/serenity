@@ -72,38 +72,36 @@ services:
       - 5432:5432
 
   kratos-migrate:
-    image: oryd/kratos:v0.5.5-alpha.1
-    volumes:
-      - ./config/ory:/config
-    environment:
-      - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
-    command: -c /config/kratos/kratos.yml migrate sql -e --yes
-    restart: on-failure
-    networks:
-      - default
     depends_on:
       - db
-
-  kratos:
-    image: oryd/kratos:v0.5.5-alpha.1
+    image: oryd/kratos:v0.7.6-alpha.1
     environment:
       - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
     volumes:
-      - ./config/ory:/config
-    labels:
-      - 'traefik.frontend.rule=Host:kratos.serenity.local.atls.tech'
-      - 'traefik.protocol=http'
-      - 'traefik.port=4433'
-    networks:
-      - default
-      - traefik
+      - type: bind
+        source: ./config/ory/kratos
+        target: /config/kratos
+    command: -c /config/kratos/kratos.yml migrate sql -e --yes
+    restart: on-failure
+
+  kratos:
     depends_on:
       - kratos-migrate
       - mailslurper
-      - traefik
       - db
+    image: oryd/kratos:v0.7.6-alpha.1
+    ports:
+      - '4433:4433'
+      - '4434:4434'
     restart: unless-stopped
-    command: serve -c /config/kratos/kratos.yml --dev
+    environment:
+      - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
+      - LOG_LEVEL=trace
+    command: serve -c /config/kratos/kratos.yml --dev --watch-courier
+    volumes:
+      - type: bind
+        source: ./config/ory/kratos
+        target: /config/kratos
 
   mailslurper:
     image: oryd/mailslurper:latest-smtps
@@ -135,7 +133,7 @@ services:
       - traefik
 
   site:
-    image: node:14-alpine
+    image: node:16-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -154,7 +152,7 @@ services:
       - 'public-gateway.local.serenity.atls.tech:172.16.101.99'
 
   site-local:
-    image: node:14-alpine
+    image: node:16-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -179,12 +177,12 @@ services:
     extra_hosts:
       - 'public-gateway.local.serenity.atls.tech:172.16.101.99'
 
-  accounts:
-    image: node:14-alpine
+  identity:
+    image: node:16-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    entrypoint: yarn accounts:dev
+    entrypoint: yarn workspace @identity/renderer-entrypoint dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - KRATOS_PUBLIC_URL=http://kratos:4433/
@@ -204,9 +202,11 @@ services:
       - traefik
     extra_hosts:
       - 'sso.serenity.local.atls.tech:172.16.101.99'
+    ports:
+      - 3000:3000
 
   cookie-store:
-    image: node:14-alpine
+    image: node:16-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -224,7 +224,7 @@ services:
       - redis
 
   email:
-    image: node:14-alpine
+    image: node:16-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -247,7 +247,7 @@ services:
       - traefik
 
   public-gateway:
-    image: node:14-alpine
+    image: node:16-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -257,7 +257,7 @@ services:
       - oathkeeper
 
   private-gateway:
-    image: node:14-alpine
+    image: node:16-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -269,7 +269,7 @@ services:
       - 'traefik.port=3000'
 
   catalog-service:
-    image: node:14-alpine
+    image: node:16-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -281,7 +281,7 @@ services:
       - db
 
   identity-service:
-    image: node:14-alpine
+    image: node:16-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -292,7 +292,7 @@ services:
       - db
 
   mailer-service:
-    image: node:14-alpine
+    image: node:16-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -305,7 +305,7 @@ services:
       - db
 
   collaboration:
-    image: node:14-alpine
+    image: node:16-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -316,7 +316,7 @@ services:
       - db
 
   files-service:
-    image: node:14-alpine
+    image: node:16-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -340,6 +340,7 @@ services:
 volumes:
   modules:
   yarncache:
+  unplugged:
 
 networks:
   traefik:

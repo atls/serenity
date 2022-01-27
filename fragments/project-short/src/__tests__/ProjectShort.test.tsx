@@ -1,10 +1,12 @@
-import React                     from 'react'
-import { IntlProvider, useIntl } from 'react-intl'
+import { render }        from '@testing-library/react'
 
-import { ThemeProvider }         from '@ui/theme'
-import { render }                from '@testing-library/react'
+import React             from 'react'
+import { IntlProvider }  from 'react-intl'
+import { useIntl }       from 'react-intl'
 
-import { ProjectShort }          from '../ProjectShort'
+import { ThemeProvider } from '@ui/theme'
+
+import { ProjectShort }  from '../ProjectShort'
 
 const TestComponent = () => {
   const intl = useIntl()

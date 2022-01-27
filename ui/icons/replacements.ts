@@ -1,37 +1,35 @@
-import { theme } from '@ui/theme'
-
 export const replacements = {
   LogoIcon: {
-    '#FFFFFF': `{props.color || '${theme.colors.white}'}`,
+    '#FFFFFF': `{props.color || '#FFFFFF'}`,
   },
   ArrowDownIcon: {
-    '#FFFFFF': `{props.color || '${theme.colors.white}'}`,
+    '#FFFFFF': `{props.color || '#FFFFFF'}`,
   },
   ArrowRightIcon: {
-    '#000000': `{props.color || '${theme.colors.white}'}`,
+    '#000000': `{props.color || '#FFFFFF'}`,
   },
   ArrowLeftIcon: {
-    '#000000': `{props.color || '${theme.colors.white}'}`,
+    '#000000': `{props.color || '#FFFFFF'}`,
   },
   CheckIcon: {
-    '#000000': `{props.color || '${theme.colors.black}'}`,
+    '#000000': `{props.color || '#000000'}`,
   },
   StarIcon: {
-    '#D8D8D8': `{props.color || '${theme.colors.alto}'}`,
+    '#D8D8D8': `{props.color || '#FFFFFF'}`,
   },
   ChatIcon: {
-    white: `{props.color || '${theme.colors.white}'}`,
+    white: `{props.color || '#FFFFFF'}`,
   },
   ArrowForwardIcon: {
-    '#999999': `{props.color || '${theme.colors.mountainmist}'}`,
+    '#999999': `{props.color || '#FFFFFF'}`,
   },
   ArrowBackwardIcon: {
-    '#999999': `{props.color || '${theme.colors.mountainmist}'}`,
+    '#999999': `{props.color || '#FFFFFFF'}`,
   },
   CloseIcon: {
-    '#FFFFFF': `{props.color || '${theme.colors.white}'}`,
+    '#FFFFFF': `{props.color || '#FFFFFF'}`,
   },
   ForwardArrowLeftIcon: {
-    '#FFFFFF': `{props.color || '${theme.colors.white}'}`,
+    '#FFFFFF': `{props.color || '#FFFFFF'}`,
   },
 }

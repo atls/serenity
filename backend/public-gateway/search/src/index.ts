@@ -1,6 +1,8 @@
-import { Module }                                                           from '@nestjs/common'
+import { Module }                    from '@nestjs/common'
 
-import { ProjectsSearchResolver, SearchQueries, SpecialistsSearchResolver } from './resolvers'
+import { ProjectsSearchResolver }    from './resolvers'
+import { SearchQueries }             from './resolvers'
+import { SpecialistsSearchResolver } from './resolvers'
 
 export * from './types'
 

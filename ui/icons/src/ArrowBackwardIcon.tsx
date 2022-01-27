@@ -1,6 +1,5 @@
-/* eslint-disable */
 import React from 'react'
-export const ArrowBackwardIcon = (props: any) => (
+export const ArrowBackwardIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     width='1em'
     height='1em'
@@ -26,7 +25,7 @@ export const ArrowBackwardIcon = (props: any) => (
       />
     </mask>
     <g mask='url(#ArrowBackwardIcon)'>
-      <rect x={-28} y={-28} width={80} height={80} fill={props.color || 'rgb(153, 153, 153)'} />
+      <rect x={-28} y={-28} width={80} height={80} fill={props.color || '#FFFFFFF'} />
     </g>
   </svg>
 )

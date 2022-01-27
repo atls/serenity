@@ -1,29 +1,26 @@
-import { LoggerModule }   from '@monstrs/nestjs-logger'
-import { Global, Module } from '@nestjs/common'
-import { TypeOrmModule }  from '@nestjs/typeorm'
+import { LoggerModule }               from '@monstrs/nestjs-logger'
+import { Global }                     from '@nestjs/common'
+import { Module }                     from '@nestjs/common'
+import { TypeOrmModule }              from '@nestjs/typeorm'
 
-import config             from './config'
-import {
-  Chat,
-  Customer,
-  Discussion,
-  Message,
-  Project,
-  ProjectId,
-  Reply,
-  Review,
-  Specialist,
-} from './entities'
-import {
-  ChatEntityRepository,
-  CustomerEntityRepository,
-  DiscussionEntityRepository,
-  MessageEntityRepository,
-  ProjectEntityRepository,
-  ReplyEntityRepository,
-  ReviewEntityRepository,
-  SpecialistEntityRepository,
-} from './repositories'
+import config                         from './config'
+import { Chat }                       from './entities'
+import { Customer }                   from './entities'
+import { Discussion }                 from './entities'
+import { Message }                    from './entities'
+import { Project }                    from './entities'
+import { ProjectId }                  from './entities'
+import { Reply }                      from './entities'
+import { Review }                     from './entities'
+import { Specialist }                 from './entities'
+import { ChatEntityRepository }       from './repositories'
+import { CustomerEntityRepository }   from './repositories'
+import { DiscussionEntityRepository } from './repositories'
+import { MessageEntityRepository }    from './repositories'
+import { ProjectEntityRepository }    from './repositories'
+import { ReplyEntityRepository }      from './repositories'
+import { ReviewEntityRepository }     from './repositories'
+import { SpecialistEntityRepository } from './repositories'
 
 const feature = TypeOrmModule.forFeature([
   Specialist,

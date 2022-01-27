@@ -1,10 +1,12 @@
-import React              from 'react'
-import messages           from '@fragments/wallpapering-worksheet/src/messages'
+import messages      from '@fragments/wallpapering-worksheet/src/messages'
 
-import { Column, Layout } from '@ui/layout'
-import { Text }           from '@ui/text'
+import React         from 'react'
 
-import { CheckItem }      from './CheckItem'
+import { Column }    from '@ui/layout'
+import { Layout }    from '@ui/layout'
+import { Text }      from '@ui/text'
+
+import { CheckItem } from './CheckItem'
 
 export const Wallpapering = ({
   intl,

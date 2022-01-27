@@ -1,8 +1,10 @@
-import { Injectable }           from '@nestjs/common'
-import { InjectRepository }     from '@nestjs/typeorm'
-import { Brackets, Repository } from 'typeorm'
+import { Injectable }       from '@nestjs/common'
+import { InjectRepository } from '@nestjs/typeorm'
 
-import { CategoryGroup }        from '@catalog/persistence'
+import { Brackets }         from 'typeorm'
+import { Repository }       from 'typeorm'
+
+import { CategoryGroup }    from '@catalog/persistence'
 
 @Injectable()
 export class CategoryGroupQueriesService {
@@ -23,8 +25,7 @@ export class CategoryGroupQueriesService {
         new Brackets((searchQb) =>
           searchQb
             .where('group.name ILIKE :common', { common })
-            .orWhere('children.name ILIKE :common', { common })
-        )
+            .orWhere('children.name ILIKE :common', { common }))
       )
     }
 

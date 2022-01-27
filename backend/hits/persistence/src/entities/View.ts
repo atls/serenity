@@ -1,5 +1,9 @@
 /* eslint-disable no-underscore-dangle */
-import { Column, CreateDateColumn, Entity, Index, PrimaryGeneratedColumn } from 'typeorm'
+import { Column }                 from 'typeorm'
+import { CreateDateColumn }       from 'typeorm'
+import { Entity }                 from 'typeorm'
+import { Index }                  from 'typeorm'
+import { PrimaryGeneratedColumn } from 'typeorm'
 
 @Entity()
 @Index(['subject', 'resource'], { unique: true })

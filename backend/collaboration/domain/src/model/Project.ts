@@ -1,23 +1,20 @@
+import { AggregateRoot }             from '@node-ts/ddd'
 /* eslint-disable class-methods-use-this */
-import { AggregateRootProperties } from '@node-ts/ddd-types'
+import { AggregateRootProperties }   from '@node-ts/ddd-types'
 
-import { AggregateRoot }           from '@node-ts/ddd'
-
-import {
-  ProjectCompleted,
-  ProjectCreated,
-  ProjectPublished,
-  ProjectReplyConfirmed,
-  ProjectReplyRejected,
-  ProjectSpecialistSelected,
-  ProjectUpdated,
-} from '../events'
-import { Address }                 from './Address'
-import { BeginningOfWork }         from './BeginningOfWork'
-import { ProjectStatus }           from './ProjectStatus'
-import { Reply }                   from './Reply'
-import { ReplyStatus }             from './ReplyStatus'
-import { Review }                  from './Review'
+import { ProjectCompleted }          from '../events'
+import { ProjectCreated }            from '../events'
+import { ProjectPublished }          from '../events'
+import { ProjectReplyConfirmed }     from '../events'
+import { ProjectReplyRejected }      from '../events'
+import { ProjectSpecialistSelected } from '../events'
+import { ProjectUpdated }            from '../events'
+import { Address }                   from './Address'
+import { BeginningOfWork }           from './BeginningOfWork'
+import { ProjectStatus }             from './ProjectStatus'
+import { Reply }                     from './Reply'
+import { ReplyStatus }               from './ReplyStatus'
+import { Review }                    from './Review'
 
 export interface ProjectProperties extends AggregateRootProperties {
   customerId: string

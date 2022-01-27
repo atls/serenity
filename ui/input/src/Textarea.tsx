@@ -1,5 +1,6 @@
-import React           from 'react'
 import styled          from '@emotion/styled'
+
+import React           from 'react'
 import { boxShadow }   from 'styled-system'
 
 import { StyledInput } from './parts'

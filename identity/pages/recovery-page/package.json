@@ -3,15 +3,19 @@
   "version": "0.0.0",
   "license": "MIT",
   "main": "src/index.tsx",
+  "dependencies": {
+    "@atls/react-kratos-browser-flows": "^0.0.1",
+    "react": "16.14.0",
+    "react-helmet": "^5.2.0"
+  },
   "devDependencies": {
-    "@identity/recovery-fragment": "workspace:identity/recovery-fragment",
+    "@identity/recovery-fragment": "workspace:identity/fragments/recovery-fragment",
     "@ui/icons": "workspace:ui/icons",
     "@ui/layout": "workspace:ui/layout",
-    "@ui/link": "workspace:ui/link"
+    "@ui/link": "workspace:ui/link",
+    "react-intl": "^5.24.4"
   },
-  "dependencies": {
-    "react": "16.14.0",
-    "react-helmet": "^5.2.0",
-    "react-intl": "5.3.2"
+  "peerDependencies": {
+    "react-intl": "*"
   }
 }

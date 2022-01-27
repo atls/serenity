@@ -1,7 +1,10 @@
-import styled                            from '@emotion/styled'
-import React, { Children, cloneElement } from 'react'
-import { flexbox }                       from 'styled-system'
-import { switchProp }                    from 'styled-tools'
+import styled           from '@emotion/styled'
+
+import React            from 'react'
+import { Children }     from 'react'
+import { cloneElement } from 'react'
+import { flexbox }      from 'styled-system'
+import { switchProp }   from 'styled-tools'
 
 const base: any = ({ theme }) => ({
   display: 'flex',

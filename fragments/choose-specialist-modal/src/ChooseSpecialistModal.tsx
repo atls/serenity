@@ -1,12 +1,15 @@
-import React                        from 'react'
+import React      from 'react'
 
-import { Avatar }                   from '@ui/avatar'
-import { Button }                   from '@ui/button'
-import { Box, Column, Layout, Row } from '@ui/layout'
-import { Modal }                    from '@ui/modal'
-import { Text }                     from '@ui/text'
+import { Avatar } from '@ui/avatar'
+import { Button } from '@ui/button'
+import { Box }    from '@ui/layout'
+import { Column } from '@ui/layout'
+import { Layout } from '@ui/layout'
+import { Row }    from '@ui/layout'
+import { Modal }  from '@ui/modal'
+import { Text }   from '@ui/text'
 
-import messages                     from './messages'
+import messages   from './messages'
 
 export const ChooseSpecialistModal = ({ intl, visible, onClose, onSave, data = {} }: any) => (
   <Modal visible={visible} onClose={onClose} opacity='small'>

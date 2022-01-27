@@ -1,6 +1,5 @@
-/* eslint-disable */
 import React from 'react'
-export const ArrowDownIcon = (props: any) => (
+export const ArrowDownIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     width='1em'
     height='1em'
@@ -13,7 +12,7 @@ export const ArrowDownIcon = (props: any) => (
       <g
         id='order-(executor)'
         transform='translate(-270.000000, -25.000000)'
-        fill={props.color || 'rgb(255, 255, 255)'}
+        fill="\n// eslint-disable-next-line\n{props.color || '#FFFFFF'}"
         fillRule='nonzero'
       >
         <g id='nav-bar'>

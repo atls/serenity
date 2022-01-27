@@ -1,5 +1,6 @@
-import uuid                  from 'uuid/v4'
-import { IsUUID, MinLength } from 'class-validator'
+import uuid          from 'uuid/v4'
+import { IsUUID }    from 'class-validator'
+import { MinLength } from 'class-validator'
 
 export class CreatePortfolioCommand {
   id: string = uuid()

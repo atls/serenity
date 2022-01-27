@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable no-else-return */
-import { useCallback, useReducer } from 'react'
+import { useCallback } from 'react'
+import { useReducer }  from 'react'
 
 const initialState = {
   type: 'specialist',

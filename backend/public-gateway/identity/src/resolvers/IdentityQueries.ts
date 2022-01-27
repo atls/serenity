@@ -1,12 +1,16 @@
-import { Injectable, OnModuleInit } from '@nestjs/common'
-import { Context, Query }           from '@nestjs/graphql'
-import { Client, ClientGrpc }       from '@nestjs/microservices'
-import { map }                      from 'rxjs/operators'
+import { Injectable }    from '@nestjs/common'
+import { OnModuleInit }  from '@nestjs/common'
+import { Context }       from '@nestjs/graphql'
+import { Query }         from '@nestjs/graphql'
+import { Client }        from '@nestjs/microservices'
+import { ClientGrpc }    from '@nestjs/microservices'
 
-import { clientOptions }            from '@protos/identity'
-import { identity }                 from '@protos/interfaces'
+import { map }           from 'rxjs/operators'
 
-import { User }                     from '../types'
+import { clientOptions } from '@protos/identity'
+import { identity }      from '@protos/interfaces'
+
+import { User }          from '../types'
 
 @Injectable()
 export class IdentityQueries implements OnModuleInit {

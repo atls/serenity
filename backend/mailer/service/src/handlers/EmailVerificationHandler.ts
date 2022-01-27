@@ -1,12 +1,13 @@
 import { HandlesMessage }   from '@monstrs/nestjs-bus'
 import { InjectRepository } from '@nestjs/typeorm'
+import { Handler }          from '@node-ts/bus-core'
+
 import { Repository }       from 'typeorm'
 
 import { UserRegistered }   from '@identity/domain'
 import { Sending }          from '@mailer/db'
 import { Renderer }         from '@mailer/renderer'
 import { Transport }        from '@mailer/transport'
-import { Handler }          from '@node-ts/bus-core'
 
 @HandlesMessage(UserRegistered)
 export class EmailVerificationHandler implements Handler<UserRegistered> {

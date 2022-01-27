@@ -1,7 +1,8 @@
+import createCache       from '@emotion/cache'
+import { CacheProvider } from '@emotion/react'
+
 import React             from 'react'
 import { Component }     from 'react'
-import { CacheProvider } from '@emotion/react'
-import createCache       from '@emotion/cache'
 
 import { ThemeProvider } from '@ui/theme'
 
@@ -9,8 +10,7 @@ const cache = createCache({
   key: 'emotion',
 })
 
-export const withEmotion =
-  ({ Provider = ThemeProvider, injectGlobalStyles }: any) =>
+export const withEmotion = ({ Provider = ThemeProvider, injectGlobalStyles }: any) =>
   (WrapperComponent) =>
     class WithEmotion extends Component<any> {
       constructor(props, context) {

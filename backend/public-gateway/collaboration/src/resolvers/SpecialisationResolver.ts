@@ -1,14 +1,17 @@
-import DataLoader                          from 'dataloader'
+import { Loader }           from '@monstrs/nestjs-dataloader'
 /* eslint-disable class-methods-use-this */
-import { Injectable }                      from '@nestjs/common'
-import { ResolveProperty, Resolver, Root } from '@nestjs/graphql'
+import { Injectable }       from '@nestjs/common'
+import { ResolveProperty }  from '@nestjs/graphql'
+import { Resolver }         from '@nestjs/graphql'
+import { Root }             from '@nestjs/graphql'
 
-import { Loader }                          from '@monstrs/nestjs-dataloader'
-import { Category }                        from '@public-gateway/catalog'
-import { collaboration }                   from '@protos/interfaces'
+import DataLoader           from 'dataloader'
 
-import { CategoriesLoader }                from '../dataloaders'
-import { Specialisation }                  from '../types'
+import { Category }         from '@public-gateway/catalog'
+import { collaboration }    from '@protos/interfaces'
+
+import { CategoriesLoader } from '../dataloaders'
+import { Specialisation }   from '../types'
 
 @Injectable()
 @Resolver((of) => Specialisation)

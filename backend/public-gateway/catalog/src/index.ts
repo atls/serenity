@@ -1,6 +1,7 @@
-import { Module }                                from '@nestjs/common'
+import { Module }               from '@nestjs/common'
 
-import { CategoryGroupQueries, CategoryQueries } from './resolvers'
+import { CategoryGroupQueries } from './resolvers'
+import { CategoryQueries }      from './resolvers'
 
 export * from './types'
 

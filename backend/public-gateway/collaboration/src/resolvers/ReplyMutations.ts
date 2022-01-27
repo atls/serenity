@@ -1,26 +1,26 @@
-import { Injectable, OnModuleInit } from '@nestjs/common'
-import { Args, Context, Mutation }  from '@nestjs/graphql'
-import { Client, ClientGrpc }       from '@nestjs/microservices'
+import { Injectable }                  from '@nestjs/common'
+import { OnModuleInit }                from '@nestjs/common'
+import { Args }                        from '@nestjs/graphql'
+import { Context }                     from '@nestjs/graphql'
+import { Mutation }                    from '@nestjs/graphql'
+import { Client }                      from '@nestjs/microservices'
+import { ClientGrpc }                  from '@nestjs/microservices'
 
-import { clientOptions }            from '@protos/collaboration'
-import { collaboration }            from '@protos/interfaces'
+import { clientOptions }               from '@protos/collaboration'
+import { collaboration }               from '@protos/interfaces'
 
-import {
-  AddProjectReplyInput,
-  AddReplyMessageInput,
-  ChangeReplyStatusInput,
-  ChooseSpecialistInput,
-  ConfirmProjectReplyInput,
-  RejectProjectReplyInput,
-} from '../inputs'
-import {
-  AddProjectReplyResponse,
-  AddReplyMessageResponse,
-  ChangeReplyStatusResponse,
-  ChooseSpecialistResponse,
-  ConfirmProjectReplyResponse,
-  RejectProjectReplyResponse,
-} from '../types'
+import { AddProjectReplyInput }        from '../inputs'
+import { AddReplyMessageInput }        from '../inputs'
+import { ChangeReplyStatusInput }      from '../inputs'
+import { ChooseSpecialistInput }       from '../inputs'
+import { ConfirmProjectReplyInput }    from '../inputs'
+import { RejectProjectReplyInput }     from '../inputs'
+import { AddProjectReplyResponse }     from '../types'
+import { AddReplyMessageResponse }     from '../types'
+import { ChangeReplyStatusResponse }   from '../types'
+import { ChooseSpecialistResponse }    from '../types'
+import { ConfirmProjectReplyResponse } from '../types'
+import { RejectProjectReplyResponse }  from '../types'
 
 @Injectable()
 export class ReplyMutations implements OnModuleInit {

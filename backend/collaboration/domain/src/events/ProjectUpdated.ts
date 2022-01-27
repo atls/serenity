@@ -1,8 +1,8 @@
-import { Uuid }                     from '@node-ts/ddd-types'
+import { Event }           from '@node-ts/bus-messages'
+import { Uuid }            from '@node-ts/ddd-types'
 
-import { Event }                    from '@node-ts/bus-messages'
-
-import { Address, BeginningOfWork } from '../model'
+import { Address }         from '../model'
+import { BeginningOfWork } from '../model'
 
 export class ProjectUpdated extends Event {
   static readonly NAME = 'collaboration/project-updated'

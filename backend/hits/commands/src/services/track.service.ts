@@ -1,8 +1,10 @@
 import { Injectable }       from '@nestjs/common'
 import { InjectRepository } from '@nestjs/typeorm'
+
 import { Repository }       from 'typeorm'
 
-import { Counter, View }    from '@hits/persistence'
+import { Counter }          from '@hits/persistence'
+import { View }             from '@hits/persistence'
 
 @Injectable()
 export class TrackService {

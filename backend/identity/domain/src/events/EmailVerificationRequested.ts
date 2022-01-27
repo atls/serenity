@@ -1,6 +1,5 @@
-import { Uuid }  from '@node-ts/ddd-types'
-
 import { Event } from '@node-ts/bus-messages'
+import { Uuid }  from '@node-ts/ddd-types'
 
 import { Email } from '../model'
 

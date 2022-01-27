@@ -1,11 +1,9 @@
 /* eslint-disable class-methods-use-this */
-import {
-  ValidationOptions,
-  ValidatorConstraint,
-  ValidatorConstraintInterface,
-  registerDecorator,
-} from 'class-validator'
-import { Connection } from 'typeorm'
+import { ValidationOptions }            from 'class-validator'
+import { ValidatorConstraint }          from 'class-validator'
+import { ValidatorConstraintInterface } from 'class-validator'
+import { Connection }                   from 'typeorm'
+import { registerDecorator }            from 'class-validator'
 
 interface IsEntityOptions {
   entity: Function
@@ -40,8 +38,10 @@ export class IsEntityConstraint implements ValidatorConstraintInterface {
   }
 }
 
-export const IsEntityExists =
-  (options: IsEntityOptions | Function, validationOptions?: ValidationOptions) =>
+export const IsEntityExists = (
+    options: IsEntityOptions | Function,
+    validationOptions?: ValidationOptions
+  ) =>
   (object: any, propertyName: string) => {
     registerDecorator({
       target: object.constructor,
@@ -52,8 +52,10 @@ export const IsEntityExists =
     })
   }
 
-export const IsEntityNotExists =
-  (options: IsEntityOptions | Function, validationOptions?: ValidationOptions) =>
+export const IsEntityNotExists = (
+    options: IsEntityOptions | Function,
+    validationOptions?: ValidationOptions
+  ) =>
   (object: any, propertyName: string) => {
     registerDecorator({
       target: object.constructor,

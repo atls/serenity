@@ -1,9 +1,14 @@
-import styled                                 from '@emotion/styled'
-import { createShouldForwardProp }            from '@styled-system/should-forward-prop'
-import { border, color, styleFn, typography } from 'styled-system'
-import { ifProp, switchProp }                 from 'styled-tools'
+import styled                      from '@emotion/styled'
+import { createShouldForwardProp } from '@styled-system/should-forward-prop'
 
-import { offset }                             from './PrefixSuffix'
+import { border }                  from 'styled-system'
+import { color }                   from 'styled-system'
+import { styleFn }                 from 'styled-system'
+import { typography }              from 'styled-system'
+import { ifProp }                  from 'styled-tools'
+import { switchProp }              from 'styled-tools'
+
+import { offset }                  from './PrefixSuffix'
 
 const clear: styleFn = () => ({
   boxSizing: 'border-box',

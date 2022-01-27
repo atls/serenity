@@ -1,12 +1,15 @@
-import React                        from 'react'
+import React            from 'react'
 
-import { Avatar }                   from '@ui/avatar'
-import { Divider }                  from '@ui/divider'
-import { Box, Column, Layout, Row } from '@ui/layout'
-import { RelativeTime }             from '@ui/relative-time'
-import { Text }                     from '@ui/text'
+import { Avatar }       from '@ui/avatar'
+import { Divider }      from '@ui/divider'
+import { Box }          from '@ui/layout'
+import { Column }       from '@ui/layout'
+import { Layout }       from '@ui/layout'
+import { Row }          from '@ui/layout'
+import { RelativeTime } from '@ui/relative-time'
+import { Text }         from '@ui/text'
 
-import messages                     from './messages'
+import messages         from './messages'
 
 export const ProjectCustomer = ({ intl, profile, member, activity }: any) => (
   <Box

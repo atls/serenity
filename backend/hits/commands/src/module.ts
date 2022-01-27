@@ -1,6 +1,7 @@
-import { Module }                             from '@nestjs/common'
+import { Module }               from '@nestjs/common'
 
-import { TrackActivityService, TrackService } from './services'
+import { TrackActivityService } from './services'
+import { TrackService }         from './services'
 
 @Module({
   providers: [TrackService, TrackActivityService],

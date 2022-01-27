@@ -1,4 +1,5 @@
-import { MigrationInterface, QueryRunner } from 'typeorm'
+import { MigrationInterface } from 'typeorm'
+import { QueryRunner }        from 'typeorm'
 
 export class ChangeCounterPrimaryColumn1571562710180 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<any> {

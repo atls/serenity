@@ -1,7 +1,10 @@
-import { useContext, useEffect, useMemo, useState } from 'react'
+import { useContext }    from 'react'
+import { useEffect }     from 'react'
+import { useMemo }       from 'react'
+import { useState }      from 'react'
 
-import { DrawerContext }                            from './DrawerContext'
-import { DrawerStore }                              from './DrawerStore'
+import { DrawerContext } from './DrawerContext'
+import { DrawerStore }   from './DrawerStore'
 
 export const useDrawer = (id) => {
   const store: DrawerStore = useContext(DrawerContext)

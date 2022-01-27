@@ -1,10 +1,13 @@
-import React                   from 'react'
-import messages                from '@fragments/home-building-worksheet/src/messages'
+import messages      from '@fragments/home-building-worksheet/src/messages'
 
-import { Column, Layout, Row } from '@ui/layout'
-import { Text }                from '@ui/text'
+import React         from 'react'
 
-import { CheckItem }           from './CheckItem'
+import { Column }    from '@ui/layout'
+import { Layout }    from '@ui/layout'
+import { Row }       from '@ui/layout'
+import { Text }      from '@ui/text'
+
+import { CheckItem } from './CheckItem'
 
 export const HomeBuilding = ({
   intl,

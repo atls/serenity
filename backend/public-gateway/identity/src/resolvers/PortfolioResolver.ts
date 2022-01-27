@@ -1,14 +1,20 @@
 /* eslint-disable class-methods-use-this */
-import { Injectable, OnModuleInit }              from '@nestjs/common'
-import { Args, ResolveProperty, Resolver, Root } from '@nestjs/graphql'
-import { Client, ClientGrpc }                    from '@nestjs/microservices'
-import { ID }                                    from 'type-graphql'
-import { map }                                   from 'rxjs/operators'
+import { Injectable }      from '@nestjs/common'
+import { OnModuleInit }    from '@nestjs/common'
+import { Args }            from '@nestjs/graphql'
+import { ResolveProperty } from '@nestjs/graphql'
+import { Resolver }        from '@nestjs/graphql'
+import { Root }            from '@nestjs/graphql'
+import { Client }          from '@nestjs/microservices'
+import { ClientGrpc }      from '@nestjs/microservices'
 
-import { portfolio }                             from '@protos/interfaces'
-import { clientOptions }                         from '@protos/portfolio'
+import { ID }              from 'type-graphql'
+import { map }             from 'rxjs/operators'
 
-import { User }                                  from '../types'
+import { portfolio }       from '@protos/interfaces'
+import { clientOptions }   from '@protos/portfolio'
+
+import { User }            from '../types'
 
 @Injectable()
 @Resolver((of) => User)

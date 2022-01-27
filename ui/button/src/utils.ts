@@ -1,4 +1,6 @@
-import { Children, ReactNode, createElement } from 'react'
+import { Children }      from 'react'
+import { ReactNode }     from 'react'
+import { createElement } from 'react'
 
 export const combinePureChildren = (children: ReactNode): ReactNode[] => {
   let isPrevChildPure: boolean = false

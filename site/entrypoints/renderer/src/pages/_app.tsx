@@ -1,12 +1,14 @@
-import App                    from 'next/app'
-import compose                from 'recompose/compose'
 import { withApollo }         from '@atls/next-app-with-apollo'
 import { withHelmet }         from '@atls/next-app-with-helmet'
-import { ChatProvider }       from '@ui/chat'
+import { withProvider }       from '@atls/next-app-with-provider'
 
+import App                    from 'next/app'
+import compose                from 'recompose/compose'
+
+import { ChatProvider }       from '@ui/chat'
 import { ThemeProvider }      from '@ui/theme'
 import { injectGlobalStyles } from '@ui/theme'
-import { withProvider }       from '@atls/next-app-with-provider'
+
 import { withAuth }           from '../providers'
 import { withEmotion }        from '../providers'
 import { withUser }           from '../providers'

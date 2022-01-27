@@ -1,11 +1,14 @@
-import React                   from 'react'
+import React        from 'react'
 
-import ProjectShort            from '@fragments/project-short'
-import { Box, Column, Layout } from '@ui/layout'
-import { Option, Search }      from '@ui/search'
-import { Text }                from '@ui/text'
+import ProjectShort from '@fragments/project-short'
+import { Box }      from '@ui/layout'
+import { Column }   from '@ui/layout'
+import { Layout }   from '@ui/layout'
+import { Option }   from '@ui/search'
+import { Search }   from '@ui/search'
+import { Text }     from '@ui/text'
 
-import messages                from './messages'
+import messages     from './messages'
 
 export const Projects = ({ intl, projects = [], searchData = [], onSearch }: any) => (
   <Column>

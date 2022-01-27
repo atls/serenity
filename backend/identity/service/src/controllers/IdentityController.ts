@@ -1,17 +1,18 @@
-import { MapValidationErrorsInterceptor }                        from '@atlantis-lab/nestjs-map-errors-interceptor'
-import { Controller, UseInterceptors, UsePipes, ValidationPipe } from '@nestjs/common'
-import { GrpcMethod }                                            from '@nestjs/microservices'
+import { MapValidationErrorsInterceptor } from '@atlantis-lab/nestjs-map-errors-interceptor'
+import { Controller }                     from '@nestjs/common'
+import { UseInterceptors }                from '@nestjs/common'
+import { UsePipes }                       from '@nestjs/common'
+import { ValidationPipe }                 from '@nestjs/common'
+import { GrpcMethod }                     from '@nestjs/microservices'
 
-import {
-  AuthenticateUserCommand,
-  ChangePasswordCommand,
-  CreateProfileCommand,
-  RegisterUserCommand,
-  ResetPasswordCommand,
-  UpdateProfileCommand,
-  UserApplicationService,
-  VerifyEmailCommand,
-} from '@identity/application'
+import { AuthenticateUserCommand }        from '@identity/application'
+import { ChangePasswordCommand }          from '@identity/application'
+import { CreateProfileCommand }           from '@identity/application'
+import { RegisterUserCommand }            from '@identity/application'
+import { ResetPasswordCommand }           from '@identity/application'
+import { UpdateProfileCommand }           from '@identity/application'
+import { UserApplicationService }         from '@identity/application'
+import { VerifyEmailCommand }             from '@identity/application'
 
 @Controller()
 @UseInterceptors(MapValidationErrorsInterceptor)

@@ -1,8 +1,11 @@
-import gql                                    from 'graphql-tag'
-/* eslint-disable no-else-return */
-import { useCallback, useEffect, useReducer } from 'react'
+import { useMutation } from '@apollo/client'
+import { useQuery }    from '@apollo/client'
 
-import { useMutation, useQuery }              from '@apollo/client' // eslint-disable-line import/no-extraneous-dependencies
+import gql             from 'graphql-tag'
+/* eslint-disable no-else-return */
+import { useCallback } from 'react'
+import { useEffect }   from 'react'
+import { useReducer }  from 'react'
 
 export const query = gql`
   query Me {

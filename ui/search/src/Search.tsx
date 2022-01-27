@@ -1,13 +1,19 @@
 /* eslint-disable @typescript-eslint/no-implied-eval */
 
-import RcSelect                                                            from 'rc-select'
-import styled                                                              from '@emotion/styled'
-import React, { useState }                                                 from 'react'
-import { switchProp }                                                      from 'styled-tools'
+import styled               from '@emotion/styled'
 
-import { ArrowForwardIcon, SearchIcon }                                    from '@ui/icons'
+import RcSelect             from 'rc-select'
+import React                from 'react'
+import { useState }         from 'react'
+import { switchProp }       from 'styled-tools'
 
-import { dropdownStyles, selectSizeLarge, selectSizeNormal, selectStyles } from './styles'
+import { ArrowForwardIcon } from '@ui/icons'
+import { SearchIcon }       from '@ui/icons'
+
+import { dropdownStyles }   from './styles'
+import { selectSizeLarge }  from './styles'
+import { selectSizeNormal } from './styles'
+import { selectStyles }     from './styles'
 
 interface IconProps {
   size: 'normal' | 'large'
