@@ -5,13 +5,20 @@ const withImages = require('next-images')
 const withFonts = require('next-fonts')
 
 const { withAliases } = require('./with-config-cjs')
-const { withFutureWebpack5 } = require('./with-config-cjs')
+
+const nextConfig = {
+  experimental: {
+    externalDir: true,
+    swcFileReading: false,
+    workerThreads: true,
+    esmExternals: 'loose',
+  },
+}
 
 module.exports = withPlugins([
-  withFutureWebpack5,
   withWorkspaces,
   withExtractIntlMessages,
   withImages,
   withFonts,
   withAliases(['@emotion/react', '@emotion/styled', 'react-intl']),
-])
+], nextConfig)

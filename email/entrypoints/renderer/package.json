@@ -4,15 +4,16 @@
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
-    "prepack": "yarn app renderer build --export",
-    "build": "yarn app renderer build --export",
-    "dev": "yarn app renderer dev",
+    "build": "yarn service build && yarn next build src && cp -r src/.next dist/.next",
+    "dev": "yarn next dev src",
     "start": "node dist/index.js"
   },
   "dependencies": {
     "@atls/next-config-with-extract-intl-messages": "^0.0.1",
     "@atls/next-config-with-pnp-workspaces": "^0.0.1",
     "@grpc/proto-loader": "0.5.5",
+    "@protos/common": "workspace:0.3.1",
+    "@protos/mailer": "workspace:0.1.1",
     "express": "^4.17.1",
     "graphql": "^15.5.0",
     "grpc": "1.24.2",

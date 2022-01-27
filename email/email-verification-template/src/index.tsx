@@ -3,7 +3,7 @@ import { useIntl }  from 'react-intl'
 
 import { Template } from './Template'
 
-export default ({ url }) => {
+const EmailVerificationTemplate = ({ url }) => {
   const data = url.query || {}
   const intl = useIntl()
 
@@ -13,3 +13,5 @@ export default ({ url }) => {
 
   return <Template {...data} link={link} intl={intl} />
 }
+
+export default EmailVerificationTemplate
