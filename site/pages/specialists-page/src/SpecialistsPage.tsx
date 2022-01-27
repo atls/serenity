@@ -2,8 +2,8 @@ import React           from 'react'
 
 import Catalog         from '@site/catalog-fragment'
 import Filters         from '@site/filters-fragment'
-import Footer          from '@fragments/footer'
-import Navigation      from '@fragments/navigation'
+import Footer          from '@site/footer-fragment'
+import Navigation      from '@site/navigation-fragment'
 import Specialists     from '@site/specialists-fragment'
 import { Layout, Row } from '@ui/layout'
 

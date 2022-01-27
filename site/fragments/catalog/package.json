@@ -4,6 +4,7 @@
   "license": "MIT",
   "main": "src/index.tsx",
   "devDependencies": {
+    "@apollo/client": "^3.5.8",
     "@apollo/react-testing": "3.1.4",
     "@testing-library/react": "9.5.0",
     "@ui/button": "0.3.1",
@@ -15,12 +16,16 @@
     "@ui/text": "0.3.1",
     "@ui/theme": "0.0.5",
     "@ui/utils": "0.0.1",
+    "react-intl": "^5.24.4",
     "react-masonry-component": "6.2.1"
   },
   "dependencies": {
-    "@apollo/client": "3.3.21",
     "graphql": "^15.5.0",
     "graphql-tag": "^2.10.0",
     "react": "16.13.1"
+  },
+  "peerDependencies": {
+    "@apollo/client": "*",
+    "react-intl": "*"
   }
 }

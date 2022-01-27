@@ -44,7 +44,7 @@ export const withUser = () => (WrapperComponent) =>
       const { user } = this.props
 
       return (
-        <UserProvider value={user}>
+        <UserProvider value={user as any}>
           <WrapperComponent {...this.props} user={user} />
         </UserProvider>
       )

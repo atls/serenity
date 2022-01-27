@@ -1,8 +1,8 @@
 import React              from 'react'
 
 import Catalog            from '@site/catalog-fragment'
-import Footer             from '@fragments/footer'
-import Navigation         from '@fragments/navigation'
+import Footer             from '@site/footer-fragment'
+import Navigation         from '@site/navigation-fragment'
 import SpecialistsDetail  from '@site/specialists-detail-fragment'
 import { Column, Layout } from '@ui/layout'
 

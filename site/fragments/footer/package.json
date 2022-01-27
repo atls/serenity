@@ -1,0 +1,21 @@
+{
+  "name": "@site/footer-fragment",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "devDependencies": {
+    "@apollo/client": "^3.5.8",
+    "@testing-library/react": "9.3.2",
+    "@ui/layout": "0.0.5",
+    "@ui/link": "0.0.5",
+    "@ui/theme": "0.0.5",
+    "react-intl": "^5.24.4"
+  },
+  "dependencies": {
+    "react": "16.13.1"
+  },
+  "peerDependencies": {
+    "@apollo/client": "*",
+    "react-intl": "*"
+  }
+}

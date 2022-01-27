@@ -4,14 +4,19 @@
   "license": "MIT",
   "main": "src/index.tsx",
   "devDependencies": {
-    "@fragments/navigation": "0.0.1",
+    "@apollo/client": "^3.5.8",
     "@site/catalog-fragment": "0.0.1",
     "@site/main-fragment": "0.0.1",
-    "@testing-library/react": "9.3.2"
+    "@site/navigation-fragment": "0.0.1",
+    "@testing-library/react": "9.3.2",
+    "react-intl": "^5.24.4"
   },
   "dependencies": {
     "react": "16.13.1",
-    "react-helmet": "^5.2.1",
-    "react-intl": "5.3.2"
+    "react-helmet": "^5.2.1"
+  },
+  "peerDependencies": {
+    "@apollo/client": "*",
+    "react-intl": "*"
   }
 }
