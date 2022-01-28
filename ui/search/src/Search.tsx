@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-implied-eval */
-
 import styled               from '@emotion/styled'
+import { Global }           from '@emotion/react'
 
 import RcSelect             from 'rc-select'
 import React                from 'react'
@@ -50,13 +49,20 @@ const StyledSearchIcon = styled.div<IconProps>(
   iconSize
 )
 
+const StyledSelect = styled(RcSelect)<any>(selectStyles, ({ size }) =>
+  size === 'normal' ? selectSizeNormal : selectSizeLarge)
+
+const doNothing = () => {
+  // do nothing
+}
+
 export const Search = ({
   children,
   size = 'normal',
   multiple = true,
   defaultValue = '',
-  onSearch = () => {},
-  onSelect = () => {},
+  onSearch = doNothing,
+  onSelect = doNothing,
   onSelectValue,
   ...props
 }: any) => {
@@ -88,8 +94,8 @@ export const Search = ({
 
   return (
     <Container>
-      <RcSelect
-        className={`${selectStyles} ${size === 'normal' ? selectSizeNormal : selectSizeLarge}`}
+      <StyledSelect
+        style={selectStyles}
         dropdownClassName={dropdownStyles}
         onSearch={fetchData}
         onSelect={onSelect}
@@ -110,7 +116,7 @@ export const Search = ({
         {...props}
       >
         {children}
-      </RcSelect>
+      </StyledSelect>
       <StyledSearchIcon size={size}>
         <SearchIcon width={size === 'normal' ? 20 : 24} height={size === 'normal' ? 20 : 24} />
       </StyledSearchIcon>

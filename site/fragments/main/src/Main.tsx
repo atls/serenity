@@ -9,12 +9,16 @@ import { Text }   from '@ui/text'
 
 import messages   from './messages'
 
+const doNothing = (...args) => {
+  // do nothing
+}
+
 export const Main = ({
   intl,
   data = [],
-  onChangeSearch = () => {},
-  onSelectOption = (v) => {},
-  onSelectValue = (v) => {},
+  onChangeSearch = doNothing,
+  onSelectOption = doNothing,
+  onSelectValue = doNothing,
 }) => (
   <Box justifyContent='center' bg='stardust' height='calc(100vh - 56px)'>
     <Layout maxWidth={1200} px={[20, 20, 40]} boxSizing='border-box' width='100%'>
