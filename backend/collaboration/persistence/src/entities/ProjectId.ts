@@ -1,4 +1,3 @@
-/* eslint-disable no-underscore-dangle */
 import { Entity }                 from 'typeorm'
 import { PrimaryGeneratedColumn } from 'typeorm'
 

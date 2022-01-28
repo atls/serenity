@@ -1,4 +1,3 @@
-/* eslint-disable no-underscore-dangle */
 import { Column }                 from 'typeorm'
 import { CreateDateColumn }       from 'typeorm'
 import { Entity }                 from 'typeorm'

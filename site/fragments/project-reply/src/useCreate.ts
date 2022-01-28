@@ -1,4 +1,4 @@
-import { useMutation } from '@apollo/client' // eslint-disable-line import/no-extraneous-dependencies
+import { useMutation } from '@apollo/client'
 
 import gql             from 'graphql-tag'
 /* eslint-disable no-else-return */

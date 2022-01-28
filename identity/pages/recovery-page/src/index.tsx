@@ -3,9 +3,11 @@ import React            from 'react'
 import { RecoveryPage } from './RecoveryPage'
 import { Seo }          from './Seo'
 
-export default () => (
+const Page = () => (
   <>
     <Seo />
     <RecoveryPage />
   </>
 )
+
+export default Page

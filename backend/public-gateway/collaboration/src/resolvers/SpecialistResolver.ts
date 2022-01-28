@@ -4,7 +4,6 @@ import { ResolveProperty } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Root }            from '@nestjs/graphql'
 
-/* eslint-disable class-methods-use-this */
 import DataLoader          from 'dataloader'
 
 import { PortfolioLoader } from '../dataloaders'

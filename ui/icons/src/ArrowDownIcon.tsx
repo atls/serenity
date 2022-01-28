@@ -12,7 +12,7 @@ export const ArrowDownIcon = (props: React.SVGProps<SVGSVGElement>) => (
       <g
         id='order-(executor)'
         transform='translate(-270.000000, -25.000000)'
-        fill="\n// eslint-disable-next-line\n{props.color || '#FFFFFF'}"
+        fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
         fillRule='nonzero'
       >
         <g id='nav-bar'>

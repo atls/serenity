@@ -4,7 +4,6 @@ import { PrimaryColumn }    from 'typeorm'
 import { CreateDateColumn } from 'typeorm'
 import { UpdateDateColumn } from 'typeorm'
 
-/* eslint-disable no-underscore-dangle */
 import { BeginningOfWork }  from '@collaboration/domain'
 import { ProjectStatus }    from '@collaboration/domain'
 

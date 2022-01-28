@@ -1,5 +1,4 @@
 import styled               from '@emotion/styled'
-import { Global }           from '@emotion/react'
 
 import RcSelect             from 'rc-select'
 import React                from 'react'

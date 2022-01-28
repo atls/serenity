@@ -1,6 +1,5 @@
 import { Loader }          from '@monstrs/nestjs-dataloader'
 import { Injectable }      from '@nestjs/common'
-/* eslint-disable class-methods-use-this */
 import { ResolveProperty } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Root }            from '@nestjs/graphql'

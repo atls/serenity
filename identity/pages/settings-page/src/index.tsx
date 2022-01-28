@@ -3,9 +3,11 @@ import React            from 'react'
 import { Seo }          from './Seo'
 import { SettingsPage } from './SettingsPage'
 
-export default () => (
+const Page = () => (
   <>
     <Seo />
     <SettingsPage />
   </>
 )
+
+export default Page

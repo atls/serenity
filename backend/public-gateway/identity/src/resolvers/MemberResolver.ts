@@ -1,4 +1,3 @@
-/* eslint-disable class-methods-use-this */
 import { Injectable }      from '@nestjs/common'
 import { ResolveProperty } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'

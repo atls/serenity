@@ -1,4 +1,3 @@
-/* eslint-disable class-methods-use-this */
 import { AggregateRoot } from '@node-ts/ddd'
 
 export class Message extends AggregateRoot {

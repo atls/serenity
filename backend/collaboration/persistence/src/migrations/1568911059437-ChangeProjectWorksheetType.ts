@@ -1,4 +1,3 @@
-/* eslint-disable class-methods-use-this */
 import { MigrationInterface } from 'typeorm'
 import { QueryRunner }        from 'typeorm'
 

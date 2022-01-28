@@ -6,7 +6,7 @@ export const CheckIcon = (props: React.SVGProps<SVGSVGElement>) => (
     height='1em'
     viewBox='0 0 24 24'
     fill='none'
-    stroke="\n// eslint-disable-next-line\n{props.color || '#000000'}"
+    stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
     strokeWidth={2}
     strokeLinecap='butt'
     strokeLinejoin='miter'

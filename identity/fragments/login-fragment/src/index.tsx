@@ -3,8 +3,10 @@ import { useIntl } from 'react-intl'
 
 import { Login }   from './Login'
 
-export default () => {
+const Fragment = () => {
   const intl = useIntl()
 
   return <Login intl={intl} />
 }
+
+export default Fragment

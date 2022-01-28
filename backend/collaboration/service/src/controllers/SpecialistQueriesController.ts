@@ -2,7 +2,6 @@ import { Controller }               from '@nestjs/common'
 import { GrpcMethod }               from '@nestjs/microservices'
 
 import { SpecialistQueriesService } from '@collaboration/application'
-import { FindAllResponse }          from '@collaboration/application'
 
 @Controller()
 export class SpecialistQueriesController {

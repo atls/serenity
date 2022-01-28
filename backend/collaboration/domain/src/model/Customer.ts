@@ -1,4 +1,3 @@
-/* eslint-disable class-methods-use-this */
 import { AggregateRoot }   from '@node-ts/ddd'
 
 import { Address }         from './Address'

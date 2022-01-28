@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Injectable }           from '@nestjs/common'
 import { OnModuleInit }         from '@nestjs/common'
 import { Args }                 from '@nestjs/graphql'

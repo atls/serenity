@@ -33,7 +33,7 @@ export const withUser = () => (WrapperComponent) =>
       if (req && typeof req.get === 'function' && req.get('x-user')) {
         user = req.get('x-user')
       } else if ((process as any).browser) {
-        user = window.__NEXT_DATA__.props.user // eslint-disable-line prefer-destructuring
+        user = window.__NEXT_DATA__.props.user
       }
 
       return {

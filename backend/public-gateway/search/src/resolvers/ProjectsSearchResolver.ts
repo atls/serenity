@@ -1,4 +1,3 @@
-/* eslint-disable class-methods-use-this */
 import { Injectable }                                  from '@nestjs/common'
 import { OnModuleInit }                                from '@nestjs/common'
 import { Args }                                        from '@nestjs/graphql'

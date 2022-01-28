@@ -1,4 +1,4 @@
-import { useQuery } from '@apollo/client' // eslint-disable-line import/no-extraneous-dependencies
+import { useQuery } from '@apollo/client'
 
 import gql          from 'graphql-tag'
 

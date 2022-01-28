@@ -6,7 +6,7 @@ import { HomeBuilding } from './HomeBuilding'
 import { Wallpapering } from './Wallpapering'
 import { Welding }      from './Welding'
 
-export default ({ intl, value }) => {
+const Worksheet = ({ intl, value }) => {
   const data = value && JSON.parse(value)
 
   if (data && data.type === 'welding') {
@@ -26,3 +26,5 @@ export default ({ intl, value }) => {
   }
   return null
 }
+
+export default Worksheet

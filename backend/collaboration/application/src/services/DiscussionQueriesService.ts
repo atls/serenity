@@ -6,7 +6,6 @@ import { Repository }       from 'typeorm'
 import { Chat }             from '@collaboration/persistence'
 import { Discussion }       from '@collaboration/persistence'
 
-import { PageInfo }         from '../interfaces'
 import { FindAllResponse }  from '../interfaces'
 
 @Injectable()

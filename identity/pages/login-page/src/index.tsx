@@ -4,7 +4,7 @@ import { useCallback } from 'react'
 import { LoginPage }   from './LoginPage'
 import { Seo }         from './Seo'
 
-export default () => {
+const Page = () => {
   const onBack = useCallback(() => {
     window.location.href = `${window.location.origin.replace('accounts.', '')}`
   }, [])
@@ -16,3 +16,5 @@ export default () => {
     </>
   )
 }
+
+export default Page

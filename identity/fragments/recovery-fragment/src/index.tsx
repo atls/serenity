@@ -3,8 +3,10 @@ import { useIntl }  from 'react-intl'
 
 import { Recovery } from './Recovery'
 
-export default () => {
+const Fragment = () => {
   const intl = useIntl()
 
   return <Recovery intl={intl} />
 }
+
+export default Fragment

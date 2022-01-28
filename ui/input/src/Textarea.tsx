@@ -5,11 +5,8 @@ import { boxShadow }   from 'styled-system'
 
 import { StyledInput } from './parts'
 
-const Input = (props) => (
-  <StyledInput
-    {...props}
-    onChange={({ target }) => props.onChange && props.onChange(target.value)}
-  />
+const Input = ({ onChange, ...props }) => (
+  <StyledInput {...props} onChange={({ target: { value } }) => onChange && onChange(value)} />
 )
 
 const Textarea = styled(Input)(

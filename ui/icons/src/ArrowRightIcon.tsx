@@ -6,7 +6,7 @@ export const ArrowRightIcon = (props: React.SVGProps<SVGSVGElement>) => (
     height='1em'
     viewBox='0 0 24 24'
     fill='none'
-    stroke="\n// eslint-disable-next-line\n{props.color || '#FFFFFF'}"
+    stroke="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
     strokeWidth={2}
     strokeLinecap='butt'
     strokeLinejoin='bevel'

@@ -1,5 +1,4 @@
 import { AggregateRoot }           from '@node-ts/ddd'
-/* eslint-disable class-methods-use-this */
 import { AggregateRootProperties } from '@node-ts/ddd-types'
 
 import { FileCreated }             from '../events'

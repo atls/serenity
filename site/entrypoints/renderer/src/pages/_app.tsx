@@ -1,3 +1,6 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-underscore-dangle */
+
 import { withApollo }         from '@atls/next-app-with-apollo'
 import { withHelmet }         from '@atls/next-app-with-helmet'
 import { withProvider }       from '@atls/next-app-with-provider'
@@ -13,10 +16,6 @@ import { withAuth }           from '../providers'
 import { withEmotion }        from '../providers'
 import { withUser }           from '../providers'
 import { withIntl }           from '../providers'
-
-/* eslint-disable no-param-reassign */
-/* eslint-disable no-underscore-dangle */
-/* eslint-disable global-require */
 
 export const withProviders = compose(
   withApollo({

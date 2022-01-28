@@ -5,7 +5,6 @@ import { Repository }       from 'typeorm'
 
 import { Project }          from '@collaboration/persistence'
 
-import { PageInfo }         from '../interfaces'
 import { FindAllResponse }  from '../interfaces'
 
 @Injectable()

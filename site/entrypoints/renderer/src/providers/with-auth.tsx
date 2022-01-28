@@ -33,7 +33,7 @@ export const withAuth = () => (WrapperComponent) =>
       if (req && typeof req.get === 'function' && req.get('authorization')) {
         token = req.get('authorization')
       } else if ((process as any).browser) {
-        token = window.__NEXT_DATA__.props.token // eslint-disable-line prefer-destructuring
+        token = window.__NEXT_DATA__.props.token
       }
 
       return {

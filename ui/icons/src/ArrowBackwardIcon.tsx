@@ -25,7 +25,13 @@ export const ArrowBackwardIcon = (props: React.SVGProps<SVGSVGElement>) => (
       />
     </mask>
     <g mask='url(#ArrowBackwardIcon)'>
-      <rect x={-28} y={-28} width={80} height={80} fill={props.color || '#FFFFFFF'} />
+      <rect
+        x={-28}
+        y={-28}
+        width={80}
+        height={80}
+        fill="{props.color || '#FFFFFFF'} // eslint-disable react/destructuring-assignment"
+      />
     </g>
   </svg>
 )

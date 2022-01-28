@@ -5,10 +5,14 @@ import { useState }  from 'react'
 import { Filters }   from './Filters'
 import { useData }   from './useData'
 
+const doNothing = () => {
+  // do nothing
+}
+
 const FiltersFragment = ({
   title = '',
   activeCategory = '',
-  selectCategory = () => {},
+  selectCategory = doNothing,
   check = false,
 }) => {
   const data = useData()

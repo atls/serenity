@@ -1,4 +1,3 @@
-/* eslint-disable class-methods-use-this */
 import { ValidationOptions }            from 'class-validator'
 import { ValidatorConstraint }          from 'class-validator'
 import { ValidatorConstraintInterface } from 'class-validator'

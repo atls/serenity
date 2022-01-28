@@ -1,5 +1,4 @@
 import { AggregateRoot }           from '@node-ts/ddd'
-/* eslint-disable class-methods-use-this */
 /* eslint-disable no-underscore-dangle */
 import { AggregateRootProperties } from '@node-ts/ddd-types'
 

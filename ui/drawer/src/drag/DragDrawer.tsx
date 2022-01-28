@@ -3,7 +3,6 @@ import styled                from '@emotion/styled'
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/static-property-placement */
 /* eslint-disable react/state-in-constructor */
-/* eslint-disable react/sort-comp */
 import React                 from 'react'
 import ScrollLock            from 'react-scrolllock'
 import document              from 'global/document'
@@ -57,14 +56,18 @@ interface DragDrawerProps {
   parentElement: any
 }
 
+const doNothing = (...args) => {
+  // do nothing
+}
+
 export default class DragDrawer extends Component<DragDrawerProps> {
   static defaultProps = {
-    notifyWillClose: () => {},
-    onOpen: () => {},
-    onDrag: () => {},
-    onRequestClose: () => {},
-    getContainerRef: () => {},
-    getModalRef: () => {},
+    notifyWillClose: doNothing,
+    onOpen: doNothing,
+    onDrag: doNothing,
+    onRequestClose: doNothing,
+    getContainerRef: doNothing,
+    getModalRef: doNothing,
     direction: 'bottom',
     parentElement: document.body,
     allowClose: true,
@@ -357,8 +360,6 @@ export default class DragDrawer extends Component<DragDrawerProps> {
     }
     return undefined
   }
-
-  preventDefault = (event) => event.preventDefault()
 
   stopPropagation = (event) => event.stopPropagation()
 

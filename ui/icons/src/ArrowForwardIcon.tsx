@@ -30,7 +30,7 @@ export const ArrowForwardIcon = (props: React.SVGProps<SVGSVGElement>) => (
         y={-28}
         width={80}
         height={80}
-        fill="\n// eslint-disable-next-line\n{props.color || '#FFFFFF'}"
+        fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
       />
     </g>
   </svg>
