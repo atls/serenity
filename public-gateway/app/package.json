@@ -4,8 +4,8 @@
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
-    "build": "server-scripts build",
-    "dev": "server-scripts start",
+    "build": "yarn service build",
+    "dev": "yarn service dev",
     "start": "node dist/index.js"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
     "@nestjs/graphql": "6.5.3",
     "@nestjs/microservices": "6.10.5",
     "@nestjs/platform-express": "6.10.5",
+    "@protos/common": "workspace:^",
     "@protos/hits": "0.0.1",
     "@protos/interfaces": "0.1.1",
     "@public-gateway/catalog": "0.1.1",

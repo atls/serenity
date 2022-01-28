@@ -252,9 +252,11 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn public-gateway:dev
+    entrypoint: yarn workspace @public-gateway/app dev
     depends_on:
       - oathkeeper
+    ports:
+      - 3000:3000
 
   private-gateway:
     image: node:16-alpine
