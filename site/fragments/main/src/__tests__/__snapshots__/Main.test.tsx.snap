@@ -2,7 +2,132 @@
 
 exports[`Main fragment snapshots should match latest render snapshot 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-0 {
+  box-sizing: border-box;
+  height: calc(100vh - 56px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgb(158, 158, 158);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  max-width: 1200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 40em) {
+  .emotion-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 52em) {
+  .emotion-1 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.emotion-2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  max-width: 760px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-4 {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  font-family: Inter;
+}
+
+@media screen and (min-width: 40em) {
+  .emotion-4 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 52em) {
+  .emotion-4 {
+    font-size: 48px;
+  }
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 30px;
+  -ms-flex-preferred-size: 30px;
+  flex-basis: 30px;
+}
+
+@media screen and (min-width: 40em) {
+  .emotion-5 {
+    -webkit-flex-basis: 30px;
+    -ms-flex-preferred-size: 30px;
+    flex-basis: 30px;
+  }
+}
+
+@media screen and (min-width: 52em) {
+  .emotion-5 {
+    -webkit-flex-basis: 56px;
+    -ms-flex-preferred-size: 56px;
+    flex-basis: 56px;
+  }
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.emotion-8 {
   font-family: 'Inter';
   font-weight: 600;
   font-size: 12px;
@@ -18,37 +143,38 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
   align-items: center;
   box-sizing: border-box;
   border-radius: 4px;
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   background-color: #ffffff;
   outline: none;
+  min-height: 64px;
 }
 
-.emotion-3 ul,
-.emotion-3 li {
+.emotion-8 ul,
+.emotion-8 li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.emotion-3:hover,
-.emotion-3.rc-select-focused {
-  border: 1px solid rgba(0,0,0,0.2);
+.emotion-8:hover,
+.emotion-8.rc-select-focused {
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.emotion-3.rc-select-disabled {
+.emotion-8.rc-select-disabled {
   cursor: not-allowed;
 }
 
-.emotion-3.rc-select-disabled .rc-select-selection {
+.emotion-8.rc-select-disabled .rc-select-selection {
   opacity: 0.3;
   background-color: #dedede;
 }
 
-.emotion-3:hover.rc-select-disabled {
-  border: 1px solid rgba(0,0,0,0.08);
+.emotion-8:hover.rc-select-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.emotion-3 .rc-select-arrow {
+.emotion-8 .rc-select-arrow {
   height: 100%;
   position: absolute;
   display: -webkit-box;
@@ -63,17 +189,17 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
   right: 16px;
 }
 
-@media (min-width:40em) {
-  .emotion-3 .rc-select-arrow {
+@media (min-width: 40em) {
+  .emotion-8 .rc-select-arrow {
     right: 20px;
   }
 }
 
-.emotion-3 .rc-select-arrow svg {
+.emotion-8 .rc-select-arrow svg {
   cursor: pointer;
 }
 
-.emotion-3 .rc-select-selection {
+.emotion-8 .rc-select-selection {
   outline: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -92,7 +218,7 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
   height: 100%;
 }
 
-.emotion-3 .rc-select-selection .rc-select-selection__rendered {
+.emotion-8 .rc-select-selection .rc-select-selection__rendered {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -105,7 +231,7 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
   height: 100%;
 }
 
-.emotion-3 .rc-select-selection .rc-select-selection__rendered .rc-select-selection__placeholder {
+.emotion-8 .rc-select-selection .rc-select-selection__rendered .rc-select-selection__placeholder {
   position: absolute;
   top: 50%;
   font-weight: 500;
@@ -113,12 +239,12 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
   cursor: text;
 }
 
-.emotion-3 .rc-select-selection .rc-select-selection__rendered ul {
+.emotion-8 .rc-select-selection .rc-select-selection__rendered ul {
   height: 100%;
   width: 100%;
 }
 
-.emotion-3 .rc-select-selection__choice {
+.emotion-8 .rc-select-selection__choice {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -140,21 +266,21 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
   cursor: auto;
 }
 
-.emotion-3 .rc-select-selection__choice .rc-select-selection__choice__remove {
+.emotion-8 .rc-select-selection__choice .rc-select-selection__choice__remove {
   margin-left: 10px;
 }
 
-.emotion-3 .rc-select-selection__choice .rc-select-selection__choice__remove .rc-select-selection__choice__remove-icon {
+.emotion-8 .rc-select-selection__choice .rc-select-selection__choice__remove .rc-select-selection__choice__remove-icon {
   font-style: normal;
   color: #9e9e9e;
   cursor: pointer;
 }
 
-.emotion-3 .rc-select-selection__choice .rc-select-selection__choice__remove .rc-select-selection__choice__remove-icon:hover {
+.emotion-8 .rc-select-selection__choice .rc-select-selection__choice__remove .rc-select-selection__choice__remove-icon:hover {
   color: #000000;
 }
 
-.emotion-3 .rc-select-search {
+.emotion-8 .rc-select-search {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -168,7 +294,7 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-3 .rc-select-search .rc-select-search__field {
+.emotion-8 .rc-select-search .rc-select-search__field {
   border: none;
   background: transparent;
   outline: 0px;
@@ -179,7 +305,7 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
   display: inline-block;
 }
 
-.emotion-3 .rc-select-search .rc-select-search__field__wrap {
+.emotion-8 .rc-select-search .rc-select-search__field__wrap {
   height: 100%;
   width: 100%;
   padding-top: 10px;
@@ -187,171 +313,42 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.emotion-3 .rc-select-search .rc-select-search__field__mirror {
+.emotion-8 .rc-select-search .rc-select-search__field__mirror {
   position: absolute;
   top: -999px;
   left: 0;
   white-space: pre;
 }
 
-.emotion-3 .rc-select-selection-selected-value {
-  opacity: 1 !important;
+.emotion-8 .rc-select-selection-selected-value {
+  opacity: 1!important;
   position: absolute;
   top: 50%;
   margin-top: -7.5px;
 }
 
-.emotion-4 {
-  min-height: 64px;
-}
-
-.emotion-4 .rc-select-selection {
+.emotion-8 .rc-select-selection {
   padding-left: 50px;
   padding-right: 50px;
 }
 
-@media (min-width:40em) {
-  .emotion-4 .rc-select-selection {
+@media (min-width: 40em) {
+  .emotion-8 .rc-select-selection {
     padding-left: 72px;
   }
 }
 
-.emotion-4 .rc-select-selection__placeholder {
+.emotion-8 .rc-select-selection__placeholder {
   font-size: 15px;
   line-height: 1;
   margin-top: -7.5px;
 }
 
-.emotion-4 .rc-select-search__field {
+.emotion-8 .rc-select-search__field {
   font-size: 15px;
 }
 
-.emotion-11 {
-  box-sizing: border-box;
-  height: calc(100vh - 56px);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: rgb(158,158,158);
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.emotion-10 {
-  max-width: 1200px;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
-}
-
-@media screen and (min-width:40em) {
-  .emotion-10 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media screen and (min-width:52em) {
-  .emotion-10 {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-
 .emotion-9 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-1 {
-  max-width: 760px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-0 {
-  color: rgb(255,255,255);
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.3;
-  font-family: Inter;
-}
-
-@media screen and (min-width:40em) {
-  .emotion-0 {
-    font-size: 32px;
-  }
-}
-
-@media screen and (min-width:52em) {
-  .emotion-0 {
-    font-size: 48px;
-  }
-}
-
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-basis: 30px;
-  -ms-flex-preferred-size: 30px;
-  flex-basis: 30px;
-}
-
-@media screen and (min-width:40em) {
-  .emotion-2 {
-    -webkit-flex-basis: 30px;
-    -ms-flex-preferred-size: 30px;
-    flex-basis: 30px;
-  }
-}
-
-@media screen and (min-width:52em) {
-  .emotion-2 {
-    -webkit-flex-basis: 56px;
-    -ms-flex-preferred-size: 56px;
-    flex-basis: 56px;
-  }
-}
-
-.emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  width: 100%;
-}
-
-.emotion-5 {
   height: 100%;
   position: absolute;
   display: -webkit-box;
@@ -366,13 +363,13 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
   left: 16px;
 }
 
-@media (min-width:40em) {
-  .emotion-5 {
+@media (min-width: 40em) {
+  .emotion-9 {
     left: 24px;
   }
 }
 
-.emotion-8 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -383,26 +380,26 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
 }
 
 <div
-    class="emotion-11"
+    class="emotion-0"
     display="flex"
     height="calc(100vh - 56px)"
   >
     <div
-      class="emotion-10"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-9"
+        class="emotion-2"
         display="flex"
         width="100%"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
           display="flex"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
             color="white"
             font-family="primary"
             font-size="massive,massive,biggest"
@@ -412,22 +409,22 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
           </span>
         </div>
         <div
-          class="emotion-2"
+          class="emotion-5"
           display="flex"
         />
         <div
-          class="emotion-7"
+          class="emotion-6"
           display="flex"
         >
           <div
-            class="emotion-6"
+            class="emotion-7"
           >
             <div
-              class="emotion-3 emotion-4 rc-select rc-select-focused rc-select-combobox rc-select-enabled"
+              class="emotion-8 rc-select rc-select-focused rc-select-combobox rc-select-enabled"
             >
               <div
                 aria-autocomplete="list"
-                aria-controls="test-uuid"
+                aria-controls="2ad196bb-c8c7-4e4d-dd45-79bd8b92b7a7"
                 aria-expanded="false"
                 aria-haspopup="true"
                 class="rc-select-selection
@@ -497,7 +494,7 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
                       mask="url(#ArrowForwardIcon)"
                     >
                       <rect
-                        fill="rgb(153, 153, 153)"
+                        fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
                         height="80"
                         width="80"
                         x="-28"
@@ -509,7 +506,7 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
               </div>
             </div>
             <div
-              class="emotion-5"
+              class="emotion-9"
             >
               <svg
                 height="24"
@@ -538,7 +535,7 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
           </div>
         </div>
         <div
-          class="emotion-8"
+          class="emotion-10"
           display="flex"
         />
       </div>

@@ -2,7 +2,81 @@
 
 exports[`Specialists fragment snapshots should match latest render snapshot 1`] = `
 <DocumentFragment>
-  .emotion-5 {
+  .emotion-0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 48px;
+  -ms-flex-preferred-size: 48px;
+  flex-basis: 48px;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.emotion-2 {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: Inter;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 32px;
+  -ms-flex-preferred-size: 32px;
+  flex-basis: 32px;
+}
+
+.emotion-4 {
+  color: rgb(190, 190, 190);
+  font-size: 24px;
+  font-weight: 500;
+  font-family: Inter;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 20px;
+  -ms-flex-preferred-size: 20px;
+  flex-basis: 20px;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.emotion-8 {
   font-family: 'Inter';
   font-weight: 600;
   font-size: 12px;
@@ -18,37 +92,38 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
   align-items: center;
   box-sizing: border-box;
   border-radius: 4px;
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   background-color: #ffffff;
   outline: none;
+  min-height: 64px;
 }
 
-.emotion-5 ul,
-.emotion-5 li {
+.emotion-8 ul,
+.emotion-8 li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.emotion-5:hover,
-.emotion-5.rc-select-focused {
-  border: 1px solid rgba(0,0,0,0.2);
+.emotion-8:hover,
+.emotion-8.rc-select-focused {
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.emotion-5.rc-select-disabled {
+.emotion-8.rc-select-disabled {
   cursor: not-allowed;
 }
 
-.emotion-5.rc-select-disabled .rc-select-selection {
+.emotion-8.rc-select-disabled .rc-select-selection {
   opacity: 0.3;
   background-color: #dedede;
 }
 
-.emotion-5:hover.rc-select-disabled {
-  border: 1px solid rgba(0,0,0,0.08);
+.emotion-8:hover.rc-select-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.emotion-5 .rc-select-arrow {
+.emotion-8 .rc-select-arrow {
   height: 100%;
   position: absolute;
   display: -webkit-box;
@@ -63,17 +138,17 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
   right: 16px;
 }
 
-@media (min-width:40em) {
-  .emotion-5 .rc-select-arrow {
+@media (min-width: 40em) {
+  .emotion-8 .rc-select-arrow {
     right: 20px;
   }
 }
 
-.emotion-5 .rc-select-arrow svg {
+.emotion-8 .rc-select-arrow svg {
   cursor: pointer;
 }
 
-.emotion-5 .rc-select-selection {
+.emotion-8 .rc-select-selection {
   outline: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -92,7 +167,7 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
   height: 100%;
 }
 
-.emotion-5 .rc-select-selection .rc-select-selection__rendered {
+.emotion-8 .rc-select-selection .rc-select-selection__rendered {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -105,7 +180,7 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
   height: 100%;
 }
 
-.emotion-5 .rc-select-selection .rc-select-selection__rendered .rc-select-selection__placeholder {
+.emotion-8 .rc-select-selection .rc-select-selection__rendered .rc-select-selection__placeholder {
   position: absolute;
   top: 50%;
   font-weight: 500;
@@ -113,12 +188,12 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
   cursor: text;
 }
 
-.emotion-5 .rc-select-selection .rc-select-selection__rendered ul {
+.emotion-8 .rc-select-selection .rc-select-selection__rendered ul {
   height: 100%;
   width: 100%;
 }
 
-.emotion-5 .rc-select-selection__choice {
+.emotion-8 .rc-select-selection__choice {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -140,21 +215,21 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
   cursor: auto;
 }
 
-.emotion-5 .rc-select-selection__choice .rc-select-selection__choice__remove {
+.emotion-8 .rc-select-selection__choice .rc-select-selection__choice__remove {
   margin-left: 10px;
 }
 
-.emotion-5 .rc-select-selection__choice .rc-select-selection__choice__remove .rc-select-selection__choice__remove-icon {
+.emotion-8 .rc-select-selection__choice .rc-select-selection__choice__remove .rc-select-selection__choice__remove-icon {
   font-style: normal;
   color: #9e9e9e;
   cursor: pointer;
 }
 
-.emotion-5 .rc-select-selection__choice .rc-select-selection__choice__remove .rc-select-selection__choice__remove-icon:hover {
+.emotion-8 .rc-select-selection__choice .rc-select-selection__choice__remove .rc-select-selection__choice__remove-icon:hover {
   color: #000000;
 }
 
-.emotion-5 .rc-select-search {
+.emotion-8 .rc-select-search {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -168,7 +243,7 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
   align-items: center;
 }
 
-.emotion-5 .rc-select-search .rc-select-search__field {
+.emotion-8 .rc-select-search .rc-select-search__field {
   border: none;
   background: transparent;
   outline: 0px;
@@ -179,7 +254,7 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
   display: inline-block;
 }
 
-.emotion-5 .rc-select-search .rc-select-search__field__wrap {
+.emotion-8 .rc-select-search .rc-select-search__field__wrap {
   height: 100%;
   width: 100%;
   padding-top: 10px;
@@ -187,121 +262,42 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
   box-sizing: border-box;
 }
 
-.emotion-5 .rc-select-search .rc-select-search__field__mirror {
+.emotion-8 .rc-select-search .rc-select-search__field__mirror {
   position: absolute;
   top: -999px;
   left: 0;
   white-space: pre;
 }
 
-.emotion-5 .rc-select-selection-selected-value {
-  opacity: 1 !important;
+.emotion-8 .rc-select-selection-selected-value {
+  opacity: 1!important;
   position: absolute;
   top: 50%;
   margin-top: -7.5px;
 }
 
-.emotion-6 {
-  min-height: 58px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.03);
-}
-
-.emotion-6 .rc-select-selection {
+.emotion-8 .rc-select-selection {
   padding-left: 50px;
-  padding-right: 24px;
+  padding-right: 50px;
 }
 
-@media (min-width:40em) {
-  .emotion-6 .rc-select-selection {
-    padding-left: 60px;
+@media (min-width: 40em) {
+  .emotion-8 .rc-select-selection {
+    padding-left: 72px;
   }
 }
 
-.emotion-6 .rc-select-selection__placeholder {
-  font-size: 13px;
+.emotion-8 .rc-select-selection__placeholder {
+  font-size: 15px;
   line-height: 1;
-  margin-top: -6.5px;
+  margin-top: -7.5px;
 }
 
-.emotion-6 .rc-select-search__field {
-  font-size: 13px;
-}
-
-.emotion-11 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-basis: 48px;
-  -ms-flex-preferred-size: 48px;
-  flex-basis: 48px;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-.emotion-0 {
-  font-size: 32px;
-  font-weight: 600;
-  font-family: Inter;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-basis: 32px;
-  -ms-flex-preferred-size: 32px;
-  flex-basis: 32px;
-}
-
-.emotion-2 {
-  color: rgb(190,190,190);
-  font-size: 24px;
-  font-weight: 500;
-  font-family: Inter;
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-basis: 20px;
-  -ms-flex-preferred-size: 20px;
-  flex-basis: 20px;
+.emotion-8 .rc-select-search__field {
+  font-size: 15px;
 }
 
 .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  width: 100%;
-}
-
-.emotion-7 {
   height: 100%;
   position: absolute;
   display: -webkit-box;
@@ -316,8 +312,8 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
   left: 16px;
 }
 
-@media (min-width:40em) {
-  .emotion-7 {
+@media (min-width: 40em) {
+  .emotion-9 {
     left: 20px;
   }
 }
@@ -342,7 +338,7 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
   flex-basis: 40px;
 }
 
-@media screen and (min-width:40em) {
+@media screen and (min-width: 40em) {
   .emotion-13 {
     -webkit-flex-basis: 60px;
     -ms-flex-preferred-size: 60px;
@@ -350,7 +346,7 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
   }
 }
 
-@media screen and (min-width:52em) {
+@media screen and (min-width: 52em) {
   .emotion-13 {
     -webkit-flex-basis: 80px;
     -ms-flex-preferred-size: 80px;
@@ -359,16 +355,16 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
 }
 
 <div
-    class="emotion-11"
+    class="emotion-0"
     display="flex"
     width="100%"
   >
     <div
-      class="emotion-3"
+      class="emotion-1"
       display="flex"
     >
       <span
-        class="emotion-0"
+        class="emotion-2"
         font-family="primary"
         font-size="massive"
         font-weight="semiBold"
@@ -376,11 +372,11 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
         Специалисты
       </span>
       <div
-        class="emotion-1"
+        class="emotion-3"
         display="flex"
       />
       <span
-        class="emotion-2"
+        class="emotion-4"
         color="silver"
         font-family="primary"
         font-size="huge"
@@ -390,22 +386,22 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
       </span>
     </div>
     <div
-      class="emotion-4"
+      class="emotion-5"
       display="flex"
     />
     <div
-      class="emotion-9"
+      class="emotion-6"
       display="flex"
     >
       <div
-        class="emotion-8"
+        class="emotion-7"
       >
         <div
-          class="emotion-5 emotion-6 rc-select rc-select-combobox rc-select-enabled rc-select-no-arrow"
+          class="emotion-8 rc-select rc-select-combobox rc-select-enabled rc-select-no-arrow"
         >
           <div
             aria-autocomplete="list"
-            aria-controls="test-uuid"
+            aria-controls="a09181a3-4f57-4b2a-f6d9-b98a4026b9f5"
             aria-expanded="false"
             aria-haspopup="true"
             class="rc-select-selection
@@ -446,7 +442,7 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
           </div>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-9"
         >
           <svg
             height="20"
@@ -479,11 +475,11 @@ exports[`Specialists fragment snapshots should match latest render snapshot 1`] 
       display="flex"
     />
     <div
-      class="emotion-9"
+      class="emotion-6"
       display="flex"
     >
       <div
-        class="emotion-11"
+        class="emotion-0"
         display="flex"
         width="100%"
       />

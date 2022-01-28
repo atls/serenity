@@ -2,190 +2,7 @@
 
 exports[`Home-building worksheet snapshots should match latest render snapshot 1`] = `
 <DocumentFragment>
-  .emotion-4 {
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 12px;
-  min-height: 50px;
-  width: 100%;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: 1px solid rgba(0,0,0,0.08);
-  background-color: #ffffff;
-  outline: none;
-  cursor: pointer;
-}
-
-.emotion-4 ul,
-.emotion-4 li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.emotion-4:hover,
-.emotion-4.rc-select-focused {
-  border: 1px solid rgba(0,0,0,0.2);
-}
-
-.emotion-4.rc-select-disabled {
-  cursor: not-allowed;
-}
-
-.emotion-4.rc-select-disabled .rc-select-selection {
-  opacity: 0.3;
-  background-color: #dedede;
-}
-
-.emotion-4:hover.rc-select-disabled {
-  border: 1px solid rgba(0,0,0,0.08);
-}
-
-.emotion-4 .rc-select-arrow {
-  height: 100%;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  top: 0px;
-  right: 20px;
-}
-
-.emotion-4:hover .rc-select-arrow rect,
-.emotion-4.rc-select-focused .rc-select-arrow rect {
-  fill: #000000;
-}
-
-.emotion-4 .rc-select-selection {
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 0 40px 5px 20px;
-}
-
-.emotion-4 .rc-select-selection .rc-select-selection__rendered {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-4 .rc-select-selection .rc-select-selection__rendered .rc-select-selection__placeholder {
-  position: absolute;
-  top: 50%;
-  margin-top: -7.5px;
-}
-
-.emotion-4 .rc-select-selection__choice {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #f3f3f3;
-  border-radius: 4px;
-  float: left;
-  height: 30px;
-  box-sizing: border-box;
-  padding: 5px 10px 5px 15px;
-  margin-right: 5px;
-  margin-top: 5px;
-  position: relative;
-  overflow: hidden;
-  cursor: auto;
-}
-
-.emotion-4 .rc-select-selection__choice .rc-select-selection__choice__remove {
-  margin-left: 10px;
-}
-
-.emotion-4 .rc-select-selection__choice .rc-select-selection__choice__remove .rc-select-selection__choice__remove-icon {
-  font-style: normal;
-  color: #9e9e9e;
-  cursor: pointer;
-}
-
-.emotion-4 .rc-select-selection__choice .rc-select-selection__choice__remove .rc-select-selection__choice__remove-icon:hover {
-  color: #000000;
-}
-
-.emotion-4 .rc-select-search {
-  position: static;
-  float: left;
-  width: auto;
-  max-width: 100%;
-  padding: 0;
-  margin-top: 5px;
-  height: 30px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-4 .rc-select-search .rc-select-search__field {
-  border: none;
-  font-size: 16px;
-  background: transparent;
-  outline: 0px;
-  width: 2px;
-  padding: 0px;
-  cursor: pointer;
-  display: inline-block;
-}
-
-@media (max-width:640px) {
-  .emotion-4 .rc-select-search .rc-select-search__field {
-    display: none;
-  }
-}
-
-.emotion-4 .rc-select-selection-selected-value {
-  opacity: 1 !important;
-  position: absolute;
-  top: 50%;
-  margin-top: -7.5px;
-}
-
-.emotion-38 {
+  .emotion-0 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -196,7 +13,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   flex-direction: column;
 }
 
-.emotion-6 {
+.emotion-1 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -210,7 +27,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   box-sizing: border-box;
 }
 
-.emotion-0 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -220,21 +37,21 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   flex-basis: 20px;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.emotion-1 {
+.emotion-4 {
   font-weight: 500;
   line-height: 1.6;
   font-family: Inter;
   font-size: 13px;
 }
 
-.emotion-3 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -257,7 +74,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
 .emotion-8 {
   width: 100%;
   height: 1px;
-  background: rgb(235,235,235);
+  background: rgb(235, 235, 235);
 }
 
 .emotion-9 {
@@ -270,7 +87,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   flex-basis: 22px;
 }
 
-.emotion-48 {
+.emotion-28 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -284,7 +101,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   box-sizing: border-box;
 }
 
-.emotion-36 {
+.emotion-35 {
   max-width: 180px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -292,7 +109,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   display: flex;
 }
 
-.emotion-35 {
+.emotion-36 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -300,7 +117,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   display: flex;
 }
 
-.emotion-33 {
+.emotion-37 {
   box-sizing: border-box;
   outline: none;
   border: none;
@@ -308,9 +125,9 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   font-family: Inter;
   font-weight: 500;
   border-radius: 4px;
-  border: 1px solid rgba(0,0,0,0.08);
-  color: rgb(0,0,0);
-  background-color: rgb(255,255,255);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   font-size: 12px;
   height: 50px;
   padding-left: 20px;
@@ -319,23 +136,23 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   border-bottom-right-radius: 0;
 }
 
-.emotion-33::-webkit-input-placeholder {
-  color: rgb(190,190,190);
+.emotion-37::-webkit-input-placeholder {
+  color: rgb(190, 190, 190);
 }
 
-.emotion-33::-moz-placeholder {
-  color: rgb(190,190,190);
+.emotion-37::-moz-placeholder {
+  color: rgb(190, 190, 190);
 }
 
-.emotion-33:-ms-input-placeholder {
-  color: rgb(190,190,190);
+.emotion-37:-ms-input-placeholder {
+  color: rgb(190, 190, 190);
 }
 
-.emotion-33::placeholder {
-  color: rgb(190,190,190);
+.emotion-37::placeholder {
+  color: rgb(190, 190, 190);
 }
 
-.emotion-34 {
+.emotion-38 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -348,9 +165,9 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   font-family: Inter;
   font-weight: 500;
   border-radius: 4px;
-  border: 1px solid rgba(0,0,0,0.08);
-  color: rgb(0,0,0);
-  background-color: rgb(255,255,255);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   font-size: 12px;
   padding-right: 20px;
   padding-left: 20px;
@@ -360,7 +177,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   border-left-width: 0;
 }
 
-.emotion-40 {
+.emotion-39 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -378,7 +195,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   display: flex;
 }
 
-.emotion-64 {
+.emotion-54 {
   box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
@@ -390,15 +207,15 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   flex-direction: column;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-64 {
+@media screen and (min-width: 40em) {
+  .emotion-54 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
   }
 }
 
-.emotion-58 {
+.emotion-55 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -412,23 +229,23 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   flex-basis: 100%;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-58 {
+@media screen and (min-width: 40em) {
+  .emotion-55 {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-58 {
+@media screen and (min-width: 52em) {
+  .emotion-55 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
   }
 }
 
-.emotion-57 {
+.emotion-56 {
   font-family: Inter;
   box-sizing: border-box;
   display: -webkit-box;
@@ -448,23 +265,24 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   font-size: 12px;
   padding: 0px 16px;
   height: 50px;
-  border: 1px solid rgba(0,0,0,0.08);
-  color: rgb(158,158,158);
-  background: rgb(255,255,255);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: rgb(158, 158, 158);
+  background: rgb(255, 255, 255);
   border-radius: 4px;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-57:active {
+.emotion-56:active {
   -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
 }
 
-.emotion-55 {
+.emotion-57 {
   margin-right: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -472,9 +290,9 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   display: flex;
 }
 
-.emotion-56 {
+.emotion-58 {
   white-space: normal;
-  color: rgb(153,153,153);
+  color: rgb(153, 153, 153);
   font-size: 12px;
   font-weight: 600;
   line-height: 1.3;
@@ -505,7 +323,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   flex-basis: 0;
 }
 
-@media screen and (min-width:40em) {
+@media screen and (min-width: 40em) {
   .emotion-71 {
     -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
@@ -513,7 +331,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   }
 }
 
-@media screen and (min-width:52em) {
+@media screen and (min-width: 52em) {
   .emotion-71 {
     -webkit-flex-basis: 22px;
     -ms-flex-preferred-size: 22px;
@@ -535,7 +353,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   flex-basis: 0;
 }
 
-@media screen and (min-width:40em) {
+@media screen and (min-width: 40em) {
   .emotion-72 {
     -webkit-box-flex: 0;
     -webkit-flex-grow: 0;
@@ -547,7 +365,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
   }
 }
 
-@media screen and (min-width:52em) {
+@media screen and (min-width: 52em) {
   .emotion-72 {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -560,25 +378,25 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
 }
 
 <div
-    class="emotion-38"
+    class="emotion-0"
     display="flex"
     width="100%"
   >
     <div
-      class="emotion-6"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-0"
+        class="emotion-2"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -587,19 +405,19 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-4  rc-select rc-select-enabled"
+          class="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop).  rc-select rc-select-enabled"
         >
           <div
             aria-autocomplete="list"
-            aria-controls="test-uuid"
+            aria-controls="439a47ce-41b9-4835-d0c5-3c87ca02574f"
             aria-expanded="false"
             aria-haspopup="true"
             class="rc-select-selection
@@ -639,7 +457,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                   stroke-width="1"
                 >
                   <g
-                    fill="rgb(153, 153, 153)"
+                    fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
                     fill-rule="nonzero"
                     id="order-(executor)"
                     transform="translate(-270.000000, -25.000000)"
@@ -682,20 +500,20 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
       display="flex"
     />
     <div
-      class="emotion-6"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-0"
+        class="emotion-2"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -704,19 +522,19 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-4  rc-select rc-select-enabled"
+          class="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop).  rc-select rc-select-enabled"
         >
           <div
             aria-autocomplete="list"
-            aria-controls="test-uuid"
+            aria-controls="01d4e625-3f3c-4efe-9863-80784f583368"
             aria-expanded="false"
             aria-haspopup="true"
             class="rc-select-selection
@@ -756,7 +574,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                   stroke-width="1"
                 >
                   <g
-                    fill="rgb(153, 153, 153)"
+                    fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
                     fill-rule="nonzero"
                     id="order-(executor)"
                     transform="translate(-270.000000, -25.000000)"
@@ -799,20 +617,20 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
       display="flex"
     />
     <div
-      class="emotion-6"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-0"
+        class="emotion-2"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -821,19 +639,19 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-4  rc-select rc-select-enabled"
+          class="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop).  rc-select rc-select-enabled"
         >
           <div
             aria-autocomplete="list"
-            aria-controls="test-uuid"
+            aria-controls="ceb81601-0dfa-4b3e-b525-1c22e192779d"
             aria-expanded="false"
             aria-haspopup="true"
             class="rc-select-selection
@@ -873,7 +691,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                   stroke-width="1"
                 >
                   <g
-                    fill="rgb(153, 153, 153)"
+                    fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
                     fill-rule="nonzero"
                     id="order-(executor)"
                     transform="translate(-270.000000, -25.000000)"
@@ -916,25 +734,25 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
       display="flex"
     />
     <div
-      class="emotion-48"
+      class="emotion-28"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-38"
+          class="emotion-0"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
             display="flex"
           >
             <span
-              class="emotion-1"
+              class="emotion-4"
               font-family="primary"
               font-size="normal"
               font-weight="medium"
@@ -943,29 +761,29 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
             </span>
           </div>
           <div
-            class="emotion-3"
+            class="emotion-5"
             display="flex"
           />
           <div
-            class="emotion-2"
+            class="emotion-3"
             display="flex"
           >
             <div
-              class="emotion-36"
+              class="emotion-35"
               display="flex"
             >
               <div
-                class="emotion-35"
+                class="emotion-36"
               >
                 <input
-                  class="emotion-33"
+                  class="emotion-37"
                   min="0"
                   placeholder="Введите"
                   type="number"
                   value=""
                 />
                 <span
-                  class="emotion-34"
+                  class="emotion-38"
                   color="black"
                   font-family="primary"
                   font-weight="medium"
@@ -978,24 +796,24 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
         </div>
       </div>
       <div
-        class="emotion-40"
+        class="emotion-39"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-38"
+          class="emotion-0"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
             display="flex"
           >
             <span
-              class="emotion-1"
+              class="emotion-4"
               font-family="primary"
               font-size="normal"
               font-weight="medium"
@@ -1004,7 +822,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
             </span>
           </div>
           <div
-            class="emotion-3"
+            class="emotion-5"
             display="flex"
           />
           <div
@@ -1012,11 +830,11 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
             display="flex"
           >
             <div
-              class="emotion-4  rc-select rc-select-enabled"
+              class="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop).  rc-select rc-select-enabled"
             >
               <div
                 aria-autocomplete="list"
-                aria-controls="test-uuid"
+                aria-controls="7984f943-2936-4d7c-8bba-413a244787b6"
                 aria-expanded="false"
                 aria-haspopup="true"
                 class="rc-select-selection
@@ -1056,7 +874,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                       stroke-width="1"
                     >
                       <g
-                        fill="rgb(153, 153, 153)"
+                        fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
                         fill-rule="nonzero"
                         id="order-(executor)"
                         transform="translate(-270.000000, -25.000000)"
@@ -1101,16 +919,16 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
       display="flex"
     />
     <div
-      class="emotion-6"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -1119,33 +937,33 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-64"
+          class="emotion-54"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-58"
+            class="emotion-55"
             display="flex"
           >
             <button
-              class="emotion-57"
+              class="emotion-56"
             >
               <span
-                class="emotion-55"
+                class="emotion-57"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1159,7 +977,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                 </svg>
               </span>
               <span
-                class="emotion-56"
+                class="emotion-58"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1174,20 +992,20 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
             display="flex"
           />
           <div
-            class="emotion-58"
+            class="emotion-55"
             display="flex"
           >
             <button
-              class="emotion-57"
+              class="emotion-56"
             >
               <span
-                class="emotion-55"
+                class="emotion-57"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1201,7 +1019,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                 </svg>
               </span>
               <span
-                class="emotion-56"
+                class="emotion-58"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1218,29 +1036,29 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-64"
+          class="emotion-54"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-58"
+            class="emotion-55"
             display="flex"
           >
             <button
-              class="emotion-57"
+              class="emotion-56"
             >
               <span
-                class="emotion-55"
+                class="emotion-57"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1254,7 +1072,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                 </svg>
               </span>
               <span
-                class="emotion-56"
+                class="emotion-58"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1287,16 +1105,16 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
       display="flex"
     />
     <div
-      class="emotion-6"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -1305,33 +1123,33 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-64"
+          class="emotion-54"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-58"
+            class="emotion-55"
             display="flex"
           >
             <button
-              class="emotion-57"
+              class="emotion-56"
             >
               <span
-                class="emotion-55"
+                class="emotion-57"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1345,7 +1163,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                 </svg>
               </span>
               <span
-                class="emotion-56"
+                class="emotion-58"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1360,20 +1178,20 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
             display="flex"
           />
           <div
-            class="emotion-58"
+            class="emotion-55"
             display="flex"
           >
             <button
-              class="emotion-57"
+              class="emotion-56"
             >
               <span
-                class="emotion-55"
+                class="emotion-57"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1387,7 +1205,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                 </svg>
               </span>
               <span
-                class="emotion-56"
+                class="emotion-58"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1404,29 +1222,29 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-64"
+          class="emotion-54"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-58"
+            class="emotion-55"
             display="flex"
           >
             <button
-              class="emotion-57"
+              class="emotion-56"
             >
               <span
-                class="emotion-55"
+                class="emotion-57"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1440,7 +1258,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                 </svg>
               </span>
               <span
-                class="emotion-56"
+                class="emotion-58"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1455,20 +1273,20 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
             display="flex"
           />
           <div
-            class="emotion-58"
+            class="emotion-55"
             display="flex"
           >
             <button
-              class="emotion-57"
+              class="emotion-56"
             >
               <span
-                class="emotion-55"
+                class="emotion-57"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1482,7 +1300,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                 </svg>
               </span>
               <span
-                class="emotion-56"
+                class="emotion-58"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1499,29 +1317,29 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-64"
+          class="emotion-54"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-58"
+            class="emotion-55"
             display="flex"
           >
             <button
-              class="emotion-57"
+              class="emotion-56"
             >
               <span
-                class="emotion-55"
+                class="emotion-57"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1535,7 +1353,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
                 </svg>
               </span>
               <span
-                class="emotion-56"
+                class="emotion-58"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"

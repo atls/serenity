@@ -2,7 +2,7 @@
 
 exports[`Project detail snapshots should match latest render snapshot 1`] = `
 <DocumentFragment>
-  .emotion-27 {
+  .emotion-0 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -13,7 +13,7 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-direction: column;
 }
 
-.emotion-28 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23,14 +23,14 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-basis: 80px;
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.emotion-5 {
+.emotion-4 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -38,28 +38,27 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.emotion-0 {
-  color: rgb(0,0,0);
+.emotion-6 {
+  color: rgb(0, 0, 0);
   font-weight: 500;
   font-size: 18px;
   line-height: 1.3;
   font-family: Inter;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-0 {
+@media screen and (min-width: 40em) {
+  .emotion-6 {
     font-size: 22px;
   }
 }
 
-.emotion-2 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -69,7 +68,7 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-basis: 20px;
 }
 
-.emotion-4 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -80,16 +79,16 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-3 {
+.emotion-9 {
   white-space: nowrap;
-  color: rgb(153,153,153);
+  color: rgb(153, 153, 153);
   font-weight: 500;
   font-size: 18px;
   line-height: 1.3;
   font-family: Inter;
 }
 
-.emotion-7 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -99,14 +98,14 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-basis: 5px;
 }
 
-.emotion-8 {
+.emotion-12 {
   line-height: 1.6;
   font-family: Inter;
   font-weight: 400;
   font-size: 13px;
 }
 
-.emotion-10 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -116,7 +115,7 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-basis: 15px;
 }
 
-.emotion-25 {
+.emotion-15 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -131,8 +130,8 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-direction: row;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-25 {
+@media screen and (min-width: 40em) {
+  .emotion-15 {
     -webkit-align-items: flex-start;
     -webkit-box-align: flex-start;
     -ms-flex-align: flex-start;
@@ -140,8 +139,8 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-25 {
+@media screen and (min-width: 52em) {
+  .emotion-15 {
     -webkit-align-items: flex-start;
     -webkit-box-align: flex-start;
     -ms-flex-align: flex-start;
@@ -149,8 +148,8 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   }
 }
 
-@media screen and (min-width:64em) {
-  .emotion-25 {
+@media screen and (min-width: 64em) {
+  .emotion-15 {
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -173,7 +172,7 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-grow: 1;
 }
 
-@media screen and (min-width:40em) {
+@media screen and (min-width: 40em) {
   .emotion-16 {
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
@@ -181,7 +180,7 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   }
 }
 
-@media screen and (min-width:52em) {
+@media screen and (min-width: 52em) {
   .emotion-16 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -189,9 +188,9 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   }
 }
 
-.emotion-11 {
-  color: rgb(190,190,190);
-  background-color: rgb(216,216,216);
+.emotion-18 {
+  color: rgb(190, 190, 190);
+  background-color: rgb(216, 216, 216);
   padding-left: 6px;
   padding-right: 6px;
   font-weight: 500;
@@ -200,7 +199,7 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   font-size: 13px;
 }
 
-.emotion-13 {
+.emotion-19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -210,7 +209,7 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-basis: 16px;
 }
 
-.emotion-15 {
+.emotion-21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -221,7 +220,7 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-grow: 1;
 }
 
-.emotion-17 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -231,23 +230,23 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-basis: 10px;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-17 {
+@media screen and (min-width: 40em) {
+  .emotion-22 {
     -webkit-flex-basis: 20px;
     -ms-flex-preferred-size: 20px;
     flex-basis: 20px;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-17 {
+@media screen and (min-width: 52em) {
+  .emotion-22 {
     -webkit-flex-basis: 40px;
     -ms-flex-preferred-size: 40px;
     flex-basis: 40px;
   }
 }
 
-.emotion-24 {
+.emotion-23 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -258,31 +257,31 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-direction: column-reverse;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-24 {
+@media screen and (min-width: 40em) {
+  .emotion-23 {
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-24 {
+@media screen and (min-width: 52em) {
+  .emotion-23 {
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 }
 
-@media screen and (min-width:64em) {
-  .emotion-24 {
+@media screen and (min-width: 64em) {
+  .emotion-23 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
   }
 }
 
-.emotion-18 {
+.emotion-24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -292,31 +291,31 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-basis: 10px;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-18 {
+@media screen and (min-width: 40em) {
+  .emotion-24 {
     -webkit-flex-basis: 10px;
     -ms-flex-preferred-size: 10px;
     flex-basis: 10px;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-18 {
+@media screen and (min-width: 52em) {
+  .emotion-24 {
     -webkit-flex-basis: 10px;
     -ms-flex-preferred-size: 10px;
     flex-basis: 10px;
   }
 }
 
-@media screen and (min-width:64em) {
-  .emotion-18 {
+@media screen and (min-width: 64em) {
+  .emotion-24 {
     -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
   }
 }
 
-.emotion-20 {
+.emotion-25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -324,46 +323,46 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   padding-right: 0;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-20 {
+@media screen and (min-width: 40em) {
+  .emotion-25 {
     padding-right: 0;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-20 {
+@media screen and (min-width: 52em) {
+  .emotion-25 {
     padding-right: 0;
   }
 }
 
-@media screen and (min-width:64em) {
-  .emotion-20 {
+@media screen and (min-width: 64em) {
+  .emotion-25 {
     padding-right: 24px;
   }
 }
 
-.emotion-19 {
+.emotion-26 {
   white-space: nowrap;
-  color: rgb(153,153,153);
+  color: rgb(153, 153, 153);
   padding-left: 4px;
   font-weight: 600;
   font-size: 12px;
   font-family: Inter;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-19 {
+@media screen and (min-width: 40em) {
+  .emotion-26 {
     padding-left: 4px;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-19 {
+@media screen and (min-width: 52em) {
+  .emotion-26 {
     padding-left: 8px;
   }
 }
 
-.emotion-29 {
+.emotion-30 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -373,14 +372,14 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-basis: 40px;
 }
 
-.emotion-30 {
+.emotion-32 {
   font-size: 15px;
   line-height: 2;
   font-family: Inter;
   font-weight: 400;
 }
 
-.emotion-32 {
+.emotion-33 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -390,13 +389,13 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-basis: 45px;
 }
 
-.emotion-33 {
+.emotion-34 {
   width: 100%;
   height: 1px;
-  background: rgb(235,235,235);
+  background: rgb(235, 235, 235);
 }
 
-.emotion-34 {
+.emotion-35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -406,7 +405,7 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-basis: 28px;
 }
 
-.emotion-41 {
+.emotion-42 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -416,15 +415,15 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-basis: 33px;
 }
 
-.emotion-42 {
-  color: rgb(102,102,102);
+.emotion-44 {
+  color: rgb(102, 102, 102);
   font-weight: 500;
   line-height: 1.6;
   font-family: Inter;
   font-size: 13px;
 }
 
-.emotion-44 {
+.emotion-45 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -434,14 +433,14 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
   flex-basis: 6px;
 }
 
-.emotion-45 {
+.emotion-47 {
   font-size: 15px;
   line-height: 1.6;
   font-family: Inter;
   font-weight: 400;
 }
 
-.emotion-47 {
+.emotion-48 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -452,34 +451,34 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
 }
 
 <div
-    class="emotion-27"
+    class="emotion-0"
     display="flex"
     width="100%"
   >
     <div
-      class="emotion-28"
+      class="emotion-1"
       display="flex"
     >
       <div
-        class="emotion-27"
+        class="emotion-0"
         display="flex"
         width="100%"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
           display="flex"
         >
           <div
-            class="emotion-5"
+            class="emotion-4"
             display="flex"
             width="100%"
           >
             <div
-              class="emotion-1"
+              class="emotion-3"
               display="flex"
             >
               <span
-                class="emotion-0"
+                class="emotion-6"
                 color="black"
                 font-family="primary"
                 font-size="extra,large"
@@ -487,15 +486,15 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
               />
             </div>
             <div
-              class="emotion-2"
+              class="emotion-7"
               display="flex"
             />
             <div
-              class="emotion-4"
+              class="emotion-8"
               display="flex"
             >
               <span
-                class="emotion-3"
+                class="emotion-9"
                 color="mountainmist"
                 font-family="primary"
                 font-size="extra"
@@ -507,30 +506,30 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
           </div>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-10"
           display="flex"
         />
         <div
-          class="emotion-1"
+          class="emotion-3"
           display="flex"
         >
           <span
-            class="emotion-8"
+            class="emotion-12"
             font-family="primary"
             font-size="normal"
             font-weight="normal"
           />
         </div>
         <div
-          class="emotion-10"
+          class="emotion-13"
           display="flex"
         />
         <div
-          class="emotion-1"
+          class="emotion-3"
           display="flex"
         >
           <div
-            class="emotion-25"
+            class="emotion-15"
             display="flex"
             width="100%"
           >
@@ -539,11 +538,11 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
               display="flex"
             >
               <div
-                class="emotion-1"
+                class="emotion-3"
                 display="flex"
               >
                 <span
-                  class="emotion-11"
+                  class="emotion-18"
                   color="silver"
                   font-family="primary"
                   font-size="normal"
@@ -551,32 +550,32 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
                 />
               </div>
               <div
-                class="emotion-13"
+                class="emotion-19"
                 display="flex"
               />
               <div
-                class="emotion-4"
+                class="emotion-8"
                 display="flex"
               />
               <div
-                class="emotion-15"
+                class="emotion-21"
                 display="flex"
               />
             </div>
             <div
-              class="emotion-17"
+              class="emotion-22"
               display="flex"
             />
             <div
-              class="emotion-24"
+              class="emotion-23"
               display="flex"
             >
               <div
-                class="emotion-18"
+                class="emotion-24"
                 display="flex"
               />
               <div
-                class="emotion-20"
+                class="emotion-25"
                 display="flex"
               >
                 <svg
@@ -604,7 +603,7 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
                   </g>
                 </svg>
                 <span
-                  class="emotion-19"
+                  class="emotion-26"
                   color="mountainmist"
                   font-family="primary"
                   font-size="tiny"
@@ -614,11 +613,11 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
                 </span>
               </div>
               <div
-                class="emotion-18"
+                class="emotion-24"
                 display="flex"
               />
               <div
-                class="emotion-1"
+                class="emotion-3"
                 display="flex"
               >
                 <svg
@@ -645,7 +644,7 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
                   </g>
                 </svg>
                 <span
-                  class="emotion-19"
+                  class="emotion-26"
                   color="mountainmist"
                   font-family="primary"
                   font-size="tiny"
@@ -660,37 +659,37 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
       </div>
     </div>
     <div
-      class="emotion-29"
+      class="emotion-30"
       display="flex"
     />
     <div
-      class="emotion-1"
+      class="emotion-3"
       display="flex"
     >
       <span
-        class="emotion-30"
+        class="emotion-32"
         font-family="primary"
         font-size="regular"
         font-weight="normal"
       />
     </div>
     <div
-      class="emotion-32"
-      display="flex"
-    />
-    <div
       class="emotion-33"
+      display="flex"
     />
     <div
       class="emotion-34"
+    />
+    <div
+      class="emotion-35"
       display="flex"
     />
     <div
-      class="emotion-1"
+      class="emotion-3"
       display="flex"
     >
       <span
-        class="emotion-30"
+        class="emotion-32"
         font-family="primary"
         font-size="regular"
         font-weight="normal"
@@ -699,30 +698,30 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
       </span>
     </div>
     <div
-      class="emotion-2"
+      class="emotion-7"
       display="flex"
     />
     <div
-      class="emotion-1"
+      class="emotion-3"
       display="flex"
     />
     <div
-      class="emotion-2"
+      class="emotion-7"
       display="flex"
     />
     <div
-      class="emotion-33"
+      class="emotion-34"
     />
     <div
-      class="emotion-41"
+      class="emotion-42"
       display="flex"
     />
     <div
-      class="emotion-1"
+      class="emotion-3"
       display="flex"
     >
       <span
-        class="emotion-42"
+        class="emotion-44"
         color="stormdust"
         font-family="primary"
         font-size="normal"
@@ -732,30 +731,30 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
       </span>
     </div>
     <div
-      class="emotion-44"
+      class="emotion-45"
       display="flex"
     />
     <div
-      class="emotion-1"
+      class="emotion-3"
       display="flex"
     >
       <span
-        class="emotion-45"
+        class="emotion-47"
         font-family="primary"
         font-size="regular"
         font-weight="normal"
       />
     </div>
     <div
-      class="emotion-47"
+      class="emotion-48"
       display="flex"
     />
     <div
-      class="emotion-1"
+      class="emotion-3"
       display="flex"
     >
       <span
-        class="emotion-42"
+        class="emotion-44"
         color="stormdust"
         font-family="primary"
         font-size="normal"
@@ -765,15 +764,15 @@ exports[`Project detail snapshots should match latest render snapshot 1`] = `
       </span>
     </div>
     <div
-      class="emotion-44"
+      class="emotion-45"
       display="flex"
     />
     <div
-      class="emotion-1"
+      class="emotion-3"
       display="flex"
     >
       <span
-        class="emotion-45"
+        class="emotion-47"
         font-family="primary"
         font-size="regular"
         font-weight="normal"

@@ -2,190 +2,7 @@
 
 exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = `
 <DocumentFragment>
-  .emotion-4 {
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 12px;
-  min-height: 50px;
-  width: 100%;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: 1px solid rgba(0,0,0,0.08);
-  background-color: #ffffff;
-  outline: none;
-  cursor: pointer;
-}
-
-.emotion-4 ul,
-.emotion-4 li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.emotion-4:hover,
-.emotion-4.rc-select-focused {
-  border: 1px solid rgba(0,0,0,0.2);
-}
-
-.emotion-4.rc-select-disabled {
-  cursor: not-allowed;
-}
-
-.emotion-4.rc-select-disabled .rc-select-selection {
-  opacity: 0.3;
-  background-color: #dedede;
-}
-
-.emotion-4:hover.rc-select-disabled {
-  border: 1px solid rgba(0,0,0,0.08);
-}
-
-.emotion-4 .rc-select-arrow {
-  height: 100%;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  top: 0px;
-  right: 20px;
-}
-
-.emotion-4:hover .rc-select-arrow rect,
-.emotion-4.rc-select-focused .rc-select-arrow rect {
-  fill: #000000;
-}
-
-.emotion-4 .rc-select-selection {
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 0 40px 5px 20px;
-}
-
-.emotion-4 .rc-select-selection .rc-select-selection__rendered {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-4 .rc-select-selection .rc-select-selection__rendered .rc-select-selection__placeholder {
-  position: absolute;
-  top: 50%;
-  margin-top: -7.5px;
-}
-
-.emotion-4 .rc-select-selection__choice {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #f3f3f3;
-  border-radius: 4px;
-  float: left;
-  height: 30px;
-  box-sizing: border-box;
-  padding: 5px 10px 5px 15px;
-  margin-right: 5px;
-  margin-top: 5px;
-  position: relative;
-  overflow: hidden;
-  cursor: auto;
-}
-
-.emotion-4 .rc-select-selection__choice .rc-select-selection__choice__remove {
-  margin-left: 10px;
-}
-
-.emotion-4 .rc-select-selection__choice .rc-select-selection__choice__remove .rc-select-selection__choice__remove-icon {
-  font-style: normal;
-  color: #9e9e9e;
-  cursor: pointer;
-}
-
-.emotion-4 .rc-select-selection__choice .rc-select-selection__choice__remove .rc-select-selection__choice__remove-icon:hover {
-  color: #000000;
-}
-
-.emotion-4 .rc-select-search {
-  position: static;
-  float: left;
-  width: auto;
-  max-width: 100%;
-  padding: 0;
-  margin-top: 5px;
-  height: 30px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-4 .rc-select-search .rc-select-search__field {
-  border: none;
-  font-size: 16px;
-  background: transparent;
-  outline: 0px;
-  width: 2px;
-  padding: 0px;
-  cursor: pointer;
-  display: inline-block;
-}
-
-@media (max-width:640px) {
-  .emotion-4 .rc-select-search .rc-select-search__field {
-    display: none;
-  }
-}
-
-.emotion-4 .rc-select-selection-selected-value {
-  opacity: 1 !important;
-  position: absolute;
-  top: 50%;
-  margin-top: -7.5px;
-}
-
-.emotion-239 {
+  .emotion-0 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -196,7 +13,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   flex-direction: column;
 }
 
-.emotion-11 {
+.emotion-1 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -210,7 +27,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   box-sizing: border-box;
 }
 
-.emotion-0 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -220,21 +37,21 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   flex-basis: 20px;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.emotion-1 {
+.emotion-4 {
   font-weight: 500;
   line-height: 1.6;
   font-family: Inter;
   font-size: 13px;
 }
 
-.emotion-3 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -244,7 +61,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   flex-basis: 16px;
 }
 
-.emotion-9 {
+.emotion-7 {
   box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
@@ -256,15 +73,15 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   flex-direction: column;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-9 {
+@media screen and (min-width: 40em) {
+  .emotion-7 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
   }
 }
 
-.emotion-5 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -278,23 +95,23 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   flex-basis: 100%;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-5 {
+@media screen and (min-width: 40em) {
+  .emotion-8 {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-5 {
+@media screen and (min-width: 52em) {
+  .emotion-8 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
   }
 }
 
-.emotion-6 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -307,7 +124,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   flex-shrink: 0;
 }
 
-.emotion-12 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -317,13 +134,13 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   flex-basis: 30px;
 }
 
-.emotion-13 {
+.emotion-12 {
   width: 100%;
   height: 1px;
-  background: rgb(235,235,235);
+  background: rgb(235, 235, 235);
 }
 
-.emotion-14 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -333,7 +150,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   flex-basis: 22px;
 }
 
-.emotion-27 {
+.emotion-19 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -344,7 +161,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   flex-direction: row;
 }
 
-.emotion-21 {
+.emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -354,7 +171,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   flex-basis: 180px;
 }
 
-.emotion-20 {
+.emotion-21 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -362,7 +179,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   display: flex;
 }
 
-.emotion-18 {
+.emotion-22 {
   box-sizing: border-box;
   outline: none;
   border: none;
@@ -370,9 +187,9 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   font-family: Inter;
   font-weight: 500;
   border-radius: 4px;
-  border: 1px solid rgba(0,0,0,0.08);
-  color: rgb(0,0,0);
-  background-color: rgb(255,255,255);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   font-size: 12px;
   height: 50px;
   padding-left: 20px;
@@ -381,23 +198,23 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   border-bottom-right-radius: 0;
 }
 
-.emotion-18::-webkit-input-placeholder {
-  color: rgb(190,190,190);
+.emotion-22::-webkit-input-placeholder {
+  color: rgb(190, 190, 190);
 }
 
-.emotion-18::-moz-placeholder {
-  color: rgb(190,190,190);
+.emotion-22::-moz-placeholder {
+  color: rgb(190, 190, 190);
 }
 
-.emotion-18:-ms-input-placeholder {
-  color: rgb(190,190,190);
+.emotion-22:-ms-input-placeholder {
+  color: rgb(190, 190, 190);
 }
 
-.emotion-18::placeholder {
-  color: rgb(190,190,190);
+.emotion-22::placeholder {
+  color: rgb(190, 190, 190);
 }
 
-.emotion-19 {
+.emotion-23 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -410,9 +227,9 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   font-family: Inter;
   font-weight: 500;
   border-radius: 4px;
-  border: 1px solid rgba(0,0,0,0.08);
-  color: rgb(0,0,0);
-  background-color: rgb(255,255,255);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   font-size: 12px;
   padding-right: 20px;
   padding-left: 20px;
@@ -422,7 +239,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   border-left-width: 0;
 }
 
-.emotion-22 {
+.emotion-24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -432,7 +249,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   flex-basis: 24px;
 }
 
-.emotion-38 {
+.emotion-39 {
   font-family: Inter;
   box-sizing: border-box;
   display: -webkit-box;
@@ -452,23 +269,24 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   font-size: 12px;
   padding: 0px 16px;
   height: 50px;
-  border: 1px solid rgba(0,0,0,0.08);
-  color: rgb(158,158,158);
-  background: rgb(255,255,255);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: rgb(158, 158, 158);
+  background: rgb(255, 255, 255);
   border-radius: 4px;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-38:active {
+.emotion-39:active {
   -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
 }
 
-.emotion-36 {
+.emotion-40 {
   margin-right: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -476,9 +294,9 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   display: flex;
 }
 
-.emotion-37 {
+.emotion-41 {
   white-space: normal;
-  color: rgb(153,153,153);
+  color: rgb(153, 153, 153);
   font-size: 12px;
   font-weight: 600;
   line-height: 1.3;
@@ -486,7 +304,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   font-family: Inter;
 }
 
-.emotion-64 {
+.emotion-66 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -496,23 +314,23 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   flex-basis: 0;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-64 {
+@media screen and (min-width: 40em) {
+  .emotion-66 {
     -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-64 {
+@media screen and (min-width: 52em) {
+  .emotion-66 {
     -webkit-flex-basis: 22px;
     -ms-flex-preferred-size: 22px;
     flex-basis: 22px;
   }
 }
 
-.emotion-65 {
+.emotion-67 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -526,8 +344,8 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   flex-basis: 0;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-65 {
+@media screen and (min-width: 40em) {
+  .emotion-67 {
     -webkit-box-flex: 0;
     -webkit-flex-grow: 0;
     -ms-flex-positive: 0;
@@ -538,8 +356,8 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-65 {
+@media screen and (min-width: 52em) {
+  .emotion-67 {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
@@ -550,12 +368,13 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   }
 }
 
-.emotion-169 {
+.emotion-118 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -564,7 +383,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
   flex-direction: row;
 }
 
-.emotion-120 {
+.emotion-119 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -574,25 +393,25 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
 }
 
 <div
-    class="emotion-239"
+    class="emotion-0"
     display="flex"
     width="100%"
   >
     <div
-      class="emotion-11"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-0"
+        class="emotion-2"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -601,28 +420,28 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-9"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <div
-              class="emotion-4  rc-select rc-select-enabled"
+              class="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop).  rc-select rc-select-enabled"
             >
               <div
                 aria-autocomplete="list"
-                aria-controls="test-uuid"
+                aria-controls="6b5d39bb-1216-4daf-a9b9-d734b9c957d0"
                 aria-expanded="false"
                 aria-haspopup="true"
                 class="rc-select-selection
@@ -662,7 +481,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                       stroke-width="1"
                     >
                       <g
-                        fill="rgb(153, 153, 153)"
+                        fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
                         fill-rule="nonzero"
                         id="order-(executor)"
                         transform="translate(-270.000000, -25.000000)"
@@ -693,19 +512,19 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </div>
           </div>
           <div
-            class="emotion-6"
+            class="emotion-9"
             display="flex"
           />
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <div
-              class="emotion-4  rc-select rc-select-disabled"
+              class="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop).  rc-select rc-select-disabled"
             >
               <div
                 aria-autocomplete="list"
-                aria-controls="test-uuid"
+                aria-controls="f0983f12-99cd-4d03-8103-0dc36f108a4b"
                 aria-expanded="false"
                 aria-haspopup="true"
                 class="rc-select-selection
@@ -745,7 +564,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                       stroke-width="1"
                     >
                       <g
-                        fill="rgb(153, 153, 153)"
+                        fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
                         fill-rule="nonzero"
                         id="order-(executor)"
                         transform="translate(-270.000000, -25.000000)"
@@ -779,27 +598,27 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
       </div>
     </div>
     <div
-      class="emotion-12"
+      class="emotion-11"
       display="flex"
+    />
+    <div
+      class="emotion-12"
     />
     <div
       class="emotion-13"
-    />
-    <div
-      class="emotion-14"
       display="flex"
     />
     <div
-      class="emotion-11"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -808,34 +627,34 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-27"
+          class="emotion-19"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-21"
+            class="emotion-20"
             display="flex"
           >
             <div
-              class="emotion-20"
+              class="emotion-21"
             >
               <input
-                class="emotion-18"
+                class="emotion-22"
                 min="0"
                 placeholder="Длина"
                 type="number"
                 value=""
               />
               <span
-                class="emotion-19"
+                class="emotion-23"
                 color="black"
                 font-family="primary"
                 font-weight="medium"
@@ -845,25 +664,25 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </div>
           </div>
           <div
-            class="emotion-22"
+            class="emotion-24"
             display="flex"
           />
           <div
-            class="emotion-21"
+            class="emotion-20"
             display="flex"
           >
             <div
-              class="emotion-20"
+              class="emotion-21"
             >
               <input
-                class="emotion-18"
+                class="emotion-22"
                 min="0"
                 placeholder="Ширина"
                 type="number"
                 value=""
               />
               <span
-                class="emotion-19"
+                class="emotion-23"
                 color="black"
                 font-family="primary"
                 font-weight="medium"
@@ -876,27 +695,27 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
       </div>
     </div>
     <div
-      class="emotion-12"
+      class="emotion-11"
       display="flex"
+    />
+    <div
+      class="emotion-12"
     />
     <div
       class="emotion-13"
-    />
-    <div
-      class="emotion-14"
       display="flex"
     />
     <div
-      class="emotion-11"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -905,33 +724,33 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-9"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -945,7 +764,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -956,24 +775,24 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-6"
+            class="emotion-9"
             display="flex"
           />
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -987,7 +806,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1000,33 +819,33 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
         </div>
       </div>
       <div
-        class="emotion-14"
+        class="emotion-13"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-9"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1040,7 +859,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1051,24 +870,24 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-6"
+            class="emotion-9"
             display="flex"
           />
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1082,7 +901,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1095,33 +914,33 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
         </div>
       </div>
       <div
-        class="emotion-14"
+        class="emotion-13"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-9"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1135,7 +954,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1146,38 +965,38 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-64"
+            class="emotion-66"
             display="flex"
           />
           <div
-            class="emotion-65"
+            class="emotion-67"
             display="flex"
           />
         </div>
       </div>
     </div>
     <div
-      class="emotion-12"
+      class="emotion-11"
       display="flex"
+    />
+    <div
+      class="emotion-12"
     />
     <div
       class="emotion-13"
-    />
-    <div
-      class="emotion-14"
       display="flex"
     />
     <div
-      class="emotion-11"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -1186,33 +1005,33 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-9"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1226,7 +1045,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1237,24 +1056,24 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-6"
+            class="emotion-9"
             display="flex"
           />
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1268,7 +1087,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1281,33 +1100,33 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
         </div>
       </div>
       <div
-        class="emotion-14"
+        class="emotion-13"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-9"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1321,7 +1140,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1332,24 +1151,24 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-6"
+            class="emotion-9"
             display="flex"
           />
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1363,7 +1182,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1376,33 +1195,33 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
         </div>
       </div>
       <div
-        class="emotion-14"
+        class="emotion-13"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-9"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1416,7 +1235,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1427,24 +1246,24 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-6"
+            class="emotion-9"
             display="flex"
           />
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1458,7 +1277,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1472,27 +1291,27 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
       </div>
     </div>
     <div
-      class="emotion-12"
+      class="emotion-11"
       display="flex"
+    />
+    <div
+      class="emotion-12"
     />
     <div
       class="emotion-13"
-    />
-    <div
-      class="emotion-14"
       display="flex"
     />
     <div
-      class="emotion-11"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -1501,33 +1320,33 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-169"
+          class="emotion-118"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-120"
+            class="emotion-119"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1541,7 +1360,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1552,20 +1371,20 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-120"
+            class="emotion-119"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1579,7 +1398,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1590,20 +1409,20 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-120"
+            class="emotion-119"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1617,7 +1436,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1628,20 +1447,20 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-120"
+            class="emotion-119"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1655,7 +1474,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1666,20 +1485,20 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-120"
+            class="emotion-119"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1693,7 +1512,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1704,20 +1523,20 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-120"
+            class="emotion-119"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1731,7 +1550,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1742,20 +1561,20 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-120"
+            class="emotion-119"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1769,7 +1588,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1780,20 +1599,20 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-120"
+            class="emotion-119"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1807,7 +1626,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1818,20 +1637,20 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-120"
+            class="emotion-119"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1845,7 +1664,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1856,20 +1675,20 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-120"
+            class="emotion-119"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1883,7 +1702,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1894,20 +1713,20 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-120"
+            class="emotion-119"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1921,7 +1740,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1932,20 +1751,20 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-120"
+            class="emotion-119"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1959,7 +1778,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1970,20 +1789,20 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-120"
+            class="emotion-119"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1997,7 +1816,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -2011,23 +1830,23 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
       </div>
     </div>
     <div
-      class="emotion-13"
+      class="emotion-12"
     />
     <div
-      class="emotion-14"
+      class="emotion-13"
       display="flex"
     />
     <div
-      class="emotion-11"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -2036,33 +1855,33 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-9"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -2076,7 +1895,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -2087,24 +1906,24 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-6"
+            class="emotion-9"
             display="flex"
           />
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -2118,7 +1937,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -2131,33 +1950,33 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
         </div>
       </div>
       <div
-        class="emotion-14"
+        class="emotion-13"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-9"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -2171,7 +1990,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -2182,38 +2001,38 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-64"
+            class="emotion-66"
             display="flex"
           />
           <div
-            class="emotion-65"
+            class="emotion-67"
             display="flex"
           />
         </div>
       </div>
     </div>
     <div
-      class="emotion-12"
+      class="emotion-11"
       display="flex"
+    />
+    <div
+      class="emotion-12"
     />
     <div
       class="emotion-13"
-    />
-    <div
-      class="emotion-14"
       display="flex"
     />
     <div
-      class="emotion-11"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -2222,33 +2041,33 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-9"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -2262,7 +2081,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -2273,24 +2092,24 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-6"
+            class="emotion-9"
             display="flex"
           />
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -2304,7 +2123,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -2317,33 +2136,33 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
         </div>
       </div>
       <div
-        class="emotion-14"
+        class="emotion-13"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-9"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -2357,7 +2176,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -2368,24 +2187,24 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-6"
+            class="emotion-9"
             display="flex"
           />
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -2399,7 +2218,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -2412,33 +2231,33 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
         </div>
       </div>
       <div
-        class="emotion-14"
+        class="emotion-13"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-9"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-5"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-38"
+              class="emotion-39"
             >
               <span
-                class="emotion-36"
+                class="emotion-40"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -2452,7 +2271,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
                 </svg>
               </span>
               <span
-                class="emotion-37"
+                class="emotion-41"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -2463,22 +2282,22 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             </button>
           </div>
           <div
-            class="emotion-64"
+            class="emotion-66"
             display="flex"
           />
           <div
-            class="emotion-65"
+            class="emotion-67"
             display="flex"
           />
         </div>
       </div>
     </div>
     <div
-      class="emotion-12"
+      class="emotion-11"
       display="flex"
     />
     <div
-      class="emotion-13"
+      class="emotion-12"
     />
   </div>
 </DocumentFragment>

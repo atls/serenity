@@ -21,7 +21,7 @@ export default class Page extends React.Component {
     return (
       <>
         <Seo />
-        <RegistrationCompletePage {...this.props} />
+        <RegistrationCompletePage {...(this as any).props} />
       </>
     )
   }

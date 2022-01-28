@@ -40,6 +40,8 @@
   "devDependencies": {
     "@atlantis-lab/tsconfig": "^0.1.12",
     "@atls/code-service": "^0.0.10",
+    "@atls/config-jest": "^0.0.2",
+    "@jest/core": "^27.4.7",
     "@types/eslint": "^8",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.6.0",

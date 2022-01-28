@@ -2,7 +2,7 @@
 
 exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
 <DocumentFragment>
-  .emotion-150 {
+  .emotion-0 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -13,7 +13,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   flex-direction: column;
 }
 
-.emotion-36 {
+.emotion-1 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -27,7 +27,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.emotion-0 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -37,21 +37,21 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   flex-basis: 20px;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.emotion-1 {
+.emotion-4 {
   font-weight: 500;
   line-height: 1.6;
   font-family: Inter;
   font-size: 13px;
 }
 
-.emotion-3 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -61,7 +61,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   flex-basis: 16px;
 }
 
-.emotion-13 {
+.emotion-7 {
   box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
@@ -73,15 +73,15 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   flex-direction: column;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-13 {
+@media screen and (min-width: 40em) {
+  .emotion-7 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
   }
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -95,23 +95,23 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   flex-basis: 100%;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-7 {
+@media screen and (min-width: 40em) {
+  .emotion-8 {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-7 {
+@media screen and (min-width: 52em) {
+  .emotion-8 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
   }
 }
 
-.emotion-6 {
+.emotion-9 {
   font-family: Inter;
   box-sizing: border-box;
   display: -webkit-box;
@@ -131,23 +131,24 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   font-size: 12px;
   padding: 0px 16px;
   height: 50px;
-  border: 1px solid rgba(0,0,0,0.08);
-  color: rgb(158,158,158);
-  background: rgb(255,255,255);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: rgb(158, 158, 158);
+  background: rgb(255, 255, 255);
   border-radius: 4px;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-6:active {
+.emotion-9:active {
   -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
 }
 
-.emotion-4 {
+.emotion-10 {
   margin-right: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -155,9 +156,9 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   display: flex;
 }
 
-.emotion-5 {
+.emotion-11 {
   white-space: normal;
-  color: rgb(153,153,153);
+  color: rgb(153, 153, 153);
   font-size: 12px;
   font-weight: 600;
   line-height: 1.3;
@@ -165,7 +166,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   font-family: Inter;
 }
 
-.emotion-8 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -178,7 +179,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   flex-shrink: 0;
 }
 
-.emotion-15 {
+.emotion-17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -188,7 +189,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   flex-basis: 22px;
 }
 
-.emotion-32 {
+.emotion-36 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -198,23 +199,23 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   flex-basis: 0;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-32 {
+@media screen and (min-width: 40em) {
+  .emotion-36 {
     -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-32 {
+@media screen and (min-width: 52em) {
+  .emotion-36 {
     -webkit-flex-basis: 22px;
     -ms-flex-preferred-size: 22px;
     flex-basis: 22px;
   }
 }
 
-.emotion-33 {
+.emotion-37 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -228,8 +229,8 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   flex-basis: 0;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-33 {
+@media screen and (min-width: 40em) {
+  .emotion-37 {
     -webkit-box-flex: 0;
     -webkit-flex-grow: 0;
     -ms-flex-positive: 0;
@@ -240,8 +241,8 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-33 {
+@media screen and (min-width: 52em) {
+  .emotion-37 {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
@@ -252,7 +253,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   }
 }
 
-.emotion-37 {
+.emotion-38 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -262,32 +263,32 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
   flex-basis: 30px;
 }
 
-.emotion-38 {
+.emotion-39 {
   width: 100%;
   height: 1px;
-  background: rgb(235,235,235);
+  background: rgb(235, 235, 235);
 }
 
 <div
-    class="emotion-150"
+    class="emotion-0"
     display="flex"
     width="100%"
   >
     <div
-      class="emotion-36"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-0"
+        class="emotion-2"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -296,33 +297,33 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-13"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -336,7 +337,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -347,24 +348,24 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
             </button>
           </div>
           <div
-            class="emotion-8"
+            class="emotion-12"
             display="flex"
           />
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -378,7 +379,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -391,33 +392,33 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
         </div>
       </div>
       <div
-        class="emotion-15"
+        class="emotion-17"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-13"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -431,7 +432,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -442,24 +443,24 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
             </button>
           </div>
           <div
-            class="emotion-8"
+            class="emotion-12"
             display="flex"
           />
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -473,7 +474,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -486,33 +487,33 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
         </div>
       </div>
       <div
-        class="emotion-15"
+        class="emotion-17"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-13"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -526,7 +527,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -537,38 +538,38 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
             </button>
           </div>
           <div
-            class="emotion-32"
+            class="emotion-36"
             display="flex"
           />
           <div
-            class="emotion-33"
+            class="emotion-37"
             display="flex"
           />
         </div>
       </div>
     </div>
     <div
-      class="emotion-37"
-      display="flex"
-    />
-    <div
       class="emotion-38"
-    />
-    <div
-      class="emotion-15"
       display="flex"
     />
     <div
-      class="emotion-36"
+      class="emotion-39"
+    />
+    <div
+      class="emotion-17"
+      display="flex"
+    />
+    <div
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -577,33 +578,33 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-13"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -617,7 +618,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -628,24 +629,24 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
             </button>
           </div>
           <div
-            class="emotion-8"
+            class="emotion-12"
             display="flex"
           />
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -659,7 +660,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -673,27 +674,27 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
       </div>
     </div>
     <div
-      class="emotion-37"
-      display="flex"
-    />
-    <div
       class="emotion-38"
-    />
-    <div
-      class="emotion-15"
       display="flex"
     />
     <div
-      class="emotion-36"
+      class="emotion-39"
+    />
+    <div
+      class="emotion-17"
+      display="flex"
+    />
+    <div
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -702,33 +703,33 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-13"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -742,7 +743,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -753,24 +754,24 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
             </button>
           </div>
           <div
-            class="emotion-8"
+            class="emotion-12"
             display="flex"
           />
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -784,7 +785,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -797,33 +798,33 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
         </div>
       </div>
       <div
-        class="emotion-15"
+        class="emotion-17"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-13"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -837,7 +838,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -848,38 +849,38 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
             </button>
           </div>
           <div
-            class="emotion-32"
+            class="emotion-36"
             display="flex"
           />
           <div
-            class="emotion-33"
+            class="emotion-37"
             display="flex"
           />
         </div>
       </div>
     </div>
     <div
-      class="emotion-37"
-      display="flex"
-    />
-    <div
       class="emotion-38"
-    />
-    <div
-      class="emotion-15"
       display="flex"
     />
     <div
-      class="emotion-36"
+      class="emotion-39"
+    />
+    <div
+      class="emotion-17"
+      display="flex"
+    />
+    <div
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -888,33 +889,33 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-13"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -928,7 +929,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -939,24 +940,24 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
             </button>
           </div>
           <div
-            class="emotion-8"
+            class="emotion-12"
             display="flex"
           />
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -970,7 +971,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -983,33 +984,33 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
         </div>
       </div>
       <div
-        class="emotion-15"
+        class="emotion-17"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-13"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1023,7 +1024,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1034,38 +1035,38 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
             </button>
           </div>
           <div
-            class="emotion-32"
+            class="emotion-36"
             display="flex"
           />
           <div
-            class="emotion-33"
+            class="emotion-37"
             display="flex"
           />
         </div>
       </div>
     </div>
     <div
-      class="emotion-37"
-      display="flex"
-    />
-    <div
       class="emotion-38"
-    />
-    <div
-      class="emotion-15"
       display="flex"
     />
     <div
-      class="emotion-36"
+      class="emotion-39"
+    />
+    <div
+      class="emotion-17"
+      display="flex"
+    />
+    <div
+      class="emotion-1"
       display="flex"
       width="100%"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <span
-          class="emotion-1"
+          class="emotion-4"
           font-family="primary"
           font-size="normal"
           font-weight="medium"
@@ -1074,33 +1075,33 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
         </span>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-5"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-13"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1114,7 +1115,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1125,24 +1126,24 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
             </button>
           </div>
           <div
-            class="emotion-8"
+            class="emotion-12"
             display="flex"
           />
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1156,7 +1157,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1169,33 +1170,33 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
         </div>
       </div>
       <div
-        class="emotion-15"
+        class="emotion-17"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-13"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1209,7 +1210,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1220,24 +1221,24 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
             </button>
           </div>
           <div
-            class="emotion-8"
+            class="emotion-12"
             display="flex"
           />
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1251,7 +1252,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1264,33 +1265,33 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
         </div>
       </div>
       <div
-        class="emotion-15"
+        class="emotion-17"
         display="flex"
       />
       <div
-        class="emotion-2"
+        class="emotion-3"
         display="flex"
       >
         <div
-          class="emotion-13"
+          class="emotion-7"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-7"
+            class="emotion-8"
             display="flex"
           >
             <button
-              class="emotion-6"
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
                 <svg
                   color="#999999"
                   fill="none"
                   height="18"
-                  stroke="#999999"
+                  stroke="{props.color || '#000000'} // eslint-disable react/destructuring-assignment"
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
                   stroke-width="2"
@@ -1304,7 +1305,7 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
                 </svg>
               </span>
               <span
-                class="emotion-5"
+                class="emotion-11"
                 color="mountainmist"
                 font-family="primary"
                 font-size="tiny"
@@ -1315,22 +1316,22 @@ exports[`Welding worksheet snapshots should match latest render snapshot 1`] = `
             </button>
           </div>
           <div
-            class="emotion-32"
+            class="emotion-36"
             display="flex"
           />
           <div
-            class="emotion-33"
+            class="emotion-37"
             display="flex"
           />
         </div>
       </div>
     </div>
     <div
-      class="emotion-37"
+      class="emotion-38"
       display="flex"
     />
     <div
-      class="emotion-38"
+      class="emotion-39"
     />
   </div>
 </DocumentFragment>

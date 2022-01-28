@@ -21,7 +21,7 @@ export default class Page extends React.Component {
     return (
       <>
         <Seo />
-        <RecoveryCompletePage {...this.props} />
+        <RecoveryCompletePage {...(this as any).props} />
       </>
     )
   }

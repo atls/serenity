@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@apollo/client": "^3.5.8",
-    "@apollo/react-testing": "3.1.4",
+    "@apollo/react-testing": "4.0.0",
     "@testing-library/react": "9.5.0",
     "@ui/button": "0.3.1",
     "@ui/drawer": "0.3.1",

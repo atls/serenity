@@ -2,7 +2,7 @@
 
 exports[`Specialists detail snapshots should match latest render snapshot 1`] = `
 <DocumentFragment>
-  .emotion-98 {
+  .emotion-0 {
   overflow: hidden;
   width: 100%;
   display: -webkit-box;
@@ -14,7 +14,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-direction: column;
 }
 
-.emotion-0 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,18 +24,18 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 46px;
 }
 
-.emotion-17 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
-.emotion-16 {
+.emotion-3 {
   max-width: 1200px;
   width: 100%;
   display: -webkit-box;
@@ -47,21 +47,21 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   box-sizing: border-box;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-16 {
+@media screen and (min-width: 40em) {
+  .emotion-3 {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-16 {
+@media screen and (min-width: 52em) {
+  .emotion-3 {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 
-.emotion-15 {
+.emotion-4 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -69,14 +69,13 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.emotion-11 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -86,7 +85,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 600px;
 }
 
-.emotion-10 {
+.emotion-6 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -97,14 +96,14 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-direction: column;
 }
 
-.emotion-2 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.emotion-5 {
+.emotion-8 {
   box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
@@ -116,28 +115,28 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-direction: column;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-5 {
+@media screen and (min-width: 40em) {
+  .emotion-8 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
   }
 }
 
-.emotion-1 {
+.emotion-10 {
   font-size: 24px;
   line-height: 1.3;
   font-weight: 700;
   font-family: Inter;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-1 {
+@media screen and (min-width: 40em) {
+  .emotion-10 {
     font-size: 32px;
   }
 }
 
-.emotion-3 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -147,7 +146,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 0;
 }
 
-.emotion-4 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -158,7 +157,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   align-items: center;
 }
 
-.emotion-7 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -168,32 +167,32 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 13px;
 }
 
-.emotion-9 {
+.emotion-14 {
   display: block;
 }
 
-.emotion-8 {
+.emotion-15 {
   text-transform: none;
-  color: rgb(102,102,102);
+  color: rgb(102, 102, 102);
   font-size: 18px;
   line-height: 1.6;
   font-family: Inter;
   font-weight: 400;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-8 {
+@media screen and (min-width: 40em) {
+  .emotion-15 {
     font-size: 22px;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-8 {
+@media screen and (min-width: 52em) {
+  .emotion-15 {
     font-size: 28px;
   }
 }
 
-.emotion-12 {
+.emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -203,31 +202,33 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 40px;
 }
 
-.emotion-13 {
-  background: rgb(216,216,216);
+.emotion-18 {
+  background: rgb(216, 216, 216);
   border-radius: 50%;
+  -webkit-background-position: center;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
   background-size: cover;
   width: 100px;
   height: 100px;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-13 {
+@media screen and (min-width: 40em) {
+  .emotion-18 {
     width: 100px;
     height: 100px;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-13 {
+@media screen and (min-width: 52em) {
+  .emotion-18 {
     width: 160px;
     height: 160px;
   }
 }
 
-.emotion-18 {
+.emotion-19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -237,21 +238,21 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 42px;
 }
 
-.emotion-19 {
+.emotion-20 {
   width: 100%;
   height: 1px;
-  background: rgb(235,235,235);
+  background: rgb(235, 235, 235);
 }
 
-.emotion-69 {
+.emotion-21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgb(252,252,252);
+  background-color: rgb(252, 252, 252);
 }
 
-.emotion-20 {
+.emotion-23 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -261,7 +262,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 32px;
 }
 
-.emotion-64 {
+.emotion-26 {
   box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
@@ -273,23 +274,23 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-direction: column;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-64 {
+@media screen and (min-width: 40em) {
+  .emotion-26 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-64 {
+@media screen and (min-width: 52em) {
+  .emotion-26 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
   }
 }
 
-.emotion-30 {
+.emotion-28 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -304,15 +305,15 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-direction: column;
 }
 
-.emotion-21 {
-  color: rgb(102,102,102);
+.emotion-30 {
+  color: rgb(102, 102, 102);
   line-height: 1.6;
   font-weight: 500;
   font-family: Inter;
   font-size: 13px;
 }
 
-.emotion-23 {
+.emotion-31 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -322,7 +323,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 8px;
 }
 
-.emotion-24 {
+.emotion-33 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -332,19 +333,19 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   height: 24px;
 }
 
-.emotion-24:last-of-type {
+.emotion-33:last-of-type {
   padding-right: 0;
 }
 
-.emotion-24 > svg {
+.emotion-33>svg {
   fill: #CCCCCC;
 }
 
-.emotion-24:nth-of-type(-n+0) > svg {
+.emotion-33:nth-of-type(-n+0)>svg {
   fill: black;
 }
 
-.emotion-32 {
+.emotion-38 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -354,23 +355,23 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 20px;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-32 {
+@media screen and (min-width: 40em) {
+  .emotion-38 {
     -webkit-flex-basis: 20px;
     -ms-flex-preferred-size: 20px;
     flex-basis: 20px;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-32 {
+@media screen and (min-width: 52em) {
+  .emotion-38 {
     -webkit-flex-basis: 56px;
     -ms-flex-preferred-size: 56px;
     flex-basis: 56px;
   }
 }
 
-.emotion-50 {
+.emotion-39 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -381,31 +382,31 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-grow: 1;
 }
 
-.emotion-49 {
+.emotion-40 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.emotion-33 {
+.emotion-44 {
   white-space: nowrap;
-  color: rgb(102,102,102);
+  color: rgb(102, 102, 102);
   line-height: 1.6;
   font-weight: 500;
   font-family: Inter;
   font-size: 13px;
 }
 
-.emotion-35 {
+.emotion-45 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -415,14 +416,14 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 6px;
 }
 
-.emotion-36 {
+.emotion-47 {
   font-size: 24px;
   line-height: 1.3;
   font-weight: 500;
   font-family: Inter;
 }
 
-.emotion-40 {
+.emotion-48 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -432,7 +433,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 56px;
 }
 
-.emotion-48 {
+.emotion-56 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -442,23 +443,23 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 0;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-48 {
+@media screen and (min-width: 40em) {
+  .emotion-56 {
     -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-48 {
+@media screen and (min-width: 52em) {
+  .emotion-56 {
     -webkit-flex-basis: 56px;
     -ms-flex-preferred-size: 56px;
     flex-basis: 56px;
   }
 }
 
-.emotion-51 {
+.emotion-57 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -468,23 +469,23 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 20px;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-51 {
+@media screen and (min-width: 40em) {
+  .emotion-57 {
     -webkit-flex-basis: 20px;
     -ms-flex-preferred-size: 20px;
     flex-basis: 20px;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-51 {
+@media screen and (min-width: 52em) {
+  .emotion-57 {
     -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
   }
 }
 
-.emotion-63 {
+.emotion-58 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -499,40 +500,40 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-grow: 1;
 }
 
-.emotion-62 {
+.emotion-59 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-62 {
+@media screen and (min-width: 40em) {
+  .emotion-59 {
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-62 {
+@media screen and (min-width: 52em) {
+  .emotion-59 {
     -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
     justify-content: flex-end;
   }
 }
 
-.emotion-52 {
+.emotion-61 {
   font-family: Inter;
   box-sizing: border-box;
   display: -webkit-box;
@@ -552,23 +553,24 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   padding: 0;
   width: 40px;
   height: 40px;
-  border: 1px solid rgba(0,0,0,0.08);
-  color: rgb(158,158,158);
-  background: rgb(255,255,255);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: rgb(158, 158, 158);
+  background: rgb(255, 255, 255);
   border-radius: 20px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
-.emotion-52:active {
+.emotion-61:active {
   -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
 }
 
-.emotion-54 {
+.emotion-62 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -578,7 +580,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 16px;
 }
 
-.emotion-56 {
+.emotion-64 {
   font-family: Inter;
   box-sizing: border-box;
   display: -webkit-box;
@@ -597,23 +599,24 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   font-size: 12px;
   padding: 0px 16px;
   height: 40px;
-  border: 1px solid rgba(0,0,0,0.08);
-  color: rgb(158,158,158);
-  background: rgb(255,255,255);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: rgb(158, 158, 158);
+  background: rgb(255, 255, 255);
   border-radius: 20px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
-.emotion-56:active {
+.emotion-64:active {
   -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
 }
 
-.emotion-55 {
+.emotion-65 {
   margin-right: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -621,7 +624,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   display: flex;
 }
 
-.emotion-60 {
+.emotion-68 {
   font-family: Inter;
   box-sizing: border-box;
   display: -webkit-box;
@@ -640,22 +643,23 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   font-size: 12px;
   padding: 0px 16px;
   height: 40px;
-  background: rgb(102,102,102);
-  color: rgb(255,255,255);
+  background: rgb(102, 102, 102);
+  color: rgb(255, 255, 255);
   border-radius: 28px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
-.emotion-60:active {
+.emotion-68:active {
   -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
 }
 
-.emotion-96 {
+.emotion-74 {
   box-sizing: border-box;
   max-width: 1200px;
   width: 100%;
@@ -670,29 +674,29 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-direction: column-reverse;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-96 {
+@media screen and (min-width: 40em) {
+  .emotion-74 {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-96 {
+@media screen and (min-width: 52em) {
+  .emotion-74 {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 
-@media screen and (min-width:40em) {
-  .emotion-96 {
+@media screen and (min-width: 40em) {
+  .emotion-74 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
   }
 }
 
-.emotion-74 {
+.emotion-77 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -705,23 +709,23 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-shrink: 0;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-74 {
+@media screen and (min-width: 40em) {
+  .emotion-77 {
     -webkit-flex-basis: 20px;
     -ms-flex-preferred-size: 20px;
     flex-basis: 20px;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-74 {
+@media screen and (min-width: 52em) {
+  .emotion-77 {
     -webkit-flex-basis: 40px;
     -ms-flex-preferred-size: 40px;
     flex-basis: 40px;
   }
 }
 
-.emotion-95 {
+.emotion-78 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -734,23 +738,23 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-shrink: 0;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-95 {
+@media screen and (min-width: 40em) {
+  .emotion-78 {
     -webkit-flex-basis: 200px;
     -ms-flex-preferred-size: 200px;
     flex-basis: 200px;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-95 {
+@media screen and (min-width: 52em) {
+  .emotion-78 {
     -webkit-flex-basis: 256px;
     -ms-flex-preferred-size: 256px;
     flex-basis: 256px;
   }
 }
 
-.emotion-91 {
+.emotion-81 {
   box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
@@ -763,11 +767,11 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 4px;
 }
 
-.emotion-76 {
+.emotion-82 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -776,21 +780,21 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   padding-right: 25px;
 }
 
-.emotion-75 {
+.emotion-83 {
   font-size: 15px;
   line-height: 1.6;
   font-family: Inter;
   font-weight: 400;
 }
 
-.emotion-82 {
+.emotion-90 {
   font-size: 15px;
   line-height: 1.6;
   font-weight: 500;
   font-family: Inter;
 }
 
-.emotion-84 {
+.emotion-91 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -800,7 +804,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 26px;
 }
 
-.emotion-89 {
+.emotion-93 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -815,7 +819,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-direction: row;
 }
 
-.emotion-86 {
+.emotion-95 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -825,8 +829,8 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
   flex-basis: 12px;
 }
 
-.emotion-87 {
-  color: rgb(153,153,153);
+.emotion-97 {
+  color: rgb(153, 153, 153);
   font-size: 12px;
   line-height: 1.3;
   font-weight: 600;
@@ -834,78 +838,78 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
 }
 
 <div
-    class="emotion-98"
+    class="emotion-0"
     display="flex"
     overflow="hidden"
     width="100%"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
       display="flex"
     />
     <div
-      class="emotion-17"
+      class="emotion-2"
       display="flex"
     >
       <div
-        class="emotion-16"
+        class="emotion-3"
         display="flex"
         width="100%"
       >
         <div
-          class="emotion-15"
+          class="emotion-4"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-11"
+            class="emotion-5"
             display="flex"
           >
             <div
-              class="emotion-10"
+              class="emotion-6"
               display="flex"
               width="100%"
             >
               <div
-                class="emotion-2"
+                class="emotion-7"
                 display="flex"
               >
                 <div
-                  class="emotion-5"
+                  class="emotion-8"
                   display="flex"
                   width="100%"
                 >
                   <div
-                    class="emotion-2"
+                    class="emotion-7"
                     display="flex"
                   >
                     <span
-                      class="emotion-1"
+                      class="emotion-10"
                       font-family="primary"
                       font-size="huge,massive"
                       font-weight="bold"
                     />
                   </div>
                   <div
-                    class="emotion-3"
+                    class="emotion-11"
                     display="flex"
                   />
                   <div
-                    class="emotion-4"
+                    class="emotion-12"
                     display="flex"
                   />
                 </div>
               </div>
               <div
-                class="emotion-7"
+                class="emotion-13"
                 display="flex"
               />
               <div
-                class="emotion-9"
+                class="emotion-14"
                 display="block"
               >
                 <span
-                  class="emotion-8"
+                  class="emotion-15"
                   color="stormdust"
                   font-family="primary"
                   font-size="extra,large,giant"
@@ -917,15 +921,15 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
             </div>
           </div>
           <div
-            class="emotion-12"
+            class="emotion-16"
             display="flex"
           />
           <div
-            class="emotion-4"
+            class="emotion-12"
             display="flex"
           >
             <div
-              class="emotion-13"
+              class="emotion-18"
               color="alto"
               height="100,100,160"
               width="100,100,160"
@@ -935,54 +939,54 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
       </div>
     </div>
     <div
-      class="emotion-18"
+      class="emotion-19"
       display="flex"
     />
     <div
-      class="emotion-19"
+      class="emotion-20"
     />
     <div
-      class="emotion-69"
+      class="emotion-21"
       display="flex"
     >
       <div
-        class="emotion-10"
+        class="emotion-6"
         display="flex"
         width="100%"
       >
         <div
-          class="emotion-20"
+          class="emotion-23"
           display="flex"
         />
         <div
-          class="emotion-17"
+          class="emotion-2"
           display="flex"
         >
           <div
-            class="emotion-16"
+            class="emotion-3"
             display="flex"
             width="100%"
           >
             <div
-              class="emotion-64"
+              class="emotion-26"
               display="flex"
               width="100%"
             >
               <div
-                class="emotion-2"
+                class="emotion-7"
                 display="flex"
               >
                 <div
-                  class="emotion-30"
+                  class="emotion-28"
                   display="flex"
                   width="100%"
                 >
                   <div
-                    class="emotion-2"
+                    class="emotion-7"
                     display="flex"
                   >
                     <span
-                      class="emotion-21"
+                      class="emotion-30"
                       color="stormdust"
                       font-family="primary"
                       font-size="normal"
@@ -992,19 +996,19 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                     </span>
                   </div>
                   <div
-                    class="emotion-23"
+                    class="emotion-31"
                     display="flex"
                   />
                   <div
-                    class="emotion-2"
+                    class="emotion-7"
                     display="flex"
                   >
                     <div
-                      class="emotion-24"
+                      class="emotion-33"
                       color="black"
                     >
                       <svg
-                        fill="rgb(216, 216, 216)"
+                        fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
                         height="100%"
                         viewBox="0 0 16 15"
                         width="100%"
@@ -1017,11 +1021,11 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                       </svg>
                     </div>
                     <div
-                      class="emotion-24"
+                      class="emotion-33"
                       color="black"
                     >
                       <svg
-                        fill="rgb(216, 216, 216)"
+                        fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
                         height="100%"
                         viewBox="0 0 16 15"
                         width="100%"
@@ -1034,11 +1038,11 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                       </svg>
                     </div>
                     <div
-                      class="emotion-24"
+                      class="emotion-33"
                       color="black"
                     >
                       <svg
-                        fill="rgb(216, 216, 216)"
+                        fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
                         height="100%"
                         viewBox="0 0 16 15"
                         width="100%"
@@ -1051,11 +1055,11 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                       </svg>
                     </div>
                     <div
-                      class="emotion-24"
+                      class="emotion-33"
                       color="black"
                     >
                       <svg
-                        fill="rgb(216, 216, 216)"
+                        fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
                         height="100%"
                         viewBox="0 0 16 15"
                         width="100%"
@@ -1068,11 +1072,11 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                       </svg>
                     </div>
                     <div
-                      class="emotion-24"
+                      class="emotion-33"
                       color="black"
                     >
                       <svg
-                        fill="rgb(216, 216, 216)"
+                        fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
                         height="100%"
                         viewBox="0 0 16 15"
                         width="100%"
@@ -1088,33 +1092,33 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                 </div>
               </div>
               <div
-                class="emotion-32"
+                class="emotion-38"
                 display="flex"
               />
               <div
-                class="emotion-50"
+                class="emotion-39"
                 display="flex"
               >
                 <div
-                  class="emotion-49"
+                  class="emotion-40"
                   display="flex"
                   width="100%"
                 >
                   <div
-                    class="emotion-2"
+                    class="emotion-7"
                     display="flex"
                   >
                     <div
-                      class="emotion-10"
+                      class="emotion-6"
                       display="flex"
                       width="100%"
                     >
                       <div
-                        class="emotion-2"
+                        class="emotion-7"
                         display="flex"
                       >
                         <span
-                          class="emotion-33"
+                          class="emotion-44"
                           color="stormdust"
                           font-family="primary"
                           font-size="normal"
@@ -1124,59 +1128,15 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                         </span>
                       </div>
                       <div
-                        class="emotion-35"
+                        class="emotion-45"
                         display="flex"
                       />
                       <div
-                        class="emotion-2"
+                        class="emotion-7"
                         display="flex"
                       >
                         <span
-                          class="emotion-36"
-                          font-family="primary"
-                          font-size="huge"
-                          font-weight="medium"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="emotion-40"
-                    display="flex"
-                  />
-                  <div
-                    class="emotion-2"
-                    display="flex"
-                  >
-                    <div
-                      class="emotion-10"
-                      display="flex"
-                      width="100%"
-                    >
-                      <div
-                        class="emotion-2"
-                        display="flex"
-                      >
-                        <span
-                          class="emotion-33"
-                          color="stormdust"
-                          font-family="primary"
-                          font-size="normal"
-                          font-weight="medium"
-                        >
-                          Выполнено проектов
-                        </span>
-                      </div>
-                      <div
-                        class="emotion-35"
-                        display="flex"
-                      />
-                      <div
-                        class="emotion-2"
-                        display="flex"
-                      >
-                        <span
-                          class="emotion-36"
+                          class="emotion-47"
                           font-family="primary"
                           font-size="huge"
                           font-weight="medium"
@@ -1188,27 +1148,71 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                     class="emotion-48"
                     display="flex"
                   />
+                  <div
+                    class="emotion-7"
+                    display="flex"
+                  >
+                    <div
+                      class="emotion-6"
+                      display="flex"
+                      width="100%"
+                    >
+                      <div
+                        class="emotion-7"
+                        display="flex"
+                      >
+                        <span
+                          class="emotion-44"
+                          color="stormdust"
+                          font-family="primary"
+                          font-size="normal"
+                          font-weight="medium"
+                        >
+                          Выполнено проектов
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-45"
+                        display="flex"
+                      />
+                      <div
+                        class="emotion-7"
+                        display="flex"
+                      >
+                        <span
+                          class="emotion-47"
+                          font-family="primary"
+                          font-size="huge"
+                          font-weight="medium"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-56"
+                    display="flex"
+                  />
                 </div>
               </div>
               <div
-                class="emotion-51"
+                class="emotion-57"
                 display="flex"
               />
               <div
-                class="emotion-63"
+                class="emotion-58"
                 display="flex"
               >
                 <div
-                  class="emotion-62"
+                  class="emotion-59"
                   display="flex"
                   width="100%"
                 >
                   <div
-                    class="emotion-2"
+                    class="emotion-7"
                     display="flex"
                   >
                     <button
-                      class="emotion-52"
+                      class="emotion-61"
                     >
                       <svg
                         fill="none"
@@ -1225,18 +1229,18 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                     </button>
                   </div>
                   <div
-                    class="emotion-54"
+                    class="emotion-62"
                     display="flex"
                   />
                   <div
-                    class="emotion-2"
+                    class="emotion-7"
                     display="flex"
                   >
                     <button
-                      class="emotion-56"
+                      class="emotion-64"
                     >
                       <span
-                        class="emotion-55"
+                        class="emotion-65"
                       >
                         <svg
                           fill="none"
@@ -1255,18 +1259,18 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                     </button>
                   </div>
                   <div
-                    class="emotion-54"
+                    class="emotion-62"
                     display="flex"
                   />
                   <div
-                    class="emotion-2"
+                    class="emotion-7"
                     display="flex"
                   >
                     <button
-                      class="emotion-60"
+                      class="emotion-68"
                     >
                       <span
-                        class="emotion-55"
+                        class="emotion-65"
                       >
                         <svg
                           color="white"
@@ -1279,7 +1283,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                           <path
                             clip-rule="evenodd"
                             d="M3.33366 1.66669H16.667C17.5837 1.66669 18.3337 2.41669 18.3337 3.33335V13.3334C18.3337 14.25 17.5837 15 16.667 15H5.00033L1.66699 18.3334L1.67533 3.33335C1.67533 2.41669 2.41699 1.66669 3.33366 1.66669ZM15.0003 7.50002H5.00033V9.16669H15.0003V7.50002ZM11.667 11.6667H5.00033V10H11.667V11.6667ZM5.00033 6.66669H15.0003V5.00002H5.00033V6.66669Z"
-                            fill="white"
+                            fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
                             fill-rule="evenodd"
                           />
                         </svg>
@@ -1293,65 +1297,65 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
           </div>
         </div>
         <div
-          class="emotion-20"
+          class="emotion-23"
           display="flex"
         />
       </div>
     </div>
     <div
-      class="emotion-19"
+      class="emotion-20"
     />
     <div
-      class="emotion-0"
+      class="emotion-1"
       display="flex"
     />
     <div
-      class="emotion-17"
+      class="emotion-2"
       display="flex"
     >
       <div
-        class="emotion-96"
+        class="emotion-74"
         display="flex"
         width="100%"
       >
         <div
-          class="emotion-50"
+          class="emotion-39"
           display="flex"
         >
           <div
-            class="emotion-10"
+            class="emotion-6"
             display="flex"
             width="100%"
           />
         </div>
         <div
-          class="emotion-74"
+          class="emotion-77"
           display="flex"
         />
         <div
-          class="emotion-95"
+          class="emotion-78"
           display="flex"
         >
           <div
-            class="emotion-10"
+            class="emotion-6"
             display="flex"
             width="100%"
           >
             <div
-              class="emotion-2"
+              class="emotion-7"
               display="flex"
             >
               <div
-                class="emotion-91"
+                class="emotion-81"
                 display="flex"
                 width="100%"
               >
                 <div
-                  class="emotion-76"
+                  class="emotion-82"
                   display="flex"
                 >
                   <span
-                    class="emotion-75"
+                    class="emotion-83"
                     font-family="primary"
                     font-size="regular"
                     font-weight="normal"
@@ -1360,22 +1364,22 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                   </span>
                 </div>
                 <div
-                  class="emotion-54"
+                  class="emotion-62"
                   display="flex"
                 />
                 <div
-                  class="emotion-19"
+                  class="emotion-20"
                 />
                 <div
-                  class="emotion-54"
+                  class="emotion-62"
                   display="flex"
                 />
                 <div
-                  class="emotion-76"
+                  class="emotion-82"
                   display="flex"
                 >
                   <span
-                    class="emotion-21"
+                    class="emotion-30"
                     color="stormdust"
                     font-family="primary"
                     font-size="normal"
@@ -1385,31 +1389,31 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                   </span>
                 </div>
                 <div
-                  class="emotion-76"
+                  class="emotion-82"
                   display="flex"
                 >
                   <span
-                    class="emotion-82"
+                    class="emotion-90"
                     font-family="primary"
                     font-size="regular"
                     font-weight="medium"
                   />
                 </div>
                 <div
-                  class="emotion-84"
+                  class="emotion-91"
                   display="flex"
                 />
                 <div
-                  class="emotion-76"
+                  class="emotion-82"
                   display="flex"
                 >
                   <div
-                    class="emotion-89"
+                    class="emotion-93"
                     display="flex"
                     width="100%"
                   >
                     <div
-                      class="emotion-2"
+                      class="emotion-7"
                       display="flex"
                     >
                       <svg
@@ -1437,15 +1441,15 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
                       </svg>
                     </div>
                     <div
-                      class="emotion-86"
+                      class="emotion-95"
                       display="flex"
                     />
                     <div
-                      class="emotion-2"
+                      class="emotion-7"
                       display="flex"
                     >
                       <span
-                        class="emotion-87"
+                        class="emotion-97"
                         color="mountainmist"
                         font-family="primary"
                         font-size="tiny"
@@ -1459,7 +1463,7 @@ exports[`Specialists detail snapshots should match latest render snapshot 1`] = 
               </div>
             </div>
             <div
-              class="emotion-50"
+              class="emotion-39"
               display="flex"
             />
           </div>

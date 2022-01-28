@@ -48,7 +48,7 @@ const StyledSearchIcon = styled.div<IconProps>(
   iconSize
 )
 
-const StyledSelect = styled(RcSelect)<any>(selectStyles, ({ size }) =>
+const StyledSelect = styled(RcSelect as any)<any>(selectStyles, ({ size }) =>
   size === 'normal' ? selectSizeNormal : selectSizeLarge)
 
 const doNothing = () => {

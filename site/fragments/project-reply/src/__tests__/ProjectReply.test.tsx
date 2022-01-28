@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import { MockedProvider } from '@apollo/react-testing'
 import { render }         from '@testing-library/react'
 

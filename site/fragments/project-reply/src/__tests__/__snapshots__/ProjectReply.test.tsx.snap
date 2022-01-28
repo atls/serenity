@@ -5,26 +5,26 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
   .emotion-0 {
   width: 100%;
   height: 1px;
-  background: rgb(235,235,235);
+  background: rgb(235, 235, 235);
 }
 
 <div
     class="emotion-0"
   />
-  .emotion-21 {
+  .emotion-0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgb(252,252,252);
+  background-color: rgb(252, 252, 252);
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
-.emotion-20 {
+.emotion-1 {
   max-width: 1200px;
   width: 100%;
   display: -webkit-box;
@@ -39,15 +39,15 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
   box-sizing: border-box;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-20 {
+@media screen and (min-width: 40em) {
+  .emotion-1 {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-20 {
+@media screen and (min-width: 52em) {
+  .emotion-1 {
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -60,7 +60,7 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
   display: flex;
 }
 
-.emotion-17 {
+.emotion-3 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -71,7 +71,7 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
   flex-direction: column;
 }
 
-.emotion-0 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -81,14 +81,14 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
   flex-basis: 25px;
 }
 
-.emotion-1 {
+.emotion-6 {
   font-size: 28px;
   line-height: 1.6;
   font-family: Inter;
   font-weight: 400;
 }
 
-.emotion-3 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -98,29 +98,29 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
   flex-basis: 28px;
 }
 
-.emotion-15 {
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding: 24px;
-  background-color: rgb(250,250,250);
+  background-color: rgb(250, 250, 250);
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   border-radius: 4px;
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.emotion-4 {
+.emotion-10 {
   line-height: 1.6;
   font-family: Inter;
   font-weight: 400;
   font-size: 13px;
 }
 
-.emotion-6 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -142,7 +142,7 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
   flex-direction: column;
 }
 
-@media screen and (min-width:40em) {
+@media screen and (min-width: 40em) {
   .emotion-13 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -150,7 +150,7 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
   }
 }
 
-.emotion-7 {
+.emotion-15 {
   font-family: Inter;
   box-sizing: border-box;
   display: -webkit-box;
@@ -170,22 +170,23 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
   font-size: 12px;
   padding: 0px 16px;
   height: 40px;
-  background: rgb(87,87,87);
-  color: rgb(255,255,255);
+  background: rgb(87, 87, 87);
+  color: rgb(255, 255, 255);
   border-radius: 20px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
-.emotion-7:active {
+.emotion-15:active {
   -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
 }
 
-.emotion-9 {
+.emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -195,7 +196,7 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
   flex-basis: 16px;
 }
 
-.emotion-11 {
+.emotion-18 {
   font-family: Inter;
   box-sizing: border-box;
   display: -webkit-box;
@@ -215,23 +216,24 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
   font-size: 12px;
   padding: 0px 16px;
   height: 40px;
-  border: 1px solid rgba(0,0,0,0.08);
-  color: rgb(158,158,158);
-  background: rgb(255,255,255);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: rgb(158, 158, 158);
+  background: rgb(255, 255, 255);
   border-radius: 20px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
-.emotion-11:active {
+.emotion-18:active {
   -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
 }
 
-.emotion-10 {
+.emotion-19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -240,7 +242,7 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
   padding-right: 14px;
 }
 
-.emotion-16 {
+.emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -250,23 +252,23 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
   flex-basis: 40px;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-16 {
+@media screen and (min-width: 40em) {
+  .emotion-20 {
     -webkit-flex-basis: 60px;
     -ms-flex-preferred-size: 60px;
     flex-basis: 60px;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-16 {
+@media screen and (min-width: 52em) {
+  .emotion-20 {
     -webkit-flex-basis: 80px;
     -ms-flex-preferred-size: 80px;
     flex-basis: 80px;
   }
 }
 
-.emotion-19 {
+.emotion-21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -279,16 +281,16 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
   flex-shrink: 0;
 }
 
-@media screen and (min-width:40em) {
-  .emotion-19 {
+@media screen and (min-width: 40em) {
+  .emotion-21 {
     -webkit-flex-basis: 220px;
     -ms-flex-preferred-size: 220px;
     flex-basis: 220px;
   }
 }
 
-@media screen and (min-width:52em) {
-  .emotion-19 {
+@media screen and (min-width: 52em) {
+  .emotion-21 {
     -webkit-flex-basis: 296px;
     -ms-flex-preferred-size: 296px;
     flex-basis: 296px;
@@ -296,11 +298,11 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
 }
 
 <div
-    class="emotion-21"
+    class="emotion-0"
     display="flex"
   >
     <div
-      class="emotion-20"
+      class="emotion-1"
       display="flex"
       width="100%"
     >
@@ -309,12 +311,12 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
         display="flex"
       >
         <div
-          class="emotion-17"
+          class="emotion-3"
           display="flex"
           width="100%"
         >
           <div
-            class="emotion-0"
+            class="emotion-4"
             display="flex"
           />
           <div
@@ -322,7 +324,7 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
             display="flex"
           >
             <span
-              class="emotion-1"
+              class="emotion-6"
               font-family="primary"
               font-size="giant"
               font-weight="normal"
@@ -331,11 +333,11 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
             </span>
           </div>
           <div
-            class="emotion-3"
+            class="emotion-7"
             display="flex"
           />
           <div
-            class="emotion-15"
+            class="emotion-8"
             display="flex"
           >
             <div
@@ -343,7 +345,7 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
               display="flex"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
                 font-family="primary"
                 font-size="normal"
                 font-weight="normal"
@@ -352,7 +354,7 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
               </span>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-11"
               display="flex"
             />
             <div
@@ -369,13 +371,13 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
                   display="flex"
                 >
                   <button
-                    class="emotion-7"
+                    class="emotion-15"
                   >
                     Зарегистрировать аккаунт
                   </button>
                 </div>
                 <div
-                  class="emotion-9"
+                  class="emotion-16"
                   display="flex"
                 />
                 <div
@@ -383,10 +385,10 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
                   display="flex"
                 >
                   <button
-                    class="emotion-11"
+                    class="emotion-18"
                   >
                     <div
-                      class="emotion-10"
+                      class="emotion-19"
                       display="flex"
                     >
                       Войти
@@ -397,13 +399,13 @@ exports[`Project reply snapshots should match latest render snapshot 1`] = `
             </div>
           </div>
           <div
-            class="emotion-16"
+            class="emotion-20"
             display="flex"
           />
         </div>
       </div>
       <div
-        class="emotion-19"
+        class="emotion-21"
         display="flex"
       />
     </div>
