@@ -1,6 +1,16 @@
 {
   "private": true,
   "workspaces": [
+    "catalog/**/*",
+    "collaboration/**/*",
+    "files/**/*",
+    "hits/**/*",
+    "mailer/**/*",
+    "portfolio/**/*",
+    "private-gateway/**/*",
+    "public-gateway/**/*",
+    "protos/**/*",
+    "search/**/*",
     "fragments/**/*",
     "identity/**/*",
     "site/**/*",

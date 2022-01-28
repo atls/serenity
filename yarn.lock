@@ -1384,9 +1384,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@catalog/application@0.1.1, @catalog/application@workspace:backend/catalog/application":
+"@catalog/application@0.1.1, @catalog/application@workspace:catalog/application":
   version: 0.0.0-use.local
-  resolution: "@catalog/application@workspace:backend/catalog/application"
+  resolution: "@catalog/application@workspace:catalog/application"
   dependencies:
     "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@catalog/domain": 0.1.1
@@ -1403,9 +1403,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@catalog/domain@0.1.1, @catalog/domain@workspace:backend/catalog/domain":
+"@catalog/domain@0.1.1, @catalog/domain@workspace:catalog/domain":
   version: 0.0.0-use.local
-  resolution: "@catalog/domain@workspace:backend/catalog/domain"
+  resolution: "@catalog/domain@workspace:catalog/domain"
   dependencies:
     "@nestjs/common": 6.10.5
     "@node-ts/bus-core": 0.6.3
@@ -1417,9 +1417,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@catalog/persistence@0.1.1, @catalog/persistence@workspace:backend/catalog/persistence":
+"@catalog/persistence@0.1.1, @catalog/persistence@workspace:catalog/persistence":
   version: 0.0.0-use.local
-  resolution: "@catalog/persistence@workspace:backend/catalog/persistence"
+  resolution: "@catalog/persistence@workspace:catalog/persistence"
   dependencies:
     "@catalog/domain": 0.1.1
     "@monstrs/nestjs-bus": 0.1.4
@@ -1437,9 +1437,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@catalog/service@workspace:backend/catalog/service":
+"@catalog/service@workspace:catalog/service":
   version: 0.0.0-use.local
-  resolution: "@catalog/service@workspace:backend/catalog/service"
+  resolution: "@catalog/service@workspace:catalog/service"
   dependencies:
     "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@catalog/application": 0.1.1
@@ -1477,9 +1477,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@collaboration/application@workspace:0.0.1, @collaboration/application@workspace:backend/collaboration/application":
+"@collaboration/application@workspace:0.0.1, @collaboration/application@workspace:collaboration/application":
   version: 0.0.0-use.local
-  resolution: "@collaboration/application@workspace:backend/collaboration/application"
+  resolution: "@collaboration/application@workspace:collaboration/application"
   dependencies:
     "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@collaboration/domain": 0.0.1
@@ -1498,9 +1498,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@collaboration/domain@0.0.1, @collaboration/domain@workspace:0.0.1, @collaboration/domain@workspace:backend/collaboration/domain":
+"@collaboration/domain@0.0.1, @collaboration/domain@workspace:0.0.1, @collaboration/domain@workspace:collaboration/domain":
   version: 0.0.0-use.local
-  resolution: "@collaboration/domain@workspace:backend/collaboration/domain"
+  resolution: "@collaboration/domain@workspace:collaboration/domain"
   dependencies:
     "@nestjs/common": 6.10.5
     "@node-ts/bus-core": 0.4.9
@@ -1514,9 +1514,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@collaboration/ee2@workspace:backend/collaboration/ee2":
+"@collaboration/ee2@workspace:collaboration/ee2":
   version: 0.0.0-use.local
-  resolution: "@collaboration/ee2@workspace:backend/collaboration/ee2"
+  resolution: "@collaboration/ee2@workspace:collaboration/ee2"
   dependencies:
     "@collaboration/service": 0.0.1
     "@monstrs/nestjs-bus": 0.1.4
@@ -1531,9 +1531,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@collaboration/persistence@0.0.1, @collaboration/persistence@workspace:0.0.1, @collaboration/persistence@workspace:backend/collaboration/persistence":
+"@collaboration/persistence@0.0.1, @collaboration/persistence@workspace:0.0.1, @collaboration/persistence@workspace:collaboration/persistence":
   version: 0.0.0-use.local
-  resolution: "@collaboration/persistence@workspace:backend/collaboration/persistence"
+  resolution: "@collaboration/persistence@workspace:collaboration/persistence"
   dependencies:
     "@collaboration/domain": 0.0.1
     "@monstrs/nestjs-bus": 0.1.4
@@ -1551,9 +1551,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@collaboration/service@0.0.1, @collaboration/service@workspace:backend/collaboration/service":
+"@collaboration/service@0.0.1, @collaboration/service@workspace:collaboration/service":
   version: 0.0.0-use.local
-  resolution: "@collaboration/service@workspace:backend/collaboration/service"
+  resolution: "@collaboration/service@workspace:collaboration/service"
   dependencies:
     "@atls/nestjs-bus": ^0.2.32
     "@atls/nestjs-map-errors-interceptor": ^0.1.36
@@ -1986,9 +1986,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@files/application@0.0.2, @files/application@workspace:backend/files/application":
+"@files/application@0.0.2, @files/application@workspace:files/application":
   version: 0.0.0-use.local
-  resolution: "@files/application@workspace:backend/files/application"
+  resolution: "@files/application@workspace:files/application"
   dependencies:
     "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@files/domain": 0.0.2
@@ -2007,9 +2007,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@files/domain@0.0.2, @files/domain@workspace:backend/files/domain":
+"@files/domain@0.0.2, @files/domain@workspace:files/domain":
   version: 0.0.0-use.local
-  resolution: "@files/domain@workspace:backend/files/domain"
+  resolution: "@files/domain@workspace:files/domain"
   dependencies:
     "@nestjs/common": 6.10.5
     "@node-ts/bus-core": 0.6.3
@@ -2021,9 +2021,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@files/persistence@0.0.2, @files/persistence@workspace:backend/files/persistence":
+"@files/persistence@0.0.2, @files/persistence@workspace:files/persistence":
   version: 0.0.0-use.local
-  resolution: "@files/persistence@workspace:backend/files/persistence"
+  resolution: "@files/persistence@workspace:files/persistence"
   dependencies:
     "@files/domain": 0.0.2
     "@monstrs/nestjs-bus": 0.1.4
@@ -2040,9 +2040,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@files/service@workspace:backend/files/service":
+"@files/service@workspace:files/service":
   version: 0.0.0-use.local
-  resolution: "@files/service@workspace:backend/files/service"
+  resolution: "@files/service@workspace:files/service"
   dependencies:
     "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@files/application": 0.0.2
@@ -2549,9 +2549,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hits/app@workspace:backend/hits/app":
+"@hits/app@workspace:hits/app":
   version: 0.0.0-use.local
-  resolution: "@hits/app@workspace:backend/hits/app"
+  resolution: "@hits/app@workspace:hits/app"
   dependencies:
     "@hits/commands": 0.0.1
     "@hits/persistence": 0.0.1
@@ -2571,9 +2571,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@hits/commands@0.0.1, @hits/commands@workspace:backend/hits/commands":
+"@hits/commands@0.0.1, @hits/commands@workspace:hits/commands":
   version: 0.0.0-use.local
-  resolution: "@hits/commands@workspace:backend/hits/commands"
+  resolution: "@hits/commands@workspace:hits/commands"
   dependencies:
     "@hits/persistence": 0.0.1
     "@nestjs/common": 6.10.5
@@ -2584,9 +2584,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@hits/persistence@0.0.1, @hits/persistence@workspace:backend/hits/persistence":
+"@hits/persistence@0.0.1, @hits/persistence@workspace:hits/persistence":
   version: 0.0.0-use.local
-  resolution: "@hits/persistence@workspace:backend/hits/persistence"
+  resolution: "@hits/persistence@workspace:hits/persistence"
   dependencies:
     "@files/domain": 0.0.2
     "@monstrs/nestjs-bus": 0.1.4
@@ -2602,9 +2602,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@hits/queries@0.0.1, @hits/queries@workspace:backend/hits/queries":
+"@hits/queries@0.0.1, @hits/queries@workspace:hits/queries":
   version: 0.0.0-use.local
-  resolution: "@hits/queries@workspace:backend/hits/queries"
+  resolution: "@hits/queries@workspace:hits/queries"
   dependencies:
     "@hits/persistence": 0.0.1
     "@nestjs/common": 6.10.5
@@ -2614,9 +2614,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@hits/service@workspace:backend/hits/service":
+"@hits/service@workspace:hits/service":
   version: 0.0.0-use.local
-  resolution: "@hits/service@workspace:backend/hits/service"
+  resolution: "@hits/service@workspace:hits/service"
   dependencies:
     "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@grpc/proto-loader": 0.5.3
@@ -2655,9 +2655,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@identity/application@0.3.1, @identity/application@workspace:backend/identity/application":
+"@identity/application@0.3.1, @identity/application@workspace:identity/application":
   version: 0.0.0-use.local
-  resolution: "@identity/application@workspace:backend/identity/application"
+  resolution: "@identity/application@workspace:identity/application"
   dependencies:
     "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@identity/domain": 0.3.1
@@ -2676,9 +2676,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@identity/domain@0.3.1, @identity/domain@workspace:backend/identity/domain":
+"@identity/domain@0.3.1, @identity/domain@workspace:identity/domain":
   version: 0.0.0-use.local
-  resolution: "@identity/domain@workspace:backend/identity/domain"
+  resolution: "@identity/domain@workspace:identity/domain"
   dependencies:
     "@nestjs/common": 6.10.5
     "@node-ts/bus-core": 0.6.3
@@ -2734,9 +2734,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@identity/persistence@0.3.1, @identity/persistence@workspace:backend/identity/persistence":
+"@identity/persistence@0.3.1, @identity/persistence@workspace:identity/persistence":
   version: 0.0.0-use.local
-  resolution: "@identity/persistence@workspace:backend/identity/persistence"
+  resolution: "@identity/persistence@workspace:identity/persistence"
   dependencies:
     "@atlantis-lab/nestjs-logger": 0.2.5
     "@identity/domain": 0.3.1
@@ -2970,9 +2970,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@identity/service@workspace:backend/identity/service":
+"@identity/service@workspace:identity/service":
   version: 0.0.0-use.local
-  resolution: "@identity/service@workspace:backend/identity/service"
+  resolution: "@identity/service@workspace:identity/service"
   dependencies:
     "@atlantis-lab/nestjs-map-errors-interceptor": 0.1.4
     "@grpc/proto-loader": 0.5.5
@@ -3361,9 +3361,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mailer/api@0.1.1, @mailer/api@workspace:backend/mailer/api":
+"@mailer/api@0.1.1, @mailer/api@workspace:mailer/api":
   version: 0.0.0-use.local
-  resolution: "@mailer/api@workspace:backend/mailer/api"
+  resolution: "@mailer/api@workspace:mailer/api"
   dependencies:
     "@mailer/db": 0.1.1
     "@nestjs/common": 6.10.5
@@ -3375,9 +3375,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@mailer/db@0.1.1, @mailer/db@workspace:backend/mailer/db":
+"@mailer/db@0.1.1, @mailer/db@workspace:mailer/db":
   version: 0.0.0-use.local
-  resolution: "@mailer/db@workspace:backend/mailer/db"
+  resolution: "@mailer/db@workspace:mailer/db"
   dependencies:
     "@nestjs/common": 6.10.5
     "@nestjs/typeorm": 6.2.0
@@ -3389,9 +3389,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@mailer/renderer@0.1.1, @mailer/renderer@workspace:backend/mailer/renderer":
+"@mailer/renderer@0.1.1, @mailer/renderer@workspace:mailer/renderer":
   version: 0.0.0-use.local
-  resolution: "@mailer/renderer@workspace:backend/mailer/renderer"
+  resolution: "@mailer/renderer@workspace:mailer/renderer"
   dependencies:
     "@nestjs/common": 6.10.5
     html-to-text: 5.1.1
@@ -3400,9 +3400,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@mailer/service@workspace:backend/mailer/service":
+"@mailer/service@workspace:mailer/service":
   version: 0.0.0-use.local
-  resolution: "@mailer/service@workspace:backend/mailer/service"
+  resolution: "@mailer/service@workspace:mailer/service"
   dependencies:
     "@grpc/proto-loader": 0.5.5
     "@identity/domain": 0.3.1
@@ -3427,9 +3427,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@mailer/transport@0.1.1, @mailer/transport@workspace:backend/mailer/transport":
+"@mailer/transport@0.1.1, @mailer/transport@workspace:mailer/transport":
   version: 0.0.0-use.local
-  resolution: "@mailer/transport@workspace:backend/mailer/transport"
+  resolution: "@mailer/transport@workspace:mailer/transport"
   dependencies:
     "@nestjs/common": 6.10.5
     aws-sdk: 2.583.0
@@ -4471,9 +4471,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@portfolio/application@0.0.0, @portfolio/application@workspace:backend/portfolio/application":
+"@portfolio/application@0.0.0, @portfolio/application@workspace:portfolio/application":
   version: 0.0.0-use.local
-  resolution: "@portfolio/application@workspace:backend/portfolio/application"
+  resolution: "@portfolio/application@workspace:portfolio/application"
   dependencies:
     "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@nestjs/common": 6.10.5
@@ -4490,9 +4490,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@portfolio/domain@0.0.0, @portfolio/domain@workspace:backend/portfolio/domain":
+"@portfolio/domain@0.0.0, @portfolio/domain@workspace:portfolio/domain":
   version: 0.0.0-use.local
-  resolution: "@portfolio/domain@workspace:backend/portfolio/domain"
+  resolution: "@portfolio/domain@workspace:portfolio/domain"
   dependencies:
     "@nestjs/common": 6.10.5
     "@node-ts/bus-core": 0.4.9
@@ -4506,9 +4506,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@portfolio/persistence@0.0.0, @portfolio/persistence@workspace:backend/portfolio/persistence":
+"@portfolio/persistence@0.0.0, @portfolio/persistence@workspace:portfolio/persistence":
   version: 0.0.0-use.local
-  resolution: "@portfolio/persistence@workspace:backend/portfolio/persistence"
+  resolution: "@portfolio/persistence@workspace:portfolio/persistence"
   dependencies:
     "@monstrs/nestjs-bus": 0.1.4
     "@monstrs/nestjs-logger": 0.1.2
@@ -4524,9 +4524,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@portfolio/service@workspace:backend/portfolio/service":
+"@portfolio/service@workspace:portfolio/service":
   version: 0.0.0-use.local
-  resolution: "@portfolio/service@workspace:backend/portfolio/service"
+  resolution: "@portfolio/service@workspace:portfolio/service"
   dependencies:
     "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@grpc/proto-loader": 0.5.3
@@ -4547,9 +4547,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@private-gateway/app@workspace:backend/private-gateway/app":
+"@private-gateway/app@workspace:private-gateway/app":
   version: 0.0.0-use.local
-  resolution: "@private-gateway/app@workspace:backend/private-gateway/app"
+  resolution: "@private-gateway/app@workspace:private-gateway/app"
   dependencies:
     "@atls/nestjs-dataloader": ^0.0.3
     "@monstrs/server-scripts": 0.1.5
@@ -4571,9 +4571,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@private-gateway/catalog@0.1.1, @private-gateway/catalog@workspace:backend/private-gateway/catalog":
+"@private-gateway/catalog@0.1.1, @private-gateway/catalog@workspace:private-gateway/catalog":
   version: 0.0.0-use.local
-  resolution: "@private-gateway/catalog@workspace:backend/private-gateway/catalog"
+  resolution: "@private-gateway/catalog@workspace:private-gateway/catalog"
   dependencies:
     "@nestjs/common": 6.10.5
     "@nestjs/graphql": 6.5.3
@@ -4660,51 +4660,51 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protos/catalog@0.1.1, @protos/catalog@workspace:backend/protos/catalog":
+"@protos/catalog@0.1.1, @protos/catalog@workspace:protos/catalog":
   version: 0.0.0-use.local
-  resolution: "@protos/catalog@workspace:backend/protos/catalog"
+  resolution: "@protos/catalog@workspace:protos/catalog"
   dependencies:
     "@nestjs/microservices": 6.10.5
     "@protos/common": 0.3.1
   languageName: unknown
   linkType: soft
 
-"@protos/collaboration@0.0.1, @protos/collaboration@workspace:backend/protos/collaboration":
+"@protos/collaboration@0.0.1, @protos/collaboration@workspace:protos/collaboration":
   version: 0.0.0-use.local
-  resolution: "@protos/collaboration@workspace:backend/protos/collaboration"
+  resolution: "@protos/collaboration@workspace:protos/collaboration"
   dependencies:
     "@nestjs/microservices": 6.10.5
     "@protos/common": 0.3.1
   languageName: unknown
   linkType: soft
 
-"@protos/common@0.3.1, @protos/common@workspace:0.3.1, @protos/common@workspace:backend/protos/common":
+"@protos/common@0.3.1, @protos/common@workspace:0.3.1, @protos/common@workspace:protos/common":
   version: 0.0.0-use.local
-  resolution: "@protos/common@workspace:backend/protos/common"
+  resolution: "@protos/common@workspace:protos/common"
   languageName: unknown
   linkType: soft
 
-"@protos/files@0.0.2, @protos/files@workspace:backend/protos/files":
+"@protos/files@0.0.2, @protos/files@workspace:protos/files":
   version: 0.0.0-use.local
-  resolution: "@protos/files@workspace:backend/protos/files"
+  resolution: "@protos/files@workspace:protos/files"
   dependencies:
     "@nestjs/microservices": 6.10.5
     "@protos/common": 0.3.1
   languageName: unknown
   linkType: soft
 
-"@protos/hits@0.0.1, @protos/hits@workspace:backend/protos/hits":
+"@protos/hits@0.0.1, @protos/hits@workspace:protos/hits":
   version: 0.0.0-use.local
-  resolution: "@protos/hits@workspace:backend/protos/hits"
+  resolution: "@protos/hits@workspace:protos/hits"
   dependencies:
     "@nestjs/microservices": 6.10.5
     "@protos/common": 0.3.1
   languageName: unknown
   linkType: soft
 
-"@protos/identity@0.3.1, @protos/identity@workspace:backend/protos/identity":
+"@protos/identity@0.3.1, @protos/identity@workspace:protos/identity":
   version: 0.0.0-use.local
-  resolution: "@protos/identity@workspace:backend/protos/identity"
+  resolution: "@protos/identity@workspace:protos/identity"
   dependencies:
     "@grpc/proto-loader": 0.5.5
     "@nestjs/microservices": 6.10.5
@@ -4713,9 +4713,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@protos/interfaces@0.1.1, @protos/interfaces@workspace:backend/protos/interfaces":
+"@protos/interfaces@0.1.1, @protos/interfaces@workspace:protos/interfaces":
   version: 0.0.0-use.local
-  resolution: "@protos/interfaces@workspace:backend/protos/interfaces"
+  resolution: "@protos/interfaces@workspace:protos/interfaces"
   dependencies:
     grpc: 1.24.2
     rxjs: 6.5.3
@@ -4723,36 +4723,36 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@protos/mailer@0.1.1, @protos/mailer@workspace:0.1.1, @protos/mailer@workspace:backend/protos/mailer":
+"@protos/mailer@0.1.1, @protos/mailer@workspace:0.1.1, @protos/mailer@workspace:protos/mailer":
   version: 0.0.0-use.local
-  resolution: "@protos/mailer@workspace:backend/protos/mailer"
+  resolution: "@protos/mailer@workspace:protos/mailer"
   dependencies:
     "@nestjs/microservices": 6.10.5
     "@protos/common": 0.3.1
   languageName: unknown
   linkType: soft
 
-"@protos/portfolio@0.0.0, @protos/portfolio@workspace:backend/protos/portfolio":
+"@protos/portfolio@0.0.0, @protos/portfolio@workspace:protos/portfolio":
   version: 0.0.0-use.local
-  resolution: "@protos/portfolio@workspace:backend/protos/portfolio"
+  resolution: "@protos/portfolio@workspace:protos/portfolio"
   dependencies:
     "@nestjs/microservices": 6.10.5
     "@protos/common": 0.3.1
   languageName: unknown
   linkType: soft
 
-"@protos/search@0.0.0, @protos/search@workspace:backend/protos/search":
+"@protos/search@0.0.0, @protos/search@workspace:protos/search":
   version: 0.0.0-use.local
-  resolution: "@protos/search@workspace:backend/protos/search"
+  resolution: "@protos/search@workspace:protos/search"
   dependencies:
     "@nestjs/microservices": 6.10.5
     "@protos/common": 0.3.1
   languageName: unknown
   linkType: soft
 
-"@public-gateway/app@workspace:backend/public-gateway/app":
+"@public-gateway/app@workspace:public-gateway/app":
   version: 0.0.0-use.local
-  resolution: "@public-gateway/app@workspace:backend/public-gateway/app"
+  resolution: "@public-gateway/app@workspace:public-gateway/app"
   dependencies:
     "@atls/nestjs-dataloader": ^0.0.3
     "@monstrs/oathkeeper-auth": 0.1.0
@@ -4782,9 +4782,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@public-gateway/catalog@0.1.1, @public-gateway/catalog@workspace:backend/public-gateway/catalog":
+"@public-gateway/catalog@0.1.1, @public-gateway/catalog@workspace:public-gateway/catalog":
   version: 0.0.0-use.local
-  resolution: "@public-gateway/catalog@workspace:backend/public-gateway/catalog"
+  resolution: "@public-gateway/catalog@workspace:public-gateway/catalog"
   dependencies:
     "@nestjs/common": 6.10.5
     "@nestjs/graphql": 6.5.3
@@ -4798,9 +4798,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@public-gateway/collaboration@0.0.1, @public-gateway/collaboration@workspace:backend/public-gateway/collaboration":
+"@public-gateway/collaboration@0.0.1, @public-gateway/collaboration@workspace:public-gateway/collaboration":
   version: 0.0.0-use.local
-  resolution: "@public-gateway/collaboration@workspace:backend/public-gateway/collaboration"
+  resolution: "@public-gateway/collaboration@workspace:public-gateway/collaboration"
   dependencies:
     "@atls/nestjs-dataloader": ^0.0.3
     "@nestjs/common": 6.10.5
@@ -4816,7 +4816,7 @@ __metadata:
     "@public-gateway/catalog": 0.1.1
     "@public-gateway/files": 0.0.2
     "@public-gateway/identity": 0.1.1
-    "@public-gateway/portfolio": "workspace:backend/public-gateway/portfolio"
+    "@public-gateway/portfolio": "workspace:public-gateway/portfolio"
     "@public-gateway/types": 0.1.1
     "@public-gateway/utils": 0.0.1
     "@types/node": 12.12.14
@@ -4827,9 +4827,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@public-gateway/files@0.0.2, @public-gateway/files@workspace:backend/public-gateway/files":
+"@public-gateway/files@0.0.2, @public-gateway/files@workspace:public-gateway/files":
   version: 0.0.0-use.local
-  resolution: "@public-gateway/files@workspace:backend/public-gateway/files"
+  resolution: "@public-gateway/files@workspace:public-gateway/files"
   dependencies:
     "@nestjs/common": 6.10.5
     "@nestjs/graphql": 6.5.3
@@ -4843,9 +4843,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@public-gateway/identity@0.1.1, @public-gateway/identity@workspace:backend/public-gateway/identity":
+"@public-gateway/identity@0.1.1, @public-gateway/identity@workspace:public-gateway/identity":
   version: 0.0.0-use.local
-  resolution: "@public-gateway/identity@workspace:backend/public-gateway/identity"
+  resolution: "@public-gateway/identity@workspace:public-gateway/identity"
   dependencies:
     "@nestjs/common": 6.10.5
     "@nestjs/graphql": 6.5.3
@@ -4864,9 +4864,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@public-gateway/portfolio@0.0.0, @public-gateway/portfolio@workspace:backend/public-gateway/portfolio":
+"@public-gateway/portfolio@0.0.0, @public-gateway/portfolio@workspace:public-gateway/portfolio":
   version: 0.0.0-use.local
-  resolution: "@public-gateway/portfolio@workspace:backend/public-gateway/portfolio"
+  resolution: "@public-gateway/portfolio@workspace:public-gateway/portfolio"
   dependencies:
     "@atls/nestjs-dataloader": ^0.0.3
     "@nestjs/common": 6.10.5
@@ -4884,9 +4884,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@public-gateway/search@0.0.0, @public-gateway/search@workspace:backend/public-gateway/search":
+"@public-gateway/search@0.0.0, @public-gateway/search@workspace:public-gateway/search":
   version: 0.0.0-use.local
-  resolution: "@public-gateway/search@workspace:backend/public-gateway/search"
+  resolution: "@public-gateway/search@workspace:public-gateway/search"
   dependencies:
     "@nestjs/common": 6.10.5
     "@nestjs/graphql": 6.5.3
@@ -4894,7 +4894,7 @@ __metadata:
     "@protos/collaboration": 0.0.1
     "@protos/interfaces": 0.1.1
     "@protos/search": 0.0.0
-    "@public-gateway/collaboration": "workspace:backend/public-gateway/collaboration"
+    "@public-gateway/collaboration": "workspace:public-gateway/collaboration"
     "@types/node": 12.12.14
     rxjs: 6.5.3
     type-graphql: 0.17.5
@@ -4902,25 +4902,25 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@public-gateway/types@0.1.1, @public-gateway/types@workspace:backend/public-gateway/types":
+"@public-gateway/types@0.1.1, @public-gateway/types@workspace:public-gateway/types":
   version: 0.0.0-use.local
-  resolution: "@public-gateway/types@workspace:backend/public-gateway/types"
+  resolution: "@public-gateway/types@workspace:public-gateway/types"
   dependencies:
     type-graphql: 0.17.5
   languageName: unknown
   linkType: soft
 
-"@public-gateway/utils@0.0.1, @public-gateway/utils@workspace:backend/public-gateway/utils":
+"@public-gateway/utils@0.0.1, @public-gateway/utils@workspace:public-gateway/utils":
   version: 0.0.0-use.local
-  resolution: "@public-gateway/utils@workspace:backend/public-gateway/utils"
+  resolution: "@public-gateway/utils@workspace:public-gateway/utils"
   dependencies:
     "@nestjs/common": 6.10.5
   languageName: unknown
   linkType: soft
 
-"@search/service@workspace:backend/search/service":
+"@search/service@workspace:search/service":
   version: 0.0.0-use.local
-  resolution: "@search/service@workspace:backend/search/service"
+  resolution: "@search/service@workspace:search/service"
   dependencies:
     "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@collaboration/domain": 0.0.1

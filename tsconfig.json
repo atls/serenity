@@ -1,5 +1,21 @@
 {
   "extends": "@atlantis-lab/tsconfig/tsconfig.base.json",
-  "include": ["ui/**/*", "fragments/**/*", "site/**/*", "email/**/*"],
+  "include": [
+    "catalog/**/*",
+    "collaboration/**/*",
+    "files/**/*",
+    "hits/**/*",
+    "mailer/**/*",
+    "portfolio/**/*",
+    "private-gateway/**/*",
+    "public-gateway/**/*",
+    "protos/**/*",
+    "identity/**/*",
+    "search/**/*",
+    "ui/**/*",
+    "fragments/**/*",
+    "site/**/*",
+    "email/**/*"
+  ],
   "exclude": ["./**/**/src/stories"]
 }
