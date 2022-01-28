@@ -401,7 +401,7 @@ exports[`Projects fragment snapshots should match latest render snapshot 1`] = `
         >
           <div
             aria-autocomplete="list"
-            aria-controls="cc01a73f-0e54-4257-e88e-854e3c212623"
+            aria-controls="75647720-fd7f-4b59-cbc7-d6b2bebe1415"
             aria-expanded="false"
             aria-haspopup="true"
             class="rc-select-selection

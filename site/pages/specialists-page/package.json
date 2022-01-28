@@ -10,6 +10,8 @@
   },
   "devDependencies": {
     "@apollo/client": "^3.5.8",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@site/catalog-fragment": "0.0.1",
     "@site/filters-fragment": "0.0.1",
     "@site/footer-fragment": "0.0.1",
@@ -21,6 +23,8 @@
   },
   "peerDependencies": {
     "@apollo/client": "*",
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
     "react-intl": "*"
   }
 }

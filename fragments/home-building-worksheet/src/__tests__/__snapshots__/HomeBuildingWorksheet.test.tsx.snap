@@ -417,7 +417,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
         >
           <div
             aria-autocomplete="list"
-            aria-controls="439a47ce-41b9-4835-d0c5-3c87ca02574f"
+            aria-controls="6ca134f7-a7fb-46e4-8339-2644f2aa78ad"
             aria-expanded="false"
             aria-haspopup="true"
             class="rc-select-selection
@@ -534,7 +534,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
         >
           <div
             aria-autocomplete="list"
-            aria-controls="01d4e625-3f3c-4efe-9863-80784f583368"
+            aria-controls="4fa26785-4e26-4bf7-8859-e7171beefdd5"
             aria-expanded="false"
             aria-haspopup="true"
             class="rc-select-selection
@@ -651,7 +651,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
         >
           <div
             aria-autocomplete="list"
-            aria-controls="ceb81601-0dfa-4b3e-b525-1c22e192779d"
+            aria-controls="6a66805b-627f-448f-f30d-4e0494a0d045"
             aria-expanded="false"
             aria-haspopup="true"
             class="rc-select-selection
@@ -834,7 +834,7 @@ exports[`Home-building worksheet snapshots should match latest render snapshot 1
             >
               <div
                 aria-autocomplete="list"
-                aria-controls="7984f943-2936-4d7c-8bba-413a244787b6"
+                aria-controls="a833a2c7-4c71-4ce1-a7ea-9de3a24f77b1"
                 aria-expanded="false"
                 aria-haspopup="true"
                 class="rc-select-selection

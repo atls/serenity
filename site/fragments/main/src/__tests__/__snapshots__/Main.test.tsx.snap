@@ -424,7 +424,7 @@ exports[`Main fragment snapshots should match latest render snapshot 1`] = `
             >
               <div
                 aria-autocomplete="list"
-                aria-controls="2ad196bb-c8c7-4e4d-dd45-79bd8b92b7a7"
+                aria-controls="64de6022-4280-423a-f245-2a6d1071ecd2"
                 aria-expanded="false"
                 aria-haspopup="true"
                 class="rc-select-selection

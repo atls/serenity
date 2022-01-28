@@ -4,8 +4,6 @@ const withPlugins = require('next-compose-plugins')
 const withImages = require('next-images')
 const withFonts = require('next-fonts')
 
-const { withAliases } = require('./with-config-cjs')
-
 const nextConfig = {
   experimental: {
     externalDir: true,
@@ -20,8 +18,7 @@ module.exports = withPlugins(
     withWorkspaces,
     withExtractIntlMessages,
     withImages,
-    withFonts,
-    withAliases(['@emotion/react', '@emotion/styled', 'react-intl']),
+    withFonts
   ],
   nextConfig
 )

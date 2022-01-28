@@ -12,6 +12,8 @@
     "@apollo/client": "^3.5.8",
     "@apollo/react-testing": "4.0.0",
     "@atls/react-user": "^0.1.40",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@fragments/choose-specialist-modal": "0.0.1",
     "@testing-library/react": "9.3.2",
     "@ui/avatar": "0.0.1",
@@ -28,6 +30,8 @@
   },
   "peerDependencies": {
     "@apollo/client": "*",
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
     "react-intl": "*"
   }
 }

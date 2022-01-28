@@ -11,6 +11,8 @@
   "devDependencies": {
     "@apollo/client": "^3.5.8",
     "@apollo/react-testing": "4.0.0",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@fragments/project-short": "0.0.1",
     "@testing-library/react": "9.3.2",
     "@ui/layout": "0.0.5",
@@ -21,6 +23,8 @@
   },
   "peerDependencies": {
     "@apollo/client": "*",
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
     "react-intl": "*"
   }
 }

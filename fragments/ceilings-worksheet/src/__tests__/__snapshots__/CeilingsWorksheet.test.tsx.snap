@@ -441,7 +441,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             >
               <div
                 aria-autocomplete="list"
-                aria-controls="6b5d39bb-1216-4daf-a9b9-d734b9c957d0"
+                aria-controls="24d5725f-f23d-40bd-d143-b24e429e7d5b"
                 aria-expanded="false"
                 aria-haspopup="true"
                 class="rc-select-selection
@@ -524,7 +524,7 @@ exports[`Ceilings worksheet snapshots should match latest render snapshot 1`] = 
             >
               <div
                 aria-autocomplete="list"
-                aria-controls="f0983f12-99cd-4d03-8103-0dc36f108a4b"
+                aria-controls="c459c82f-addc-4309-b8b8-6f5f3870e688"
                 aria-expanded="false"
                 aria-haspopup="true"
                 class="rc-select-selection

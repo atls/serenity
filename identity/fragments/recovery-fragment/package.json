@@ -8,6 +8,8 @@
   },
   "devDependencies": {
     "@atls/react-kratos-browser-flows": "^0.0.1",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@ui/button": "workspace:ui/button",
     "@ui/input": "workspace:ui/input",
     "@ui/layout": "workspace:ui/layout",
@@ -16,6 +18,8 @@
   },
   "peerDependencies": {
     "@atls/react-kratos-browser-flows": "*",
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
     "react-intl": "*"
   }
 }

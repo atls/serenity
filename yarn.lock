@@ -1691,6 +1691,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/cache@npm:^11.7.1":
+  version: 11.7.1
+  resolution: "@emotion/cache@npm:11.7.1"
+  dependencies:
+    "@emotion/memoize": ^0.7.4
+    "@emotion/sheet": ^1.1.0
+    "@emotion/utils": ^1.0.0
+    "@emotion/weak-memoize": ^0.2.5
+    stylis: 4.0.13
+  checksum: cf7aa8fe3bacfdedcda94b53e76a7635e122043439715fcfbf7f1a81340cfe6099a59134481a03ec3e0437466566d18528577d1e6ea92f5b98c372b8b38a8f35
+  languageName: node
+  linkType: hard
+
 "@emotion/css-prettifier@npm:^1.0.1":
   version: 1.0.1
   resolution: "@emotion/css-prettifier@npm:1.0.1"
@@ -1741,6 +1754,15 @@ __metadata:
   dependencies:
     "@emotion/memoize": ^0.7.4
   checksum: 87351133ad80612138d9e34e79198635d36b238c7a5fddb4593798ecf8a2db6ac1d84e1e5e282a7fec04fb589e0cd4b1214ad080a9181671dcab2ce24ef22c1b
+  languageName: node
+  linkType: hard
+
+"@emotion/is-prop-valid@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@emotion/is-prop-valid@npm:1.1.1"
+  dependencies:
+    "@emotion/memoize": ^0.7.4
+  checksum: 5816696dae6ac79537a31fe95256e0c1f55651507204676dd9903542b102f727c16a68924e6634a89b0972f0d15b0803bb9d4e14bd0fb8a49da8a2e3956e6639
   languageName: node
   linkType: hard
 
@@ -1802,6 +1824,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/react@npm:^11.7.1":
+  version: 11.7.1
+  resolution: "@emotion/react@npm:11.7.1"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@emotion/cache": ^11.7.1
+    "@emotion/serialize": ^1.0.2
+    "@emotion/sheet": ^1.1.0
+    "@emotion/utils": ^1.0.0
+    "@emotion/weak-memoize": ^0.2.5
+    hoist-non-react-statics: ^3.3.1
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    react: ">=16.8.0"
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    "@types/react":
+      optional: true
+  checksum: 3392aa71f9c68c16022947959f7f842174e6b075b3baf58e185462411cd9b5a87557109a9225b1abaa2d7200a08b7cb9d7f21aa035f0d36b2c89e19b2a124e02
+  languageName: node
+  linkType: hard
+
 "@emotion/serialize@npm:^1.0.0, @emotion/serialize@npm:^1.0.2":
   version: 1.0.2
   resolution: "@emotion/serialize@npm:1.0.2"
@@ -1839,6 +1884,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/sheet@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@emotion/sheet@npm:1.1.0"
+  checksum: a4b74e16a8fea1157413efe4904f5f679d724323cb605d66d20a0b98744422f5d411fca927ceb52e4de454a0a819c5273ca9496db9f011b4ecd17b9f1b212007
+  languageName: node
+  linkType: hard
+
 "@emotion/styled@npm:^11.3.0":
   version: 11.3.0
   resolution: "@emotion/styled@npm:11.3.0"
@@ -1858,6 +1910,28 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 5e5c1e89d2022696e44d2a44e352aba56ab0961d9c4a78eff5d1bfa3deae08487fb17641610446595471d74e956b791e619d3a9006c18e145ed849ef7062e1b5
+  languageName: node
+  linkType: hard
+
+"@emotion/styled@npm:^11.6.0":
+  version: 11.6.0
+  resolution: "@emotion/styled@npm:11.6.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@emotion/babel-plugin": ^11.3.0
+    "@emotion/is-prop-valid": ^1.1.1
+    "@emotion/serialize": ^1.0.2
+    "@emotion/utils": ^1.0.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    "@emotion/react": ^11.0.0-rc.0
+    react: ">=16.8.0"
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    "@types/react":
+      optional: true
+  checksum: 612bbf114a4ca49e5b3ec4554bea1cd5aad9eeb2371babc3e6b79eab5020bd0300b9904108b621837fe715e221ba09dd131dc29918c1fd966e082d8e74fca833
   languageName: node
   linkType: hard
 
@@ -2610,6 +2684,8 @@ __metadata:
   resolution: "@identity/login-fragment@workspace:identity/fragments/login-fragment"
   dependencies:
     "@atls/react-kratos-browser-flows": ^0.0.1
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@ui/button": "workspace:ui/button"
     "@ui/input": "workspace:ui/input"
     "@ui/layout": "workspace:ui/layout"
@@ -2619,6 +2695,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@atls/react-kratos-browser-flows": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -2628,6 +2706,8 @@ __metadata:
   resolution: "@identity/login-page@workspace:identity/pages/login-page"
   dependencies:
     "@atls/react-kratos-browser-flows": ^0.0.1
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@identity/login-fragment": 0.0.0
     "@ui/icons": "workspace:ui/icons"
     "@ui/layout": "workspace:ui/layout"
@@ -2635,6 +2715,8 @@ __metadata:
     react-helmet: ^5.2.0
     react-intl: ^5.24.4
   peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -2661,6 +2743,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@identity/recovery-complete-page@workspace:identity/pages/recovery-complete-page"
   dependencies:
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@testing-library/react": 9.5.0
     "@ui/button": "workspace:ui/button"
     "@ui/icons": "workspace:ui/icons"
@@ -2672,6 +2756,8 @@ __metadata:
     react-helmet: ^5.2.0
     react-intl: ^5.24.4
   peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -2681,6 +2767,8 @@ __metadata:
   resolution: "@identity/recovery-fragment@workspace:identity/fragments/recovery-fragment"
   dependencies:
     "@atls/react-kratos-browser-flows": ^0.0.1
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@ui/button": "workspace:ui/button"
     "@ui/input": "workspace:ui/input"
     "@ui/layout": "workspace:ui/layout"
@@ -2689,6 +2777,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@atls/react-kratos-browser-flows": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -2698,6 +2788,8 @@ __metadata:
   resolution: "@identity/recovery-page@workspace:identity/pages/recovery-page"
   dependencies:
     "@atls/react-kratos-browser-flows": ^0.0.1
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@identity/recovery-fragment": "workspace:identity/fragments/recovery-fragment"
     "@ui/icons": "workspace:ui/icons"
     "@ui/layout": "workspace:ui/layout"
@@ -2706,6 +2798,8 @@ __metadata:
     react-helmet: ^5.2.0
     react-intl: ^5.24.4
   peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -2714,6 +2808,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@identity/registration-complete-page@workspace:identity/pages/registration-complete-page"
   dependencies:
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@testing-library/react": 9.5.0
     "@ui/button": "workspace:ui/button"
     "@ui/icons": "workspace:ui/icons"
@@ -2725,6 +2821,8 @@ __metadata:
     react-helmet: ^5.2.0
     react-intl: ^5.24.4
   peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -2734,6 +2832,8 @@ __metadata:
   resolution: "@identity/registration-fragment@workspace:identity/fragments/registration-fragment"
   dependencies:
     "@atls/react-kratos-browser-flows": ^0.0.1
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@ui/button": "workspace:ui/button"
     "@ui/input": "workspace:ui/input"
     "@ui/layout": "workspace:ui/layout"
@@ -2742,6 +2842,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@atls/react-kratos-browser-flows": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -2751,6 +2853,8 @@ __metadata:
   resolution: "@identity/registration-page@workspace:identity/pages/registration-page"
   dependencies:
     "@atls/react-kratos-browser-flows": ^0.0.1
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@identity/registration-fragment": "workspace:identity/fragments/registration-fragment"
     "@ui/icons": "workspace:ui/icons"
     "@ui/layout": "workspace:ui/layout"
@@ -2759,6 +2863,8 @@ __metadata:
     react-helmet: ^5.2.0
     react-intl: ^5.24.4
   peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -2767,6 +2873,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@identity/registration-profile-page@workspace:identity/pages/registration-profile-page"
   dependencies:
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@testing-library/react": 9.5.0
     "@ui/button": "workspace:ui/button"
     "@ui/icons": "workspace:ui/icons"
@@ -2778,6 +2886,8 @@ __metadata:
     react-helmet: ^5.2.0
     react-intl: ^5.24.4
   peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -2876,6 +2986,8 @@ __metadata:
   resolution: "@identity/settings-fragment@workspace:identity/fragments/settings-fragment"
   dependencies:
     "@atls/react-kratos-browser-flows": ^0.0.1
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17.0.6
     "@ui/button": "workspace:ui/button"
     "@ui/input": "workspace:ui/input"
@@ -2885,6 +2997,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@atls/react-kratos-browser-flows": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react: 16.14.0
     react-intl: "*"
   languageName: unknown
@@ -2895,6 +3009,8 @@ __metadata:
   resolution: "@identity/settings-page@workspace:identity/pages/settings-page"
   dependencies:
     "@atls/react-kratos-browser-flows": ^0.0.1
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@identity/settings-fragment": "workspace:identity/fragments/settings-fragment"
     "@types/react": ^17.0.6
     "@types/react-helmet": ^6
@@ -2905,6 +3021,8 @@ __metadata:
     react-helmet: ^6.1.0
     react-intl: ^5.24.4
   peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react: 16.14.0
     react-helmet: ^5.2.0
     react-intl: "*"
@@ -4880,6 +4998,8 @@ __metadata:
   dependencies:
     "@apollo/client": ^3.5.8
     "@apollo/react-testing": 4.0.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@testing-library/react": 9.5.0
     "@ui/button": 0.3.1
     "@ui/drawer": 0.3.1
@@ -4897,6 +5017,8 @@ __metadata:
     react-masonry-component: 6.2.1
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -4907,6 +5029,8 @@ __metadata:
   dependencies:
     "@apollo/client": ^3.5.8
     "@apollo/react-testing": 4.0.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@testing-library/react": 9.3.2
     "@ui/collapse": 0.0.1
     "@ui/icons": 0.1.1
@@ -4919,6 +5043,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -4928,6 +5054,8 @@ __metadata:
   resolution: "@site/footer-fragment@workspace:site/fragments/footer"
   dependencies:
     "@apollo/client": ^3.5.8
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@testing-library/react": 9.3.2
     "@ui/layout": 0.0.5
     "@ui/link": 0.0.5
@@ -4936,6 +5064,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -4945,6 +5075,8 @@ __metadata:
   resolution: "@site/index-page@workspace:site/pages/index-page"
   dependencies:
     "@apollo/client": ^3.5.8
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@site/catalog-fragment": 0.0.1
     "@site/main-fragment": 0.0.1
     "@site/navigation-fragment": 0.0.1
@@ -4954,6 +5086,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -4964,6 +5098,8 @@ __metadata:
   dependencies:
     "@apollo/client": ^3.5.8
     "@apollo/react-testing": 4.0.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@testing-library/react": 9.5.0
     "@ui/layout": 0.0.5
     "@ui/search": 0.0.1
@@ -4976,6 +5112,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -4986,6 +5124,8 @@ __metadata:
   dependencies:
     "@apollo/client": ^3.5.8
     "@atls/react-user": ^0.1.40
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@fragments/chat": 0.0.1
     "@testing-library/react": 9.5.0
     "@ui/avatar": 0.0.1
@@ -5005,6 +5145,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -5015,6 +5157,8 @@ __metadata:
   dependencies:
     "@apollo/client": ^3.5.8
     "@apollo/react-testing": 4.0.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@testing-library/react": 9.3.2
     "@ui/avatar": 0.0.1
     "@ui/divider": 0.0.1
@@ -5029,6 +5173,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -5040,6 +5186,8 @@ __metadata:
     "@apollo/client": ^3.5.8
     "@apollo/react-testing": 4.0.0
     "@atls/react-user": ^0.1.40
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@fragments/choose-specialist-modal": 0.0.1
     "@testing-library/react": 9.3.2
     "@ui/avatar": 0.0.1
@@ -5058,6 +5206,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -5068,6 +5218,8 @@ __metadata:
   dependencies:
     "@apollo/client": ^3.5.8
     "@apollo/react-testing": 4.0.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@fragments/ceilings-worksheet": 0.0.1
     "@fragments/floors-worksheet": 0.0.1
     "@fragments/home-building-worksheet": 0.0.1
@@ -5089,6 +5241,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -5099,6 +5253,8 @@ __metadata:
   dependencies:
     "@apollo/client": ^3.5.8
     "@atls/react-user": ^0.1.40
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@site/catalog-fragment": 0.0.1
     "@site/footer-fragment": 0.0.1
     "@site/navigation-fragment": 0.0.1
@@ -5115,6 +5271,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -5125,6 +5283,8 @@ __metadata:
   dependencies:
     "@apollo/client": ^3.5.8
     "@apollo/react-testing": 4.0.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@fragments/project-short": 0.0.1
     "@testing-library/react": 9.3.2
     "@ui/layout": 0.0.5
@@ -5137,6 +5297,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -5146,6 +5308,8 @@ __metadata:
   resolution: "@site/projects-page@workspace:site/pages/projects-page"
   dependencies:
     "@apollo/client": ^3.5.8
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@site/catalog-fragment": 0.0.1
     "@site/filters-fragment": 0.0.1
     "@site/footer-fragment": 0.0.1
@@ -5159,6 +5323,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -5220,6 +5386,8 @@ __metadata:
   resolution: "@site/specialists-detail-fragment@workspace:site/fragments/specialists-detail"
   dependencies:
     "@apollo/client": ^3.5.8
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@fragments/reviews": 0.0.1
     "@testing-library/react": 9.3.2
     "@ui/avatar": 0.0.1
@@ -5240,6 +5408,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -5249,6 +5419,8 @@ __metadata:
   resolution: "@site/specialists-detail-page@workspace:site/pages/specialists-detail-page"
   dependencies:
     "@apollo/client": ^3.5.8
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@site/catalog-fragment": 0.0.1
     "@site/footer-fragment": 0.0.1
     "@site/navigation-fragment": 0.0.1
@@ -5263,6 +5435,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -5273,6 +5447,8 @@ __metadata:
   dependencies:
     "@apollo/client": ^3.5.8
     "@apollo/react-testing": 4.0.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@testing-library/react": 9.3.2
     "@ui/avatar": 0.0.1
     "@ui/button": 0.3.1
@@ -5292,6 +5468,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -5301,6 +5479,8 @@ __metadata:
   resolution: "@site/specialists-page@workspace:site/pages/specialists-page"
   dependencies:
     "@apollo/client": ^3.5.8
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@site/catalog-fragment": 0.0.1
     "@site/filters-fragment": 0.0.1
     "@site/footer-fragment": 0.0.1
@@ -5314,6 +5494,8 @@ __metadata:
     react-intl: ^5.24.4
   peerDependencies:
     "@apollo/client": "*"
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -6524,12 +6706,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/avatar@workspace:ui/avatar"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17.0.6
     react: ^17.0.2
     styled-system: ^5.1.0
     styled-tools: ^1.7.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6537,8 +6722,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/button@workspace:ui/button"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@styled-system/should-forward-prop": 5.1.5
     "@types/react": ^17.0.6
     "@types/styled-system": 5.1.4
@@ -6547,6 +6732,9 @@ __metadata:
     react: ^17.0.2
     styled-system: ^5.1.0
     styled-tools: 1.7.1
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6554,8 +6742,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/carousel@workspace:ui/carousel"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17.0.6
     "@types/styled-system": 5.1.4
     "@ui/icons": 0.1.1
@@ -6564,6 +6752,9 @@ __metadata:
     react-swipeable: 5.5.0
     styled-system: ^5.1.0
     styled-tools: ^1.7.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6571,8 +6762,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/chat@workspace:ui/chat"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/events": ^3
     "@types/react": ^17.0.6
     "@ui/avatar": 0.0.1
@@ -6586,6 +6777,9 @@ __metadata:
     events: ^3.3.0
     react: ^17.0.2
     styled-tools: 1.7.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6605,11 +6799,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/divider@workspace:ui/divider"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17
     react: ^17.0.2
     styled-tools: ^1.7.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6617,8 +6814,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/drawer@workspace:ui/drawer"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17.0.6
     "@types/react-dom": ^17
     "@types/react-motion": ^0
@@ -6633,6 +6830,9 @@ __metadata:
     react-motion: ^0.5.2
     react-scrolllock: ^5.0.1
     styled-system: ^5.1.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6640,13 +6840,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/dropdown@workspace:ui/dropdown"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/rc-trigger": 0.0.1
     "@types/react": ^17
     rc-trigger: 5.2.8
     react: ^17.0.2
     styled-tools: ^1.7.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6654,8 +6857,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/gallery@workspace:ui/gallery"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17
     "@types/styled-system": 5.1.4
     "@ui/button": 0.3.1
@@ -6666,6 +6869,9 @@ __metadata:
     react-swipeable: 6.1.2
     styled-system: ^5.1.0
     styled-tools: ^1.7.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6673,11 +6879,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/hamburger@workspace:ui/hamburger"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17
     react: ^17.0.2
     styled-tools: ^1.7.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6687,6 +6896,8 @@ __metadata:
   dependencies:
     "@atlantis-lab/prettier-config": ^0.0.18 || ^0.1.0
     "@atlantis-lab/tsconfig": ^0.1.12
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@monstrs/figma-assets-cli": 0.1.3
     "@svgr/core": 5.5.0
     "@types/react-text-mask": ^5
@@ -6698,6 +6909,9 @@ __metadata:
     react-text-mask: ^5.4.3
     text-mask-addons: ^3.8.0
     ts-node: 8.10.2
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6705,12 +6919,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/image@workspace:ui/image"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17
     "@types/styled-system": ^5.1.0
     react: ^17.0.2
     styled-system: ^5.1.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6718,8 +6935,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/input@workspace:ui/input"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@styled-system/should-forward-prop": ^5.1.0
     "@types/react": ^17
     "@types/react-text-mask": ^5
@@ -6730,6 +6947,9 @@ __metadata:
     styled-system: ^5.1.0
     styled-tools: ^1.7.0
     text-mask-addons: ^3.8.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6737,13 +6957,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/label@workspace:ui/label"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17
     "@types/styled-system": ^5.1.11
     react: ^17.0.2
     styled-system: ^5.1.0
     styled-tools: ^1.7.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6751,12 +6974,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/layout@workspace:ui/layout"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17
     "@types/styled-system": ^5.1.0
     react: ^17.0.2
     styled-system: ^5.1.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6764,14 +6990,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/link@workspace:ui/link"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17
     "@types/styled-system": 5.1.4
     "@ui/text": 0.3.1
     next: 10.0.5
     react: ^17.0.2
     styled-tools: ^1.7.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6779,8 +7008,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/listview@workspace:ui/listview"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17
     "@ui/button": 0.3.1
     "@ui/drawer": 0.3.1
@@ -6790,6 +7019,9 @@ __metadata:
     "@ui/text": 0.3.1
     react: ^17.0.2
     styled-tools: ^1.7.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6797,14 +7029,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/modal@workspace:ui/modal"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     framer-motion: ^4.1.17
     global: 4.4.0
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scrolllock: ^5.0.1
     styled-tools: ^1.7.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6812,12 +7047,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/navigation@workspace:ui/navigation"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/styled-system": ^5.1.11
     react: ^17.0.2
     styled-system: ^5.1.0
     styled-tools: ^1.7.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6825,12 +7063,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/rating@workspace:ui/rating"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17
     "@ui/icons": 0.1.1
     react: ^17.0.2
     styled-tools: ^1.7.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6838,10 +7079,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/read-more@workspace:ui/read-more"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@ui/layout": 0.0.5
     react: 16.13.1
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6849,10 +7093,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/relative-time@workspace:ui/relative-time"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     react: 16.13.1
     react-intl: 5.3.2
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6860,13 +7107,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/search@workspace:ui/search"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17
     "@ui/icons": 0.1.1
     rc-select: 9.2.2
     react: ^17.0.2
     styled-tools: ^1.7.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6885,12 +7135,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/text@workspace:ui/text"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17
     "@types/styled-system": 5.1.4
     react: ^17.0.2
     styled-system: ^5.1.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6899,12 +7152,15 @@ __metadata:
   resolution: "@ui/theme@workspace:ui/theme"
   dependencies:
     "@emotion/css": ^11.1.3
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17.0.6
     "@types/styled-system": 5.1.4
     react: ^17.0.2
     styled-system: ^5.1.0
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 
@@ -6912,8 +7168,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/utils@workspace:ui/utils"
   dependencies:
+    "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.6.0
     "@types/react": ^17
     react: ^17.0.2
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
   languageName: unknown
   linkType: soft
 

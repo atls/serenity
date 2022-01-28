@@ -5,13 +5,17 @@
   "license": "MIT",
   "main": "src/index.ts",
   "dependencies": {
-    "@emotion/react": "^11.4.0",
-    "@emotion/styled": "^11.3.0",
     "react": "^17.0.2",
     "styled-tools": "^1.7.0"
   },
   "devDependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@types/react": "^17",
     "@ui/icons": "0.1.1"
+  },
+  "peerDependencies": {
+    "@emotion/react": "*",
+    "@emotion/styled": "*"
   }
 }

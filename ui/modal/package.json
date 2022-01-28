@@ -5,13 +5,19 @@
   "license": "MIT",
   "main": "src/index.ts",
   "dependencies": {
-    "@emotion/react": "^11.4.0",
-    "@emotion/styled": "^11.3.0",
     "framer-motion": "^4.1.17",
     "global": "4.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scrolllock": "^5.0.1",
     "styled-tools": "^1.7.0"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0"
+  },
+  "peerDependencies": {
+    "@emotion/react": "*",
+    "@emotion/styled": "*"
   }
 }

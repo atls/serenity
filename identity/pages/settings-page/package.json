@@ -7,6 +7,8 @@
     "@atls/react-kratos-browser-flows": "^0.0.1"
   },
   "devDependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@identity/settings-fragment": "workspace:identity/fragments/settings-fragment",
     "@types/react": "^17.0.6",
     "@types/react-helmet": "^6",
@@ -18,6 +20,8 @@
     "react-intl": "^5.24.4"
   },
   "peerDependencies": {
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
     "react": "16.14.0",
     "react-helmet": "^5.2.0",
     "react-intl": "*"
