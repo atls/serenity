@@ -1,4 +1,4 @@
-import { DataLoaderInterceptor } from '@monstrs/nestjs-dataloader'
+import { DataLoaderInterceptor } from '@atls/nestjs-dataloader'
 import { Module }                from '@nestjs/common'
 import { APP_INTERCEPTOR }       from '@nestjs/core'
 import { GraphQLModule }         from '@nestjs/graphql'

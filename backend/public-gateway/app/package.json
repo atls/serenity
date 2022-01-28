@@ -9,7 +9,7 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@monstrs/nestjs-dataloader": "0.1.4",
+    "@atls/nestjs-dataloader": "^0.0.3",
     "@monstrs/oathkeeper-auth": "0.1.0",
     "@nestjs/common": "6.10.5",
     "@nestjs/core": "6.10.5",

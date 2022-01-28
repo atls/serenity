@@ -364,6 +364,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@atls/nestjs-dataloader@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "@atls/nestjs-dataloader@npm:0.0.3"
+  peerDependencies:
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/graphql": ^7.0.0
+    dataloader: ^2.0.0
+    rxjs: ^7.2.0
+  checksum: 77f478fd7e38874d7f1805058978e36d34795f3da096fce652f2d04964712fd53134cb650f7b9f44b275ad6e612d6ed07155556466888aeabd569b8226cbb77b
+  languageName: node
+  linkType: hard
+
 "@atls/nestjs-map-errors-interceptor@npm:^0.1.36":
   version: 0.1.36
   resolution: "@atls/nestjs-map-errors-interceptor@npm:0.1.36"
@@ -1375,9 +1388,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@catalog/application@workspace:backend/catalog/application"
   dependencies:
+    "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@catalog/domain": 0.1.1
     "@catalog/persistence": 0.1.1
-    "@monstrs/nestjs-map-errors-interceptor": 0.1.3
     "@nestjs/common": 6.10.5
     "@nestjs/core": 6.10.5
     "@nestjs/microservices": 6.10.5
@@ -1428,6 +1441,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@catalog/service@workspace:backend/catalog/service"
   dependencies:
+    "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@catalog/application": 0.1.1
     "@catalog/domain": 0.1.1
     "@catalog/persistence": 0.1.1
@@ -1435,7 +1449,6 @@ __metadata:
     "@grpc/proto-loader": 0.5.5
     "@monstrs/nestjs-bus": 0.1.4
     "@monstrs/nestjs-bus-health": 0.1.0
-    "@monstrs/nestjs-map-errors-interceptor": 0.1.3
     "@monstrs/server-scripts": 0.1.5
     "@nestjs/common": 6.10.5
     "@nestjs/core": 6.10.5
@@ -1468,10 +1481,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@collaboration/application@workspace:backend/collaboration/application"
   dependencies:
+    "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@collaboration/domain": 0.0.1
     "@collaboration/persistence": 0.0.1
     "@monstrs/nestjs-bus": 0.1.4
-    "@monstrs/nestjs-map-errors-interceptor": 0.1.3
     "@nestjs/common": 6.10.5
     "@nestjs/core": 6.10.5
     "@nestjs/microservices": 6.10.5
@@ -1977,10 +1990,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@files/application@workspace:backend/files/application"
   dependencies:
+    "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@files/domain": 0.0.2
     "@files/persistence": 0.0.2
     "@google-cloud/storage": 4.3.1
-    "@monstrs/nestjs-map-errors-interceptor": 0.1.3
     "@monstrs/nestjs-signed-url": 0.1.3
     "@nestjs/common": 6.10.5
     "@nestjs/core": 6.10.5
@@ -2031,11 +2044,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@files/service@workspace:backend/files/service"
   dependencies:
+    "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@files/application": 0.0.2
     "@files/persistence": 0.0.2
     "@grpc/proto-loader": 0.5.5
     "@monstrs/nestjs-bus": 0.1.4
-    "@monstrs/nestjs-map-errors-interceptor": 0.1.3
     "@monstrs/server-scripts": 0.1.5
     "@nestjs/common": 6.10.5
     "@nestjs/core": 6.10.5
@@ -2605,12 +2618,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hits/service@workspace:backend/hits/service"
   dependencies:
+    "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@grpc/proto-loader": 0.5.3
     "@hits/commands": 0.0.1
     "@hits/persistence": 0.0.1
     "@hits/queries": 0.0.1
     "@monstrs/nestjs-bus": 0.1.4
-    "@monstrs/nestjs-map-errors-interceptor": 0.1.3
     "@monstrs/server-scripts": 0.1.3
     "@nestjs/common": 6.10.5
     "@nestjs/core": 6.10.5
@@ -2646,9 +2659,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@identity/application@workspace:backend/identity/application"
   dependencies:
+    "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@identity/domain": 0.3.1
     "@identity/persistence": 0.3.1
-    "@monstrs/nestjs-map-errors-interceptor": 0.1.3
     "@nestjs/common": 6.10.5
     "@nestjs/core": 6.10.5
     "@nestjs/microservices": 6.10.5
@@ -3528,19 +3541,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/nestjs-dataloader@npm:0.1.4":
-  version: 0.1.4
-  resolution: "@monstrs/nestjs-dataloader@npm:0.1.4"
-  peerDependencies:
-    "@nestjs/common": ^7.0.0
-    "@nestjs/core": ^7.0.0
-    "@nestjs/graphql": ^7.0.0
-    dataloader: ^2.0.0
-    rxjs: ^6.5.2
-  checksum: 638faf0eba06e5d93362a5c852a510562b2af84ec65e4596fd6c26ef2f177fbbc21189a9c1305143b624f93b75e85e1efbfd736568cfc704a611583a29d51be4
-  languageName: node
-  linkType: hard
-
 "@monstrs/nestjs-elasticsearch-indicator@npm:0.1.1":
   version: 0.1.1
   resolution: "@monstrs/nestjs-elasticsearch-indicator@npm:0.1.1"
@@ -3582,16 +3582,6 @@ __metadata:
     reflect-metadata: ^0.1.12
     rxjs: ^6.3.3
   checksum: c948741fc3eded06e4ab5cd6cfb6e203e87c4ba92098ff5c958974eb0adb71771a6d8d17572ee2d274bf5d47960367c9fc6ce3a07ab8bbf7f9afa442d7804499
-  languageName: node
-  linkType: hard
-
-"@monstrs/nestjs-map-errors-interceptor@npm:0.1.3":
-  version: 0.1.3
-  resolution: "@monstrs/nestjs-map-errors-interceptor@npm:0.1.3"
-  peerDependencies:
-    "@nestjs/common": ^6.0.2
-    rxjs: ^6.3.3
-  checksum: be79c2d4ed9e42b03953ee4e411195c854ce2e704a0bfbdd23e5c3fb966287180c27516c100d57d07e6d438a6b857ee5c98d7a8e5a53f34981680654c8256276
   languageName: node
   linkType: hard
 
@@ -4485,7 +4475,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@portfolio/application@workspace:backend/portfolio/application"
   dependencies:
-    "@monstrs/nestjs-map-errors-interceptor": 0.1.3
+    "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@nestjs/common": 6.10.5
     "@nestjs/core": 6.10.5
     "@nestjs/microservices": 6.10.5
@@ -4538,9 +4528,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@portfolio/service@workspace:backend/portfolio/service"
   dependencies:
+    "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@grpc/proto-loader": 0.5.3
     "@monstrs/nestjs-bus": 0.1.4
-    "@monstrs/nestjs-map-errors-interceptor": 0.1.3
     "@monstrs/server-scripts": 0.1.3
     "@nestjs/common": 6.10.5
     "@nestjs/core": 6.10.5
@@ -4561,7 +4551,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@private-gateway/app@workspace:backend/private-gateway/app"
   dependencies:
-    "@monstrs/nestjs-dataloader": 0.1.4
+    "@atls/nestjs-dataloader": ^0.0.3
     "@monstrs/server-scripts": 0.1.5
     "@nestjs/common": 6.10.5
     "@nestjs/core": 6.10.5
@@ -4764,7 +4754,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@public-gateway/app@workspace:backend/public-gateway/app"
   dependencies:
-    "@monstrs/nestjs-dataloader": 0.1.4
+    "@atls/nestjs-dataloader": ^0.0.3
     "@monstrs/oathkeeper-auth": 0.1.0
     "@monstrs/server-scripts": 0.1.5
     "@nestjs/common": 6.10.5
@@ -4812,7 +4802,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@public-gateway/collaboration@workspace:backend/public-gateway/collaboration"
   dependencies:
-    "@monstrs/nestjs-dataloader": 0.1.4
+    "@atls/nestjs-dataloader": ^0.0.3
     "@nestjs/common": 6.10.5
     "@nestjs/graphql": 6.5.3
     "@nestjs/microservices": 6.10.5
@@ -4878,7 +4868,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@public-gateway/portfolio@workspace:backend/public-gateway/portfolio"
   dependencies:
-    "@monstrs/nestjs-dataloader": 0.1.4
+    "@atls/nestjs-dataloader": ^0.0.3
     "@nestjs/common": 6.10.5
     "@nestjs/graphql": 6.5.3
     "@nestjs/microservices": 6.10.5
@@ -4932,6 +4922,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@search/service@workspace:backend/search/service"
   dependencies:
+    "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@collaboration/domain": 0.0.1
     "@elastic/elasticsearch": 7.5.0
     "@godaddy/terminus": 4.3.1
@@ -4939,7 +4930,6 @@ __metadata:
     "@monstrs/nestjs-bus": 0.1.4
     "@monstrs/nestjs-bus-health": 0.1.0
     "@monstrs/nestjs-elasticsearch-indicator": 0.1.1
-    "@monstrs/nestjs-map-errors-interceptor": 0.1.3
     "@monstrs/server-scripts": 0.1.3
     "@nestjs/common": 6.10.5
     "@nestjs/core": 6.10.5

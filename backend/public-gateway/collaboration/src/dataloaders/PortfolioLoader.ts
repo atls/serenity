@@ -1,4 +1,4 @@
-import { NestDataLoader } from '@monstrs/nestjs-dataloader'
+import { NestDataLoader } from '@atls/nestjs-dataloader'
 import { Injectable }     from '@nestjs/common'
 import { OnModuleInit }   from '@nestjs/common'
 import { Client }         from '@nestjs/microservices'

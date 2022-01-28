@@ -1,4 +1,4 @@
-import { MapValidationErrorsInterceptor } from '@monstrs/nestjs-map-errors-interceptor'
+import { MapValidationErrorsInterceptor } from '@atls/nestjs-map-errors-interceptor'
 import { Controller }                     from '@nestjs/common'
 import { UseInterceptors }                from '@nestjs/common'
 import { UsePipes }                       from '@nestjs/common'

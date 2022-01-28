@@ -1,4 +1,4 @@
-import { Loader }          from '@monstrs/nestjs-dataloader'
+import { Loader }          from '@atls/nestjs-dataloader'
 import { Injectable }      from '@nestjs/common'
 import { Context }         from '@nestjs/graphql'
 import { ResolveProperty } from '@nestjs/graphql'
