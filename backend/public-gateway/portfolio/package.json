@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "src/index.ts",
   "dependencies": {
-    "@monstrs/nestjs-dataloader": "0.1.2",
+    "@monstrs/nestjs-dataloader": "0.1.4",
     "@nestjs/common": "6.10.5",
     "@nestjs/graphql": "6.5.3",
     "@nestjs/microservices": "6.10.5",

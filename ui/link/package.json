@@ -6,7 +6,7 @@
   "dependencies": {
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
-    "next": "^10.2.3",
+    "next": "10.0.5",
     "react": "^17.0.2",
     "styled-tools": "^1.7.0"
   },

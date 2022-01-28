@@ -9,7 +9,6 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@atls/kratos-session": "^0.0.1",
     "@atls/next-config-with-pnp-workspaces": "^0.0.1",
     "@emotion/server": "^11.4.0",
     "@grpc/proto-loader": "0.5.5",

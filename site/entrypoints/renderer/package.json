@@ -30,7 +30,7 @@
     "next-images": "1.2.0"
   },
   "devDependencies": {
-    "@apollo/client": "3.3.21",
+    "@apollo/client": "3.5.8",
     "@atls/next-app-with-helmet": "^0.2.63",
     "@atls/next-app-with-provider": "^0.2.63",
     "@atls/next-document-with-helmet": "^0.2.64",

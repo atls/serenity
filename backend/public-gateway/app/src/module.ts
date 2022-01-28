@@ -25,7 +25,6 @@ const playground =
   imports: [
     GraphQLModule.forRoot({
       introspection: Boolean(playground),
-      playground,
       installSubscriptionHandlers: false,
       autoSchemaFile: 'schema.gql',
       path: '//',

@@ -1,5 +1,3 @@
-import { getKratosClient } from '@atls/kratos-session'
-
 import connectRedis        from 'connect-redis'
 import express             from 'express'
 import session             from 'express-session'
@@ -33,13 +31,6 @@ const bootstrap = async () => {
       }),
     })
   )
-
-  server.use((req, res, nextMid) => {
-    // eslint-disable-next-line dot-notation
-    req['kratos'] = getKratosClient()
-
-    nextMid()
-  })
 
   server.get('*', (req, res) => handle(req, res))
 

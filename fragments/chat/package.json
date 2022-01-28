@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "src/index.tsx",
   "dependencies": {
-    "@apollo/client": "^3.3.19",
+    "@apollo/client": "^3.5.8",
     "graphql": "^15.5.0",
     "graphql-tag": "^2.10.0",
     "react": "16.13.1",

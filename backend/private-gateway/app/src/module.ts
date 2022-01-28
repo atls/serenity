@@ -11,7 +11,6 @@ const playground = process.env.NODE_ENV !== 'production' || Boolean(process.env.
   imports: [
     GraphQLModule.forRoot({
       introspection: playground,
-      playground,
       installSubscriptionHandlers: false,
       autoSchemaFile: 'schema.gql',
       path: '//',

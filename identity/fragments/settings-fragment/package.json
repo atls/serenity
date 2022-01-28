@@ -5,10 +5,12 @@
   "main": "src/index.tsx",
   "devDependencies": {
     "@atls/react-kratos-browser-flows": "^0.0.1",
+    "@types/react": "^17.0.6",
     "@ui/button": "workspace:ui/button",
     "@ui/input": "workspace:ui/input",
     "@ui/layout": "workspace:ui/layout",
     "@ui/text": "workspace:ui/text",
+    "react": "^17.0.2",
     "react-intl": "^5.24.4"
   },
   "peerDependencies": {
