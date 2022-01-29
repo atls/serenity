@@ -4660,7 +4660,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protos/catalog@0.1.1, @protos/catalog@workspace:protos/catalog":
+"@protos/catalog@0.1.1, @protos/catalog@workspace:^, @protos/catalog@workspace:protos/catalog":
   version: 0.0.0-use.local
   resolution: "@protos/catalog@workspace:protos/catalog"
   dependencies:
@@ -4669,7 +4669,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@protos/collaboration@0.0.1, @protos/collaboration@workspace:protos/collaboration":
+"@protos/collaboration@0.0.1, @protos/collaboration@workspace:^, @protos/collaboration@workspace:protos/collaboration":
   version: 0.0.0-use.local
   resolution: "@protos/collaboration@workspace:protos/collaboration"
   dependencies:
@@ -4684,7 +4684,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@protos/files@0.0.2, @protos/files@workspace:protos/files":
+"@protos/files@0.0.2, @protos/files@workspace:^, @protos/files@workspace:protos/files":
   version: 0.0.0-use.local
   resolution: "@protos/files@workspace:protos/files"
   dependencies:
@@ -4702,7 +4702,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@protos/identity@0.3.1, @protos/identity@workspace:protos/identity":
+"@protos/identity@0.3.1, @protos/identity@workspace:^, @protos/identity@workspace:protos/identity":
   version: 0.0.0-use.local
   resolution: "@protos/identity@workspace:protos/identity"
   dependencies:
@@ -4732,7 +4732,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@protos/portfolio@0.0.0, @protos/portfolio@workspace:protos/portfolio":
+"@protos/portfolio@0.0.0, @protos/portfolio@workspace:^, @protos/portfolio@workspace:protos/portfolio":
   version: 0.0.0-use.local
   resolution: "@protos/portfolio@workspace:protos/portfolio"
   dependencies:
@@ -4741,7 +4741,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@protos/search@0.0.0, @protos/search@workspace:protos/search":
+"@protos/search@0.0.0, @protos/search@workspace:^, @protos/search@workspace:protos/search":
   version: 0.0.0-use.local
   resolution: "@protos/search@workspace:protos/search"
   dependencies:
@@ -4755,6 +4755,7 @@ __metadata:
   resolution: "@public-gateway/app@workspace:public-gateway/app"
   dependencies:
     "@atls/nestjs-dataloader": ^0.0.3
+    "@grpc/proto-loader": 0.5.3
     "@monstrs/oathkeeper-auth": 0.1.0
     "@monstrs/server-scripts": 0.1.5
     "@nestjs/common": 6.10.5
@@ -4762,9 +4763,15 @@ __metadata:
     "@nestjs/graphql": 6.5.3
     "@nestjs/microservices": 6.10.5
     "@nestjs/platform-express": 6.10.5
+    "@protos/catalog": "workspace:^"
+    "@protos/collaboration": "workspace:^"
     "@protos/common": "workspace:^"
+    "@protos/files": "workspace:^"
     "@protos/hits": 0.0.1
+    "@protos/identity": "workspace:^"
     "@protos/interfaces": 0.1.1
+    "@protos/portfolio": "workspace:^"
+    "@protos/search": "workspace:^"
     "@public-gateway/catalog": 0.1.1
     "@public-gateway/collaboration": 0.0.1
     "@public-gateway/files": 0.0.2
@@ -4776,6 +4783,7 @@ __metadata:
     dataloader: 2.0.0
     graphql: 14.5.8
     graphql-tools: 4.0.6
+    grpc: ^1.24.11
     reflect-metadata: 0.1.13
     rxjs: 6.5.3
     type-graphql: 0.17.5
@@ -16219,14 +16227,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:15.8.0":
-  version: 15.8.0
-  resolution: "graphql@npm:15.8.0"
-  checksum: 423325271db8858428641b9aca01699283d1fe5b40ef6d4ac622569ecca927019fce8196208b91dd1d8eb8114f00263fe661d241d0eb40c10e5bfd650f86ec5e
+"graphql@npm:^14.1.1":
+  version: 14.7.0
+  resolution: "graphql@npm:14.7.0"
+  dependencies:
+    iterall: ^1.2.2
+  checksum: e5f4e60799421a573904f390e1ec0aa76360f751688dbbe62e9c35baa0d3727c8d59a659bfc524f126dffe3518da87fd8ecaa78c94fd5c0fe4e035c670745242
   languageName: node
   linkType: hard
 
-"grpc@npm:*, grpc@npm:^1.18.0":
+"grpc@npm:*, grpc@npm:^1.18.0, grpc@npm:^1.24.11":
   version: 1.24.11
   resolution: "grpc@npm:1.24.11"
   dependencies:
@@ -18013,7 +18023,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"iterall@npm:*, iterall@npm:^1.1.3, iterall@npm:^1.2.1, iterall@npm:^1.3.0":
+"iterall@npm:*, iterall@npm:^1.1.3, iterall@npm:^1.2.1, iterall@npm:^1.2.2, iterall@npm:^1.3.0":
   version: 1.3.0
   resolution: "iterall@npm:1.3.0"
   checksum: c78b99678f8c99be488cca7f33e4acca9b72c1326e050afbaf023f086e55619ee466af0464af94a0cb3f292e60cb5bac53a8fd86bd4249ecad26e09f17bb158b
@@ -24624,6 +24634,9 @@ __metadata:
     eslint: 8.4.1
     husky: 5.2.0
     typescript: 4.4.4
+  dependenciesMeta:
+    graphql@14.7.0:
+      unplugged: true
   languageName: unknown
   linkType: soft
 
@@ -25508,6 +25521,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"source-map-support@npm:*, source-map-support@npm:^0.5.12, source-map-support@npm:~0.5.12, source-map-support@npm:~0.5.19, source-map-support@npm:~0.5.20":
+  version: 0.5.21
+  resolution: "source-map-support@npm:0.5.21"
+  dependencies:
+    buffer-from: ^1.0.0
+    source-map: ^0.6.0
+  checksum: 43e98d700d79af1d36f859bdb7318e601dfc918c7ba2e98456118ebc4c4872b327773e5a1df09b0524e9e5063bb18f0934538eace60cca2710d1fa687645d137
+  languageName: node
+  linkType: hard
+
 "source-map-support@npm:^0.2.10":
   version: 0.2.10
   resolution: "source-map-support@npm:0.2.10"
@@ -25523,16 +25546,6 @@ __metadata:
   dependencies:
     source-map: ^0.5.6
   checksum: 669aa7e992fec586fac0ba9a8dea8ce81b7328f92806335f018ffac5709afb2920e3870b4e56c68164282607229f04b8bbcf5d0e5c845eb1b5119b092e7585c0
-  languageName: node
-  linkType: hard
-
-"source-map-support@npm:^0.5.12, source-map-support@npm:~0.5.12, source-map-support@npm:~0.5.19, source-map-support@npm:~0.5.20":
-  version: 0.5.21
-  resolution: "source-map-support@npm:0.5.21"
-  dependencies:
-    buffer-from: ^1.0.0
-    source-map: ^0.6.0
-  checksum: 43e98d700d79af1d36f859bdb7318e601dfc918c7ba2e98456118ebc4c4872b327773e5a1df09b0524e9e5063bb18f0934538eace60cca2710d1fa687645d137
   languageName: node
   linkType: hard
 

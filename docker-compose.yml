@@ -15,11 +15,10 @@ services:
         ipv4_address: 172.16.101.99
 
   yarn:
-    image: node:14-alpine
     working_dir: /workspace
+    build: config/yarn
     volumes:
       - ./:/workspace
-      - unplugged:/workspace/.yarn/unplugged
     entrypoint: yarn
 
   mailhog:
@@ -251,7 +250,6 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
     entrypoint: yarn workspace @public-gateway/app dev
     depends_on:
       - oathkeeper
