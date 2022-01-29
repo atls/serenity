@@ -1,5 +1,6 @@
 import { Injectable }       from '@nestjs/common'
 import { InjectRepository } from '@nestjs/typeorm'
+
 import { Repository }       from 'typeorm'
 
 import { Counter }          from '@hits/persistence'
@@ -17,7 +18,7 @@ interface FindAllResponse<T> {
 export class CounterService {
   constructor(
     @InjectRepository(Counter)
-    private readonly counterRepository: Repository<Counter>,
+    private readonly counterRepository: Repository<Counter>
   ) {}
 
   async findAll(filters: any): Promise<FindAllResponse<Counter>> {

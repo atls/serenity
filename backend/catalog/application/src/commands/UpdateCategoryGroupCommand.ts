@@ -1,4 +1,5 @@
-import { IsUUID, MinLength } from 'class-validator'
+import { IsUUID }    from 'class-validator'
+import { MinLength } from 'class-validator'
 
 export class UpdateCategoryGroupCommand {
   @IsUUID('4')

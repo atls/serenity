@@ -1,0 +1,25 @@
+{
+  "name": "@identity/registration-page",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "dependencies": {
+    "@atls/react-kratos-browser-flows": "^0.0.1",
+    "react": "16.14.0",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@identity/registration-fragment": "workspace:identity/fragments/registration-fragment",
+    "@ui/icons": "workspace:ui/icons",
+    "@ui/layout": "workspace:ui/layout",
+    "@ui/link": "workspace:ui/link",
+    "react-intl": "^5.24.4"
+  },
+  "peerDependencies": {
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
+    "react-intl": "*"
+  }
+}

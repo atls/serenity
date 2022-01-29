@@ -1,0 +1,19 @@
+{
+  "name": "@ui/read-more",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "main": "src/index.ts",
+  "dependencies": {
+    "react": "16.13.1"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@ui/layout": "0.0.5"
+  },
+  "peerDependencies": {
+    "@emotion/react": "*",
+    "@emotion/styled": "*"
+  }
+}

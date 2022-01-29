@@ -1,26 +1,26 @@
-import { Injectable, OnModuleInit } from '@nestjs/common'
-import { Args, Context, Mutation }  from '@nestjs/graphql'
-import { Client, ClientGrpc }       from '@nestjs/microservices'
+import { Injectable }                  from '@nestjs/common'
+import { OnModuleInit }                from '@nestjs/common'
+import { Args }                        from '@nestjs/graphql'
+import { Context }                     from '@nestjs/graphql'
+import { Mutation }                    from '@nestjs/graphql'
+import { Client }                      from '@nestjs/microservices'
+import { ClientGrpc }                  from '@nestjs/microservices'
 
-import { clientOptions }            from '@protos/collaboration'
-import { collaboration }            from '@protos/interfaces'
+import { clientOptions }               from '@protos/collaboration'
+import { collaboration }               from '@protos/interfaces'
 
-import {
-  AddProjectReplyInput,
-  AddReplyMessageInput,
-  ChangeReplyStatusInput,
-  ChooseSpecialistInput,
-  ConfirmProjectReplyInput,
-  RejectProjectReplyInput,
-} from '../inputs'
-import {
-  AddProjectReplyResponse,
-  AddReplyMessageResponse,
-  ChangeReplyStatusResponse,
-  ChooseSpecialistResponse,
-  ConfirmProjectReplyResponse,
-  RejectProjectReplyResponse,
-} from '../types'
+import { AddProjectReplyInput }        from '../inputs'
+import { AddReplyMessageInput }        from '../inputs'
+import { ChangeReplyStatusInput }      from '../inputs'
+import { ChooseSpecialistInput }       from '../inputs'
+import { ConfirmProjectReplyInput }    from '../inputs'
+import { RejectProjectReplyInput }     from '../inputs'
+import { AddProjectReplyResponse }     from '../types'
+import { AddReplyMessageResponse }     from '../types'
+import { ChangeReplyStatusResponse }   from '../types'
+import { ChooseSpecialistResponse }    from '../types'
+import { ConfirmProjectReplyResponse } from '../types'
+import { RejectProjectReplyResponse }  from '../types'
 
 @Injectable()
 export class ReplyMutations implements OnModuleInit {
@@ -30,25 +30,24 @@ export class ReplyMutations implements OnModuleInit {
   private collaborationService: collaboration.CollaborationService
 
   onModuleInit() {
-    this.collaborationService = this.client.getService<collaboration.CollaborationService>(
-      'CollaborationService',
-    )
+    this.collaborationService =
+      this.client.getService<collaboration.CollaborationService>('CollaborationService')
   }
 
-  @Mutation(returns => AddProjectReplyResponse)
+  @Mutation((returns) => AddProjectReplyResponse)
   addProjectReply(
     @Args('input')
     input: AddProjectReplyInput,
-    @Context('user') specialistId: string,
+    @Context('user') specialistId: string
   ) {
     return this.collaborationService.addProjectReply({ ...input, specialistId })
   }
 
-  @Mutation(returns => ConfirmProjectReplyResponse)
+  @Mutation((returns) => ConfirmProjectReplyResponse)
   confirmProjectReply(
     @Args('input')
     input: ConfirmProjectReplyInput,
-    @Context('user') specialistId: string,
+    @Context('user') specialistId: string
   ) {
     return this.collaborationService.confirmProjectReply({
       ...input,
@@ -56,11 +55,11 @@ export class ReplyMutations implements OnModuleInit {
     })
   }
 
-  @Mutation(returns => RejectProjectReplyResponse)
+  @Mutation((returns) => RejectProjectReplyResponse)
   rejectProjectReply(
     @Args('input')
     input: RejectProjectReplyInput,
-    @Context('user') specialistId: string,
+    @Context('user') specialistId: string
   ) {
     return this.collaborationService.rejectProjectReply({
       ...input,
@@ -68,29 +67,29 @@ export class ReplyMutations implements OnModuleInit {
     })
   }
 
-  @Mutation(returns => AddReplyMessageResponse)
+  @Mutation((returns) => AddReplyMessageResponse)
   addReplyMessage(
     @Args('input')
     input: AddReplyMessageInput,
-    @Context('user') authorId: string,
+    @Context('user') authorId: string
   ) {
     return this.collaborationService.addReplyMessage({ ...input, authorId })
   }
 
-  @Mutation(returns => ChangeReplyStatusResponse)
+  @Mutation((returns) => ChangeReplyStatusResponse)
   changeReplyStatus(
     @Args('input')
     input: ChangeReplyStatusInput,
-    @Context('user') customerId: string,
+    @Context('user') customerId: string
   ) {
     return this.collaborationService.changeReplyStatus({ ...input, customerId })
   }
 
-  @Mutation(returns => ChooseSpecialistResponse)
+  @Mutation((returns) => ChooseSpecialistResponse)
   chooseSpecialist(
     @Args('input')
     input: ChooseSpecialistInput,
-    @Context('user') customerId: string,
+    @Context('user') customerId: string
   ) {
     return this.collaborationService.chooseSpecialist({ ...input, customerId })
   }

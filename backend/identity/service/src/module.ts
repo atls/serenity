@@ -1,10 +1,12 @@
-import { BusModule }                                 from '@monstrs/nestjs-bus'
-import { Module }                                    from '@nestjs/common'
+import { BusModule }             from '@monstrs/nestjs-bus'
+import { Module }                from '@nestjs/common'
 
-import { ApplicationModule, IsEntityConstraint }     from '@identity/application'
-import { PersistenceModule }                         from '@identity/persistence'
+import { ApplicationModule }     from '@identity/application'
+import { IsEntityConstraint }    from '@identity/application'
+import { PersistenceModule }     from '@identity/persistence'
 
-import { IdentityController, UserQueriesController } from './controllers'
+import { IdentityController }    from './controllers'
+import { UserQueriesController } from './controllers'
 
 @Module({
   imports: [

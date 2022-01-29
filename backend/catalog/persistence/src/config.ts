@@ -1,7 +1,8 @@
-import { ConnectionOptions }       from 'typeorm'
+import { ConnectionOptions } from 'typeorm'
 
-import migrations                  from './migrations'
-import { Category, CategoryGroup } from './entities'
+import migrations            from './migrations'
+import { Category }          from './entities'
+import { CategoryGroup }     from './entities'
 
 const config: ConnectionOptions = {
   type: 'postgres',

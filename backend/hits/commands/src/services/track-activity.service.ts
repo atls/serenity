@@ -1,5 +1,6 @@
 import { Injectable }       from '@nestjs/common'
 import { InjectRepository } from '@nestjs/typeorm'
+
 import { Repository }       from 'typeorm'
 
 import { Activity }         from '@hits/persistence'
@@ -8,7 +9,7 @@ import { Activity }         from '@hits/persistence'
 export class TrackActivityService {
   constructor(
     @InjectRepository(Activity)
-    private readonly activityRepository: Repository<Activity>,
+    private readonly activityRepository: Repository<Activity>
   ) {}
 
   async track(id: string): Promise<any> {

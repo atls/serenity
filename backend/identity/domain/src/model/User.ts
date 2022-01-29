@@ -1,24 +1,21 @@
+import { AggregateRoot }              from '@node-ts/ddd'
 /* eslint-disable @typescript-eslint/no-empty-function */
-/* eslint-disable class-methods-use-this */
-import { AggregateRootProperties, Uuid } from '@node-ts/ddd-types'
+import { AggregateRootProperties }    from '@node-ts/ddd-types'
+import { Uuid }                       from '@node-ts/ddd-types'
 
-import { AggregateRoot }                 from '@node-ts/ddd'
-
-import {
-  EmailVerificationComplete,
-  EmailVerificationRequested,
-  ProfileCreated,
-  ResetPasswordComplete,
-  ResetPasswordRequested,
-  UserRegistered,
-} from '../events'
-import { Address }                       from './Address'
-import { ContactInformation }            from './ContactInformation'
-import { Credentials }                   from './Credentials'
-import { Email }                         from './Email'
-import { PersonalInformation }           from './PersonalInformation'
-import { Photo }                         from './Photo'
-import { Profile }                       from './Profile'
+import { EmailVerificationComplete }  from '../events'
+import { EmailVerificationRequested } from '../events'
+import { ProfileCreated }             from '../events'
+import { ResetPasswordComplete }      from '../events'
+import { ResetPasswordRequested }     from '../events'
+import { UserRegistered }             from '../events'
+import { Address }                    from './Address'
+import { ContactInformation }         from './ContactInformation'
+import { Credentials }                from './Credentials'
+import { Email }                      from './Email'
+import { PersonalInformation }        from './PersonalInformation'
+import { Photo }                      from './Photo'
+import { Profile }                    from './Profile'
 
 export interface UserProperties extends AggregateRootProperties {
   email: Email
@@ -59,6 +56,7 @@ export class User extends AggregateRoot implements UserProperties {
   requestResetPassword() {
     this.credentials.generateResetToken()
 
+    // @ts-ignore
     this.when(new ResetPasswordRequested(this.id, this.email, this.credentials.resetToken))
   }
 

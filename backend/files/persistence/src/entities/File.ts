@@ -1,5 +1,8 @@
-/* eslint-disable no-underscore-dangle */
-import { Column, CreateDateColumn, Entity, PrimaryColumn, UpdateDateColumn } from 'typeorm'
+import { Column }           from 'typeorm'
+import { CreateDateColumn } from 'typeorm'
+import { Entity }           from 'typeorm'
+import { PrimaryColumn }    from 'typeorm'
+import { UpdateDateColumn } from 'typeorm'
 
 @Entity()
 export class File {

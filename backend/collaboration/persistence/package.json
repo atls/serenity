@@ -6,9 +6,6 @@
   "scripts": {
     "typeorm": "ts-node `yarn bin typeorm`"
   },
-  "devDependencies": {
-    "@types/node": "12.12.14"
-  },
   "dependencies": {
     "@collaboration/domain": "0.0.1",
     "@monstrs/nestjs-bus": "0.1.4",
@@ -21,5 +18,9 @@
     "ts-node": "8.5.2",
     "typeorm": "0.2.19",
     "typescript": "3.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "12.12.14",
+    "rxjs": "^7.0.1"
   }
 }

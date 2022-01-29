@@ -1,10 +1,11 @@
 import { Bus }                      from '@monstrs/nestjs-bus'
 import { Logger }                   from '@monstrs/nestjs-logger'
 import { Injectable }               from '@nestjs/common'
+import { WriteRepository }          from '@node-ts/ddd'
+
 import { Connection }               from 'typeorm'
 
 import { Project as ProjectEntity } from '@collaboration/domain'
-import { WriteRepository }          from '@node-ts/ddd'
 
 import { Project }                  from '../entities'
 
@@ -14,7 +15,7 @@ export class ProjectEntityRepository extends WriteRepository<ProjectEntity, Proj
   constructor(
     private readonly connection: Connection,
     private readonly logger: Logger,
-    private readonly bus: Bus,
+    private readonly bus: Bus
   ) {
     // @ts-ignore
     super(ProjectEntity, Project, connection, bus, logger)

@@ -1,21 +1,22 @@
-/* eslint-disable class-methods-use-this */
-import DataLoader                          from 'dataloader'
-import { Injectable }                      from '@nestjs/common'
-import { ResolveProperty, Resolver, Root } from '@nestjs/graphql'
+import { Loader }          from '@atls/nestjs-dataloader'
+import { Injectable }      from '@nestjs/common'
+import { ResolveProperty } from '@nestjs/graphql'
+import { Resolver }        from '@nestjs/graphql'
+import { Root }            from '@nestjs/graphql'
 
-import { Loader }                          from '@monstrs/nestjs-dataloader'
+import DataLoader          from 'dataloader'
 
-import { UserLoader }                      from '../dataloaders'
-import { Review }                          from '../types'
+import { UserLoader }      from '../dataloaders'
+import { Review }          from '../types'
 
 @Injectable()
-@Resolver(of => Review)
+@Resolver((of) => Review)
 export class ReviewResolver {
   @ResolveProperty()
   async customer(
     @Root() { customerId }: any,
     @Loader(UserLoader.name)
-    userLoader: DataLoader<any, any>,
+    userLoader: DataLoader<any, any>
   ) {
     const user = await userLoader.load(customerId)
 

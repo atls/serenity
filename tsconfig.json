@@ -1,7 +1,5 @@
 {
   "extends": "@atlantis-lab/tsconfig/tsconfig.base.json",
-  "include": ["frontend/**/**/*", "backend/**/**/*"],
-  "compilerOptions": {
-    "skipLibCheck": true
-  }
+  "include": ["ui/**/*", "fragments/**/*", "site/**/*", "email/**/*"],
+  "exclude": ["./**/**/src/stories"]
 }

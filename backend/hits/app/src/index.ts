@@ -1,7 +1,8 @@
+import { NestFactory }       from '@nestjs/core'
+
 import connectRedis          from 'connect-redis'
 import cookieParser          from 'cookie-parser'
 import session               from 'express-session'
-import { NestFactory }       from '@nestjs/core'
 
 import { ApplicationModule } from './module'
 
@@ -24,7 +25,7 @@ const bootstrap = async () => {
       store: new RedisStore({
         host: process.env.REDIS_HOST || 'redis',
       }),
-    }),
+    })
   )
 
   await app.listen(process.env.PORT || 3000)

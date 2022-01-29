@@ -1,15 +1,13 @@
 /* eslint-disable no-underscore-dangle */
-import {
-  Column,
-  CreateDateColumn,
-  Entity,
-  JoinColumn,
-  ManyToOne,
-  PrimaryColumn,
-  UpdateDateColumn,
-} from 'typeorm'
+import { Column }           from 'typeorm'
+import { CreateDateColumn } from 'typeorm'
+import { Entity }           from 'typeorm'
+import { JoinColumn }       from 'typeorm'
+import { ManyToOne }        from 'typeorm'
+import { PrimaryColumn }    from 'typeorm'
+import { UpdateDateColumn } from 'typeorm'
 
-import { CategoryGroup } from './CategoryGroup'
+import { CategoryGroup }    from './CategoryGroup'
 
 @Entity()
 export class Category {
@@ -22,7 +20,7 @@ export class Category {
   @Column()
   name: string
 
-  @ManyToOne(type => CategoryGroup)
+  @ManyToOne((type) => CategoryGroup)
   @JoinColumn()
   group: CategoryGroup | string
 

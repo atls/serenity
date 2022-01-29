@@ -1,7 +1,8 @@
-import { SignedUrlModule }                   from '@monstrs/nestjs-signed-url'
-import { Module }                            from '@nestjs/common'
+import { SignedUrlModule }    from '@monstrs/nestjs-signed-url'
+import { Module }             from '@nestjs/common'
 
-import { FileQueriesService, UploadService } from './services'
+import { FileQueriesService } from './services'
+import { UploadService }      from './services'
 
 @Module({
   imports: [SignedUrlModule.gcs()],

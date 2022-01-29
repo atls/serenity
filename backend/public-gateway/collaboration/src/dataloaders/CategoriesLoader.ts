@@ -1,11 +1,15 @@
-import DataLoader                           from 'dataloader'
-import { Injectable, OnModuleInit }         from '@nestjs/common'
-import { Client, ClientGrpc }               from '@nestjs/microservices'
-import { map }                              from 'rxjs/operators'
+import { NestDataLoader }   from '@atls/nestjs-dataloader'
+import { OrderResultByKey } from '@atls/nestjs-dataloader'
+import { Injectable }       from '@nestjs/common'
+import { OnModuleInit }     from '@nestjs/common'
+import { Client }           from '@nestjs/microservices'
+import { ClientGrpc }       from '@nestjs/microservices'
 
-import { NestDataLoader, OrderResultByKey } from '@monstrs/nestjs-dataloader'
-import { clientOptions }                    from '@protos/catalog'
-import { catalog }                          from '@protos/interfaces'
+import DataLoader           from 'dataloader'
+import { map }              from 'rxjs/operators'
+
+import { clientOptions }    from '@protos/catalog'
+import { catalog }          from '@protos/interfaces'
 
 @Injectable()
 export class CategoriesLoader implements NestDataLoader, OnModuleInit {
@@ -22,11 +26,12 @@ export class CategoriesLoader implements NestDataLoader, OnModuleInit {
   getCategories(id: string[]) {
     return this.catalogService
       .getCategories({ filters: { id } })
-      .pipe(map(data => data.rows))
+      .pipe(map((data) => data.rows))
       .toPromise()
   }
 
   generateDataLoader(): DataLoader<any, any> {
+    // @ts-ignore
     return new DataLoader<string[], catalog.Category[]>(this.getCategories.bind(this))
   }
 }

@@ -1,5 +1,6 @@
-/* eslint-disable no-underscore-dangle */
-import { Column, Entity, PrimaryColumn } from 'typeorm'
+import { Column }        from 'typeorm'
+import { Entity }        from 'typeorm'
+import { PrimaryColumn } from 'typeorm'
 
 @Entity()
 export class Activity {
@@ -9,14 +10,14 @@ export class Activity {
   @Column({
     type: Date,
     transformer: {
-      from(value: Date): number {
+      from(value: Date): number | null {
         if (!value) {
           return null
         }
 
         return value.getTime()
       },
-      to(value: number): Date {
+      to(value: number): Date | null {
         if (!value) {
           return null
         }

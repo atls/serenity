@@ -1,11 +1,10 @@
 import { Injectable }                  from '@nestjs/common'
 
-import { Chat, Discussion }            from '@collaboration/domain'
-import {
-  ChatEntityRepository,
-  DiscussionEntityRepository,
-  MessageEntityRepository,
-} from '@collaboration/persistence'
+import { Chat }                        from '@collaboration/domain'
+import { Discussion }                  from '@collaboration/domain'
+import { ChatEntityRepository }        from '@collaboration/persistence'
+import { DiscussionEntityRepository }  from '@collaboration/persistence'
+import { MessageEntityRepository }     from '@collaboration/persistence'
 
 import { AddDiscussionMessageCommand } from '../commands'
 
@@ -14,7 +13,7 @@ export class DiscussionService {
   constructor(
     private readonly messageRepository: MessageEntityRepository,
     private readonly discussionRepository: DiscussionEntityRepository,
-    private readonly chatRepository: ChatEntityRepository,
+    private readonly chatRepository: ChatEntityRepository
   ) {}
 
   async addMessage(command: AddDiscussionMessageCommand): Promise<any> {

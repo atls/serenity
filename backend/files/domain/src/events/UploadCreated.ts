@@ -1,6 +1,5 @@
-import { Uuid }        from '@node-ts/ddd-types'
-
 import { Event }       from '@node-ts/bus-messages'
+import { Uuid }        from '@node-ts/ddd-types'
 
 import { UploadField } from '../model'
 
@@ -16,7 +15,7 @@ export class UploadCreated extends Event {
     readonly type: string,
     readonly name: string,
     readonly url: string,
-    readonly fields: UploadField[],
+    readonly fields: UploadField[]
   ) {
     super()
   }

@@ -1,0 +1,19 @@
+{
+  "name": "@fragments/floors-worksheet",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "dependencies": {
+    "@ui/button": "workspace:ui/button",
+    "@ui/divider": "workspace:ui/divider",
+    "@ui/input": "workspace:ui/input",
+    "@ui/layout": "workspace:ui/layout",
+    "@ui/text": "workspace:ui/text",
+    "@ui/theme": "workspace:ui/theme",
+    "react": "16.13.1",
+    "react-intl": "5.3.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.2.7"
+  }
+}

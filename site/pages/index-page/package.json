@@ -1,0 +1,26 @@
+{
+  "name": "@site/index-page",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "dependencies": {
+    "react": "16.13.1",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "@apollo/client": "^3.5.8",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@site/catalog-fragment": "0.0.1",
+    "@site/main-fragment": "0.0.1",
+    "@site/navigation-fragment": "0.0.1",
+    "@testing-library/react": "9.3.2",
+    "react-intl": "^5.24.4"
+  },
+  "peerDependencies": {
+    "@apollo/client": "*",
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
+    "react-intl": "*"
+  }
+}

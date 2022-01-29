@@ -1,5 +1,6 @@
 import { Injectable }       from '@nestjs/common'
 import { InjectRepository } from '@nestjs/typeorm'
+
 import { Repository }       from 'typeorm'
 
 import { Category }         from '@catalog/persistence'
@@ -17,7 +18,7 @@ interface FindAllResponse<T> {
 export class CategoryQueriesService {
   constructor(
     @InjectRepository(Category)
-    private readonly categoryRepository: Repository<Category>,
+    private readonly categoryRepository: Repository<Category>
   ) {}
 
   async findAll(filters: any = {}): Promise<FindAllResponse<Category>> {

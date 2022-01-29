@@ -1,7 +1,11 @@
-import { Controller, Get, Header, Req } from '@nestjs/common'
-import { Request }                      from 'express'
+import { Controller }   from '@nestjs/common'
+import { Get }          from '@nestjs/common'
+import { Header }       from '@nestjs/common'
+import { Req }          from '@nestjs/common'
 
-import { TrackService }                 from '@hits/commands'
+import { Request }      from 'express'
+
+import { TrackService } from '@hits/commands'
 
 @Controller()
 export class TrackController {

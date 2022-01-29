@@ -4,12 +4,12 @@
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "server-scripts start",
     "build": "server-scripts build",
+    "dev": "server-scripts start",
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@monstrs/nestjs-dataloader": "0.1.4",
+    "@atls/nestjs-dataloader": "^0.0.3",
     "@nestjs/common": "6.10.5",
     "@nestjs/core": "6.10.5",
     "@nestjs/graphql": "6.5.3",

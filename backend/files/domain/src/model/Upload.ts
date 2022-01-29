@@ -1,8 +1,8 @@
-/* eslint-disable class-methods-use-this */
-import { AggregateRootProperties } from '@node-ts/ddd-types'
-import { format, parse }           from 'url'
-
 import { AggregateRoot }           from '@node-ts/ddd'
+import { AggregateRootProperties } from '@node-ts/ddd-types'
+
+import { format }                  from 'url'
+import { parse }                   from 'url'
 
 import { UploadCreated }           from '../events'
 import { File }                    from './File'
@@ -36,7 +36,7 @@ export class Upload extends AggregateRoot implements UploadProperties {
     type: string,
     name: string,
     url: string,
-    fields: UploadField[],
+    fields: UploadField[]
   ): Upload {
     const upload = new Upload(id)
 

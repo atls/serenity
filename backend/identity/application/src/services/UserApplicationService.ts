@@ -1,28 +1,25 @@
-import uuid                    from 'uuid/v4'
-import { Injectable }          from '@nestjs/common'
+import { Injectable }              from '@nestjs/common'
 
-import {
-  Address,
-  ContactInformation,
-  Credentials,
-  Email,
-  PersonalInformation,
-  Phone,
-  Photo,
-  Profile,
-  User,
-} from '@identity/domain'
-import { UserStoreRepository } from '@identity/persistence'
+import uuid                        from 'uuid/v4'
 
-import {
-  AuthenticateUserCommand,
-  ChangePasswordCommand,
-  CreateProfileCommand,
-  RegisterUserCommand,
-  ResetPasswordCommand,
-  UpdateProfileCommand,
-  VerifyEmailCommand,
-} from '../commands'
+import { Address }                 from '@identity/domain'
+import { ContactInformation }      from '@identity/domain'
+import { Credentials }             from '@identity/domain'
+import { Email }                   from '@identity/domain'
+import { PersonalInformation }     from '@identity/domain'
+import { Phone }                   from '@identity/domain'
+import { Photo }                   from '@identity/domain'
+import { Profile }                 from '@identity/domain'
+import { User }                    from '@identity/domain'
+import { UserStoreRepository }     from '@identity/persistence'
+
+import { AuthenticateUserCommand } from '../commands'
+import { ChangePasswordCommand }   from '../commands'
+import { CreateProfileCommand }    from '../commands'
+import { RegisterUserCommand }     from '../commands'
+import { ResetPasswordCommand }    from '../commands'
+import { UpdateProfileCommand }    from '../commands'
+import { VerifyEmailCommand }      from '../commands'
 
 @Injectable()
 export class UserApplicationService {
@@ -32,7 +29,7 @@ export class UserApplicationService {
     const user = await User.register(
       uuid(),
       new Email(command.email),
-      new Credentials(command.password),
+      new Credentials(command.password)
     )
 
     user.requestEmailVerification()
@@ -86,7 +83,7 @@ export class UserApplicationService {
     const user = await this.userRepository.getById(command.id)
 
     user.createProfile(
-      new Profile(command.type, new PersonalInformation(command.firstName, command.lastName)),
+      new Profile(command.type, new PersonalInformation(command.firstName, command.lastName))
     )
 
     await this.userRepository.save(user)
@@ -98,7 +95,7 @@ export class UserApplicationService {
     const user = await this.userRepository.getById(command.id)
 
     user.changeProfilePersonalInformation(
-      new PersonalInformation(command.firstName, command.lastName),
+      new PersonalInformation(command.firstName, command.lastName)
     )
 
     user.changeProfileContactInformation(new ContactInformation(new Phone(command.phone)))

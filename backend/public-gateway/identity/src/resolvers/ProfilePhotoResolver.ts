@@ -1,16 +1,19 @@
-/* eslint-disable class-methods-use-this */
-import { Injectable, OnModuleInit }  from '@nestjs/common'
-import { ResolveProperty, Resolver } from '@nestjs/graphql'
-import { Client, ClientGrpc }        from '@nestjs/microservices'
-import { map }                       from 'rxjs/operators'
+import { Injectable }      from '@nestjs/common'
+import { OnModuleInit }    from '@nestjs/common'
+import { ResolveProperty } from '@nestjs/graphql'
+import { Resolver }        from '@nestjs/graphql'
+import { Client }          from '@nestjs/microservices'
+import { ClientGrpc }      from '@nestjs/microservices'
 
-import { clientOptions }             from '@protos/files'
-import { files }                     from '@protos/interfaces'
+import { map }             from 'rxjs/operators'
 
-import { Profile }                   from '../types'
+import { clientOptions }   from '@protos/files'
+import { files }           from '@protos/interfaces'
+
+import { Profile }         from '../types'
 
 @Injectable()
-@Resolver(of => Profile)
+@Resolver((of) => Profile)
 export class ProfilePhotoResolver implements OnModuleInit {
   @Client(clientOptions)
   private readonly client: ClientGrpc
@@ -29,6 +32,6 @@ export class ProfilePhotoResolver implements OnModuleInit {
 
     return this.filesService
       .getFiles({ filters: { id: [profile.photo.id] } })
-      .pipe(map(data => data.rows[0]))
+      .pipe(map((data) => (data as any).rows[0]))
   }
 }

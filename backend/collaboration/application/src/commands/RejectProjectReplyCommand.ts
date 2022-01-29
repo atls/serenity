@@ -1,4 +1,5 @@
-import { IsNotEmpty, IsUUID } from 'class-validator'
+import { IsNotEmpty } from 'class-validator'
+import { IsUUID }     from 'class-validator'
 
 export class RejectProjectReplyCommand {
   @IsNotEmpty()

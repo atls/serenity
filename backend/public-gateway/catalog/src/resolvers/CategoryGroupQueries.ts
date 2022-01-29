@@ -1,11 +1,13 @@
-import { Injectable, OnModuleInit } from '@nestjs/common'
-import { Query }                    from '@nestjs/graphql'
-import { Client, ClientGrpc }       from '@nestjs/microservices'
+import { Injectable }         from '@nestjs/common'
+import { OnModuleInit }       from '@nestjs/common'
+import { Query }              from '@nestjs/graphql'
+import { Client }             from '@nestjs/microservices'
+import { ClientGrpc }         from '@nestjs/microservices'
 
-import { clientOptions }            from '@protos/catalog'
-import { catalog }                  from '@protos/interfaces'
+import { clientOptions }      from '@protos/catalog'
+import { catalog }            from '@protos/interfaces'
 
-import { CategoryGroupsList }       from '../types'
+import { CategoryGroupsList } from '../types'
 
 @Injectable()
 export class CategoryGroupQueries implements OnModuleInit {
@@ -18,7 +20,7 @@ export class CategoryGroupQueries implements OnModuleInit {
     this.catalogService = this.client.getService<catalog.CatalogService>('CatalogService')
   }
 
-  @Query(returns => CategoryGroupsList)
+  @Query((returns) => CategoryGroupsList)
   categoryGroups() {
     return this.catalogService.getCategoryGroups({})
   }

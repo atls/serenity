@@ -1,10 +1,13 @@
-import { Column, Entity, PrimaryColumn }      from 'typeorm'
-import { CreateDateColumn, UpdateDateColumn } from 'typeorm'
+import { Column }           from 'typeorm'
+import { Entity }           from 'typeorm'
+import { PrimaryColumn }    from 'typeorm'
+import { CreateDateColumn } from 'typeorm'
+import { UpdateDateColumn } from 'typeorm'
 
-/* eslint-disable no-underscore-dangle */
-import { BeginningOfWork, ProjectStatus }     from '@collaboration/domain'
+import { BeginningOfWork }  from '@collaboration/domain'
+import { ProjectStatus }    from '@collaboration/domain'
 
-import { Address }                            from './Address'
+import { Address }          from './Address'
 
 @Entity()
 export class Project {
@@ -41,7 +44,7 @@ export class Project {
   @Column('simple-array')
   photos: string[]
 
-  @Column(type => Address)
+  @Column((type) => Address)
   address: Address
 
   @Column('text', { default: '{}' })
@@ -63,14 +66,14 @@ export class Project {
     type: Date,
     nullable: true,
     transformer: {
-      from(value: Date): number {
+      from(value: Date): number | null {
         if (!value) {
           return null
         }
 
         return value.getTime()
       },
-      to(value: number): Date {
+      to(value: number): Date | null {
         if (!value) {
           return null
         }

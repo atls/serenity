@@ -1,4 +1,8 @@
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm'
+import { Column }                 from 'typeorm'
+import { CreateDateColumn }       from 'typeorm'
+import { Entity }                 from 'typeorm'
+import { PrimaryGeneratedColumn } from 'typeorm'
+import { UpdateDateColumn }       from 'typeorm'
 
 @Entity()
 export class Sending {

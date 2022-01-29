@@ -7,7 +7,7 @@ import { AppModule }     from './module'
 declare const module: any
 
 const bootstrap = async () => {
-  const app = await NestFactory.createMicroservice(AppModule, serverOptions)
+  const app = await NestFactory.createMicroservice(AppModule, serverOptions as any)
 
   await app.listenAsync()
 

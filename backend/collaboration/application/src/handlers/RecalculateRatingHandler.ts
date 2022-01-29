@@ -1,8 +1,8 @@
 import { HandlesMessage }             from '@monstrs/nestjs-bus'
+import { Handler }                    from '@node-ts/bus-core'
 
 import { ReviewCreated }              from '@collaboration/domain'
 import { SpecialistEntityRepository } from '@collaboration/persistence'
-import { Handler }                    from '@node-ts/bus-core'
 
 import { ReviewQueriesService }       from '../services'
 
@@ -10,7 +10,7 @@ import { ReviewQueriesService }       from '../services'
 export class RecalculateRatingHandler implements Handler<ReviewCreated> {
   constructor(
     private readonly reviewService: ReviewQueriesService,
-    private readonly specialistRepository: SpecialistEntityRepository,
+    private readonly specialistRepository: SpecialistEntityRepository
   ) {}
 
   async handle(event: ReviewCreated): Promise<void> {

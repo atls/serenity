@@ -1,13 +1,14 @@
-import { Controller, UseInterceptors, UsePipes, ValidationPipe } from '@nestjs/common'
-import { GrpcMethod }                                            from '@nestjs/microservices'
+import { MapValidationErrorsInterceptor } from '@atls/nestjs-map-errors-interceptor'
+import { Controller }                     from '@nestjs/common'
+import { UseInterceptors }                from '@nestjs/common'
+import { UsePipes }                       from '@nestjs/common'
+import { ValidationPipe }                 from '@nestjs/common'
+import { GrpcMethod }                     from '@nestjs/microservices'
 
-import {
-  CategoryService,
-  CreateCategoryCommand,
-  DeleteCategoryCommand,
-  UpdateCategoryCommand,
-} from '@catalog/application'
-import { MapValidationErrorsInterceptor }                        from '@monstrs/nestjs-map-errors-interceptor'
+import { CategoryService }                from '@catalog/application'
+import { CreateCategoryCommand }          from '@catalog/application'
+import { DeleteCategoryCommand }          from '@catalog/application'
+import { UpdateCategoryCommand }          from '@catalog/application'
 
 @Controller()
 @UseInterceptors(MapValidationErrorsInterceptor)

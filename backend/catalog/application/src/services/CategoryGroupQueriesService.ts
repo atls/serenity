@@ -1,14 +1,16 @@
-import { Injectable }           from '@nestjs/common'
-import { InjectRepository }     from '@nestjs/typeorm'
-import { Brackets, Repository } from 'typeorm'
+import { Injectable }       from '@nestjs/common'
+import { InjectRepository } from '@nestjs/typeorm'
 
-import { CategoryGroup }        from '@catalog/persistence'
+import { Brackets }         from 'typeorm'
+import { Repository }       from 'typeorm'
+
+import { CategoryGroup }    from '@catalog/persistence'
 
 @Injectable()
 export class CategoryGroupQueriesService {
   constructor(
     @InjectRepository(CategoryGroup)
-    private readonly categoryGroupRepository: Repository<CategoryGroup>,
+    private readonly categoryGroupRepository: Repository<CategoryGroup>
   ) {}
 
   async findAll(filters: any = {}): Promise<any> {
@@ -20,11 +22,10 @@ export class CategoryGroupQueriesService {
       const common = `%${filters.search}%`
 
       qb.andWhere(
-        new Brackets(searchQb =>
+        new Brackets((searchQb) =>
           searchQb
             .where('group.name ILIKE :common', { common })
-            .orWhere('children.name ILIKE :common', { common }),
-        ),
+            .orWhere('children.name ILIKE :common', { common }))
       )
     }
 

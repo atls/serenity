@@ -1,5 +1,6 @@
 import { Injectable }       from '@nestjs/common'
 import { InjectRepository } from '@nestjs/typeorm'
+
 import { Repository }       from 'typeorm'
 
 import { File }             from '@files/persistence'
@@ -17,7 +18,7 @@ interface FindAllResponse<T> {
 export class FileQueriesService {
   constructor(
     @InjectRepository(File)
-    private readonly fileRepository: Repository<File>,
+    private readonly fileRepository: Repository<File>
   ) {}
 
   async findAll(filters: any): Promise<FindAllResponse<File>> {

@@ -1,15 +1,13 @@
 /* eslint-disable no-underscore-dangle */
-import {
-  Column,
-  CreateDateColumn,
-  Entity,
-  JoinColumn,
-  ManyToOne,
-  PrimaryColumn,
-  UpdateDateColumn,
-} from 'typeorm'
+import { Column }           from 'typeorm'
+import { CreateDateColumn } from 'typeorm'
+import { Entity }           from 'typeorm'
+import { JoinColumn }       from 'typeorm'
+import { ManyToOne }        from 'typeorm'
+import { PrimaryColumn }    from 'typeorm'
+import { UpdateDateColumn } from 'typeorm'
 
-import { Discussion } from './Discussion'
+import { Discussion }       from './Discussion'
 
 @Entity()
 export class Message {
@@ -25,7 +23,7 @@ export class Message {
   @Column('text')
   content: string
 
-  @ManyToOne(type => Discussion)
+  @ManyToOne((type) => Discussion)
   @JoinColumn()
   discussion: Discussion | string
 
@@ -53,14 +51,14 @@ export class Message {
     type: Date,
     nullable: true,
     transformer: {
-      from(value: Date): number {
+      from(value: Date): number | null {
         if (!value) {
           return null
         }
 
         return value.getTime()
       },
-      to(value: number): Date {
+      to(value: number): Date | null {
         if (!value) {
           return null
         }

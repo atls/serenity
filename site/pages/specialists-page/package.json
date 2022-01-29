@@ -1,0 +1,30 @@
+{
+  "name": "@site/specialists-page",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "dependencies": {
+    "next": "10.0.5",
+    "react": "16.13.1",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "@apollo/client": "^3.5.8",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@site/catalog-fragment": "0.0.1",
+    "@site/filters-fragment": "0.0.1",
+    "@site/footer-fragment": "0.0.1",
+    "@site/navigation-fragment": "0.0.1",
+    "@site/specialists-fragment": "0.0.1",
+    "@testing-library/react": "9.3.2",
+    "@ui/layout": "0.0.5",
+    "react-intl": "^5.24.4"
+  },
+  "peerDependencies": {
+    "@apollo/client": "*",
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
+    "react-intl": "*"
+  }
+}

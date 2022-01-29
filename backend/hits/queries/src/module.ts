@@ -1,6 +1,7 @@
-import { Module }                          from '@nestjs/common'
+import { Module }          from '@nestjs/common'
 
-import { ActivityService, CounterService } from './services'
+import { ActivityService } from './services'
+import { CounterService }  from './services'
 
 @Module({
   providers: [CounterService, ActivityService],

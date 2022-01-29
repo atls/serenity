@@ -1,18 +1,22 @@
-import { SignedUrlService }                             from '@monstrs/nestjs-signed-url'
-import { Injectable }                                   from '@nestjs/common'
-import { extname, format }                              from 'path'
+import { SignedUrlService }       from '@monstrs/nestjs-signed-url'
+import { Injectable }             from '@nestjs/common'
 
-import { Upload }                                       from '@files/domain'
-import { FileEntityRepository, UploadEntityRepository } from '@files/persistence'
+import { extname }                from 'path'
+import { format }                 from 'path'
 
-import { ConfirmUploadCommand, CreateUploadCommand }    from '../commands'
+import { Upload }                 from '@files/domain'
+import { FileEntityRepository }   from '@files/persistence'
+import { UploadEntityRepository } from '@files/persistence'
+
+import { ConfirmUploadCommand }   from '../commands'
+import { CreateUploadCommand }    from '../commands'
 
 @Injectable()
 export class UploadService {
   constructor(
     private readonly uploadRepository: UploadEntityRepository,
     private readonly fileRepository: FileEntityRepository,
-    private readonly signedUrlService: SignedUrlService,
+    private readonly signedUrlService: SignedUrlService
   ) {}
 
   async create(command: CreateUploadCommand): Promise<any> {

@@ -1,12 +1,16 @@
-import { Injectable, OnModuleInit } from '@nestjs/common'
-import { Context, Query }           from '@nestjs/graphql'
-import { Client, ClientGrpc }       from '@nestjs/microservices'
-import { map }                      from 'rxjs/operators'
+import { Injectable }    from '@nestjs/common'
+import { OnModuleInit }  from '@nestjs/common'
+import { Context }       from '@nestjs/graphql'
+import { Query }         from '@nestjs/graphql'
+import { Client }        from '@nestjs/microservices'
+import { ClientGrpc }    from '@nestjs/microservices'
 
-import { clientOptions }            from '@protos/identity'
-import { identity }                 from '@protos/interfaces'
+import { map }           from 'rxjs/operators'
 
-import { User }                     from '../types'
+import { clientOptions } from '@protos/identity'
+import { identity }      from '@protos/interfaces'
+
+import { User }          from '../types'
 
 @Injectable()
 export class IdentityQueries implements OnModuleInit {
@@ -19,10 +23,10 @@ export class IdentityQueries implements OnModuleInit {
     this.identityService = this.client.getService<identity.IdentityService>('IdentityService')
   }
 
-  @Query(returns => User)
+  @Query((returns) => User)
   me(@Context('user') user: string) {
     return this.identityService
       .getUsers({ filters: { id: [user] } })
-      .pipe(map(data => data.rows[0]))
+      .pipe(map((data) => (data as any).rows[0]))
   }
 }

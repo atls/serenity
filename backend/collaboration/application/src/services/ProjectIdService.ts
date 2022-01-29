@@ -1,5 +1,6 @@
 import { Injectable }       from '@nestjs/common'
 import { InjectRepository } from '@nestjs/typeorm'
+
 import { Repository }       from 'typeorm'
 
 import { ProjectId }        from '@collaboration/persistence'
@@ -8,7 +9,7 @@ import { ProjectId }        from '@collaboration/persistence'
 export class ProjectIdService {
   constructor(
     @InjectRepository(ProjectId)
-    private readonly projectIdRepository: Repository<ProjectId>,
+    private readonly projectIdRepository: Repository<ProjectId>
   ) {}
 
   async generate(): Promise<string> {

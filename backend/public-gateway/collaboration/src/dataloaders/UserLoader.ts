@@ -1,11 +1,15 @@
-import DataLoader                           from 'dataloader'
-import { Injectable, OnModuleInit }         from '@nestjs/common'
-import { Client, ClientGrpc }               from '@nestjs/microservices'
-import { map }                              from 'rxjs/operators'
+import { NestDataLoader }   from '@atls/nestjs-dataloader'
+import { OrderResultByKey } from '@atls/nestjs-dataloader'
+import { Injectable }       from '@nestjs/common'
+import { OnModuleInit }     from '@nestjs/common'
+import { Client }           from '@nestjs/microservices'
+import { ClientGrpc }       from '@nestjs/microservices'
 
-import { NestDataLoader, OrderResultByKey } from '@monstrs/nestjs-dataloader'
-import { clientOptions }                    from '@protos/identity'
-import { identity }                         from '@protos/interfaces'
+import DataLoader           from 'dataloader'
+import { map }              from 'rxjs/operators'
+
+import { clientOptions }    from '@protos/identity'
+import { identity }         from '@protos/interfaces'
 
 @Injectable()
 export class UserLoader implements NestDataLoader, OnModuleInit {
@@ -22,11 +26,12 @@ export class UserLoader implements NestDataLoader, OnModuleInit {
   getUsers(id: string[]) {
     return this.identityService
       .getUsers({ filters: { id } })
-      .pipe(map(data => data.rows))
+      .pipe(map((data) => data.rows))
       .toPromise()
   }
 
   generateDataLoader(): DataLoader<any, any> {
+    // @ts-ignore
     return new DataLoader<string, identity.User>(this.getUsers.bind(this))
   }
 }

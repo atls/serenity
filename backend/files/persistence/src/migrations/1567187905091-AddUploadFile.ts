@@ -1,4 +1,5 @@
-import { MigrationInterface, QueryRunner } from 'typeorm'
+import { MigrationInterface } from 'typeorm'
+import { QueryRunner }        from 'typeorm'
 
 export class AddUploadFile1567187905091 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<any> {

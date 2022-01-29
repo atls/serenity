@@ -1,5 +1,9 @@
-/* eslint-disable no-underscore-dangle */
-import { Column, CreateDateColumn, Entity, Index, PrimaryColumn, UpdateDateColumn } from 'typeorm'
+import { Column }           from 'typeorm'
+import { CreateDateColumn } from 'typeorm'
+import { Entity }           from 'typeorm'
+import { Index }            from 'typeorm'
+import { PrimaryColumn }    from 'typeorm'
+import { UpdateDateColumn } from 'typeorm'
 
 @Entity()
 @Index(['customerId', 'specialistId'], { unique: true })

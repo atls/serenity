@@ -1,23 +1,24 @@
-import { Controller, UseInterceptors, UsePipes, ValidationPipe } from '@nestjs/common'
-import { GrpcMethod }                                            from '@nestjs/microservices'
+import { MapValidationErrorsInterceptor } from '@atls/nestjs-map-errors-interceptor'
+import { Controller }                     from '@nestjs/common'
+import { UseInterceptors }                from '@nestjs/common'
+import { UsePipes }                       from '@nestjs/common'
+import { ValidationPipe }                 from '@nestjs/common'
+import { GrpcMethod }                     from '@nestjs/microservices'
 
-import {
-  AddProjectReplyCommand,
-  ChooseSpecialistCommand,
-  ConfirmProjectReplyCommand,
-  ProjectService,
-  RejectProjectReplyCommand,
-  ReplyQueriesService,
-  UpdateProjectCommand,
-} from '@collaboration/application'
-import { MapValidationErrorsInterceptor }                        from '@monstrs/nestjs-map-errors-interceptor'
+import { AddProjectReplyCommand }         from '@collaboration/application'
+import { ChooseSpecialistCommand }        from '@collaboration/application'
+import { ConfirmProjectReplyCommand }     from '@collaboration/application'
+import { ProjectService }                 from '@collaboration/application'
+import { RejectProjectReplyCommand }      from '@collaboration/application'
+import { ReplyQueriesService }            from '@collaboration/application'
+import { UpdateProjectCommand }           from '@collaboration/application'
 
 @Controller()
 @UseInterceptors(MapValidationErrorsInterceptor)
 export class ProjectController {
   constructor(
     private readonly projectService: ProjectService,
-    private readonly replyService: ReplyQueriesService,
+    private readonly replyService: ReplyQueriesService
   ) {}
 
   @GrpcMethod('CollaborationService', 'updateProject')

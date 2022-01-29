@@ -1,14 +1,20 @@
-import { Injectable, OnModuleInit, ValidationPipe }       from '@nestjs/common'
-import { Args, Mutation }                                 from '@nestjs/graphql'
-import { Client, ClientGrpc }                             from '@nestjs/microservices'
+import { Injectable }             from '@nestjs/common'
+import { OnModuleInit }           from '@nestjs/common'
+import { ValidationPipe }         from '@nestjs/common'
+import { Args }                   from '@nestjs/graphql'
+import { Mutation }               from '@nestjs/graphql'
+import { Client }                 from '@nestjs/microservices'
+import { ClientGrpc }             from '@nestjs/microservices'
 
-import { clientOptions }                                  from '@protos/catalog'
-import { catalog }                                        from '@protos/interfaces'
+import { clientOptions }          from '@protos/catalog'
+import { catalog }                from '@protos/interfaces'
 
-import { CreateCategoryInput, DeleteCategoryInput }       from '../inputs'
-import { UpdateCategoryInput }                            from '../inputs'
-import { CreateCategoryResponse, DeleteCategoryResponse } from '../types'
-import { UpdateCategoryResponse }                         from '../types'
+import { CreateCategoryInput }    from '../inputs'
+import { DeleteCategoryInput }    from '../inputs'
+import { UpdateCategoryInput }    from '../inputs'
+import { CreateCategoryResponse } from '../types'
+import { DeleteCategoryResponse } from '../types'
+import { UpdateCategoryResponse } from '../types'
 
 @Injectable()
 export class CategoryMutations implements OnModuleInit {
@@ -21,26 +27,26 @@ export class CategoryMutations implements OnModuleInit {
     this.catalogService = this.client.getService<catalog.CatalogService>('CatalogService')
   }
 
-  @Mutation(returns => CreateCategoryResponse)
+  @Mutation((returns) => CreateCategoryResponse)
   createCategory(
     @Args('input', new ValidationPipe({ transform: true }))
-    input: CreateCategoryInput,
+    input: CreateCategoryInput
   ) {
     return this.catalogService.createCategory(input)
   }
 
-  @Mutation(returns => UpdateCategoryResponse)
+  @Mutation((returns) => UpdateCategoryResponse)
   updateCategory(
     @Args('input', new ValidationPipe({ transform: true }))
-    input: UpdateCategoryInput,
+    input: UpdateCategoryInput
   ) {
     return this.catalogService.updateCategory(input)
   }
 
-  @Mutation(returns => DeleteCategoryResponse)
+  @Mutation((returns) => DeleteCategoryResponse)
   deleteCategory(
     @Args('input', new ValidationPipe({ transform: true }))
-    input: DeleteCategoryInput,
+    input: DeleteCategoryInput
   ) {
     return this.catalogService.deleteCategory(input)
   }

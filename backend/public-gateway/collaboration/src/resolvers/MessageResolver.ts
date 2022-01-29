@@ -1,21 +1,23 @@
-/* eslint-disable class-methods-use-this */
-import DataLoader                          from 'dataloader'
-import { Injectable }                      from '@nestjs/common'
-import { ResolveProperty, Resolver, Root } from '@nestjs/graphql'
+import { Loader }          from '@atls/nestjs-dataloader'
+import { Injectable }      from '@nestjs/common'
+import { ResolveProperty } from '@nestjs/graphql'
+import { Resolver }        from '@nestjs/graphql'
+import { Root }            from '@nestjs/graphql'
 
-import { Loader }                          from '@monstrs/nestjs-dataloader'
+import DataLoader          from 'dataloader'
 
-import { MemberLoader, UserLoader }        from '../dataloaders'
-import { Message }                         from '../types'
+import { MemberLoader }    from '../dataloaders'
+import { UserLoader }      from '../dataloaders'
+import { Message }         from '../types'
 
 @Injectable()
-@Resolver(of => Message)
+@Resolver((of) => Message)
 export class MessageResolver {
   @ResolveProperty()
   async author(
     @Root() { authorId }: any,
     @Loader(UserLoader.name)
-    userLoader: DataLoader<any, any>,
+    userLoader: DataLoader<any, any>
   ) {
     const user = await userLoader.load(authorId)
 
@@ -26,7 +28,7 @@ export class MessageResolver {
   member(
     @Root() { authorId }: any,
     @Loader(MemberLoader.name)
-    memberLoader: DataLoader<any, any>,
+    memberLoader: DataLoader<any, any>
   ) {
     if (!authorId) {
       return null

@@ -1,6 +1,8 @@
-import { Module }                                                          from '@nestjs/common'
+import { Module }                 from '@nestjs/common'
 
-import { CategoryGroupMutations, CategoryGroupQueries, CategoryMutations } from './resolvers'
+import { CategoryGroupMutations } from './resolvers'
+import { CategoryGroupQueries }   from './resolvers'
+import { CategoryMutations }      from './resolvers'
 
 @Module({
   providers: [CategoryGroupQueries, CategoryGroupMutations, CategoryMutations],

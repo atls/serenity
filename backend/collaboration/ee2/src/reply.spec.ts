@@ -1,15 +1,18 @@
 import 'reflect-metadata'
 
-import uuid                                from 'uuid/v4'
-import { ServiceModule }                   from '@collaboration/service/src/module'
-import { Logger }                          from '@monstrs/nestjs-logger'
-import { ClientsModule, NestMicroservice } from '@nestjs/microservices'
-import { Test }                            from '@nestjs/testing'
-import { MemoryQueue }                     from '@node-ts/bus-core/dist/transport'
+import { ServiceModule }    from '@collaboration/service/src/module'
+import { Logger }           from '@monstrs/nestjs-logger'
+import { ClientsModule }    from '@nestjs/microservices'
+import { NestMicroservice } from '@nestjs/microservices'
+import { Test }             from '@nestjs/testing'
+import { BUS_SYMBOLS }      from '@node-ts/bus-core'
+import { MemoryQueue }      from '@node-ts/bus-core/dist/transport'
 
-import { BUS_SYMBOLS }                     from '@node-ts/bus-core'
-import { clientOptions, serverOptions }    from '@protos/collaboration'
-import { collaboration }                   from '@protos/interfaces'
+import uuid                 from 'uuid/v4'
+
+import { clientOptions }    from '@protos/collaboration'
+import { serverOptions }    from '@protos/collaboration'
+import { collaboration }    from '@protos/interfaces'
 
 describe('project reply', () => {
   let app: NestMicroservice
@@ -29,6 +32,7 @@ describe('project reply', () => {
       imports: [ServiceModule, ClientsModule.register([collaborationClientOptions])],
     })
       .overrideProvider(BUS_SYMBOLS.Transport)
+      // @ts-ignore
       .useValue(new MemoryQueue(new Logger()))
       .compile()
 
@@ -60,12 +64,12 @@ describe('project reply', () => {
 
     const { result: reply } = await collaborationService
       .addProjectReply({
-        projectId: project.result.id,
+        projectId: (project as any).result.id,
         specialistId: uuid(),
         message: 'message',
       })
       .toPromise()
 
-    expect(reply.id).toBeDefined()
+    expect((reply as any).id).toBeDefined()
   })
 })

@@ -1,0 +1,20 @@
+{
+  "name": "@fragments/project-short",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "dependencies": {
+    "@ui/icons": "workspace:ui/icons",
+    "@ui/label": "workspace:ui/label",
+    "@ui/layout": "workspace:ui/layout",
+    "@ui/link": "workspace:ui/link",
+    "@ui/relative-time": "workspace:ui/relative-time",
+    "@ui/text": "workspace:ui/text",
+    "@ui/theme": "workspace:ui/theme",
+    "react": "16.13.1",
+    "react-intl": "5.3.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.2.7"
+  }
+}

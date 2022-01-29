@@ -1,0 +1,27 @@
+{
+  "name": "@identity/registration-complete-page",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "dependencies": {
+    "react": "16.14.0",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@testing-library/react": "9.5.0",
+    "@ui/button": "workspace:ui/button",
+    "@ui/icons": "workspace:ui/icons",
+    "@ui/input": "workspace:ui/input",
+    "@ui/layout": "workspace:ui/layout",
+    "@ui/link": "workspace:ui/link",
+    "@ui/text": "workspace:ui/text",
+    "react-intl": "^5.24.4"
+  },
+  "peerDependencies": {
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
+    "react-intl": "*"
+  }
+}

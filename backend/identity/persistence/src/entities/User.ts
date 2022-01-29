@@ -1,8 +1,12 @@
-import { Column, CreateDateColumn, Entity, PrimaryColumn, UpdateDateColumn } from 'typeorm'
+import { Column }           from 'typeorm'
+import { CreateDateColumn } from 'typeorm'
+import { Entity }           from 'typeorm'
+import { PrimaryColumn }    from 'typeorm'
+import { UpdateDateColumn } from 'typeorm'
 
-import { Credentials }                                                       from './Credentials'
-import { Email }                                                             from './Email'
-import { Profile }                                                           from './Profile'
+import { Credentials }      from './Credentials'
+import { Email }            from './Email'
+import { Profile }          from './Profile'
 
 @Entity()
 export class User {
@@ -12,13 +16,13 @@ export class User {
   @Column()
   version: number
 
-  @Column(type => Email)
+  @Column((type) => Email)
   email: Email
 
-  @Column(type => Credentials)
+  @Column((type) => Credentials)
   credentials: Credentials
 
-  @Column(type => Profile)
+  @Column((type) => Profile)
   profile: Profile
 
   @CreateDateColumn()

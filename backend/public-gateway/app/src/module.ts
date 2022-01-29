@@ -1,12 +1,14 @@
+import { DataLoaderInterceptor } from '@atls/nestjs-dataloader'
 import { Module }                from '@nestjs/common'
 import { APP_INTERCEPTOR }       from '@nestjs/core'
 import { GraphQLModule }         from '@nestjs/graphql'
 
-import { DataLoaderInterceptor } from '@monstrs/nestjs-dataloader'
 import { CatalogModule }         from '@public-gateway/catalog'
 import { CollaborationModule }   from '@public-gateway/collaboration'
 import { FilesModule }           from '@public-gateway/files'
 import { IdentityModule }        from '@public-gateway/identity'
+import { PortfolioModule }       from '@public-gateway/portfolio'
+import { SearchModule }          from '@public-gateway/search'
 
 import { ActivityMiddleware }    from './middleware'
 
@@ -23,7 +25,6 @@ const playground =
   imports: [
     GraphQLModule.forRoot({
       introspection: Boolean(playground),
-      playground,
       installSubscriptionHandlers: false,
       autoSchemaFile: 'schema.gql',
       path: '//',
@@ -32,10 +33,12 @@ const playground =
         user: req.get('x-user'),
       }),
     }),
+    CollaborationModule,
+    PortfolioModule,
     IdentityModule,
     CatalogModule,
+    SearchModule,
     FilesModule,
-    CollaborationModule,
   ],
   providers: [
     ActivityMiddleware,

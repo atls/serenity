@@ -1,8 +1,8 @@
 {
   "name": "@protos/mailer",
   "version": "0.1.1",
-  "main": "src/index.ts",
   "license": "MIT",
+  "main": "src/index.ts",
   "dependencies": {
     "@nestjs/microservices": "6.10.5",
     "@protos/common": "0.3.1"

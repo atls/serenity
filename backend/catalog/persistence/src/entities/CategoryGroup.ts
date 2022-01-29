@@ -1,13 +1,11 @@
-import {
-  Column,
-  CreateDateColumn,
-  Entity,
-  OneToMany,
-  PrimaryColumn,
-  UpdateDateColumn,
-} from 'typeorm'
+import { Column }           from 'typeorm'
+import { CreateDateColumn } from 'typeorm'
+import { Entity }           from 'typeorm'
+import { OneToMany }        from 'typeorm'
+import { PrimaryColumn }    from 'typeorm'
+import { UpdateDateColumn } from 'typeorm'
 
-import { Category } from './Category'
+import { Category }         from './Category'
 
 @Entity()
 export class CategoryGroup {
@@ -20,10 +18,7 @@ export class CategoryGroup {
   @Column()
   name: string
 
-  @OneToMany(
-    type => Category,
-    category => category.group,
-  )
+  @OneToMany((type) => Category, (category) => category.group)
   children: Category[]
 
   @CreateDateColumn()

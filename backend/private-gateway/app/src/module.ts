@@ -1,8 +1,8 @@
+import { DataLoaderInterceptor } from '@atls/nestjs-dataloader'
 import { Module }                from '@nestjs/common'
 import { APP_INTERCEPTOR }       from '@nestjs/core'
 import { GraphQLModule }         from '@nestjs/graphql'
 
-import { DataLoaderInterceptor } from '@monstrs/nestjs-dataloader'
 import { CatalogModule }         from '@private-gateway/catalog'
 
 const playground = process.env.NODE_ENV !== 'production' || Boolean(process.env.PLAYGROUND)
@@ -11,7 +11,6 @@ const playground = process.env.NODE_ENV !== 'production' || Boolean(process.env.
   imports: [
     GraphQLModule.forRoot({
       introspection: playground,
-      playground,
       installSubscriptionHandlers: false,
       autoSchemaFile: 'schema.gql',
       path: '//',

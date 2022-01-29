@@ -1,16 +1,14 @@
-import { BusHealthIndicator } from '@monstrs/nestjs-bus-health'
-import { Injectable }         from '@nestjs/common'
-import {
-  TerminusModuleOptions,
-  TerminusOptionsFactory,
-  TypeOrmHealthIndicator,
-} from '@nestjs/terminus'
+import { BusHealthIndicator }     from '@monstrs/nestjs-bus-health'
+import { Injectable }             from '@nestjs/common'
+import { TerminusModuleOptions }  from '@nestjs/terminus'
+import { TerminusOptionsFactory } from '@nestjs/terminus'
+import { TypeOrmHealthIndicator } from '@nestjs/terminus'
 
 @Injectable()
 export class TerminusOptionsService implements TerminusOptionsFactory {
   constructor(
     private readonly db: TypeOrmHealthIndicator,
-    private readonly bus: BusHealthIndicator,
+    private readonly bus: BusHealthIndicator
   ) {}
 
   public createTerminusOptions(): TerminusModuleOptions {

@@ -1,17 +1,15 @@
 import { ConnectionOptions } from 'typeorm'
 
 import migrations            from './migrations'
-import {
-  Chat,
-  Customer,
-  Discussion,
-  Message,
-  Project,
-  ProjectId,
-  Reply,
-  Review,
-  Specialist,
-} from './entities'
+import { Chat }              from './entities'
+import { Customer }          from './entities'
+import { Discussion }        from './entities'
+import { Message }           from './entities'
+import { Project }           from './entities'
+import { ProjectId }         from './entities'
+import { Reply }             from './entities'
+import { Review }            from './entities'
+import { Specialist }        from './entities'
 
 const config: ConnectionOptions = {
   type: 'postgres',

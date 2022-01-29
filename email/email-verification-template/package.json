@@ -1,0 +1,17 @@
+{
+  "name": "@email/email-verification-template",
+  "version": "0.1.1",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "dependencies": {
+    "mjml-react": "^1.2.2",
+    "react": "16.13.1"
+  },
+  "devDependencies": {
+    "@types/mjml-react": "^1",
+    "react-intl": "^5.24.4"
+  },
+  "peerDependencies": {
+    "react-intl": "*"
+  }
+}

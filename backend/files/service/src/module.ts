@@ -1,10 +1,11 @@
-import { BusModule }                               from '@monstrs/nestjs-bus'
-import { Module }                                  from '@nestjs/common'
+import { BusModule }             from '@monstrs/nestjs-bus'
+import { Module }                from '@nestjs/common'
 
-import { ApplicationModule }                       from '@files/application'
-import { PersistenceModule }                       from '@files/persistence'
+import { ApplicationModule }     from '@files/application'
+import { PersistenceModule }     from '@files/persistence'
 
-import { FileQueriesController, UploadController } from './controllers'
+import { FileQueriesController } from './controllers'
+import { UploadController }      from './controllers'
 
 @Module({
   imports: [

@@ -1,0 +1,37 @@
+{
+  "name": "@site/specialists-fragment",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "dependencies": {
+    "graphql": "^15.5.0",
+    "graphql-tag": "^2.10.0",
+    "next": "10.0.5",
+    "react": "16.13.1"
+  },
+  "devDependencies": {
+    "@apollo/client": "^3.5.8",
+    "@apollo/react-testing": "4.0.0",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@testing-library/react": "9.3.2",
+    "@ui/avatar": "0.0.1",
+    "@ui/button": "0.3.1",
+    "@ui/carousel": "0.0.1",
+    "@ui/chat": "0.0.1",
+    "@ui/icons": "0.1.1",
+    "@ui/image": "0.0.1",
+    "@ui/layout": "0.0.5",
+    "@ui/link": "0.0.5",
+    "@ui/search": "0.0.1",
+    "@ui/text": "0.3.1",
+    "@ui/theme": "0.0.5",
+    "react-intl": "^5.24.4"
+  },
+  "peerDependencies": {
+    "@apollo/client": "*",
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
+    "react-intl": "*"
+  }
+}

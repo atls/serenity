@@ -1,17 +1,12 @@
 import { Injectable }       from '@nestjs/common'
 import { InjectRepository } from '@nestjs/typeorm'
+
 import { Repository }       from 'typeorm'
 
-import { Chat, Discussion } from '@collaboration/persistence'
+import { Chat }             from '@collaboration/persistence'
+import { Discussion }       from '@collaboration/persistence'
 
-interface PageInfo {
-  hasNext: boolean
-}
-
-interface FindAllResponse<T> {
-  rows: T[]
-  pageInfo: PageInfo
-}
+import { FindAllResponse }  from '../interfaces'
 
 @Injectable()
 export class DiscussionQueriesService {
@@ -19,7 +14,7 @@ export class DiscussionQueriesService {
     @InjectRepository(Discussion)
     private readonly discussionRepository: Repository<Discussion>,
     @InjectRepository(Chat)
-    private readonly chatRepository: Repository<Chat>,
+    private readonly chatRepository: Repository<Chat>
   ) {}
 
   async findAll(pager?: any, filters?: any): Promise<FindAllResponse<Discussion>> {
@@ -89,7 +84,7 @@ export class DiscussionQueriesService {
     const rows = await this.discussionRepository
       .createQueryBuilder('discussion')
       .leftJoinAndSelect('discussion.messages', 'messages')
-      .where('discussion.id IN (:...id)', { id: chats.map(chat => chat.discussionId) })
+      .where('discussion.id IN (:...id)', { id: chats.map((chat) => chat.discussionId) })
       .getMany()
 
     return {

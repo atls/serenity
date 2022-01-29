@@ -1,4 +1,6 @@
-import { Field, ID, InputType } from 'type-graphql'
+import { Field }     from 'type-graphql'
+import { ID }        from 'type-graphql'
+import { InputType } from 'type-graphql'
 
 @InputType()
 export class UpdateSpecialistInput {
@@ -14,9 +16,9 @@ export class UpdateSpecialistInput {
   @Field({ nullable: true })
   description: string
 
-  @Field(type => [ID])
+  @Field((type) => [ID])
   mainSpecialisation: string[]
 
-  @Field(type => [ID])
+  @Field((type) => [ID])
   additionalSpecialisation: string[]
 }

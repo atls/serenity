@@ -1,0 +1,34 @@
+{
+  "name": "@site/projects-detail-page",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "dependencies": {
+    "graphql": "^15.5.0",
+    "graphql-tag": "^2.10.0",
+    "next": "10.0.5",
+    "react": "16.13.1",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "@apollo/client": "^3.5.8",
+    "@atls/react-user": "^0.1.40",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@site/catalog-fragment": "0.0.1",
+    "@site/footer-fragment": "0.0.1",
+    "@site/navigation-fragment": "0.0.1",
+    "@site/project-customer-fragment": "0.0.1",
+    "@site/project-reply-fragment": "0.0.1",
+    "@site/projects-detail-fragment": "0.0.1",
+    "@testing-library/react": "9.3.2",
+    "@ui/layout": "0.0.5",
+    "react-intl": "^5.24.4"
+  },
+  "peerDependencies": {
+    "@apollo/client": "*",
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
+    "react-intl": "*"
+  }
+}
