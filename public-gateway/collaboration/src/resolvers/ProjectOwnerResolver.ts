@@ -1,6 +1,6 @@
 import { Loader }          from '@atls/nestjs-dataloader'
 import { Injectable }      from '@nestjs/common'
-import { ResolveProperty } from '@nestjs/graphql'
+import { ResolveField } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Root }            from '@nestjs/graphql'
 
@@ -14,7 +14,7 @@ import { ProjectOwner }    from '../types'
 @Injectable()
 @Resolver((of) => ProjectOwner)
 export class ProjectOwnerResolver {
-  @ResolveProperty()
+  @ResolveField()
   async profile(
     @Root() { customerId }: any,
     @Loader(UserLoader.name)
@@ -25,7 +25,7 @@ export class ProjectOwnerResolver {
     return user.profile
   }
 
-  @ResolveProperty()
+  @ResolveField()
   member(
     @Root() { customerId }: any,
     @Loader(CustomerLoader.name)
@@ -38,7 +38,7 @@ export class ProjectOwnerResolver {
     return customerLoader.load(customerId)
   }
 
-  @ResolveProperty()
+  @ResolveField()
   activity(
     @Root() { customerId }: any,
     @Loader(ActivityLoader.name)

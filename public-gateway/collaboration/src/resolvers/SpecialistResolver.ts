@@ -1,6 +1,6 @@
 import { Loader }          from '@atls/nestjs-dataloader'
 import { Injectable }      from '@nestjs/common'
-import { ResolveProperty } from '@nestjs/graphql'
+import { ResolveField } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Root }            from '@nestjs/graphql'
 
@@ -14,7 +14,7 @@ import { Specialist }      from '../types'
 @Injectable()
 @Resolver((of) => Specialist)
 export class SpecialistResolver {
-  @ResolveProperty()
+  @ResolveField()
   async profile(
     @Root() { id }: any,
     @Loader(UserLoader.name)
@@ -25,7 +25,7 @@ export class SpecialistResolver {
     return user.profile
   }
 
-  @ResolveProperty()
+  @ResolveField()
   portfolio(
     @Root() { id }: any,
     @Loader(PortfolioLoader.name)
@@ -34,7 +34,7 @@ export class SpecialistResolver {
     return portfolioLoader.load(id)
   }
 
-  @ResolveProperty()
+  @ResolveField()
   reviews(
     @Root() { id }: any,
     @Loader(ReviewLoader.name)

@@ -7,8 +7,8 @@
     "typeorm": "ts-node `yarn bin typeorm`"
   },
   "dependencies": {
-    "@nestjs/common": "6.10.5",
-    "@nestjs/typeorm": "6.2.0",
+    "@nestjs/common": "8.2.6",
+    "@nestjs/typeorm": "8.0.3",
     "pg": "8.5.1",
     "ts-node": "8.10.2",
     "typeorm": "0.2.19",

@@ -7,8 +7,10 @@
     "compile": "rxjs-grpc -o src/index.ts ../common/*.proto ../catalog/*.proto ../mailer/*.proto ../identity/*.proto"
   },
   "devDependencies": {
-    "grpc": "1.24.2",
     "rxjs": "6.5.3",
     "rxjs-grpc": "0.2.5"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.3"
   }
 }

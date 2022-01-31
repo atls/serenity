@@ -1,6 +1,6 @@
 import { Loader }          from '@atls/nestjs-dataloader'
 import { Injectable }      from '@nestjs/common'
-import { ResolveProperty } from '@nestjs/graphql'
+import { ResolveField } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Root }            from '@nestjs/graphql'
 
@@ -12,7 +12,7 @@ import { Review }          from '../types'
 @Injectable()
 @Resolver((of) => Review)
 export class ReviewResolver {
-  @ResolveProperty()
+  @ResolveField()
   async customer(
     @Root() { customerId }: any,
     @Loader(UserLoader.name)

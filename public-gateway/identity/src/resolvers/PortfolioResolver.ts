@@ -1,13 +1,13 @@
 import { Injectable }      from '@nestjs/common'
 import { OnModuleInit }    from '@nestjs/common'
 import { Args }            from '@nestjs/graphql'
-import { ResolveProperty } from '@nestjs/graphql'
+import { ResolveField } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Root }            from '@nestjs/graphql'
 import { Client }          from '@nestjs/microservices'
 import { ClientGrpc }      from '@nestjs/microservices'
 
-import { ID }              from 'type-graphql'
+import { ID }              from '@nestjs/graphql'
 import { map }             from 'rxjs/operators'
 
 import { portfolio }       from '@protos/interfaces'
@@ -27,7 +27,7 @@ export class PortfolioResolver implements OnModuleInit {
     this.portfolioService = this.client.getService<portfolio.PortfolioService>('PortfolioService')
   }
 
-  @ResolveProperty()
+  @ResolveField()
   portfolio(
     @Root()
     user: any,

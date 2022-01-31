@@ -1,4 +1,4 @@
-import { Field, ObjectType } from 'type-graphql'
+import { Field, ObjectType } from '@nestjs/graphql'
 
 import { Project } from './Project'
 import { UpdateProjectErrors } from './UpdateProjectErrors'

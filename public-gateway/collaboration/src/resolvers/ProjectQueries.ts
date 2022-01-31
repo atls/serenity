@@ -5,7 +5,7 @@ import { Query }             from '@nestjs/graphql'
 import { Client }            from '@nestjs/microservices'
 import { ClientGrpc }        from '@nestjs/microservices'
 
-import { Int }               from 'type-graphql'
+import { Int }               from '@nestjs/graphql'
 
 import { OffsetToPagerPipe } from '@public-gateway/utils'
 import { Pager }             from '@public-gateway/utils'

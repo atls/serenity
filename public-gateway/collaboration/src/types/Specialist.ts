@@ -1,6 +1,6 @@
 import { Profile } from '@public-gateway/identity'
 import { Portfolio } from '@public-gateway/portfolio'
-import { Field, ObjectType } from 'type-graphql'
+import { Field, ObjectType } from '@nestjs/graphql'
 
 import { Interaction } from './Interaction'
 import { Review } from './Review'

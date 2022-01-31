@@ -1,7 +1,7 @@
 import { Discussion, Project, Reply } from '@public-gateway/collaboration'
 import { SpecialistMember } from '@public-gateway/collaboration/src/types/SpecialistMember'
 import { Portfolio } from '@public-gateway/portfolio'
-import { Field, ObjectType } from 'type-graphql'
+import { Field, ObjectType } from '@nestjs/graphql'
 
 import { Email } from './Email'
 import { Profile } from './Profile'

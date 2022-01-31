@@ -1,6 +1,6 @@
 import { Loader }          from '@atls/nestjs-dataloader'
 import { Injectable }      from '@nestjs/common'
-import { ResolveProperty } from '@nestjs/graphql'
+import { ResolveField } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Root }            from '@nestjs/graphql'
 
@@ -19,7 +19,7 @@ import { Project }         from '../types'
 @Injectable()
 @Resolver((of) => Project)
 export class ProjectResolver {
-  @ResolveProperty()
+  @ResolveField()
   category(
     @Root() { categoryId }: collaboration.Project,
     @Loader(CategoryLoader.name)
@@ -32,12 +32,12 @@ export class ProjectResolver {
     return categoryLoader.load(categoryId)
   }
 
-  @ResolveProperty()
+  @ResolveField()
   owner(@Root() { customerId }: collaboration.Project) {
     return { customerId }
   }
 
-  @ResolveProperty()
+  @ResolveField()
   photos(
     @Root() { photos }: collaboration.Project,
     @Loader(FilesLoader.name)
@@ -50,7 +50,7 @@ export class ProjectResolver {
     return filesLoader.loadMany(photos)
   }
 
-  @ResolveProperty()
+  @ResolveField()
   replies(
     @Root() { id }: collaboration.Reply,
     @Loader(ReplyLoader.name)
@@ -59,7 +59,7 @@ export class ProjectResolver {
     return replyLoader.load(id)
   }
 
-  @ResolveProperty()
+  @ResolveField()
   async views(
     @Root() { id }: any,
     @Loader(CounterLoader.name)

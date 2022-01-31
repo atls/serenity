@@ -1,6 +1,6 @@
 import { Injectable }      from '@nestjs/common'
 import { OnModuleInit }    from '@nestjs/common'
-import { ResolveProperty } from '@nestjs/graphql'
+import { ResolveField } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Client }          from '@nestjs/microservices'
 import { ClientGrpc }      from '@nestjs/microservices'
@@ -24,7 +24,7 @@ export class ProfilePhotoResolver implements OnModuleInit {
     this.filesService = this.client.getService<files.FilesService>('FilesService')
   }
 
-  @ResolveProperty()
+  @ResolveField()
   photo(profile: any) {
     if (!(profile.photo && profile.photo.id)) {
       return null

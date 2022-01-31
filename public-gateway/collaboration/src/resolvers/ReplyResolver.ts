@@ -1,6 +1,6 @@
 import { Loader }          from '@atls/nestjs-dataloader'
 import { Injectable }      from '@nestjs/common'
-import { ResolveProperty } from '@nestjs/graphql'
+import { ResolveField } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Root }            from '@nestjs/graphql'
 
@@ -14,7 +14,7 @@ import { Reply }           from '../types'
 @Injectable()
 @Resolver((of) => Reply)
 export class ReplyResolver {
-  @ResolveProperty()
+  @ResolveField()
   project(
     @Root() { projectId }: collaboration.Reply,
     @Loader(ProjectLoader.name)

@@ -5,5 +5,13 @@
   "main": "src/index.ts",
   "dependencies": {
     "type-graphql": "0.17.5"
+  },
+  "peerDependencies": {
+    "@nestjs/graphql": "*",
+    "graphql": "*"
+  },
+  "devDependencies": {
+    "@nestjs/graphql": "^9.1.2",
+    "graphql": "^16.3.0"
   }
 }

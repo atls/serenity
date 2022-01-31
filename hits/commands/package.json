@@ -5,10 +5,10 @@
   "main": "src/index.ts",
   "devDependencies": {
     "@hits/persistence": "0.0.1",
-    "@nestjs/common": "6.10.5",
-    "@nestjs/core": "6.10.5",
-    "@nestjs/testing": "6.10.5",
-    "@nestjs/typeorm": "6.2.0",
+    "@nestjs/common": "8.2.6",
+    "@nestjs/core": "8.2.6",
+    "@nestjs/testing": "8.2.6",
+    "@nestjs/typeorm": "8.0.3",
     "typeorm": "0.2.19"
   }
 }

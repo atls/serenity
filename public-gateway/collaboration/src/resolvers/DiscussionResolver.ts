@@ -1,7 +1,7 @@
 import { Loader }          from '@atls/nestjs-dataloader'
 import { Injectable }      from '@nestjs/common'
 import { Context }         from '@nestjs/graphql'
-import { ResolveProperty } from '@nestjs/graphql'
+import { ResolveField } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Root }            from '@nestjs/graphql'
 
@@ -13,7 +13,7 @@ import { Discussion }      from '../types'
 @Injectable()
 @Resolver((of) => Discussion)
 export class DiscussionResolver {
-  @ResolveProperty()
+  @ResolveField()
   recipient(
     @Root() { customerId, specialistId }: any,
     @Loader(UserLoader.name)

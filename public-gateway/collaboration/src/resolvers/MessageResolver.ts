@@ -1,6 +1,6 @@
 import { Loader }          from '@atls/nestjs-dataloader'
 import { Injectable }      from '@nestjs/common'
-import { ResolveProperty } from '@nestjs/graphql'
+import { ResolveField } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Root }            from '@nestjs/graphql'
 
@@ -13,7 +13,7 @@ import { Message }         from '../types'
 @Injectable()
 @Resolver((of) => Message)
 export class MessageResolver {
-  @ResolveProperty()
+  @ResolveField()
   async author(
     @Root() { authorId }: any,
     @Loader(UserLoader.name)
@@ -24,7 +24,7 @@ export class MessageResolver {
     return user.profile
   }
 
-  @ResolveProperty()
+  @ResolveField()
   member(
     @Root() { authorId }: any,
     @Loader(MemberLoader.name)

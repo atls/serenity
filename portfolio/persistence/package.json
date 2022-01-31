@@ -9,8 +9,8 @@
   "dependencies": {
     "@monstrs/nestjs-bus": "0.1.4",
     "@monstrs/nestjs-logger": "0.1.2",
-    "@nestjs/common": "6.10.5",
-    "@nestjs/typeorm": "6.2.0",
+    "@nestjs/common": "8.2.6",
+    "@nestjs/typeorm": "8.0.3",
     "@node-ts/ddd": "0.1.4",
     "@portfolio/domain": "0.0.0",
     "pg": "7.13.0",

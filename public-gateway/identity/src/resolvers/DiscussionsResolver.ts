@@ -1,6 +1,6 @@
 import { Injectable }      from '@nestjs/common'
 import { OnModuleInit }    from '@nestjs/common'
-import { ResolveProperty } from '@nestjs/graphql'
+import { ResolveField } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Root }            from '@nestjs/graphql'
 import { Client }          from '@nestjs/microservices'
@@ -26,7 +26,7 @@ export class DiscussionsResolver implements OnModuleInit {
       this.client.getService<collaboration.CollaborationService>('CollaborationService')
   }
 
-  @ResolveProperty()
+  @ResolveField()
   discussions(
     @Root()
     user: any

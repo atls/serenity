@@ -1,6 +1,6 @@
 import { Category } from '@public-gateway/catalog'
 import { File } from '@public-gateway/files'
-import { Field, ObjectType } from 'type-graphql'
+import { Field, ObjectType } from '@nestjs/graphql'
 
 import { ProjectAddress } from './ProjectAddress'
 import { ProjectOwner } from './ProjectOwner'

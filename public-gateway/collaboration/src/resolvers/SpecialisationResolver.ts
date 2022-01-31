@@ -1,6 +1,6 @@
 import { Loader }           from '@atls/nestjs-dataloader'
 import { Injectable }       from '@nestjs/common'
-import { ResolveProperty }  from '@nestjs/graphql'
+import { ResolveField }  from '@nestjs/graphql'
 import { Resolver }         from '@nestjs/graphql'
 import { Root }             from '@nestjs/graphql'
 
@@ -15,7 +15,7 @@ import { Specialisation }   from '../types'
 @Injectable()
 @Resolver((of) => Specialisation)
 export class SpecialisationResolver {
-  @ResolveProperty()
+  @ResolveField()
   main(
     @Root() { main }: collaboration.Specialisation,
     @Loader(CategoriesLoader.name)
@@ -28,7 +28,7 @@ export class SpecialisationResolver {
     return categoriesLoader.loadMany(main)
   }
 
-  @ResolveProperty()
+  @ResolveField()
   additional(
     @Root() { additional }: collaboration.Specialisation,
     @Loader(CategoriesLoader.name)

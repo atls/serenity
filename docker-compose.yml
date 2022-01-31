@@ -15,8 +15,8 @@ services:
         ipv4_address: 172.16.101.99
 
   yarn:
+    image: node:16-alpine
     working_dir: /workspace
-    build: config/yarn
     volumes:
       - ./:/workspace
     entrypoint: yarn
@@ -310,7 +310,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn collaboration:dev
+    entrypoint: yarn workspace @collaboration/service dev
     depends_on:
       - rabbitmq
       - db

@@ -1,6 +1,6 @@
 import { Loader }          from '@atls/nestjs-dataloader'
 import { Injectable }      from '@nestjs/common'
-import { ResolveProperty } from '@nestjs/graphql'
+import { ResolveField } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Root }            from '@nestjs/graphql'
 
@@ -15,7 +15,7 @@ import { Portfolio }       from '../types'
 @Injectable()
 @Resolver((of) => Portfolio)
 export class PortfolioResolver {
-  @ResolveProperty()
+  @ResolveField()
   images(
     @Root() { images }: portfolio.Portfolio,
     @Loader(ImageLoader.name)

@@ -1,5 +1,5 @@
 import { Profile } from '@public-gateway/identity'
-import { Field, ObjectType } from 'type-graphql'
+import { Field, ObjectType } from '@nestjs/graphql'
 
 import { SpecialistMember } from './SpecialistMember'
 

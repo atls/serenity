@@ -1,3 +1,4 @@
+import { join } from 'path'
 import { DataLoaderInterceptor } from '@atls/nestjs-dataloader'
 import { Module }                from '@nestjs/common'
 import { APP_INTERCEPTOR }       from '@nestjs/core'
@@ -24,9 +25,10 @@ const playground =
 @Module({
   imports: [
     GraphQLModule.forRoot({
-      introspection: Boolean(playground),
+      introspection: true,
+      playground: true,
       installSubscriptionHandlers: false,
-      autoSchemaFile: 'schema.gql',
+      autoSchemaFile: join(__dirname, './schema.gql'),
       path: '//',
       cors: false,
       context: ({ req }) => ({

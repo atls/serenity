@@ -1,4 +1,4 @@
-import { Field, ObjectType } from 'type-graphql'
+import { Field, ObjectType } from '@nestjs/graphql'
 
 import { AddProjectReplyErrors } from './AddProjectReplyErrors'
 import { Reply } from './Reply'

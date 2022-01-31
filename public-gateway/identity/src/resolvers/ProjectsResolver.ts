@@ -1,13 +1,13 @@
 import { Injectable }      from '@nestjs/common'
 import { OnModuleInit }    from '@nestjs/common'
 import { Args }            from '@nestjs/graphql'
-import { ResolveProperty } from '@nestjs/graphql'
+import { ResolveField } from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Root }            from '@nestjs/graphql'
 import { Client }          from '@nestjs/microservices'
 import { ClientGrpc }      from '@nestjs/microservices'
 
-import { ID }              from 'type-graphql'
+import { ID }              from '@nestjs/graphql'
 import { map }             from 'rxjs/operators'
 
 import { clientOptions }   from '@protos/collaboration'
@@ -28,7 +28,7 @@ export class ProjectsResolver implements OnModuleInit {
       this.client.getService<collaboration.CollaborationService>('CollaborationService')
   }
 
-  @ResolveProperty()
+  @ResolveField()
   projects(
     @Root()
     user: any,

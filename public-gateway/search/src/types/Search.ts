@@ -1,5 +1,5 @@
 import { ProjectsList, SpecialistsList } from '@public-gateway/collaboration'
-import { Field, ObjectType } from 'type-graphql'
+import { Field, ObjectType } from '@nestjs/graphql'
 
 @ObjectType()
 export class Search {
