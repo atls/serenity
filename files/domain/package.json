@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "src/index.ts",
   "dependencies": {
-    "@nestjs/common": "8.2.6",
+    "@nestjs/common": "8.4.2",
     "@node-ts/bus-core": "0.6.3",
     "@node-ts/bus-messages": "0.1.10",
     "@node-ts/ddd": "^0.1.6",

@@ -14,11 +14,6 @@ const nextConfig = {
 }
 
 module.exports = withPlugins(
-  [
-    withWorkspaces,
-    withExtractIntlMessages,
-    withImages,
-    withFonts
-  ],
+  [withWorkspaces, withExtractIntlMessages, withImages, withFonts],
   nextConfig
 )

@@ -309,8 +309,9 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
     entrypoint: yarn workspace @collaboration/service dev
+    environment:
+      - DB_HOST=db
     depends_on:
       - rabbitmq
       - db

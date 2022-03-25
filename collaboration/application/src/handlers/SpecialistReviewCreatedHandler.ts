@@ -1,10 +1,8 @@
-import { HandlesMessage }             from '@monstrs/nestjs-bus'
 import { Handler }                    from '@node-ts/bus-core'
 
 import { ReviewCreated }              from '@collaboration/domain'
 import { SpecialistEntityRepository } from '@collaboration/persistence'
 
-@HandlesMessage(ReviewCreated)
 export class SpecialistReviewCreatedHandler implements Handler<ReviewCreated> {
   constructor(private readonly specialistRepository: SpecialistEntityRepository) {}
 

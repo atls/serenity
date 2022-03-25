@@ -1,16 +1,16 @@
-import { Loader }          from '@atls/nestjs-dataloader'
-import { Injectable }      from '@nestjs/common'
+import { Loader }       from '@atls/nestjs-dataloader'
+import { Injectable }   from '@nestjs/common'
 import { ResolveField } from '@nestjs/graphql'
-import { Resolver }        from '@nestjs/graphql'
-import { Root }            from '@nestjs/graphql'
+import { Resolver }     from '@nestjs/graphql'
+import { Root }         from '@nestjs/graphql'
 
-import DataLoader          from 'dataloader'
+import DataLoader       from 'dataloader'
 
-import { File }            from '@public-gateway/files'
-import { portfolio }       from '@protos/interfaces'
+import { File }         from '@public-gateway/files'
+import { portfolio }    from '@protos/interfaces'
 
-import { ImageLoader }     from '../dataloaders'
-import { Portfolio }       from '../types'
+import { ImageLoader }  from '../dataloaders'
+import { Portfolio }    from '../types'
 
 @Injectable()
 @Resolver((of) => Portfolio)

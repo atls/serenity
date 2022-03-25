@@ -1,16 +1,16 @@
-import { Injectable }      from '@nestjs/common'
-import { OnModuleInit }    from '@nestjs/common'
-import { ResolveField } from '@nestjs/graphql'
-import { Resolver }        from '@nestjs/graphql'
-import { Client }          from '@nestjs/microservices'
-import { ClientGrpc }      from '@nestjs/microservices'
+import { Injectable }    from '@nestjs/common'
+import { OnModuleInit }  from '@nestjs/common'
+import { ResolveField }  from '@nestjs/graphql'
+import { Resolver }      from '@nestjs/graphql'
+import { Client }        from '@nestjs/microservices'
+import { ClientGrpc }    from '@nestjs/microservices'
 
-import { map }             from 'rxjs/operators'
+import { map }           from 'rxjs/operators'
 
-import { clientOptions }   from '@protos/files'
-import { files }           from '@protos/interfaces'
+import { clientOptions } from '@protos/files'
+import { files }         from '@protos/interfaces'
 
-import { Profile }         from '../types'
+import { Profile }       from '../types'
 
 @Injectable()
 @Resolver((of) => Profile)

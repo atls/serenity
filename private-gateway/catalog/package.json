@@ -4,9 +4,9 @@
   "license": "MIT",
   "main": "src/index.ts",
   "dependencies": {
-    "@nestjs/common": "8.2.6",
+    "@nestjs/common": "8.4.2",
     "@nestjs/graphql": "9.1.2",
-    "@nestjs/microservices": "8.2.6",
+    "@nestjs/microservices": "8.4.2",
     "@protos/catalog": "0.1.1",
     "@protos/interfaces": "0.1.1",
     "rxjs": "6.5.3",

@@ -1,4 +1,3 @@
-import { HandlesMessage }             from '@monstrs/nestjs-bus'
 import { Handler }                    from '@node-ts/bus-core'
 
 import { ReviewCreated }              from '@collaboration/domain'
@@ -6,7 +5,6 @@ import { SpecialistEntityRepository } from '@collaboration/persistence'
 
 import { ReviewQueriesService }       from '../services'
 
-@HandlesMessage(ReviewCreated)
 export class RecalculateRatingHandler implements Handler<ReviewCreated> {
   constructor(
     private readonly reviewService: ReviewQueriesService,

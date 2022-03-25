@@ -5,9 +5,9 @@
   "main": "src/index.ts",
   "devDependencies": {
     "@hits/persistence": "0.0.1",
-    "@nestjs/common": "8.2.6",
-    "@nestjs/core": "8.2.6",
+    "@nestjs/common": "8.4.2",
+    "@nestjs/core": "8.4.2",
     "@nestjs/typeorm": "8.0.3",
-    "typeorm": "0.2.19"
+    "typeorm": "0.3.3"
   }
 }

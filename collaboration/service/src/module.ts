@@ -1,4 +1,3 @@
-import { BusModule }                   from '@atls/nestjs-bus'
 import { Module }                      from '@nestjs/common'
 
 import { ApplicationModule }           from '@collaboration/application'
@@ -17,14 +16,7 @@ import { SpecialistController }        from './controllers'
 import { SpecialistQueriesController } from './controllers'
 
 @Module({
-  imports: [
-    BusModule.forRabbitMq({
-      queueName: 'collaboration',
-      connectionString: process.env.BUS_URL || 'amqp://local:password@rabbitmq:5672/?heartbeat=30',
-    }),
-    PersistenceModule,
-    ApplicationModule,
-  ],
+  imports: [PersistenceModule, ApplicationModule],
   controllers: [
     CustomerQueriesController,
     SpecialistQueriesController,

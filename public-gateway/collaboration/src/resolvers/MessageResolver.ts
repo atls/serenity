@@ -1,14 +1,14 @@
-import { Loader }          from '@atls/nestjs-dataloader'
-import { Injectable }      from '@nestjs/common'
+import { Loader }       from '@atls/nestjs-dataloader'
+import { Injectable }   from '@nestjs/common'
 import { ResolveField } from '@nestjs/graphql'
-import { Resolver }        from '@nestjs/graphql'
-import { Root }            from '@nestjs/graphql'
+import { Resolver }     from '@nestjs/graphql'
+import { Root }         from '@nestjs/graphql'
 
-import DataLoader          from 'dataloader'
+import DataLoader       from 'dataloader'
 
-import { MemberLoader }    from '../dataloaders'
-import { UserLoader }      from '../dataloaders'
-import { Message }         from '../types'
+import { MemberLoader } from '../dataloaders'
+import { UserLoader }   from '../dataloaders'
+import { Message }      from '../types'
 
 @Injectable()
 @Resolver((of) => Message)

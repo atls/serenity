@@ -12,7 +12,6 @@ import { ThemeProvider }     from '@ui/theme'
 
 import { CeilingsWorksheet } from '../CeilingsWorksheet'
 
-
 const TestComponent = () => {
   const intl = useIntl()
 

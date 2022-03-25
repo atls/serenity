@@ -16,15 +16,15 @@
     "@mailer/renderer": "0.1.1",
     "@mailer/transport": "0.1.1",
     "@monstrs/nestjs-bus": "0.1.4",
-    "@nestjs/common": "8.2.6",
-    "@nestjs/core": "8.2.6",
+    "@nestjs/common": "8.4.2",
+    "@nestjs/core": "8.4.2",
     "@nestjs/typeorm": "8.0.3",
     "@node-ts/bus-core": "0.6.3",
     "@protos/mailer": "0.1.1",
     "class-validator": "0.11.0",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3",
-    "typeorm": "0.2.19",
+    "typeorm": "0.3.3",
     "typescript": "^4.2.2"
   },
   "devDependencies": {

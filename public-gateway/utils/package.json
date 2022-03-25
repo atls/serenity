@@ -4,6 +4,6 @@
   "license": "MIT",
   "main": "src/index.ts",
   "dependencies": {
-    "@nestjs/common": "8.2.6"
+    "@nestjs/common": "8.4.2"
   }
 }

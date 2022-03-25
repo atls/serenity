@@ -5,8 +5,8 @@
   "main": "src/index.ts",
   "dependencies": {
     "@atls/nestjs-dataloader": "^0.0.3",
-    "@nestjs/common": "8.2.6",
-    "@nestjs/microservices": "8.2.6",
+    "@nestjs/common": "8.4.2",
+    "@nestjs/microservices": "8.4.2",
     "@protos/catalog": "0.1.1",
     "@protos/collaboration": "0.0.1",
     "@protos/files": "0.0.2",

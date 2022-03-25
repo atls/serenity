@@ -1,15 +1,15 @@
-import { Loader }          from '@atls/nestjs-dataloader'
-import { Injectable }      from '@nestjs/common'
-import { ResolveField } from '@nestjs/graphql'
-import { Resolver }        from '@nestjs/graphql'
-import { Root }            from '@nestjs/graphql'
+import { Loader }        from '@atls/nestjs-dataloader'
+import { Injectable }    from '@nestjs/common'
+import { ResolveField }  from '@nestjs/graphql'
+import { Resolver }      from '@nestjs/graphql'
+import { Root }          from '@nestjs/graphql'
 
-import DataLoader          from 'dataloader'
+import DataLoader        from 'dataloader'
 
-import { collaboration }   from '@protos/interfaces'
+import { collaboration } from '@protos/interfaces'
 
-import { ProjectLoader }   from '../dataloaders'
-import { Reply }           from '../types'
+import { ProjectLoader } from '../dataloaders'
+import { Reply }         from '../types'
 
 @Injectable()
 @Resolver((of) => Reply)

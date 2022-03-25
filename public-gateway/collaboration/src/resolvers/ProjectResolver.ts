@@ -1,20 +1,20 @@
-import { Loader }          from '@atls/nestjs-dataloader'
-import { Injectable }      from '@nestjs/common'
-import { ResolveField } from '@nestjs/graphql'
-import { Resolver }        from '@nestjs/graphql'
-import { Root }            from '@nestjs/graphql'
+import { Loader }         from '@atls/nestjs-dataloader'
+import { Injectable }     from '@nestjs/common'
+import { ResolveField }   from '@nestjs/graphql'
+import { Resolver }       from '@nestjs/graphql'
+import { Root }           from '@nestjs/graphql'
 
-import DataLoader          from 'dataloader'
+import DataLoader         from 'dataloader'
 
-import { Category }        from '@public-gateway/catalog'
-import { File }            from '@public-gateway/files'
-import { collaboration }   from '@protos/interfaces'
+import { Category }       from '@public-gateway/catalog'
+import { File }           from '@public-gateway/files'
+import { collaboration }  from '@protos/interfaces'
 
-import { CategoryLoader }  from '../dataloaders'
-import { CounterLoader }   from '../dataloaders'
-import { FilesLoader }     from '../dataloaders'
-import { ReplyLoader }     from '../dataloaders'
-import { Project }         from '../types'
+import { CategoryLoader } from '../dataloaders'
+import { CounterLoader }  from '../dataloaders'
+import { FilesLoader }    from '../dataloaders'
+import { ReplyLoader }    from '../dataloaders'
+import { Project }        from '../types'
 
 @Injectable()
 @Resolver((of) => Project)

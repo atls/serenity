@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "src/index.ts",
   "dependencies": {
-    "@nestjs/common": "8.2.6",
+    "@nestjs/common": "8.4.2",
     "html-to-text": "5.1.1",
     "isomorphic-fetch": "2.2.1",
     "qs": "6.9.1"

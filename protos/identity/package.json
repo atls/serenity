@@ -6,7 +6,10 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.5.3",
     "@grpc/proto-loader": "0.5.5",
-    "@nestjs/microservices": "8.2.6",
+    "@nestjs/microservices": "8.4.2",
     "@protos/common": "0.3.1"
+  },
+  "peerDependencies": {
+    "@nestjs/core": "*"
   }
 }

@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "@atls/nestjs-dataloader": "^0.0.3",
-    "@nestjs/common": "8.2.6",
-    "@nestjs/core": "8.2.6",
+    "@nestjs/common": "8.4.2",
+    "@nestjs/core": "8.4.2",
     "@nestjs/graphql": "9.1.2",
-    "@nestjs/platform-express": "8.2.6",
+    "@nestjs/platform-express": "8.4.2",
     "@private-gateway/catalog": "0.1.1",
     "apollo-server-express": "2.14.3",
     "class-transformer": "0.3.1",

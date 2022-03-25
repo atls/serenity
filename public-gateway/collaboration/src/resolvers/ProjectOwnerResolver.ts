@@ -1,15 +1,15 @@
-import { Loader }          from '@atls/nestjs-dataloader'
-import { Injectable }      from '@nestjs/common'
-import { ResolveField } from '@nestjs/graphql'
-import { Resolver }        from '@nestjs/graphql'
-import { Root }            from '@nestjs/graphql'
+import { Loader }         from '@atls/nestjs-dataloader'
+import { Injectable }     from '@nestjs/common'
+import { ResolveField }   from '@nestjs/graphql'
+import { Resolver }       from '@nestjs/graphql'
+import { Root }           from '@nestjs/graphql'
 
-import DataLoader          from 'dataloader'
+import DataLoader         from 'dataloader'
 
-import { ActivityLoader }  from '../dataloaders'
-import { CustomerLoader }  from '../dataloaders'
-import { UserLoader }      from '../dataloaders'
-import { ProjectOwner }    from '../types'
+import { ActivityLoader } from '../dataloaders'
+import { CustomerLoader } from '../dataloaders'
+import { UserLoader }     from '../dataloaders'
+import { ProjectOwner }   from '../types'
 
 @Injectable()
 @Resolver((of) => ProjectOwner)
