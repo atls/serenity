@@ -1,4 +1,5 @@
 import { LoggerModule }                  from '@monstrs/nestjs-logger'
+import { BusModule }                     from '@monstrs/nestjs-bus'
 import { Global }                        from '@nestjs/common'
 import { Module }                        from '@nestjs/common'
 import { TypeOrmModule }                 from '@nestjs/typeorm'
@@ -13,7 +14,15 @@ const feature = TypeOrmModule.forFeature([CategoryGroup, Category])
 
 @Global()
 @Module({
-  imports: [LoggerModule, feature.module, TypeOrmModule.forRoot(config)],
+  imports: [
+    LoggerModule,
+    feature.module,
+    TypeOrmModule.forRoot(config),
+    BusModule.forRabbitMq({
+      queueName: 'catalog',
+      connectionString: process.env.BUS_URL || 'amqp://local:password@rabbitmq:5672/?heartbeat=30',
+    }),
+  ],
   // @ts-ignore
   providers: [...feature.providers, CategoryGroupEntityRepository, CategoryEntityRepository],
   // @ts-ignore

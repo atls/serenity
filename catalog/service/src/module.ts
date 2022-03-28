@@ -1,4 +1,3 @@
-import { BusModule }                      from '@monstrs/nestjs-bus'
 import { Module }                         from '@nestjs/common'
 
 import { ApplicationModule }              from '@catalog/application'
@@ -8,15 +7,9 @@ import { CategoryController }             from './controllers'
 import { CategoryGroupController }        from './controllers'
 import { CategoryGroupQueriesController } from './controllers'
 import { CategoryQueriesController }      from './controllers'
-import { HealthModule }                   from './health'
 
 @Module({
   imports: [
-    HealthModule,
-    BusModule.forRabbitMq({
-      queueName: 'catalog',
-      connectionString: process.env.BUS_URL || 'amqp://local:password@rabbitmq:5672/?heartbeat=30',
-    }),
     PersistenceModule,
     ApplicationModule,
   ],

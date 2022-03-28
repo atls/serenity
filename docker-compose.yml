@@ -274,7 +274,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn catalog:dev
+    entrypoint: yarn workspace @catalog/service dev
     depends_on:
       - rabbitmq
       - redis
