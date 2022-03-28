@@ -20,5 +20,8 @@
   },
   "devDependencies": {
     "@types/node": "12.12.14"
+  },
+  "peerDependencies": {
+    "@nestjs/core": "*"
   }
 }

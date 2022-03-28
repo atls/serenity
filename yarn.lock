@@ -2833,6 +2833,8 @@ __metadata:
     ts-node: 8.5.2
     typeorm: 0.3.3
     typescript: 3.7.2
+  peerDependencies:
+    "@nestjs/core": "*"
   languageName: unknown
   linkType: soft
 
@@ -2862,8 +2864,11 @@ __metadata:
     "@nestjs/common": 8.4.2
     "@nestjs/core": 8.4.2
     "@nestjs/microservices": 8.4.2
+    "@protos/common": "workspace:^"
     "@protos/hits": 0.0.1
+    "@types/amqplib": ^0
     "@types/node": 12.12.14
+    amqplib: ^0.8.0
     reflect-metadata: 0.1.13
     rxjs: 6.5.3
     typescript: 3.7.2

@@ -316,6 +316,18 @@ services:
       - rabbitmq
       - db
 
+  hits:
+    image: node:16-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    entrypoint: yarn workspace @hits/service dev
+    environment:
+      - DB_HOST=db
+    depends_on:
+      - rabbitmq
+      - db
+
   files-service:
     image: node:16-alpine
     working_dir: /workspace

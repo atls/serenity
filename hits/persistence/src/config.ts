@@ -1,25 +1,18 @@
-import { ConnectionOptions } from 'typeorm'
+import * as migrations          from './migrations'
+import * as entities            from './entities'
 
-import migrations            from './migrations'
-import { Activity }          from './entities'
-import { Counter }           from './entities'
-import { View }              from './entities'
+import { TypeOrmModuleOptions } from '@nestjs/typeorm'
 
-const config: ConnectionOptions = {
+const config: TypeOrmModuleOptions = {
   type: 'postgres',
   uuidExtension: 'pgcrypto',
   host: process.env.DB_HOST || 'db',
   database: process.env.DB_NAME || 'db',
   username: process.env.DB_USERNAME || 'postgres',
   password: process.env.DB_PASSWORD || 'password',
-  entities: [Counter, View, Activity],
-  migrations,
+  migrations: Object.values(migrations),
+  entities: Object.values(entities),
   migrationsRun: true,
-  synchronize: false,
-  logging: false,
-  cli: {
-    migrationsDir: 'src/migrations',
-  },
 }
 
 export default config
