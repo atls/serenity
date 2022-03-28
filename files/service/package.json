@@ -4,8 +4,8 @@
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
-    "build": "server-scripts build",
-    "dev": "server-scripts start",
+    "build": "yarn service build",
+    "dev": "yarn service dev",
     "start": "node dist/index.js"
   },
   "dependencies": {

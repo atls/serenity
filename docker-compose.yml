@@ -322,7 +322,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn files:dev
+    entrypoint: yarn workspace @files/service dev
     environment:
       - GOOGLE_APPLICATION_CREDENTIALS=/workspace/credentials.json
       - GCS_BUCKET=${GCS_BUCKET}
