@@ -262,11 +262,11 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn run private-gateway:dev
-    labels:
-      - 'traefik.frontend.rule=Host:private-gateway.serenity.local.atls.tech'
-      - 'traefik.protocol=http'
-      - 'traefik.port=3000'
+    entrypoint: yarn workspace @private-gateway/app dev
+    ports:
+      - 3000:3000
+    depends_on:
+      - catalog-service
 
   catalog-service:
     image: node:16-alpine
