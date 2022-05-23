@@ -253,6 +253,9 @@ services:
     entrypoint: yarn workspace @public-gateway/app dev
     depends_on:
       - oathkeeper
+      - catalog-service
+      - collaboration
+      - files-service
     ports:
       - 3000:3000
 
@@ -322,6 +325,18 @@ services:
     volumes:
       - ./:/workspace
     entrypoint: yarn workspace @hits/service dev
+    environment:
+      - DB_HOST=db
+    depends_on:
+      - rabbitmq
+      - db
+
+  portfolio:
+    image: node:16-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    entrypoint: yarn workspace @portfolio/service dev
     environment:
       - DB_HOST=db
     depends_on:

@@ -4844,6 +4844,8 @@ __metadata:
     rxjs: ^7.0.1
     typeorm: 0.3.3
     uuid: 3.4.0
+  peerDependencies:
+    "@nestjs/core": "*"
   languageName: unknown
   linkType: soft
 
@@ -4870,6 +4872,7 @@ __metadata:
     "@monstrs/nestjs-bus": 0.1.4
     "@monstrs/nestjs-logger": 0.1.2
     "@nestjs/common": 8.4.2
+    "@nestjs/core": ^8.4.5
     "@nestjs/typeorm": 8.0.3
     "@node-ts/ddd": 0.1.4
     "@portfolio/domain": 0.0.0
@@ -4878,6 +4881,8 @@ __metadata:
     ts-node: 8.5.2
     typeorm: 0.3.3
     typescript: 3.7.2
+  peerDependencies:
+    "@nestjs/core": "*"
   languageName: unknown
   linkType: soft
 
@@ -4895,8 +4900,11 @@ __metadata:
     "@portfolio/application": 0.0.0
     "@portfolio/domain": 0.0.0
     "@portfolio/persistence": 0.0.0
+    "@protos/common": "workspace:^"
     "@protos/portfolio": 0.0.0
+    "@types/amqplib": ^0
     "@types/node": 12.12.14
+    amqplib: ^0.9.1
     reflect-metadata: 0.1.13
     rxjs: 6.5.3
     typescript: 3.7.2
@@ -8721,6 +8729,19 @@ __metadata:
     safe-buffer: ~5.1.2
     url-parse: ~1.4.3
   checksum: 1184db7281c069af10591d2d3b58a6bdc62dff21a739ec1e125107a2ffee7bf8baf6411a2348ea9f1ee1501311aa34df8b97fa6aba098190e60c46a1fb4ddc36
+  languageName: node
+  linkType: hard
+
+"amqplib@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "amqplib@npm:0.9.1"
+  dependencies:
+    bitsyntax: ~0.1.0
+    bluebird: ^3.7.2
+    buffer-more-ints: ~1.0.0
+    readable-stream: 1.x >=1.1.9
+    url-parse: ~1.5.10
+  checksum: 2a5b31e3f752d4cbffe1820bab764864b93281af2e00d1cd69329f69dd05e689194b848767745513e023f276f50fb99bc510e4872789e341367be89edf09042d
   languageName: node
   linkType: hard
 
@@ -28313,6 +28334,16 @@ __metadata:
     querystringify: ^2.1.1
     requires-port: ^1.0.0
   checksum: 3ede937508436c9685a60c90634894aaf745d75160c0092c7f36335c79563effedf1a9fe0181f98e9c5165af73ba5f8fe1dc6e274c6556ae170be01f6e54c67f
+  languageName: node
+  linkType: hard
+
+"url-parse@npm:~1.5.10":
+  version: 1.5.10
+  resolution: "url-parse@npm:1.5.10"
+  dependencies:
+    querystringify: ^2.1.1
+    requires-port: ^1.0.0
+  checksum: fbdba6b1d83336aca2216bbdc38ba658d9cfb8fc7f665eb8b17852de638ff7d1a162c198a8e4ed66001ddbf6c9888d41e4798912c62b4fd777a31657989f7bdf
   languageName: node
   linkType: hard
 
