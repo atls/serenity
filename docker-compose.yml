@@ -256,6 +256,8 @@ services:
       - catalog-service
       - collaboration
       - files-service
+      - portfolio
+      - search
     ports:
       - 3000:3000
 
