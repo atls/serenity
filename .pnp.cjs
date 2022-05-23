@@ -571,7 +571,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@private-gateway/catalog", ["virtual:0e3d080cb17f27afbeb72ef8f8d0c6a68803f871b55732aa265d2b205a04437deb4ef15f2e06ad939125906f2159532dbde80498871f349c330d4b8ffba25915#workspace:private-gateway/catalog", "workspace:private-gateway/catalog"]],\
       ["@protos/catalog", ["virtual:0e3d080cb17f27afbeb72ef8f8d0c6a68803f871b55732aa265d2b205a04437deb4ef15f2e06ad939125906f2159532dbde80498871f349c330d4b8ffba25915#workspace:protos/catalog", "virtual:27e4f2215b0812a81e5ade907acd0473127807a716500e0320147576ba85deb7cdf13795fe12a39f387997d719981de32245be12b2a65a35c56574233702e86e#workspace:protos/catalog", "virtual:28bb86d15769d749365d43e1d87839a93a5f6567bb2a5f88d828310733f9f9c121c65bbb49a551846c7fd4e34cb2f2fd6e48c7b29c24d39b03166bad789975c6#workspace:protos/catalog", "virtual:8182df0627e98876f4a3f566ffa5d7c7d1dfd3057463dcfb3bdfbd3599e97a5669ceade1075091f3cab77d2e4cf97a8bc67ab701312943b80a9e666f7a184346#workspace:protos/catalog", "virtual:99975dd2b96e7ab0816fe11fe8d2df0e4ade3c2217b90e31fe64cc832f56f88d0f1e1bc5e10bed50663a57e97fdeb298405dfbbdabe5ef5e180c218e27313372#workspace:protos/catalog", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/catalog", "virtual:d3bcb7c9140662c87a927364592608198770b259c80ac680355986faa1389d58e05c4840a45ef0f71a39e46075fe795f1aa05e8c3956438ee1c278b717584651#workspace:protos/catalog", "virtual:e2ecc7f68545cd4f8a63e8882630dbcf8fd1b43202e4468034e184be42bf3a6b8c152e04e503b26432602cfc6fe4ea4b87c6ee419b394dd21c0ece7fb629700b#workspace:protos/catalog", "virtual:e7af606639d2b3d3462f1e75e2728f3e03e6b350fcdd18bfd807f42277d3288c72931678b3cd0e5626efc4e9b47ada0d1dc20acac0a07632309b0f6b29c154a7#workspace:protos/catalog", "virtual:fb2340f7cd7f54f80cefd053c81213d77c003e66fa9cae77f5a591343d0e1db59eb82f11ae42eb4c5fdf36c0c626dc355baa0d4696af265a8d797d70ed4f546c#workspace:protos/catalog", "workspace:protos/catalog"]],\
       ["@protos/collaboration", ["virtual:0643f1f56d3caf61a7c371a126e2f5af1cce49e0630df0d8051dc72672c88f7465b17570acece60905df363908cf33e738e44796d48f4a98932a7b25a72392cb#workspace:protos/collaboration", "virtual:1aedd678e957d13aab30cab82f1250d6173b41bc010cee09611ac8debc693b21b76c6f301860b84287decb07d3382887408510b06237c9febbd9991ad24f801f#workspace:protos/collaboration", "virtual:438c011cb1a94141b2a415366d3e3b4c3ae80b553a0a97ced45049eba0987ece5ca9b9a0e194d8afe5499e0574261f804b187a2e8ff5f5204ec9170a1de4fe77#workspace:protos/collaboration", "virtual:49782227f8ed48881cc2e28a6595bae0f46b86641c0160d6c3e4b2c78fa916d7d79ce981fbfa07912ca5c6cbf4fc3d09139f0c15f2d029502d78aab6731ad629#workspace:protos/collaboration", "virtual:99975dd2b96e7ab0816fe11fe8d2df0e4ade3c2217b90e31fe64cc832f56f88d0f1e1bc5e10bed50663a57e97fdeb298405dfbbdabe5ef5e180c218e27313372#workspace:protos/collaboration", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/collaboration", "virtual:e7af606639d2b3d3462f1e75e2728f3e03e6b350fcdd18bfd807f42277d3288c72931678b3cd0e5626efc4e9b47ada0d1dc20acac0a07632309b0f6b29c154a7#workspace:protos/collaboration", "workspace:protos/collaboration"]],\
-      ["@protos/common", ["virtual:000334c04e48e9981c5e8e03560fdc15721cf0212438e5e26d21a62ca0bd45cbc0436809be34a61ac6f29c610a0db5c879ab2c94ee52858af0d11d30ea357508#workspace:protos/common", "virtual:0643f1f56d3caf61a7c371a126e2f5af1cce49e0630df0d8051dc72672c88f7465b17570acece60905df363908cf33e738e44796d48f4a98932a7b25a72392cb#workspace:protos/common", "virtual:0777c11a0034b1d94fcafd6649c6cbd26cf486c2c4b35b54b82e6eb78aa7f950edd2c1faec7700595346c6b91825d33e46b7a21c938646b2eb7370a992c09045#workspace:protos/common", "virtual:0e3d080cb17f27afbeb72ef8f8d0c6a68803f871b55732aa265d2b205a04437deb4ef15f2e06ad939125906f2159532dbde80498871f349c330d4b8ffba25915#workspace:protos/common", "virtual:0f33fba5fee683b0c70b2d2c2cec641480b4639bd42b29a6bfafe07d915f359c4b834aeab10dbec685c3577211b33b00fdd27873e2fcc47b4634bc571a963d60#workspace:protos/common", "virtual:14dc1438a7be262c70f82c8cdd959453a4ead93e76db1039888a963b9948cbe0425885a8263257371af91cf332505ee412849228bfb45234cee4ce5e3b57bfdd#workspace:protos/common", "virtual:17935a3bd41e75b853012ad665ae19e3e3a48238f4ba73e1a4fb7979fb399af6b6c485440fb8e956a5f3cf23532074a7c906748d32f0aaf68e101c943a167cd4#workspace:protos/common", "virtual:27e4f2215b0812a81e5ade907acd0473127807a716500e0320147576ba85deb7cdf13795fe12a39f387997d719981de32245be12b2a65a35c56574233702e86e#workspace:protos/common", "virtual:2ae93cf39437c04b236bcc7880a518b8d7272ed6a9e39789453e9f3004f336cbc884c58b17eb50497163ebb58f3d5c733bf44f2859c8b9eb8da93b76fa584f15#workspace:protos/common", "virtual:39d4d40f8c25093d119ad1465277c2f1de19ff928ec37cabd6159f4f13d7c15d7955cc30ca2cec81fd719e11c09c5d127d525b9c714c383383972431f15cf18a#workspace:protos/common", "virtual:40744ca556317536c45f8727086a75c0c04d4b9322061b1f9145550d277bca00d1fd9aa8461f158aa1dd12c168090456e7e829e29646dffacba393671e7b68ed#workspace:protos/common", "virtual:407796a16718a4fda8dd8ca4622ae409c5d0b34880247fbb102552a3a87ee8fed6fa2df28d452518d1557434fc1ccbb1060145502d5dffacfb5127d20bded249#workspace:protos/common", "virtual:4e00a6a6212d4e9624cc17c144cec940831d92d3bc9aa715d6f46db673c2be50b0adb175ab6739a34648ace56b9e467adaf8b0469794edee4c7a1e2b8465b06e#workspace:protos/common", "virtual:5a122239b0373efc837369967b9e8408912e6687575038873dd6c97497bac1b21b6465c0598b89c8228a6dd8efd8de1a46f371d64bc4d646487f02ebc98b093b#workspace:protos/common", "virtual:99975dd2b96e7ab0816fe11fe8d2df0e4ade3c2217b90e31fe64cc832f56f88d0f1e1bc5e10bed50663a57e97fdeb298405dfbbdabe5ef5e180c218e27313372#workspace:protos/common", "virtual:a191c84f4c1b47a6baf581196f745274de0b3281225afc2cdf27b26e27fd3922ea62fb5d28ccf02b8a61d7677b4dc858558b2fb69d96f49930a1a02e66d1b9f4#workspace:protos/common", "virtual:a4813dbe68c6892818cbecf6a118e9a477f2b45bf81b8da0270b347ed1654b283d7d4c9a8afed3a92cd8fb3a545cb6c6a73956f648e7b93b3ece02840fdd6508#workspace:protos/common", "virtual:ca7363b2021319206d7b797cf028f97bf47c6f3529c83ccbf197e610666634a354e8495941ca6d8f765ede311729c64bf49c3d5efea1dc00b4d3abc08ace9566#workspace:protos/common", "virtual:d98b4fcd821b0db2d75262801155cef5a1829035e6f3c03660c09d3daa2126b3353a4629c5ee4daf17e6b4f49b462360b8ec08d3f6eddc622357173fa0a90929#workspace:protos/common", "virtual:df8663e703dd7f1bf1545577a85adc691742a54914c0041cda73a97db4a0aedc361c4417f2b56a478c6942f75004d5d6c0541b3e291f56624267479cce4670fc#workspace:protos/common", "workspace:protos/common"]],\
+      ["@protos/common", ["virtual:000334c04e48e9981c5e8e03560fdc15721cf0212438e5e26d21a62ca0bd45cbc0436809be34a61ac6f29c610a0db5c879ab2c94ee52858af0d11d30ea357508#workspace:protos/common", "virtual:0643f1f56d3caf61a7c371a126e2f5af1cce49e0630df0d8051dc72672c88f7465b17570acece60905df363908cf33e738e44796d48f4a98932a7b25a72392cb#workspace:protos/common", "virtual:0777c11a0034b1d94fcafd6649c6cbd26cf486c2c4b35b54b82e6eb78aa7f950edd2c1faec7700595346c6b91825d33e46b7a21c938646b2eb7370a992c09045#workspace:protos/common", "virtual:0e3d080cb17f27afbeb72ef8f8d0c6a68803f871b55732aa265d2b205a04437deb4ef15f2e06ad939125906f2159532dbde80498871f349c330d4b8ffba25915#workspace:protos/common", "virtual:0f33fba5fee683b0c70b2d2c2cec641480b4639bd42b29a6bfafe07d915f359c4b834aeab10dbec685c3577211b33b00fdd27873e2fcc47b4634bc571a963d60#workspace:protos/common", "virtual:14dc1438a7be262c70f82c8cdd959453a4ead93e76db1039888a963b9948cbe0425885a8263257371af91cf332505ee412849228bfb45234cee4ce5e3b57bfdd#workspace:protos/common", "virtual:17935a3bd41e75b853012ad665ae19e3e3a48238f4ba73e1a4fb7979fb399af6b6c485440fb8e956a5f3cf23532074a7c906748d32f0aaf68e101c943a167cd4#workspace:protos/common", "virtual:27e4f2215b0812a81e5ade907acd0473127807a716500e0320147576ba85deb7cdf13795fe12a39f387997d719981de32245be12b2a65a35c56574233702e86e#workspace:protos/common", "virtual:2ae93cf39437c04b236bcc7880a518b8d7272ed6a9e39789453e9f3004f336cbc884c58b17eb50497163ebb58f3d5c733bf44f2859c8b9eb8da93b76fa584f15#workspace:protos/common", "virtual:39d4d40f8c25093d119ad1465277c2f1de19ff928ec37cabd6159f4f13d7c15d7955cc30ca2cec81fd719e11c09c5d127d525b9c714c383383972431f15cf18a#workspace:protos/common", "virtual:40744ca556317536c45f8727086a75c0c04d4b9322061b1f9145550d277bca00d1fd9aa8461f158aa1dd12c168090456e7e829e29646dffacba393671e7b68ed#workspace:protos/common", "virtual:407796a16718a4fda8dd8ca4622ae409c5d0b34880247fbb102552a3a87ee8fed6fa2df28d452518d1557434fc1ccbb1060145502d5dffacfb5127d20bded249#workspace:protos/common", "virtual:4e00a6a6212d4e9624cc17c144cec940831d92d3bc9aa715d6f46db673c2be50b0adb175ab6739a34648ace56b9e467adaf8b0469794edee4c7a1e2b8465b06e#workspace:protos/common", "virtual:5a122239b0373efc837369967b9e8408912e6687575038873dd6c97497bac1b21b6465c0598b89c8228a6dd8efd8de1a46f371d64bc4d646487f02ebc98b093b#workspace:protos/common", "virtual:99975dd2b96e7ab0816fe11fe8d2df0e4ade3c2217b90e31fe64cc832f56f88d0f1e1bc5e10bed50663a57e97fdeb298405dfbbdabe5ef5e180c218e27313372#workspace:protos/common", "virtual:a191c84f4c1b47a6baf581196f745274de0b3281225afc2cdf27b26e27fd3922ea62fb5d28ccf02b8a61d7677b4dc858558b2fb69d96f49930a1a02e66d1b9f4#workspace:protos/common", "virtual:a4813dbe68c6892818cbecf6a118e9a477f2b45bf81b8da0270b347ed1654b283d7d4c9a8afed3a92cd8fb3a545cb6c6a73956f648e7b93b3ece02840fdd6508#workspace:protos/common", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/common", "virtual:ca7363b2021319206d7b797cf028f97bf47c6f3529c83ccbf197e610666634a354e8495941ca6d8f765ede311729c64bf49c3d5efea1dc00b4d3abc08ace9566#workspace:protos/common", "virtual:d98b4fcd821b0db2d75262801155cef5a1829035e6f3c03660c09d3daa2126b3353a4629c5ee4daf17e6b4f49b462360b8ec08d3f6eddc622357173fa0a90929#workspace:protos/common", "workspace:protos/common"]],\
       ["@protos/files", ["virtual:1aedd678e957d13aab30cab82f1250d6173b41bc010cee09611ac8debc693b21b76c6f301860b84287decb07d3382887408510b06237c9febbd9991ad24f801f#workspace:protos/files", "virtual:1e3c60557bec1bf170d7e04ff012b83a10307cf02dfbc2871b91d36bfc0f5eff032bb9411fc144fd8bd8a4fcd511ae946f4222740ad74723359c62a227df0897#workspace:protos/files", "virtual:65048119bbc675ee47166c9e05f06c160981a66bdf859cf1cc0b5bd010d7edb7582f1a7df57f0a3a205936a4f60dc56d4e6e1110100c7417e4c7b52c9aa49664#workspace:protos/files", "virtual:709b5086e4e4fd3ef05942f318c289210a8226dc9a08d09be587f50c6c44a8805b5178e97fea69301038a24384c976154067d81ce2d59c49de0626c0c9c05adb#workspace:protos/files", "virtual:99975dd2b96e7ab0816fe11fe8d2df0e4ade3c2217b90e31fe64cc832f56f88d0f1e1bc5e10bed50663a57e97fdeb298405dfbbdabe5ef5e180c218e27313372#workspace:protos/files", "virtual:d3bcb7c9140662c87a927364592608198770b259c80ac680355986faa1389d58e05c4840a45ef0f71a39e46075fe795f1aa05e8c3956438ee1c278b717584651#workspace:protos/files", "virtual:e7af606639d2b3d3462f1e75e2728f3e03e6b350fcdd18bfd807f42277d3288c72931678b3cd0e5626efc4e9b47ada0d1dc20acac0a07632309b0f6b29c154a7#workspace:protos/files", "workspace:protos/files"]],\
       ["@protos/hits", ["virtual:28bb86d15769d749365d43e1d87839a93a5f6567bb2a5f88d828310733f9f9c121c65bbb49a551846c7fd4e34cb2f2fd6e48c7b29c24d39b03166bad789975c6#workspace:protos/hits", "virtual:99975dd2b96e7ab0816fe11fe8d2df0e4ade3c2217b90e31fe64cc832f56f88d0f1e1bc5e10bed50663a57e97fdeb298405dfbbdabe5ef5e180c218e27313372#workspace:protos/hits", "virtual:a4813dbe68c6892818cbecf6a118e9a477f2b45bf81b8da0270b347ed1654b283d7d4c9a8afed3a92cd8fb3a545cb6c6a73956f648e7b93b3ece02840fdd6508#workspace:protos/hits", "virtual:d3bcb7c9140662c87a927364592608198770b259c80ac680355986faa1389d58e05c4840a45ef0f71a39e46075fe795f1aa05e8c3956438ee1c278b717584651#workspace:protos/hits", "virtual:e7af606639d2b3d3462f1e75e2728f3e03e6b350fcdd18bfd807f42277d3288c72931678b3cd0e5626efc4e9b47ada0d1dc20acac0a07632309b0f6b29c154a7#workspace:protos/hits", "workspace:protos/hits"]],\
       ["@protos/identity", ["virtual:1aedd678e957d13aab30cab82f1250d6173b41bc010cee09611ac8debc693b21b76c6f301860b84287decb07d3382887408510b06237c9febbd9991ad24f801f#workspace:protos/identity", "virtual:8b76403dd9db4fe73d2ede9fe4383dd1384d2bf373823960c0ecbab64bb54ec19a5d901c9d6bc15edac48dec7e81d81464c5d567566a1b09f83edfd6bac4ddff#workspace:protos/identity", "virtual:99975dd2b96e7ab0816fe11fe8d2df0e4ade3c2217b90e31fe64cc832f56f88d0f1e1bc5e10bed50663a57e97fdeb298405dfbbdabe5ef5e180c218e27313372#workspace:protos/identity", "virtual:baf2beebd9150d0f5a8d531ee537d8496da8e4c81081a3e49588af74231ee8b90189240401fe95877b29ce15c5b148af99f78dd8e36dee0a42fa43da9651dacf#workspace:protos/identity", "virtual:d3bcb7c9140662c87a927364592608198770b259c80ac680355986faa1389d58e05c4840a45ef0f71a39e46075fe795f1aa05e8c3956438ee1c278b717584651#workspace:protos/identity", "virtual:e7af606639d2b3d3462f1e75e2728f3e03e6b350fcdd18bfd807f42277d3288c72931678b3cd0e5626efc4e9b47ada0d1dc20acac0a07632309b0f6b29c154a7#workspace:protos/identity", "workspace:protos/identity"]],\
@@ -12665,7 +12665,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/core", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#npm:8.4.2"],\
             ["@nestjs/websockets", "virtual:e9dfafe65af75713d4b222301869f148c068e944df91bc2415291a23225c4057efb1343cf406a214d8b16c5784d1f5df0f0bca5f654e63f80bdf12a7f53b5e72#npm:8.2.6"],\
             ["@types/amqp-connection-manager", null],\
-            ["@types/amqplib", null],\
+            ["@types/amqplib", "npm:0.8.2"],\
             ["@types/cache-manager", null],\
             ["@types/grpc__grpc-js", null],\
             ["@types/kafkajs", null],\
@@ -12678,8 +12678,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/redis", null],\
             ["@types/reflect-metadata", null],\
             ["@types/rxjs", null],\
-            ["amqp-connection-manager", "virtual:17a51b12569e74acb85a2e2bf7adc6413ee23d1030685729f0ec41b37f7c5986248a69f9474ca54171f069f2decc0d565a05df448e2f6ea24140db252a31c9ab#npm:4.0.1"],\
-            ["amqplib", "npm:0.8.0"],\
+            ["amqp-connection-manager", "virtual:7866e1e87bd433d433db29bb0eaa0001c49b2e5bac145af7baa90c2d0d600312cee471b63028525ca2d69bdf32c4027538efcc05d9cdcd57156ffa93356224f1#npm:4.0.1"],\
+            ["amqplib", "npm:0.9.1"],\
             ["cache-manager", null],\
             ["iterare", "npm:1.2.1"],\
             ["json-socket", "npm:0.3.0"],\
@@ -12707,6 +12707,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/redis",\
             "@types/reflect-metadata",\
             "@types/rxjs",\
+            "amqplib",\
             "cache-manager",\
             "reflect-metadata",\
             "rxjs"\
@@ -20633,7 +20634,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protos/catalog", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/catalog"],\
             ["@nestjs/core", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#npm:8.4.2"],\
             ["@nestjs/microservices", "virtual:df8663e703dd7f1bf1545577a85adc691742a54914c0041cda73a97db4a0aedc361c4417f2b56a478c6942f75004d5d6c0541b3e291f56624267479cce4670fc#npm:8.4.2"],\
-            ["@protos/common", "virtual:df8663e703dd7f1bf1545577a85adc691742a54914c0041cda73a97db4a0aedc361c4417f2b56a478c6942f75004d5d6c0541b3e291f56624267479cce4670fc#workspace:protos/common"],\
+            ["@protos/common", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/common"],\
             ["@types/nestjs__core", null]\
           ],\
           "packagePeers": [\
@@ -20794,7 +20795,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protos/collaboration", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/collaboration"],\
             ["@nestjs/core", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#npm:8.4.2"],\
             ["@nestjs/microservices", "virtual:df8663e703dd7f1bf1545577a85adc691742a54914c0041cda73a97db4a0aedc361c4417f2b56a478c6942f75004d5d6c0541b3e291f56624267479cce4670fc#npm:8.4.2"],\
-            ["@protos/common", "virtual:df8663e703dd7f1bf1545577a85adc691742a54914c0041cda73a97db4a0aedc361c4417f2b56a478c6942f75004d5d6c0541b3e291f56624267479cce4670fc#workspace:protos/common"],\
+            ["@protos/common", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/common"],\
             ["@types/nestjs__core", null]\
           ],\
           "packagePeers": [\
@@ -21050,6 +21051,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
+        ["virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/common", {\
+          "packageLocation": "./.yarn/__virtual__/@protos-common-virtual-61a12d1746/1/protos/common/",\
+          "packageDependencies": [\
+            ["@protos/common", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/common"],\
+            ["@nestjs/core", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#npm:8.4.2"],\
+            ["@types/nestjs__core", null]\
+          ],\
+          "packagePeers": [\
+            "@nestjs/core",\
+            "@types/nestjs__core"\
+          ],\
+          "linkType": "SOFT"\
+        }],\
         ["virtual:ca7363b2021319206d7b797cf028f97bf47c6f3529c83ccbf197e610666634a354e8495941ca6d8f765ede311729c64bf49c3d5efea1dc00b4d3abc08ace9566#workspace:protos/common", {\
           "packageLocation": "./.yarn/__virtual__/@protos-common-virtual-3674568811/1/protos/common/",\
           "packageDependencies": [\
@@ -21068,19 +21082,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@protos/common", "virtual:d98b4fcd821b0db2d75262801155cef5a1829035e6f3c03660c09d3daa2126b3353a4629c5ee4daf17e6b4f49b462360b8ec08d3f6eddc622357173fa0a90929#workspace:protos/common"],\
             ["@nestjs/core", "virtual:8182df0627e98876f4a3f566ffa5d7c7d1dfd3057463dcfb3bdfbd3599e97a5669ceade1075091f3cab77d2e4cf97a8bc67ab701312943b80a9e666f7a184346#npm:8.4.2"],\
-            ["@types/nestjs__core", null]\
-          ],\
-          "packagePeers": [\
-            "@nestjs/core",\
-            "@types/nestjs__core"\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:df8663e703dd7f1bf1545577a85adc691742a54914c0041cda73a97db4a0aedc361c4417f2b56a478c6942f75004d5d6c0541b3e291f56624267479cce4670fc#workspace:protos/common", {\
-          "packageLocation": "./.yarn/__virtual__/@protos-common-virtual-e02fad5a74/1/protos/common/",\
-          "packageDependencies": [\
-            ["@protos/common", "virtual:df8663e703dd7f1bf1545577a85adc691742a54914c0041cda73a97db4a0aedc361c4417f2b56a478c6942f75004d5d6c0541b3e291f56624267479cce4670fc#workspace:protos/common"],\
-            ["@nestjs/core", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#npm:8.4.2"],\
             ["@types/nestjs__core", null]\
           ],\
           "packagePeers": [\
@@ -21781,7 +21782,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protos/search", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/search"],\
             ["@nestjs/core", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#npm:8.4.2"],\
             ["@nestjs/microservices", "virtual:df8663e703dd7f1bf1545577a85adc691742a54914c0041cda73a97db4a0aedc361c4417f2b56a478c6942f75004d5d6c0541b3e291f56624267479cce4670fc#npm:8.4.2"],\
-            ["@protos/common", "virtual:df8663e703dd7f1bf1545577a85adc691742a54914c0041cda73a97db4a0aedc361c4417f2b56a478c6942f75004d5d6c0541b3e291f56624267479cce4670fc#workspace:protos/common"],\
+            ["@protos/common", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/common"],\
             ["@types/nestjs__core", null]\
           ],\
           "packagePeers": [\
@@ -22906,10 +22907,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@node-ts/bus-core", "virtual:38e0748160cacd0d747758d9750598c79d4ac1e03602d24ed851973cdfa722702c9fe14791c1d6ef4ca53f875c19229da4df10c6aaa5b48c40d0b01515a48893#npm:0.4.9"],\
             ["@protos/catalog", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/catalog"],\
             ["@protos/collaboration", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/collaboration"],\
+            ["@protos/common", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/common"],\
             ["@protos/interfaces", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/interfaces"],\
             ["@protos/search", "virtual:c293e08bde02a552fc3b6a13577183e4f08c15c110cac7696443dcc705a2397fa9844a8d99a9a2835cdec7120c93a7a2766dd2e5a181d70987841a1f3ffa1cc4#workspace:protos/search"],\
+            ["@types/amqplib", "npm:0.8.2"],\
             ["@types/elasticsearch", "npm:5.0.36"],\
             ["@types/node", "npm:14.14.45"],\
+            ["amqplib", "npm:0.9.1"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rxjs", "npm:7.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=bda367"]\

@@ -5386,10 +5386,13 @@ __metadata:
     "@node-ts/bus-core": 0.4.9
     "@protos/catalog": 0.1.1
     "@protos/collaboration": 0.0.1
+    "@protos/common": "workspace:^"
     "@protos/interfaces": 0.1.1
     "@protos/search": 0.0.0
+    "@types/amqplib": ^0
     "@types/elasticsearch": 5.0.36
     "@types/node": 12.12.14
+    amqplib: ^0.9.1
     reflect-metadata: 0.1.13
     rxjs: 6.5.3
     typescript: 3.7.2
