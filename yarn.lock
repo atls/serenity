@@ -4917,7 +4917,7 @@ __metadata:
     "@protos/catalog": "workspace:^"
     "@protos/common": "workspace:^"
     "@types/node": 12.12.14
-    apollo-server-core: 2.25.2
+    apollo-server-core: 3.6.2
     apollo-server-express: 2.14.3
     dataloader: 2.0.0
     graphql: 16.3.0
@@ -5180,6 +5180,7 @@ __metadata:
   resolution: "@public-gateway/catalog@workspace:public-gateway/catalog"
   dependencies:
     "@nestjs/common": 8.4.2
+    "@nestjs/core": 8.4.2
     "@nestjs/graphql": ^9.1.2
     "@nestjs/microservices": 8.4.2
     "@protos/catalog": 0.1.1
@@ -5190,6 +5191,7 @@ __metadata:
     type-graphql: 0.17.5
     typescript: ^4.2.2
   peerDependencies:
+    "@nestjs/core": "*"
     "@nestjs/graphql": "*"
     graphql: "*"
   languageName: unknown
@@ -5201,6 +5203,7 @@ __metadata:
   dependencies:
     "@atls/nestjs-dataloader": ^0.0.3
     "@nestjs/common": 8.4.2
+    "@nestjs/core": 8.4.2
     "@nestjs/graphql": ^9.1.2
     "@nestjs/microservices": 8.4.2
     "@protos/catalog": 0.1.1
@@ -5223,6 +5226,7 @@ __metadata:
     type-graphql: 0.17.5
     typescript: 3.7.2
   peerDependencies:
+    "@nestjs/core": "*"
     "@nestjs/graphql": "*"
     graphql: "*"
   languageName: unknown
@@ -5233,6 +5237,7 @@ __metadata:
   resolution: "@public-gateway/files@workspace:public-gateway/files"
   dependencies:
     "@nestjs/common": 8.4.2
+    "@nestjs/core": 8.4.2
     "@nestjs/graphql": ^9.1.2
     "@nestjs/microservices": 8.4.2
     "@protos/files": 0.0.2
@@ -5243,6 +5248,7 @@ __metadata:
     type-graphql: 0.17.5
     typescript: ^4.2.2
   peerDependencies:
+    "@nestjs/core": "*"
     "@nestjs/graphql": "*"
     graphql: "*"
   languageName: unknown
@@ -5253,6 +5259,7 @@ __metadata:
   resolution: "@public-gateway/identity@workspace:public-gateway/identity"
   dependencies:
     "@nestjs/common": 8.4.2
+    "@nestjs/core": 8.4.2
     "@nestjs/graphql": ^9.1.2
     "@nestjs/microservices": 8.4.2
     "@protos/collaboration": 0.0.1
@@ -5268,6 +5275,7 @@ __metadata:
     type-graphql: 0.17.5
     typescript: ^4.2.2
   peerDependencies:
+    "@nestjs/core": "*"
     "@nestjs/graphql": "*"
     graphql: "*"
   languageName: unknown
@@ -5279,6 +5287,7 @@ __metadata:
   dependencies:
     "@atls/nestjs-dataloader": ^0.0.3
     "@nestjs/common": 8.4.2
+    "@nestjs/core": 8.4.2
     "@nestjs/graphql": ^9.1.2
     "@nestjs/microservices": 8.4.2
     "@protos/files": 0.0.2
@@ -5292,6 +5301,7 @@ __metadata:
     type-graphql: 0.17.5
     typescript: 3.7.2
   peerDependencies:
+    "@nestjs/core": "*"
     "@nestjs/graphql": "*"
     graphql: "*"
   languageName: unknown
@@ -5302,6 +5312,7 @@ __metadata:
   resolution: "@public-gateway/search@workspace:public-gateway/search"
   dependencies:
     "@nestjs/common": 8.4.2
+    "@nestjs/core": 8.4.2
     "@nestjs/graphql": ^9.1.2
     "@nestjs/microservices": 8.4.2
     "@protos/collaboration": 0.0.1
@@ -5314,6 +5325,7 @@ __metadata:
     type-graphql: 0.17.5
     typescript: 3.7.2
   peerDependencies:
+    "@nestjs/core": "*"
     "@nestjs/graphql": "*"
     graphql: "*"
   languageName: unknown
@@ -5323,10 +5335,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@public-gateway/types@workspace:public-gateway/types"
   dependencies:
+    "@nestjs/core": 8.4.2
     "@nestjs/graphql": ^9.1.2
     graphql: ^16.3.0
     type-graphql: 0.17.5
   peerDependencies:
+    "@nestjs/core": "*"
     "@nestjs/graphql": "*"
     graphql: "*"
   languageName: unknown
@@ -5337,6 +5351,9 @@ __metadata:
   resolution: "@public-gateway/utils@workspace:public-gateway/utils"
   dependencies:
     "@nestjs/common": 8.4.2
+    "@nestjs/core": 8.4.2
+  peerDependencies:
+    "@nestjs/core": "*"
   languageName: unknown
   linkType: soft
 

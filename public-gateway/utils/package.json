@@ -5,5 +5,11 @@
   "main": "src/index.ts",
   "dependencies": {
     "@nestjs/common": "8.4.2"
+  },
+  "peerDependencies": {
+    "@nestjs/core": "*"
+  },
+  "devDependencies": {
+    "@nestjs/core": "8.4.2"
   }
 }
