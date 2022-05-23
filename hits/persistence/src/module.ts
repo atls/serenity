@@ -1,5 +1,5 @@
-import { LoggerModule }  from '@monstrs/nestjs-logger'
 import { BusModule }     from '@monstrs/nestjs-bus'
+import { LoggerModule }  from '@monstrs/nestjs-logger'
 import { Global }        from '@nestjs/common'
 import { Module }        from '@nestjs/common'
 import { TypeOrmModule } from '@nestjs/typeorm'

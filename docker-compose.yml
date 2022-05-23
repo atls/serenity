@@ -160,21 +160,16 @@ services:
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - NODE_ICU_DATA=/workspace/node_modules/full-icu
-      - PUBLIC_GATEWAY_URL=${PUBLIC_GATEWAY_URL}
+      - PUBLIC_GATEWAY_URL=http://localhost:4000/
       - DEV_AUTH_TOKEN=${DEV_AUTH_TOKEN}
       - DEV_AUTH_USER=${DEV_AUTH_USER}
-    labels:
-      - 'traefik.frontend.rule=Host:serenity.local.atls.tech'
-      - 'traefik.protocol=http'
-      - 'traefik.port=3000'
-    depends_on:
-      - traefik
       - redis
     networks:
       - default
-      - traefik
-    extra_hosts:
-      - 'public-gateway.local.serenity.atls.tech:172.16.101.99'
+    depends_on:
+      - public-gateway
+    ports:
+      - 3000:3000
 
   identity:
     image: node:16-alpine
@@ -259,7 +254,7 @@ services:
       - portfolio
       - search
     ports:
-      - 3000:3000
+      - 4000:3000
 
   private-gateway:
     image: node:16-alpine

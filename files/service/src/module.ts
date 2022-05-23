@@ -7,10 +7,7 @@ import { FileQueriesController } from './controllers'
 import { UploadController }      from './controllers'
 
 @Module({
-  imports: [
-    PersistenceModule,
-    ApplicationModule,
-  ],
+  imports: [PersistenceModule, ApplicationModule],
   controllers: [FileQueriesController, UploadController],
 })
 export class ServiceModule {}

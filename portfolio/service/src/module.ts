@@ -7,10 +7,7 @@ import { PortfolioController }        from './controllers'
 import { PortfolioQueriesController } from './controllers'
 
 @Module({
-  imports: [
-    PersistenceModule,
-    ApplicationModule,
-  ],
+  imports: [PersistenceModule, ApplicationModule],
   controllers: [PortfolioController, PortfolioQueriesController],
 })
 export class ServiceModule {}

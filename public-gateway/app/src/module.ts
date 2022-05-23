@@ -31,7 +31,7 @@ const playground =
       installSubscriptionHandlers: false,
       autoSchemaFile: join(__dirname, './schema.gql'),
       path: '//',
-      cors: false,
+      cors: true,
       context: ({ req }) => ({
         user: req.get('x-user'),
       }),

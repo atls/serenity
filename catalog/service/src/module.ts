@@ -9,10 +9,7 @@ import { CategoryGroupQueriesController } from './controllers'
 import { CategoryQueriesController }      from './controllers'
 
 @Module({
-  imports: [
-    PersistenceModule,
-    ApplicationModule,
-  ],
+  imports: [PersistenceModule, ApplicationModule],
   controllers: [
     CategoryGroupController,
     CategoryController,

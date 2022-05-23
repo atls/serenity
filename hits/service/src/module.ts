@@ -9,11 +9,7 @@ import { ActivityQueriesController } from './controllers'
 import { CounterQueriesController }  from './controllers'
 
 @Module({
-  imports: [
-    PersistenceModule,
-    CommandsModule,
-    QueriesModule,
-  ],
+  imports: [PersistenceModule, CommandsModule, QueriesModule],
   controllers: [CounterQueriesController, ActivityController, ActivityQueriesController],
 })
 export class ServiceModule {}
