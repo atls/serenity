@@ -1,12 +1,14 @@
 import React         from 'react'
+import { useRouter } from 'next/router'
 
-import { Collapse }  from '@ui/collapse'
-import { Panel }     from '@ui/collapse'
-import { CheckIcon } from '@ui/icons'
 import { Box }       from '@ui/layout'
 import { Column }    from '@ui/layout'
 import { Layout }    from '@ui/layout'
+import { Row }       from '@ui/layout'
 import { Text }      from '@ui/text'
+import { Accordion } from '@ui/accordion'
+import { CheckIcon } from '@ui/icons'
+import { Condition } from '@ui/condition'
 
 export const Filters = ({
   data = [],
@@ -16,62 +18,58 @@ export const Filters = ({
   selectCategory,
   activeKey,
   onChange,
-}) => (
-  <Column>
-    <Layout flexBasis={48} alignItems='center'>
-      <Text fontWeight='medium' fontSize='extra' color='black' lineHeight='extra'>
-        {title}
-      </Text>
-    </Layout>
-    <Layout flexBasis={20} />
-    <Box border='black' borderRadius='extra' boxSizing='border-box'>
-      <Collapse activeKey={activeKey} onChange={onChange}>
-        {data.map((item: any) => (
-          <Panel
-            header={item.name}
-            key={item.id}
-            check={
-              check && (
-                <CheckIcon
-                  width={16}
-                  height={16}
-                  color={
-                    item.children.some((child) => child.id === activeCategory)
-                      ? 'black'
-                      : 'rgb(153, 153, 153)'
-                  }
-                />
-              )
-            }
-          >
-            <Column>
-              {(item as any).children.map((category: any, num: any) => (
-                <Box key={category.id} mt={num === 0 ? 0 : 12} alignItems='center'>
-                  <Layout>
-                    {check && (
-                      <CheckIcon
-                        width={16}
-                        height={16}
-                        color={activeCategory === category.id ? 'black' : 'rgb(153, 153, 153)'}
-                      />
-                    )}
-                  </Layout>
-                  <Layout flexBasis={16} flexShrink={0} />
-                  <Layout>
-                    <Text
-                      onClick={() => selectCategory(category.id)}
-                      color='stormdust'
-                      cursor='pointer'
-                    >
-                      {category.name}
-                    </Text>
-                  </Layout>
-                </Box>
-              ))}
-            </Column>
-          </Panel>
-        ))}
-      </Collapse>
-    </Box>
-  </Column>
-)
+}) => {
+  const router = useRouter()
+
+  return (
+    <Column>
+      <Layout flexBasis={48} alignItems='center'>
+        <Text fontWeight='medium' fontSize='extra' color='black' lineHeight='extra'>
+          {title}
+        </Text>
+      </Layout>
+      <Layout flexBasis={20} />
+      <Box border='black' borderRadius='extra' boxSizing='border-box'>
+        <Column>
+          {data.map((item: any) => (
+            <Accordion activeKey={activeKey} title={item.name} onChange={onChange}>
+              <Column>
+                {(item as any).children.map((category: any) => (
+                  <Box key={category.id}>
+                    <Layout flexBasis={24} flexShrink={0} />
+                    <Column>
+                      <Row>
+                        <Condition match={router.route === '/projects'}>
+                          <Layout>
+                            {check && (
+                              <CheckIcon
+                                width={16}
+                                height={16}
+                                color={activeCategory === category.id ? 'black' : 'rgb(153, 153, 153)'}
+                              />
+                            )}
+                          </Layout>
+                          <Layout flexBasis={16} />
+                        </Condition>
+                        <Text
+                          fontSize='normal'
+                          color='stormdust'
+                          lineHeight='default'
+                          onClick={() => selectCategory(category.id)}
+                          cursor='pointer'
+                        >
+                          {category.name}
+                        </Text>
+                      </Row>
+                      <Layout flexBasis={12} flexShrink={0} />
+                    </Column>
+                  </Box>
+                ))}
+              </Column>
+            </Accordion>
+          ))}
+        </Column>
+      </Box>
+    </Column>
+  )
+}
