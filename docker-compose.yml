@@ -15,7 +15,7 @@ services:
         ipv4_address: 172.16.101.99
 
   yarn:
-    image: node:16-alpine
+    image: node:16
     working_dir: /workspace
     volumes:
       - ./:/workspace
