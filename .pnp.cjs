@@ -24098,7 +24098,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@site/projects-detail-fragment", "virtual:0cb7184f8a460f2ac18220b1792b15f8eb11b7972750f319077685b54c649c0ae7bfb82f1d833610b91f879c886f92c88e9b23f038c81046c66f9e65270f3abf#workspace:site/fragments/projects-detail"],\
             ["@apollo/client", "virtual:ce40a6b8f857b17ffbf5eff75f77f3dc22ed68dad598464cdaab9fbb9e23ea5b04349cecf35161ea87a1a979bf417f32e9d39fbd5197e1ce3605c0fe20e9fa50#npm:3.5.8"],\
-            ["@apollo/react-testing", "virtual:fa5c4286ac8826692c14af0500250cca1b4b939acecd7e96104b96c569090943c4ed3e1c15d10415ecd40b34ebd2394d4b2eede40c10bfbd2ca0e493bd06f923#npm:4.0.0"],\
+            ["@apollo/react-testing", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:4.0.0"],\
             ["@emotion/react", "virtual:407796a16718a4fda8dd8ca4622ae409c5d0b34880247fbb102552a3a87ee8fed6fa2df28d452518d1557434fc1ccbb1060145502d5dffacfb5127d20bded249#npm:11.4.0"],\
             ["@emotion/styled", "virtual:407796a16718a4fda8dd8ca4622ae409c5d0b34880247fbb102552a3a87ee8fed6fa2df28d452518d1557434fc1ccbb1060145502d5dffacfb5127d20bded249#npm:11.3.0"],\
             ["@fragments/ceilings-worksheet", "workspace:fragments/ceilings-worksheet"],\
@@ -24120,7 +24120,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui/layout", "virtual:bb86144c42defc0a188ac9408aae529db9e0b76033ac2132f3ecda44f6ae81978d91794fca6fc762a874941388438bc9aa021c5ceb72d802698715f71e3b24ce#workspace:ui/layout"],\
             ["@ui/text", "virtual:bb86144c42defc0a188ac9408aae529db9e0b76033ac2132f3ecda44f6ae81978d91794fca6fc762a874941388438bc9aa021c5ceb72d802698715f71e3b24ce#workspace:ui/text"],\
             ["@ui/theme", "virtual:407796a16718a4fda8dd8ca4622ae409c5d0b34880247fbb102552a3a87ee8fed6fa2df28d452518d1557434fc1ccbb1060145502d5dffacfb5127d20bded249#workspace:ui/theme"],\
-            ["graphql-tag", "virtual:3dedd088b6203732ae0227e426a4fa467f1b4ce1eea709ff4dc9b6d178b1e672db5f8eb2940a33bab1b461b61c07943d7a2e81837cb1bda44fe7c96d22854818#npm:2.12.6"],\
+            ["graphql", "npm:15.8.0"],\
+            ["graphql-tag", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:2.12.6"],\
             ["next", "virtual:ff0b1c28e013c9b6a399842432cf1bd4fc200b7ece0883b45266c6c0293edd02541614d91131f646d15677942f9067411e1091d61194d2a9cc743d67955df445#npm:10.0.5"],\
             ["react", "npm:17.0.2"],\
             ["react-intl", "virtual:407796a16718a4fda8dd8ca4622ae409c5d0b34880247fbb102552a3a87ee8fed6fa2df28d452518d1557434fc1ccbb1060145502d5dffacfb5127d20bded249#npm:5.18.3"]\
@@ -24142,7 +24143,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@site/projects-detail-fragment", "virtual:c65031b4c3842d73978d29910763056136c5a4c39bf1324133a8301156524b279b1def7d009b4abe511d2d1d7ff05e6d68d40086ab422cafd7b6ba86c0774a4b#workspace:site/fragments/projects-detail"],\
             ["@apollo/client", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:3.5.8"],\
-            ["@apollo/react-testing", "virtual:fa5c4286ac8826692c14af0500250cca1b4b939acecd7e96104b96c569090943c4ed3e1c15d10415ecd40b34ebd2394d4b2eede40c10bfbd2ca0e493bd06f923#npm:4.0.0"],\
+            ["@apollo/react-testing", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:4.0.0"],\
             ["@emotion/react", "virtual:396315b68996e6b7ddf25762fead21d3428970363813c27fa56cd7288980a2e4196d8351b1d3b620f7d659e4cc83579a3b9df4da3f49af0518666ed40107f121#npm:11.7.1"],\
             ["@emotion/styled", "virtual:396315b68996e6b7ddf25762fead21d3428970363813c27fa56cd7288980a2e4196d8351b1d3b620f7d659e4cc83579a3b9df4da3f49af0518666ed40107f121#npm:11.6.0"],\
             ["@fragments/ceilings-worksheet", "workspace:fragments/ceilings-worksheet"],\
@@ -24164,7 +24165,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui/layout", "virtual:98697af19fd93928cd19a91f3b1c476954b281e86b2b41c9fcaa89f90e43d6e0d13fccd0485bd604ccf8bd544d89f96bf55840433130a8f71a2d8447574bb582#workspace:ui/layout"],\
             ["@ui/text", "virtual:98697af19fd93928cd19a91f3b1c476954b281e86b2b41c9fcaa89f90e43d6e0d13fccd0485bd604ccf8bd544d89f96bf55840433130a8f71a2d8447574bb582#workspace:ui/text"],\
             ["@ui/theme", "virtual:efa7cba54bd29a1d3244ead733c5dffe11b0892b30a61ed231ddfd56f6b75ee820eb90a538bc8e7c312b8ca28908bf7303196474f1fe1714292d23c70e2fcf8b#workspace:ui/theme"],\
-            ["graphql-tag", "virtual:3dedd088b6203732ae0227e426a4fa467f1b4ce1eea709ff4dc9b6d178b1e672db5f8eb2940a33bab1b461b61c07943d7a2e81837cb1bda44fe7c96d22854818#npm:2.12.6"],\
+            ["graphql", "npm:15.8.0"],\
+            ["graphql-tag", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:2.12.6"],\
             ["next", "virtual:ff0b1c28e013c9b6a399842432cf1bd4fc200b7ece0883b45266c6c0293edd02541614d91131f646d15677942f9067411e1091d61194d2a9cc743d67955df445#npm:10.0.5"],\
             ["react", "npm:17.0.2"],\
             ["react-intl", "virtual:7d6e35b7d20f2b55747d6ac6a1c96b484ad768c0735155df92f5de6d3a40c35726cfbbc20ccf9da90455896e0680df94f9d19a3ea0a883585eb0d01a7db4f95e#npm:5.18.3"]\
@@ -24185,8 +24187,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./site/fragments/projects-detail/",\
           "packageDependencies": [\
             ["@site/projects-detail-fragment", "workspace:site/fragments/projects-detail"],\
-            ["@apollo/client", "virtual:9c4beac596593a1e3a64a2804f9ee9c9ccef7646cd0c460fb696738eb9ef63446657d54a33724d485b2639bd1ef307c9a91e46437b1486d60c6df11d146e9b1f#npm:3.5.8"],\
-            ["@apollo/react-testing", "virtual:fa5c4286ac8826692c14af0500250cca1b4b939acecd7e96104b96c569090943c4ed3e1c15d10415ecd40b34ebd2394d4b2eede40c10bfbd2ca0e493bd06f923#npm:4.0.0"],\
+            ["@apollo/client", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:3.5.8"],\
+            ["@apollo/react-testing", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:4.0.0"],\
             ["@emotion/react", "virtual:396315b68996e6b7ddf25762fead21d3428970363813c27fa56cd7288980a2e4196d8351b1d3b620f7d659e4cc83579a3b9df4da3f49af0518666ed40107f121#npm:11.7.1"],\
             ["@emotion/styled", "virtual:396315b68996e6b7ddf25762fead21d3428970363813c27fa56cd7288980a2e4196d8351b1d3b620f7d659e4cc83579a3b9df4da3f49af0518666ed40107f121#npm:11.6.0"],\
             ["@fragments/ceilings-worksheet", "workspace:fragments/ceilings-worksheet"],\
@@ -24204,7 +24206,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui/layout", "virtual:98697af19fd93928cd19a91f3b1c476954b281e86b2b41c9fcaa89f90e43d6e0d13fccd0485bd604ccf8bd544d89f96bf55840433130a8f71a2d8447574bb582#workspace:ui/layout"],\
             ["@ui/text", "virtual:98697af19fd93928cd19a91f3b1c476954b281e86b2b41c9fcaa89f90e43d6e0d13fccd0485bd604ccf8bd544d89f96bf55840433130a8f71a2d8447574bb582#workspace:ui/text"],\
             ["@ui/theme", "virtual:efa7cba54bd29a1d3244ead733c5dffe11b0892b30a61ed231ddfd56f6b75ee820eb90a538bc8e7c312b8ca28908bf7303196474f1fe1714292d23c70e2fcf8b#workspace:ui/theme"],\
-            ["graphql-tag", "virtual:3dedd088b6203732ae0227e426a4fa467f1b4ce1eea709ff4dc9b6d178b1e672db5f8eb2940a33bab1b461b61c07943d7a2e81837cb1bda44fe7c96d22854818#npm:2.12.6"],\
+            ["graphql", "npm:15.8.0"],\
+            ["graphql-tag", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:2.12.6"],\
             ["next", "virtual:ff0b1c28e013c9b6a399842432cf1bd4fc200b7ece0883b45266c6c0293edd02541614d91131f646d15677942f9067411e1091d61194d2a9cc743d67955df445#npm:10.0.5"],\
             ["react", "npm:17.0.2"],\
             ["react-intl", "virtual:7d6e35b7d20f2b55747d6ac6a1c96b484ad768c0735155df92f5de6d3a40c35726cfbbc20ccf9da90455896e0680df94f9d19a3ea0a883585eb0d01a7db4f95e#npm:5.18.3"]\

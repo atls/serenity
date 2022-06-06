@@ -81,7 +81,9 @@ exports[`Filters fragment snapshots should match latest render snapshot 1`] = `
       display="flex"
     >
       <div
-        class="rc-collapse You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="emotion-0"
+        display="flex"
+        width="100%"
       />
     </div>
   </div>

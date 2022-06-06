@@ -5874,6 +5874,7 @@ __metadata:
     "@ui/layout": 0.0.5
     "@ui/text": 0.3.1
     "@ui/theme": 0.0.5
+    graphql: ^16.3.0
     graphql-tag: ^2.10.0
     next: 10.0.5
     react: 16.13.1
