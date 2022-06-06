@@ -4,6 +4,8 @@ import { ElasticsearchService }                        from '@nestjs/elasticsear
 import { Client }                                      from '@nestjs/microservices'
 import { ClientGrpc }                                  from '@nestjs/microservices'
 
+import { firstValueFrom }                              from 'rxjs'
+
 import { clientOptions as catalogClientOptions }       from '@protos/catalog'
 import { clientOptions as collaborationClientOptions } from '@protos/collaboration'
 import { catalog }                                     from '@protos/interfaces'
@@ -40,8 +42,8 @@ export class SpecialistDataService implements OnModuleInit {
       .getSpecialists({ filters: { id: [specialistId] } })
       .toPromise()
 
-    const { rows: categories } = await this.catalogService
-      .getCategories({
+    const { rows: categories } = await firstValueFrom(
+      this.catalogService.getCategories({
         filters: {
           id: [
             ...(specialist as any).specialisation.main,
@@ -49,7 +51,7 @@ export class SpecialistDataService implements OnModuleInit {
           ],
         },
       })
-      .toPromise()
+    )
 
     const body = {
       description: (categories as any).description,

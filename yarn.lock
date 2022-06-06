@@ -1624,6 +1624,7 @@ __metadata:
     "@protos/collaboration": 0.0.1
     "@protos/interfaces": 0.1.1
     reflect-metadata: 0.1.13
+    rxjs: ^7.5.5
     uuid: 3.4.0
   languageName: unknown
   linkType: soft

@@ -14,6 +14,7 @@ import { SearchModule }          from '@public-gateway/search'
 
 import { ActivityMiddleware }    from './middleware'
 
+// eslint-disable-next-line
 const playground =
   process.env.NODE_ENV !== 'production' || Boolean(process.env.PLAYGROUND)
     ? {

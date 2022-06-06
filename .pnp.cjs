@@ -3670,6 +3670,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protos/collaboration", "virtual:49782227f8ed48881cc2e28a6595bae0f46b86641c0160d6c3e4b2c78fa916d7d79ce981fbfa07912ca5c6cbf4fc3d09139f0c15f2d029502d78aab6731ad629#workspace:protos/collaboration"],\
             ["@protos/interfaces", "virtual:49782227f8ed48881cc2e28a6595bae0f46b86641c0160d6c3e4b2c78fa916d7d79ce981fbfa07912ca5c6cbf4fc3d09139f0c15f2d029502d78aab6731ad629#workspace:protos/interfaces"],\
             ["reflect-metadata", "npm:0.1.13"],\
+            ["rxjs", "npm:7.2.0"],\
             ["uuid", "npm:3.4.0"]\
           ],\
           "linkType": "SOFT"\
@@ -7244,7 +7245,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["amqplib", "npm:0.5.6"],\
             ["inversify", "npm:5.1.1"],\
             ["reflect-metadata", "npm:0.1.13"],\
-            ["rxjs", null],\
+            ["rxjs", "npm:7.2.0"],\
             ["serialize-error", "npm:9.0.0"]\
           ],\
           "packagePeers": [\
@@ -8085,7 +8086,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pino", "npm:6.13.4"],\
             ["pino-pretty", "npm:3.6.1"],\
             ["reflect-metadata", "npm:0.1.13"],\
-            ["rxjs", null]\
+            ["rxjs", "npm:7.2.0"]\
           ],\
           "packagePeers": [\
             "@nestjs/common",\
@@ -9146,7 +9147,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/reflect-metadata",\
             "@types/rxjs",\
             "graphql",\
-            "reflect-metadata"\
+            "reflect-metadata",\
+            "rxjs"\
           ],\
           "linkType": "HARD"\
         }],\
@@ -11785,7 +11787,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/reflect-metadata",\
             "@types/rxjs",\
             "cache-manager",\
-            "reflect-metadata"\
+            "reflect-metadata",\
+            "rxjs"\
           ],\
           "linkType": "HARD"\
         }],\
