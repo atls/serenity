@@ -1,0 +1,50 @@
+{
+  "name": "@public-gateway/app",
+  "version": "0.1.1",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "yarn service build",
+    "dev": "yarn service dev",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@atls/nestjs-dataloader": "^0.0.3",
+    "@grpc/grpc-js": "^1.5.3",
+    "@grpc/proto-loader": "^0.6.9",
+    "@monstrs/oathkeeper-auth": "0.1.0",
+    "@nestjs/common": "8.4.2",
+    "@nestjs/core": "8.4.2",
+    "@nestjs/graphql": "9.1.2",
+    "@nestjs/microservices": "8.4.2",
+    "@nestjs/platform-express": "8.4.2",
+    "@protos/catalog": "workspace:^",
+    "@protos/collaboration": "workspace:^",
+    "@protos/common": "workspace:^",
+    "@protos/files": "workspace:^",
+    "@protos/hits": "0.0.1",
+    "@protos/identity": "workspace:^",
+    "@protos/interfaces": "0.1.1",
+    "@protos/portfolio": "workspace:^",
+    "@protos/search": "workspace:^",
+    "@public-gateway/catalog": "0.1.1",
+    "@public-gateway/collaboration": "0.0.1",
+    "@public-gateway/files": "0.0.2",
+    "@public-gateway/identity": "0.1.1",
+    "@public-gateway/portfolio": "0.0.0",
+    "@public-gateway/search": "0.0.0",
+    "apollo-server-core": "^3.6.2",
+    "apollo-server-express": "2.9.12",
+    "dataloader": "2.0.0",
+    "graphql": "16.3.0",
+    "graphql-tools": "4.0.6",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "6.5.3",
+    "type-graphql": "0.17.5"
+  },
+  "devDependencies": {
+    "@monstrs/server-scripts": "0.1.5",
+    "@types/node": "12.12.14",
+    "typescript": "^4.2.2"
+  }
+}

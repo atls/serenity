@@ -1,13 +1,17 @@
-import prettierConfig   from '@atlantis-lab/prettier-config'
-import svgr             from '@svgr/core'
+import * as prettierPlugin from '@atls/prettier-plugin'
 
-import camelcase        from 'camelcase'
-import fs               from 'fs-extra-promise'
-import glob             from 'glob-promise'
-import path             from 'path'
-import prettier         from 'prettier'
+import prettierConfig      from '@atls/config-prettier'
+import svgr                from '@svgr/core'
 
-import { replacements } from './replacements'
+import camelcase           from 'camelcase'
+import fs                  from 'fs-extra-promise'
+import glob                from 'glob-promise'
+import path                from 'path'
+import parserBabel         from 'prettier/parser-babel'
+import parserTypescript    from 'prettier/parser-typescript'
+import { format }          from 'prettier/standalone'
+
+import { replacements }    from './replacements'
 
 const TARGET_DIR = path.join(__dirname, 'src')
 
@@ -15,9 +19,16 @@ const svgrTemplate = ({ template }, opts, { componentName, jsx }) => {
   const typeScriptTpl = template.smart({ plugins: ['typescript', 'prettier'] })
 
   return typeScriptTpl.ast`
+  /* eslint-disable */
+  
  import React from 'react'
-
-    export const ${componentName} = (props: React.SVGProps<SVGSVGElement>) => ${jsx}
+ import { useTheme } from '@emotion/react'
+ import { IconProps } from '../icons.interfaces'
+    export const ${componentName} = (props: IconProps) => {
+    const theme: any = useTheme()
+    
+    return ${jsx}
+}
   `
 }
 
@@ -52,17 +63,19 @@ const save = async (sources) =>
     sources.map((source) =>
       fs.writeFileAsync(
         path.join(TARGET_DIR, `${source.name}.tsx`),
-        `${prettier.format(source.code, {
-          parser: 'babel',
+        // @ts-ignore
+        format(`/* eslint-disable */\n${source.code}`, {
           ...prettierConfig,
-        })}`
+          filepath: path.join(TARGET_DIR, `${source.name}.tsx`),
+          plugins: [parserTypescript, parserBabel, prettierPlugin],
+        })
       ))
   )
 
 const createIndex = (sources) =>
   fs.writeFileAsync(
     path.join(TARGET_DIR, 'index.ts'),
-    sources.map((source) => `export * from './${source.name}'`).join('\n')
+    `${sources.map((source) => `export * from './${source.name}'`).join('\n')}\n`
   )
 
 const build = async () => {

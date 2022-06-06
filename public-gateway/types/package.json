@@ -1,0 +1,19 @@
+{
+  "name": "@public-gateway/types",
+  "version": "0.1.1",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "dependencies": {
+    "type-graphql": "0.17.5"
+  },
+  "peerDependencies": {
+    "@nestjs/core": "*",
+    "@nestjs/graphql": "*",
+    "graphql": "*"
+  },
+  "devDependencies": {
+    "@nestjs/core": "8.4.2",
+    "@nestjs/graphql": "^9.1.2",
+    "graphql": "^16.3.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@protos/catalog",
+  "version": "0.1.1",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@nestjs/microservices": "8.4.2",
+    "@protos/common": "0.3.1"
+  },
+  "peerDependencies": {
+    "@nestjs/core": "*"
+  }
+}

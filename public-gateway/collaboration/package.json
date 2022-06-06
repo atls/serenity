@@ -1,0 +1,39 @@
+{
+  "name": "@public-gateway/collaboration",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@atls/nestjs-dataloader": "^0.0.3",
+    "@nestjs/common": "8.4.2",
+    "@nestjs/microservices": "8.4.2",
+    "@protos/catalog": "0.1.1",
+    "@protos/collaboration": "0.0.1",
+    "@protos/files": "0.0.2",
+    "@protos/hits": "0.0.1",
+    "@protos/identity": "0.3.1",
+    "@protos/interfaces": "0.1.1",
+    "@protos/portfolio": "0.0.0",
+    "@public-gateway/catalog": "0.1.1",
+    "@public-gateway/files": "0.0.2",
+    "@public-gateway/identity": "0.1.1",
+    "@public-gateway/portfolio": "workspace:public-gateway/portfolio",
+    "@public-gateway/types": "0.1.1",
+    "@public-gateway/utils": "0.0.1",
+    "dataloader": "2.0.0",
+    "rxjs": "6.5.3",
+    "type-graphql": "0.17.5"
+  },
+  "devDependencies": {
+    "@nestjs/core": "8.4.2",
+    "@nestjs/graphql": "^9.1.2",
+    "@types/node": "12.12.14",
+    "graphql": "^16.3.0",
+    "typescript": "3.7.2"
+  },
+  "peerDependencies": {
+    "@nestjs/core": "*",
+    "@nestjs/graphql": "*",
+    "graphql": "*"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@files/application",
+  "version": "0.0.2",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@atls/nestjs-map-errors-interceptor": "^0.1.36",
+    "@files/domain": "0.0.2",
+    "@files/persistence": "0.0.2",
+    "@google-cloud/storage": "4.3.1",
+    "@monstrs/nestjs-signed-url": "0.1.3",
+    "@nestjs/common": "8.4.2",
+    "@nestjs/core": "8.4.2",
+    "@nestjs/microservices": "8.4.2",
+    "@nestjs/testing": "8.4.2",
+    "@nestjs/typeorm": "8.0.3",
+    "class-validator": "0.11.0",
+    "rxjs": "^7.0.1",
+    "typeorm": "0.3.3",
+    "uuid": "3.4.0"
+  }
+}

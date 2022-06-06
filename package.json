@@ -1,6 +1,16 @@
 {
   "private": true,
   "workspaces": [
+    "catalog/**/*",
+    "collaboration/**/*",
+    "files/**/*",
+    "hits/**/*",
+    "mailer/**/*",
+    "portfolio/**/*",
+    "private-gateway/**/*",
+    "public-gateway/**/*",
+    "protos/**/*",
+    "search/**/*",
     "fragments/**/*",
     "identity/**/*",
     "site/**/*",
@@ -9,32 +19,25 @@
     "types/**/*",
     "backend/**/*"
   ],
-  "scripts": {
-    "catalog:dev": "yarn workspace @catalog/service dev",
-    "collaboration:dev": "yarn workspace @collaboration/service dev",
-    "cookie-store:dev": "yarn workspace @accounts/cookie-store dev",
-    "files:dev": "yarn workspace @files/service dev",
-    "identity:dev": "yarn workspace @identity/service dev",
-    "mailer:dev": "yarn workspace @mailer/service dev",
-    "private-gateway:dev": "yarn workspace @private-gateway/app dev",
-    "public-gateway:dev": "yarn workspace @public-gateway/app dev"
-  },
   "resolutions": {
-    "@nestjs/common": "7.6.17",
-    "@nestjs/core": "7.6.17",
-    "@nestjs/microservices": "7.6.17",
-    "@nestjs/terminus": "7.2.0",
-    "@nestjs/testing": "7.6.17",
+    "@nestjs/core": "8.4.2",
+    "@nestjs/terminus": "7",
     "@types/jest": "^26.0.23",
     "@types/node": "^14.14.41",
     "@types/react": "^17.0.6",
+    "apollo-server-core": "3.6.2",
+    "apollo-server-express": "3.6.2",
+    "apollo-server-fastify": "3.6.2",
     "class-validator": "0.13.1",
     "eslint-plugin-import": "2.22.0",
-    "graphql": "15.8.0",
+    "graphql": "15",
+    "pino": "6.13.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-intl": "5.18.3",
+    "rxjs": "7.2.0",
     "type-graphql": "1.0.0",
+    "typeorm": "0.2.37",
     "typescript": "4.4.4"
   },
   "devDependencies": {
@@ -49,5 +52,14 @@
     "eslint": "8.4.1",
     "husky": "5.2.0",
     "typescript": "4.4.4"
-  }
+  },
+  "dependenciesMeta": {
+    "apollo-server-core@3.6.2": {
+      "unplugged": true
+    },
+    "graphql@15.8.0": {
+      "unplugged": true
+    }
+  },
+  "packageManager": "yarn@3.2.0"
 }

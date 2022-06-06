@@ -1,9 +1,0 @@
-{
-  "name": "@public-gateway/utils",
-  "version": "0.0.1",
-  "license": "MIT",
-  "main": "src/index.ts",
-  "dependencies": {
-    "@nestjs/common": "6.10.5"
-  }
-}

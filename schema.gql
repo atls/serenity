@@ -1,0 +1,117 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Category {
+  id: String!
+  name: String!
+}
+
+type CategoryGroup {
+  id: String!
+  name: String!
+  children: [Category!]!
+}
+
+type CreateCategoryGroupErrors {
+  name: String
+}
+
+type CreateCategoryGroupResponse {
+  result: CategoryGroup
+  errors: CreateCategoryGroupErrors
+}
+
+type UpdateCategoryGroupErrors {
+  id: String
+  name: String
+}
+
+type UpdateCategoryGroupResponse {
+  result: CategoryGroup
+  errors: UpdateCategoryGroupErrors
+}
+
+type DeleteCategoryGroupErrors {
+  id: String
+}
+
+type DeleteCategoryGroupResponse {
+  errors: DeleteCategoryGroupErrors
+}
+
+type CreateCategoryErrors {
+  name: String
+  groupId: String
+}
+
+type CreateCategoryResponse {
+  result: Category
+  errors: CreateCategoryErrors
+}
+
+type UpdateCategoryErrors {
+  id: String
+  name: String
+}
+
+type UpdateCategoryResponse {
+  result: Category
+  errors: UpdateCategoryErrors
+}
+
+type DeleteCategoryErrors {
+  id: String
+}
+
+type DeleteCategoryResponse {
+  errors: DeleteCategoryErrors
+}
+
+type CategoryGroupsList {
+  rows: [CategoryGroup!]!
+}
+
+type Query {
+  categoryGroups(filters: CategoryGroupsFilter): CategoryGroupsList!
+}
+
+input CategoryGroupsFilter {
+  search: String
+}
+
+type Mutation {
+  createCategoryGroup(input: CreateCategoryGroupInput!): CreateCategoryGroupResponse!
+  updateCategoryGroup(input: UpdateCategoryGroupInput!): UpdateCategoryGroupResponse!
+  deleteCategoryGroup(input: DeleteCategoryGroupInput!): DeleteCategoryGroupResponse!
+  createCategory(input: CreateCategoryInput!): CreateCategoryResponse!
+  updateCategory(input: UpdateCategoryInput!): UpdateCategoryResponse!
+  deleteCategory(input: DeleteCategoryInput!): DeleteCategoryResponse!
+}
+
+input CreateCategoryGroupInput {
+  name: String!
+}
+
+input UpdateCategoryGroupInput {
+  id: String!
+  name: String!
+}
+
+input DeleteCategoryGroupInput {
+  id: String!
+}
+
+input CreateCategoryInput {
+  name: String!
+  groupId: String!
+}
+
+input UpdateCategoryInput {
+  id: String!
+  name: String!
+}
+
+input DeleteCategoryInput {
+  id: String!
+}

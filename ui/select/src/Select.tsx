@@ -17,11 +17,11 @@ export const Select = ({
   <RcSelect
     className={`${selectStyles} ${rounded ? selectRoundedStyles : ''}`}
     // @ts-ignore
-    dropdownClassName={dropdownStyles}
+    dropdownClassName={dropdownStyles.name}
     showSearch={false}
     multiple={multiple}
     showArrow
-    inputIcon={<ArrowDownIcon width={8} height={8} color='rgb(153, 153, 153)' />}
+    inputIcon={<ArrowDownIcon color='#999999' width={8} height={8} />}
     style={invalid ? { borderColor: 'rgb(236,27,52)' } : {}}
     {...props}
   >

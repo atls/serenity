@@ -15,11 +15,10 @@ services:
         ipv4_address: 172.16.101.99
 
   yarn:
-    image: node:14-alpine
+    image: node:16
     working_dir: /workspace
     volumes:
       - ./:/workspace
-      - unplugged:/workspace/.yarn/unplugged
     entrypoint: yarn
 
   mailhog:
@@ -161,21 +160,16 @@ services:
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - NODE_ICU_DATA=/workspace/node_modules/full-icu
-      - PUBLIC_GATEWAY_URL=${PUBLIC_GATEWAY_URL}
+      - PUBLIC_GATEWAY_URL=http://localhost:4000/
       - DEV_AUTH_TOKEN=${DEV_AUTH_TOKEN}
       - DEV_AUTH_USER=${DEV_AUTH_USER}
-    labels:
-      - 'traefik.frontend.rule=Host:serenity.local.atls.tech'
-      - 'traefik.protocol=http'
-      - 'traefik.port=3000'
-    depends_on:
-      - traefik
       - redis
     networks:
       - default
-      - traefik
-    extra_hosts:
-      - 'public-gateway.local.serenity.atls.tech:172.16.101.99'
+    depends_on:
+      - public-gateway
+    ports:
+      - 3000:3000
 
   identity:
     image: node:16-alpine
@@ -251,10 +245,16 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
-    entrypoint: yarn public-gateway:dev
+    entrypoint: yarn workspace @public-gateway/app dev
     depends_on:
       - oathkeeper
+      - catalog-service
+      - collaboration
+      - files-service
+      - portfolio
+      - search
+    ports:
+      - 4000:3000
 
   private-gateway:
     image: node:16-alpine
@@ -262,11 +262,11 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn run private-gateway:dev
-    labels:
-      - 'traefik.frontend.rule=Host:private-gateway.serenity.local.atls.tech'
-      - 'traefik.protocol=http'
-      - 'traefik.port=3000'
+    entrypoint: yarn workspace @private-gateway/app dev
+    ports:
+      - 3001:3000
+    depends_on:
+      - catalog-service
 
   catalog-service:
     image: node:16-alpine
@@ -274,7 +274,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn catalog:dev
+    entrypoint: yarn workspace @catalog/service dev
     depends_on:
       - rabbitmq
       - redis
@@ -309,8 +309,45 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
-    entrypoint: yarn collaboration:dev
+    entrypoint: yarn workspace @collaboration/service dev
+    environment:
+      - DB_HOST=db
+    depends_on:
+      - rabbitmq
+      - db
+
+  hits:
+    image: node:16-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    entrypoint: yarn workspace @hits/service dev
+    environment:
+      - DB_HOST=db
+    depends_on:
+      - rabbitmq
+      - db
+
+  portfolio:
+    image: node:16-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    entrypoint: yarn workspace @portfolio/service dev
+    environment:
+      - DB_HOST=db
+    depends_on:
+      - rabbitmq
+      - db
+
+  search:
+    image: node:16-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    entrypoint: yarn workspace @search/service dev
+    environment:
+      - DB_HOST=db
     depends_on:
       - rabbitmq
       - db
@@ -321,7 +358,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn files:dev
+    entrypoint: yarn workspace @files/service dev
     environment:
       - GOOGLE_APPLICATION_CREDENTIALS=/workspace/credentials.json
       - GCS_BUCKET=${GCS_BUCKET}
