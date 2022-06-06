@@ -1,7 +1,7 @@
 {
   "name": "@site/projects-detail-page",
   "version": "0.0.1",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "main": "src/index.tsx",
   "dependencies": {
     "graphql": "^16.3.0",

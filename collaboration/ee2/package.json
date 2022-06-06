@@ -1,7 +1,7 @@
 {
   "name": "@collaboration/ee2",
   "version": "0.0.1",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "dependencies": {
     "@collaboration/service": "0.0.1",
     "@monstrs/nestjs-bus": "0.1.4",

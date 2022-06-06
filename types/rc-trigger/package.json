@@ -2,7 +2,7 @@
   "name": "@types/rc-trigger",
   "version": "0.0.1",
   "description": "TypeScript definitions for rc-trigger",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "types": "index",
   "typeScriptVersion": "2.8"
 }

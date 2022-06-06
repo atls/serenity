@@ -1,7 +1,7 @@
 {
   "name": "@identity/service",
   "version": "0.3.1",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "scripts": {
     "build": "server-scripts build",

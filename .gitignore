@@ -37,7 +37,8 @@ node_modules
 # IDE cache directory
 .Trash-*
 .c9
-.idea
+.idea/workspace.xml
+.idea/vcs.xml
 
 # MacOS temporary files
 .DS_Store
@@ -56,8 +57,6 @@ dist
 # Google Cloud Credentials
 credentials.json
 
-# This is the Yarn build state; it's local to each clone
-/.yarn/build-state.yml
-
-# This is the Yarn install state cache, it can be rebuilt anytime
-/.yarn/install-state.gz
+# unique for each install yarn states
+.yarn/build-state.yml
+.yarn/install-state.gz

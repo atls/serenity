@@ -1,7 +1,7 @@
 {
   "name": "@identity/settings-fragment",
   "version": "0.0.0",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "main": "src/index.tsx",
   "devDependencies": {
     "@atls/react-kratos-browser-flows": "^0.0.1",
