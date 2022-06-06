@@ -6,6 +6,8 @@ import { Resolver }                                    from '@nestjs/graphql'
 import { Client }                                      from '@nestjs/microservices'
 import { ClientGrpc }                                  from '@nestjs/microservices'
 
+import { firstValueFrom }                              from 'rxjs'
+
 import { clientOptions as collaborationClientOptions } from '@protos/collaboration'
 import { collaboration }                               from '@protos/interfaces'
 import { search }                                      from '@protos/interfaces'
@@ -44,7 +46,9 @@ export class ProjectsSearchResolver implements OnModuleInit {
     @Args({ name: 'filters', nullable: true, type: () => SearchProjectsFilter })
     filters?: SearchProjectsFilter
   ) {
-    const { rows: hits } = await this.searchService.searchProjects({ query, filters }).toPromise()
+    const { rows: hits } = await firstValueFrom(
+      this.searchService.searchProjects({ query, filters })
+    )
 
     if ((hits as any).length === 0) {
       return {
@@ -52,13 +56,13 @@ export class ProjectsSearchResolver implements OnModuleInit {
       }
     }
 
-    const { rows } = await this.collaborationService
-      .getProjects({
+    const { rows } = await firstValueFrom(
+      this.collaborationService.getProjects({
         filters: {
           id: (hits as any).map((hit) => hit.id),
         },
       })
-      .toPromise()
+    )
 
     return {
       // @ts-ignore
