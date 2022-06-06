@@ -344,29 +344,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atlantis-lab/prettier-config@npm:^0.0.18 || ^0.1.0":
-  version: 0.1.12
-  resolution: "@atlantis-lab/prettier-config@npm:0.1.12"
-  dependencies:
-    "@atlantis-lab/prettier-plugin-import-sort": 0.1.12
-  checksum: 15b4311ae243c27f71a48bf0dbe5319ac41c407ce88405865beb7a77af1557d9f1111a14af701234fe9c4552142cc10cf0bfde657f58ed2793e14575e67a6a9b
-  languageName: node
-  linkType: hard
-
-"@atlantis-lab/prettier-plugin-import-sort@npm:0.1.12":
-  version: 0.1.12
-  resolution: "@atlantis-lab/prettier-plugin-import-sort@npm:0.1.12"
-  dependencies:
-    import-sort: ^6.0.0
-    import-sort-parser-typescript: ^6.0.0
-    import-sort-style: ^6.0.0
-  peerDependencies:
-    globby: "*"
-    prettier: "*"
-  checksum: ce0b726361b4f0027793505b866aac02b968df3bd76623ecc1c3a663cf377869cbc8eb15d894f9d0e280131086208f49bfcd1dc819dbe10736becf9142c3ac37
-  languageName: node
-  linkType: hard
-
 "@atlantis-lab/react-user@npm:0.1.10":
   version: 0.1.10
   resolution: "@atlantis-lab/react-user@npm:0.1.10"
@@ -412,6 +389,15 @@ __metadata:
     jest-static-stubs: ^0.0.1
     ts-jest: ^27.1.1
   checksum: 593c920a8be86fd4d672a8199bc9d2c6e88aca8edef2a3c16bb18c13e77b6f4754ee401985d9b3a02d62db982a04a9fa89e6b91b76b77a5219b4a70ac720793a
+  languageName: node
+  linkType: hard
+
+"@atls/config-prettier@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "@atls/config-prettier@npm:0.0.3"
+  dependencies:
+    prettier: ^2.5.1
+  checksum: 413e3c3b4decd474452a4a5ef70855ecc48704b639eae2072748478101fef7b0104327539c25226f36168931c1ad05e58a7f41d9f005592eab378bbc692fa568
   languageName: node
   linkType: hard
 
@@ -545,6 +531,21 @@ __metadata:
     react: ^16.12.0
     react-helmet: ^6.0.0
   checksum: 96d2029dc77cb0b8d5d98f2b8a29951313bfc63411e966973a24f7ea1adbb2bb5e9b0aeffdceffdd9fe9fcbbaf988fdd3d411d2473a57f458cd42412db2100ad
+  languageName: node
+  linkType: hard
+
+"@atls/prettier-plugin@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "@atls/prettier-plugin@npm:0.0.3"
+  dependencies:
+    globby: ^11.0.4
+    import-sort: ^6.0.0
+    import-sort-parser: ^6.0.0
+    import-sort-parser-typescript: ^6.0.0
+    import-sort-style: ^6.0.0
+    prettier: ^2.5.1
+    sort-package-json: ^1.54.0
+  checksum: 46616fca2b6a6dc2444b1ff31e3ad473b15f39d79ecaa12e81bbe4feaa324168fb8c8b47d9d1a38cf3a8ce9d77150a004267960c0149e6ee325e34cb8fe8e650
   languageName: node
   linkType: hard
 
@@ -1876,7 +1877,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/css@npm:^11.7.1":
+"@emotion/css@npm:^11.7.1, @emotion/css@npm:^11.9.0":
   version: 11.9.0
   resolution: "@emotion/css@npm:11.9.0"
   dependencies:
@@ -3787,40 +3788,6 @@ __metadata:
   bin:
     node-pre-gyp: bin/node-pre-gyp
   checksum: 29a38f39575107fa1665edf14defcfdf62e12bb38e9c27f7457ba42be84060125015171d12b8de3065155a465992f1854a363e2985f071fcbea9ff0701362b05
-  languageName: node
-  linkType: hard
-
-"@monstrs/figma-assets-cli@npm:0.1.3":
-  version: 0.1.3
-  resolution: "@monstrs/figma-assets-cli@npm:0.1.3"
-  dependencies:
-    "@monstrs/figma-assets": 0.1.3
-    "@monstrs/figma-file-loader": 0.1.3
-    commander: ^2.19.0
-    npmlog: ^4.1.2
-  bin:
-    figma-assets-cli: ./bin/figma-assets-cli.js
-  checksum: 68e1ca80a7c52fe7e87634687e01ebe1a66a84716f6f60c0a0de8ebd2347b44d59706952361817e1200559d0fadffb8215f0ac821a5ce663e67da0216839daf2
-  languageName: node
-  linkType: hard
-
-"@monstrs/figma-assets@npm:0.1.3":
-  version: 0.1.3
-  resolution: "@monstrs/figma-assets@npm:0.1.3"
-  dependencies:
-    "@monstrs/figma-file-loader": 0.1.3
-    fs-extra: ^8.0.1
-    node-fetch: ^2.6.0
-  checksum: c7096cfee1b943b3e4ff8ee570d1ebce167f10272ffa4f2f487f444ea6e632d23b263b45711a8f99c54bb57f0283a2e73033877922d7ad27782a9735fdee1286
-  languageName: node
-  linkType: hard
-
-"@monstrs/figma-file-loader@npm:0.1.3":
-  version: 0.1.3
-  resolution: "@monstrs/figma-file-loader@npm:0.1.3"
-  dependencies:
-    figma-js: ^1.7.0
-  checksum: 8a360dad58feb07bf85f0f72cbbd63a3b9c00a865138f1c5d038554b468d46e5c2569dcf31eb6be88644438e2509a90b5c286ee2c5395608476c2d36714f5479
   languageName: node
   linkType: hard
 
@@ -6728,7 +6695,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/glob@npm:^7.1.1, @types/glob@npm:^7.1.3":
+"@types/glob@npm:^7, @types/glob@npm:^7.1.1, @types/glob@npm:^7.1.3":
   version: 7.2.0
   resolution: "@types/glob@npm:7.2.0"
   dependencies:
@@ -6922,6 +6889,13 @@ __metadata:
   dependencies:
     "@types/express": "*"
   checksum: e9d7c5031f891c57d332ee195d8d655398d2648c870db4349cde26f969208a31ff1daaf0a426784221481b8b1965b1c53f52a1de39ac019ace521e74bec5325d
+  languageName: node
+  linkType: hard
+
+"@types/prettier@npm:^2":
+  version: 2.6.3
+  resolution: "@types/prettier@npm:2.6.3"
+  checksum: e1836699ca189fff6d2a73dc22e028b6a6f693ed1180d5998ac29fa197caf8f85aa92cb38db642e4a370e616b451cb5722ad2395dab11c78e025a1455f37d1f0
   languageName: node
   linkType: hard
 
@@ -7454,24 +7428,26 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/icons@workspace:ui/icons"
   dependencies:
-    "@atlantis-lab/prettier-config": ^0.0.18 || ^0.1.0
     "@atlantis-lab/tsconfig": ^0.1.12
-    "@emotion/react": ^11.7.1
-    "@emotion/styled": ^11.6.0
-    "@monstrs/figma-assets-cli": 0.1.3
+    "@atls/config-prettier": ^0.0.3
+    "@atls/prettier-plugin": ^0.0.3
+    "@emotion/react": ^11.4.1
+    "@emotion/styled": ^11.3.0
     "@svgr/core": 5.5.0
-    "@types/react-text-mask": ^5
-    camelcase: 5.3.1
+    "@types/glob": ^7
+    "@types/prettier": ^2
+    camelcase: 6.0.0
     fs-extra-promise: 1.0.1
+    glob: ^7.1.7
     glob-promise: 3.4.0
-    prettier: ^1.18.0
+    prettier: 2.5.1
     react: ^17.0.2
-    react-text-mask: ^5.4.3
-    text-mask-addons: ^3.8.0
+    remove: ^0.1.5
     ts-node: 8.10.2
   peerDependencies:
     "@emotion/react": "*"
     "@emotion/styled": "*"
+    react: "*"
   languageName: unknown
   linkType: soft
 
@@ -7667,6 +7643,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/search@workspace:ui/search"
   dependencies:
+    "@emotion/css": ^11.9.0
     "@emotion/react": ^11.7.1
     "@emotion/styled": ^11.6.0
     "@types/react": ^17
@@ -7675,6 +7652,7 @@ __metadata:
     react: ^17.0.2
     styled-tools: ^1.7.0
   peerDependencies:
+    "@emotion/css": "*"
     "@emotion/react": "*"
     "@emotion/styled": "*"
   languageName: unknown
@@ -9793,15 +9771,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.19.0":
-  version: 0.19.2
-  resolution: "axios@npm:0.19.2"
-  dependencies:
-    follow-redirects: 1.5.10
-  checksum: dcace11a0a25fdf9b3b97fc9d011d23dd9c67cc13d91778080482ddddbbfe731f7410a090b11aa0bbbdf83686c5911ccb4289fd3683b7488c1b0c4d3c882380c
-  languageName: node
-  linkType: hard
-
 "axios@npm:^0.21.1":
   version: 0.21.4
   resolution: "axios@npm:0.21.4"
@@ -11746,6 +11715,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"camelcase@npm:6.0.0":
+  version: 6.0.0
+  resolution: "camelcase@npm:6.0.0"
+  checksum: 28f42db097786fb9edb4a80af6cfa67331a9120e00323aaac925f0520797e79eaef9fd771c62b0403468bfd596e528e426863176ae8bb992d086dc991deabebb
+  languageName: node
+  linkType: hard
+
 "camelcase@npm:^1.2.1":
   version: 1.2.1
   resolution: "camelcase@npm:1.2.1"
@@ -11823,6 +11799,15 @@ __metadata:
     align-text: ^0.1.3
     lazy-cache: ^1.0.3
   checksum: f3a4e224f0eeb7a9ebc09e6519639acadd8b65942ae33db2b6f38946fcee6320499bd6b980894f7e33fec4f1b66c056d55bb96a9b05a2ca0fde25876e9ee2ab8
+  languageName: node
+  linkType: hard
+
+"chainsaw@npm:>=0.0.7 <0.1":
+  version: 0.0.9
+  resolution: "chainsaw@npm:0.0.9"
+  dependencies:
+    traverse: ">=0.3.0 <0.4"
+  checksum: 88d19956954f428e6a11d803c6bf608520c3f25974c400165ed6af9628015ef30c333658268dbcf42f2b4ce2cd263fe85b28adafc8a446d8e53ac4c3e25b5219
   languageName: node
   linkType: hard
 
@@ -13295,7 +13280,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:3.1.0, debug@npm:=3.1.0":
+"debug@npm:3.1.0":
   version: 3.1.0
   resolution: "debug@npm:3.1.0"
   dependencies:
@@ -13669,17 +13654,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"detect-newline@npm:3.1.0, detect-newline@npm:^3.0.0":
+  version: 3.1.0
+  resolution: "detect-newline@npm:3.1.0"
+  checksum: ae6cd429c41ad01b164c59ea36f264a2c479598e61cba7c99da24175a7ab80ddf066420f2bec9a1c57a6bead411b4655ff15ad7d281c000a89791f48cbe939e7
+  languageName: node
+  linkType: hard
+
 "detect-newline@npm:^2.1.0":
   version: 2.1.0
   resolution: "detect-newline@npm:2.1.0"
   checksum: c55146fd5b97a9ce914f17f85a01466c9e8679289e2d390588b027a58f2e090dbc38457923072369c603b8904f982f87b78fee17e48d5706f35571642f4599f8
-  languageName: node
-  linkType: hard
-
-"detect-newline@npm:^3.0.0":
-  version: 3.1.0
-  resolution: "detect-newline@npm:3.1.0"
-  checksum: ae6cd429c41ad01b164c59ea36f264a2c479598e61cba7c99da24175a7ab80ddf066420f2bec9a1c57a6bead411b4655ff15ad7d281c000a89791f48cbe939e7
   languageName: node
   linkType: hard
 
@@ -15147,7 +15132,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:3.2.11, fast-glob@npm:^3.2.7, fast-glob@npm:^3.2.9":
+"fast-glob@npm:3.2.11, fast-glob@npm:^3.0.3, fast-glob@npm:^3.2.7, fast-glob@npm:^3.2.9":
   version: 3.2.11
   resolution: "fast-glob@npm:3.2.11"
   dependencies:
@@ -15333,15 +15318,6 @@ __metadata:
   version: 1.5.2
   resolution: "figlet@npm:1.5.2"
   checksum: cc860391669b44e119871d589e09a2814aa86351726a5791e0d3e2d098e4fc37171c85fcfed13f4e9000995bd004dc6dbf848da5fe458cf1477e776b7318986f
-  languageName: node
-  linkType: hard
-
-"figma-js@npm:^1.7.0":
-  version: 1.13.0
-  resolution: "figma-js@npm:1.13.0"
-  dependencies:
-    axios: ^0.19.0
-  checksum: ef6feab940c14784b33d1c65338342f53fae7cfff3c29fb3355622f1be6164a018c7a9d776dddfa77ee98241a23727799aa7f2a85a4350f48487e16f9ca4d1f6
   languageName: node
   linkType: hard
 
@@ -15585,15 +15561,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:1.5.10":
-  version: 1.5.10
-  resolution: "follow-redirects@npm:1.5.10"
-  dependencies:
-    debug: =3.1.0
-  checksum: 0edc4b74e37e7b88ee716188a8f2a790238877c1d954f00c7b78d560f3bef40061c130536d13bee8e47b4e8e71edf1175a2de2729e51ab8206e4646b2370e484
-  languageName: node
-  linkType: hard
-
 "follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.14.0, follow-redirects@npm:^1.14.4, follow-redirects@npm:^1.14.7":
   version: 1.14.7
   resolution: "follow-redirects@npm:1.14.7"
@@ -15795,17 +15762,6 @@ __metadata:
     jsonfile: ^4.0.0
     universalify: ^0.1.0
   checksum: 141b9dccb23b66a66cefdd81f4cda959ff89282b1d721b98cea19ba08db3dcbe6f862f28841f3cf24bb299e0b7e6c42303908f65093cb7e201708e86ea5a8dcf
-  languageName: node
-  linkType: hard
-
-"fs-extra@npm:^8.0.1":
-  version: 8.1.0
-  resolution: "fs-extra@npm:8.1.0"
-  dependencies:
-    graceful-fs: ^4.2.0
-    jsonfile: ^4.0.0
-    universalify: ^0.1.0
-  checksum: bf44f0e6cea59d5ce071bba4c43ca76d216f89e402dc6285c128abc0902e9b8525135aa808adad72c9d5d218e9f4bcc63962815529ff2f684ad532172a284880
   languageName: node
   linkType: hard
 
@@ -16156,6 +16112,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"git-hooks-list@npm:1.0.3":
+  version: 1.0.3
+  resolution: "git-hooks-list@npm:1.0.3"
+  checksum: a1dd03d39c1d727ba08a35dbdbdcc6e96de8c4170c942dc95bf787ca6e34998d39fb5295a00242b58a3d265de0b69a0686d0cf583baa6b7830f268542c4576b9
+  languageName: node
+  linkType: hard
+
 "git-up@npm:^4.0.0":
   version: 4.0.2
   resolution: "git-up@npm:4.0.2"
@@ -16318,6 +16281,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"glob@npm:^7.1.7":
+  version: 7.2.3
+  resolution: "glob@npm:7.2.3"
+  dependencies:
+    fs.realpath: ^1.0.0
+    inflight: ^1.0.4
+    inherits: 2
+    minimatch: ^3.1.1
+    once: ^1.3.0
+    path-is-absolute: ^1.0.0
+  checksum: 29452e97b38fa704dabb1d1045350fb2467cf0277e155aa9ff7077e90ad81d1ea9d53d3ee63bd37c05b09a065e90f16aec4a65f5b8de401d1dac40bc5605d133
+  languageName: node
+  linkType: hard
+
 "global-dirs@npm:^0.1.0":
   version: 0.1.1
   resolution: "global-dirs@npm:0.1.1"
@@ -16387,6 +16364,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"globby@npm:10.0.0":
+  version: 10.0.0
+  resolution: "globby@npm:10.0.0"
+  dependencies:
+    "@types/glob": ^7.1.1
+    array-union: ^2.1.0
+    dir-glob: ^3.0.1
+    fast-glob: ^3.0.3
+    glob: ^7.1.3
+    ignore: ^5.1.1
+    merge2: ^1.2.3
+    slash: ^3.0.0
+  checksum: fbff58d2fcaedd9207901f6e3b5341ff885b6d499c3a095f7befde0fd03ec1ea634452a82f81e894e46f6a5d704da44b842ba93066f90dced52adf84d4b8d1cc
+  languageName: node
+  linkType: hard
+
 "globby@npm:8.0.2":
   version: 8.0.2
   resolution: "globby@npm:8.0.2"
@@ -16416,7 +16409,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globby@npm:^11.0.2":
+"globby@npm:^11.0.2, globby@npm:^11.0.4":
   version: 11.1.0
   resolution: "globby@npm:11.1.0"
   dependencies:
@@ -16833,6 +16826,15 @@ __metadata:
     inherits: ^2.0.3
     minimalistic-assert: ^1.0.1
   checksum: e350096e659c62422b85fa508e4b3669017311aa4c49b74f19f8e1bc7f3a54a584fdfd45326d4964d6011f2b2d882e38bea775a96046f2a61b7779a979629d8f
+  languageName: node
+  linkType: hard
+
+"hashish@npm:>=0.0.2 <0.1":
+  version: 0.0.4
+  resolution: "hashish@npm:0.0.4"
+  dependencies:
+    traverse: ">=0.2.4"
+  checksum: 8571cee91809661957dba8ae2ca605b1ab1e432b2781e6fc161ffb0caa55658075aecc14a518efe42a5597168dfab37cbdc2483d323851785f234b24b39455da
   languageName: node
   linkType: hard
 
@@ -17312,17 +17314,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ignore@npm:^5.1.1, ignore@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "ignore@npm:5.2.0"
+  checksum: 6b1f926792d614f64c6c83da3a1f9c83f6196c2839aa41e1e32dd7b8d174cef2e329d75caabb62cb61ce9dc432f75e67d07d122a037312db7caa73166a1bdb77
+  languageName: node
+  linkType: hard
+
 "ignore@npm:^5.1.4":
   version: 5.1.8
   resolution: "ignore@npm:5.1.8"
   checksum: 967abadb61e2cb0e5c5e8c4e1686ab926f91bc1a4680d994b91947d3c65d04c3ae126dcdf67f08e0feeb8ff8407d453e641aeeddcc47a3a3cca359f283cf6121
-  languageName: node
-  linkType: hard
-
-"ignore@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "ignore@npm:5.2.0"
-  checksum: 6b1f926792d614f64c6c83da3a1f9c83f6196c2839aa41e1e32dd7b8d174cef2e329d75caabb62cb61ce9dc432f75e67d07d122a037312db7caa73166a1bdb77
   languageName: node
   linkType: hard
 
@@ -18096,17 +18098,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-plain-obj@npm:2.1.0, is-plain-obj@npm:^2.0.0":
+  version: 2.1.0
+  resolution: "is-plain-obj@npm:2.1.0"
+  checksum: cec9100678b0a9fe0248a81743041ed990c2d4c99f893d935545cfbc42876cbe86d207f3b895700c690ad2fa520e568c44afc1605044b535a7820c1d40e38daa
+  languageName: node
+  linkType: hard
+
 "is-plain-obj@npm:^1.0.0":
   version: 1.1.0
   resolution: "is-plain-obj@npm:1.1.0"
   checksum: 0ee04807797aad50859652a7467481816cbb57e5cc97d813a7dcd8915da8195dc68c436010bf39d195226cde6a2d352f4b815f16f26b7bf486a5754290629931
-  languageName: node
-  linkType: hard
-
-"is-plain-obj@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "is-plain-obj@npm:2.1.0"
-  checksum: cec9100678b0a9fe0248a81743041ed990c2d4c99f893d935545cfbc42876cbe86d207f3b895700c690ad2fa520e568c44afc1605044b535a7820c1d40e38daa
   languageName: node
   linkType: hard
 
@@ -20351,6 +20353,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minimatch@npm:^3.1.1":
+  version: 3.1.2
+  resolution: "minimatch@npm:3.1.2"
+  dependencies:
+    brace-expansion: ^1.1.7
+  checksum: c154e566406683e7bcb746e000b84d74465b3a832c45d59912b9b55cd50dee66e5c4b1e5566dba26154040e51672f9aa450a9aef0c97cfc7336b78b7afb9540a
+  languageName: node
+  linkType: hard
+
 "minimist@npm:^1.1.0, minimist@npm:^1.2.0, minimist@npm:^1.2.3, minimist@npm:^1.2.5, minimist@npm:~1.2.5":
   version: 1.2.5
   resolution: "minimist@npm:1.2.5"
@@ -21561,7 +21572,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2.6.1, node-fetch@npm:^2.6.0":
+"node-fetch@npm:2.6.1":
   version: 2.6.1
   resolution: "node-fetch@npm:2.6.1"
   checksum: 91075bedd57879117e310fbcc36983ad5d699e522edb1ebcdc4ee5294c982843982652925c3532729fdc86b2d64a8a827797a745f332040d91823c8752ee4d7c
@@ -23469,12 +23480,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^1.18.0":
-  version: 1.19.1
-  resolution: "prettier@npm:1.19.1"
+"prettier@npm:2.5.1":
+  version: 2.5.1
+  resolution: "prettier@npm:2.5.1"
   bin:
-    prettier: ./bin-prettier.js
-  checksum: bc78219e0f8173a808f4c6c8e0a137dd8ebd4fbe013e63fe1a37a82b48612f17b8ae8e18a992adf802ee2cf7428f14f084e7c2846ca5759cf4013c6e54810e1f
+    prettier: bin-prettier.js
+  checksum: 21b9408476ea1c544b0e45d51ceb94a84789ff92095abb710942d780c862d0daebdb29972d47f6b4d0f7ebbfb0ffbf56cc2cfa3e3e9d1cca54864af185b15b66
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.5.1":
+  version: 2.6.2
+  resolution: "prettier@npm:2.6.2"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 48d08dde8e9fb1f5bccdd205baa7f192e9fc8bc98f86e1b97d919de804e28c806b0e6cc685e4a88211aa7987fa9668f30baae19580d87ced3ed0f2ec6572106f
   languageName: node
   linkType: hard
 
@@ -24910,6 +24930,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"remove@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "remove@npm:0.1.5"
+  dependencies:
+    seq: ">= 0.3.5"
+  checksum: 5ee886cb3509e09e706789bc4a9014c1d20b0ee6d004db581b382f3a256a45888526e23b36ce441fbd96ba3ecc453a18785d1e0d4d10dddb8e2e118961f93d9f
+  languageName: node
+  linkType: hard
+
 "repeat-element@npm:^1.1.2":
   version: 1.1.4
   resolution: "repeat-element@npm:1.1.4"
@@ -25616,6 +25645,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"seq@npm:>= 0.3.5":
+  version: 0.3.5
+  resolution: "seq@npm:0.3.5"
+  dependencies:
+    chainsaw: ">=0.0.7 <0.1"
+    hashish: ">=0.0.2 <0.1"
+  checksum: 5b35acaadbb39ba26879a4395fe931b76addd90fd8bbca0efed3a96c26ecd003be9bc65d7fbf42b98eeb604f216f2ed22f22b01555aa04208f832d5c9b15403b
+  languageName: node
+  linkType: hard
+
 "sequelize-pool@npm:^7.1.0":
   version: 7.1.0
   resolution: "sequelize-pool@npm:7.1.0"
@@ -26195,6 +26234,29 @@ __metadata:
   dependencies:
     is-plain-obj: ^2.0.0
   checksum: 1535ffd5a789259fc55107d5c3cec09b3e47803a9407fcaae37e1b9e0b813762c47dfee35b6e71e20ca7a69798d0a4791b2058a07f6cab5ef17b2dae83cedbda
+  languageName: node
+  linkType: hard
+
+"sort-object-keys@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "sort-object-keys@npm:1.1.3"
+  checksum: abea944d6722a1710a1aa6e4f9509da085d93d5fc0db23947cb411eedc7731f80022ce8fa68ed83a53dd2ac7441fcf72a3f38c09b3d9bbc4ff80546aa2e151ad
+  languageName: node
+  linkType: hard
+
+"sort-package-json@npm:^1.54.0":
+  version: 1.57.0
+  resolution: "sort-package-json@npm:1.57.0"
+  dependencies:
+    detect-indent: ^6.0.0
+    detect-newline: 3.1.0
+    git-hooks-list: 1.0.3
+    globby: 10.0.0
+    is-plain-obj: 2.1.0
+    sort-object-keys: ^1.1.3
+  bin:
+    sort-package-json: cli.js
+  checksum: 15758ba6b1033ae136863eabd4b8c8a28e79dd68b71327f6803c2ea740dc149dc9ad708b006d07ee9de56b6dc7cadb7c697801ad50c01348aa91022c6ff6e21d
   languageName: node
   linkType: hard
 
@@ -27644,10 +27706,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"traverse@npm:0.6.6":
+"traverse@npm:0.6.6, traverse@npm:>=0.2.4":
   version: 0.6.6
   resolution: "traverse@npm:0.6.6"
   checksum: e2afa72f11efa9ba31ed763d2d9d2aa244612f22015d16c0ea3ba5f6ca8bf071de87f8108b721885cce06ea4a36ef4605d9228c67e431d9015ea4685cb364420
+  languageName: node
+  linkType: hard
+
+"traverse@npm:>=0.3.0 <0.4":
+  version: 0.3.9
+  resolution: "traverse@npm:0.3.9"
+  checksum: 982982e4e249e9bbf063732a41fe5595939892758524bbef5d547c67cdf371b13af72b5434c6a61d88d4bb4351d6dabc6e22d832e0d16bc1bc684ef97a1cc59e
   languageName: node
   linkType: hard
 

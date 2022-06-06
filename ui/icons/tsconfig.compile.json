@@ -2,6 +2,5 @@
   "extends": "@atlantis-lab/tsconfig/tsconfig.base.json",
   "compilerOptions": {
     "module": "commonjs"
-  },
-  "include": ["../theme/src/*", "./"]
+  }
 }

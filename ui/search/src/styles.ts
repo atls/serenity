@@ -1,4 +1,5 @@
 import { css } from '@emotion/react'
+import {injectGlobal} from "@emotion/css";
 
 export const selectStyles = css`
   font-family: 'Inter';
@@ -201,7 +202,7 @@ export const selectSizeLarge = css`
   }
 `
 
-export const dropdownStyles = css`
+injectGlobal(`
   background-color: white;
   border-radius: 4px;
   box-shadow: 3px 24px 40px 0 rgba(0, 0, 0, 0.08);
@@ -219,8 +220,11 @@ export const dropdownStyles = css`
   }
 
   .rc-select-dropdown-menu {
+    background-color: white;
+    border-radius: 4px;
     outline: none;
     margin: 0;
+    margin-top: 10px;
     padding: 0;
     list-style: none;
     z-index: 9999;
@@ -233,30 +237,43 @@ export const dropdownStyles = css`
       padding: 12px 32px;
       color: #000000;
       outline: none;
+      cursor: pointer;
+    }
+    
+    .rc-select-dropdown-menu-item-group-title {
+      font-family: 'Inter';
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      color: #000000;
+      opacity: 0.2;
+      text-transform: uppercase;
+      padding: 16px 32px 0px 32px;
+    }
+    
+    .rc-select-dropdown-menu-item-group-list {
+      list-style: none;
+      padding: 0px;
     }
 
     .rc-select-dropdown-menu-item.hidden {
       display: none;
     }
 
-    .rc-select-dropdown-menu-item:first-of-type.hidden + .rc-select-dropdown-menu-item {
-      padding-top: 19px;
-    }
-
     .rc-select-dropdown-menu-item:last-of-type.hidden + .rc-select-dropdown-menu-item {
-      padding-bottom: 19px;
+      padding-bottom: 20px;
     }
 
     .rc-select-dropdown-menu-item:first-of-type {
-      padding-top: 19px;
+      padding-top: 28px;
     }
 
     .rc-select-dropdown-menu-item:last-of-type {
-      padding-bottom: 19px;
+      padding-bottom: 20px;
     }
 
     .rc-select-dropdown-menu-item-active {
       color: #575757;
     }
   }
-`
+`)

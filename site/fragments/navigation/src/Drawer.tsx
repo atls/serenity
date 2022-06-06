@@ -44,7 +44,7 @@ export const Drawer = ({
             onOpenCatalog()
           }}
         >
-          {intl.formatMessage(messages.сatalog)}
+          {intl.formatMessage(messages.catalog)}
         </Item>
       </Layout>
       <Layout>

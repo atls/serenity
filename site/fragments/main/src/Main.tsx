@@ -4,6 +4,7 @@ import { Box }    from '@ui/layout'
 import { Column } from '@ui/layout'
 import { Layout } from '@ui/layout'
 import { Option } from '@ui/search'
+import { OptGroup } from '@ui/search'
 import { Search } from '@ui/search'
 import { Text }   from '@ui/text'
 
@@ -43,12 +44,15 @@ export const Main = ({
             size='large'
             optionFilterProp='label'
             autoFocus
+            label={intl.formatMessage(messages.looking)}
           >
-            {data.map((item: any) => (
-              <Option key={item.id} value={item.id} label={item.name}>
-                {item.name}
-              </Option>
-            ))}
+            <OptGroup label={`${intl.formatMessage(messages.matches)}:`}>
+              {data.map((item: any) => (
+                <Option key={item.id} value={item.id} label={item.name}>
+                  {item.name}
+                </Option>
+              ))}
+            </OptGroup>
           </Search>
         </Layout>
         <Layout flexBasis={100} />
