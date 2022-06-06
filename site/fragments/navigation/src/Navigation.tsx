@@ -56,7 +56,7 @@ export const Navigation = ({
               borderRadius={20}
               onClick={() => (visibleCatalog ? closeCatalog() : openCatalog())}
             >
-              {intl.formatMessage(messages.сatalog)}
+              {intl.formatMessage(messages.catalog)}
               <ArrowDownIcon color={visibleCatalog ? '#000000' : '#FFFFFF'} />
             </Button>
           </Layout>

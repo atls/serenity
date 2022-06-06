@@ -11,4 +11,8 @@ export default defineMessages({
     id: `${name}.looking`,
     defaultMessage: 'Что или кого вы ищете?',
   },
+  matches: {
+    id: `${name}.matches`,
+    defaultMessage: 'Совпадения',
+  }
 })

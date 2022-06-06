@@ -264,7 +264,7 @@ services:
       - modules:/workspace/node_modules
     entrypoint: yarn workspace @private-gateway/app dev
     ports:
-      - 3000:3000
+      - 3001:3000
     depends_on:
       - catalog-service
 

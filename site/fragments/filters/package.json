@@ -14,17 +14,20 @@
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@testing-library/react": "9.3.2",
-    "@ui/collapse": "0.0.1",
+    "@ui/accordion": "0.0.0",
+    "@ui/condition": "workspace:0.0.0",
     "@ui/icons": "0.1.1",
     "@ui/layout": "0.0.5",
     "@ui/text": "0.3.1",
     "@ui/theme": "0.0.5",
+    "next": "10.0.5",
     "react-intl": "^5.24.4"
   },
   "peerDependencies": {
     "@apollo/client": "*",
     "@emotion/react": "*",
     "@emotion/styled": "*",
+    "next": "*",
     "react-intl": "*"
   }
 }

@@ -8,7 +8,6 @@ import { switchProp }       from 'styled-tools'
 import { ArrowForwardIcon } from '@ui/icons'
 import { SearchIcon }       from '@ui/icons'
 
-import { dropdownStyles }   from './styles'
 import { selectSizeLarge }  from './styles'
 import { selectSizeNormal } from './styles'
 import { selectStyles }     from './styles'
@@ -95,7 +94,6 @@ export const Search = ({
     <Container>
       <StyledSelect
         style={selectStyles}
-        dropdownClassName={dropdownStyles}
         onSearch={fetchData}
         onSelect={onSelect}
         onChange={onChange}
