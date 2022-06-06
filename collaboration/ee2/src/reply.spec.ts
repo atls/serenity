@@ -9,6 +9,7 @@ import { BUS_SYMBOLS }      from '@node-ts/bus-core'
 import { MemoryQueue }      from '@node-ts/bus-core/dist/transport'
 
 import uuid                 from 'uuid/v4'
+import { firstValueFrom }   from 'rxjs'
 
 import { clientOptions }    from '@protos/collaboration'
 import { serverOptions }    from '@protos/collaboration'
@@ -62,13 +63,13 @@ describe('project reply', () => {
       })
       .toPromise()
 
-    const { result: reply } = await collaborationService
-      .addProjectReply({
+    const { result: reply } = await firstValueFrom(
+      collaborationService.addProjectReply({
         projectId: (project as any).result.id,
         specialistId: uuid(),
         message: 'message',
       })
-      .toPromise()
+    )
 
     expect((reply as any).id).toBeDefined()
   })

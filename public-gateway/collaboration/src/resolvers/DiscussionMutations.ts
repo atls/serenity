@@ -6,6 +6,8 @@ import { Mutation }                               from '@nestjs/graphql'
 import { Client }                                 from '@nestjs/microservices'
 import { ClientGrpc }                             from '@nestjs/microservices'
 
+import { firstValueFrom }                         from 'rxjs'
+
 import { clientOptions }                          from '@protos/collaboration'
 import { clientOptions as identityClientOptions } from '@protos/identity'
 import { collaboration }                          from '@protos/interfaces'
@@ -40,9 +42,9 @@ export class DiscussionMutations implements OnModuleInit {
     input: AddDiscussionMessageInput,
     @Context('user') authorId: string
   ) {
-    const { rows } = await this.identityService
-      .getUsers({ filters: { id: [authorId] } })
-      .toPromise()
+    const { rows } = await firstValueFrom(
+      this.identityService.getUsers({ filters: { id: [authorId] } })
+    )
 
     // @ts-ignore
     const [sender] = rows
