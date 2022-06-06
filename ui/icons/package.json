@@ -1,7 +1,7 @@
 {
   "name": "@ui/icons",
   "version": "0.1.1",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "scripts": {
     "build": "yarn ts-node --project=./tsconfig.compile.json svgr.ts",

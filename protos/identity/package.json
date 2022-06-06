@@ -1,7 +1,7 @@
 {
   "name": "@protos/identity",
   "version": "0.3.1",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "dependencies": {
     "@grpc/grpc-js": "^1.5.3",

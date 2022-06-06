@@ -1,7 +1,7 @@
 {
   "name": "@ui/link",
   "version": "0.0.5",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "main": "src/index.tsx",
   "dependencies": {
     "next": "10.0.5",

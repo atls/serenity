@@ -1,7 +1,7 @@
 {
   "name": "@protos/collaboration",
   "version": "0.0.1",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "dependencies": {
     "@nestjs/microservices": "8.4.2",

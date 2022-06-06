@@ -2,7 +2,7 @@
   "name": "@ui/select",
   "version": "0.0.1",
   "private": true,
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "dependencies": {
     "@emotion/react": "^11.4.0",
