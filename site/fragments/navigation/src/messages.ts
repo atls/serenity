@@ -3,8 +3,8 @@ import { defineMessages } from 'react-intl'
 import { name }           from '../package.json'
 
 export default defineMessages({
-  сatalog: {
-    id: `${name}.сatalog`,
+  catalog: {
+    id: `${name}.catalog`,
     defaultMessage: 'Каталог услуг',
   },
   specialists: {

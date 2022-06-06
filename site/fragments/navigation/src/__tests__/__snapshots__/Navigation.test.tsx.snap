@@ -322,7 +322,7 @@ exports[`Navigation fragment snapshots should match latest render snapshot 1`] =
               stroke-width="1"
             >
               <g
-                fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
+                fill="#FFFFFF"
                 fill-rule="nonzero"
                 transform="translate(0, -3)"
               >
@@ -376,7 +376,7 @@ exports[`Navigation fragment snapshots should match latest render snapshot 1`] =
                   stroke-width="1"
                 >
                   <g
-                    fill="{props.color || '#FFFFFF'} // eslint-disable react/destructuring-assignment"
+                    fill="#FFFFFF"
                     fill-rule="nonzero"
                     id="order-(executor)"
                     transform="translate(-270.000000, -25.000000)"
