@@ -1,18 +1,18 @@
-import { KratosRecoveryFlowProvider } from '@atls/react-kratos-browser-flows'
+import { RecoveryFlow }         from '@atls/next-identity-integration'
 
-import React                          from 'react'
+import React                    from 'react'
 
-import ResetPassword                  from '@identity/recovery-fragment'
-import { ForwardArrowLeftIcon }       from '@ui/icons'
-import { LogoIcon }                   from '@ui/icons'
-import { Box }                        from '@ui/layout'
-import { Column }                     from '@ui/layout'
-import { Layout }                     from '@ui/layout'
-import { Row }                        from '@ui/layout'
-import { Link }                       from '@ui/link'
+import ResetPassword            from '@identity/recovery-fragment'
+import { ForwardArrowLeftIcon } from '@ui/icons'
+import { LogoIcon }             from '@ui/icons'
+import { Box }                  from '@ui/layout'
+import { Column }               from '@ui/layout'
+import { Layout }               from '@ui/layout'
+import { Row }                  from '@ui/layout'
+import { Link }                 from '@ui/link'
 
 export const RecoveryPage = () => (
-  <KratosRecoveryFlowProvider>
+  <RecoveryFlow>
     <Box bg='rgb(159, 159, 159)' height='100vh'>
       <Column>
         <Layout flexBasis={12} />
@@ -36,5 +36,5 @@ export const RecoveryPage = () => (
         <Layout flexGrow={3} />
       </Column>
     </Box>
-  </KratosRecoveryFlowProvider>
+  </RecoveryFlow>
 )

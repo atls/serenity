@@ -4,11 +4,11 @@
   "license": "BSD-3-Clause",
   "main": "src/index.tsx",
   "dependencies": {
-    "@atls/react-kratos-browser-flows": "^0.0.1",
     "react": "16.14.0",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "@atls/next-identity-integration": "^0.0.8",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@identity/recovery-fragment": "workspace:identity/fragments/recovery-fragment",
@@ -18,6 +18,7 @@
     "react-intl": "^5.24.4"
   },
   "peerDependencies": {
+    "@atls/next-identity-integration": "*",
     "@emotion/react": "*",
     "@emotion/styled": "*",
     "react-intl": "*"

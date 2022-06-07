@@ -1,5 +1,5 @@
-import { FlowNode }   from '@atls/react-kratos-browser-flows'
-import { FlowSubmit } from '@atls/react-kratos-browser-flows'
+import { FlowNode }   from '@atls/next-identity-integration'
+import { FlowSubmit } from '@atls/next-identity-integration'
 
 import React          from 'react'
 
@@ -61,10 +61,18 @@ export const Registration = ({ intl }: any) => (
       </Layout>
       <Layout flexBasis={30} />
       <Layout>
-        <FlowSubmit method='password'>
-          <Button fill size='large' color='chicago' fontWeight='medium'>
-            {intl.formatMessage(messages.createAccount)}
-          </Button>
+        <FlowSubmit>
+          {({ onSubmit }) => (
+            <Button
+              fill
+              size='large'
+              color='chicago'
+              fontWeight='medium'
+              onClick={() => onSubmit(({ method: 'password' }))}
+            >
+              {intl.formatMessage(messages.createAccount)}
+            </Button>
+          )}
         </FlowSubmit>
       </Layout>
     </Column>

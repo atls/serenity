@@ -534,6 +534,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@atls/next-identity-integration@npm:^0.0.8":
+  version: 0.0.8
+  resolution: "@atls/next-identity-integration@npm:0.0.8"
+  dependencies:
+    "@ory/integrations": ^0.2.1
+    "@ory/kratos-client": ^0.8.2-alpha.1
+    tldjs: ^2.3.1
+  peerDependencies:
+    next: ^12.0.9
+    react: ^17.0.1
+  checksum: 3af63d0bb3aeb471fc04ca624a830a5964c3248f58d04667171870aae151c09ab9bd59b492ad3531c07f7d72f72f2980f85c91a494f01f74afb660f572c10b45
+  languageName: node
+  linkType: hard
+
 "@atls/prettier-plugin@npm:^0.0.3":
   version: 0.0.3
   resolution: "@atls/prettier-plugin@npm:0.0.3"
@@ -555,18 +569,6 @@ __metadata:
   peerDependencies:
     react: 16.14.0
   checksum: cf903b68bac52ee325deeecd5a747a07bc0eb8e6c238759601d80b773e3641fe0fe70423f95f19436905567680ee85150ffec2cbcfe88d7f54a344bf667ef8cd
-  languageName: node
-  linkType: hard
-
-"@atls/react-kratos-browser-flows@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@atls/react-kratos-browser-flows@npm:0.0.1"
-  dependencies:
-    "@ory/kratos-client": ^0.7.6-alpha.1
-    events: ^3.3.0
-  peerDependencies:
-    react: ^17.0.1
-  checksum: 8a6376a64cd3342fe028b51d875f7cf9f70d15a186918ad9dae758e6ad812e1dfa2d662531ae912f478de0a20d74ca037c231080d169abb80d399ca3295b21ca
   languageName: node
   linkType: hard
 
@@ -3049,7 +3051,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@identity/login-fragment@workspace:identity/fragments/login-fragment"
   dependencies:
-    "@atls/react-kratos-browser-flows": ^0.0.1
+    "@atls/next-identity-integration": ^0.0.8
     "@emotion/react": ^11.7.1
     "@emotion/styled": ^11.6.0
     "@ui/button": "workspace:ui/button"
@@ -3060,7 +3062,7 @@ __metadata:
     react: 16.14.0
     react-intl: ^5.24.4
   peerDependencies:
-    "@atls/react-kratos-browser-flows": "*"
+    "@atls/next-identity-integration": "*"
     "@emotion/react": "*"
     "@emotion/styled": "*"
     react-intl: "*"
@@ -3071,7 +3073,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@identity/login-page@workspace:identity/pages/login-page"
   dependencies:
-    "@atls/react-kratos-browser-flows": ^0.0.1
+    "@atls/next-identity-integration": ^0.0.8
     "@emotion/react": ^11.7.1
     "@emotion/styled": ^11.6.0
     "@identity/login-fragment": 0.0.0
@@ -3081,9 +3083,25 @@ __metadata:
     react-helmet: ^5.2.0
     react-intl: ^5.24.4
   peerDependencies:
+    "@atls/next-identity-integration": "*"
     "@emotion/react": "*"
     "@emotion/styled": "*"
     react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
+"@identity/logout-page@workspace:0.0.0, @identity/logout-page@workspace:identity/pages/logout-page":
+  version: 0.0.0-use.local
+  resolution: "@identity/logout-page@workspace:identity/pages/logout-page"
+  dependencies:
+    "@atls/next-identity-integration": ^0.0.8
+    "@types/react": ^17.0.37
+    react-helmet: ^6.1.0
+    react-intl: ^5.24.4
+  peerDependencies:
+    react: ^16.14.0
+    react-helmet: ^6.1.0
+    react-intl: ^5.24.4
   languageName: unknown
   linkType: soft
 
@@ -3132,7 +3150,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@identity/recovery-fragment@workspace:identity/fragments/recovery-fragment"
   dependencies:
-    "@atls/react-kratos-browser-flows": ^0.0.1
+    "@atls/next-identity-integration": ^0.0.8
     "@emotion/react": ^11.7.1
     "@emotion/styled": ^11.6.0
     "@ui/button": "workspace:ui/button"
@@ -3142,7 +3160,7 @@ __metadata:
     react: 16.14.0
     react-intl: ^5.24.4
   peerDependencies:
-    "@atls/react-kratos-browser-flows": "*"
+    "@atls/next-identity-integration": "*"
     "@emotion/react": "*"
     "@emotion/styled": "*"
     react-intl: "*"
@@ -3153,7 +3171,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@identity/recovery-page@workspace:identity/pages/recovery-page"
   dependencies:
-    "@atls/react-kratos-browser-flows": ^0.0.1
+    "@atls/next-identity-integration": ^0.0.8
     "@emotion/react": ^11.7.1
     "@emotion/styled": ^11.6.0
     "@identity/recovery-fragment": "workspace:identity/fragments/recovery-fragment"
@@ -3164,6 +3182,7 @@ __metadata:
     react-helmet: ^5.2.0
     react-intl: ^5.24.4
   peerDependencies:
+    "@atls/next-identity-integration": "*"
     "@emotion/react": "*"
     "@emotion/styled": "*"
     react-intl: "*"
@@ -3197,7 +3216,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@identity/registration-fragment@workspace:identity/fragments/registration-fragment"
   dependencies:
-    "@atls/react-kratos-browser-flows": ^0.0.1
+    "@atls/next-identity-integration": ^0.0.8
     "@emotion/react": ^11.7.1
     "@emotion/styled": ^11.6.0
     "@ui/button": "workspace:ui/button"
@@ -3207,7 +3226,7 @@ __metadata:
     react: 16.14.0
     react-intl: ^5.24.4
   peerDependencies:
-    "@atls/react-kratos-browser-flows": "*"
+    "@atls/next-identity-integration": "*"
     "@emotion/react": "*"
     "@emotion/styled": "*"
     react-intl: "*"
@@ -3218,7 +3237,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@identity/registration-page@workspace:identity/pages/registration-page"
   dependencies:
-    "@atls/react-kratos-browser-flows": ^0.0.1
+    "@atls/next-identity-integration": ^0.0.8
     "@emotion/react": ^11.7.1
     "@emotion/styled": ^11.6.0
     "@identity/registration-fragment": "workspace:identity/fragments/registration-fragment"
@@ -3229,6 +3248,7 @@ __metadata:
     react-helmet: ^5.2.0
     react-intl: ^5.24.4
   peerDependencies:
+    "@atls/next-identity-integration": "*"
     "@emotion/react": "*"
     "@emotion/styled": "*"
     react-intl: "*"
@@ -3267,6 +3287,7 @@ __metadata:
     "@atls/next-config-with-pnp-workspaces": ^0.0.1
     "@atls/next-document-with-emotion": ^0.2.63
     "@atls/next-document-with-helmet": ^0.2.64
+    "@atls/next-identity-integration": ^0.0.8
     "@atls/react-locale": ^0.1.39
     "@emotion/cache": ^11.4.0
     "@emotion/css": ^11.1.3
@@ -3276,13 +3297,14 @@ __metadata:
     "@grpc/proto-loader": 0.5.5
     "@identity/login-fragment": "workspace:identity/fragments/login-fragment"
     "@identity/login-page": "workspace:identity/pages/login-page"
+    "@identity/logout-page": "workspace:0.0.0"
     "@identity/recovery-complete-page": "workspace:identity/pages/recovery-complete-page"
     "@identity/recovery-page": "workspace:identity/pages/recovery-page"
     "@identity/registration-complete-page": "workspace:identity/pages/registration-complete-page"
     "@identity/registration-page": "workspace:identity/pages/registration-page"
     "@identity/registration-profile-page": "workspace:identity/pages/registration-profile-page"
     "@identity/settings-page": "workspace:^"
-    "@ory/kratos-client": 0.7.6-alpha.1
+    "@ory/kratos-client": 0.8.2-alpha.1
     "@protos/common": 0.3.1
     "@protos/identity": 0.3.1
     "@types/cookie": ^0
@@ -3349,7 +3371,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@identity/settings-fragment@workspace:identity/fragments/settings-fragment"
   dependencies:
-    "@atls/react-kratos-browser-flows": ^0.0.1
+    "@atls/next-identity-integration": ^0.0.8
     "@emotion/react": ^11.7.1
     "@emotion/styled": ^11.6.0
     "@types/react": ^17.0.6
@@ -3360,7 +3382,7 @@ __metadata:
     react: ^17.0.2
     react-intl: ^5.24.4
   peerDependencies:
-    "@atls/react-kratos-browser-flows": "*"
+    "@atls/next-identity-integration": "*"
     "@emotion/react": "*"
     "@emotion/styled": "*"
     react: 16.14.0
@@ -3372,7 +3394,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@identity/settings-page@workspace:identity/pages/settings-page"
   dependencies:
-    "@atls/react-kratos-browser-flows": ^0.0.1
+    "@atls/next-identity-integration": ^0.0.8
     "@emotion/react": ^11.7.1
     "@emotion/styled": ^11.6.0
     "@identity/settings-fragment": "workspace:identity/fragments/settings-fragment"
@@ -3385,6 +3407,7 @@ __metadata:
     react-helmet: ^6.1.0
     react-intl: ^5.24.4
   peerDependencies:
+    "@atls/next-identity-integration": "*"
     "@emotion/react": "*"
     "@emotion/styled": "*"
     react: 16.14.0
@@ -4415,6 +4438,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/env@npm:12.1.6":
+  version: 12.1.6
+  resolution: "@next/env@npm:12.1.6"
+  checksum: e6a4f189f0d653d13dc7ad510f6c9d2cf690bfd9e07c554bd501b840f8dabc3da5adcab874b0bc01aab86c3647cff4fb84692e3c3b28125af26f0b05cd4c7fcf
+  languageName: node
+  linkType: hard
+
 "@next/polyfill-module@npm:10.0.5":
   version: 10.0.5
   resolution: "@next/polyfill-module@npm:10.0.5"
@@ -4455,9 +4485,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-android-arm-eabi@npm:12.1.6":
+  version: 12.1.6
+  resolution: "@next/swc-android-arm-eabi@npm:12.1.6"
+  conditions: os=android & cpu=arm
+  languageName: node
+  linkType: hard
+
 "@next/swc-android-arm64@npm:12.0.9":
   version: 12.0.9
   resolution: "@next/swc-android-arm64@npm:12.0.9"
+  conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@next/swc-android-arm64@npm:12.1.6":
+  version: 12.1.6
+  resolution: "@next/swc-android-arm64@npm:12.1.6"
   conditions: os=android & cpu=arm64
   languageName: node
   linkType: hard
@@ -4469,9 +4513,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-darwin-arm64@npm:12.1.6":
+  version: 12.1.6
+  resolution: "@next/swc-darwin-arm64@npm:12.1.6"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@next/swc-darwin-x64@npm:12.0.9":
   version: 12.0.9
   resolution: "@next/swc-darwin-x64@npm:12.0.9"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@next/swc-darwin-x64@npm:12.1.6":
+  version: 12.1.6
+  resolution: "@next/swc-darwin-x64@npm:12.1.6"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
@@ -4483,10 +4541,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-linux-arm-gnueabihf@npm:12.1.6":
+  version: 12.1.6
+  resolution: "@next/swc-linux-arm-gnueabihf@npm:12.1.6"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
 "@next/swc-linux-arm64-gnu@npm:12.0.9":
   version: 12.0.9
   resolution: "@next/swc-linux-arm64-gnu@npm:12.0.9"
   conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@next/swc-linux-arm64-gnu@npm:12.1.6":
+  version: 12.1.6
+  resolution: "@next/swc-linux-arm64-gnu@npm:12.1.6"
+  conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
@@ -4497,10 +4569,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-linux-arm64-musl@npm:12.1.6":
+  version: 12.1.6
+  resolution: "@next/swc-linux-arm64-musl@npm:12.1.6"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
 "@next/swc-linux-x64-gnu@npm:12.0.9":
   version: 12.0.9
   resolution: "@next/swc-linux-x64-gnu@npm:12.0.9"
   conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@next/swc-linux-x64-gnu@npm:12.1.6":
+  version: 12.1.6
+  resolution: "@next/swc-linux-x64-gnu@npm:12.1.6"
+  conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
@@ -4511,9 +4597,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-linux-x64-musl@npm:12.1.6":
+  version: 12.1.6
+  resolution: "@next/swc-linux-x64-musl@npm:12.1.6"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
 "@next/swc-win32-arm64-msvc@npm:12.0.9":
   version: 12.0.9
   resolution: "@next/swc-win32-arm64-msvc@npm:12.0.9"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@next/swc-win32-arm64-msvc@npm:12.1.6":
+  version: 12.1.6
+  resolution: "@next/swc-win32-arm64-msvc@npm:12.1.6"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
@@ -4525,9 +4625,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-win32-ia32-msvc@npm:12.1.6":
+  version: 12.1.6
+  resolution: "@next/swc-win32-ia32-msvc@npm:12.1.6"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
 "@next/swc-win32-x64-msvc@npm:12.0.9":
   version: 12.0.9
   resolution: "@next/swc-win32-x64-msvc@npm:12.0.9"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@next/swc-win32-x64-msvc@npm:12.1.6":
+  version: 12.1.6
+  resolution: "@next/swc-win32-x64-msvc@npm:12.1.6"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -4882,21 +4996,42 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ory/kratos-client@npm:0.7.6-alpha.1":
-  version: 0.7.6-alpha.1
-  resolution: "@ory/kratos-client@npm:0.7.6-alpha.1"
+"@ory/client@npm:>=0.0.1-alpha.49":
+  version: 0.0.1-alpha.187
+  resolution: "@ory/client@npm:0.0.1-alpha.187"
   dependencies:
-    axios: ^0.21.1
-  checksum: 5ea6c8604aa7f98727d7d5b448f92f370d7e72a233607049b77973fd6f2f5499988f46d376d2330f0e9ffc3b57ab7c4260874c5c0f6636122660f5f5349833e3
+    axios: ^0.21.4
+  checksum: e4f7907bc34926b2d75d988000523af2e8b2f0d055d31299c5e4efaa17fba868b131b9eee85b9a1d590938b935f089a5427a2ea167248fb626345322134c65e4
   languageName: node
   linkType: hard
 
-"@ory/kratos-client@npm:^0.7.6-alpha.1":
-  version: 0.7.6-alpha.7
-  resolution: "@ory/kratos-client@npm:0.7.6-alpha.7"
+"@ory/integrations@npm:^0.2.1":
+  version: 0.2.6
+  resolution: "@ory/integrations@npm:0.2.6"
+  dependencies:
+    "@ory/client": ">=0.0.1-alpha.49"
+    "@types/tldjs": ^2.3.1
+    cookie: ^0.4.1
+    istextorbinary: ^6.0.0
+    next: ">=12.0.10"
+    ory-prettier-styles: ^1.1.2
+    prettier: ^2.3.2
+    request: ^2.88.2
+    set-cookie-parser: ^2.4.8
+    tldjs: ^2.3.1
+  peerDependencies:
+    "@ory/client": ">=0.0.1-alpha.49"
+    next: ">=12.0.10"
+  checksum: ccff2730636c3cbd499bc858b0a36265ce86d42bf0bfd35cf0d3c4933985a66e3d26fe1fef07971d3b9d8b3e56178461291f377f648a8d27207a667e61d69a35
+  languageName: node
+  linkType: hard
+
+"@ory/kratos-client@npm:0.8.2-alpha.1, @ory/kratos-client@npm:^0.8.2-alpha.1":
+  version: 0.8.2-alpha.1
+  resolution: "@ory/kratos-client@npm:0.8.2-alpha.1"
   dependencies:
     axios: ^0.21.1
-  checksum: c4c35e4625334ea6ee2878e9447f86ea8b827882e59a97433db2cddb3b2f470a9b47cfa6d861775afdaf61ab6635c89f3e6dd460d218b9697a830c8f23101d24
+  checksum: d103ffdf08f76e565622abda8e748b5d17f9829c727e37a74e50b87b6d86431499b2e2f191ad2b6571202c1dea0455840585734c09b8ed923843aa7ca84f107a
   languageName: node
   linkType: hard
 
@@ -7123,6 +7258,13 @@ __metadata:
     "@types/testing-library__dom": "*"
     pretty-format: ^25.1.0
   checksum: 2fc33f97d17fea35f1215cd1cd5899cbec4be897f2e21b13bf32cbac4234c88ca685517bdd142c1cebc8ee1ff74fa5ce5aff770f907f3bc116dc578e85972685
+  languageName: node
+  linkType: hard
+
+"@types/tldjs@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "@types/tldjs@npm:2.3.1"
+  checksum: 3b796de8c41c2f108cc5e8cc888d4676964fe73bdbb9383ab7e0e6a69bdd845d0b186d0688bdbe751ba8ffb1694dd5c12c0785c4959b0ecdbcd031dfcc36887d
   languageName: node
   linkType: hard
 
@@ -9771,7 +9913,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.21.1":
+"axios@npm:^0.21.1, axios@npm:^0.21.4":
   version: 0.21.4
   resolution: "axios@npm:0.21.4"
   dependencies:
@@ -10996,6 +11138,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"binaryextensions@npm:^4.18.0":
+  version: 4.18.0
+  resolution: "binaryextensions@npm:4.18.0"
+  checksum: 6fe92a9004c5a7c08a8d49ac4087581043a0d195e76c288619c13e9232d0b80543f01da0037bb0f1b02830c174721fcad92bdfe76c84295cc8f308ee3b74d184
+  languageName: node
+  linkType: hard
+
 "bindings@npm:^1.5.0":
   version: 1.5.0
   resolution: "bindings@npm:1.5.0"
@@ -11775,6 +11924,13 @@ __metadata:
   version: 1.0.30001302
   resolution: "caniuse-lite@npm:1.0.30001302"
   checksum: 612689059f6a9aeebad43afeabac655308ddbad8e0f345030edf7656564cf9d0d5af10e3cbf61b64b09b06a97f82ba3788f5621d6526c7a3e7e068cae88d6782
+  languageName: node
+  linkType: hard
+
+"caniuse-lite@npm:^1.0.30001332":
+  version: 1.0.30001349
+  resolution: "caniuse-lite@npm:1.0.30001349"
+  checksum: 0095fcbb7ca4ef76227f5c3788c3cdbad3c52a25825c577371ffa73a44d74ff43fc5a849e5fa37c8b4c6237bb5272777085e1f674f9f86fde9aed85201d26f07
   languageName: node
   linkType: hard
 
@@ -18436,6 +18592,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"istextorbinary@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "istextorbinary@npm:6.0.0"
+  dependencies:
+    binaryextensions: ^4.18.0
+    textextensions: ^5.14.0
+  checksum: 7b9e159c7faf91c310bb1669c9a73de74d21e00425fb062bc93d6854bacb1ffc5c4b50bb2f9bbbc4c22efe0279a3f570b3dac706dba81280452af3e3ebbe862f
+  languageName: node
+  linkType: hard
+
 "iterall@npm:*, iterall@npm:1.3.0, iterall@npm:^1.1.3, iterall@npm:^1.2.1, iterall@npm:^1.3.0":
   version: 1.3.0
   resolution: "iterall@npm:1.3.0"
@@ -21465,6 +21631,70 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next@npm:>=12.0.10":
+  version: 12.1.6
+  resolution: "next@npm:12.1.6"
+  dependencies:
+    "@next/env": 12.1.6
+    "@next/swc-android-arm-eabi": 12.1.6
+    "@next/swc-android-arm64": 12.1.6
+    "@next/swc-darwin-arm64": 12.1.6
+    "@next/swc-darwin-x64": 12.1.6
+    "@next/swc-linux-arm-gnueabihf": 12.1.6
+    "@next/swc-linux-arm64-gnu": 12.1.6
+    "@next/swc-linux-arm64-musl": 12.1.6
+    "@next/swc-linux-x64-gnu": 12.1.6
+    "@next/swc-linux-x64-musl": 12.1.6
+    "@next/swc-win32-arm64-msvc": 12.1.6
+    "@next/swc-win32-ia32-msvc": 12.1.6
+    "@next/swc-win32-x64-msvc": 12.1.6
+    caniuse-lite: ^1.0.30001332
+    postcss: 8.4.5
+    styled-jsx: 5.0.2
+  peerDependencies:
+    fibers: ">= 3.1.0"
+    node-sass: ^6.0.0 || ^7.0.0
+    react: ^17.0.2 || ^18.0.0-0
+    react-dom: ^17.0.2 || ^18.0.0-0
+    sass: ^1.3.0
+  dependenciesMeta:
+    "@next/swc-android-arm-eabi":
+      optional: true
+    "@next/swc-android-arm64":
+      optional: true
+    "@next/swc-darwin-arm64":
+      optional: true
+    "@next/swc-darwin-x64":
+      optional: true
+    "@next/swc-linux-arm-gnueabihf":
+      optional: true
+    "@next/swc-linux-arm64-gnu":
+      optional: true
+    "@next/swc-linux-arm64-musl":
+      optional: true
+    "@next/swc-linux-x64-gnu":
+      optional: true
+    "@next/swc-linux-x64-musl":
+      optional: true
+    "@next/swc-win32-arm64-msvc":
+      optional: true
+    "@next/swc-win32-ia32-msvc":
+      optional: true
+    "@next/swc-win32-x64-msvc":
+      optional: true
+  peerDependenciesMeta:
+    fibers:
+      optional: true
+    node-sass:
+      optional: true
+    sass:
+      optional: true
+  bin:
+    next: dist/bin/next
+  checksum: 670d544fd47670c29681d10824e6da625e9d4a048e564c8d9cb80d37f33c9ff9b5ca0a53e6d84d8d618b1fe7c9bb4e6b45040cb7e57a5c46b232a8f914425dc1
+  languageName: node
+  linkType: hard
+
 "nice-try@npm:^1.0.4":
   version: 1.0.5
   resolution: "nice-try@npm:1.0.5"
@@ -22304,6 +22534,13 @@ __metadata:
   dependencies:
     url-parse: ^1.4.3
   checksum: 8dca9311dab50c8953366127cb86b7c07bf547d6aa6dc6873a75964b7563825351440557e5724d9c652c5e99043b8295624f106af077f84bccf19592e421beb9
+  languageName: node
+  linkType: hard
+
+"ory-prettier-styles@npm:^1.1.2":
+  version: 1.2.0
+  resolution: "ory-prettier-styles@npm:1.2.0"
+  checksum: f89669f825569876609b9e8efe4eea16596ac82cb177729bd25621eb981f341e288d029cf95d8561b30046e0860f0f1d63cfc69e571b60a94bba7ed5fdeae8e5
   languageName: node
   linkType: hard
 
@@ -23489,7 +23726,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.5.1":
+"prettier@npm:^2.3.2, prettier@npm:^2.5.1":
   version: 2.6.2
   resolution: "prettier@npm:2.6.2"
   bin:
@@ -23859,7 +24096,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"punycode@npm:^1.2.4":
+"punycode@npm:^1.2.4, punycode@npm:^1.4.1":
   version: 1.4.1
   resolution: "punycode@npm:1.4.1"
   checksum: fa6e698cb53db45e4628559e557ddaf554103d2a96a1d62892c8f4032cd3bc8871796cae9eabc1bc700e2b6677611521ce5bb1d9a27700086039965d0cf34518
@@ -24973,7 +25210,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"request@npm:^2.87.0, request@npm:^2.88.0":
+"request@npm:^2.87.0, request@npm:^2.88.0, request@npm:^2.88.2":
   version: 2.88.2
   resolution: "request@npm:2.88.2"
   dependencies:
@@ -25793,6 +26030,13 @@ __metadata:
   version: 2.0.0
   resolution: "set-blocking@npm:2.0.0"
   checksum: 6e65a05f7cf7ebdf8b7c75b101e18c0b7e3dff4940d480efed8aad3a36a4005140b660fa1d804cb8bce911cac290441dc728084a30504d3516ac2ff7ad607b02
+  languageName: node
+  linkType: hard
+
+"set-cookie-parser@npm:^2.4.8":
+  version: 2.5.0
+  resolution: "set-cookie-parser@npm:2.5.0"
+  checksum: df277b2c49f05738997f78a9848b8a9954a77ff57989d32e373622921788cf6b154c30b7fab8d69bc8d1cf7687cb904efa642d5adee7a9ebae883c15cea3c145
   languageName: node
   linkType: hard
 
@@ -26957,6 +27201,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"styled-jsx@npm:5.0.2":
+  version: 5.0.2
+  resolution: "styled-jsx@npm:5.0.2"
+  peerDependencies:
+    react: ">= 16.8.0 || 17.x.x || ^18.0.0-0"
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    babel-plugin-macros:
+      optional: true
+  checksum: 86d55819ebeabd283a574d2f44f7d3f8fa6b8c28fa41687ece161bf1e910e04965611618921d8f5cd33dc6dae1033b926a70421ae5ea045440a9861edc3e0d87
+  languageName: node
+  linkType: hard
+
 "styled-system@npm:^5.1.0, styled-system@npm:^5.1.5":
   version: 5.1.5
   resolution: "styled-system@npm:5.1.5"
@@ -27413,6 +27671,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"textextensions@npm:^5.14.0":
+  version: 5.15.0
+  resolution: "textextensions@npm:5.15.0"
+  checksum: aa172e941e81b44e0d35fa217f758a0d8ba0342dac31539914225a2382b5792ef58bff3ec9009b9c85b0c0605f5a79a906bd97827a2e591d647137fcdbf867d3
+  languageName: node
+  linkType: hard
+
 "thenify-all@npm:^1.0.0":
   version: 1.6.0
   resolution: "thenify-all@npm:1.6.0"
@@ -27514,6 +27779,15 @@ __metadata:
     no-case: ^2.2.0
     upper-case: ^1.0.3
   checksum: e88ddfc4608a7fb18ed440139d9c42a5f8a50f916e07062be2aef5e2038720746ed51c4fdf9e7190d24a8cc10e6dec9773027fc44450b3a4a5e5c49b4a931fb1
+  languageName: node
+  linkType: hard
+
+"tldjs@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "tldjs@npm:2.3.1"
+  dependencies:
+    punycode: ^1.4.1
+  checksum: f699c6a6aa29b0f0ed1297f3a8c692dd9403139d2e5c5381490c69e9e447e499dd8caaa2b228af30ecc8591b45af51344d2b39d99af2d29fcee964e8093428de
   languageName: node
   linkType: hard
 

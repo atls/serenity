@@ -1,18 +1,18 @@
-import { KratosRegistrationFlowProvider } from '@atls/react-kratos-browser-flows'
+import { RegistrationFlow }     from '@atls/next-identity-integration'
 
-import React                              from 'react'
+import React                    from 'react'
 
-import SignUp                             from '@identity/registration-fragment'
-import { ForwardArrowLeftIcon }           from '@ui/icons'
-import { LogoIcon }                       from '@ui/icons'
-import { Box }                            from '@ui/layout'
-import { Column }                         from '@ui/layout'
-import { Layout }                         from '@ui/layout'
-import { Row }                            from '@ui/layout'
-import { Link }                           from '@ui/link'
+import SignUp                   from '@identity/registration-fragment'
+import { ForwardArrowLeftIcon } from '@ui/icons'
+import { LogoIcon }             from '@ui/icons'
+import { Box }                  from '@ui/layout'
+import { Column }               from '@ui/layout'
+import { Layout }               from '@ui/layout'
+import { Row }                  from '@ui/layout'
+import { Link }                 from '@ui/link'
 
 export const Registration = () => (
-  <KratosRegistrationFlowProvider>
+  <RegistrationFlow>
     <Box bg='rgb(159, 159, 159)' height='100vh'>
       <Column>
         <Layout flexBasis={12} />
@@ -36,5 +36,5 @@ export const Registration = () => (
         <Layout flexGrow={3} />
       </Column>
     </Box>
-  </KratosRegistrationFlowProvider>
+  </RegistrationFlow>
 )
