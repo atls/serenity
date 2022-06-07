@@ -68,7 +68,7 @@ export const Registration = ({ intl }: any) => (
               size='large'
               color='chicago'
               fontWeight='medium'
-              onClick={() => onSubmit(({ method: 'password' }))}
+              onClick={() => onSubmit({ method: 'password' })}
             >
               {intl.formatMessage(messages.createAccount)}
             </Button>

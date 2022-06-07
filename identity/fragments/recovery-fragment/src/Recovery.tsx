@@ -42,7 +42,7 @@ export const Recovery = ({ intl }: any) => (
               size='large'
               color='chicago'
               fontWeight='medium'
-              onClick={() => onSubmit(({ method: 'link' }))}
+              onClick={() => onSubmit({ method: 'link' })}
             >
               {intl.formatMessage(messages.sendMail)}
             </Button>

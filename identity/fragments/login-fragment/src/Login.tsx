@@ -63,7 +63,7 @@ export const Login = ({ intl }: any) => (
               color='chicagolite'
               fontWeight='bold'
               as={Link}
-              href='/registration'
+              href='/auth/registration'
             >
               {intl.formatMessage(messages.signup)}
             </Button>

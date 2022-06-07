@@ -20,7 +20,7 @@ export const Registration = () => (
           <Row>
             <Layout flexBasis={[32, 44, 44]} />
             <Layout>
-              <Link href='/login'>
+              <Link href='/auth/login'>
                 <ForwardArrowLeftIcon width={18} height={18} />
               </Link>
             </Layout>
