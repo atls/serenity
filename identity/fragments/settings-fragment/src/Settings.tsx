@@ -1,5 +1,5 @@
-import { FlowNode }   from '@atls/react-kratos-browser-flows'
-import { FlowSubmit } from '@atls/react-kratos-browser-flows'
+import { FlowNode }   from '@atls/next-identity-integration'
+import { FlowSubmit } from '@atls/next-identity-integration'
 
 import React          from 'react'
 
@@ -35,10 +35,19 @@ export const Settings = ({ intl }: any) => (
       </Layout>
       <Layout flexBasis={30} />
       <Layout>
-        <FlowSubmit method='profile'>
-          <Button fill size='large' color='chicago' fontWeight='medium' type='submit'>
-            {intl.formatMessage(messages.save)}
-          </Button>
+        <FlowSubmit>
+          {({ onSubmit }) => (
+            <Button
+              fill
+              size='large'
+              color='chicago'
+              fontWeight='medium'
+              type='submit'
+              onClick={() => onSubmit({ method: 'profile' })}
+            >
+              {intl.formatMessage(messages.save)}
+            </Button>
+          )}
         </FlowSubmit>
       </Layout>
     </Column>

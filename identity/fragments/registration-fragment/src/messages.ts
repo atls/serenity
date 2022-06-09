@@ -31,4 +31,8 @@ export default defineMessages({
     id: `${name}.create_account`,
     defaultMessage: 'Создать аккаунт',
   },
+  passwordsDoNotMatch: {
+    id: `${name}.passwords_do_not_match`,
+    defaultMessage: 'Пароли не совпадают',
+  },
 })

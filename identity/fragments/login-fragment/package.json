@@ -7,7 +7,7 @@
     "react": "16.14.0"
   },
   "devDependencies": {
-    "@atls/react-kratos-browser-flows": "^0.0.1",
+    "@atls/next-identity-integration": "^0.0.8",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@ui/button": "workspace:ui/button",
@@ -18,7 +18,7 @@
     "react-intl": "^5.24.4"
   },
   "peerDependencies": {
-    "@atls/react-kratos-browser-flows": "*",
+    "@atls/next-identity-integration": "*",
     "@emotion/react": "*",
     "@emotion/styled": "*",
     "react-intl": "*"

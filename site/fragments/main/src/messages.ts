@@ -14,5 +14,5 @@ export default defineMessages({
   matches: {
     id: `${name}.matches`,
     defaultMessage: 'Совпадения',
-  }
+  },
 })

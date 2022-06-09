@@ -1,14 +1,14 @@
 import React         from 'react'
 import { useRouter } from 'next/router'
 
+import { Accordion } from '@ui/accordion'
+import { Condition } from '@ui/condition'
+import { CheckIcon } from '@ui/icons'
 import { Box }       from '@ui/layout'
 import { Column }    from '@ui/layout'
 import { Layout }    from '@ui/layout'
 import { Row }       from '@ui/layout'
 import { Text }      from '@ui/text'
-import { Accordion } from '@ui/accordion'
-import { CheckIcon } from '@ui/icons'
-import { Condition } from '@ui/condition'
 
 export const Filters = ({
   data = [],
@@ -45,7 +45,9 @@ export const Filters = ({
                               <CheckIcon
                                 width={16}
                                 height={16}
-                                color={activeCategory === category.id ? 'black' : 'rgb(153, 153, 153)'}
+                                color={
+                                  activeCategory === category.id ? 'black' : 'rgb(153, 153, 153)'
+                                }
                               />
                             )}
                           </Layout>

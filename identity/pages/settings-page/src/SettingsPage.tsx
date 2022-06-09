@@ -1,18 +1,18 @@
-import { KratosSettingsFlowProvider } from '@atls/react-kratos-browser-flows'
+import { SettingsFlow }         from '@atls/next-identity-integration'
 
-import React                          from 'react'
+import React                    from 'react'
 
-import ChangePassword                 from '@identity/settings-fragment'
-import { ForwardArrowLeftIcon }       from '@ui/icons'
-import { LogoIcon }                   from '@ui/icons'
-import { Box }                        from '@ui/layout'
-import { Column }                     from '@ui/layout'
-import { Layout }                     from '@ui/layout'
-import { Row }                        from '@ui/layout'
-import { Link }                       from '@ui/link'
+import ChangePassword           from '@identity/settings-fragment'
+import { ForwardArrowLeftIcon } from '@ui/icons'
+import { LogoIcon }             from '@ui/icons'
+import { Box }                  from '@ui/layout'
+import { Column }               from '@ui/layout'
+import { Layout }               from '@ui/layout'
+import { Row }                  from '@ui/layout'
+import { Link }                 from '@ui/link'
 
 export const SettingsPage = () => (
-  <KratosSettingsFlowProvider>
+  <SettingsFlow>
     <Box bg='rgb(159, 159, 159)' height='100vh'>
       <Column>
         <Layout flexBasis={12} />
@@ -36,5 +36,5 @@ export const SettingsPage = () => (
         <Layout flexGrow={3} />
       </Column>
     </Box>
-  </KratosSettingsFlowProvider>
+  </SettingsFlow>
 )

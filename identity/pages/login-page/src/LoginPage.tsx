@@ -1,17 +1,17 @@
-import { KratosLoginFlowProvider } from '@atls/react-kratos-browser-flows'
+import { LoginFlow }            from '@atls/next-identity-integration'
 
-import React                       from 'react'
+import React                    from 'react'
 
-import SignIn                      from '@identity/login-fragment'
-import { ForwardArrowLeftIcon }    from '@ui/icons'
-import { LogoIcon }                from '@ui/icons'
-import { Box }                     from '@ui/layout'
-import { Column }                  from '@ui/layout'
-import { Layout }                  from '@ui/layout'
-import { Row }                     from '@ui/layout'
+import SignIn                   from '@identity/login-fragment'
+import { ForwardArrowLeftIcon } from '@ui/icons'
+import { LogoIcon }             from '@ui/icons'
+import { Box }                  from '@ui/layout'
+import { Column }               from '@ui/layout'
+import { Layout }               from '@ui/layout'
+import { Row }                  from '@ui/layout'
 
 export const LoginPage = ({ onBack }) => (
-  <KratosLoginFlowProvider>
+  <LoginFlow>
     <Box bg='stardust' height='100vh'>
       <Column>
         <Layout flexBasis={12} />
@@ -33,5 +33,5 @@ export const LoginPage = ({ onBack }) => (
         <Layout flexGrow={3} />
       </Column>
     </Box>
-  </KratosLoginFlowProvider>
+  </LoginFlow>
 )

@@ -1,14 +1,14 @@
-import React      from 'react'
+import React        from 'react'
 
-import { Box }    from '@ui/layout'
-import { Column } from '@ui/layout'
-import { Layout } from '@ui/layout'
-import { Option } from '@ui/search'
+import { Box }      from '@ui/layout'
+import { Column }   from '@ui/layout'
+import { Layout }   from '@ui/layout'
+import { Option }   from '@ui/search'
 import { OptGroup } from '@ui/search'
-import { Search } from '@ui/search'
-import { Text }   from '@ui/text'
+import { Search }   from '@ui/search'
+import { Text }     from '@ui/text'
 
-import messages   from './messages'
+import messages     from './messages'
 
 const doNothing = (...args) => {
   // do nothing

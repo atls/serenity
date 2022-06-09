@@ -4,7 +4,7 @@
   "license": "BSD-3-Clause",
   "main": "src/index.tsx",
   "dependencies": {
-    "next": "10.0.5",
+    "next": "12.1.0",
     "react": "^17.0.2",
     "styled-tools": "^1.7.0"
   },

@@ -1,5 +1,5 @@
-import { FlowNode }   from '@atls/react-kratos-browser-flows'
-import { FlowSubmit } from '@atls/react-kratos-browser-flows'
+import { FlowNode }   from '@atls/next-identity-integration'
+import { FlowSubmit } from '@atls/next-identity-integration'
 
 import React          from 'react'
 
@@ -35,10 +35,18 @@ export const Recovery = ({ intl }: any) => (
       </Layout>
       <Layout flexBasis={24} />
       <Layout>
-        <FlowSubmit method='link'>
-          <Button fill size='large' color='chicago' fontWeight='medium'>
-            {intl.formatMessage(messages.sendMail)}
-          </Button>
+        <FlowSubmit>
+          {({ onSubmit }) => (
+            <Button
+              fill
+              size='large'
+              color='chicago'
+              fontWeight='medium'
+              onClick={() => onSubmit({ method: 'link' })}
+            >
+              {intl.formatMessage(messages.sendMail)}
+            </Button>
+          )}
         </FlowSubmit>
       </Layout>
     </Column>
