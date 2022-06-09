@@ -1,20 +1,20 @@
 import React                from 'react'
 import { FC }               from 'react'
-import { useState }         from 'react'
 import { useAnimation }     from 'framer-motion'
+import { useState }         from 'react'
 
 import { Condition }        from '@ui/condition'
+import { Divider }          from '@ui/divider'
+import { MinusIcon }        from '@ui/icons'
+import { PlusIcon }         from '@ui/icons'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Row }              from '@ui/layout'
-import { Divider }          from '@ui/divider'
 import { Text }             from '@ui/text'
 
-import { MinusIcon }        from '@ui/icons'
-import { PlusIcon }         from '@ui/icons'
 import { AccordionProps }   from './accordion.interface'
-import { TriggerContainer } from './trigger-container'
 import { ContentContainer } from './content-container'
+import { TriggerContainer } from './trigger-container'
 
 const Accordion: FC<AccordionProps> = ({ title, children }) => {
   const [active, setActive] = useState<boolean>(false)
@@ -34,7 +34,12 @@ const Accordion: FC<AccordionProps> = ({ title, children }) => {
         <Row alignItems='center' height={56}>
           <Layout flexBasis={24} />
           <Layout>
-            <Text fontSize='regular' fontWeight='medium' color={active ? 'black' : 'stormdust'} lineHeight='medium'>
+            <Text
+              fontSize='regular'
+              fontWeight='medium'
+              color={active ? 'black' : 'stormdust'}
+              lineHeight='medium'
+            >
               {title}
             </Text>
           </Layout>
@@ -51,7 +56,7 @@ const Accordion: FC<AccordionProps> = ({ title, children }) => {
         </Row>
       </TriggerContainer>
       <Layout>
-        <ContentContainer animate={controls} transition={{duration: 0.2}}>
+        <ContentContainer animate={controls} transition={{ duration: 0.2 }}>
           {children}
         </ContentContainer>
       </Layout>

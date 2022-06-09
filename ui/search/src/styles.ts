@@ -1,5 +1,5 @@
-import { css } from '@emotion/react'
-import {injectGlobal} from "@emotion/css";
+import { injectGlobal } from '@emotion/css'
+import { css }          from '@emotion/react'
 
 export const selectStyles = css`
   font-family: 'Inter';
