@@ -1836,6 +1836,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/is-prop-valid@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@emotion/is-prop-valid@npm:1.1.2"
+  dependencies:
+    "@emotion/memoize": ^0.7.4
+  checksum: 58b1f2d429a589f8f5bc2c33a8732cbb7bbcb17131a103511ef9a94ac754d7eeb53d627f947da480cd977f9d419fd92e244991680292f3287204159652745707
+  languageName: node
+  linkType: hard
+
 "@emotion/jest@npm:^11.7.1":
   version: 11.7.1
   resolution: "@emotion/jest@npm:11.7.1"
@@ -1894,7 +1903,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11.4.1":
+"@emotion/react@npm:^11.4.1, @emotion/react@npm:^11.9.0":
   version: 11.9.0
   resolution: "@emotion/react@npm:11.9.0"
   dependencies:
@@ -2038,6 +2047,28 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 612bbf114a4ca49e5b3ec4554bea1cd5aad9eeb2371babc3e6b79eab5020bd0300b9904108b621837fe715e221ba09dd131dc29918c1fd966e082d8e74fca833
+  languageName: node
+  linkType: hard
+
+"@emotion/styled@npm:^11.8.1":
+  version: 11.8.1
+  resolution: "@emotion/styled@npm:11.8.1"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@emotion/babel-plugin": ^11.7.1
+    "@emotion/is-prop-valid": ^1.1.2
+    "@emotion/serialize": ^1.0.2
+    "@emotion/utils": ^1.1.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    "@emotion/react": ^11.0.0-rc.0
+    react: ">=16.8.0"
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    "@types/react":
+      optional: true
+  checksum: 67150fa788785c34e285b90acecc91fe7a63babceaefbeffd053bed0fa31f72a05bfeeb9d15620766e543e007b9ccac2e836812eec2e791f962ec4e52731ae4c
   languageName: node
   linkType: hard
 
@@ -2984,6 +3015,31 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@identity/messages-fragment@workspace:0.0.0, @identity/messages-fragment@workspace:identity/fragments/messages":
+  version: 0.0.0-use.local
+  resolution: "@identity/messages-fragment@workspace:identity/fragments/messages"
+  dependencies:
+    "@emotion/react": ^11.9.0
+    "@emotion/styled": ^11.8.1
+    "@ory/kratos-client": ^0.8.2-alpha.1
+    "@testing-library/react": ^12.1.2
+    "@types/react": ^17.0.38
+    "@types/styled-system": ^5.1.15
+    "@ui/layout": "workspace:0.0.5"
+    "@ui/text": "workspace:0.3.1"
+    "@ui/theme": "workspace:0.0.5"
+    next: ^12.1.0
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    styled-system: ^5.1.5
+    styled-tools: ^1.7.2
+  peerDependencies:
+    next: "*"
+    react: ^16.13.1
+    react-dom: ^16.13.1
+  languageName: unknown
+  linkType: soft
+
 "@identity/persistence@0.3.1, @identity/persistence@workspace:identity/persistence":
   version: 0.0.0-use.local
   resolution: "@identity/persistence@workspace:identity/persistence"
@@ -3098,10 +3154,12 @@ __metadata:
     "@atls/next-identity-integration": ^0.0.8
     "@emotion/react": ^11.7.1
     "@emotion/styled": ^11.6.0
-    "@ui/button": "workspace:ui/button"
-    "@ui/input": "workspace:ui/input"
-    "@ui/layout": "workspace:ui/layout"
-    "@ui/text": "workspace:ui/text"
+    "@identity/messages-fragment": "workspace:0.0.0"
+    "@ui/button": "workspace:0.3.1"
+    "@ui/condition": "workspace:0.0.0"
+    "@ui/input": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.5"
+    "@ui/text": "workspace:0.3.1"
     react: 16.14.0
     react-intl: ^5.24.4
   peerDependencies:
@@ -6344,6 +6402,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@testing-library/dom@npm:^8.0.0":
+  version: 8.13.0
+  resolution: "@testing-library/dom@npm:8.13.0"
+  dependencies:
+    "@babel/code-frame": ^7.10.4
+    "@babel/runtime": ^7.12.5
+    "@types/aria-query": ^4.2.0
+    aria-query: ^5.0.0
+    chalk: ^4.1.0
+    dom-accessibility-api: ^0.5.9
+    lz-string: ^1.4.4
+    pretty-format: ^27.0.2
+  checksum: 880f1872b9949800d4444e3bdbd03df86d6f41ec7c27136dff1da29e87d2df2d7ee904afcdf895ffce351c25bd12119117eae023354d50e707ad56d43b2ed3ed
+  languageName: node
+  linkType: hard
+
 "@testing-library/react@npm:9.3.2":
   version: 9.3.2
   resolution: "@testing-library/react@npm:9.3.2"
@@ -6382,6 +6456,20 @@ __metadata:
     react: "*"
     react-dom: "*"
   checksum: 64e07cb96e40dbdbd3c46a09c47bed14446b30efafaa65a5d4fed5a7553878990cda108578f2b114422a775f31c635d51fd50b752f6163ddd6b8474e0e5fc2ce
+  languageName: node
+  linkType: hard
+
+"@testing-library/react@npm:^12.1.2":
+  version: 12.1.5
+  resolution: "@testing-library/react@npm:12.1.5"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+    "@testing-library/dom": ^8.0.0
+    "@types/react-dom": <18.0.0
+  peerDependencies:
+    react: <18.0.0
+    react-dom: <18.0.0
+  checksum: 4abd0490405e709a7df584a0db604e508a4612398bb1326e8fa32dd9393b15badc826dcf6d2f7525437886d507871f719f127b9860ed69ddd204d1fa834f576a
   languageName: node
   linkType: hard
 
@@ -7002,6 +7090,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-dom@npm:<18.0.0":
+  version: 17.0.17
+  resolution: "@types/react-dom@npm:17.0.17"
+  dependencies:
+    "@types/react": ^17
+  checksum: 23caf98aa03e968811560f92a2c8f451694253ebe16b670929b24eaf0e7fa62ba549abe9db0ac028a9d8a9086acd6ab9c6c773f163fa21224845edbc00ba6232
+  languageName: node
+  linkType: hard
+
 "@types/react-dom@npm:^17":
   version: 17.0.5
   resolution: "@types/react-dom@npm:17.0.5"
@@ -7114,7 +7211,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/styled-system@npm:^5":
+"@types/styled-system@npm:^5, @types/styled-system@npm:^5.1.15":
   version: 5.1.15
   resolution: "@types/styled-system@npm:5.1.15"
   dependencies:
@@ -7509,7 +7606,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/input@0.0.1, @ui/input@workspace:ui/input":
+"@ui/input@0.0.1, @ui/input@workspace:0.0.1, @ui/input@workspace:ui/input":
   version: 0.0.0-use.local
   resolution: "@ui/input@workspace:ui/input"
   dependencies:
@@ -7727,7 +7824,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/theme@0.0.5, @ui/theme@workspace:ui/theme":
+"@ui/theme@0.0.5, @ui/theme@workspace:0.0.5, @ui/theme@workspace:ui/theme":
   version: 0.0.0-use.local
   resolution: "@ui/theme@workspace:ui/theme"
   dependencies:
@@ -9389,6 +9486,13 @@ __metadata:
     "@babel/runtime": ^7.10.2
     "@babel/runtime-corejs3": ^7.10.2
   checksum: 38401a9a400f26f3dcc24b84997461a16b32869a9893d323602bed8da40a8bcc0243b8d2880e942249a1496cea7a7de769e93d21c0baa439f01e1ee936fed665
+  languageName: node
+  linkType: hard
+
+"aria-query@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "aria-query@npm:5.0.0"
+  checksum: c41f98866c5a304561ee8cae55856711cddad6f3f85d8cb43cc5f79667078d9b8979ce32d244c1ff364e6463a4d0b6865804a33ccc717fed701b281cf7dc6296
   languageName: node
   linkType: hard
 
@@ -13619,6 +13723,13 @@ __metadata:
   version: 0.5.11
   resolution: "dom-accessibility-api@npm:0.5.11"
   checksum: 6928436f384e34f6c9279a887c7417fd0bf3c881b491f60a44b24eec37ce7318124f1440fcd4110b4cffc6dd0668548fde2837627eb76e3b75f840884c6bd7df
+  languageName: node
+  linkType: hard
+
+"dom-accessibility-api@npm:^0.5.9":
+  version: 0.5.14
+  resolution: "dom-accessibility-api@npm:0.5.14"
+  checksum: 782c813f75a09ba6735ef03b5e1624406a3829444ae49d5bdedd272a49d437ae3354f53e02ffc8c9fd9165880250f41546538f27461f839dd4ea1234e77e8d5e
   languageName: node
   linkType: hard
 
@@ -21069,7 +21180,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:>=12.0.10":
+"next@npm:>=12.0.10, next@npm:^12.1.0":
   version: 12.1.6
   resolution: "next@npm:12.1.6"
   dependencies:
@@ -23015,6 +23126,17 @@ __metadata:
     ansi-styles: ^4.0.0
     react-is: ^17.0.1
   checksum: e3b808404d7e1519f0df1aa1f25cee0054ab475775c6b2b8c5568ff23194a92d54bf93274139b6f584ca70fd773be4eaa754b0e03f12bb0a8d1426b07f079976
+  languageName: node
+  linkType: hard
+
+"pretty-format@npm:^27.0.2":
+  version: 27.5.1
+  resolution: "pretty-format@npm:27.5.1"
+  dependencies:
+    ansi-regex: ^5.0.1
+    ansi-styles: ^5.0.0
+    react-is: ^17.0.1
+  checksum: cf610cffcb793885d16f184a62162f2dd0df31642d9a18edf4ca298e909a8fe80bdbf556d5c9573992c102ce8bf948691da91bf9739bee0ffb6e79c8a8a6e088
   languageName: node
   linkType: hard
 
@@ -26275,7 +26397,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"styled-tools@npm:^1.7.0":
+"styled-tools@npm:^1.7.0, styled-tools@npm:^1.7.2":
   version: 1.7.2
   resolution: "styled-tools@npm:1.7.2"
   checksum: 00cc1796085589b8d95d5a4183806d45b1d332fbc1dcf19922b01b81bd871c5a499fce64e82bb63bbead5bb8fe317f60a6e91c2fe01bf1ed79f5953977a05065
