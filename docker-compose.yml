@@ -21,6 +21,16 @@ services:
       - ./:/workspace
     entrypoint: yarn
 
+  elastic:
+    image: elasticsearch:7.17.0
+    environment:
+      - xpack.security.transport.ssl.enabled=false
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    ports:
+      - 9200:9200
+      - 9300:9300
+
   mailhog:
     image: mailhog/mailhog
     logging:
@@ -252,7 +262,7 @@ services:
       - collaboration
       - files-service
       - portfolio
-      - search
+      - search-service
     ports:
       - 4000:3000
 
@@ -342,7 +352,7 @@ services:
       - rabbitmq
       - db
 
-  search:
+  search-service:
     image: node:16-alpine
     working_dir: /workspace
     volumes:
@@ -350,9 +360,11 @@ services:
     entrypoint: yarn workspace @search/service dev
     environment:
       - DB_HOST=db
+      - ELASTICSEARCH_HOST=http://elastic:9200
     depends_on:
       - rabbitmq
       - db
+      - elastic
 
   files-service:
     image: node:16-alpine
