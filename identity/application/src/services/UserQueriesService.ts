@@ -1,42 +1,29 @@
-import { Injectable }       from '@nestjs/common'
-import { InjectRepository } from '@nestjs/typeorm'
+import { Injectable }    from '@nestjs/common'
 
-import { Repository }       from 'typeorm'
-
-import { User }             from '@identity/persistence'
+import { KratosService } from '@identity/kratos-adapter'
 
 @Injectable()
 export class UserQueriesService {
-  constructor(
-    @InjectRepository(User)
-    private readonly userRepository: Repository<User>
-  ) {}
+  constructor(private readonly kratosService: KratosService) {}
 
   async getUsers(pager, order, filters) {
     const { offset, take } = pager || { offset: 0, take: 24 }
 
-    const qb = await this.userRepository.createQueryBuilder('user')
+    const allProfiles = await this.kratosService.getProfiles()
+    let profiles = allProfiles
 
     if (filters) {
       if (filters.id && filters.id.length > 0) {
-        qb.andWhere('user.id IN (:...id)', { id: filters.id })
+        profiles = profiles.filter((profile) => profile.id === filters.id)
       }
     }
 
-    qb.skip(offset).take(take + 1)
-
-    if (order) {
-      const direction = order.direction.toUpperCase() as any
-
-      qb.orderBy(order.by, direction)
-    }
-
-    const rows = await qb.getMany()
+    profiles = profiles.slice(offset, offset + take)
 
     return {
-      rows: rows.slice(0, take),
+      rows: profiles,
       pageInfo: {
-        hasNext: rows.length > take,
+        hasNext: allProfiles.length > take + offset,
       },
     }
   }

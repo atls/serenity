@@ -286,7 +286,9 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn identity:dev
+    entrypoint: yarn workspace @identity/service dev
+    environment:
+      - KRATOS_PUBLIC_URL=http://kratos:4433/
     depends_on:
       - rabbitmq
       - db
