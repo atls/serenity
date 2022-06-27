@@ -1,10 +1,12 @@
-import { Module }                 from '@nestjs/common'
+import * as services           from './services'
 
-import { UserApplicationService } from './services'
-import { UserQueriesService }     from './services'
+import { Module }              from '@nestjs/common'
+
+import { KratosAdapterModule } from '@identity/kratos-adapter'
 
 @Module({
-  providers: [UserApplicationService, UserQueriesService],
-  exports: [UserApplicationService, UserQueriesService],
+  imports: [KratosAdapterModule.register()],
+  providers: [...Object.values(services)],
+  exports: [...Object.values(services)],
 })
 export class ApplicationModule {}

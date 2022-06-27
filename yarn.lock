@@ -253,21 +253,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atlantis-lab/nestjs-logger@npm:0.2.5":
-  version: 0.2.5
-  resolution: "@atlantis-lab/nestjs-logger@npm:0.2.5"
-  dependencies:
-    winston: 3.2.1
-  peerDependencies:
-    "@google-cloud/logging-winston": 4.0.0
-    "@nestjs/common": 6.11.11
-    "@nestjs/core": 6.11.11
-    reflect-metadata: 0.1.13
-    rxjs: 6.6.0
-  checksum: d5ec1e84d0a5880295b8c9ed2c326b006db983886e57fb5884beb1ee34be3cd2592ecdd811741876434ed806535bf7877b89eb936eb50b83be1b81647fa42170
-  languageName: node
-  linkType: hard
-
 "@atlantis-lab/nestjs-map-errors-interceptor@npm:0.1.4":
   version: 0.1.4
   resolution: "@atlantis-lab/nestjs-map-errors-interceptor@npm:0.1.4"
@@ -2926,12 +2911,11 @@ __metadata:
   dependencies:
     "@atls/nestjs-map-errors-interceptor": ^0.1.36
     "@identity/domain": 0.3.1
-    "@identity/persistence": 0.3.1
+    "@identity/kratos-adapter": "workspace:0.0.1"
     "@nestjs/common": 8.4.2
     "@nestjs/core": 8.4.2
     "@nestjs/microservices": 8.4.2
     "@nestjs/testing": 8.4.2
-    "@nestjs/typeorm": 8.0.3
     argon2: 0.25.0
     class-transformer: 0.3.1
     class-validator: 0.11.0
@@ -2953,6 +2937,24 @@ __metadata:
     "@node-ts/logger-core": 0.1.0
     argon2: 0.25.0
     eventstore: 1.15.2
+    uuid: 3.3.3
+  languageName: unknown
+  linkType: soft
+
+"@identity/kratos-adapter@workspace:0.0.1, @identity/kratos-adapter@workspace:identity/adapters/kratos-adapter":
+  version: 0.0.0-use.local
+  resolution: "@identity/kratos-adapter@workspace:identity/adapters/kratos-adapter"
+  dependencies:
+    "@identity/domain": 0.3.1
+    "@nestjs/common": 8.4.2
+    "@nestjs/core": 8.4.2
+    "@nestjs/microservices": 8.4.2
+    "@nestjs/testing": 8.4.2
+    "@nestjs/typeorm": 8.0.3
+    "@ory/kratos-client": 0.8.2-alpha.1
+    class-transformer: 0.3.1
+    class-validator: 0.11.0
+    rxjs: 6.5.3
     uuid: 3.3.3
   languageName: unknown
   linkType: soft
@@ -3037,24 +3039,6 @@ __metadata:
     next: "*"
     react: ^16.13.1
     react-dom: ^16.13.1
-  languageName: unknown
-  linkType: soft
-
-"@identity/persistence@0.3.1, @identity/persistence@workspace:identity/persistence":
-  version: 0.0.0-use.local
-  resolution: "@identity/persistence@workspace:identity/persistence"
-  dependencies:
-    "@atlantis-lab/nestjs-logger": 0.2.5
-    "@identity/domain": 0.3.1
-    "@monstrs/nestjs-bus": 0.1.4
-    "@nestjs/common": 8.4.2
-    "@nestjs/typeorm": 8.0.3
-    "@node-ts/ddd": 0.1.4
-    "@types/node": 12.12.14
-    pg: 8.5.1
-    ts-node: 8.10.2
-    typeorm: 0.3.3
-    typescript: ^4.2.2
   languageName: unknown
   linkType: soft
 
@@ -3289,14 +3273,15 @@ __metadata:
     "@grpc/proto-loader": 0.5.5
     "@identity/application": 0.3.1
     "@identity/domain": 0.3.1
-    "@identity/persistence": 0.3.1
-    "@monstrs/nestjs-bus": 0.1.4
     "@monstrs/server-scripts": 0.1.5
     "@nestjs/common": 8.4.2
     "@nestjs/core": 8.4.2
     "@nestjs/microservices": 8.4.2
-    "@protos/identity": 0.3.1
+    "@protos/common": "workspace:^"
+    "@protos/identity": "workspace:^"
+    "@types/amqplib": ^0
     "@types/node": 12.12.14
+    amqplib: ^0.8.0
     class-validator: 0.11.0
     reflect-metadata: 0.1.13
     rxjs: 6.5.3
@@ -9734,7 +9719,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"async@npm:^2.6.1, async@npm:^2.6.2":
+"async@npm:^2.6.2":
   version: 2.6.3
   resolution: "async@npm:2.6.3"
   dependencies:
@@ -12444,27 +12429,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colornames@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "colornames@npm:1.1.1"
-  checksum: a97df66bde2a0efb592870f790bae2ffcbf2f9e30c0064783a2941be6713f0ac2acfa3bf1baf70bb423d99526f4fc761bf311fac94aa18ed642d77932352f864
-  languageName: node
-  linkType: hard
-
-"colors@npm:1.4.0, colors@npm:^1.1.2":
+"colors@npm:^1.1.2":
   version: 1.4.0
   resolution: "colors@npm:1.4.0"
   checksum: 98aa2c2418ad87dedf25d781be69dc5fc5908e279d9d30c34d8b702e586a0474605b3a189511482b9d5ed0d20c867515d22749537f7bc546256c6014f3ebdcec
-  languageName: node
-  linkType: hard
-
-"colorspace@npm:1.1.x":
-  version: 1.1.4
-  resolution: "colorspace@npm:1.1.4"
-  dependencies:
-    color: ^3.1.3
-    text-hex: 1.0.x
-  checksum: bb3934ef3c417e961e6d03d7ca60ea6e175947029bfadfcdb65109b01881a1c0ecf9c2b0b59abcd0ee4a0d7c1eae93beed01b0e65848936472270a0b341ebce8
   languageName: node
   linkType: hard
 
@@ -13605,17 +13573,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"diagnostics@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "diagnostics@npm:1.1.1"
-  dependencies:
-    colorspace: 1.1.x
-    enabled: 1.0.x
-    kuler: 1.0.x
-  checksum: 6a40de43cf33d9300f26d4fff151e6a1f7d0b6feaf97e31c7ef8651072968a24374c1a150906b293a94702bb3f8683c03ed2cda9fabbfabff61da4b72dcd5a3a
-  languageName: node
-  linkType: hard
-
 "dicer@npm:0.2.5":
   version: 0.2.5
   resolution: "dicer@npm:0.2.5"
@@ -14118,15 +14075,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enabled@npm:1.0.x":
-  version: 1.0.2
-  resolution: "enabled@npm:1.0.2"
-  dependencies:
-    env-variable: 0.0.x
-  checksum: 1384023547d3fe6c3b3e18b02f4f9d10831c2e2ac7610885cce32db47b8a6ee1f5cab2c44133e2e8b44e4732b157a4ca1440b5d834d96adb49aedac9421a1bda
-  languageName: node
-  linkType: hard
-
 "encodeurl@npm:~1.0.2":
   version: 1.0.2
   resolution: "encodeurl@npm:1.0.2"
@@ -14243,13 +14191,6 @@ __metadata:
   version: 2.2.0
   resolution: "env-paths@npm:2.2.0"
   checksum: ba2aea38301aafd69086be1f8cb453b92946e4840cb0de9d1c88a67e6f43a6174dcddb60b218ec36db8720b12de46b0d93c2f97ad9bbec6a267b479ab37debb6
-  languageName: node
-  linkType: hard
-
-"env-variable@npm:0.0.x":
-  version: 0.0.6
-  resolution: "env-variable@npm:0.0.6"
-  checksum: 8c3130111cfc264644611df5deea2599e9c0915413302c501df9cc37c5eb894a32944d8799f947bcf9b1485b8bb56f025219318463fc9956b87fb4cff2c9f56f
   languageName: node
   linkType: hard
 
@@ -15131,13 +15072,6 @@ __metadata:
     setimmediate: ^1.0.5
     ua-parser-js: ^0.7.30
   checksum: 668731b946a765908c9cbe51d5160f973abb78004b3d122587c3e930e3e1ddcc0ce2b17f2a8637dc9d733e149aa580f8d3035a35cc2d3bc78b78f1b19aab90e2
-  languageName: node
-  linkType: hard
-
-"fecha@npm:^4.2.0":
-  version: 4.2.1
-  resolution: "fecha@npm:4.2.1"
-  checksum: 26993474949d94cd2de5eee7dfe283d671d5cd61acdba8819df478cbc86495273363f4a7e98d15ee51563110a38328d268982a6e9048169bce8f15aeba5931f9
   languageName: node
   linkType: hard
 
@@ -19201,15 +19135,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kuler@npm:1.0.x":
-  version: 1.0.1
-  resolution: "kuler@npm:1.0.1"
-  dependencies:
-    colornames: ^1.1.1
-  checksum: c725c179099ca414ed7419e192313ffda23c6b130b644a6426f22b71f88fa42acf94575ef4a5e95f1ce03a40d515780ba1d322a790cc94a8d6e819636ea7fabd
-  languageName: node
-  linkType: hard
-
 "latest-version@npm:^3.0.0":
   version: 3.1.0
   resolution: "latest-version@npm:3.1.0"
@@ -19545,19 +19470,6 @@ __metadata:
   version: 3.10.1
   resolution: "lodash@npm:3.10.1"
   checksum: 53065d3712a2fd90b55690c5af19f9625a5bbb2b7876ff76d782ee1dc22618fd4dff191d44a8e165a17b5b81a851c3e884d3b5b25e314422fbe24bb299542685
-  languageName: node
-  linkType: hard
-
-"logform@npm:^2.1.1, logform@npm:^2.3.2":
-  version: 2.3.2
-  resolution: "logform@npm:2.3.2"
-  dependencies:
-    colors: 1.4.0
-    fecha: ^4.2.0
-    ms: ^2.1.1
-    safe-stable-stringify: ^1.1.0
-    triple-beam: ^1.3.0
-  checksum: e4ccf22a1355c6f03b635d6b7905d5ac2d75fca8e6d5bf33a801793c654764138d584fec03411b13bffecaafa0003a70e6cf4f2f0af62d0e324d62622921405a
   languageName: node
   linkType: hard
 
@@ -21929,13 +21841,6 @@ __metadata:
   dependencies:
     wrappy: 1
   checksum: 8e832de08b1d73b470e01690c211cb4fcefccab1fd1bd19e706d572d74d3e9b7e38a8bfcdabdd364f9f868757d9e8e5812a59817dc473eaf698ff3bfae2219f2
-  languageName: node
-  linkType: hard
-
-"one-time@npm:0.0.4":
-  version: 0.0.4
-  resolution: "one-time@npm:0.0.4"
-  checksum: e9fad490b9940292d97b73679dec7e4edbc4fbc8bddfba3c1e415c11909a3aecd99b35b9e91ad67f889aee97eabefad708624994cbfdb4674c02ef1647e4e167
   languageName: node
   linkType: hard
 
@@ -24920,13 +24825,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"safe-stable-stringify@npm:^1.1.0":
-  version: 1.1.1
-  resolution: "safe-stable-stringify@npm:1.1.1"
-  checksum: e32a30720e8a2e3043b8b96733f015c1aa7a21a5a328074ce917b8afe4d26b4308c186c74fa92131e5f794b1efc63caa32defafceaa2981accaaedbc8b2c861c
-  languageName: node
-  linkType: hard
-
 "safer-buffer@npm:>= 2.1.2 < 3, safer-buffer@npm:>= 2.1.2 < 3.0.0, safer-buffer@npm:^2.0.2, safer-buffer@npm:^2.1.0, safer-buffer@npm:^2.1.2, safer-buffer@npm:~2.1.0":
   version: 2.1.2
   resolution: "safer-buffer@npm:2.1.2"
@@ -25967,13 +25865,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stack-trace@npm:0.0.x":
-  version: 0.0.10
-  resolution: "stack-trace@npm:0.0.10"
-  checksum: 473036ad32f8c00e889613153d6454f9be0536d430eb2358ca51cad6b95cea08a3cc33cc0e34de66b0dad221582b08ed2e61ef8e13f4087ab690f388362d6610
-  languageName: node
-  linkType: hard
-
 "stack-utils@npm:^2.0.3":
   version: 2.0.5
   resolution: "stack-utils@npm:2.0.5"
@@ -26756,13 +26647,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"text-hex@npm:1.0.x":
-  version: 1.0.0
-  resolution: "text-hex@npm:1.0.0"
-  checksum: 1138f68adc97bf4381a302a24e2352f04992b7b1316c5003767e9b0d3367ffd0dc73d65001ea02b07cd0ecc2a9d186de0cf02f3c2d880b8a522d4ccb9342244a
-  languageName: node
-  linkType: hard
-
 "text-mask-addons@npm:^3.8.0":
   version: 3.8.0
   resolution: "text-mask-addons@npm:3.8.0"
@@ -27102,13 +26986,6 @@ __metadata:
   version: 1.0.1
   resolution: "trim-right@npm:1.0.1"
   checksum: 9120af534e006a7424a4f9358710e6e707887b6ccf7ea69e50d6ac6464db1fe22268400def01752f09769025d480395159778153fb98d4a2f6f40d4cf5d4f3b6
-  languageName: node
-  linkType: hard
-
-"triple-beam@npm:^1.2.0, triple-beam@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "triple-beam@npm:1.3.0"
-  checksum: 7d7b77d8625fb252c126c24984a68de462b538a8fcd1de2abd0a26421629cf3527d48e23b3c2264f08f4a6c3bc40a478a722176f4d7b6a1acc154cb70c359f2b
   languageName: node
   linkType: hard
 
@@ -28646,34 +28523,6 @@ __metadata:
   bin:
     window-size: cli.js
   checksum: 409accca0b1373c69897400e3cc6a56a2acc8a6ba9009f0cd8e4adda4ebf308e50425d3bd375c0c08efb803c8f0b09d84d7266faa05422b3fadfe6ee422d0aef
-  languageName: node
-  linkType: hard
-
-"winston-transport@npm:^4.3.0":
-  version: 4.4.2
-  resolution: "winston-transport@npm:4.4.2"
-  dependencies:
-    logform: ^2.3.2
-    readable-stream: ^3.4.0
-    triple-beam: ^1.2.0
-  checksum: 1f1732d12f4e28d7cd0be110482035b3a3647f8ed07d681e9b79b4b2e168aaa34d91a3bbe9c7374d8df2ef9d6fd38f4add70d66798930d4c7cebb555ff8496f9
-  languageName: node
-  linkType: hard
-
-"winston@npm:3.2.1":
-  version: 3.2.1
-  resolution: "winston@npm:3.2.1"
-  dependencies:
-    async: ^2.6.1
-    diagnostics: ^1.1.1
-    is-stream: ^1.1.0
-    logform: ^2.1.1
-    one-time: 0.0.4
-    readable-stream: ^3.1.1
-    stack-trace: 0.0.x
-    triple-beam: ^1.3.0
-    winston-transport: ^4.3.0
-  checksum: 5265d0a1ed53bedc0e7bbcba17c33aefb2b5486cd37586a386eac1ac584380062f7120f298696aba3b9b4b2a1f4ee760128a8631bdf749c3253bb7b1aaeb587d
   languageName: node
   linkType: hard
 

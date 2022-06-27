@@ -1,0 +1,21 @@
+{
+  "name": "@identity/kratos-adapter",
+  "version": "0.0.1",
+  "license": "BSD-3-Clause",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@ory/kratos-client": "0.8.2-alpha.1"
+  },
+  "devDependencies": {
+    "@identity/domain": "0.3.1",
+    "@nestjs/common": "8.4.2",
+    "@nestjs/core": "8.4.2",
+    "@nestjs/microservices": "8.4.2",
+    "@nestjs/testing": "8.4.2",
+    "@nestjs/typeorm": "8.0.3",
+    "class-transformer": "0.3.1",
+    "class-validator": "0.11.0",
+    "rxjs": "6.5.3",
+    "uuid": "3.3.3"
+  }
+}

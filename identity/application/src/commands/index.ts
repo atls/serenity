@@ -1,7 +1,0 @@
-export * from './AuthenticateUserCommand'
-export * from './RegisterUserCommand'
-export * from './VerifyEmailCommand'
-export * from './ResetPasswordCommand'
-export * from './ChangePasswordCommand'
-export * from './CreateProfileCommand'
-export * from './UpdateProfileCommand'
