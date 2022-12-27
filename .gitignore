@@ -37,8 +37,8 @@ node_modules
 # IDE cache directory
 .Trash-*
 .c9
-.idea/workspace.xml
-.idea/vcs.xml
+.idea
+*.iml
 
 # MacOS temporary files
 .DS_Store
