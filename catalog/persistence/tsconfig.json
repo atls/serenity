@@ -1,7 +1,11 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "moduleResolution": "node",
-    "module": "NodeNext"
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "outDir": "dist"
   }
 }

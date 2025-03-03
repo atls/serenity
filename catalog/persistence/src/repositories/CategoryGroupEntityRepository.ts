@@ -1,4 +1,4 @@
-import { Bus }                                  from '@monstrs/nestjs-bus'
+// import { Bus }                                  from '@monstrs/nestjs-bus'
 import { Logger }                               from '@monstrs/nestjs-logger'
 import { Injectable }                           from '@nestjs/common'
 import { WriteRepository }                      from '@node-ts/ddd'
@@ -16,10 +16,11 @@ export class CategoryGroupEntityRepository extends WriteRepository<
 > {
   constructor(
     private readonly connection: Connection,
-    private readonly logger: Logger,
-    private readonly bus: Bus
+    private readonly logger: Logger
   ) {
+    // private readonly bus: Bus
     // @ts-expect-error - no types available
-    super(CategoryGroupEntity, CategoryGroup, connection, bus, logger)
+    // super(CategoryGroupEntity, CategoryGroup, connection, bus, logger)
+    super(CategoryGroupEntity, CategoryGroup, connection, logger)
   }
 }
