@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common'
+import { Module }                         from '@nestjs/common'
 
 import { ApplicationModule }              from '@catalog/application'
 import { PersistenceModule }              from '@catalog/persistence'
@@ -10,13 +10,14 @@ import { CategoryQueriesController }      from './controllers/index.js'
 
 @Module({
   imports: [
-    PersistenceModule, ApplicationModule
+    PersistenceModule,
+    // ApplicationModule,
   ],
   controllers: [
-    CategoryGroupController,
-    CategoryController,
-    CategoryGroupQueriesController,
-    CategoryQueriesController,
+    // CategoryGroupController,
+    // CategoryController,
+    // CategoryGroupQueriesController,
+    // CategoryQueriesController,
   ],
 })
 export class ServiceModule {}
