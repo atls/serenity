@@ -1,6 +1,7 @@
 {
   "name": "serenity",
   "private": true,
+  "license": "BSD-3-Clause",
   "type": "module",
   "workspaces": [
     "catalog/**/*",
@@ -12,6 +13,6 @@
     "eslint": "9.14.0",
     "typescript": "5.5.4"
   },
-  "packageManager": "yarn@4.6.0",
+  "packageManager": "yarn@4.7.0",
   "typecheckSkipLibCheck": true
 }
