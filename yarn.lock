@@ -2695,7 +2695,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"app-root-path@npm:^3.0.0, app-root-path@npm:^3.1.0":
+"app-root-path@npm:3.1.0, app-root-path@npm:^3.0.0, app-root-path@npm:^3.1.0":
   version: 3.1.0
   resolution: "app-root-path@npm:3.1.0"
   checksum: 10c0/4a0fd976de1bffcdb18a5e1f8050091f15d0780e0582bca99aaa9d52de71f0e08e5185355fcffc781180bfb898499e787a2f5ed79b9c448b942b31dc947acaa9
@@ -10481,9 +10481,21 @@ __metadata:
   resolution: "serenity@workspace:."
   dependencies:
     "@atls/code-runtime": "npm:2.1.4"
+    "@nestjs/typeorm": "npm:11.0.0"
     "@types/node": "npm:22.10.1"
+    app-root-path: "npm:3.1.0"
     eslint: "npm:9.14.0"
+    typeorm: "npm:0.3.20"
     typescript: "npm:5.5.4"
+  dependenciesMeta:
+    "@nestjs/typeorm@10.0.2":
+      unplugged: true
+    "@nestjs/typeorm@11.0.0":
+      unplugged: true
+    app-root-path@3.1.0:
+      unplugged: true
+    typeorm@0.3.21:
+      unplugged: true
   languageName: unknown
   linkType: soft
 

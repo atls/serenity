@@ -1,16 +1,16 @@
 // import { BusModule } from "@monstrs/nestjs-bus";
 // import { LoggerModule } from "@monstrs/nestjs-logger";
-import { Global }                        from '@nestjs/common'
-import { Module }                        from '@nestjs/common'
-import { TypeOrmModule }                 from '@nestjs/typeorm'
-
-import { Category }                      from './entities/index.js'
-import { CategoryGroup }                 from './entities/index.js'
-import { CategoryEntityRepository }      from './repositories/index.js'
-import { CategoryGroupEntityRepository } from './repositories/index.js'
-import config                            from './config.js'
-
-const feature = TypeOrmModule.forFeature([CategoryGroup, Category])
+import { Global } from "@nestjs/common";
+import { Module } from "@nestjs/common";
+import { TypeOrmModule } from "@nestjs/typeorm";
+//
+import { Category } from "./entities/index.js";
+import { CategoryGroup } from "./entities/index.js";
+// import { CategoryEntityRepository }      from './repositories/index.js'
+// import { CategoryGroupEntityRepository } from './repositories/index.js'
+// import config                            from './config.js'
+//
+const feature = TypeOrmModule.forFeature([CategoryGroup, Category]);
 
 @Global()
 @Module({
