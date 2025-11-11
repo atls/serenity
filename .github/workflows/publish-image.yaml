@@ -1,0 +1,23 @@
+name: Publish image
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - master
+    paths-ignore:
+      - '.github/**'
+
+jobs:
+  publish:
+    if: github.event.pull_request.merged == true
+    uses: atls/shared/.github/workflows/pack-image.yaml@master
+    permissions: write-all
+    with:
+      registryURL: 'ghcr.io'
+      registryUser: ${{ github.repository_owner }}
+      project: ${{ github.repository_owner }}
+      nodeVersion: '22'
+    secrets:
+      registryKey: ${{ secrets.GITHUB_TOKEN }}
