@@ -1,7 +1,7 @@
-import grpc from '@grpc/grpc-js';
+import * as grpc from '@grpc/grpc-js';
+import * as protoLoader from '@grpc/proto-loader';
 import { ClientOptions } from '@nestjs/microservices';
 import { Transport } from '@nestjs/microservices';
-import { loadSync } from '@grpc/proto-loader';
 import * as path from 'path';
 
 export const PROTO_PATH = path.join(__dirname, 'portfolio.proto');
@@ -43,18 +43,21 @@ export const serverOptions: ClientOptions = {
 };
 
 export const createPortfolioService = () => {
-  const packageDefinition = loadSync(
+  const packageDefinition = protoLoader.loadSync(
     clientOptions.options.protoPath as string,
     clientOptions.options.loader
   );
-  const { portfolio }: any = grpc.loadPackageDefinition(packageDefinition);
-  return new portfolio.PortfolioService(
+  const proto: any = grpc.loadPackageDefinition(packageDefinition);
+  return new proto.portfolio.PortfolioService(
     clientOptions.options.url,
     grpc.credentials.createInsecure()
   );
 };
 
 export const loadProtoPackage = () => {
-  const packageDefinition = loadSync(PROTO_PATH, clientOptions.options.loader);
+  const packageDefinition = protoLoader.loadSync(
+    PROTO_PATH,
+    clientOptions.options.loader
+  );
   return grpc.loadPackageDefinition(packageDefinition);
 };

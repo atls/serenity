@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-import "../common/common.proto";
-
 package search;
 
+import "common.proto";
+
 service SearchService {
-  rpc searchProjects (SearchProjectsRequest) returns (SearchProjectsResponse) {}
-  rpc searchSpecialists (SearchSpecialistsRequest) returns (SearchSpecialistsResponse) {}
+  rpc searchProjects(SearchProjectsRequest) returns (SearchProjectsResponse) {}
+  rpc searchSpecialists(SearchSpecialistsRequest) returns (SearchSpecialistsResponse) {}
 }
 
 message Search {

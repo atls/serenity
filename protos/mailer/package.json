@@ -4,6 +4,8 @@
   "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "dependencies": {
+    "@grpc/grpc-js": "^1.8.0",
+    "@grpc/proto-loader": "^0.7.5",
     "@nestjs/microservices": "8.4.2",
     "@protos/common": "0.3.1"
   },
