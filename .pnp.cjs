@@ -7008,7 +7008,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mailer/transport", "workspace:mailer/transport"],\
             ["@nestjs/common", "virtual:5555dfeafebad57024fa761523d5586005035b492a086da1575bbc01ba47f616de96fe523cc848756887ea8ed55b2b0959223c22333301bb023c916864aeaa39#npm:8.4.2"],\
             ["aws-sdk", "npm:2.583.0"],\
-            ["nodemailer", "npm:6.3.1"]\
+            ["nodemailer", "npm:6.9.9"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -45070,10 +45070,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["nodemailer", [\
-        ["npm:6.3.1", {\
-          "packageLocation": "./.yarn/cache/nodemailer-npm-6.3.1-d61239f30a-16a667cf49.zip/node_modules/nodemailer/",\
+        ["npm:6.9.9", {\
+          "packageLocation": "./.yarn/cache/nodemailer-npm-6.9.9-4b43f9e2d9-9af862b497.zip/node_modules/nodemailer/",\
           "packageDependencies": [\
-            ["nodemailer", "npm:6.3.1"]\
+            ["nodemailer", "npm:6.9.9"]\
           ],\
           "linkType": "HARD"\
         }]\

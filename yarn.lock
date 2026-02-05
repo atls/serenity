@@ -3713,7 +3713,7 @@ __metadata:
   dependencies:
     "@nestjs/common": 8.4.2
     aws-sdk: 2.583.0
-    nodemailer: 6.3.1
+    nodemailer: 6.9.9
   languageName: unknown
   linkType: soft
 
@@ -21454,10 +21454,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemailer@npm:6.3.1":
-  version: 6.3.1
-  resolution: "nodemailer@npm:6.3.1"
-  checksum: 16a667cf4923c58cacba4a00c6b6e437f8f0e04d9fa190b72636fe3e2d91e12266e3c98b9e1856b285e8d15aacdad386bdaabc510623e393deb724223714d7c5
+"nodemailer@npm:6.9.9":
+  version: 6.9.9
+  resolution: "nodemailer@npm:6.9.9"
+  checksum: 9af862b497273796ad6ba7ca9eac23a7d69737554f6dd51cfd3557f60902c56344158192672f1208daf00340a47a9e1805bd809965edc191011b35dd98a74be1
   languageName: node
   linkType: hard
 
