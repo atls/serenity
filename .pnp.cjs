@@ -5125,6 +5125,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@epic-web/invariant", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "./.yarn/cache/@epic-web-invariant-npm-1.0.0-a4ac7c9c5e-28b36a7447.zip/node_modules/@epic-web/invariant/",\
+        "packageDependencies": [\
+          ["@epic-web/invariant", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@esbuild/aix-ppc64", [\
       ["npm:0.27.2", {\
         "packageLocation": "./.yarn/unplugged/@esbuild-aix-ppc64-npm-0.27.2-345b18ab38/node_modules/@esbuild/aix-ppc64/",\
@@ -8401,6 +8410,7 @@ const RAW_RUNTIME_STATE =
           ["@protos/mailer", "virtual:812c3aa6a344cefb7be605bc798e1111b9bd95469b5e09156111a3b6c1184e5865eddb81b51cc92cd4a72ba252461e6d5f200e052fbf1a0aa5974f72c2177133#workspace:protos/mailer"],\
           ["@types/node", "npm:20.19.32"],\
           ["@types/webpack-node-externals", "npm:3.0.4"],\
+          ["argon2", "npm:0.44.0"],\
           ["class-transformer", "npm:0.5.1"],\
           ["class-validator", "npm:0.14.1"],\
           ["ioredis", "npm:5.4.1"],\
@@ -21747,6 +21757,13 @@ const RAW_RUNTIME_STATE =
           ["safe-buffer", "npm:5.2.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:1.0.0", {\
+        "packageLocation": "./.yarn/cache/@phc-format-npm-1.0.0-9663606e18-26c4feccdc.zip/node_modules/@phc/format/",\
+        "packageDependencies": [\
+          ["@phc/format", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@pkgjs/parseargs", [\
@@ -33045,6 +33062,19 @@ const RAW_RUNTIME_STATE =
           ["node-pre-gyp", "npm:0.13.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:0.44.0", {\
+        "packageLocation": "./.yarn/unplugged/argon2-npm-0.44.0-c350d5952d/node_modules/argon2/",\
+        "packageDependencies": [\
+          ["@phc/format", "npm:1.0.0"],\
+          ["@types/node", "npm:20.19.32"],\
+          ["argon2", "npm:0.44.0"],\
+          ["cross-env", "npm:10.1.0"],\
+          ["node-addon-api", "npm:8.5.0"],\
+          ["node-gyp", "npm:8.0.0"],\
+          ["node-gyp-build", "npm:4.8.4"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["argparse", [\
@@ -35936,6 +35966,17 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/create-require-npm-1.1.1-839884ca2e-a9a1503d43.zip/node_modules/create-require/",\
         "packageDependencies": [\
           ["create-require", "npm:1.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["cross-env", [\
+      ["npm:10.1.0", {\
+        "packageLocation": "./.yarn/cache/cross-env-npm-10.1.0-d2d02f62e5-0e5d8bdefb.zip/node_modules/cross-env/",\
+        "packageDependencies": [\
+          ["@epic-web/invariant", "npm:1.0.0"],\
+          ["cross-env", "npm:10.1.0"],\
+          ["cross-spawn", "npm:7.0.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -45440,6 +45481,14 @@ const RAW_RUNTIME_STATE =
           ["node-gyp", "npm:8.0.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:8.5.0", {\
+        "packageLocation": "./.yarn/unplugged/node-addon-api-npm-8.5.0-2920c05027/node_modules/node-addon-api/",\
+        "packageDependencies": [\
+          ["node-addon-api", "npm:8.5.0"],\
+          ["node-gyp", "npm:8.0.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["node-domexception", [\
@@ -45569,6 +45618,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/node-gyp-build-npm-4.3.0-87bdf5216f-673bd8f126.zip/node_modules/node-gyp-build/",\
         "packageDependencies": [\
           ["node-gyp-build", "npm:4.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:4.8.4", {\
+        "packageLocation": "./.yarn/cache/node-gyp-build-npm-4.8.4-106c2a0b4f-6a7d62289d.zip/node_modules/node-gyp-build/",\
+        "packageDependencies": [\
+          ["node-gyp-build", "npm:4.8.4"]\
         ],\
         "linkType": "HARD"\
       }]\

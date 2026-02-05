@@ -1,43 +1,42 @@
-const path = require('path');
-const nodeExternals = require('webpack-node-externals');
+const path = require("path");
+const nodeExternals = require("webpack-node-externals");
 
 module.exports = {
-  target: 'node',
-  mode: 'development',
-  entry: './src/index.ts',
+  target: "node",
+  mode: "development",
+  entry: "./src/index.ts",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js',
-    libraryTarget: 'commonjs2',
+    path: path.resolve(__dirname, "dist"),
+    filename: "index.js",
+    libraryTarget: "commonjs2",
   },
   externals: [
     nodeExternals({
       allowlist: [/@mailer/, /@protos/, /@identity/],
     }),
-    'aws-sdk',
-    '@aws-sdk/client-ses',
-    'sqlite3',
-    'argon2',
-    'node-pre-gyp',
-    'pg-native',
-    'pg-query-stream',
-    'oracledb',
-    'mysql',
-    'mysql2',
-    'mssql',
-    'better-sqlite3',
-    'sql.js',
-    'typeorm-aurora-data-api-driver',
-    'class-transformer',
-    'class-validator',
+    "@aws-sdk/client-ses",
+    "sqlite3",
+    "argon2",
+    "node-pre-gyp",
+    "pg-native",
+    "pg-query-stream",
+    "oracledb",
+    "mysql",
+    "mysql2",
+    "mssql",
+    "better-sqlite3",
+    "sql.js",
+    "typeorm-aurora-data-api-driver",
+    "class-transformer",
+    "class-validator",
   ],
   externalsPresets: {
     node: true,
   },
   resolve: {
-    extensions: ['.ts', '.js', '.json'],
+    extensions: [".ts", ".js", ".json"],
     fallback: {
-      'pg-native': false,
+      "pg-native": false,
     },
   },
   module: {
@@ -45,7 +44,7 @@ module.exports = {
       {
         test: /\.ts$/,
         use: {
-          loader: 'ts-loader',
+          loader: "ts-loader",
           options: {
             transpileOnly: true,
           },
@@ -54,7 +53,7 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        type: 'asset/resource',
+        type: "asset/resource",
       },
     ],
   },
