@@ -6396,7 +6396,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui/theme", "virtual:407796a16718a4fda8dd8ca4622ae409c5d0b34880247fbb102552a3a87ee8fed6fa2df28d452518d1557434fc1ccbb1060145502d5dffacfb5127d20bded249#workspace:ui/theme"],\
             ["body-parser", "npm:1.19.0"],\
             ["connect-redis", "npm:3.4.2"],\
-            ["cookie", "npm:0.4.1"],\
+            ["cookie", "npm:0.7.2"],\
             ["cookie-parser", "npm:1.4.4"],\
             ["events", "npm:3.3.0"],\
             ["express", "npm:4.17.2"],\
@@ -35158,6 +35158,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/cookie-npm-0.4.2-7761894d5f-a00833c998.zip/node_modules/cookie/",\
           "packageDependencies": [\
             ["cookie", "npm:0.4.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.7.2", {\
+          "packageLocation": "./.yarn/cache/cookie-npm-0.7.2-6ea9ee4231-9bf8555e33.zip/node_modules/cookie/",\
+          "packageDependencies": [\
+            ["cookie", "npm:0.7.2"]\
           ],\
           "linkType": "HARD"\
         }]\

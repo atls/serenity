@@ -3238,7 +3238,7 @@ __metadata:
     "@ui/theme": 0.0.5
     body-parser: 1.19.0
     connect-redis: 3.4.2
-    cookie: ^0.4.1
+    cookie: ^0.7.0
     cookie-parser: 1.4.4
     events: ^3.3.0
     express: ^4.17.1
@@ -12756,6 +12756,13 @@ __metadata:
   version: 0.4.2
   resolution: "cookie@npm:0.4.2"
   checksum: a00833c998bedf8e787b4c342defe5fa419abd96b32f4464f718b91022586b8f1bafbddd499288e75c037642493c83083da426c6a9080d309e3bd90fd11baa9b
+  languageName: node
+  linkType: hard
+
+"cookie@npm:^0.7.0":
+  version: 0.7.2
+  resolution: "cookie@npm:0.7.2"
+  checksum: 9bf8555e33530affd571ea37b615ccad9b9a34febbf2c950c86787088eb00a8973690833b0f8ebd6b69b753c62669ea60cec89178c1fb007bf0749abed74f93e
   languageName: node
   linkType: hard
 
