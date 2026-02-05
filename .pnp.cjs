@@ -6409,7 +6409,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nodemon", "npm:1.19.4"],\
             ["original-url", "npm:1.2.3"],\
             ["passport", "npm:0.4.0"],\
-            ["passport-oauth2", "npm:1.5.0"],\
+            ["passport-oauth2", "npm:1.6.1"],\
             ["passport-oauth2-refresh", "npm:1.1.0"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:407796a16718a4fda8dd8ca4622ae409c5d0b34880247fbb102552a3a87ee8fed6fa2df28d452518d1557434fc1ccbb1060145502d5dffacfb5127d20bded249#npm:17.0.2"],\
@@ -46028,10 +46028,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["passport-oauth2", [\
-        ["npm:1.5.0", {\
-          "packageLocation": "./.yarn/cache/passport-oauth2-npm-1.5.0-3119b34b7e-303e723bea.zip/node_modules/passport-oauth2/",\
+        ["npm:1.6.1", {\
+          "packageLocation": "./.yarn/cache/passport-oauth2-npm-1.6.1-2799fe66c7-2a5b01a884.zip/node_modules/passport-oauth2/",\
           "packageDependencies": [\
-            ["passport-oauth2", "npm:1.5.0"],\
+            ["passport-oauth2", "npm:1.6.1"],\
             ["base64url", "npm:3.0.1"],\
             ["oauth", "npm:0.9.15"],\
             ["passport-strategy", "npm:1.0.0"],\

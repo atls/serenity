@@ -3251,7 +3251,7 @@ __metadata:
     nodemon: 1.19.4
     original-url: 1.2.3
     passport: 0.4.0
-    passport-oauth2: 1.5.0
+    passport-oauth2: 1.6.1
     passport-oauth2-refresh: 1.1.0
     react: 16.13.1
     react-dom: 16.13.1
@@ -22329,16 +22329,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"passport-oauth2@npm:1.5.0":
-  version: 1.5.0
-  resolution: "passport-oauth2@npm:1.5.0"
+"passport-oauth2@npm:1.6.1":
+  version: 1.6.1
+  resolution: "passport-oauth2@npm:1.6.1"
   dependencies:
     base64url: 3.x.x
     oauth: 0.9.x
     passport-strategy: 1.x.x
     uid2: 0.0.x
     utils-merge: 1.x.x
-  checksum: 303e723bea49c52c3d969c4fc1734ee3a5b2c63d899978477b889d183db743fb807d31ec924f0b0e74d1ba7abe7ed3c9256977fb0fb91743d66132e2b183734f
+  checksum: 2a5b01a884ebade01770543d3b84fbdbc45c75ca13b320b88ae59e33388bb485a27c323c2d3904058dca57065bf0e2a78c645cbb62600ced2dcdd43094259f0e
   languageName: node
   linkType: hard
 
