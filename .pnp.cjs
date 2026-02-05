@@ -6408,7 +6408,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next-images", "virtual:baf2beebd9150d0f5a8d531ee537d8496da8e4c81081a3e49588af74231ee8b90189240401fe95877b29ce15c5b148af99f78dd8e36dee0a42fa43da9651dacf#npm:1.8.4"],\
             ["nodemon", "npm:1.19.4"],\
             ["original-url", "npm:1.2.3"],\
-            ["passport", "npm:0.4.0"],\
+            ["passport", "npm:0.6.0"],\
             ["passport-oauth2", "npm:1.5.0"],\
             ["passport-oauth2-refresh", "npm:1.1.0"],\
             ["react", "npm:17.0.2"],\
@@ -46017,12 +46017,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["passport", [\
-        ["npm:0.4.0", {\
-          "packageLocation": "./.yarn/cache/passport-npm-0.4.0-5059a0d9cc-c2f406bef5.zip/node_modules/passport/",\
+        ["npm:0.6.0", {\
+          "packageLocation": "./.yarn/cache/passport-npm-0.6.0-0a57682d5b-ef932ad671.zip/node_modules/passport/",\
           "packageDependencies": [\
-            ["passport", "npm:0.4.0"],\
+            ["passport", "npm:0.6.0"],\
             ["passport-strategy", "npm:1.0.0"],\
-            ["pause", "npm:0.0.1"]\
+            ["pause", "npm:0.0.1"],\
+            ["utils-merge", "npm:1.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
