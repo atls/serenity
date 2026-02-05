@@ -7007,7 +7007,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@mailer/transport", "workspace:mailer/transport"],\
             ["@nestjs/common", "virtual:5555dfeafebad57024fa761523d5586005035b492a086da1575bbc01ba47f616de96fe523cc848756887ea8ed55b2b0959223c22333301bb023c916864aeaa39#npm:8.4.2"],\
-            ["aws-sdk", "npm:2.583.0"],\
+            ["aws-sdk", "npm:2.814.0"],\
             ["nodemailer", "npm:6.3.1"]\
           ],\
           "linkType": "SOFT"\
@@ -31867,11 +31867,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:2.583.0", {\
-          "packageLocation": "./.yarn/cache/aws-sdk-npm-2.583.0-340774936f-49702efb23.zip/node_modules/aws-sdk/",\
+        ["npm:2.814.0", {\
+          "packageLocation": "./.yarn/cache/aws-sdk-npm-2.814.0-0789dc10ed-6064f681fb.zip/node_modules/aws-sdk/",\
           "packageDependencies": [\
-            ["aws-sdk", "npm:2.583.0"],\
-            ["buffer", "npm:4.9.1"],\
+            ["aws-sdk", "npm:2.814.0"],\
+            ["buffer", "npm:4.9.2"],\
             ["events", "npm:1.1.1"],\
             ["ieee754", "npm:1.1.13"],\
             ["jmespath", "npm:0.15.0"],\
@@ -33721,16 +33721,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["buffer", [\
-        ["npm:4.9.1", {\
-          "packageLocation": "./.yarn/cache/buffer-npm-4.9.1-60cf99e8c5-7512740cad.zip/node_modules/buffer/",\
-          "packageDependencies": [\
-            ["buffer", "npm:4.9.1"],\
-            ["base64-js", "npm:1.5.1"],\
-            ["ieee754", "npm:1.2.1"],\
-            ["isarray", "npm:1.0.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:4.9.2", {\
           "packageLocation": "./.yarn/cache/buffer-npm-4.9.2-9e40b5e87a-8801bc1ba0.zip/node_modules/buffer/",\
           "packageDependencies": [\

@@ -3712,7 +3712,7 @@ __metadata:
   resolution: "@mailer/transport@workspace:mailer/transport"
   dependencies:
     "@nestjs/common": 8.4.2
-    aws-sdk: 2.583.0
+    aws-sdk: 2.814.0
     nodemailer: 6.3.1
   languageName: unknown
   linkType: soft
@@ -9796,11 +9796,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:2.583.0":
-  version: 2.583.0
-  resolution: "aws-sdk@npm:2.583.0"
+"aws-sdk@npm:2.814.0":
+  version: 2.814.0
+  resolution: "aws-sdk@npm:2.814.0"
   dependencies:
-    buffer: 4.9.1
+    buffer: 4.9.2
     events: 1.1.1
     ieee754: 1.1.13
     jmespath: 0.15.0
@@ -9809,7 +9809,7 @@ __metadata:
     url: 0.10.3
     uuid: 3.3.2
     xml2js: 0.4.19
-  checksum: 49702efb23b460ed7f8e9505474670f93611f69d4c80fc58e4f44948840900b92a922ff67a42b71c4789b907d6743db82e1d10a1f133cd133cf8719e2e1aa6a6
+  checksum: 6064f681fba7a102774f9648c5e349d0454521d120a61c738feebfd5bb44682e3ce126121dd8b479949255898f6dca7ca0b98ff4e99338b2c7e12ea160e48eec
   languageName: node
   linkType: hard
 
@@ -11478,17 +11478,6 @@ __metadata:
   version: 1.0.3
   resolution: "buffer-xor@npm:1.0.3"
   checksum: 10c520df29d62fa6e785e2800e586a20fc4f6dfad84bcdbd12e1e8a83856de1cb75c7ebd7abe6d036bbfab738a6cf18a3ae9c8e5a2e2eb3167ca7399ce65373a
-  languageName: node
-  linkType: hard
-
-"buffer@npm:4.9.1":
-  version: 4.9.1
-  resolution: "buffer@npm:4.9.1"
-  dependencies:
-    base64-js: ^1.0.2
-    ieee754: ^1.1.4
-    isarray: ^1.0.0
-  checksum: 7512740cad3b560698e564126dbd1fad0001989cadbdc566dd801629b87f03bff552dfa5a500916dc8c0260c97ae9370e94739cb28bfa42c771a677a20f26367
   languageName: node
   linkType: hard
 
