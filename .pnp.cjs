@@ -6968,7 +6968,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/common", "virtual:5555dfeafebad57024fa761523d5586005035b492a086da1575bbc01ba47f616de96fe523cc848756887ea8ed55b2b0959223c22333301bb023c916864aeaa39#npm:8.4.2"],\
             ["html-to-text", "npm:5.1.1"],\
             ["isomorphic-fetch", "npm:2.2.1"],\
-            ["qs", "npm:6.9.1"]\
+            ["qs", "npm:6.9.7"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -47293,13 +47293,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/qs-npm-6.7.0-15161a344c-dfd5f6adef.zip/node_modules/qs/",\
           "packageDependencies": [\
             ["qs", "npm:6.7.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:6.9.1", {\
-          "packageLocation": "./.yarn/cache/qs-npm-6.9.1-8d42e91c8c-b8ad80e09b.zip/node_modules/qs/",\
-          "packageDependencies": [\
-            ["qs", "npm:6.9.1"]\
           ],\
           "linkType": "HARD"\
         }],\

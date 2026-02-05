@@ -3677,7 +3677,7 @@ __metadata:
     "@nestjs/common": 8.4.2
     html-to-text: 5.1.1
     isomorphic-fetch: 2.2.1
-    qs: 6.9.1
+    qs: 6.9.7
   languageName: unknown
   linkType: soft
 
@@ -23388,13 +23388,6 @@ __metadata:
   version: 6.7.0
   resolution: "qs@npm:6.7.0"
   checksum: dfd5f6adef50e36e908cfa70a6233871b5afe66fbaca37ecc1da352ba29eb2151a3797991948f158bb37fccde51bd57845cb619a8035287bfc24e4591172c347
-  languageName: node
-  linkType: hard
-
-"qs@npm:6.9.1":
-  version: 6.9.1
-  resolution: "qs@npm:6.9.1"
-  checksum: b8ad80e09bb52232963aadd9276b8d3802723c9ecd31388ff129a7ab5542e7dc67c43a05b2250f973be460d2c734f16d8d908216e5340024349763ee5e19666c
   languageName: node
   linkType: hard
 
