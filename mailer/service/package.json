@@ -4,9 +4,9 @@
   "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "scripts": {
-    "build": "nest build",
-    "dev": "nest start --watch",
-    "start": "node dist/main.js"
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack --config webpack.config.js --watch",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.11.0",
@@ -35,12 +35,12 @@
     "typescript": "^5.7.2"
   },
   "devDependencies": {
-    "@nestjs/cli": "^10.4.9",
     "@types/node": "^20.17.9",
     "@types/webpack-node-externals": "^3",
     "ts-loader": "^9.5.4",
     "ts-node": "^10.9.2",
     "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
     "webpack-node-externals": "^3.0.0"
   }
 }
