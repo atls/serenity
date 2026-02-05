@@ -1,0 +1,138 @@
+version: "3.7"
+
+services:
+  site:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "yarn install && yarn workspace @site/renderer-entrypoint dev"
+    environment:
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+      - NODE_ICU_DATA=/workspace/node_modules/full-icu
+      - PUBLIC_GATEWAY_URL=${PUBLIC_GATEWAY_URL}
+    ports:
+      - 3020:3020
+
+  site-local:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "yarn install && yarn workspace @site/renderer-entrypoint dev"
+    environment:
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+      - NODE_ICU_DATA=/workspace/node_modules/full-icu
+      - PUBLIC_GATEWAY_URL=http://localhost:4000/
+      - DEV_AUTH_TOKEN=${DEV_AUTH_TOKEN}
+      - DEV_AUTH_USER=${DEV_AUTH_USER}
+    depends_on:
+      - public-gateway
+    ports:
+      - 3021:3021
+
+  identity:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "yarn install && yarn workspace @identity/renderer-entrypoint dev"
+    environment:
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+    ports:
+      - 3000:3000
+
+  email:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "yarn install && yarn workspace @email/renderer-entrypoint dev"
+    environment:
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+      - NODE_ICU_DATA=/workspace/node_modules/full-icu
+      - PUBLIC_GATEWAY_URL=${PUBLIC_GATEWAY_URL}
+    ports:
+      - 3010:3000
+
+  public-gateway:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "yarn install && yarn workspace @public-gateway/app dev"
+    depends_on:
+      - catalog-service
+      - collaboration
+      - files-service
+      - portfolio
+      - search-service
+    ports:
+      - 4000:3000
+
+  private-gateway:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "yarn install && yarn workspace @private-gateway/app dev"
+    depends_on:
+      - catalog-service
+    ports:
+      - 3001:3000
+
+  catalog-service:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "yarn install && yarn workspace @catalog/service dev"
+
+  identity-service:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "yarn install && yarn workspace @identity/service dev"
+
+  mailer-service:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "yarn install && yarn workspace @mailer/service dev"
+
+  collaboration:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "yarn install && yarn workspace @collaboration/service dev"
+
+  hits:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "yarn install && yarn workspace @hits/service dev"
+
+  portfolio:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "yarn install && yarn workspace @portfolio/service dev"
+
+  search-service:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "yarn install && yarn workspace @search/service dev"
+
+  files-service:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "yarn install && yarn workspace @files/service dev"

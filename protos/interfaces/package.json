@@ -2,16 +2,19 @@
   "name": "@protos/interfaces",
   "version": "0.1.1",
   "license": "BSD-3-Clause",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "scripts": {
-    "compile": "rxjs-grpc -o src/index.ts ../common/*.proto ../catalog/*.proto ../mailer/*.proto ../identity/*.proto"
+    "generate": "tsx src/generate-proto-loaders.ts",
+    "compile": "yarn generate"
   },
   "dependencies": {
-    "@grpc/grpc-js": "^1.5.3"
+    "@grpc/grpc-js": "^1.5.3",
+    "@grpc/proto-loader": "^0.7.13"
   },
   "devDependencies": {
-    "rxjs": "6.5.3",
-    "rxjs-grpc": "0.2.5"
+    "@types/node": "^18.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
   },
   "peerDependencies": {
     "@nestjs/core": "*"
