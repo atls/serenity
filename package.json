@@ -19,18 +19,13 @@
     "types/**/*",
     "backend/**/*"
   ],
-  "dependencies": {
-    "class-transformer": "^0.5.1",
-    "ioredis": "^5.4.1",
-    "pg": "^8.13.1"
-  },
   "resolutions": {
     "@nestjs/cli": "10.4.9",
-    "@nestjs/core": "10.4.15",
     "@nestjs/common": "10.4.15",
+    "@nestjs/core": "10.4.15",
     "@nestjs/microservices": "10.4.15",
-    "@nestjs/typeorm": "10.0.2",
     "@nestjs/terminus": "10.2.3",
+    "@nestjs/typeorm": "10.0.2",
     "@types/jest": "^29.5.14",
     "@types/node": "^20.17.9",
     "@types/react": "^18.3.18",
@@ -52,8 +47,14 @@
     "typeorm": "0.3.20",
     "typescript": "5.7.2"
   },
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "ioredis": "^5.4.1",
+    "pg": "^8.13.1"
+  },
   "devDependencies": {
     "@atlantis-lab/tsconfig": "^0.1.12",
+    "@atls/code-runtime": "^2.1.16",
     "@atls/code-service": "^0.0.10",
     "@atls/config-jest": "^0.0.2",
     "@jest/core": "^29.7.0",
@@ -73,6 +74,7 @@
       "unplugged": true
     }
   },
+  "packageManager": "yarn@4.12.0",
   "packageExtensions": {
     "@nestjs/microservices@*": {
       "dependencies": {
@@ -137,6 +139,5 @@
         }
       }
     }
-  },
-  "packageManager": "yarn@4.12.0"
+  }
 }
