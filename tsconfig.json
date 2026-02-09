@@ -1,5 +1,5 @@
 {
-  "extends": "@atlantis-lab/tsconfig/tsconfig.base.json",
+  "extends": "./tsconfig.base.json",
   "include": [
     "catalog/**/*",
     "collaboration/**/*",

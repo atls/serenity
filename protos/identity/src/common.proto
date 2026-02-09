@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package common;
+
+message Empty {}
+
+message Pager {
+  int32 take = 1;
+  int32 offset = 2;
+}
+
+message Order {
+  string by = 1;
+  string direction = 2;
+}
+
+message PageInfo {
+  bool hasNext = 1;
+}

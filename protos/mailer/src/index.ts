@@ -1,44 +1,63 @@
-import { ClientOptions }              from '@nestjs/microservices'
-import { Transport }                  from '@nestjs/microservices'
+import * as grpc from "@grpc/grpc-js";
+import * as protoLoader from "@grpc/proto-loader";
+import { ClientOptions } from "@nestjs/microservices";
+import { Transport } from "@nestjs/microservices";
+import * as path from "path";
 
-/* eslint-disable @typescript-eslint/naming-convention */
-/* eslint-disable no-underscore-dangle */
-import path                           from 'path'
-
-import { PROTO_PATH as COMMON_PROTO } from '@protos/common'
-
-import { name }                       from '../package.json'
-
-declare const __non_webpack_require__: any
-
-const protosPath = path.dirname(
-  (typeof __non_webpack_require__ !== 'undefined' ? __non_webpack_require__ : require).resolve(name)
-)
-
-export const PROTO_PATH = path.join(protosPath, '../mailer.proto')
+export const PROTO_PATH = path.join(__dirname, "mailer.proto");
 
 export const clientOptions: ClientOptions = {
   transport: Transport.GRPC,
   options: {
-    package: 'mailer',
-    url: process.env.MAILER_SERVICE_URL || 'mailer-service:50051',
+    package: "mailer",
+    url: process.env.MAILER_SERVICE_URL || "mailer-service:50051",
     protoPath: PROTO_PATH,
     loader: {
       arrays: true,
-      includeDirs: [COMMON_PROTO],
+      keepCase: true,
+      longs: String,
+      enums: String,
+      defaults: true,
+      oneofs: true,
+      includeDirs: [__dirname],
     },
   },
-}
+};
 
 export const serverOptions: ClientOptions = {
   transport: Transport.GRPC,
   options: {
-    package: 'mailer',
-    url: '0.0.0.0:50051',
+    package: "mailer",
+    url: "0.0.0.0:50051",
     protoPath: PROTO_PATH,
     loader: {
       arrays: true,
-      includeDirs: [COMMON_PROTO],
+      keepCase: true,
+      longs: String,
+      enums: String,
+      defaults: true,
+      oneofs: true,
+      includeDirs: [__dirname],
     },
   },
-}
+};
+
+export const createMailerService = () => {
+  const packageDefinition = protoLoader.loadSync(
+    clientOptions.options.protoPath as string,
+    clientOptions.options.loader
+  );
+  const proto: any = grpc.loadPackageDefinition(packageDefinition);
+  return new proto.mailer.MailerService(
+    clientOptions.options.url,
+    grpc.credentials.createInsecure()
+  );
+};
+
+export const loadProtoPackage = () => {
+  const packageDefinition = protoLoader.loadSync(
+    PROTO_PATH,
+    clientOptions.options.loader
+  );
+  return grpc.loadPackageDefinition(packageDefinition);
+};

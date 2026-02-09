@@ -1,20 +1,23 @@
-import { NestFactory }   from '@nestjs/core'
+import { NestFactory } from "@nestjs/core";
 
-import { serverOptions } from '@protos/mailer'
+import { serverOptions } from "@protos/mailer";
 
-import { AppModule }     from './module'
+import { AppModule } from "./module";
 
-declare const module: any
+declare const module: any;
 
 const bootstrap = async () => {
-  const app = await NestFactory.createMicroservice(AppModule, serverOptions as any)
+  const app = await NestFactory.createMicroservice(
+    AppModule,
+    serverOptions as any
+  );
 
-  await app.listenAsync()
+  await app.listen();
 
   if (module.hot) {
-    module.hot.accept()
-    module.hot.dispose(() => app.close())
+    module.hot.accept();
+    module.hot.dispose(() => app.close());
   }
-}
+};
 
-bootstrap()
+bootstrap();

@@ -1,9 +1,8 @@
-import { ConnectionOptions } from 'typeorm'
+import { DataSourceOptions } from 'typeorm'
+import migrations from './migrations'
+import { Sending } from './entities'
 
-import migrations            from './migrations'
-import { Sending }           from './entities'
-
-const config: ConnectionOptions = {
+const config: DataSourceOptions = {
   type: 'postgres',
   uuidExtension: 'pgcrypto',
   host: process.env.DB_HOST || 'db',
@@ -15,9 +14,6 @@ const config: ConnectionOptions = {
   migrationsRun: true,
   synchronize: false,
   logging: false,
-  cli: {
-    migrationsDir: 'src/migrations',
-  },
 }
 
 export default config
