@@ -1,11 +1,12 @@
-version: "3.7"
+version: '3.7'
+
 services:
   site:
     image: node:22-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    command: sh -c "yarn install && yarn workspace @site/renderer-entrypoint dev"
+    command: sh -c "apk add --no-cache git && yarn install && yarn workspace @site/renderer-entrypoint dev"
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
       - NODE_TLS_REJECT_UNAUTHORIZED=0
@@ -19,7 +20,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    command: sh -c "yarn install && yarn workspace @site/renderer-entrypoint dev"
+    command: sh -c "apk add --no-cache git && yarn install && yarn workspace @site/renderer-entrypoint dev"
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
       - NODE_TLS_REJECT_UNAUTHORIZED=0
@@ -37,7 +38,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    command: sh -c "yarn install && yarn workspace @identity/renderer-entrypoint dev"
+    command: sh -c "apk add --no-cache git && yarn install && yarn workspace @identity/renderer-entrypoint dev"
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
       - NODE_TLS_REJECT_UNAUTHORIZED=0
@@ -49,7 +50,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    command: sh -c "yarn install && yarn workspace @email/renderer-entrypoint dev"
+    command: sh -c "apk add --no-cache git && yarn install && yarn workspace @email/renderer-entrypoint dev"
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
       - NODE_TLS_REJECT_UNAUTHORIZED=0
@@ -63,7 +64,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    command: sh -c "yarn install && yarn workspace @public-gateway/app dev"
+    command: sh -c "apk add --no-cache git && yarn install && yarn workspace @public-gateway/app dev"
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
     depends_on:
@@ -80,7 +81,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    command: sh -c "yarn install && yarn workspace @private-gateway/app dev"
+    command: sh -c "apk add --no-cache git && yarn install && yarn workspace @private-gateway/app dev"
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
     depends_on:
@@ -93,7 +94,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    command: sh -c "yarn install && yarn workspace @catalog/service dev"
+    command: sh -c "apk add --no-cache git && yarn install && yarn workspace @catalog/service dev"
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
 
@@ -102,7 +103,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    command: sh -c "yarn install && yarn workspace @identity/service dev"
+    command: sh -c "apk add --no-cache git && yarn install && yarn workspace @identity/service dev"
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
 
@@ -111,7 +112,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    command: sh -c "yarn install && yarn workspace @mailer/service dev"
+    command: sh -c "apk add --no-cache git && yarn install && yarn workspace @mailer/service dev"
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
 
@@ -120,7 +121,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    command: sh -c "yarn install && yarn workspace @collaboration/service dev"
+    command: sh -c "apk add --no-cache git && yarn install && yarn workspace @collaboration/service dev"
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
 
@@ -129,7 +130,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    command: sh -c "yarn install && yarn workspace @hits/service dev"
+    command: sh -c "apk add --no-cache git && yarn install && yarn workspace @hits/service dev"
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
 
@@ -138,7 +139,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    command: sh -c "yarn install && yarn workspace @portfolio/service dev"
+    command: sh -c "apk add --no-cache git && yarn install && yarn workspace @portfolio/service dev"
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
 
@@ -147,7 +148,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    command: sh -c "yarn install && yarn workspace @search/service dev"
+    command: sh -c "apk add --no-cache git && yarn install && yarn workspace @search/service dev"
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
 
@@ -156,6 +157,6 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-    command: sh -c "yarn install && yarn workspace @files/service dev"
+    command: sh -c "apk add --no-cache git && yarn install && yarn workspace @files/service dev"
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
