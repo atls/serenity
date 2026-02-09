@@ -8555,6 +8555,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./mailer/service/",\
         "packageDependencies": [\
           ["@mailer/service", "workspace:mailer/service"],\
+          ["@atlantis-lab/tsconfig", "npm:0.1.12"],\
           ["@grpc/grpc-js", "npm:1.14.3"],\
           ["@grpc/proto-loader", "npm:0.7.15"],\
           ["@identity/domain", "workspace:identity/domain"],\
