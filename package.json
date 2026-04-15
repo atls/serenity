@@ -30,7 +30,7 @@
     "apollo-server-fastify": "3.6.2",
     "class-validator": "0.13.1",
     "eslint-plugin-import": "2.22.0",
-    "graphql": "15",
+    "graphql": "16",
     "pino": "6.13.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -57,7 +57,7 @@
     "apollo-server-core@3.6.2": {
       "unplugged": true
     },
-    "graphql@15.8.0": {
+    "graphql@16": {
       "unplugged": true
     }
   },
