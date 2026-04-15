@@ -11,7 +11,7 @@
     "@protos/search": "0.0.0",
     "@public-gateway/collaboration": "workspace:public-gateway/collaboration",
     "rxjs": "6.5.3",
-    "type-graphql": "0.17.5"
+    "type-graphql": "0.17.6"
   },
   "devDependencies": {
     "@nestjs/core": "8.4.2",

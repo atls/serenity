@@ -13,7 +13,7 @@
     "@public-gateway/files": "0.0.2",
     "dataloader": "2.0.0",
     "rxjs": "6.5.3",
-    "type-graphql": "0.17.5"
+    "type-graphql": "0.17.6"
   },
   "devDependencies": {
     "@nestjs/core": "8.4.2",

@@ -14,7 +14,7 @@
     "@public-gateway/collaboration": "0.0.1",
     "@public-gateway/portfolio": "0.0.0",
     "rxjs": "6.5.3",
-    "type-graphql": "0.17.5"
+    "type-graphql": "0.17.6"
   },
   "devDependencies": {
     "@nestjs/core": "8.4.2",
