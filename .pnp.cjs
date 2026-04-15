@@ -3278,7 +3278,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/typeorm", "virtual:0d9fbb3c2640bccbfa524191f8d4780506cac56415f09dced177b354c50820bb4d556cf42442f6ba9bc1ddf1727860ae4c6c99fab753c4ada32c4cf6fc3627d8#npm:8.0.3"],\
             ["@types/nestjs__common", null],\
             ["@types/nestjs__core", null],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["rxjs", "npm:7.2.0"],\
             ["typeorm", "virtual:1142b949967cbee7647e5cd26d6d5647e20b660c0bc7d0442307ce6214a7f5db57556190b2baa9fa8cefc747c1afa642d759d44bafc322e215eeab3de0d3804b#npm:0.2.37"],\
             ["uuid", "npm:3.4.0"]\
@@ -3303,7 +3303,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/microservices", "virtual:e3bc9cf00542caf5a0b57444e16164324cfdc3b002153ed398bdbf7dd652ae5b10b09a2a40f2e3c1cdaf577a9a363dafdefb54d63150c95b6fc966967c0c65d1#npm:8.4.2"],\
             ["@nestjs/testing", "virtual:e3bc9cf00542caf5a0b57444e16164324cfdc3b002153ed398bdbf7dd652ae5b10b09a2a40f2e3c1cdaf577a9a363dafdefb54d63150c95b6fc966967c0c65d1#npm:8.4.2"],\
             ["@nestjs/typeorm", "virtual:e3bc9cf00542caf5a0b57444e16164324cfdc3b002153ed398bdbf7dd652ae5b10b09a2a40f2e3c1cdaf577a9a363dafdefb54d63150c95b6fc966967c0c65d1#npm:8.0.3"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["rxjs", "npm:7.2.0"],\
             ["typeorm", "virtual:1142b949967cbee7647e5cd26d6d5647e20b660c0bc7d0442307ce6214a7f5db57556190b2baa9fa8cefc747c1afa642d759d44bafc322e215eeab3de0d3804b#npm:0.2.37"],\
             ["uuid", "npm:3.4.0"]\
@@ -3479,7 +3479,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@node-ts/bus-core", "virtual:38e0748160cacd0d747758d9750598c79d4ac1e03602d24ed851973cdfa722702c9fe14791c1d6ef4ca53f875c19229da4df10c6aaa5b48c40d0b01515a48893#npm:0.4.9"],\
             ["@types/nestjs__core", null],\
             ["@types/nextjs__common", null],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["rxjs", "npm:7.2.0"],\
             ["typeorm", "virtual:1142b949967cbee7647e5cd26d6d5647e20b660c0bc7d0442307ce6214a7f5db57556190b2baa9fa8cefc747c1afa642d759d44bafc322e215eeab3de0d3804b#npm:0.2.37"],\
             ["uuid", "npm:3.4.0"]\
@@ -3505,7 +3505,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/testing", "virtual:38e0748160cacd0d747758d9750598c79d4ac1e03602d24ed851973cdfa722702c9fe14791c1d6ef4ca53f875c19229da4df10c6aaa5b48c40d0b01515a48893#npm:8.4.2"],\
             ["@nestjs/typeorm", "virtual:38e0748160cacd0d747758d9750598c79d4ac1e03602d24ed851973cdfa722702c9fe14791c1d6ef4ca53f875c19229da4df10c6aaa5b48c40d0b01515a48893#npm:8.0.3"],\
             ["@node-ts/bus-core", "virtual:38e0748160cacd0d747758d9750598c79d4ac1e03602d24ed851973cdfa722702c9fe14791c1d6ef4ca53f875c19229da4df10c6aaa5b48c40d0b01515a48893#npm:0.4.9"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["rxjs", "npm:7.2.0"],\
             ["typeorm", "virtual:1142b949967cbee7647e5cd26d6d5647e20b660c0bc7d0442307ce6214a7f5db57556190b2baa9fa8cefc747c1afa642d759d44bafc322e215eeab3de0d3804b#npm:0.2.37"],\
             ["uuid", "npm:3.4.0"]\
@@ -4539,7 +4539,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/microservices", "virtual:f9a67ca1ca045e3a9d47f4f7bac18688768f16b8f58ec891090f2db40b1c04ae5431982b316f35793f1058c15332f4ce381fac5a0770d6fbce60af3b3405f01b#npm:8.4.2"],\
             ["@nestjs/testing", "virtual:f9a67ca1ca045e3a9d47f4f7bac18688768f16b8f58ec891090f2db40b1c04ae5431982b316f35793f1058c15332f4ce381fac5a0770d6fbce60af3b3405f01b#npm:8.4.2"],\
             ["@nestjs/typeorm", "virtual:f9a67ca1ca045e3a9d47f4f7bac18688768f16b8f58ec891090f2db40b1c04ae5431982b316f35793f1058c15332f4ce381fac5a0770d6fbce60af3b3405f01b#npm:8.0.3"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["rxjs", "npm:7.2.0"],\
             ["typeorm", "virtual:1142b949967cbee7647e5cd26d6d5647e20b660c0bc7d0442307ce6214a7f5db57556190b2baa9fa8cefc747c1afa642d759d44bafc322e215eeab3de0d3804b#npm:0.2.37"],\
             ["uuid", "npm:3.4.0"]\
@@ -5680,7 +5680,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/testing", "virtual:cdc5a7e7c16957117b31d11ebd82e36a2b52a494e86cd63358a6ea85de9dc183dde6628dcd5a81eb9f6a41f0a507e6fba8012c36a705d6f4671e9bd8c4e1c709#npm:8.4.2"],\
             ["argon2", "npm:0.25.0"],\
             ["class-transformer", "npm:0.3.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["rxjs", "npm:7.2.0"],\
             ["typeorm", "virtual:1142b949967cbee7647e5cd26d6d5647e20b660c0bc7d0442307ce6214a7f5db57556190b2baa9fa8cefc747c1afa642d759d44bafc322e215eeab3de0d3804b#npm:0.2.37"],\
             ["uuid", "npm:3.3.3"]\
@@ -5719,7 +5719,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/typeorm", "virtual:d6a8227cff6ca023b1f6381e14749f294af7a190927816693211721346818f3d6e9c341196847e8a5ea9789f264d539998483c8b234f4df41c0119e9a3decade#npm:8.0.3"],\
             ["@ory/kratos-client", "npm:0.8.2-alpha.1"],\
             ["class-transformer", "npm:0.3.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["rxjs", "npm:7.2.0"],\
             ["uuid", "npm:3.3.3"]\
           ],\
@@ -6442,7 +6442,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/amqplib", "npm:0.8.2"],\
             ["@types/node", "npm:14.14.45"],\
             ["amqplib", "npm:0.8.0"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rxjs", "npm:7.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=bda367"]\
@@ -6992,7 +6992,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@node-ts/bus-core", "virtual:812c3aa6a344cefb7be605bc798e1111b9bd95469b5e09156111a3b6c1184e5865eddb81b51cc92cd4a72ba252461e6d5f200e052fbf1a0aa5974f72c2177133#npm:0.6.3"],\
             ["@protos/mailer", "virtual:812c3aa6a344cefb7be605bc798e1111b9bd95469b5e09156111a3b6c1184e5865eddb81b51cc92cd4a72ba252461e6d5f200e052fbf1a0aa5974f72c2177133#workspace:protos/mailer"],\
             ["@types/node", "npm:14.14.45"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rxjs", "npm:7.2.0"],\
             ["typeorm", "virtual:1142b949967cbee7647e5cd26d6d5647e20b660c0bc7d0442307ce6214a7f5db57556190b2baa9fa8cefc747c1afa642d759d44bafc322e215eeab3de0d3804b#npm:0.2.37"],\
@@ -8517,7 +8517,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["axios", "npm:0.26.1"],\
             ["cache-manager", "npm:3.6.0"],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["iterare", "npm:1.2.1"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rxjs", "npm:7.2.0"],\
@@ -8546,7 +8546,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["axios", "npm:0.26.1"],\
             ["cache-manager", "npm:3.6.0"],\
             ["class-transformer", "npm:0.3.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["iterare", "npm:1.2.1"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rxjs", "npm:7.2.0"],\
@@ -8578,7 +8578,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["axios", "npm:0.24.0"],\
             ["cache-manager", "npm:3.6.0"],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["iterare", "npm:1.2.1"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rxjs", "npm:7.2.0"],\
@@ -9921,7 +9921,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["apollo-server-fastify", "virtual:a87f569519b0ecdc365c7df46132f3b5c0ad865b47df946ac4f4b1c11750891e2db3eb1b6495d54fb2ddc5e0f40ee2008fb4bf2922f3c2cfc46556983a6d15f2#npm:3.6.2"],\
             ["chokidar", "npm:3.5.2"],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["fast-glob", "npm:3.2.7"],\
             ["graphql", "npm:15.8.0"],\
             ["graphql-ws", "virtual:bf2f7606a1749e3993884f9b317eb3d4d0f323483fe30dc6a39202b3cff339487ea34cf60c6d8f1e14834e556bd45e272c6e7b403fc2511552ad647b5ad731dc#npm:5.5.5"],\
@@ -9980,7 +9980,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["apollo-server-fastify", "virtual:a87f569519b0ecdc365c7df46132f3b5c0ad865b47df946ac4f4b1c11750891e2db3eb1b6495d54fb2ddc5e0f40ee2008fb4bf2922f3c2cfc46556983a6d15f2#npm:3.6.2"],\
             ["chokidar", "npm:3.5.2"],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["fast-glob", "npm:3.2.11"],\
             ["graphql", "npm:15.8.0"],\
             ["graphql-tag", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:2.12.6"],\
@@ -10032,7 +10032,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["apollo-server-fastify", "virtual:a87f569519b0ecdc365c7df46132f3b5c0ad865b47df946ac4f4b1c11750891e2db3eb1b6495d54fb2ddc5e0f40ee2008fb4bf2922f3c2cfc46556983a6d15f2#npm:3.6.2"],\
             ["chokidar", "npm:3.5.2"],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["fast-glob", "npm:3.2.11"],\
             ["graphql", "npm:15.8.0"],\
             ["graphql-tag", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:2.12.6"],\
@@ -10084,7 +10084,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["apollo-server-fastify", "virtual:a87f569519b0ecdc365c7df46132f3b5c0ad865b47df946ac4f4b1c11750891e2db3eb1b6495d54fb2ddc5e0f40ee2008fb4bf2922f3c2cfc46556983a6d15f2#npm:3.6.2"],\
             ["chokidar", "npm:3.5.2"],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["fast-glob", "npm:3.2.11"],\
             ["graphql", "npm:15.8.0"],\
             ["graphql-tag", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:2.12.6"],\
@@ -10136,7 +10136,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["apollo-server-fastify", "virtual:a87f569519b0ecdc365c7df46132f3b5c0ad865b47df946ac4f4b1c11750891e2db3eb1b6495d54fb2ddc5e0f40ee2008fb4bf2922f3c2cfc46556983a6d15f2#npm:3.6.2"],\
             ["chokidar", "npm:3.5.2"],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["fast-glob", "npm:3.2.11"],\
             ["graphql", "npm:15.8.0"],\
             ["graphql-tag", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:2.12.6"],\
@@ -10193,7 +10193,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["apollo-server-fastify", "virtual:a87f569519b0ecdc365c7df46132f3b5c0ad865b47df946ac4f4b1c11750891e2db3eb1b6495d54fb2ddc5e0f40ee2008fb4bf2922f3c2cfc46556983a6d15f2#npm:3.6.2"],\
             ["chokidar", "npm:3.5.2"],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["fast-glob", "npm:3.2.7"],\
             ["graphql", "npm:15.8.0"],\
             ["graphql-ws", "virtual:bf2f7606a1749e3993884f9b317eb3d4d0f323483fe30dc6a39202b3cff339487ea34cf60c6d8f1e14834e556bd45e272c6e7b403fc2511552ad647b5ad731dc#npm:5.5.5"],\
@@ -10254,7 +10254,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["apollo-server-fastify", "virtual:a87f569519b0ecdc365c7df46132f3b5c0ad865b47df946ac4f4b1c11750891e2db3eb1b6495d54fb2ddc5e0f40ee2008fb4bf2922f3c2cfc46556983a6d15f2#npm:3.6.2"],\
             ["chokidar", "npm:3.5.2"],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["fast-glob", "npm:3.2.7"],\
             ["graphql", "npm:15.8.0"],\
             ["graphql-ws", "virtual:bf2f7606a1749e3993884f9b317eb3d4d0f323483fe30dc6a39202b3cff339487ea34cf60c6d8f1e14834e556bd45e272c6e7b403fc2511552ad647b5ad731dc#npm:5.5.5"],\
@@ -10318,7 +10318,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["apollo-server-fastify", "virtual:a87f569519b0ecdc365c7df46132f3b5c0ad865b47df946ac4f4b1c11750891e2db3eb1b6495d54fb2ddc5e0f40ee2008fb4bf2922f3c2cfc46556983a6d15f2#npm:3.6.2"],\
             ["chokidar", "npm:3.5.2"],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["fast-glob", "npm:3.2.7"],\
             ["graphql", "npm:15.8.0"],\
             ["graphql-ws", "virtual:bf2f7606a1749e3993884f9b317eb3d4d0f323483fe30dc6a39202b3cff339487ea34cf60c6d8f1e14834e556bd45e272c6e7b403fc2511552ad647b5ad731dc#npm:5.5.5"],\
@@ -10374,7 +10374,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["apollo-server-fastify", "virtual:a87f569519b0ecdc365c7df46132f3b5c0ad865b47df946ac4f4b1c11750891e2db3eb1b6495d54fb2ddc5e0f40ee2008fb4bf2922f3c2cfc46556983a6d15f2#npm:3.6.2"],\
             ["chokidar", "npm:3.5.2"],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["fast-glob", "npm:3.2.11"],\
             ["graphql", "npm:15.8.0"],\
             ["graphql-tag", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:2.12.6"],\
@@ -10426,7 +10426,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["apollo-server-fastify", "virtual:a87f569519b0ecdc365c7df46132f3b5c0ad865b47df946ac4f4b1c11750891e2db3eb1b6495d54fb2ddc5e0f40ee2008fb4bf2922f3c2cfc46556983a6d15f2#npm:3.6.2"],\
             ["chokidar", "npm:3.5.2"],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["fast-glob", "npm:3.2.11"],\
             ["graphql", "npm:15.8.0"],\
             ["graphql-tag", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:2.12.6"],\
@@ -10477,7 +10477,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["apollo-server-fastify", "virtual:a87f569519b0ecdc365c7df46132f3b5c0ad865b47df946ac4f4b1c11750891e2db3eb1b6495d54fb2ddc5e0f40ee2008fb4bf2922f3c2cfc46556983a6d15f2#npm:3.6.2"],\
             ["chokidar", "npm:3.5.2"],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["fast-glob", "npm:3.2.11"],\
             ["graphql", "npm:15.8.0"],\
             ["graphql-tag", "virtual:e960f6a4039725cd748e5ad47f38a8cc75a5c40199197c5a2c75cd4f15e0ed719fa69e70015028b27a0904be1077eb53c04d40ac18d86c27da8285ed5b19a9be#npm:2.12.6"],\
@@ -10531,7 +10531,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/nestjs__common", null],\
             ["@types/reflect-metadata", null],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["reflect-metadata", "npm:0.1.13"]\
           ],\
           "packagePeers": [\
@@ -10556,7 +10556,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/nestjs__common", null],\
             ["@types/reflect-metadata", null],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["reflect-metadata", "npm:0.1.13"]\
           ],\
           "packagePeers": [\
@@ -10581,7 +10581,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/nestjs__common", null],\
             ["@types/reflect-metadata", null],\
             ["class-transformer", "npm:0.5.1"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["reflect-metadata", "npm:0.1.13"]\
           ],\
           "packagePeers": [\
@@ -20551,7 +20551,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@portfolio/domain", "workspace:portfolio/domain"],\
             ["@portfolio/persistence", "virtual:0777c11a0034b1d94fcafd6649c6cbd26cf486c2c4b35b54b82e6eb78aa7f950edd2c1faec7700595346c6b91825d33e46b7a21c938646b2eb7370a992c09045#workspace:portfolio/persistence"],\
             ["@types/nestjs__core", null],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["rxjs", "npm:7.2.0"],\
             ["typeorm", "virtual:1142b949967cbee7647e5cd26d6d5647e20b660c0bc7d0442307ce6214a7f5db57556190b2baa9fa8cefc747c1afa642d759d44bafc322e215eeab3de0d3804b#npm:0.2.37"],\
             ["uuid", "npm:3.4.0"]\
@@ -20574,7 +20574,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/typeorm", "virtual:efa9898c2f5fdde5667f4c0220041ee0d00c2ea7f0491c7eab50dc53eba8a982f559441e7a33d423954cabec78a2c2a36c350f9222a0c3e78913605ebe661b48#npm:8.0.3"],\
             ["@portfolio/domain", "workspace:portfolio/domain"],\
             ["@portfolio/persistence", "virtual:efa9898c2f5fdde5667f4c0220041ee0d00c2ea7f0491c7eab50dc53eba8a982f559441e7a33d423954cabec78a2c2a36c350f9222a0c3e78913605ebe661b48#workspace:portfolio/persistence"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["rxjs", "npm:7.2.0"],\
             ["typeorm", "virtual:1142b949967cbee7647e5cd26d6d5647e20b660c0bc7d0442307ce6214a7f5db57556190b2baa9fa8cefc747c1afa642d759d44bafc322e215eeab3de0d3804b#npm:0.2.37"],\
             ["uuid", "npm:3.4.0"]\
@@ -26223,10 +26223,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/validator", [\
-        ["npm:13.7.1", {\
-          "packageLocation": "./.yarn/cache/@types-validator-npm-13.7.1-8282515ec6-810649a23b.zip/node_modules/@types/validator/",\
+        ["npm:13.15.10", {\
+          "packageLocation": "./.yarn/cache/@types-validator-npm-13.15.10-eacbd3fa04-6a1964a617.zip/node_modules/@types/validator/",\
           "packageDependencies": [\
-            ["@types/validator", "npm:13.7.1"]\
+            ["@types/validator", "npm:13.15.10"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -34484,12 +34484,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["class-validator", [\
-        ["npm:0.13.1", {\
-          "packageLocation": "./.yarn/cache/class-validator-npm-0.13.1-6dc5e76ff9-1d77f86979.zip/node_modules/class-validator/",\
+        ["npm:0.14.0", {\
+          "packageLocation": "./.yarn/cache/class-validator-npm-0.14.0-b600d5fe72-f62e4a0ad2.zip/node_modules/class-validator/",\
           "packageDependencies": [\
-            ["class-validator", "npm:0.13.1"],\
-            ["@types/validator", "npm:13.7.1"],\
-            ["libphonenumber-js", "npm:1.9.46"],\
+            ["class-validator", "npm:0.14.0"],\
+            ["@types/validator", "npm:13.15.10"],\
+            ["libphonenumber-js", "npm:1.12.41"],\
             ["validator", "npm:13.7.0"]\
           ],\
           "linkType": "HARD"\
@@ -42486,10 +42486,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["libphonenumber-js", [\
-        ["npm:1.9.46", {\
-          "packageLocation": "./.yarn/cache/libphonenumber-js-npm-1.9.46-1b49028a51-0ae1f46e0f.zip/node_modules/libphonenumber-js/",\
+        ["npm:1.12.41", {\
+          "packageLocation": "./.yarn/cache/libphonenumber-js-npm-1.12.41-76ecd678b9-a1e4f697de.zip/node_modules/libphonenumber-js/",\
           "packageDependencies": [\
-            ["libphonenumber-js", "npm:1.9.46"]\
+            ["libphonenumber-js", "npm:1.12.41"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -52192,7 +52192,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/graphql", null],\
             ["@types/node", "npm:14.14.45"],\
             ["@types/semver", "npm:7.3.9"],\
-            ["class-validator", "npm:0.13.1"],\
+            ["class-validator", "npm:0.14.0"],\
             ["glob", "npm:7.2.0"],\
             ["graphql", "npm:15.8.0"],\
             ["graphql-query-complexity", "virtual:5672ed8558f430b03bdd6851dbb955c45872d003352453015527b762cfa9b9de6f1f2c8c47b43c431ff87a623cd7dc4342976aecc4a6588a78088b8f701eb348#npm:0.7.2"],\
