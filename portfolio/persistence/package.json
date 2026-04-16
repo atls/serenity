@@ -19,7 +19,7 @@
     "typescript": "3.7.2"
   },
   "devDependencies": {
-    "@nestjs/core": "^8.4.5",
+    "@nestjs/core": "^9.0.5",
     "@types/node": "12.12.14"
   },
   "peerDependencies": {

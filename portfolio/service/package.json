@@ -13,7 +13,7 @@
     "@grpc/proto-loader": "0.5.3",
     "@monstrs/nestjs-bus": "0.1.4",
     "@nestjs/common": "8.4.2",
-    "@nestjs/core": "8.4.2",
+    "@nestjs/core": "9.0.5",
     "@nestjs/microservices": "8.4.2",
     "@portfolio/application": "0.0.0",
     "@portfolio/domain": "0.0.0",

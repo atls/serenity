@@ -12,7 +12,7 @@
     "@hits/commands": "0.0.1",
     "@hits/persistence": "0.0.1",
     "@nestjs/common": "8.4.2",
-    "@nestjs/core": "8.4.2",
+    "@nestjs/core": "9.0.5",
     "@nestjs/platform-express": "8.4.2",
     "apollo-server-express": "2.9.12",
     "connect-redis": "3.4.2",

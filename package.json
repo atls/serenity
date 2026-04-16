@@ -20,7 +20,7 @@
     "backend/**/*"
   ],
   "resolutions": {
-    "@nestjs/core": "8.4.2",
+    "@nestjs/core": "9.0.5",
     "@nestjs/terminus": "7",
     "@types/jest": "^26.0.23",
     "@types/node": "^14.14.41",

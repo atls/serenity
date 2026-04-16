@@ -16,7 +16,7 @@
     "@collaboration/persistence": "workspace:0.0.1",
     "@grpc/proto-loader": "0.5.3",
     "@nestjs/common": "8.4.2",
-    "@nestjs/core": "8.4.2",
+    "@nestjs/core": "9.0.5",
     "@nestjs/microservices": "8.4.2",
     "@protos/collaboration": "0.0.1",
     "@protos/common": "workspace:^",
