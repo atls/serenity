@@ -4,8 +4,8 @@
   "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "scripts": {
-    "build": "yarn service build",
-    "dev": "yarn service dev",
+    "build": "../../.yarn/releases/yarn-remote.mjs service build",
+    "dev": "../../.yarn/releases/yarn-remote.mjs service dev",
     "start": "node dist/index.js"
   },
   "dependencies": {
