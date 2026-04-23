@@ -1,13 +1,14 @@
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }                      from '@nestjs/graphql'
+import { ObjectType }                 from '@nestjs/graphql'
 
 import { AddDiscussionMessageErrors } from './AddDiscussionMessageErrors'
-import { Message } from './Message'
+import { Message }                    from './Message'
 
 @ObjectType()
 export class AddDiscussionMessageResponse {
-  @Field(type => Message, { nullable: true })
+  @Field((type) => Message, { nullable: true })
   result?: Message
 
-  @Field(type => AddDiscussionMessageErrors, { nullable: true })
+  @Field((type) => AddDiscussionMessageErrors, { nullable: true })
   errors?: AddDiscussionMessageErrors
 }

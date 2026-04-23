@@ -1,9 +1,10 @@
-import { Profile } from '@public-gateway/identity'
-import { Portfolio } from '@public-gateway/portfolio'
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }          from '@nestjs/graphql'
+import { ObjectType }     from '@nestjs/graphql'
+import { Profile }        from '@public-gateway/identity'
+import { Portfolio }      from '@public-gateway/portfolio'
 
-import { Interaction } from './Interaction'
-import { Review } from './Review'
+import { Interaction }    from './Interaction'
+import { Review }         from './Review'
 import { Specialisation } from './Specialisation'
 
 @ObjectType()
@@ -29,12 +30,12 @@ export class Specialist {
   @Field({ nullable: true })
   description: string
 
-  @Field(type => Profile)
+  @Field((type) => Profile)
   profile: Profile
 
-  @Field(type => [Portfolio])
+  @Field((type) => [Portfolio])
   portfolio: Portfolio[]
 
-  @Field(type => [Review])
+  @Field((type) => [Review])
   reviews: Review[]
 }

@@ -1,25 +1,26 @@
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }               from '@nestjs/graphql'
+import { ObjectType }          from '@nestjs/graphql'
 
-import { Address } from './Address'
-import { ContactInformation } from './ContactInformation'
+import { Address }             from './Address'
+import { ContactInformation }  from './ContactInformation'
 import { PersonalInformation } from './PersonalInformation'
-import { Photo } from './Photo'
+import { Photo }               from './Photo'
 
 @ObjectType()
 export class Profile {
   @Field()
   type: string
 
-  @Field(type => Photo, { nullable: true })
+  @Field((type) => Photo, { nullable: true })
   photo: Photo
 
-  @Field(type => PersonalInformation)
+  @Field((type) => PersonalInformation)
   personalInformation: PersonalInformation
 
-  @Field(type => ContactInformation, { nullable: true })
+  @Field((type) => ContactInformation, { nullable: true })
   contactInformation: ContactInformation
 
-  @Field(type => Address, { nullable: true })
+  @Field((type) => Address, { nullable: true })
   address: Address
 
   @Field({ nullable: true })

@@ -1,13 +1,14 @@
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }                from '@nestjs/graphql'
+import { ObjectType }           from '@nestjs/graphql'
 
 import { PublishProjectErrors } from './PublishProjectErrors'
 
 @ObjectType()
 export class PublishProjectResponse {
   // @ts-ignore
-  @Field(type => require('./Project').Project, { nullable: true })
+  @Field((type) => require('./Project').Project, { nullable: true })
   result?: any
 
-  @Field(type => PublishProjectErrors, { nullable: true })
+  @Field((type) => PublishProjectErrors, { nullable: true })
   errors?: PublishProjectErrors
 }

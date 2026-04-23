@@ -1,13 +1,14 @@
-import { PageInfo } from '@public-gateway/types'
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }      from '@nestjs/graphql'
+import { ObjectType } from '@nestjs/graphql'
+import { PageInfo }   from '@public-gateway/types'
 
 import { Specialist } from './Specialist'
 
 @ObjectType()
 export class SpecialistsList {
-  @Field(type => [Specialist])
+  @Field((type) => [Specialist])
   rows: Specialist[]
 
-  @Field(type => PageInfo)
+  @Field((type) => PageInfo)
   pageInfo: PageInfo
 }

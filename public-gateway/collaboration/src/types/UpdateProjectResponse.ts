@@ -1,13 +1,14 @@
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }               from '@nestjs/graphql'
+import { ObjectType }          from '@nestjs/graphql'
 
-import { Project } from './Project'
+import { Project }             from './Project'
 import { UpdateProjectErrors } from './UpdateProjectErrors'
 
 @ObjectType()
 export class UpdateProjectResponse {
-  @Field(type => Project, { nullable: true })
+  @Field((type) => Project, { nullable: true })
   result?: Project
 
-  @Field(type => UpdateProjectErrors, { nullable: true })
+  @Field((type) => UpdateProjectErrors, { nullable: true })
   errors?: UpdateProjectErrors
 }
