@@ -3,8 +3,8 @@ services:
     image: traefik:1.7
     command: --api --docker
     ports:
-      - ${TRAEFIK_HTTP_PORT:-80}:80
-      - ${TRAEFIK_HTTPS_PORT:-443}:443
+      - ${TRAEFIK_HTTP_PORT:-18880}:80
+      - ${TRAEFIK_HTTPS_PORT:-18443}:443
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     networks:
@@ -73,12 +73,11 @@ services:
       - traefik
 
   db:
-    image: bitnami/postgresql
-    environment:
-      - POSTGRESQL_PASSWORD=password
-      - POSTGRESQL_DATABASE=db
-    ports:
-      - 5432:5432
+    image: alpine/socat
+    command: tcp-listen:5432,fork,reuseaddr tcp-connect:host.docker.internal:${LOCAL_POSTGRES_PORT:-26482}
+    restart: unless-stopped
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
 
   kratos-migrate:
     depends_on:
@@ -154,6 +153,8 @@ services:
       - PUBLIC_GATEWAY_URL=${PUBLIC_GATEWAY_URL}
     depends_on:
       - oathkeeper
+    profiles:
+      - optional
     networks:
       - default
       - traefik
@@ -231,6 +232,8 @@ services:
       - OAUTH_CLIENT_SECRET=app-client-secret
     depends_on:
       - redis
+    profiles:
+      - optional
 
   email:
     image: node:22.22.2-alpine
@@ -356,6 +359,10 @@ services:
     depends_on:
       - rabbitmq
       - db
+    networks:
+      default:
+        aliases:
+          - collaboration-service
 
   hits:
     image: node:22.22.2-alpine
@@ -372,6 +379,10 @@ services:
     depends_on:
       - rabbitmq
       - db
+    networks:
+      default:
+        aliases:
+          - hits-service
 
   portfolio:
     image: node:22.22.2-alpine
@@ -388,6 +399,10 @@ services:
     depends_on:
       - rabbitmq
       - db
+    networks:
+      default:
+        aliases:
+          - portfolio-service
 
   search-service:
     image: node:22.22.2-alpine
