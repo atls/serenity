@@ -9,7 +9,11 @@ serve:
       enabled: true
       allowed_origins:
         - 'http://localhost:3000'
+        - 'http://127.0.0.1:3000'
+        - 'http://localhost:3002'
+        - 'http://127.0.0.1:3002'
         - 'http://localhost:4434'
+        - 'https://accounts.localhost'
       allowed_methods:
         - POST
         - GET
@@ -29,12 +33,16 @@ serve:
 selfservice:
   default_browser_return_url: http://localhost:3000/auth/settings
   whitelisted_return_urls:
+    - http://localhost:3000/
+    - http://127.0.0.1:3000/
     - http://localhost:3000/auth/settings
     - http://localhost:4434/
 
   methods:
     password:
       enabled: true
+      config:
+        haveibeenpwned_enabled: false
     oidc:
       enabled: true
       config:

@@ -1,8 +1,7 @@
 import { useUser }     from '@atls/react-user'
-
-import React           from 'react'
 import { useCallback } from 'react'
 import { useIntl }     from 'react-intl'
+import React           from 'react'
 
 import { useDrawer }   from '@ui/drawer'
 
@@ -28,17 +27,34 @@ const NavigationFragment = () => {
       : window.location.hostname
   }
 
+  const localAuthBaseUrl =
+    typeof window !== 'undefined' &&
+    (window.location.hostname === 'localhost' ||
+      window.location.hostname === '127.0.0.1' ||
+      window.location.hostname.endsWith('.localhost'))
+      ? `http://${window.location.hostname === '127.0.0.1' ? '127.0.0.1' : 'localhost'}:3002`
+      : null
+
+  const authBaseUrl = localAuthBaseUrl || `https://accounts.${endpoint}`
+
   const onLogin = useCallback(() => {
-    window.location.href = `https://accounts.${endpoint}/signin?continue=${window.location.href}`
-  }, [endpoint])
+    window.location.href = `${authBaseUrl}/signin?continue=${window.location.href}`
+  }, [authBaseUrl])
 
   const onLogout = useCallback(() => {
-    window.location.href = `https://accounts.${endpoint}/signout?continue=${window.location.href}`
-  }, [endpoint])
+    const continueUrl = `${window.location.origin}/`
+
+    window.location.href = `${authBaseUrl}/signout?continue=${continueUrl}`
+  }, [authBaseUrl])
 
   const onOpenSettings = useCallback(() => {
+    if (localAuthBaseUrl) {
+      window.location.href = `${localAuthBaseUrl}/profile/settings`
+      return
+    }
+
     window.location.href = `https://cabinet.${endpoint}/`
-  }, [endpoint])
+  }, [endpoint, localAuthBaseUrl])
 
   const onOpenPortfolio = useCallback(() => {
     window.location.href = `https://cabinet.${endpoint}/portfolio`
