@@ -1,12 +1,10 @@
-version: '3.7'
-
 services:
   traefik:
-    image: atlantislab/traefik:serenity
+    image: traefik:1.7
     command: --api --docker
     ports:
-      - 80:80
-      - 443:443
+      - ${TRAEFIK_HTTP_PORT:-80}:80
+      - ${TRAEFIK_HTTPS_PORT:-443}:443
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     networks:
@@ -15,10 +13,11 @@ services:
         ipv4_address: 172.16.101.99
 
   yarn:
-    image: node:16
+    image: node:22.22.2
     working_dir: /workspace
     volumes:
       - ./:/workspace
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache
     entrypoint: yarn
 
   elastic:
@@ -27,6 +26,7 @@ services:
       - xpack.security.transport.ssl.enabled=false
       - xpack.security.enabled=false
       - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms256m -Xmx256m
     ports:
       - 9200:9200
       - 9300:9300
@@ -85,7 +85,7 @@ services:
       - db
     image: oryd/kratos:v0.8.2-alpha.1
     environment:
-      - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
+      - DSN=${ORY_DSN:-postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4}
     volumes:
       - type: bind
         source: ./config/ory/kratos
@@ -104,7 +104,7 @@ services:
       - '4434:4434'
     restart: unless-stopped
     environment:
-      - DSN=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
+      - DSN=${ORY_DSN:-postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4}
       - LOG_LEVEL=trace
     command: serve -c /config/kratos/kratos.yml --dev --watch-courier
     volumes:
@@ -124,7 +124,7 @@ services:
     volumes:
       - ./config/ory:/config
     environment:
-      - DATABASE_URL=postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4
+      - DATABASE_URL=${ORY_DSN:-postgres://postgres:password@db:5432/db?sslmode=disable&max_conns=20&max_idle_conns=4}
     restart: unless-stopped
     labels:
       - 'traefik.site.frontend.rule=Host:serenity.local.atls.tech'
@@ -134,7 +134,6 @@ services:
       - 'traefik.private_gateway.frontend.rule=Host:private-gateway.serenity.local.atls.tech'
       - 'traefik.port=4455'
     depends_on:
-      - cookie-store
       - traefik
       - db
     networks:
@@ -142,11 +141,12 @@ services:
       - traefik
 
   site:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
     entrypoint: yarn workspace @site/renderer-entrypoint dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
@@ -161,11 +161,12 @@ services:
       - 'public-gateway.local.serenity.atls.tech:172.16.101.99'
 
   site-local:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
     entrypoint: yarn workspace @site/renderer-entrypoint dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
@@ -182,17 +183,20 @@ services:
       - 3000:3000
 
   identity:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
+      - modules:/workspace/node_modules
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
     entrypoint: yarn workspace @identity/renderer-entrypoint dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - KRATOS_PUBLIC_URL=http://kratos:4433/
-      - KRATOS_BROWSER_URL=https://kratos.serenity.local.atls.tech/
+      - KRATOS_BROWSER_URL=${KRATOS_BROWSER_URL:-http://localhost:4433/}
       - KRATOS_ADMIN_URL=http://kratos:4434/
-      - BASE_URL=https://accounts.serenity.local.atls.tech
+      - BASE_URL=${ACCOUNTS_BASE_URL:-http://localhost:3002}
+      - SESSION_COOKIE_DOMAIN=${SESSION_COOKIE_DOMAIN:-localhost}
     labels:
       - 'traefik.frontend.rule=Host:accounts.serenity.local.atls.tech'
       - 'traefik.protocol=http'
@@ -207,15 +211,16 @@ services:
     extra_hosts:
       - 'sso.serenity.local.atls.tech:172.16.101.99'
     ports:
-      - 3000:3000
+      - 3002:3000
 
   cookie-store:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn cookie-store:dev
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+    entrypoint: yarn workspace @identity/renderer-entrypoint dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - OAUTH_AUTHORIZATION_URL=https://sso.serenity.local.atls.tech/oauth2/auth
@@ -228,11 +233,12 @@ services:
       - redis
 
   email:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
     entrypoint: yarn workspace @email/renderer-entrypoint dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
@@ -251,10 +257,11 @@ services:
       - traefik
 
   public-gateway:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
     entrypoint: yarn workspace @public-gateway/app dev
     depends_on:
       - oathkeeper
@@ -267,11 +274,12 @@ services:
       - 4000:3000
 
   private-gateway:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
     entrypoint: yarn workspace @private-gateway/app dev
     ports:
       - 3001:3000
@@ -279,37 +287,54 @@ services:
       - catalog-service
 
   catalog-service:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
     entrypoint: yarn workspace @catalog/service dev
+    environment:
+      - DB_HOST=${DB_HOST:-db}
+      - DB_NAME=${DB_NAME:-db}
+      - DB_USERNAME=${DB_USERNAME:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-password}
     depends_on:
       - rabbitmq
       - redis
       - db
 
   identity-service:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
     entrypoint: yarn workspace @identity/service dev
     environment:
       - KRATOS_PUBLIC_URL=http://kratos:4433/
+      - DB_HOST=${DB_HOST:-db}
+      - DB_NAME=${DB_NAME:-db}
+      - DB_USERNAME=${DB_USERNAME:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-password}
     depends_on:
       - rabbitmq
       - db
 
   mailer-service:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-    entrypoint: yarn mailer:dev
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+    entrypoint: yarn workspace @mailer/service dev
+    environment:
+      - DB_HOST=${DB_HOST:-db}
+      - DB_NAME=${DB_NAME:-db}
+      - DB_USERNAME=${DB_USERNAME:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-password}
     depends_on:
       - rabbitmq
       - mailhog
@@ -317,49 +342,65 @@ services:
       - db
 
   collaboration:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
     entrypoint: yarn workspace @collaboration/service dev
     environment:
-      - DB_HOST=db
+      - DB_HOST=${DB_HOST:-db}
+      - DB_NAME=${DB_NAME:-db}
+      - DB_USERNAME=${DB_USERNAME:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-password}
     depends_on:
       - rabbitmq
       - db
 
   hits:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
     entrypoint: yarn workspace @hits/service dev
     environment:
-      - DB_HOST=db
+      - DB_HOST=${DB_HOST:-db}
+      - DB_NAME=${DB_NAME:-db}
+      - DB_USERNAME=${DB_USERNAME:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-password}
     depends_on:
       - rabbitmq
       - db
 
   portfolio:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
     entrypoint: yarn workspace @portfolio/service dev
     environment:
-      - DB_HOST=db
+      - DB_HOST=${DB_HOST:-db}
+      - DB_NAME=${DB_NAME:-db}
+      - DB_USERNAME=${DB_USERNAME:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-password}
     depends_on:
       - rabbitmq
       - db
 
   search-service:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
     entrypoint: yarn workspace @search/service dev
     environment:
-      - DB_HOST=db
+      - DB_HOST=${DB_HOST:-db}
+      - DB_NAME=${DB_NAME:-db}
+      - DB_USERNAME=${DB_USERNAME:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-password}
       - ELASTICSEARCH_HOST=http://elastic:9200
     depends_on:
       - rabbitmq
@@ -367,13 +408,18 @@ services:
       - elastic
 
   files-service:
-    image: node:16-alpine
+    image: node:22.22.2-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
+      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
     entrypoint: yarn workspace @files/service dev
     environment:
+      - DB_HOST=${DB_HOST:-db}
+      - DB_NAME=${DB_NAME:-db}
+      - DB_USERNAME=${DB_USERNAME:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-password}
       - GOOGLE_APPLICATION_CREDENTIALS=/workspace/credentials.json
       - GCS_BUCKET=${GCS_BUCKET}
       - FILES_REGION=eu-central-1

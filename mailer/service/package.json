@@ -4,23 +4,17 @@
   "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "scripts": {
-    "build": "server-scripts build",
-    "dev": "server-scripts start",
+    "build": "yarn service build",
+    "dev": "yarn service dev",
     "start": "node dist/index.js"
   },
   "dependencies": {
     "@grpc/proto-loader": "0.5.5",
-    "@identity/domain": "0.3.1",
-    "@mailer/api": "0.1.1",
-    "@mailer/db": "0.1.1",
-    "@mailer/renderer": "0.1.1",
-    "@mailer/transport": "0.1.1",
     "@monstrs/nestjs-bus": "0.1.4",
     "@nestjs/common": "8.4.2",
     "@nestjs/core": "8.4.2",
     "@nestjs/typeorm": "8.0.3",
     "@node-ts/bus-core": "0.6.3",
-    "@protos/mailer": "0.1.1",
     "class-validator": "0.11.0",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3",
@@ -28,7 +22,13 @@
     "typescript": "^4.2.2"
   },
   "devDependencies": {
+    "@identity/domain": "workspace:^",
+    "@mailer/api": "workspace:^",
+    "@mailer/db": "workspace:^",
+    "@mailer/renderer": "workspace:^",
+    "@mailer/transport": "workspace:^",
     "@monstrs/server-scripts": "0.1.5",
+    "@protos/mailer": "workspace:^",
     "@types/node": "12.12.14"
   }
 }

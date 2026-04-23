@@ -1,10 +1,10 @@
-FROM node:14-alpine as builder
+FROM node:22.22.2-alpine as builder
 
 ADD . /app
 RUN cd /app && yarn install --silent --no-progress
 RUN cd /app && yarn workspace @private-gateway/app build
 
-FROM node:14-alpine
+FROM node:22.22.2-alpine
 
 COPY --from=builder /app/backend/private-gateway/app/dist /app/dist
 COPY --from=builder /app/backend/private-gateway/app/package.json /app
