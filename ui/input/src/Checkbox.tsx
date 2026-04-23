@@ -1,6 +1,6 @@
-import styled from '@emotion/styled'
-
 import React  from 'react'
+
+import styled from '@emotion/styled'
 
 const Container = styled.label(({ theme }: any) => ({
   display: 'flex',

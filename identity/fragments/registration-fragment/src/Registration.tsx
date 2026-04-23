@@ -1,9 +1,8 @@
 import { FlowNode }         from '@atls/next-identity-integration'
 import { FlowSubmit }       from '@atls/next-identity-integration'
 import { FlowNodeMessages } from '@atls/next-identity-integration'
-
-import React                from 'react'
 import { useState }         from 'react'
+import React                from 'react'
 
 import { FieldMessages }    from '@identity/messages-fragment'
 import { Button }           from '@ui/button'

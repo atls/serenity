@@ -1,7 +1,7 @@
-import { useTheme }  from '@emotion/react'
-
 /* eslint-disable */
 import React         from 'react'
+
+import { useTheme }  from '@emotion/react'
 
 import { IconProps } from '../icons.interfaces'
 
@@ -12,7 +12,7 @@ export const StarIcon = (props: IconProps) => {
       width='1em'
       height='1em'
       viewBox='0 0 16 15'
-      fill={theme.colors[props.color] || props.color || '#D8D8D8'}
+      fill={theme?.colors?.[props.color] || props.color || '#D8D8D8'}
       xmlns='http://www.w3.org/2000/svg'
       {...props}
     >

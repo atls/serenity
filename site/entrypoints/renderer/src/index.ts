@@ -1,5 +1,4 @@
 import { oathkeeperAuth } from '@monstrs/oathkeeper-auth'
-
 import express            from 'express'
 import next               from 'next'
 import path               from 'path'

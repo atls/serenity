@@ -1,5 +1,4 @@
 import * as grpc      from '@grpc/grpc-js'
-
 import { Observable } from 'rxjs'
 
 /** Namespace common. */

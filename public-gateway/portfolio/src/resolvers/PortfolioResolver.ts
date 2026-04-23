@@ -1,11 +1,10 @@
-import { Loader }       from '@atls/nestjs-dataloader'
 import { Injectable }   from '@nestjs/common'
+import DataLoader       from 'dataloader'
+
+import { Loader }       from '@atls/nestjs-dataloader'
 import { ResolveField } from '@nestjs/graphql'
 import { Resolver }     from '@nestjs/graphql'
 import { Root }         from '@nestjs/graphql'
-
-import DataLoader       from 'dataloader'
-
 import { File }         from '@public-gateway/files'
 import { portfolio }    from '@protos/interfaces'
 

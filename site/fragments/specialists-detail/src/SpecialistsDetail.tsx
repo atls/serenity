@@ -1,6 +1,5 @@
 import React            from 'react'
 
-import Reviews          from '@fragments/reviews'
 import { Avatar }       from '@ui/avatar'
 import { Button }       from '@ui/button'
 import { Carousel }     from '@ui/carousel'
@@ -19,6 +18,7 @@ import { Row }          from '@ui/layout'
 import { Rating }       from '@ui/rating'
 import { ReadMore }     from '@ui/read-more'
 import { Text }         from '@ui/text'
+import Reviews          from '@fragments/reviews'
 
 import messages         from './messages'
 

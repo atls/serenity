@@ -1,7 +1,5 @@
-import styled                   from '@emotion/styled'
-
-import React                    from 'react'
 import { ifProp }               from 'styled-tools'
+import React                    from 'react'
 
 import { Avatar }               from '@ui/avatar'
 import { CloseIcon }            from '@ui/icons'
@@ -11,6 +9,7 @@ import { Column }               from '@ui/layout'
 import { Layout }               from '@ui/layout'
 import { Row }                  from '@ui/layout'
 import { Text }                 from '@ui/text'
+import styled                   from '@emotion/styled'
 
 import { InnerChat }            from './InnerChat'
 

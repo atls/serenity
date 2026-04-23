@@ -1,14 +1,13 @@
 import { LoginFlow }            from '@atls/next-identity-integration'
-
 import React                    from 'react'
 
-import SignIn                   from '@identity/login-fragment'
 import { ForwardArrowLeftIcon } from '@ui/icons'
 import { LogoIcon }             from '@ui/icons'
 import { Box }                  from '@ui/layout'
 import { Column }               from '@ui/layout'
 import { Layout }               from '@ui/layout'
 import { Row }                  from '@ui/layout'
+import SignIn                   from '@identity/login-fragment'
 
 export const LoginPage = ({ onBack }) => (
   <LoginFlow>

@@ -1,9 +1,8 @@
-import messages      from '@fragments/welding-worksheet/src/messages'
-
 import React         from 'react'
 
 import { Column }    from '@ui/layout'
 import { Layout }    from '@ui/layout'
+import messages      from '@fragments/welding-worksheet/src/messages'
 
 import { CheckItem } from './CheckItem'
 

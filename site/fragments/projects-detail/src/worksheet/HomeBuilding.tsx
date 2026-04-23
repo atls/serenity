@@ -1,11 +1,10 @@
-import messages      from '@fragments/home-building-worksheet/src/messages'
-
 import React         from 'react'
 
 import { Column }    from '@ui/layout'
 import { Layout }    from '@ui/layout'
 import { Row }       from '@ui/layout'
 import { Text }      from '@ui/text'
+import messages      from '@fragments/home-building-worksheet/src/messages'
 
 import { CheckItem } from './CheckItem'
 

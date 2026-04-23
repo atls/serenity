@@ -1,7 +1,6 @@
 import { useUser }                              from '@atls/react-user'
-
-import React                                    from 'react'
 import { useRouter }                            from 'next/router'
+import React                                    from 'react'
 
 import { ProjectsDetailPage as ProjectsDetail } from './ProjectsDetailPage'
 import { Seo }                                  from './Seo'

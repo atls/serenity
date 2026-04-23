@@ -1,6 +1,6 @@
-import styled     from '@emotion/styled'
-
 import { layout } from 'styled-system'
+
+import styled     from '@emotion/styled'
 
 interface AvatarProps {
   color?: string

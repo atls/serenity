@@ -1,11 +1,11 @@
-import { useMutation } from '@apollo/client'
-
-import gql             from 'graphql-tag'
 /* eslint-disable no-else-return */
 import { useCallback } from 'react'
 import { useEffect }   from 'react'
 import { useReducer }  from 'react'
 import { useState }    from 'react'
+import gql             from 'graphql-tag'
+
+import { useMutation } from '@apollo/client'
 
 const messageMutation = gql`
   mutation AddProjectReply($input: AddProjectReplyInput!) {

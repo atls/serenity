@@ -10,7 +10,10 @@ export class EmailVerificationRequested extends Event {
 
   $version = 0
 
-  constructor(readonly userId: Uuid, readonly email: Email) {
+  constructor(
+    readonly userId: Uuid,
+    readonly email: Email
+  ) {
     super()
   }
 }

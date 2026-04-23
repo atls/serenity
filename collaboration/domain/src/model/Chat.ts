@@ -1,6 +1,6 @@
-import { AggregateRoot } from '@node-ts/ddd'
-
 import uuid              from 'uuid/v4'
+
+import { AggregateRoot } from '@node-ts/ddd'
 
 import { ChatCreated }   from '../events'
 

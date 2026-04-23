@@ -3,14 +3,13 @@
  */
 
 import { MockedProvider } from '@apollo/react-testing'
-import { render }         from '@testing-library/react'
-
 import React              from 'react'
 
 import { ThemeProvider }  from '@ui/theme'
+import { render }         from '@testing-library/react'
 
-import Catalog            from '..'
 import { query }          from '../useData'
+import Catalog            from '..'
 
 const mocks = [
   {

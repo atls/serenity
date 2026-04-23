@@ -1,5 +1,5 @@
-import React           from 'react'
 import { withRouter }  from 'next/router'
+import React           from 'react'
 
 import { Link }        from './Link'
 import { NavLink }     from './NavLink'

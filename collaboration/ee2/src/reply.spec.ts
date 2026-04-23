@@ -1,16 +1,15 @@
 import 'reflect-metadata'
 
+import { Test }             from '@nestjs/testing'
+import { firstValueFrom }   from 'rxjs'
+import uuid                 from 'uuid/v4'
+
 import { ServiceModule }    from '@collaboration/service/src/module'
 import { Logger }           from '@monstrs/nestjs-logger'
 import { ClientsModule }    from '@nestjs/microservices'
 import { NestMicroservice } from '@nestjs/microservices'
-import { Test }             from '@nestjs/testing'
 import { BUS_SYMBOLS }      from '@node-ts/bus-core'
 import { MemoryQueue }      from '@node-ts/bus-core/dist/transport'
-
-import uuid                 from 'uuid/v4'
-import { firstValueFrom }   from 'rxjs'
-
 import { clientOptions }    from '@protos/collaboration'
 import { serverOptions }    from '@protos/collaboration'
 import { collaboration }    from '@protos/interfaces'

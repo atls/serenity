@@ -1,10 +1,9 @@
-import { Bus }                          from '@monstrs/nestjs-bus'
-import { Logger }                       from '@monstrs/nestjs-logger'
 import { Injectable }                   from '@nestjs/common'
-import { WriteRepository }              from '@node-ts/ddd'
-
 import { Connection }                   from 'typeorm'
 
+import { Bus }                          from '@monstrs/nestjs-bus'
+import { Logger }                       from '@monstrs/nestjs-logger'
+import { WriteRepository }              from '@node-ts/ddd'
 import { Portfolio as PortfolioEntity } from '@portfolio/domain'
 
 import { Portfolio }                    from '../entities'

@@ -1,6 +1,6 @@
-import { useQuery } from '@apollo/client'
-
 import gql          from 'graphql-tag'
+
+import { useQuery } from '@apollo/client'
 
 export const query = gql`
   query SearchSpecialists($filters: SearchSpecialistsFilter, $query: String!) {

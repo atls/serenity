@@ -1,7 +1,7 @@
-import React                              from 'react'
 import { useRouter }                      from 'next/router'
 import { useState }                       from 'react'
 import { useIntl }                        from 'react-intl'
+import React                              from 'react'
 
 import { Seo }                            from './Seo'
 import { SpecialistsPage as Specialists } from './SpecialistsPage'

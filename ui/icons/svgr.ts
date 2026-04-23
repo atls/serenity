@@ -1,15 +1,13 @@
 import * as prettierPlugin from '@atls/prettier-plugin'
-
 import prettierConfig      from '@atls/config-prettier'
 import svgr                from '@svgr/core'
-
+import { format }          from 'prettier/standalone'
 import camelcase           from 'camelcase'
 import fs                  from 'fs-extra-promise'
 import glob                from 'glob-promise'
 import path                from 'path'
 import parserBabel         from 'prettier/parser-babel'
 import parserTypescript    from 'prettier/parser-typescript'
-import { format }          from 'prettier/standalone'
 
 import { replacements }    from './replacements'
 

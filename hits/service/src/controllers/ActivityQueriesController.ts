@@ -1,7 +1,7 @@
 import { Controller }      from '@nestjs/common'
-import { GrpcMethod }      from '@nestjs/microservices'
 
 import { ActivityService } from '@hits/queries'
+import { GrpcMethod }      from '@nestjs/microservices'
 
 @Controller()
 export class ActivityQueriesController {

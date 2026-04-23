@@ -1,6 +1,6 @@
-import React        from 'react'
 import { useState } from 'react'
 import { useIntl }  from 'react-intl'
+import React        from 'react'
 
 import { Projects } from './Projects'
 import { useData }  from './useData'

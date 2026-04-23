@@ -1,13 +1,12 @@
 import { Injectable }                                  from '@nestjs/common'
 import { OnModuleInit }                                from '@nestjs/common'
+import { firstValueFrom }                              from 'rxjs'
+
 import { Args }                                        from '@nestjs/graphql'
 import { ResolveField }                                from '@nestjs/graphql'
 import { Resolver }                                    from '@nestjs/graphql'
 import { Client }                                      from '@nestjs/microservices'
 import { ClientGrpc }                                  from '@nestjs/microservices'
-
-import { firstValueFrom }                              from 'rxjs'
-
 import { clientOptions as collaborationClientOptions } from '@protos/collaboration'
 import { collaboration }                               from '@protos/interfaces'
 import { search }                                      from '@protos/interfaces'

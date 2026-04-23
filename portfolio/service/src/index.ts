@@ -1,5 +1,4 @@
 import { NestFactory }   from '@nestjs/core'
-
 import { serverOptions } from '@protos/portfolio'
 
 import { ServiceModule } from './module'

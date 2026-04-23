@@ -1,5 +1,3 @@
-import styled        from '@emotion/styled'
-
 import { border }    from 'styled-system'
 import { boxShadow } from 'styled-system'
 import { color }     from 'styled-system'
@@ -8,6 +6,8 @@ import { layout }    from 'styled-system'
 import { position }  from 'styled-system'
 import { space }     from 'styled-system'
 import { system }    from 'styled-system'
+
+import styled        from '@emotion/styled'
 
 export const Box = styled.div(
   system({

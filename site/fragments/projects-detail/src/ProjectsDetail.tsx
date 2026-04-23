@@ -1,12 +1,12 @@
 import React         from 'react'
 
-import ProjectsShort from '@fragments/project-short'
 import { Carousel }  from '@ui/carousel'
 import { Divider }   from '@ui/divider'
 import { Image }     from '@ui/image'
 import { Column }    from '@ui/layout'
 import { Layout }    from '@ui/layout'
 import { Text }      from '@ui/text'
+import ProjectsShort from '@fragments/project-short'
 
 import Worksheet     from './worksheet'
 import messages      from './messages'
