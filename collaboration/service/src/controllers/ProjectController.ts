@@ -3,7 +3,6 @@ import { Controller }                     from '@nestjs/common'
 import { UseInterceptors }                from '@nestjs/common'
 import { UsePipes }                       from '@nestjs/common'
 import { ValidationPipe }                 from '@nestjs/common'
-import { GrpcMethod }                     from '@nestjs/microservices'
 
 import { AddProjectReplyCommand }         from '@collaboration/application'
 import { ChooseSpecialistCommand }        from '@collaboration/application'
@@ -12,6 +11,7 @@ import { ProjectService }                 from '@collaboration/application'
 import { RejectProjectReplyCommand }      from '@collaboration/application'
 import { ReplyQueriesService }            from '@collaboration/application'
 import { UpdateProjectCommand }           from '@collaboration/application'
+import { GrpcMethod }                     from '@nestjs/microservices'
 
 @Controller()
 @UseInterceptors(MapValidationErrorsInterceptor)

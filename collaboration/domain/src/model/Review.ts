@@ -1,7 +1,7 @@
+import uuid                        from 'uuid/v4'
+
 import { AggregateRoot }           from '@node-ts/ddd'
 import { AggregateRootProperties } from '@node-ts/ddd-types'
-
-import uuid                        from 'uuid/v4'
 
 import { ReviewCreated }           from '../events'
 

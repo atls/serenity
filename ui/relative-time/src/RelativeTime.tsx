@@ -1,6 +1,6 @@
+import { FormattedRelativeTime } from 'react-intl'
 /* eslint-disable no-else-return */
 import React                     from 'react'
-import { FormattedRelativeTime } from 'react-intl'
 
 const getValueUnit = (diff) => {
   if (diff <= -86400) {

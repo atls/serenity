@@ -1,12 +1,11 @@
 import { LocaleProvider } from '@atls/react-locale'
 import { LocaleStore }    from '@atls/react-locale'
-
+import { Component }      from 'react'
+import { IntlProvider }   from 'react-intl'
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable react/sort-comp */
 import React              from 'react'
 import Cookies            from 'universal-cookie'
-import { Component }      from 'react'
-import { IntlProvider }   from 'react-intl'
 
 const DEFAULT_LOCALE = 'ru'
 

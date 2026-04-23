@@ -3,11 +3,11 @@ import { Controller }                     from '@nestjs/common'
 import { UseInterceptors }                from '@nestjs/common'
 import { UsePipes }                       from '@nestjs/common'
 import { ValidationPipe }                 from '@nestjs/common'
-import { GrpcMethod }                     from '@nestjs/microservices'
 
 import { ConfirmUploadCommand }           from '@files/application'
 import { CreateUploadCommand }            from '@files/application'
 import { UploadService }                  from '@files/application'
+import { GrpcMethod }                     from '@nestjs/microservices'
 
 @Controller()
 @UseInterceptors(MapValidationErrorsInterceptor)

@@ -1,12 +1,12 @@
 import React      from 'react'
 
+import { Layout } from '@ui/layout'
+import { Row }    from '@ui/layout'
 import Catalog    from '@site/catalog-fragment'
 import Filters    from '@site/filters-fragment'
 import Footer     from '@site/footer-fragment'
 import Navigation from '@site/navigation-fragment'
 import Projects   from '@site/projects-fragment'
-import { Layout } from '@ui/layout'
-import { Row }    from '@ui/layout'
 
 import messages   from './messages'
 

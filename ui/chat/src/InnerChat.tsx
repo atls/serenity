@@ -1,10 +1,8 @@
-import styled           from '@emotion/styled'
-
-import React            from 'react'
 import { useEffect }    from 'react'
 import { useRef }       from 'react'
 import { ifProp }       from 'styled-tools'
 import { switchProp }   from 'styled-tools'
+import React            from 'react'
 
 import { Divider }      from '@ui/divider'
 import { SendIcon }     from '@ui/icons'
@@ -14,6 +12,7 @@ import { Box }          from '@ui/layout'
 import { Layout }       from '@ui/layout'
 import { RelativeTime } from '@ui/relative-time'
 import { Text }         from '@ui/text'
+import styled           from '@emotion/styled'
 
 interface ActiveProps {
   active: boolean

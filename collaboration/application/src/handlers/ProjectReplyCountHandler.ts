@@ -1,7 +1,6 @@
-import { Handler }                 from '@node-ts/bus-core'
-
 import { ReplyCreated }            from '@collaboration/domain'
 import { ProjectEntityRepository } from '@collaboration/persistence'
+import { Handler }                 from '@node-ts/bus-core'
 
 export class ProjectReplyCountHandler implements Handler<ReplyCreated> {
   constructor(private readonly projectRepository: ProjectEntityRepository) {}

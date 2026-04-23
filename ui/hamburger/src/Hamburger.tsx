@@ -1,8 +1,8 @@
-import styled         from '@emotion/styled'
-
-import React          from 'react'
 import { ifProp }     from 'styled-tools'
 import { switchProp } from 'styled-tools'
+import React          from 'react'
+
+import styled         from '@emotion/styled'
 
 interface LineProps {
   active: boolean

@@ -1,6 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 import { Controller }           from '@nestjs/common'
 import { ElasticsearchService } from '@nestjs/elasticsearch'
+
 import { GrpcMethod }           from '@nestjs/microservices'
 
 @Controller()

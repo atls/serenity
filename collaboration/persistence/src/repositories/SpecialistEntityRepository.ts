@@ -1,12 +1,11 @@
-import { Bus }                            from '@monstrs/nestjs-bus'
-import { Logger }                         from '@monstrs/nestjs-logger'
 import { Injectable }                     from '@nestjs/common'
-import { WriteRepository }                from '@node-ts/ddd'
-import { Uuid }                           from '@node-ts/ddd-types'
-
 import { Connection }                     from 'typeorm'
 
 import { Specialist as SpecialistEntity } from '@collaboration/domain'
+import { Bus }                            from '@monstrs/nestjs-bus'
+import { Logger }                         from '@monstrs/nestjs-logger'
+import { WriteRepository }                from '@node-ts/ddd'
+import { Uuid }                           from '@node-ts/ddd-types'
 
 import { Specialist }                     from '../entities'
 

@@ -1,8 +1,8 @@
-import * as services           from './services'
-
 import { Module }              from '@nestjs/common'
 
 import { KratosAdapterModule } from '@identity/kratos-adapter'
+
+import * as services           from './services'
 
 @Module({
   imports: [KratosAdapterModule.register()],

@@ -1,7 +1,7 @@
-import { useTheme }  from '@emotion/react'
-
 /* eslint-disable */
 import React         from 'react'
+
+import { useTheme }  from '@emotion/react'
 
 import { IconProps } from '../icons.interfaces'
 
@@ -20,7 +20,7 @@ export const ArrowDownIcon = (props: IconProps) => {
         <g
           id='order-(executor)'
           transform='translate(-270.000000, -25.000000)'
-          fill={theme.colors[props.color] || props.color || '#FFFFFF'}
+          fill={theme?.colors?.[props.color] || props.color || '#FFFFFF'}
           fillRule='nonzero'
         >
           <g id='nav-bar'>

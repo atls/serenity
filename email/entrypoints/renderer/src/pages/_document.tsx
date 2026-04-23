@@ -1,7 +1,6 @@
 import { extractCritical } from '@emotion/server'
-
-import Document            from 'next/document'
 import { createElement }   from 'react'
+import Document            from 'next/document'
 
 export default class EmailDocument extends Document {
   static async getInitialProps({ renderPage }: any): Promise<any> {

@@ -1,11 +1,10 @@
-import { Bus }                      from '@monstrs/nestjs-bus'
-import { Logger }                   from '@monstrs/nestjs-logger'
 import { Injectable }               from '@nestjs/common'
-import { WriteRepository }          from '@node-ts/ddd'
-
 import { Connection }               from 'typeorm'
 
 import { Project as ProjectEntity } from '@collaboration/domain'
+import { Bus }                      from '@monstrs/nestjs-bus'
+import { Logger }                   from '@monstrs/nestjs-logger'
+import { WriteRepository }          from '@node-ts/ddd'
 
 import { Project }                  from '../entities'
 

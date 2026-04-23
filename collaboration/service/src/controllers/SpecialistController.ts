@@ -3,11 +3,11 @@ import { Controller }                     from '@nestjs/common'
 import { UseInterceptors }                from '@nestjs/common'
 import { UsePipes }                       from '@nestjs/common'
 import { ValidationPipe }                 from '@nestjs/common'
-import { GrpcMethod }                     from '@nestjs/microservices'
 
 import { ChangeAccountTypeCommand }       from '@collaboration/application'
 import { SpecialistService }              from '@collaboration/application'
 import { UpdateSpecialistCommand }        from '@collaboration/application'
+import { GrpcMethod }                     from '@nestjs/microservices'
 
 @Controller()
 @UseInterceptors(MapValidationErrorsInterceptor)

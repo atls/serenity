@@ -1,9 +1,7 @@
 import { WithUser }          from '@atls/react-user'
 import { WithoutUser }       from '@atls/react-user'
-
 import React                 from 'react'
 
-import ChooseSpecialistModal from '@fragments/choose-specialist-modal'
 import { Avatar }            from '@ui/avatar'
 import { Button }            from '@ui/button'
 import { Divider }           from '@ui/divider'
@@ -20,6 +18,7 @@ import { SidebarLink }       from '@ui/link'
 import { Option }            from '@ui/select'
 import { Select }            from '@ui/select'
 import { Text }              from '@ui/text'
+import ChooseSpecialistModal from '@fragments/choose-specialist-modal'
 
 import messages              from './messages'
 

@@ -1,7 +1,7 @@
 import { Controller }         from '@nestjs/common'
-import { GrpcMethod }         from '@nestjs/microservices'
 
 import { FileQueriesService } from '@files/application'
+import { GrpcMethod }         from '@nestjs/microservices'
 
 @Controller()
 export class FileQueriesController {

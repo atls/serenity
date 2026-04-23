@@ -1,6 +1,5 @@
 import { SignedUrlService }       from '@monstrs/nestjs-signed-url'
 import { Injectable }             from '@nestjs/common'
-
 import { extname }                from 'path'
 import { format }                 from 'path'
 

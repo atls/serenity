@@ -1,7 +1,6 @@
+import { SpecialistUpdated }     from '@collaboration/domain'
 import { HandlesMessage }        from '@monstrs/nestjs-bus'
 import { Handler }               from '@node-ts/bus-core'
-
-import { SpecialistUpdated }     from '@collaboration/domain'
 
 import { SpecialistDataService } from '../services'
 

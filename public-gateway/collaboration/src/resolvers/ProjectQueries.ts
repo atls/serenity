@@ -1,11 +1,11 @@
 import { Injectable }        from '@nestjs/common'
 import { OnModuleInit }      from '@nestjs/common'
+
 import { Args }              from '@nestjs/graphql'
 import { Query }             from '@nestjs/graphql'
 import { Int }               from '@nestjs/graphql'
 import { Client }            from '@nestjs/microservices'
 import { ClientGrpc }        from '@nestjs/microservices'
-
 import { OffsetToPagerPipe } from '@public-gateway/utils'
 import { Pager }             from '@public-gateway/utils'
 import { clientOptions }     from '@protos/collaboration'

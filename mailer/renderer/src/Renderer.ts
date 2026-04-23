@@ -1,10 +1,9 @@
 import { Injectable } from '@nestjs/common'
-
+import { format }     from 'url'
+import { parse }      from 'url'
 import htmlToText     from 'html-to-text'
 import fetch          from 'isomorphic-fetch'
 import qs             from 'qs'
-import { format }     from 'url'
-import { parse }      from 'url'
 
 interface RenderResult {
   html: string

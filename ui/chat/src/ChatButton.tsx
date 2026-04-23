@@ -1,8 +1,7 @@
-import styled       from '@emotion/styled'
-
 import React        from 'react'
 
 import { ChatIcon } from '@ui/icons'
+import styled       from '@emotion/styled'
 
 const StyledChatButton = styled.div(({ theme, unread }: any) => ({
   width: 56,

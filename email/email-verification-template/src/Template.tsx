@@ -1,4 +1,3 @@
-import React           from 'react'
 import { Mjml }        from 'mjml-react/dist/src/mjml'
 import { MjmlBody }    from 'mjml-react/dist/src/mjml-body'
 import { MjmlButton }  from 'mjml-react/dist/src/mjml-button'
@@ -7,6 +6,7 @@ import { MjmlHead }    from 'mjml-react/dist/src/mjml-head'
 import { MjmlSection } from 'mjml-react/dist/src/mjml-section'
 import { MjmlText }    from 'mjml-react/dist/src/mjml-text'
 import { MjmlTitle }   from 'mjml-react/dist/src/mjml-title'
+import React           from 'react'
 
 import messages        from './messages'
 

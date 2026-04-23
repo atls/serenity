@@ -1,6 +1,6 @@
 import { Controller }              from '@nestjs/common'
-import { GrpcMethod }              from '@nestjs/microservices'
 
+import { GrpcMethod }              from '@nestjs/microservices'
 import { PortfolioQueriesService } from '@portfolio/application'
 
 @Controller()

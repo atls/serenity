@@ -181,8 +181,5 @@ declare module 'rc-trigger' {
     ? never
     : Optional<T, Exclude<keyof T, K>> & Required<T, K>
 
-  export default class Trigger extends React.Component<
-    WithRequired<ITriggerProps, 'popup'>,
-    any
-  > {}
+  export default class Trigger extends React.Component<WithRequired<ITriggerProps, 'popup'>, any> {}
 }

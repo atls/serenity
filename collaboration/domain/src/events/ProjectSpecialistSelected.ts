@@ -8,7 +8,10 @@ export class ProjectSpecialistSelected extends Event {
 
   $version = 0
 
-  constructor(readonly projectId: Uuid, readonly replyId: string) {
+  constructor(
+    readonly projectId: Uuid,
+    readonly replyId: string
+  ) {
     super()
   }
 }

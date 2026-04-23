@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common'
+
 import { Query }      from '@nestjs/graphql'
 
 import { Search }     from '../types'

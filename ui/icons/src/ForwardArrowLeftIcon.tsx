@@ -1,7 +1,7 @@
-import { useTheme }  from '@emotion/react'
-
 /* eslint-disable */
 import React         from 'react'
+
+import { useTheme }  from '@emotion/react'
 
 import { IconProps } from '../icons.interfaces'
 
@@ -25,7 +25,7 @@ export const ForwardArrowLeftIcon = (props: IconProps) => {
             <polygon id='Path' points='0 0 24 0 24 24 0 24' />
             <polygon
               id='Path'
-              fill={theme.colors[props.color] || props.color || '#FFFFFF'}
+              fill={theme?.colors?.[props.color] || props.color || '#FFFFFF'}
               fillRule='nonzero'
               points='12 4 10.59 5.41 16.17 11 4 11 4 13 16.17 13 10.59 18.59 12 20 20 12'
             />

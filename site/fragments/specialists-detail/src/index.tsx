@@ -1,6 +1,6 @@
-import React                 from 'react'
 import { useState }          from 'react'
 import { useIntl }           from 'react-intl'
+import React                 from 'react'
 
 import { useChat }           from '@ui/chat'
 

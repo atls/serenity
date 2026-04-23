@@ -1,5 +1,4 @@
 import { Injectable }                         from '@nestjs/common'
-
 import { Transporter as NodemailerTransport } from 'nodemailer'
 import { createTransport }                    from 'nodemailer'
 
@@ -7,7 +6,10 @@ import { createTransport }                    from 'nodemailer'
 export class Transport {
   private transport: NodemailerTransport
 
-  constructor(private readonly sender: string, private readonly options: any) {
+  constructor(
+    private readonly sender: string,
+    private readonly options: any
+  ) {
     this.transport = createTransport(options)
   }
 

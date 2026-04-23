@@ -1,8 +1,8 @@
-import { useQuery }  from '@apollo/client'
-
-import gql           from 'graphql-tag'
 import { useEffect } from 'react'
 import { useState }  from 'react'
+import gql           from 'graphql-tag'
+
+import { useQuery }  from '@apollo/client'
 
 export const query = gql`
   query Me {

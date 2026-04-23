@@ -1,11 +1,11 @@
 import { Injectable }              from '@nestjs/common'
 import { OnModuleInit }            from '@nestjs/common'
+
 import { Args }                    from '@nestjs/graphql'
 import { Context }                 from '@nestjs/graphql'
 import { Mutation }                from '@nestjs/graphql'
 import { Client }                  from '@nestjs/microservices'
 import { ClientGrpc }              from '@nestjs/microservices'
-
 import { clientOptions }           from '@protos/collaboration'
 import { collaboration }           from '@protos/interfaces'
 
