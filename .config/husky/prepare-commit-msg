@@ -1,3 +1,1 @@
-#!/usr/bin/env sh
-# Temporarily disable local commit message preparation for this repository.
-exit 0
+yarn commit message $@
