@@ -1,8 +1,8 @@
-import { Event }       from '@node-ts/bus-messages'
-import { Uuid }        from '@node-ts/ddd-types'
+import type { Credentials } from '../model/Credentials'
+import type { Email }       from '../model/Email'
 
-import { Credentials } from '../model'
-import { Email }       from '../model'
+import { Event }            from '@node-ts/bus-messages'
+import { Uuid }             from '@node-ts/ddd-types'
 
 export class UserRegistered extends Event {
   static readonly NAME = 'identity/user-registered'
@@ -11,7 +11,11 @@ export class UserRegistered extends Event {
 
   $version = 0
 
-  constructor(readonly userId: Uuid, readonly email: Email, readonly credentials: Credentials) {
+  constructor(
+    readonly userId: Uuid,
+    readonly email: Email,
+    readonly credentials: Credentials
+  ) {
     super()
   }
 }

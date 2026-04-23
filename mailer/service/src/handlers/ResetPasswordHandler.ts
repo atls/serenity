@@ -1,13 +1,12 @@
-import { HandlesMessage }         from '@monstrs/nestjs-bus'
-import { InjectRepository }       from '@nestjs/typeorm'
-import { Handler }                from '@node-ts/bus-core'
-
 import { Repository }             from 'typeorm'
 
-import { ResetPasswordRequested } from '@identity/domain'
+import { ResetPasswordRequested } from '@identity/domain/src/events/ResetPasswordRequested'
 import { Sending }                from '@mailer/db'
 import { Renderer }               from '@mailer/renderer'
 import { Transport }              from '@mailer/transport'
+import { HandlesMessage }         from '@monstrs/nestjs-bus'
+import { InjectRepository }       from '@nestjs/typeorm'
+import { Handler }                from '@node-ts/bus-core'
 
 @HandlesMessage(ResetPasswordRequested)
 export class ResetPasswordHandler implements Handler<ResetPasswordRequested> {
