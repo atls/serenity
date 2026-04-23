@@ -19,6 +19,9 @@
     "types/**/*",
     "backend/**/*"
   ],
+  "scripts": {
+    "seed:local": "bash ./devops/seed/apply.local.seed.sh"
+  },
   "resolutions": {
     "@nestjs/core": "8.4.2",
     "@nestjs/terminus": "7",
