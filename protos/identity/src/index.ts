@@ -1,15 +1,14 @@
 import grpc                           from '@grpc/grpc-js'
-import { ClientOptions }              from '@nestjs/microservices'
-import { Transport }                  from '@nestjs/microservices'
-import { loadSync }                   from '@grpc/proto-loader'
-
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable no-underscore-dangle */
 import path                           from 'path'
 
+import { ClientOptions }              from '@nestjs/microservices'
+import { Transport }                  from '@nestjs/microservices'
 import { PROTO_PATH as COMMON_PROTO } from '@protos/common'
+import { loadSync }                   from '@grpc/proto-loader'
 
-import { name }                       from '../package.json'
+const name = '@protos/identity'
 
 declare const __non_webpack_require__: any
 
@@ -36,7 +35,7 @@ export const serverOptions: ClientOptions = {
   transport: Transport.GRPC,
   options: {
     package: 'identity',
-    url: '0.0.0.0:50051',
+    url: process.env.IDENTITY_SERVICE_URL || '0.0.0.0:50051',
     protoPath: PROTO_PATH,
     loader: {
       arrays: true,

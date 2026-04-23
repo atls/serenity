@@ -1,13 +1,12 @@
-import { ClientOptions }              from '@nestjs/microservices'
-import { Transport }                  from '@nestjs/microservices'
-
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable no-underscore-dangle */
 import path                           from 'path'
 
+import { ClientOptions }              from '@nestjs/microservices'
+import { Transport }                  from '@nestjs/microservices'
 import { PROTO_PATH as COMMON_PROTO } from '@protos/common'
 
-import { name }                       from '../package.json'
+const name = '@protos/mailer'
 
 declare const __non_webpack_require__: any
 
@@ -34,7 +33,7 @@ export const serverOptions: ClientOptions = {
   transport: Transport.GRPC,
   options: {
     package: 'mailer',
-    url: '0.0.0.0:50051',
+    url: process.env.MAILER_SERVICE_URL || '0.0.0.0:50051',
     protoPath: PROTO_PATH,
     loader: {
       arrays: true,
