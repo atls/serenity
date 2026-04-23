@@ -27,6 +27,7 @@ export const Login = ({ intl }: any) => (
           {(field, value, onChange) => (
             <Input
               {...field.attributes}
+              autoComplete='username'
               placeholder={intl.formatMessage(messages.login)}
               value={value}
               onChange={onChange}
@@ -40,6 +41,7 @@ export const Login = ({ intl }: any) => (
           {(field, value, onChange) => (
             <Input
               {...field.attributes}
+              autoComplete='current-password'
               value={value}
               onChange={onChange}
               borderRight='0px !important'
