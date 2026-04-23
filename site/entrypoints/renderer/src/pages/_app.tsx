@@ -3,19 +3,28 @@
 
 import { withApollo }         from '@atls/next-app-with-apollo'
 import { withHelmet }         from '@atls/next-app-with-helmet'
-import { withProvider }       from '@atls/next-app-with-provider'
-
 import App                    from 'next/app'
 import compose                from 'recompose/compose'
 
 import { ChatProvider }       from '@ui/chat'
 import { ThemeProvider }      from '@ui/theme'
+import { withProvider }       from '@atls/next-app-with-provider'
 import { injectGlobalStyles } from '@ui/theme'
 
 import { withAuth }           from '../providers'
 import { withEmotion }        from '../providers'
 import { withUser }           from '../providers'
 import { withIntl }           from '../providers'
+
+const nextHeadModule: any = require('next/head')
+
+if (typeof nextHeadModule.rewind !== 'function') {
+  nextHeadModule.rewind = () => null
+}
+
+if (nextHeadModule.default && typeof nextHeadModule.default.rewind !== 'function') {
+  nextHeadModule.default.rewind = () => null
+}
 
 export const withProviders = compose(
   withApollo({

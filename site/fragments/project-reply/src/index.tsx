@@ -1,8 +1,8 @@
-import React            from 'react'
 import { useCallback }  from 'react'
 import { useEffect }    from 'react'
 import { useState }     from 'react'
 import { useIntl }      from 'react-intl'
+import React            from 'react'
 
 import { ProjectReply } from './ProjectReply'
 import { useCreate }    from './useCreate'
@@ -25,13 +25,23 @@ const ProjectReplyFragment = ({ id, replies, profile, status = '', ownerName = {
       : window.location.hostname
   }
 
+  const localAuthBaseUrl =
+    typeof window !== 'undefined' &&
+    (window.location.hostname === 'localhost' ||
+      window.location.hostname === '127.0.0.1' ||
+      window.location.hostname.endsWith('.localhost'))
+      ? `http://${window.location.hostname === '127.0.0.1' ? '127.0.0.1' : 'localhost'}:3002`
+      : null
+
+  const authBaseUrl = localAuthBaseUrl || `https://accounts.${endpoint}`
+
   const onRegistration = useCallback(() => {
-    window.location.href = `https://accounts.${endpoint}/signup`
-  }, [endpoint])
+    window.location.href = `${authBaseUrl}/signup`
+  }, [authBaseUrl])
 
   const onLogin = useCallback(() => {
-    window.location.href = `https://accounts.${endpoint}/signin`
-  }, [endpoint])
+    window.location.href = `${authBaseUrl}/signin`
+  }, [authBaseUrl])
 
   const onOpenSpecialist = useCallback(
     (specialistId) => {
