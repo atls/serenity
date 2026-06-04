@@ -8,6 +8,45 @@
     "dev": "yarn service dev",
     "start": "node dist/index.js"
   },
+  "tools": {
+    "service": {
+      "externals": [
+        "@atlantis-lab/nestjs-map-errors-interceptor",
+        "@atls/nestjs-dataloader",
+        "@atls/nestjs-logger",
+        "@atls/nestjs-map-errors-interceptor",
+        "@elastic/elasticsearch",
+        "@godaddy/terminus",
+        "@grpc/grpc-js",
+        "@grpc/proto-loader",
+        "@monstrs/nestjs-bus",
+        "@monstrs/nestjs-bus-health",
+        "@monstrs/nestjs-elasticsearch-indicator",
+        "@monstrs/oathkeeper-auth",
+        "@nestjs/common",
+        "@nestjs/core",
+        "@nestjs/elasticsearch",
+        "@nestjs/graphql",
+        "@nestjs/microservices",
+        "@nestjs/platform-express",
+        "@nestjs/terminus",
+        "@nestjs/typeorm",
+        "@node-ts/bus-core",
+        "amqplib",
+        "apollo-server-core",
+        "apollo-server-express",
+        "class-validator",
+        "dataloader",
+        "graphql",
+        "graphql-tools",
+        "reflect-metadata",
+        "rxjs",
+        "ts-node",
+        "type-graphql",
+        "typeorm"
+      ]
+    }
+  },
   "devDependencies": {
     "@atls/nestjs-map-errors-interceptor": "^0.1.36",
     "@catalog/application": "0.1.1",
