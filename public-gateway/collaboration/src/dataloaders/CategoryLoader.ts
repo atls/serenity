@@ -4,11 +4,12 @@ import { map }              from 'rxjs/operators'
 import DataLoader           from 'dataloader'
 
 import { NestDataLoader }   from '@atls/nestjs-dataloader'
-import { OrderResultByKey } from '@atls/nestjs-dataloader'
 import { Client }           from '@nestjs/microservices'
 import { ClientGrpc }       from '@nestjs/microservices'
 import { clientOptions }    from '@protos/catalog'
 import { catalog }          from '@protos/interfaces'
+
+import { orderResultByKey } from './orderResultByKey'
 
 @Injectable()
 export class CategoryLoader implements NestDataLoader, OnModuleInit {
@@ -21,11 +22,10 @@ export class CategoryLoader implements NestDataLoader, OnModuleInit {
     this.catalogService = this.client.getService<catalog.CatalogService>('CatalogService')
   }
 
-  @OrderResultByKey()
   getCategories(id: string[]) {
     return this.catalogService
       .getCategories({ filters: { id } })
-      .pipe(map((data) => data.rows))
+      .pipe(map((data) => orderResultByKey(id, data.rows)))
       .toPromise()
   }
 

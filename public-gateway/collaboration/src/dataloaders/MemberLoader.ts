@@ -4,11 +4,12 @@ import { map }              from 'rxjs/operators'
 import DataLoader           from 'dataloader'
 
 import { NestDataLoader }   from '@atls/nestjs-dataloader'
-import { OrderResultByKey } from '@atls/nestjs-dataloader'
 import { Client }           from '@nestjs/microservices'
 import { ClientGrpc }       from '@nestjs/microservices'
 import { clientOptions }    from '@protos/collaboration'
 import { collaboration }    from '@protos/interfaces'
+
+import { orderResultByKey } from './orderResultByKey'
 
 @Injectable()
 export class MemberLoader implements NestDataLoader, OnModuleInit {
@@ -22,11 +23,10 @@ export class MemberLoader implements NestDataLoader, OnModuleInit {
       this.client.getService<collaboration.CollaborationService>('CollaborationService')
   }
 
-  @OrderResultByKey()
   getMembers(ids: string[]) {
     return this.collaborationService
       .getSpecialists({ filters: { id: ids } })
-      .pipe(map((data) => data.rows))
+      .pipe(map((data) => orderResultByKey(ids, data.rows)))
       .toPromise()
   }
 

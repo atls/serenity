@@ -4,11 +4,12 @@ import { map }              from 'rxjs/operators'
 import DataLoader           from 'dataloader'
 
 import { NestDataLoader }   from '@atls/nestjs-dataloader'
-import { OrderResultByKey } from '@atls/nestjs-dataloader'
 import { Client }           from '@nestjs/microservices'
 import { ClientGrpc }       from '@nestjs/microservices'
 import { clientOptions }    from '@protos/files'
 import { files }            from '@protos/interfaces'
+
+import { orderResultByKey } from './orderResultByKey'
 
 @Injectable()
 export class ImageLoader implements NestDataLoader, OnModuleInit {
@@ -21,11 +22,10 @@ export class ImageLoader implements NestDataLoader, OnModuleInit {
     this.filesService = this.client.getService<files.FilesService>('FilesService')
   }
 
-  @OrderResultByKey()
   getImages(id: string[]) {
     return this.filesService
       .getFiles({ filters: { id } })
-      .pipe(map((data) => data.rows))
+      .pipe(map((data) => orderResultByKey(id, data.rows)))
       .toPromise()
   }
 
