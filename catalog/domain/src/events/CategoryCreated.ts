@@ -8,7 +8,11 @@ export class CategoryCreated extends Event {
 
   $version = 0
 
-  constructor(readonly categoryId: Uuid, readonly groupId: string, readonly name: string) {
+  constructor(
+    readonly categoryId: Uuid,
+    readonly groupId: string,
+    readonly name: string
+  ) {
     super()
   }
 }

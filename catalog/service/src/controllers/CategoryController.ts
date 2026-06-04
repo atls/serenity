@@ -3,12 +3,12 @@ import { Controller }                     from '@nestjs/common'
 import { UseInterceptors }                from '@nestjs/common'
 import { UsePipes }                       from '@nestjs/common'
 import { ValidationPipe }                 from '@nestjs/common'
-import { GrpcMethod }                     from '@nestjs/microservices'
 
 import { CategoryService }                from '@catalog/application'
 import { CreateCategoryCommand }          from '@catalog/application'
 import { DeleteCategoryCommand }          from '@catalog/application'
 import { UpdateCategoryCommand }          from '@catalog/application'
+import { GrpcMethod }                     from '@nestjs/microservices'
 
 @Controller()
 @UseInterceptors(MapValidationErrorsInterceptor)

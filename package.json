@@ -19,11 +19,14 @@
     "types/**/*",
     "backend/**/*"
   ],
+  "scripts": {
+    "seed:local": "bash ./devops/seed/apply.local.seed.sh"
+  },
   "resolutions": {
     "@nestjs/core": "8.4.2",
     "@nestjs/terminus": "7",
     "@types/jest": "^26.0.23",
-    "@types/node": "^14.14.41",
+    "@types/node": "22.13.10",
     "@types/react": "^17.0.6",
     "apollo-server-core": "3.6.2",
     "apollo-server-express": "3.6.2",
@@ -31,6 +34,7 @@
     "class-validator": "0.13.1",
     "eslint-plugin-import": "2.22.0",
     "graphql": "15",
+    "grpc@npm:^1.18.0": "npm:@grpc/grpc-js@1.5.3",
     "pino": "6.13.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -38,20 +42,21 @@
     "rxjs": "7.2.0",
     "type-graphql": "1.0.0",
     "typeorm": "0.2.37",
-    "typescript": "4.4.4"
+    "typescript": "5.5.4"
   },
   "devDependencies": {
     "@atlantis-lab/tsconfig": "^0.1.12",
-    "@atls/code-service": "^0.0.10",
+    "@atls/code-runtime": "^2.1.20",
+    "@atls/code-service": "^0.1.9",
     "@atls/config-jest": "^0.0.2",
     "@jest/core": "^27.4.7",
     "@types/eslint": "^8",
     "@types/jest": "^26.0.23",
-    "@types/node": "^15.6.0",
+    "@types/node": "22.13.10",
     "@types/react": "^17.0.6",
     "eslint": "8.4.1",
     "husky": "5.2.0",
-    "typescript": "4.4.4"
+    "typescript": "5.5.4"
   },
   "dependenciesMeta": {
     "apollo-server-core@3.6.2": {
@@ -61,5 +66,5 @@
       "unplugged": true
     }
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@4.14.1"
 }

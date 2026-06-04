@@ -1,7 +1,6 @@
+import { ProjectCompleted }   from '@collaboration/domain'
 import { HandlesMessage }     from '@monstrs/nestjs-bus'
 import { Handler }            from '@node-ts/bus-core'
-
-import { ProjectCompleted }   from '@collaboration/domain'
 
 import { ProjectDataService } from '../services'
 

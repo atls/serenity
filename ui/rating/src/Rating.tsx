@@ -1,9 +1,8 @@
-import styled         from '@emotion/styled'
-
-import React          from 'react'
 import { switchProp } from 'styled-tools'
+import React          from 'react'
 
 import { StarIcon }   from '@ui/icons'
+import styled         from '@emotion/styled'
 
 interface StarContainerProps {
   color: string

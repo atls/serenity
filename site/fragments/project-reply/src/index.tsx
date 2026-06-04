@@ -1,11 +1,41 @@
-import React            from 'react'
 import { useCallback }  from 'react'
 import { useEffect }    from 'react'
 import { useState }     from 'react'
 import { useIntl }      from 'react-intl'
+import React            from 'react'
 
 import { ProjectReply } from './ProjectReply'
 import { useCreate }    from './useCreate'
+
+const TRAEFIK_LOCAL_PORTS = ['18880', '18443']
+
+const resolveLocalAuthBaseUrl = () => {
+  if (typeof window === 'undefined') {
+    return null
+  }
+
+  const { hostname, port, protocol } = window.location
+
+  if (hostname === '127.0.0.1') {
+    return 'http://127.0.0.1:3002'
+  }
+
+  if (hostname === 'localhost') {
+    const authProtocol = protocol === 'https:' ? 'https' : 'http'
+    const authPort = TRAEFIK_LOCAL_PORTS.includes(port) ? `:${port}` : ':3002'
+
+    return `${authProtocol}://localhost${authPort}`
+  }
+
+  if (hostname.endsWith('.localhost')) {
+    const authProtocol = protocol === 'https:' ? 'https' : 'http'
+    const authPort = port ? `:${port}` : ''
+
+    return `${authProtocol}://accounts.localhost${authPort}`
+  }
+
+  return null
+}
 
 const ProjectReplyFragment = ({ id, replies, profile, status = '', ownerName = {} }) => {
   const intl = useIntl()
@@ -25,13 +55,17 @@ const ProjectReplyFragment = ({ id, replies, profile, status = '', ownerName = {
       : window.location.hostname
   }
 
+  const localAuthBaseUrl = resolveLocalAuthBaseUrl()
+
+  const authBaseUrl = localAuthBaseUrl || `https://accounts.${endpoint}`
+
   const onRegistration = useCallback(() => {
-    window.location.href = `https://accounts.${endpoint}/signup`
-  }, [endpoint])
+    window.location.href = `${authBaseUrl}/signup`
+  }, [authBaseUrl])
 
   const onLogin = useCallback(() => {
-    window.location.href = `https://accounts.${endpoint}/signin`
-  }, [endpoint])
+    window.location.href = `${authBaseUrl}/signin`
+  }, [authBaseUrl])
 
   const onOpenSpecialist = useCallback(
     (specialistId) => {

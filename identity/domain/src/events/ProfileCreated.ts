@@ -10,7 +10,10 @@ export class ProfileCreated extends Event {
 
   $version = 0
 
-  constructor(readonly userId: Uuid, readonly profile: Profile) {
+  constructor(
+    readonly userId: Uuid,
+    readonly profile: Profile
+  ) {
     super()
   }
 }

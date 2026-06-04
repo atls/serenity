@@ -3,13 +3,12 @@
  */
 
 import { MockedProvider } from '@apollo/react-testing'
-import { render }         from '@testing-library/react'
-
-import React              from 'react'
 import { IntlProvider }   from 'react-intl'
 import { useIntl }        from 'react-intl'
+import React              from 'react'
 
 import { ThemeProvider }  from '@ui/theme'
+import { render }         from '@testing-library/react'
 
 import { Main }           from '../Main'
 

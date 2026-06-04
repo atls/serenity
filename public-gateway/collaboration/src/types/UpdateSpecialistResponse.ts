@@ -1,13 +1,14 @@
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }                  from '@nestjs/graphql'
+import { ObjectType }             from '@nestjs/graphql'
 
-import { SpecialistMember } from './SpecialistMember'
+import { SpecialistMember }       from './SpecialistMember'
 import { UpdateSpecialistErrors } from './UpdateSpecialistErrors'
 
 @ObjectType()
 export class UpdateSpecialistResponse {
-  @Field(type => SpecialistMember, { nullable: true })
+  @Field((type) => SpecialistMember, { nullable: true })
   result?: SpecialistMember
 
-  @Field(type => UpdateSpecialistErrors, { nullable: true })
+  @Field((type) => UpdateSpecialistErrors, { nullable: true })
   errors?: UpdateSpecialistErrors
 }

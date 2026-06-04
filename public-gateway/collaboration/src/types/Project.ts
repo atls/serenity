@@ -1,10 +1,11 @@
-import { Category } from '@public-gateway/catalog'
-import { File } from '@public-gateway/files'
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }          from '@nestjs/graphql'
+import { ObjectType }     from '@nestjs/graphql'
+import { Category }       from '@public-gateway/catalog'
+import { File }           from '@public-gateway/files'
 
 import { ProjectAddress } from './ProjectAddress'
-import { ProjectOwner } from './ProjectOwner'
-import { Reply } from './Reply'
+import { ProjectOwner }   from './ProjectOwner'
+import { Reply }          from './Reply'
 
 @ObjectType()
 export class Project {
@@ -14,16 +15,16 @@ export class Project {
   @Field()
   name: string
 
-  @Field(type => Category)
+  @Field((type) => Category)
   category: Category
 
   @Field({ nullable: true })
   description: string
 
-  @Field(type => [File])
+  @Field((type) => [File])
   photos: File[]
 
-  @Field(type => ProjectAddress)
+  @Field((type) => ProjectAddress)
   address: ProjectAddress
 
   @Field()
@@ -35,13 +36,13 @@ export class Project {
   @Field()
   legalEntitiesOnly: boolean
 
-  @Field(type => ProjectOwner)
+  @Field((type) => ProjectOwner)
   owner: ProjectOwner
 
   @Field()
   worksheet: string
 
-  @Field(type => [Reply])
+  @Field((type) => [Reply])
   replies: Reply[]
 
   @Field()
@@ -53,7 +54,7 @@ export class Project {
   @Field()
   replyCount: number
 
-  @Field({ nullable: true })
+  @Field(() => Date, { nullable: true })
   get publicationDate(): Date | undefined {
     return this.publishedAt
   }

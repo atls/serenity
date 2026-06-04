@@ -1,8 +1,9 @@
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }      from '@nestjs/graphql'
+import { ObjectType } from '@nestjs/graphql'
 
 @ObjectType()
 export class Activity {
-  @Field({ nullable: true })
+  @Field(() => Date, { nullable: true })
   get last(): Date | undefined {
     return this.lastActivity
   }

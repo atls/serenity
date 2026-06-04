@@ -1,7 +1,7 @@
 import { ConnectionOptions } from 'typeorm'
 
-import migrations            from './migrations'
 import { Portfolio }         from './entities'
+import migrations            from './migrations'
 
 const config: ConnectionOptions = {
   type: 'postgres',

@@ -8,7 +8,10 @@ export class CategoryUpdated extends Event {
 
   $version = 0
 
-  constructor(readonly categoryId: Uuid, readonly name: string) {
+  constructor(
+    readonly categoryId: Uuid,
+    readonly name: string
+  ) {
     super()
   }
 }

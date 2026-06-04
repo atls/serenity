@@ -1,10 +1,9 @@
 import { Injectable }       from '@nestjs/common'
-import { InjectRepository } from '@nestjs/typeorm'
-
 import { Brackets }         from 'typeorm'
 import { Repository }       from 'typeorm'
 
 import { CategoryGroup }    from '@catalog/persistence'
+import { InjectRepository } from '@nestjs/typeorm'
 
 @Injectable()
 export class CategoryGroupQueriesService {

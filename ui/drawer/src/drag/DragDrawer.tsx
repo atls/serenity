@@ -1,16 +1,16 @@
-import styled                from '@emotion/styled'
-
+import { Component }         from 'react'
+import { Motion }            from 'react-motion'
+import { TouchScrollable }   from 'react-scrolllock'
+import { createPortal }      from 'react-dom'
+import { spring }            from 'react-motion'
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/static-property-placement */
 /* eslint-disable react/state-in-constructor */
 import React                 from 'react'
 import ScrollLock            from 'react-scrolllock'
 import document              from 'global/document'
-import { Component }         from 'react'
-import { Motion }            from 'react-motion'
-import { TouchScrollable }   from 'react-scrolllock'
-import { createPortal }      from 'react-dom'
-import { spring }            from 'react-motion'
+
+import styled                from '@emotion/styled'
 
 import { isClientSide }      from './helpers'
 import { isDirectionBottom } from './helpers'

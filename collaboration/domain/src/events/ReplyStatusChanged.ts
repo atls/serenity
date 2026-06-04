@@ -9,7 +9,10 @@ export class ReplyStatusChanged extends Event {
 
   $version = 0
 
-  constructor(readonly replyId: string, readonly status: ReplyStatus) {
+  constructor(
+    readonly replyId: string,
+    readonly status: ReplyStatus
+  ) {
     super()
   }
 }

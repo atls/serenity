@@ -1,13 +1,13 @@
-import styled           from '@emotion/styled'
-
-import React            from 'react'
-import ScrollLock       from 'react-scrolllock'
-import document         from 'global/document'
 import { motion }       from 'framer-motion'
 import { useRef }       from 'react'
 import { createPortal } from 'react-dom'
 import { ifProp }       from 'styled-tools'
 import { switchProp }   from 'styled-tools'
+import React            from 'react'
+import ScrollLock       from 'react-scrolllock'
+import document         from 'global/document'
+
+import styled           from '@emotion/styled'
 
 interface ContainerProps {
   visible: boolean

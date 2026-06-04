@@ -1,12 +1,12 @@
 import React        from 'react'
 
-import ProjectShort from '@fragments/project-short'
 import { Box }      from '@ui/layout'
 import { Column }   from '@ui/layout'
 import { Layout }   from '@ui/layout'
 import { Option }   from '@ui/search'
 import { Search }   from '@ui/search'
 import { Text }     from '@ui/text'
+import ProjectShort from '@fragments/project-short'
 
 import messages     from './messages'
 

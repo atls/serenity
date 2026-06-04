@@ -1,15 +1,15 @@
-import { NestDataLoader }   from '@atls/nestjs-dataloader'
-import { OrderResultByKey } from '@atls/nestjs-dataloader'
 import { Injectable }       from '@nestjs/common'
 import { OnModuleInit }     from '@nestjs/common'
+import { map }              from 'rxjs/operators'
+import DataLoader           from 'dataloader'
+
+import { NestDataLoader }   from '@atls/nestjs-dataloader'
 import { Client }           from '@nestjs/microservices'
 import { ClientGrpc }       from '@nestjs/microservices'
-
-import DataLoader           from 'dataloader'
-import { map }              from 'rxjs/operators'
-
 import { clientOptions }    from '@protos/identity'
 import { identity }         from '@protos/interfaces'
+
+import { orderResultByKey } from './orderResultByKey'
 
 @Injectable()
 export class UserLoader implements NestDataLoader, OnModuleInit {
@@ -22,11 +22,10 @@ export class UserLoader implements NestDataLoader, OnModuleInit {
     this.identityService = this.client.getService<identity.IdentityService>('IdentityService')
   }
 
-  @OrderResultByKey()
   getUsers(id: string[]) {
     return this.identityService
       .getUsers({ filters: { id } })
-      .pipe(map((data) => data.rows))
+      .pipe(map((data) => orderResultByKey(id, data.rows)))
       .toPromise()
   }
 

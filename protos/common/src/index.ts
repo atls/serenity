@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable no-underscore-dangle */
-import path     from 'path'
+import path from 'path'
 
-import { name } from '../package.json'
+const name = '@protos/common'
 
 declare const __non_webpack_require__: any
 

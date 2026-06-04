@@ -1,9 +1,8 @@
 import { Injectable }       from '@nestjs/common'
-import { InjectRepository } from '@nestjs/typeorm'
-
 import { Repository }       from 'typeorm'
 
 import { Sending }          from '@mailer/db'
+import { InjectRepository } from '@nestjs/typeorm'
 
 @Injectable()
 export class MailerService {

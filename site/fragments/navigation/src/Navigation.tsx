@@ -1,9 +1,7 @@
 import { WithUser }                   from '@atls/react-user'
 import { WithoutUser }                from '@atls/react-user'
-
 import React                          from 'react'
 
-import Chat                           from '@fragments/chat'
 import { Button }                     from '@ui/button'
 import { DrawerProvider }             from '@ui/drawer'
 import { Hamburger }                  from '@ui/hamburger'
@@ -15,10 +13,11 @@ import { NavLink as BaseNavLink }     from '@ui/link'
 import { NextLink as Link }           from '@ui/link'
 import { NextNavLink as NavLink }     from '@ui/link'
 import { Navigation as UINavigation } from '@ui/navigation'
+import Chat                           from '@fragments/chat'
 
-import messages                       from './messages'
 import { Drawer }                     from './Drawer'
 import { Profile }                    from './Profile'
+import messages                       from './messages'
 
 export const Navigation = ({
   intl,

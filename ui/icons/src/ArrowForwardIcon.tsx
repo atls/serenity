@@ -1,7 +1,7 @@
-import { useTheme }  from '@emotion/react'
-
 /* eslint-disable */
 import React         from 'react'
+
+import { useTheme }  from '@emotion/react'
 
 import { IconProps } from '../icons.interfaces'
 
@@ -38,7 +38,7 @@ export const ArrowForwardIcon = (props: IconProps) => {
           y={-28}
           width={80}
           height={80}
-          fill={theme.colors[props.color] || props.color || '#999999'}
+          fill={theme?.colors?.[props.color] || props.color || '#999999'}
         />
       </g>
     </svg>

@@ -1,9 +1,8 @@
 import { Injectable }       from '@nestjs/common'
-import { InjectRepository } from '@nestjs/typeorm'
-
 import { Repository }       from 'typeorm'
 
 import { Category }         from '@catalog/persistence'
+import { InjectRepository } from '@nestjs/typeorm'
 
 interface PageInfo {
   hasNext: boolean

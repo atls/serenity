@@ -1,5 +1,5 @@
-import React            from 'react'
 import { useIntl }      from 'react-intl'
+import React            from 'react'
 
 import { Registration } from './Registration'
 

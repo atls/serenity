@@ -30,35 +30,45 @@ import { SpecialistResolver }     from './resolvers'
 
 export * from './types'
 
+const loaderProviders = [
+  CategoriesLoader,
+  CategoryLoader,
+  FilesLoader,
+  ProfileLoader,
+  PortfolioLoader,
+  ReplyLoader,
+  ProjectLoader,
+  ReviewLoader,
+  MemberLoader,
+  CounterLoader,
+  UserLoader,
+  CustomerLoader,
+  ActivityLoader,
+]
+
+const loaderAliases = loaderProviders.map((loader) => ({
+  provide: loader.name,
+  useExisting: loader,
+}))
+
 @Module({
   providers: [
     SpecialistMutations,
     SpecialisationResolver,
-    CategoriesLoader,
     ProjectMutations,
-    CategoryLoader,
-    FilesLoader,
     ProjectResolver,
     ProjectQueries,
     SpecialistQueries,
     ProjectOwnerResolver,
-    ProfileLoader,
     SpecialistResolver,
-    PortfolioLoader,
     ReplyMutations,
     MessageResolver,
-    ReplyLoader,
-    ProjectLoader,
     ReplyResolver,
-    ReviewLoader,
     ReviewResolver,
-    MemberLoader,
-    CounterLoader,
     DiscussionMutations,
-    UserLoader,
     DiscussionResolver,
-    CustomerLoader,
-    ActivityLoader,
+    ...loaderProviders,
+    ...loaderAliases,
   ],
 })
 export class CollaborationModule {}

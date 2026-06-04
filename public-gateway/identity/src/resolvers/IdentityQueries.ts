@@ -1,12 +1,11 @@
 import { Injectable }    from '@nestjs/common'
 import { OnModuleInit }  from '@nestjs/common'
+import { map }           from 'rxjs/operators'
+
 import { Context }       from '@nestjs/graphql'
 import { Query }         from '@nestjs/graphql'
 import { Client }        from '@nestjs/microservices'
 import { ClientGrpc }    from '@nestjs/microservices'
-
-import { map }           from 'rxjs/operators'
-
 import { clientOptions } from '@protos/identity'
 import { identity }      from '@protos/interfaces'
 

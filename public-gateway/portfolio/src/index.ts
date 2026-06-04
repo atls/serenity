@@ -6,7 +6,14 @@ import { PortfolioResolver }  from './resolvers'
 
 export * from './types'
 
+const loaderProviders = [ImageLoader]
+
+const loaderAliases = loaderProviders.map((loader) => ({
+  provide: loader.name,
+  useExisting: loader,
+}))
+
 @Module({
-  providers: [ImageLoader, PortfolioMutations, PortfolioResolver],
+  providers: [PortfolioMutations, PortfolioResolver, ...loaderProviders, ...loaderAliases],
 })
 export class PortfolioModule {}

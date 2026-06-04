@@ -1,7 +1,7 @@
 import { Controller }                  from '@nestjs/common'
-import { GrpcMethod }                  from '@nestjs/microservices'
 
 import { CategoryGroupQueriesService } from '@catalog/application'
+import { GrpcMethod }                  from '@nestjs/microservices'
 
 @Controller()
 export class CategoryGroupQueriesController {

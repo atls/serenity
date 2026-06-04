@@ -1,8 +1,6 @@
-import styled             from '@emotion/styled'
-
-import React              from 'react'
 import { useState }       from 'react'
 import { ifProp }         from 'styled-tools'
+import React              from 'react'
 
 import { Item }           from '@ui/drawer'
 import { ArrowLeftIcon }  from '@ui/icons'
@@ -12,6 +10,7 @@ import { Column }         from '@ui/layout'
 import { Layout }         from '@ui/layout'
 import { Row }            from '@ui/layout'
 import { Text }           from '@ui/text'
+import styled             from '@emotion/styled'
 
 interface ActiveProps {
   active: boolean

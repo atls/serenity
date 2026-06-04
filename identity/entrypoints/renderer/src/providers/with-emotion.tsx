@@ -1,10 +1,9 @@
-import createCache       from '@emotion/cache'
-import { CacheProvider } from '@emotion/react'
-
-import React             from 'react'
 import { Component }     from 'react'
+import React             from 'react'
 
+import { CacheProvider } from '@emotion/react'
 import { ThemeProvider } from '@ui/theme'
+import createCache       from '@emotion/cache'
 
 const cache = createCache({
   key: 'emotion',

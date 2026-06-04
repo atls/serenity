@@ -1,9 +1,8 @@
 import { useUser }              from '@atlantis-lab/react-user'
-
-import React                    from 'react'
 import { useEffect }            from 'react'
 import { useState }             from 'react'
 import { useIntl }              from 'react-intl'
+import React                    from 'react'
 
 import { useChat as useUiChat } from '@ui/chat'
 

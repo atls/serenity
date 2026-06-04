@@ -1,7 +1,7 @@
-import styled         from '@emotion/styled'
-
 import { typography } from 'styled-system'
 import { switchProp } from 'styled-tools'
+
+import styled         from '@emotion/styled'
 
 interface LabelProps {
   fontFamily?: string

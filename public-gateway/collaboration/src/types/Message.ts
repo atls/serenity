@@ -1,5 +1,6 @@
-import { Profile } from '@public-gateway/identity'
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }            from '@nestjs/graphql'
+import { ObjectType }       from '@nestjs/graphql'
+import { Profile }          from '@public-gateway/identity'
 
 import { SpecialistMember } from './SpecialistMember'
 
@@ -11,16 +12,16 @@ export class Message {
   @Field()
   content: string
 
-  @Field(type => Profile)
+  @Field((type) => Profile)
   author: Profile
 
-  @Field(type => SpecialistMember, { nullable: true })
+  @Field((type) => SpecialistMember, { nullable: true })
   member: SpecialistMember
 
   @Field()
   read: boolean
 
-  @Field({ nullable: true })
+  @Field(() => Date, { nullable: true })
   get sendDate(): Date | undefined {
     return this.sendAt
   }

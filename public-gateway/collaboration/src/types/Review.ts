@@ -1,5 +1,6 @@
-import { Profile } from '@public-gateway/identity'
-import { Field, ObjectType } from '@nestjs/graphql'
+import { Field }      from '@nestjs/graphql'
+import { ObjectType } from '@nestjs/graphql'
+import { Profile }    from '@public-gateway/identity'
 
 @ObjectType()
 export class Review {
@@ -12,6 +13,6 @@ export class Review {
   @Field()
   comment: string
 
-  @Field(type => Profile)
+  @Field((type) => Profile)
   customer: Profile
 }

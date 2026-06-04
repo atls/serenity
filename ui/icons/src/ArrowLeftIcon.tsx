@@ -1,7 +1,7 @@
-import { useTheme }  from '@emotion/react'
-
 /* eslint-disable */
 import React         from 'react'
+
+import { useTheme }  from '@emotion/react'
 
 import { IconProps } from '../icons.interfaces'
 
@@ -14,7 +14,7 @@ export const ArrowLeftIcon = (props: IconProps) => {
       height='1em'
       viewBox='0 0 24 24'
       fill='none'
-      stroke={theme.colors[props.color] || props.color || '#000000'}
+      stroke={theme?.colors?.[props.color] || props.color || '#000000'}
       strokeWidth={2}
       strokeLinecap='butt'
       strokeLinejoin='bevel'

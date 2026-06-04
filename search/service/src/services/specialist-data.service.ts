@@ -1,11 +1,10 @@
 import { Injectable }                                  from '@nestjs/common'
 import { OnModuleInit }                                from '@nestjs/common'
 import { ElasticsearchService }                        from '@nestjs/elasticsearch'
-import { Client }                                      from '@nestjs/microservices'
-import { ClientGrpc }                                  from '@nestjs/microservices'
-
 import { firstValueFrom }                              from 'rxjs'
 
+import { Client }                                      from '@nestjs/microservices'
+import { ClientGrpc }                                  from '@nestjs/microservices'
 import { clientOptions as catalogClientOptions }       from '@protos/catalog'
 import { clientOptions as collaborationClientOptions } from '@protos/collaboration'
 import { catalog }                                     from '@protos/interfaces'

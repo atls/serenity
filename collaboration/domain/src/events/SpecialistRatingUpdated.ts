@@ -8,7 +8,10 @@ export class SpecialistRatingUpdated extends Event {
 
   $version = 0
 
-  constructor(readonly specialistId: Uuid, readonly rating: number) {
+  constructor(
+    readonly specialistId: Uuid,
+    readonly rating: number
+  ) {
     super()
   }
 }
