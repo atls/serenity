@@ -1,17 +1,10 @@
 name: Publish image
 
 on:
-  pull_request:
-    types:
-      - closed
-    branches:
-      - master
-    paths-ignore:
-      - '.github/**'
+  workflow_dispatch:
 
 jobs:
   publish:
-    if: github.event.pull_request.merged == true
     uses: atls/shared/.github/workflows/pack-image.yaml@master
     permissions: write-all
     with:

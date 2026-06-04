@@ -23,11 +23,16 @@ services:
 
   elastic:
     image: elasticsearch:7.17.0
+    mem_limit: 512m
     environment:
       - xpack.security.transport.ssl.enabled=false
       - xpack.security.enabled=false
+      - xpack.ml.enabled=false
+      - ingest.geoip.downloader.enabled=false
       - discovery.type=single-node
-      - ES_JAVA_OPTS=-Xms256m -Xmx256m
+      - bootstrap.memory_lock=false
+      - node.store.allow_mmap=false
+      - ES_JAVA_OPTS=-Xms128m -Xmx128m
     ports:
       - 9200:9200
       - 9300:9300
