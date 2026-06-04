@@ -1,12 +1,13 @@
 services:
   traefik:
     image: traefik:1.7
-    command: --api --docker
+    command: --configFile=/config/traefik/traefik.toml
     ports:
       - ${TRAEFIK_HTTP_PORT:-18880}:80
       - ${TRAEFIK_HTTPS_PORT:-18443}:443
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      - ./config/traefik:/config/traefik:ro
+      - ./.data/traefik/certs:/certs:ro
     networks:
       default:
       traefik:

@@ -1,0 +1,100 @@
+defaultEntryPoints = ["http", "https"]
+
+[entryPoints]
+  [entryPoints.http]
+    address = ":80"
+
+  [entryPoints.https]
+    address = ":443"
+    [entryPoints.https.tls]
+      [[entryPoints.https.tls.certificates]]
+        certFile = "/certs/serenity.local.crt"
+        keyFile = "/certs/serenity.local.key"
+
+[api]
+  dashboard = true
+
+[file]
+
+[backends]
+  [backends.site]
+    [backends.site.servers.server1]
+      url = "http://site-local:3000"
+
+  [backends.accounts]
+    [backends.accounts.servers.server1]
+      url = "http://identity:3000"
+
+  [backends.public_gateway]
+    [backends.public_gateway.servers.server1]
+      url = "http://public-gateway:3000"
+
+  [backends.private_gateway]
+    [backends.private_gateway.servers.server1]
+      url = "http://private-gateway:3000"
+
+  [backends.email]
+    [backends.email.servers.server1]
+      url = "http://email:3000"
+
+  [backends.s3]
+    [backends.s3.servers.server1]
+      url = "http://s3:9000"
+
+[frontends]
+  [frontends.site]
+    backend = "site"
+    passHostHeader = true
+    priority = 1
+    [frontends.site.routes.host]
+      rule = "Host:localhost,site.localhost,serenity.localhost,admin.localhost,cabinet.localhost,serenity.local.atls.tech,admin.serenity.local.atls.tech,cabinet.serenity.local.atls.tech"
+
+  [frontends.local_accounts]
+    backend = "accounts"
+    passHostHeader = true
+    priority = 20
+    [frontends.local_accounts.routes.host]
+      rule = "Host:localhost"
+    [frontends.local_accounts.routes.path]
+      rule = "PathPrefix:/auth,/signin,/signup,/signout,/login,/logout,/registration,/recovery,/settings,/profile,/kratos"
+
+  [frontends.local_accounts_next]
+    backend = "accounts"
+    passHostHeader = true
+    priority = 40
+    [frontends.local_accounts_next.routes.host]
+      rule = "Host:localhost"
+    [frontends.local_accounts_next.routes.path]
+      rule = "PathPrefix:/_next"
+    [frontends.local_accounts_next.routes.referer]
+      rule = "HeadersRegexp:Referer,^https?://localhost(:[0-9]+)?/(auth|signin|signup|signout|login|logout|registration|recovery|settings|profile|kratos)(/|\\?|$).*"
+
+  [frontends.accounts]
+    backend = "accounts"
+    passHostHeader = true
+    [frontends.accounts.routes.host]
+      rule = "Host:accounts.localhost,accounts.serenity.local.atls.tech"
+
+  [frontends.public_gateway]
+    backend = "public_gateway"
+    passHostHeader = true
+    [frontends.public_gateway.routes.host]
+      rule = "Host:public-gateway.localhost,public-gateway.serenity.local.atls.tech"
+
+  [frontends.private_gateway]
+    backend = "private_gateway"
+    passHostHeader = true
+    [frontends.private_gateway.routes.host]
+      rule = "Host:private-gateway.localhost,private-gateway.serenity.local.atls.tech"
+
+  [frontends.email]
+    backend = "email"
+    passHostHeader = true
+    [frontends.email.routes.host]
+      rule = "Host:email.localhost,email.serenity.local.atls.tech"
+
+  [frontends.s3]
+    backend = "s3"
+    passHostHeader = true
+    [frontends.s3.routes.host]
+      rule = "Host:s3.localhost,s3.serenity.local.atls.tech"
