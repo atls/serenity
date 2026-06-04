@@ -26,11 +26,17 @@
     "@catalog/application": "0.1.1",
     "@catalog/domain": "0.1.1",
     "@catalog/persistence": "0.1.1",
-    "@monstrs/server-scripts": "0.1.5",
     "@protos/catalog": "0.1.1",
     "@protos/common": "workspace:^",
     "@types/amqplib": "^0",
     "@types/node": "12.12.14",
     "typescript": "^4.2.2"
+  },
+  "tools": {
+    "service": {
+      "externals": [
+        "typeorm"
+      ]
+    }
   }
 }

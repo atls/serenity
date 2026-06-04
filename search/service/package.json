@@ -28,7 +28,6 @@
   },
   "devDependencies": {
     "@collaboration/domain": "0.0.1",
-    "@monstrs/server-scripts": "0.1.3",
     "@protos/catalog": "0.1.1",
     "@protos/collaboration": "0.0.1",
     "@protos/common": "workspace:^",
@@ -38,5 +37,12 @@
     "@types/elasticsearch": "5.0.36",
     "@types/node": "12.12.14",
     "typescript": "3.7.2"
+  },
+  "tools": {
+    "service": {
+      "externals": [
+        "typeorm"
+      ]
+    }
   }
 }

@@ -25,11 +25,17 @@
     "@collaboration/application": "workspace:0.0.1",
     "@collaboration/domain": "workspace:0.0.1",
     "@collaboration/persistence": "workspace:0.0.1",
-    "@monstrs/server-scripts": "0.1.3",
     "@protos/collaboration": "0.0.1",
     "@protos/common": "workspace:^",
     "@types/amqplib": "^0",
     "@types/node": "12.12.14",
     "typescript": "3.7.2"
+  },
+  "tools": {
+    "service": {
+      "externals": [
+        "typeorm"
+      ]
+    }
   }
 }

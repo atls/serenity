@@ -22,7 +22,6 @@
   "devDependencies": {
     "@identity/application": "0.3.1",
     "@identity/domain": "0.3.1",
-    "@monstrs/server-scripts": "0.1.5",
     "@protos/common": "workspace:^",
     "@protos/identity": "workspace:^",
     "@types/amqplib": "^0",

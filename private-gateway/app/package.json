@@ -24,7 +24,6 @@
     "type-graphql": "1.0.0"
   },
   "devDependencies": {
-    "@monstrs/server-scripts": "0.1.5",
     "@private-gateway/catalog": "0.1.1",
     "@protos/catalog": "workspace:^",
     "@protos/common": "workspace:^",

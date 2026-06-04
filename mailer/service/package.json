@@ -27,7 +27,6 @@
     "@mailer/db": "workspace:^",
     "@mailer/renderer": "workspace:^",
     "@mailer/transport": "workspace:^",
-    "@monstrs/server-scripts": "0.1.5",
     "@protos/mailer": "workspace:^",
     "@types/node": "12.12.14"
   }
