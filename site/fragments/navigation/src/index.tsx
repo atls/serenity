@@ -8,6 +8,36 @@ import { useDrawer }   from '@ui/drawer'
 import { Navigation }  from './Navigation'
 import { useProfile }  from './useProfile'
 
+const TRAEFIK_LOCAL_PORTS = ['18880', '18443']
+
+const resolveLocalAuthBaseUrl = () => {
+  if (typeof window === 'undefined') {
+    return null
+  }
+
+  const { hostname, port, protocol } = window.location
+
+  if (hostname === '127.0.0.1') {
+    return 'http://127.0.0.1:3002'
+  }
+
+  if (hostname === 'localhost') {
+    const authProtocol = protocol === 'https:' ? 'https' : 'http'
+    const authPort = TRAEFIK_LOCAL_PORTS.includes(port) ? `:${port}` : ':3002'
+
+    return `${authProtocol}://localhost${authPort}`
+  }
+
+  if (hostname.endsWith('.localhost')) {
+    const authProtocol = protocol === 'https:' ? 'https' : 'http'
+    const authPort = port ? `:${port}` : ''
+
+    return `${authProtocol}://accounts.localhost${authPort}`
+  }
+
+  return null
+}
+
 const NavigationFragment = () => {
   const user = useUser()
 
@@ -27,13 +57,7 @@ const NavigationFragment = () => {
       : window.location.hostname
   }
 
-  const localAuthBaseUrl =
-    typeof window !== 'undefined' &&
-    (window.location.hostname === 'localhost' ||
-      window.location.hostname === '127.0.0.1' ||
-      window.location.hostname.endsWith('.localhost'))
-      ? `http://${window.location.hostname === '127.0.0.1' ? '127.0.0.1' : 'localhost'}:3002`
-      : null
+  const localAuthBaseUrl = resolveLocalAuthBaseUrl()
 
   const authBaseUrl = localAuthBaseUrl || `https://accounts.${endpoint}`
 

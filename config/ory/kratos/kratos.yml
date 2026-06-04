@@ -13,7 +13,11 @@ serve:
         - 'http://localhost:3002'
         - 'http://127.0.0.1:3002'
         - 'http://localhost:4434'
+        - 'http://localhost:18880'
+        - 'https://localhost:18443'
+        - 'http://accounts.localhost:18880'
         - 'https://accounts.localhost'
+        - 'https://accounts.localhost:18443'
       allowed_methods:
         - POST
         - GET
@@ -31,12 +35,15 @@ serve:
     base_url: http://kratos:4434/
 
 selfservice:
-  default_browser_return_url: http://localhost:3000/auth/settings
+  default_browser_return_url: http://localhost:18880/auth/settings
   whitelisted_return_urls:
+    - http://localhost:18880/
     - http://localhost:3000/
     - http://127.0.0.1:3000/
+    - http://localhost:18880/auth/settings
     - http://localhost:3000/auth/settings
     - http://localhost:4434/
+    - https://localhost:18443/
 
   methods:
     password:
@@ -93,27 +100,27 @@ selfservice:
 
   flows:
     error:
-      ui_url: http://localhost:3000/auth/error
+      ui_url: http://localhost:18880/auth/error
     settings:
-      ui_url: http://localhost:3000/auth/settings
+      ui_url: http://localhost:18880/auth/settings
       privileged_session_max_age: 15m
     recovery:
       enabled: true
-      ui_url: http://localhost:3000/auth/recovery
+      ui_url: http://localhost:18880/auth/recovery
     verification:
       enabled: true
-      ui_url: http://localhost:3000/auth/verify
+      ui_url: http://localhost:18880/auth/verify
       after:
-        default_browser_return_url: http://localhost:3000/
+        default_browser_return_url: http://localhost:18880/
     logout:
       after:
-        default_browser_return_url: http://localhost:3000/auth/login
+        default_browser_return_url: http://localhost:18880/auth/login
     login:
-      ui_url: http://localhost:3000/auth/login
+      ui_url: http://localhost:18880/auth/login
       lifespan: 10m
     registration:
       lifespan: 10m
-      ui_url: http://localhost:3000/auth/registration
+      ui_url: http://localhost:18880/auth/registration
       after:
         password:
           hooks:
