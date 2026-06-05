@@ -9,4 +9,4 @@ jobs:
     uses: atls/shared/.github/workflows/checks.yaml@master
     permissions: write-all
     with:
-      node-version: '22'
+      node-version: '24'
