@@ -36,6 +36,6 @@
     "@types/amqplib": "^0",
     "@types/elasticsearch": "5.0.36",
     "@types/node": "12.12.14",
-    "typescript": "3.7.2"
+    "typescript": "5.5.4"
   }
 }

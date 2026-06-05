@@ -18,7 +18,7 @@
     "@nestjs/graphql": "^9.1.2",
     "@types/node": "12.12.14",
     "graphql": "^16.3.0",
-    "typescript": "3.7.2"
+    "typescript": "5.5.4"
   },
   "peerDependencies": {
     "@nestjs/core": "*",

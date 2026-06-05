@@ -1688,7 +1688,7 @@ __metadata:
     reflect-metadata: "npm:^0.1.13"
     rxjs: "npm:^7.0.1"
     typeorm: "npm:0.3.3"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
   peerDependencies:
     "@nestjs/common": "*"
     "@nestjs/core": "*"
@@ -1718,7 +1718,7 @@ __metadata:
     amqplib: "npm:^0.8.0"
     reflect-metadata: "npm:0.1.13"
     rxjs: "npm:6.5.3"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
 
@@ -1798,7 +1798,7 @@ __metadata:
     pg: "npm:8.5.1"
     rxjs: "npm:^7.0.1"
     typeorm: "npm:0.3.3"
-    typescript: "npm:3.7.2"
+    typescript: "npm:5.5.4"
   peerDependencies:
     "@nestjs/core": "*"
   languageName: unknown
@@ -1826,7 +1826,7 @@ __metadata:
     amqplib: "npm:^0.8.0"
     reflect-metadata: "npm:0.1.13"
     rxjs: "npm:6.5.3"
-    typescript: "npm:3.7.2"
+    typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
 
@@ -1922,7 +1922,7 @@ __metadata:
     react-intl: "npm:5.3.2"
     recompose: "npm:0.30.0"
     ts-node: "npm:8.10.2"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
     universal-cookie: "npm:4.0.4"
   languageName: unknown
   linkType: soft
@@ -2484,7 +2484,7 @@ __metadata:
     pg: "npm:8.5.1"
     rxjs: "npm:^7.0.1"
     typeorm: "npm:0.3.3"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
 
@@ -2504,7 +2504,7 @@ __metadata:
     "@types/node": "npm:12.12.14"
     reflect-metadata: "npm:0.1.13"
     rxjs: "npm:6.5.3"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
 
@@ -3141,7 +3141,7 @@ __metadata:
     express-session: "npm:1.17.0"
     reflect-metadata: "npm:0.1.13"
     rxjs: "npm:6.5.3"
-    typescript: "npm:3.7.2"
+    typescript: "npm:5.5.4"
   peerDependencies:
     graphql: "*"
   languageName: unknown
@@ -3173,7 +3173,7 @@ __metadata:
     "@types/node": "npm:12.12.14"
     pg: "npm:8.5.1"
     typeorm: "npm:0.3.3"
-    typescript: "npm:3.7.2"
+    typescript: "npm:5.5.4"
   peerDependencies:
     "@nestjs/core": "*"
   languageName: unknown
@@ -3211,7 +3211,7 @@ __metadata:
     amqplib: "npm:^0.8.0"
     reflect-metadata: "npm:0.1.13"
     rxjs: "npm:6.5.3"
-    typescript: "npm:3.7.2"
+    typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
 
@@ -3629,7 +3629,7 @@ __metadata:
     recompose: "npm:0.30.0"
     redis: "npm:^3.1.2"
     ts-node: "npm:8.10.2"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
     universal-cookie: "npm:4.0.4"
   languageName: unknown
   linkType: soft
@@ -3653,7 +3653,7 @@ __metadata:
     class-validator: "npm:0.11.0"
     reflect-metadata: "npm:0.1.13"
     rxjs: "npm:6.5.3"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
 
@@ -4057,7 +4057,7 @@ __metadata:
     "@types/node": "npm:12.12.14"
     pg: "npm:8.5.1"
     typeorm: "npm:0.3.3"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
 
@@ -4094,7 +4094,7 @@ __metadata:
     reflect-metadata: "npm:0.1.13"
     rxjs: "npm:6.5.3"
     typeorm: "npm:0.3.3"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
 
@@ -5360,7 +5360,7 @@ __metadata:
     "@types/node": "npm:12.12.14"
     pg: "npm:7.13.0"
     typeorm: "npm:0.3.3"
-    typescript: "npm:3.7.2"
+    typescript: "npm:5.5.4"
   peerDependencies:
     "@nestjs/core": "*"
   languageName: unknown
@@ -5386,7 +5386,7 @@ __metadata:
     amqplib: "npm:^0.9.1"
     reflect-metadata: "npm:0.1.13"
     rxjs: "npm:6.5.3"
-    typescript: "npm:3.7.2"
+    typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
 
@@ -5412,7 +5412,7 @@ __metadata:
     rxjs: "npm:6.5.3"
     ts-node: "npm:^10.7.0"
     type-graphql: "npm:1.0.0"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
 
@@ -5430,7 +5430,7 @@ __metadata:
     graphql: "npm:^16.3.0"
     rxjs: "npm:6.5.3"
     type-graphql: "npm:0.17.5"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
   peerDependencies:
     graphql: "*"
   languageName: unknown
@@ -5656,7 +5656,7 @@ __metadata:
     reflect-metadata: "npm:0.1.13"
     rxjs: "npm:6.5.3"
     type-graphql: "npm:0.17.5"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
 
@@ -5674,7 +5674,7 @@ __metadata:
     graphql: "npm:^16.3.0"
     rxjs: "npm:6.5.3"
     type-graphql: "npm:0.17.5"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
   peerDependencies:
     "@nestjs/core": "*"
     "@nestjs/graphql": "*"
@@ -5709,7 +5709,7 @@ __metadata:
     graphql: "npm:^16.3.0"
     rxjs: "npm:6.5.3"
     type-graphql: "npm:0.17.5"
-    typescript: "npm:3.7.2"
+    typescript: "npm:5.5.4"
   peerDependencies:
     "@nestjs/core": "*"
     "@nestjs/graphql": "*"
@@ -5731,7 +5731,7 @@ __metadata:
     graphql: "npm:^16.3.0"
     rxjs: "npm:6.5.3"
     type-graphql: "npm:0.17.5"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
   peerDependencies:
     "@nestjs/core": "*"
     "@nestjs/graphql": "*"
@@ -5758,7 +5758,7 @@ __metadata:
     graphql: "npm:^16.3.0"
     rxjs: "npm:6.5.3"
     type-graphql: "npm:0.17.5"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
   peerDependencies:
     "@nestjs/core": "*"
     "@nestjs/graphql": "*"
@@ -5784,7 +5784,7 @@ __metadata:
     graphql: "npm:^16.3.0"
     rxjs: "npm:6.5.3"
     type-graphql: "npm:0.17.5"
-    typescript: "npm:3.7.2"
+    typescript: "npm:5.5.4"
   peerDependencies:
     "@nestjs/core": "*"
     "@nestjs/graphql": "*"
@@ -5808,7 +5808,7 @@ __metadata:
     graphql: "npm:^16.3.0"
     rxjs: "npm:6.5.3"
     type-graphql: "npm:0.17.5"
-    typescript: "npm:3.7.2"
+    typescript: "npm:5.5.4"
   peerDependencies:
     "@nestjs/core": "*"
     "@nestjs/graphql": "*"
@@ -5871,7 +5871,7 @@ __metadata:
     amqplib: "npm:^0.9.1"
     reflect-metadata: "npm:0.1.13"
     rxjs: "npm:6.5.3"
-    typescript: "npm:3.7.2"
+    typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
 
@@ -6288,7 +6288,7 @@ __metadata:
     react-intl: "npm:5.3.2"
     recompose: "npm:0.30.0"
     ts-node: "npm:8.5.2"
-    typescript: "npm:^4.2.2"
+    typescript: "npm:5.5.4"
     universal-cookie: "npm:^4.0.4"
   languageName: unknown
   linkType: soft

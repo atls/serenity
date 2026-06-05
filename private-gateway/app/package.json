@@ -29,6 +29,6 @@
     "@protos/common": "workspace:^",
     "@types/node": "12.12.14",
     "ts-node": "^10.7.0",
-    "typescript": "^4.2.2"
+    "typescript": "5.5.4"
   }
 }
