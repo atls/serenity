@@ -14,7 +14,7 @@ services:
         ipv4_address: 172.16.101.99
 
   yarn:
-    image: node:22.22.2
+    image: node:24
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -146,7 +146,7 @@ services:
       - traefik
 
   site:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -168,7 +168,7 @@ services:
       - 'public-gateway.local.serenity.atls.tech:172.16.101.99'
 
   site-local:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -190,7 +190,7 @@ services:
       - 3000:3000
 
   identity:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -221,7 +221,7 @@ services:
       - 3002:3000
 
   cookie-store:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -242,7 +242,7 @@ services:
       - optional
 
   email:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -266,7 +266,7 @@ services:
       - traefik
 
   public-gateway:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -283,7 +283,7 @@ services:
       - 4000:3000
 
   private-gateway:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -296,7 +296,7 @@ services:
       - catalog-service
 
   catalog-service:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -314,7 +314,7 @@ services:
       - db
 
   identity-service:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -332,7 +332,7 @@ services:
       - db
 
   mailer-service:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -351,7 +351,7 @@ services:
       - db
 
   collaboration:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -371,7 +371,7 @@ services:
           - collaboration-service
 
   hits:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -391,7 +391,7 @@ services:
           - hits-service
 
   portfolio:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -411,7 +411,7 @@ services:
           - portfolio-service
 
   search-service:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
@@ -429,7 +429,7 @@ services:
       - elastic
 
   files-service:
-    image: node:22.22.2-alpine
+    image: node:24-alpine
     working_dir: /workspace
     volumes:
       - ./:/workspace
