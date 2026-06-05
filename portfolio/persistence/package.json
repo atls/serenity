@@ -3,9 +3,6 @@
   "version": "0.0.0",
   "license": "BSD-3-Clause",
   "main": "src/index.ts",
-  "scripts": {
-    "typeorm": "ts-node `yarn bin typeorm`"
-  },
   "dependencies": {
     "@monstrs/nestjs-bus": "0.1.4",
     "@monstrs/nestjs-logger": "0.1.2",
@@ -18,7 +15,6 @@
   },
   "devDependencies": {
     "@types/node": "12.12.14",
-    "ts-node": "8.5.2",
     "typescript": "3.7.2"
   },
   "peerDependencies": {

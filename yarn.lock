@@ -1687,7 +1687,6 @@ __metadata:
     pg: "npm:8.5.1"
     reflect-metadata: "npm:^0.1.13"
     rxjs: "npm:^7.0.1"
-    ts-node: "npm:8.10.2"
     typeorm: "npm:0.3.3"
     typescript: "npm:^4.2.2"
   peerDependencies:
@@ -1798,7 +1797,6 @@ __metadata:
     "@types/node": "npm:12.12.14"
     pg: "npm:8.5.1"
     rxjs: "npm:^7.0.1"
-    ts-node: "npm:^10.3.0"
     typeorm: "npm:0.3.3"
     typescript: "npm:3.7.2"
   peerDependencies:
@@ -2485,7 +2483,6 @@ __metadata:
     "@types/node": "npm:12.12.14"
     pg: "npm:8.5.1"
     rxjs: "npm:^7.0.1"
-    ts-node: "npm:8.10.2"
     typeorm: "npm:0.3.3"
     typescript: "npm:^4.2.2"
   languageName: unknown
@@ -3175,7 +3172,6 @@ __metadata:
     "@node-ts/ddd": "npm:^0.1.6"
     "@types/node": "npm:12.12.14"
     pg: "npm:8.5.1"
-    ts-node: "npm:8.5.2"
     typeorm: "npm:0.3.3"
     typescript: "npm:3.7.2"
   peerDependencies:
@@ -4060,7 +4056,6 @@ __metadata:
     "@nestjs/typeorm": "npm:8.0.3"
     "@types/node": "npm:12.12.14"
     pg: "npm:8.5.1"
-    ts-node: "npm:8.10.2"
     typeorm: "npm:0.3.3"
     typescript: "npm:^4.2.2"
   languageName: unknown
@@ -5364,7 +5359,6 @@ __metadata:
     "@portfolio/domain": "workspace:0.0.0"
     "@types/node": "npm:12.12.14"
     pg: "npm:7.13.0"
-    ts-node: "npm:8.5.2"
     typeorm: "npm:0.3.3"
     typescript: "npm:3.7.2"
   peerDependencies:
@@ -26676,7 +26670,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:^10.3.0, ts-node@npm:^10.7.0":
+"ts-node@npm:^10.7.0":
   version: 10.7.0
   resolution: "ts-node@npm:10.7.0"
   dependencies:
