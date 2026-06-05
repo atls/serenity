@@ -1741,8 +1741,8 @@ __metadata:
     typeorm: "npm:0.3.3"
     uuid: "npm:3.4.0"
   peerDependencies:
+    "@nestjs/common": "*"
     "@nestjs/core": "*"
-    "@nextjs/common": "*"
   languageName: unknown
   linkType: soft
 
@@ -1760,7 +1760,7 @@ __metadata:
     "@node-ts/logger-core": "npm:0.1.0"
     uuid: "npm:3.4.0"
   peerDependencies:
-    "@nextjs/common": "*"
+    "@nestjs/common": "*"
   languageName: unknown
   linkType: soft
 
@@ -4090,6 +4090,7 @@ __metadata:
     "@monstrs/nestjs-bus": "npm:0.1.4"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"
+    "@nestjs/microservices": "npm:8.4.2"
     "@nestjs/typeorm": "npm:8.0.3"
     "@node-ts/bus-core": "npm:0.6.3"
     "@protos/mailer": "workspace:^"

@@ -11,31 +11,24 @@
   "dependencies": {
     "@atls/nestjs-logger": "^0.2.37",
     "@atls/nestjs-map-errors-interceptor": "^0.1.36",
+    "@collaboration/application": "workspace:0.0.1",
+    "@collaboration/persistence": "workspace:0.0.1",
     "@grpc/proto-loader": "0.5.3",
     "@monstrs/nestjs-bus": "0.1.4",
     "@nestjs/common": "8.4.2",
     "@nestjs/core": "8.4.2",
     "@nestjs/microservices": "8.4.2",
     "@node-ts/bus-core": "0.4.9",
+    "@protos/collaboration": "0.0.1",
     "amqplib": "^0.8.0",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3"
   },
   "devDependencies": {
-    "@collaboration/application": "workspace:0.0.1",
     "@collaboration/domain": "workspace:0.0.1",
-    "@collaboration/persistence": "workspace:0.0.1",
-    "@protos/collaboration": "0.0.1",
     "@protos/common": "workspace:^",
     "@types/amqplib": "^0",
     "@types/node": "12.12.14",
     "typescript": "3.7.2"
-  },
-  "tools": {
-    "service": {
-      "externals": [
-        "typeorm"
-      ]
-    }
   }
 }
