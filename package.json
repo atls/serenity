@@ -51,6 +51,7 @@
     "@types/jest": "^26.0.23",
     "@types/node": "22.13.10",
     "@types/react": "^17.0.6",
+    "esbuild": "npm:esbuild-wasm@^0.23.1",
     "eslint": "8.4.1",
     "husky": "5.2.0",
     "typescript": "5.5.4"

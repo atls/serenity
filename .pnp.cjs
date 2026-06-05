@@ -659,6 +659,10 @@ const RAW_RUNTIME_STATE =
           ["@types/jest", "npm:26.0.23"],\
           ["@types/node", "npm:22.13.10"],\
           ["@types/react", "npm:17.0.8"],\
+          ["esbuild", [\
+            "esbuild-wasm",\
+            "npm:0.23.1"\
+          ]],\
           ["eslint", "npm:8.4.1"],\
           ["husky", "npm:5.2.0"],\
           ["root-workspace-0b6124", "workspace:."],\
@@ -36996,6 +37000,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["esbuild-wasm", [\
+      ["npm:0.23.1", {\
+        "packageLocation": "../.yarn/berry/cache/esbuild-wasm-npm-0.23.1-bc60c5041a-10.zip/node_modules/esbuild-wasm/",\
+        "packageDependencies": [\
+          ["esbuild-wasm", "npm:0.23.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["escalade", [\
       ["npm:3.1.1", {\
         "packageLocation": "../.yarn/berry/cache/escalade-npm-3.1.1-e02da076aa-10.zip/node_modules/escalade/",\
@@ -48870,6 +48883,10 @@ const RAW_RUNTIME_STATE =
           ["@types/jest", "npm:26.0.23"],\
           ["@types/node", "npm:22.13.10"],\
           ["@types/react", "npm:17.0.8"],\
+          ["esbuild", [\
+            "esbuild-wasm",\
+            "npm:0.23.1"\
+          ]],\
           ["eslint", "npm:8.4.1"],\
           ["husky", "npm:5.2.0"],\
           ["root-workspace-0b6124", "workspace:."],\

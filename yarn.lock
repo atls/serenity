@@ -14090,6 +14090,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"esbuild@npm:esbuild-wasm@^0.23.1":
+  version: 0.23.1
+  resolution: "esbuild-wasm@npm:0.23.1"
+  bin:
+    esbuild: bin/esbuild
+  checksum: 10/30677e4ea96211d15f7b3780d70ecee564267767bc4465ba6539f57b565f2505ab930ca409d7b85695b5931fc37afb508f62c694c2e2092dd519efdecf62959b
+  languageName: node
+  linkType: hard
+
 "escalade@npm:^3.1.1":
   version: 3.1.1
   resolution: "escalade@npm:3.1.1"
@@ -24309,6 +24318,7 @@ __metadata:
     "@types/jest": "npm:^26.0.23"
     "@types/node": "npm:22.13.10"
     "@types/react": "npm:^17.0.6"
+    esbuild: "npm:esbuild-wasm@^0.23.1"
     eslint: "npm:8.4.1"
     husky: "npm:5.2.0"
     typescript: "npm:5.5.4"
