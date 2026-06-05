@@ -3,11 +3,6 @@
   "version": "0.0.1",
   "license": "BSD-3-Clause",
   "main": "src/index.ts",
-  "scripts": {
-    "migration:generate": "yarn run typeorm migration:generate",
-    "migration:run": "yarn run typeorm migration:run",
-    "typeorm": "TS_NODE_PROJECT=./tsconfig.json node --require ts-node/register $(yarn bin typeorm)"
-  },
   "dependencies": {
     "@collaboration/domain": "0.0.1",
     "@monstrs/nestjs-bus": "0.1.4",
@@ -17,14 +12,13 @@
     "@node-ts/ddd": "^0.1.6",
     "@node-ts/ddd-types": "^0.1.4",
     "pg": "8.5.1",
-    "ts-node": "^10.3.0",
-    "typeorm": "0.3.3",
-    "typescript": "3.7.2"
+    "typeorm": "0.3.3"
   },
   "devDependencies": {
     "@monstrs/tsconfig": "^0.2.0",
     "@types/node": "12.12.14",
-    "rxjs": "^7.0.1"
+    "rxjs": "^7.0.1",
+    "typescript": "5.5.4"
   },
   "peerDependencies": {
     "@nestjs/core": "*"

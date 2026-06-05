@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@atls/nestjs-map-errors-interceptor": "^0.1.36",
+    "@collaboration/domain": "0.0.1",
     "@elastic/elasticsearch": "7.5.0",
     "@godaddy/terminus": "4.3.1",
     "@grpc/proto-loader": "0.5.3",
@@ -22,27 +23,19 @@
     "@nestjs/microservices": "8.4.2",
     "@nestjs/terminus": "8.0.6",
     "@node-ts/bus-core": "0.4.9",
+    "@protos/catalog": "0.1.1",
+    "@protos/collaboration": "0.0.1",
+    "@protos/interfaces": "0.1.1",
+    "@protos/search": "0.0.0",
     "amqplib": "^0.9.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3"
   },
   "devDependencies": {
-    "@collaboration/domain": "0.0.1",
-    "@protos/catalog": "0.1.1",
-    "@protos/collaboration": "0.0.1",
     "@protos/common": "workspace:^",
-    "@protos/interfaces": "0.1.1",
-    "@protos/search": "0.0.0",
     "@types/amqplib": "^0",
     "@types/elasticsearch": "5.0.36",
     "@types/node": "12.12.14",
-    "typescript": "3.7.2"
-  },
-  "tools": {
-    "service": {
-      "externals": [
-        "typeorm"
-      ]
-    }
+    "typescript": "5.5.4"
   }
 }

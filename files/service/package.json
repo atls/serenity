@@ -10,19 +10,19 @@
   },
   "dependencies": {
     "@atls/nestjs-map-errors-interceptor": "^0.1.36",
+    "@files/application": "0.0.2",
+    "@files/persistence": "0.0.2",
     "@grpc/proto-loader": "0.5.5",
     "@monstrs/nestjs-bus": "0.1.4",
     "@nestjs/common": "8.4.2",
     "@nestjs/core": "8.4.2",
     "@nestjs/microservices": "8.4.2",
+    "@protos/files": "0.0.2",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3"
   },
   "devDependencies": {
-    "@files/application": "0.0.2",
-    "@files/persistence": "0.0.2",
-    "@protos/files": "0.0.2",
     "@types/node": "12.12.14",
-    "typescript": "^4.2.2"
+    "typescript": "5.5.4"
   }
 }

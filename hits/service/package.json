@@ -11,22 +11,22 @@
   "dependencies": {
     "@atls/nestjs-map-errors-interceptor": "^0.1.36",
     "@grpc/proto-loader": "0.5.3",
+    "@hits/commands": "0.0.1",
+    "@hits/persistence": "0.0.1",
+    "@hits/queries": "0.0.1",
     "@monstrs/nestjs-bus": "0.1.4",
     "@nestjs/common": "8.4.2",
     "@nestjs/core": "8.4.2",
     "@nestjs/microservices": "8.4.2",
+    "@protos/hits": "0.0.1",
     "amqplib": "^0.8.0",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3"
   },
   "devDependencies": {
-    "@hits/commands": "0.0.1",
-    "@hits/persistence": "0.0.1",
-    "@hits/queries": "0.0.1",
     "@protos/common": "workspace:^",
-    "@protos/hits": "0.0.1",
     "@types/amqplib": "^0",
     "@types/node": "12.12.14",
-    "typescript": "3.7.2"
+    "typescript": "5.5.4"
   }
 }

@@ -4,11 +4,11 @@
   "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "dependencies": {
+    "@nestjs/common": "8.4.2",
     "@ory/kratos-client": "0.8.2-alpha.1"
   },
   "devDependencies": {
     "@identity/domain": "0.3.1",
-    "@nestjs/common": "8.4.2",
     "@nestjs/core": "8.4.2",
     "@nestjs/microservices": "8.4.2",
     "@nestjs/testing": "8.4.2",

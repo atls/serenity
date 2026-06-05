@@ -10,24 +10,25 @@
   },
   "dependencies": {
     "@grpc/proto-loader": "0.5.5",
-    "@monstrs/nestjs-bus": "0.1.4",
-    "@nestjs/common": "8.4.2",
-    "@nestjs/core": "8.4.2",
-    "@nestjs/typeorm": "8.0.3",
-    "@node-ts/bus-core": "0.6.3",
-    "class-validator": "0.11.0",
-    "reflect-metadata": "0.1.13",
-    "rxjs": "6.5.3",
-    "typeorm": "0.3.3",
-    "typescript": "^4.2.2"
-  },
-  "devDependencies": {
     "@identity/domain": "workspace:^",
     "@mailer/api": "workspace:^",
     "@mailer/db": "workspace:^",
     "@mailer/renderer": "workspace:^",
     "@mailer/transport": "workspace:^",
+    "@monstrs/nestjs-bus": "0.1.4",
+    "@nestjs/common": "8.4.2",
+    "@nestjs/core": "8.4.2",
+    "@nestjs/microservices": "8.4.2",
+    "@nestjs/typeorm": "8.0.3",
+    "@node-ts/bus-core": "0.6.3",
+    "class-validator": "0.11.0",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "6.5.3",
+    "typeorm": "0.3.3"
+  },
+  "devDependencies": {
     "@protos/mailer": "workspace:^",
-    "@types/node": "12.12.14"
+    "@types/node": "12.12.14",
+    "typescript": "5.5.4"
   }
 }

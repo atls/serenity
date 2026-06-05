@@ -4,9 +4,8 @@
   "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "scripts": {
-    "build": "yarn clean:runtime && yarn service build",
-    "clean:runtime": "rm -rf node_modules ../persistence/node_modules",
-    "dev": "yarn clean:runtime && yarn service dev",
+    "build": "yarn service build",
+    "dev": "yarn service dev",
     "start": "node dist/index.js"
   },
   "dependencies": {
@@ -16,18 +15,18 @@
     "@nestjs/common": "8.4.2",
     "@nestjs/core": "8.4.2",
     "@nestjs/microservices": "8.4.2",
+    "@portfolio/application": "workspace:0.0.0",
+    "@portfolio/persistence": "workspace:0.0.0",
+    "@protos/portfolio": "workspace:0.0.0",
     "amqplib": "^0.9.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3"
   },
   "devDependencies": {
-    "@portfolio/application": "workspace:0.0.0",
     "@portfolio/domain": "workspace:0.0.0",
-    "@portfolio/persistence": "workspace:0.0.0",
     "@protos/common": "workspace:^",
-    "@protos/portfolio": "workspace:0.0.0",
     "@types/amqplib": "^0",
     "@types/node": "12.12.14",
-    "typescript": "3.7.2"
+    "typescript": "5.5.4"
   }
 }
