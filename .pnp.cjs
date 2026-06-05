@@ -653,7 +653,6 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@atlantis-lab/tsconfig", "npm:0.1.12"],\
           ["@atls/code-runtime", "npm:2.1.30"],\
           ["@jest/core", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:27.4.7"],\
           ["@types/eslint", "npm:8.4.1"],\
@@ -48639,7 +48638,6 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@atlantis-lab/tsconfig", "npm:0.1.12"],\
           ["@atls/code-runtime", "npm:2.1.30"],\
           ["@jest/core", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:27.4.7"],\
           ["@types/eslint", "npm:8.4.1"],\

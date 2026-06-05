@@ -24308,7 +24308,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@atlantis-lab/tsconfig": "npm:^0.1.12"
     "@atls/code-runtime": "npm:2.1.30"
     "@jest/core": "npm:^27.4.7"
     "@types/eslint": "npm:^8"

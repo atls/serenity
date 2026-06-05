@@ -45,7 +45,6 @@
     "typescript": "5.5.4"
   },
   "devDependencies": {
-    "@atlantis-lab/tsconfig": "^0.1.12",
     "@atls/code-runtime": "2.1.30",
     "@jest/core": "^27.4.7",
     "@types/eslint": "^8",
