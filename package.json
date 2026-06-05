@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@atlantis-lab/tsconfig": "^0.1.12",
-    "@atls/code-runtime": "^2.1.20",
+    "@atls/code-runtime": "2.1.30",
     "@atls/code-service": "^0.1.9",
     "@atls/config-jest": "^0.0.2",
     "@jest/core": "^27.4.7",
@@ -66,5 +66,8 @@
       "unplugged": true
     }
   },
-  "packageManager": "yarn@4.14.1"
+  "packageManager": "yarn@4.16.0",
+  "linterIgnorePatterns": [
+    "project.types.d.ts"
+  ]
 }
