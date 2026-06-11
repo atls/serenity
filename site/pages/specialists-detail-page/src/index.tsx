@@ -1,9 +1,9 @@
 import { useRouter }                                  from 'next/router'
 import React                                          from 'react'
 
-import { Seo }                                        from './Seo'
-import { SpecialistsDetailPage as SpecialistsDetail } from './SpecialistsDetailPage'
-import { useData }                                    from './useData'
+import { Seo }                                        from './Seo.js'
+import { SpecialistsDetailPage as SpecialistsDetail } from './SpecialistsDetailPage.js'
+import { useData }                                    from './useData.js'
 
 const SpecialistsDetailPage = () => {
   const router = useRouter()

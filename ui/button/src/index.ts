@@ -1,3 +1,3 @@
-export * from './SwitchButton'
-export * from './Button'
-export * from './CheckButton'
+export * from './SwitchButton.js'
+export * from './Button.js'
+export * from './CheckButton.js'

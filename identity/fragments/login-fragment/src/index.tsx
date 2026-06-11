@@ -1,7 +1,7 @@
 import { useIntl } from 'react-intl'
 import React       from 'react'
 
-import { Login }   from './Login'
+import { Login }   from './Login.js'
 
 const Fragment = () => {
   const intl = useIntl()

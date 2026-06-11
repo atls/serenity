@@ -2,6 +2,7 @@
   "name": "@protos/portfolio",
   "version": "0.0.0",
   "license": "BSD-3-Clause",
+  "type": "module",
   "main": "src/index.ts",
   "dependencies": {
     "@nestjs/microservices": "8.4.2",

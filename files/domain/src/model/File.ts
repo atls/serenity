@@ -1,7 +1,7 @@
 import { AggregateRoot }           from '@node-ts/ddd'
 import { AggregateRootProperties } from '@node-ts/ddd-types'
 
-import { FileCreated }             from '../events'
+import { FileCreated }             from '../events/index.js'
 
 export interface FileProperties extends AggregateRootProperties {
   type: string

@@ -1,6 +1,6 @@
 import { Module }    from '@nestjs/common'
 
-import { Transport } from './Transport'
+import { Transport } from './Transport.js'
 
 declare const __non_webpack_require__: any
 

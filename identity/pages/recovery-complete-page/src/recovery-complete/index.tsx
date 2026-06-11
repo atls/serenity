@@ -1,7 +1,7 @@
 import { useIntl }          from 'react-intl'
 import React                from 'react'
 
-import { RecoveryComplete } from './RecoveryComplete'
+import { RecoveryComplete } from './RecoveryComplete.js'
 
 const Page = (props: any) => {
   const intl = useIntl()

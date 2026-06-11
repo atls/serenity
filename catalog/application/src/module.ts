@@ -1,9 +1,9 @@
 import { Module }                      from '@nestjs/common'
 
-import { CategoryGroupQueriesService } from './services'
-import { CategoryGroupService }        from './services'
-import { CategoryQueriesService }      from './services'
-import { CategoryService }             from './services'
+import { CategoryGroupQueriesService } from './services/index.js'
+import { CategoryGroupService }        from './services/index.js'
+import { CategoryQueriesService }      from './services/index.js'
+import { CategoryService }             from './services/index.js'
 
 @Module({
   providers: [

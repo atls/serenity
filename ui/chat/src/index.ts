@@ -1,3 +1,3 @@
-export * from './Chat'
-export * from './ChatButton'
-export * from './context'
+export * from './Chat.js'
+export * from './ChatButton.js'
+export * from './context/index.js'

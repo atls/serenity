@@ -8,8 +8,8 @@ import { ClientGrpc }           from '@nestjs/microservices'
 import { clientOptions }        from '@protos/catalog'
 import { catalog }              from '@protos/interfaces'
 
-import { CategoryGroupsFilter } from '../inputs'
-import { CategoryGroupsList }   from '../types'
+import { CategoryGroupsFilter } from '../inputs/index.js'
+import { CategoryGroupsList }   from '../types/index.js'
 
 @Injectable()
 export class CategoryGroupQueries implements OnModuleInit {

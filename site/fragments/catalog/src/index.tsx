@@ -4,8 +4,8 @@ import { Box }           from '@ui/layout'
 import { useDrawer }     from '@ui/drawer'
 import { useWindowSize } from '@ui/utils'
 
-import { Desktop }       from './Desktop'
-import { useData }       from './useData'
+import { Desktop }       from './Desktop.js'
+import { useData }       from './useData.js'
 
 const CatalogFragment = () => {
   const { visible } = useDrawer('catalog')

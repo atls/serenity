@@ -6,7 +6,7 @@ import { switchProp } from 'styled-tools'
 
 import styled         from '@emotion/styled'
 
-import { AddonProps } from './types'
+import { AddonProps } from './types.js'
 
 const base: styleFn = () => ({
   display: 'flex',

@@ -1,7 +1,7 @@
 import { Event }       from '@node-ts/bus-messages'
 import { Uuid }        from '@node-ts/ddd-types'
 
-import { UploadField } from '../model'
+import { UploadField } from '../model/index.js'
 
 export class UploadCreated extends Event {
   static readonly NAME = 'files/upload-created'

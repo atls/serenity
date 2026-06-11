@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+set -eu
+
+ROOT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")/../.." && pwd)
+YARN_PATH=$(awk '/^yarnPath:/ { print $2; exit }' "$ROOT_DIR/.yarnrc.yml")
+
+exec "$ROOT_DIR/$YARN_PATH" "$@"

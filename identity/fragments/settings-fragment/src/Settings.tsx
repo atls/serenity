@@ -9,7 +9,7 @@ import { Column }     from '@ui/layout'
 import { Layout }     from '@ui/layout'
 import { Text }       from '@ui/text'
 
-import messages       from './messages'
+import messages       from './messages.js'
 
 export const Settings = ({ intl }: any) => (
   <Box width={400} mx={[32, 0]}>

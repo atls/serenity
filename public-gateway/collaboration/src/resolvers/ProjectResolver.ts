@@ -9,11 +9,11 @@ import { Category }       from '@public-gateway/catalog'
 import { File }           from '@public-gateway/files'
 import { collaboration }  from '@protos/interfaces'
 
-import { CategoryLoader } from '../dataloaders'
-import { CounterLoader }  from '../dataloaders'
-import { FilesLoader }    from '../dataloaders'
-import { ReplyLoader }    from '../dataloaders'
-import { Project }        from '../types'
+import { CategoryLoader } from '../dataloaders/index.js'
+import { CounterLoader }  from '../dataloaders/index.js'
+import { FilesLoader }    from '../dataloaders/index.js'
+import { ReplyLoader }    from '../dataloaders/index.js'
+import { Project }        from '../types/index.js'
 
 @Injectable()
 @Resolver((of) => Project)

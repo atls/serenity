@@ -3,9 +3,9 @@ import { ObjectType }     from '@nestjs/graphql'
 import { Category }       from '@public-gateway/catalog'
 import { File }           from '@public-gateway/files'
 
-import { ProjectAddress } from './ProjectAddress'
-import { ProjectOwner }   from './ProjectOwner'
-import { Reply }          from './Reply'
+import { ProjectAddress } from './ProjectAddress.js'
+import { ProjectOwner }   from './ProjectOwner.js'
+import { Reply }          from './Reply.js'
 
 @ObjectType()
 export class Project {

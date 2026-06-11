@@ -1,7 +1,7 @@
 import { Module }                  from '@nestjs/common'
 
-import { PortfolioQueriesService } from './services'
-import { PortfolioService }        from './services'
+import { PortfolioQueriesService } from './services/index.js'
+import { PortfolioService }        from './services/index.js'
 
 @Module({
   providers: [PortfolioService, PortfolioQueriesService],

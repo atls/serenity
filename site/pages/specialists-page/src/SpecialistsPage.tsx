@@ -8,7 +8,7 @@ import Footer      from '@site/footer-fragment'
 import Navigation  from '@site/navigation-fragment'
 import Specialists from '@site/specialists-fragment'
 
-import messages    from './messages'
+import messages    from './messages.js'
 
 export const SpecialistsPage = ({ intl, activeCategory, selectCategory }) => (
   <>

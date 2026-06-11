@@ -7,7 +7,7 @@ import { ManyToOne }        from 'typeorm'
 import { PrimaryColumn }    from 'typeorm'
 import { UpdateDateColumn } from 'typeorm'
 
-import { Discussion }       from './Discussion'
+import { Discussion }       from './Discussion.js'
 
 @Entity()
 export class Message {

@@ -8,7 +8,7 @@ import { MjmlText }    from 'mjml-react/dist/src/mjml-text'
 import { MjmlTitle }   from 'mjml-react/dist/src/mjml-title'
 import React           from 'react'
 
-import messages        from './messages'
+import messages        from './messages.js'
 
 export const Template = ({ intl, link, webVersionUrl }: any) => (
   <Mjml>

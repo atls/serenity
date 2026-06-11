@@ -9,7 +9,7 @@ import { UpdateDateColumn } from 'typeorm'
 
 import { ReplyStatus }      from '@collaboration/domain'
 
-import { Discussion }       from './Discussion'
+import { Discussion }       from './Discussion.js'
 
 @Entity()
 @Index(['projectId', 'specialistId'], { unique: true })

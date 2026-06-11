@@ -7,8 +7,8 @@ import { Upload }                 from '@files/domain'
 import { FileEntityRepository }   from '@files/persistence'
 import { UploadEntityRepository } from '@files/persistence'
 
-import { ConfirmUploadCommand }   from '../commands'
-import { CreateUploadCommand }    from '../commands'
+import { ConfirmUploadCommand }   from '../commands/index.js'
+import { CreateUploadCommand }    from '../commands/index.js'
 
 @Injectable()
 export class UploadService {

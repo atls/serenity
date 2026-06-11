@@ -4,7 +4,7 @@ import React                 from 'react'
 
 import { useChat }           from '@ui/chat'
 
-import { SpecialistsDetail } from './SpecialistsDetail'
+import { SpecialistsDetail } from './SpecialistsDetail.js'
 
 const SpecialistsDetailFragment = (data) => {
   const intl = useIntl()

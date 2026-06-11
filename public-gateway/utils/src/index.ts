@@ -1,2 +1,2 @@
-export * from './interfaces'
-export * from './pipes'
+export * from './interfaces/index.js'
+export * from './pipes/index.js'

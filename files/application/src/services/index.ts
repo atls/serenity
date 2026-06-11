@@ -1,2 +1,2 @@
-export * from './FileQueriesService'
-export * from './UploadService'
+export * from './FileQueriesService.js'
+export * from './UploadService.js'

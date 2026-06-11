@@ -9,8 +9,8 @@ import React                       from 'react'
 
 import styled                      from '@emotion/styled'
 
-import { StyledButtonProps }       from './types'
-import { divideChildren }          from './utils'
+import { StyledButtonProps }       from './types.js'
+import { divideChildren }          from './utils.js'
 
 const base: any = ({ theme }: any) => ({
   fontFamily: theme.fonts.primary,

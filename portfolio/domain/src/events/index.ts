@@ -1,2 +1,2 @@
-export * from './PortfolioCreated'
-export * from './PortfolioUpdated'
+export * from './PortfolioCreated.js'
+export * from './PortfolioUpdated.js'

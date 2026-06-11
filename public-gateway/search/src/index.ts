@@ -1,10 +1,10 @@
 import { Module }                    from '@nestjs/common'
 
-import { ProjectsSearchResolver }    from './resolvers'
-import { SearchQueries }             from './resolvers'
-import { SpecialistsSearchResolver } from './resolvers'
+import { ProjectsSearchResolver }    from './resolvers/index.js'
+import { SearchQueries }             from './resolvers/index.js'
+import { SpecialistsSearchResolver } from './resolvers/index.js'
 
-export * from './types'
+export * from './types/index.js'
 
 @Module({
   providers: [SearchQueries, ProjectsSearchResolver, SpecialistsSearchResolver],

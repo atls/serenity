@@ -1,1 +1,1 @@
-export * from './RelativeTime'
+export * from './RelativeTime.js'

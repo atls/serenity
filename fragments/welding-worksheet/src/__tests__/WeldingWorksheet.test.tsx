@@ -9,7 +9,7 @@ import React                from 'react'
 import { ThemeProvider }    from '@ui/theme'
 import { render }           from '@testing-library/react'
 
-import { WeldingWorksheet } from '../WeldingWorksheet'
+import { WeldingWorksheet } from '../WeldingWorksheet.js'
 
 const TestComponent = () => {
   const intl = useIntl()

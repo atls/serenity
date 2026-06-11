@@ -11,7 +11,7 @@ import { Row }                  from '@ui/layout'
 import { Text }                 from '@ui/text'
 import styled                   from '@emotion/styled'
 
-import { InnerChat }            from './InnerChat'
+import { InnerChat }            from './InnerChat.js'
 
 interface ActiveProps {
   active: boolean

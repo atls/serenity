@@ -9,8 +9,8 @@ import { ClientGrpc }            from '@nestjs/microservices'
 import { clientOptions }         from '@protos/identity'
 import { identity }              from '@protos/interfaces'
 
-import { UpdateProfileInput }    from '../inputs'
-import { UpdateProfileResponse } from '../types'
+import { UpdateProfileInput }    from '../inputs/index.js'
+import { UpdateProfileResponse } from '../types/index.js'
 
 @Injectable()
 export class ProfileMutations implements OnModuleInit {

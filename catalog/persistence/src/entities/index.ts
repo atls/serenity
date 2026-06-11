@@ -1,2 +1,2 @@
-export * from './CategoryGroup'
-export * from './Category'
+export * from './CategoryGroup.js'
+export * from './Category.js'

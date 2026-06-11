@@ -1,4 +1,4 @@
-import { Phone } from './Phone'
+import { Phone } from './Phone.js'
 
 export class ContactInformation {
   phone: Phone

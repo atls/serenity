@@ -11,7 +11,7 @@ import { IdentityModule }        from '@public-gateway/identity'
 import { PortfolioModule }       from '@public-gateway/portfolio'
 import { SearchModule }          from '@public-gateway/search'
 
-import { ActivityMiddleware }    from './middleware'
+import { ActivityMiddleware }    from './middleware/index.js'
 
 // eslint-disable-next-line
 const playground =

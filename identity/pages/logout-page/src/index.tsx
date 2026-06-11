@@ -1,6 +1,6 @@
 import React          from 'react'
 
-import { LogoutPage } from './LogoutPage'
+import { LogoutPage } from './LogoutPage.js'
 
 const Logout = () => <LogoutPage />
 

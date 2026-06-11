@@ -1,8 +1,8 @@
 import { Field }                      from '@nestjs/graphql'
 import { ObjectType }                 from '@nestjs/graphql'
 
-import { AddDiscussionMessageErrors } from './AddDiscussionMessageErrors'
-import { Message }                    from './Message'
+import { AddDiscussionMessageErrors } from './AddDiscussionMessageErrors.js'
+import { Message }                    from './Message.js'
 
 @ObjectType()
 export class AddDiscussionMessageResponse {

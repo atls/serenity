@@ -1,7 +1,7 @@
 import { useIntl }  from 'react-intl'
 import React        from 'react'
 
-import { Template } from './Template'
+import { Template } from './Template.js'
 
 const EmailVerificationTemplate = ({ url }) => {
   const data = url.query || {}

@@ -6,8 +6,8 @@ import { ResolveField } from '@nestjs/graphql'
 import { Resolver }     from '@nestjs/graphql'
 import { Root }         from '@nestjs/graphql'
 
-import { UserLoader }   from '../dataloaders'
-import { Review }       from '../types'
+import { UserLoader }   from '../dataloaders/index.js'
+import { Review }       from '../types/index.js'
 
 @Injectable()
 @Resolver((of) => Review)

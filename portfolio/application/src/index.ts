@@ -1,3 +1,3 @@
-export * from './commands'
-export * from './services'
-export * from './module'
+export * from './commands/index.js'
+export * from './services/index.js'
+export * from './module.js'

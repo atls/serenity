@@ -5,7 +5,7 @@ import { Layout }    from '@ui/layout'
 import { Text }      from '@ui/text'
 import messages      from '@fragments/ceilings-worksheet/src/messages'
 
-import { CheckItem } from './CheckItem'
+import { CheckItem } from './CheckItem.js'
 
 export const Ceilings = ({
   intl,

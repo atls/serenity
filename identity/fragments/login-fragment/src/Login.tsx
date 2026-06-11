@@ -11,7 +11,7 @@ import { Row }        from '@ui/layout'
 import { Link }       from '@ui/link'
 import { Text }       from '@ui/text'
 
-import messages       from './messages'
+import messages       from './messages.js'
 
 export const Login = ({ intl }: any) => (
   <FlowSubmit>

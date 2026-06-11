@@ -1,2 +1,2 @@
-export * from './Layout'
-export * from './Box'
+export * from './Layout.js'
+export * from './Box.js'

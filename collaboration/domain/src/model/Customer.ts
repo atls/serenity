@@ -1,9 +1,9 @@
 import { AggregateRoot }   from '@node-ts/ddd'
 
-import { Address }         from './Address'
-import { BeginningOfWork } from './BeginningOfWork'
-import { Project }         from './Project'
-import { Reply }           from './Reply'
+import { Address }         from './Address.js'
+import { BeginningOfWork } from './BeginningOfWork.js'
+import { Project }         from './Project.js'
+import { Reply }           from './Reply.js'
 
 export class Customer extends AggregateRoot {
   openProjects: number

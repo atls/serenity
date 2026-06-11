@@ -6,7 +6,7 @@ import { Logger }                       from '@monstrs/nestjs-logger'
 import { WriteRepository }              from '@node-ts/ddd'
 import { Portfolio as PortfolioEntity } from '@portfolio/domain'
 
-import { Portfolio }                    from '../entities'
+import { Portfolio }                    from '../entities/index.js'
 
 @Injectable()
 // @ts-ignore

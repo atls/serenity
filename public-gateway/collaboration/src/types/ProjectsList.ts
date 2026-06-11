@@ -2,7 +2,7 @@ import { Field }      from '@nestjs/graphql'
 import { ObjectType } from '@nestjs/graphql'
 import { PageInfo }   from '@public-gateway/types'
 
-import { Project }    from './Project'
+import { Project }    from './Project.js'
 
 @ObjectType()
 export class ProjectsList {

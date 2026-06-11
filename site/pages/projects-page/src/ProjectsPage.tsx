@@ -8,7 +8,7 @@ import Footer     from '@site/footer-fragment'
 import Navigation from '@site/navigation-fragment'
 import Projects   from '@site/projects-fragment'
 
-import messages   from './messages'
+import messages   from './messages.js'
 
 export const ProjectsPage = ({ intl, activeCategory, selectCategory }) => (
   <>

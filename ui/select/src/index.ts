@@ -1,2 +1,2 @@
-export * from './Select'
+export * from './Select.js'
 export { Option } from 'rc-select'

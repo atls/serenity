@@ -1,1 +1,1 @@
-export * from './IsFieldEqual'
+export * from './IsFieldEqual.js'

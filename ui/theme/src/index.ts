@@ -1,6 +1,6 @@
-import * as theme from './theme'
+import * as theme from './theme/index.js'
 
-export * from './Provider'
-export * from './globals'
+export * from './Provider.js'
+export * from './globals.js'
 
 export { theme }

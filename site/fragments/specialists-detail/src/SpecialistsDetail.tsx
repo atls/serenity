@@ -20,7 +20,7 @@ import { ReadMore }     from '@ui/read-more'
 import { Text }         from '@ui/text'
 import Reviews          from '@fragments/reviews'
 
-import messages         from './messages'
+import messages         from './messages.js'
 
 export const SpecialistsDetail = ({
   intl,

@@ -1,5 +1,5 @@
-import { FormOfWork }  from './FormOfWork'
-import { Interaction } from './Interaction'
+import { FormOfWork }  from './FormOfWork.js'
+import { Interaction } from './Interaction.js'
 
 export class Company extends Interaction {
   formOfWork: FormOfWork = FormOfWork.company

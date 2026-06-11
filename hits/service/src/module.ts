@@ -4,9 +4,9 @@ import { CommandsModule }            from '@hits/commands'
 import { PersistenceModule }         from '@hits/persistence'
 import { QueriesModule }             from '@hits/queries'
 
-import { ActivityController }        from './controllers'
-import { ActivityQueriesController } from './controllers'
-import { CounterQueriesController }  from './controllers'
+import { ActivityController }        from './controllers/index.js'
+import { ActivityQueriesController } from './controllers/index.js'
+import { CounterQueriesController }  from './controllers/index.js'
 
 @Module({
   imports: [PersistenceModule, CommandsModule, QueriesModule],

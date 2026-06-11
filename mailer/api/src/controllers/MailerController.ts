@@ -2,7 +2,7 @@ import { Controller }    from '@nestjs/common'
 
 import { GrpcMethod }    from '@nestjs/microservices'
 
-import { MailerService } from '../services'
+import { MailerService } from '../services/index.js'
 
 @Controller()
 export class MailerController {

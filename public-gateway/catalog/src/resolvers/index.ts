@@ -1,2 +1,2 @@
-export * from './CategoryGroupQueries'
-export * from './CategoryQueries'
+export * from './CategoryGroupQueries.js'
+export * from './CategoryQueries.js'

@@ -1,1 +1,1 @@
-export * from './PortfolioEntityRepository'
+export * from './PortfolioEntityRepository.js'

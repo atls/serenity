@@ -9,12 +9,12 @@ import { ClientGrpc }                  from '@nestjs/microservices'
 import { clientOptions }               from '@protos/catalog'
 import { catalog }                     from '@protos/interfaces'
 
-import { CreateCategoryGroupInput }    from '../inputs'
-import { DeleteCategoryGroupInput }    from '../inputs'
-import { UpdateCategoryGroupInput }    from '../inputs'
-import { CreateCategoryGroupResponse } from '../types'
-import { DeleteCategoryGroupResponse } from '../types'
-import { UpdateCategoryGroupResponse } from '../types'
+import { CreateCategoryGroupInput }    from '../inputs/index.js'
+import { DeleteCategoryGroupInput }    from '../inputs/index.js'
+import { UpdateCategoryGroupInput }    from '../inputs/index.js'
+import { CreateCategoryGroupResponse } from '../types/index.js'
+import { DeleteCategoryGroupResponse } from '../types/index.js'
+import { UpdateCategoryGroupResponse } from '../types/index.js'
 
 @Injectable()
 export class CategoryGroupMutations implements OnModuleInit {

@@ -1,1 +1,1 @@
-export * from './MailerController'
+export * from './MailerController.js'

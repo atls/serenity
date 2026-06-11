@@ -1,1 +1,1 @@
-export * from './kratos.service'
+export * from './kratos.service.js'

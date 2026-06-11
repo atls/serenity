@@ -1,6 +1,6 @@
-export * from './StyledInput'
-export * from './PrefixSuffix'
-export * from './Addon'
+export * from './StyledInput.js'
+export * from './PrefixSuffix.js'
+export * from './Addon.js'
 
-export * from './Attachments'
-export * from './Addons'
+export * from './Attachments.js'
+export * from './Addons.js'

@@ -13,7 +13,7 @@ import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Text }             from '@ui/text'
 
-import messages             from './messages'
+import messages             from './messages.js'
 
 interface Message {
   id: string

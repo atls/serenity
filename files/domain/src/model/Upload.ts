@@ -4,8 +4,8 @@ import { parse }                   from 'url'
 import { AggregateRoot }           from '@node-ts/ddd'
 import { AggregateRootProperties } from '@node-ts/ddd-types'
 
-import { UploadCreated }           from '../events'
-import { File }                    from './File'
+import { UploadCreated }           from '../events/index.js'
+import { File }                    from './File.js'
 
 export interface UploadField {
   key: string

@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "license": "BSD-3-Clause",
+  "type": "module",
   "main": "src/index.ts",
   "dependencies": {
     "@types/styled-system": "^5.1.0",

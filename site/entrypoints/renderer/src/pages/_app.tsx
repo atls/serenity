@@ -11,10 +11,10 @@ import { ThemeProvider }      from '@ui/theme'
 import { withProvider }       from '@atls/next-app-with-provider'
 import { injectGlobalStyles } from '@ui/theme'
 
-import { withAuth }           from '../providers'
-import { withEmotion }        from '../providers'
-import { withUser }           from '../providers'
-import { withIntl }           from '../providers'
+import { withAuth }           from '../providers/index.js'
+import { withEmotion }        from '../providers/index.js'
+import { withUser }           from '../providers/index.js'
+import { withIntl }           from '../providers/index.js'
 
 const nextHeadModule: any = require('next/head')
 

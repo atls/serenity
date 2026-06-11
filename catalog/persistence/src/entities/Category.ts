@@ -7,7 +7,7 @@ import { ManyToOne }        from 'typeorm'
 import { PrimaryColumn }    from 'typeorm'
 import { UpdateDateColumn } from 'typeorm'
 
-import { CategoryGroup }    from './CategoryGroup'
+import { CategoryGroup }    from './CategoryGroup.js'
 
 @Entity()
 export class Category {

@@ -2,7 +2,7 @@ import 'reflect-metadata'
 
 import { Test }             from '@nestjs/testing'
 import { firstValueFrom }   from 'rxjs'
-import uuid                 from 'uuid/v4'
+import uuid                 from 'uuid/v4.js'
 
 import { ServiceModule }    from '@collaboration/service/src/module'
 import { Logger }           from '@monstrs/nestjs-logger'

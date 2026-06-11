@@ -5,11 +5,11 @@ import { BusModule }              from '@monstrs/nestjs-bus'
 import { LoggerModule }           from '@monstrs/nestjs-logger'
 import { TypeOrmModule }          from '@nestjs/typeorm'
 
-import { File }                   from './entities'
-import { Upload }                 from './entities'
-import { FileEntityRepository }   from './repositories'
-import { UploadEntityRepository } from './repositories'
-import config                     from './config'
+import { File }                   from './entities/index.js'
+import { Upload }                 from './entities/index.js'
+import { FileEntityRepository }   from './repositories/index.js'
+import { UploadEntityRepository } from './repositories/index.js'
+import config                     from './config.js'
 
 const feature = TypeOrmModule.forFeature([Upload, File])
 

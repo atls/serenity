@@ -1,8 +1,8 @@
 import { Field }                from '@nestjs/graphql'
 import { ObjectType }           from '@nestjs/graphql'
 
-import { Category }             from './Category'
-import { CreateCategoryErrors } from './CreateCategoryErrors'
+import { Category }             from './Category.js'
+import { CreateCategoryErrors } from './CreateCategoryErrors.js'
 
 @ObjectType()
 export class CreateCategoryResponse {

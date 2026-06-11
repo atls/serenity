@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "license": "BSD-3-Clause",
+  "type": "module",
   "main": "src/index.ts",
   "dependencies": {
     "framer-motion": "^4.1.17",

@@ -9,7 +9,7 @@ import { ClientGrpc }       from '@nestjs/microservices'
 import { clientOptions }    from '@protos/catalog'
 import { catalog }          from '@protos/interfaces'
 
-import { orderResultByKey } from './orderResultByKey'
+import { orderResultByKey } from './orderResultByKey.js'
 
 @Injectable()
 export class CategoryLoader implements NestDataLoader, OnModuleInit {

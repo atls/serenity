@@ -5,8 +5,8 @@ import React           from 'react'
 
 import { useChat }     from '@ui/chat'
 
-import { Specialists } from './Specialists'
-import { useData }     from './useData'
+import { Specialists } from './Specialists.js'
+import { useData }     from './useData.js'
 
 const SpecialistsFragment = ({ activeCategory = '' }) => {
   const router = useRouter()

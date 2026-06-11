@@ -1,10 +1,10 @@
-import uuid                   from 'uuid/v4'
+import uuid                   from 'uuid/v4.js'
 
 import { AggregateRoot }      from '@node-ts/ddd'
 
-import { ReplyCreated }       from '../events'
-import { ReplyStatusChanged } from '../events'
-import { ReplyStatus }        from './ReplyStatus'
+import { ReplyCreated }       from '../events/index.js'
+import { ReplyStatusChanged } from '../events/index.js'
+import { ReplyStatus }        from './ReplyStatus.js'
 
 export class Reply extends AggregateRoot {
   projectId: string

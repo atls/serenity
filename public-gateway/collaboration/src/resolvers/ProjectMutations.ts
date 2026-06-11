@@ -9,14 +9,14 @@ import { ClientGrpc }              from '@nestjs/microservices'
 import { clientOptions }           from '@protos/collaboration'
 import { collaboration }           from '@protos/interfaces'
 
-import { CompleteProjectInput }    from '../inputs'
-import { CreateProjectInput }      from '../inputs'
-import { PublishProjectInput }     from '../inputs'
-import { UpdateProjectInput }      from '../inputs'
-import { CompleteProjectResponse } from '../types'
-import { CreateProjectResponse }   from '../types'
-import { PublishProjectResponse }  from '../types'
-import { UpdateProjectResponse }   from '../types'
+import { CompleteProjectInput }    from '../inputs/index.js'
+import { CreateProjectInput }      from '../inputs/index.js'
+import { PublishProjectInput }     from '../inputs/index.js'
+import { UpdateProjectInput }      from '../inputs/index.js'
+import { CompleteProjectResponse } from '../types/index.js'
+import { CreateProjectResponse }   from '../types/index.js'
+import { PublishProjectResponse }  from '../types/index.js'
+import { UpdateProjectResponse }   from '../types/index.js'
 
 @Injectable()
 export class ProjectMutations implements OnModuleInit {

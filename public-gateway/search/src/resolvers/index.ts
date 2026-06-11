@@ -1,3 +1,3 @@
-export * from './SpecialistsSearchResolver'
-export * from './ProjectsSearchResolver'
-export * from './SearchQueries'
+export * from './SpecialistsSearchResolver.js'
+export * from './ProjectsSearchResolver.js'
+export * from './SearchQueries.js'

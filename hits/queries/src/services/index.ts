@@ -1,2 +1,2 @@
-export * from './CounterService'
-export * from './ActivityService'
+export * from './CounterService.js'
+export * from './ActivityService.js'

@@ -6,7 +6,7 @@ import { ChatEntityRepository }        from '@collaboration/persistence'
 import { DiscussionEntityRepository }  from '@collaboration/persistence'
 import { MessageEntityRepository }     from '@collaboration/persistence'
 
-import { AddDiscussionMessageCommand } from '../commands'
+import { AddDiscussionMessageCommand } from '../commands/index.js'
 
 @Injectable()
 export class DiscussionService {

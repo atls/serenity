@@ -1,4 +1,4 @@
-import type { Email } from '../model/Email'
+import type { Email } from '../model/Email.js'
 
 import { Event }      from '@node-ts/bus-messages'
 import { Uuid }       from '@node-ts/ddd-types'

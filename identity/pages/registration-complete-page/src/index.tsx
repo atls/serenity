@@ -1,7 +1,7 @@
 import React                        from 'react'
 
-import { RegistrationCompletePage } from './RegistrationCompletePage'
-import { Seo }                      from './Seo'
+import { RegistrationCompletePage } from './RegistrationCompletePage.js'
+import { Seo }                      from './Seo.js'
 
 export default class Page extends React.Component {
   static async getInitialProps(context) {

@@ -1,4 +1,4 @@
-import { AccountType } from './AccountType'
+import { AccountType } from './AccountType.js'
 
 export const getStateKey = () => {
   const date = new Date()

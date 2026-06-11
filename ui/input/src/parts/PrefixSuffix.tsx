@@ -3,8 +3,8 @@ import { switchProp }  from 'styled-tools'
 
 import styled          from '@emotion/styled'
 
-import { PrefixProps } from './types'
-import { SuffixProps } from './types'
+import { PrefixProps } from './types.js'
+import { SuffixProps } from './types.js'
 
 const base: styleFn = () => ({
   position: 'absolute',

@@ -1,2 +1,2 @@
-export * from './FileQueriesController'
-export * from './UploadController'
+export * from './FileQueriesController.js'
+export * from './UploadController.js'

@@ -15,9 +15,9 @@ import { NextNavLink as NavLink }     from '@ui/link'
 import { Navigation as UINavigation } from '@ui/navigation'
 import Chat                           from '@fragments/chat'
 
-import { Drawer }                     from './Drawer'
-import { Profile }                    from './Profile'
-import messages                       from './messages'
+import { Drawer }                     from './Drawer.js'
+import { Profile }                    from './Profile.js'
+import messages                       from './messages.js'
 
 export const Navigation = ({
   intl,

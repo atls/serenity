@@ -1,7 +1,7 @@
 import React            from 'react'
 
-import { RecoveryPage } from './RecoveryPage'
-import { Seo }          from './Seo'
+import { RecoveryPage } from './RecoveryPage.js'
+import { Seo }          from './Seo.js'
 
 const Page = () => (
   <>

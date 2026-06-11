@@ -1,5 +1,5 @@
-import type { Credentials } from '../model/Credentials'
-import type { Email }       from '../model/Email'
+import type { Credentials } from '../model/Credentials.js'
+import type { Email }       from '../model/Email.js'
 
 import { Event }            from '@node-ts/bus-messages'
 import { Uuid }             from '@node-ts/ddd-types'

@@ -1,7 +1,7 @@
 import { createContext } from 'react'
 import React             from 'react'
 
-import { DrawerStore }   from './DrawerStore'
+import { DrawerStore }   from './DrawerStore.js'
 
 export const DrawerContext = createContext(new DrawerStore())
 

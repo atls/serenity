@@ -8,8 +8,8 @@ import { Root }         from '@nestjs/graphql'
 import { File }         from '@public-gateway/files'
 import { portfolio }    from '@protos/interfaces'
 
-import { ImageLoader }  from '../dataloaders'
-import { Portfolio }    from '../types'
+import { ImageLoader }  from '../dataloaders/index.js'
+import { Portfolio }    from '../types/index.js'
 
 @Injectable()
 @Resolver((of) => Portfolio)

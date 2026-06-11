@@ -1,7 +1,7 @@
 import { injectGlobal }    from '@emotion/css'
 
-import { fontFaces }       from './theme'
-import { injectFontFaces } from './utils'
+import { fontFaces }       from './theme/index.js'
+import { injectFontFaces } from './utils.js'
 
 export const injectGlobalStyles = () => {
   injectFontFaces(fontFaces as any)

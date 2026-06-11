@@ -1,9 +1,9 @@
-import uuid                  from 'uuid/v4'
+import uuid                  from 'uuid/v4.js'
 
 import { AggregateRoot }     from '@node-ts/ddd'
 
-import { DiscussionCreated } from '../events'
-import { Message }           from './Message'
+import { DiscussionCreated } from '../events/index.js'
+import { Message }           from './Message.js'
 
 export class Discussion extends AggregateRoot {
   specialistId: string

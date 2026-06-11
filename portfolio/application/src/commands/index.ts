@@ -1,2 +1,2 @@
-export * from './CreatePortfolioCommand'
-export * from './UpdatePortfolioCommand'
+export * from './CreatePortfolioCommand.js'
+export * from './UpdatePortfolioCommand.js'

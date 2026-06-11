@@ -1,7 +1,7 @@
 import { useIntl }               from 'react-intl'
 import React                     from 'react'
 
-import { ChooseSpecialistModal } from './ChooseSpecialistModal'
+import { ChooseSpecialistModal } from './ChooseSpecialistModal.js'
 
 const ChooseSpecialistModalFragment = (data) => {
   const intl = useIntl()

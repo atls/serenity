@@ -3,7 +3,7 @@ import React         from 'react'
 
 import { useTheme }  from '@emotion/react'
 
-import { IconProps } from '../icons.interfaces'
+import { IconProps } from '../icons.interfaces.js'
 
 export const ChatIcon = (props: IconProps) => {
   const theme: any = useTheme()

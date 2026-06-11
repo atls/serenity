@@ -1,7 +1,7 @@
 import { createContext } from 'react'
 import React             from 'react'
 
-import { ChatStore }     from './ChatStore'
+import { ChatStore }     from './ChatStore.js'
 
 export const ChatContext = createContext(new ChatStore())
 

@@ -5,10 +5,10 @@ import { BusModule }     from '@monstrs/nestjs-bus'
 import { LoggerModule }  from '@monstrs/nestjs-logger'
 import { TypeOrmModule } from '@nestjs/typeorm'
 
-import { Activity }      from './entities'
-import { Counter }       from './entities'
-import { View }          from './entities'
-import config            from './config'
+import { Activity }      from './entities/index.js'
+import { Counter }       from './entities/index.js'
+import { View }          from './entities/index.js'
+import config            from './config.js'
 
 const feature = TypeOrmModule.forFeature([Counter, View, Activity])
 

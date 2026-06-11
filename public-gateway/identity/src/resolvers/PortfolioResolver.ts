@@ -12,7 +12,7 @@ import { ClientGrpc }    from '@nestjs/microservices'
 import { portfolio }     from '@protos/interfaces'
 import { clientOptions } from '@protos/portfolio'
 
-import { User }          from '../types'
+import { User }          from '../types/index.js'
 
 @Injectable()
 @Resolver((of) => User)

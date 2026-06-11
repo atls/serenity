@@ -2,7 +2,7 @@ import { useIntl } from 'react-intl'
 import React       from 'react'
 import Helmet      from 'react-helmet'
 
-import messages    from './messages'
+import messages    from './messages.js'
 
 export const Seo = () => {
   const intl = useIntl()

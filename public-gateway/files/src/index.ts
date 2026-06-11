@@ -1,8 +1,8 @@
 import { Module }          from '@nestjs/common'
 
-import { UploadMutations } from './resolvers'
+import { UploadMutations } from './resolvers/index.js'
 
-export * from './types'
+export * from './types/index.js'
 
 @Module({
   providers: [UploadMutations],

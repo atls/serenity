@@ -1,2 +1,2 @@
-export * from './events'
-export * from './model'
+export * from './events/index.js'
+export * from './model/index.js'

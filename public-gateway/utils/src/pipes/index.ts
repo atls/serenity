@@ -1,1 +1,1 @@
-export * from './OffsetToPagerPipe'
+export * from './OffsetToPagerPipe.js'

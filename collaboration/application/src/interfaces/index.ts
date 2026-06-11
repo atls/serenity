@@ -1,2 +1,2 @@
-export * from './page-info.interface'
-export * from './find-all-response.interface'
+export * from './page-info.interface.js'
+export * from './find-all-response.interface.js'

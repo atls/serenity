@@ -1,8 +1,8 @@
 import { Field }                  from '@nestjs/graphql'
 import { ObjectType }             from '@nestjs/graphql'
 
-import { SpecialistMember }       from './SpecialistMember'
-import { UpdateSpecialistErrors } from './UpdateSpecialistErrors'
+import { SpecialistMember }       from './SpecialistMember.js'
+import { UpdateSpecialistErrors } from './UpdateSpecialistErrors.js'
 
 @ObjectType()
 export class UpdateSpecialistResponse {

@@ -5,7 +5,7 @@ import { Layout }    from '@ui/layout'
 import { Text }      from '@ui/text'
 import messages      from '@fragments/wallpapering-worksheet/src/messages'
 
-import { CheckItem } from './CheckItem'
+import { CheckItem } from './CheckItem.js'
 
 export const Wallpapering = ({
   intl,

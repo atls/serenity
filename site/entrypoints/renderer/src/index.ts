@@ -6,7 +6,7 @@ import path               from 'path'
 const bootstrap = async () => {
   const app = next({
     dev: process.env.NODE_ENV !== 'production',
-    dir: process.env.NODE_ENV !== 'production' ? path.join(__dirname, '../src') : __dirname,
+    dir: process.env.NODE_ENV !== 'production' ? path.join(__dirname, '../src/index.js') : __dirname,
   })
 
   const handle = app.getRequestHandler()

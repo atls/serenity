@@ -1,2 +1,2 @@
-export * from './PortfolioQueriesService'
-export * from './PortfolioService'
+export * from './PortfolioQueriesService.js'
+export * from './PortfolioService.js'

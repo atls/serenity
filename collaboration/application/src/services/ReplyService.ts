@@ -5,8 +5,8 @@ import { MessageEntityRepository }    from '@collaboration/persistence'
 import { ProjectEntityRepository }    from '@collaboration/persistence'
 import { ReplyEntityRepository }      from '@collaboration/persistence'
 
-import { AddReplyMessageCommand }     from '../commands'
-import { ChangeReplyStatusCommand }   from '../commands'
+import { AddReplyMessageCommand }     from '../commands/index.js'
+import { ChangeReplyStatusCommand }   from '../commands/index.js'
 
 @Injectable()
 export class ReplyService {

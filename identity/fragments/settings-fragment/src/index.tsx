@@ -1,7 +1,7 @@
 import { useIntl }  from 'react-intl'
 import React        from 'react'
 
-import { Settings } from './Settings'
+import { Settings } from './Settings.js'
 
 const SettingsFragment = () => {
   const intl = useIntl()

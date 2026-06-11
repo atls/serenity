@@ -5,8 +5,8 @@ import React           from 'react'
 
 import { useDrawer }   from '@ui/drawer'
 
-import { Navigation }  from './Navigation'
-import { useProfile }  from './useProfile'
+import { Navigation }  from './Navigation.js'
+import { useProfile }  from './useProfile.js'
 
 const TRAEFIK_LOCAL_PORTS = ['18880', '18443']
 

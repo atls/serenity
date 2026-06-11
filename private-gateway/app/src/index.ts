@@ -1,6 +1,6 @@
 import { NestFactory }       from '@nestjs/core'
 
-import { ApplicationModule } from './module'
+import { ApplicationModule } from './module.js'
 
 declare const module: any
 

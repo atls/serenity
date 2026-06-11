@@ -1,9 +1,9 @@
 import { Event }          from '@node-ts/bus-messages'
 import { Uuid }           from '@node-ts/ddd-types'
 
-import { Company }        from '../model'
-import { PrivatePerson }  from '../model'
-import { Specialisation } from '../model'
+import { Company }        from '../model/index.js'
+import { PrivatePerson }  from '../model/index.js'
+import { Specialisation } from '../model/index.js'
 
 export class SpecialistUpdated extends Event {
   static readonly NAME = 'collaboration/specialist-updated'

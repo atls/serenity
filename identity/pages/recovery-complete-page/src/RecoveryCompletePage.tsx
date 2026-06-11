@@ -5,7 +5,7 @@ import { Box }          from '@ui/layout'
 import { Column }       from '@ui/layout'
 import { Layout }       from '@ui/layout'
 
-import RecoveryComplete from './recovery-complete'
+import RecoveryComplete from './recovery-complete/index.js'
 
 export const RecoveryCompletePage = ({ accountUrl, siteUrl }: any) => (
   <Box bg='rgb(159, 159, 159)' height='100vh'>

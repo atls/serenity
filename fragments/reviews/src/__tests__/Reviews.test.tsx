@@ -7,7 +7,7 @@ import React             from 'react'
 import { ThemeProvider } from '@ui/theme'
 import { render }        from '@testing-library/react'
 
-import { Reviews }       from '../Reviews'
+import { Reviews }       from '../Reviews.js'
 
 describe('Reviews', () => {
   describe('snapshots', () => {

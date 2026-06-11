@@ -2,10 +2,11 @@
   "name": "@mailer/service",
   "version": "0.1.1",
   "license": "BSD-3-Clause",
+  "type": "module",
   "main": "src/index.ts",
   "scripts": {
-    "build": "yarn service build",
-    "dev": "yarn service dev",
+    "build": "$PROJECT_CWD/.yarn/bin/yarn service build",
+    "dev": "$PROJECT_CWD/.yarn/bin/yarn service dev",
     "start": "node dist/index.js"
   },
   "dependencies": {

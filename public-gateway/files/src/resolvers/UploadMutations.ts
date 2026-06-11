@@ -8,10 +8,10 @@ import { ClientGrpc }            from '@nestjs/microservices'
 import { clientOptions }         from '@protos/files'
 import { files }                 from '@protos/interfaces'
 
-import { ConfirmUploadInput }    from '../inputs'
-import { CreateUploadInput }     from '../inputs'
-import { ConfirmUploadResponse } from '../types'
-import { CreateUploadResponse }  from '../types'
+import { ConfirmUploadInput }    from '../inputs/index.js'
+import { CreateUploadInput }     from '../inputs/index.js'
+import { ConfirmUploadResponse } from '../types/index.js'
+import { CreateUploadResponse }  from '../types/index.js'
 
 @Injectable()
 export class UploadMutations implements OnModuleInit {

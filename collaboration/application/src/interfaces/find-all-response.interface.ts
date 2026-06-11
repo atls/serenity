@@ -1,4 +1,4 @@
-import { PageInfo } from './page-info.interface'
+import { PageInfo } from './page-info.interface.js'
 
 export interface FindAllResponse<T> {
   rows: T[]

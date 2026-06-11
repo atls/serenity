@@ -11,7 +11,7 @@ import { Option }      from '@ui/select'
 import { Select }      from '@ui/select'
 import { Text }        from '@ui/text'
 
-import messages        from './messages'
+import messages        from './messages.js'
 
 const houseTypes = [
   {

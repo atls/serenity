@@ -1,7 +1,7 @@
 import { useIntl } from 'react-intl'
 import React       from 'react'
 
-import { Footer }  from './Footer'
+import { Footer }  from './Footer.js'
 
 const FooterFragment = () => {
   const intl = useIntl()

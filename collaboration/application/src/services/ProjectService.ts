@@ -10,11 +10,11 @@ import { ProjectEntityRepository }    from '@collaboration/persistence'
 import { ReplyEntityRepository }      from '@collaboration/persistence'
 import { SpecialistEntityRepository } from '@collaboration/persistence'
 
-import { AddProjectReplyCommand }     from '../commands'
-import { ChooseSpecialistCommand }    from '../commands'
-import { ConfirmProjectReplyCommand } from '../commands'
-import { RejectProjectReplyCommand }  from '../commands'
-import { UpdateProjectCommand }       from '../commands'
+import { AddProjectReplyCommand }     from '../commands/index.js'
+import { ChooseSpecialistCommand }    from '../commands/index.js'
+import { ConfirmProjectReplyCommand } from '../commands/index.js'
+import { RejectProjectReplyCommand }  from '../commands/index.js'
+import { UpdateProjectCommand }       from '../commands/index.js'
 
 @Injectable()
 export class ProjectService {

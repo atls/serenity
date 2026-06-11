@@ -1,3 +1,3 @@
-export * from './Dropdown'
-export * from './DropdownItem'
-export * from './DropdownTrigger'
+export * from './Dropdown.js'
+export * from './DropdownItem.js'
+export * from './DropdownTrigger.js'

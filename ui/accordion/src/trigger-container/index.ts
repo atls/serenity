@@ -1,1 +1,1 @@
-export * from './trigger-container.component'
+export * from './trigger-container.component.js'

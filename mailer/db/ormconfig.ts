@@ -1,1 +1,1 @@
-module.exports = require('./src/config').default
+module.exports = require('./src/config.js').default

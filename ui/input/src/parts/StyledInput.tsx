@@ -8,7 +8,7 @@ import { switchProp }              from 'styled-tools'
 
 import styled                      from '@emotion/styled'
 
-import { offset }                  from './PrefixSuffix'
+import { offset }                  from './PrefixSuffix.js'
 
 const clear: styleFn = () => ({
   boxSizing: 'border-box',

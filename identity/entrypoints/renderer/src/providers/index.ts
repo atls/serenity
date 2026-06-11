@@ -1,2 +1,2 @@
-export * from './with-emotion'
-export * from './with-intl'
+export * from './with-emotion.js'
+export * from './with-intl.js'

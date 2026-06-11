@@ -1,3 +1,3 @@
-export * from './CategoryGroupsList'
-export * from './CategoriesList'
-export * from './Category'
+export * from './CategoryGroupsList.js'
+export * from './CategoriesList.js'
+export * from './Category.js'

@@ -1,8 +1,8 @@
 import { useCallback } from 'react'
 import React           from 'react'
 
-import { LoginPage }   from './LoginPage'
-import { Seo }         from './Seo'
+import { LoginPage }   from './LoginPage.js'
+import { Seo }         from './Seo.js'
 
 const resolveBackUrl = () => {
   const search = new URLSearchParams(window.location.search)

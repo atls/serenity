@@ -2,6 +2,7 @@
   "name": "@files/application",
   "version": "0.0.2",
   "license": "BSD-3-Clause",
+  "type": "module",
   "main": "src/index.ts",
   "dependencies": {
     "@files/domain": "0.0.2",

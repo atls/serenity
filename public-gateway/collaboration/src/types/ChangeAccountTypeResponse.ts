@@ -1,8 +1,8 @@
 import { Field }                   from '@nestjs/graphql'
 import { ObjectType }              from '@nestjs/graphql'
 
-import { ChangeAccountTypeErrors } from './ChangeAccountTypeErrors'
-import { SpecialistMember }        from './SpecialistMember'
+import { ChangeAccountTypeErrors } from './ChangeAccountTypeErrors.js'
+import { SpecialistMember }        from './SpecialistMember.js'
 
 @ObjectType()
 export class ChangeAccountTypeResponse {

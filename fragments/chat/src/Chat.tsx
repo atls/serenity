@@ -4,7 +4,7 @@ import { ChatButton }     from '@ui/chat'
 import { Chat as UIChat } from '@ui/chat'
 import { SlideDrawer }    from '@ui/drawer'
 
-import defaultMessages    from './messages'
+import defaultMessages    from './messages.js'
 
 export const Chat = ({
   intl,

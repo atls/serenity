@@ -6,10 +6,10 @@ import { ResolveField }   from '@nestjs/graphql'
 import { Resolver }       from '@nestjs/graphql'
 import { Root }           from '@nestjs/graphql'
 
-import { ActivityLoader } from '../dataloaders'
-import { CustomerLoader } from '../dataloaders'
-import { UserLoader }     from '../dataloaders'
-import { ProjectOwner }   from '../types'
+import { ActivityLoader } from '../dataloaders/index.js'
+import { CustomerLoader } from '../dataloaders/index.js'
+import { UserLoader }     from '../dataloaders/index.js'
+import { ProjectOwner }   from '../types/index.js'
 
 @Injectable()
 @Resolver((of) => ProjectOwner)

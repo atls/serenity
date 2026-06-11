@@ -11,8 +11,8 @@ import { Pager }             from '@public-gateway/utils'
 import { clientOptions }     from '@protos/collaboration'
 import { collaboration }     from '@protos/interfaces'
 
-import { SpecialistsFilter } from '../inputs'
-import { SpecialistsList }   from '../types'
+import { SpecialistsFilter } from '../inputs/index.js'
+import { SpecialistsList }   from '../types/index.js'
 
 @Injectable()
 export class SpecialistQueries implements OnModuleInit {

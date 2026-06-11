@@ -3,7 +3,7 @@ import React           from 'react'
 
 import styled          from '@emotion/styled'
 
-import { StyledInput } from './parts'
+import { StyledInput } from './parts/index.js'
 
 const Input = ({ onChange, ...props }) => (
   <StyledInput {...props} onChange={({ target: { value } }) => onChange && onChange(value)} />

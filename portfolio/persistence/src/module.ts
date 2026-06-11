@@ -5,9 +5,9 @@ import { BusModule }                 from '@monstrs/nestjs-bus'
 import { LoggerModule }              from '@monstrs/nestjs-logger'
 import { TypeOrmModule }             from '@nestjs/typeorm'
 
-import { Portfolio }                 from './entities'
-import { PortfolioEntityRepository } from './repositories'
-import config                        from './config'
+import { Portfolio }                 from './entities/index.js'
+import { PortfolioEntityRepository } from './repositories/index.js'
+import config                        from './config.js'
 
 const feature = TypeOrmModule.forFeature([Portfolio])
 

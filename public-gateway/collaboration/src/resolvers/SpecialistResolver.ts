@@ -6,10 +6,10 @@ import { ResolveField }    from '@nestjs/graphql'
 import { Resolver }        from '@nestjs/graphql'
 import { Root }            from '@nestjs/graphql'
 
-import { PortfolioLoader } from '../dataloaders'
-import { ReviewLoader }    from '../dataloaders'
-import { UserLoader }      from '../dataloaders'
-import { Specialist }      from '../types'
+import { PortfolioLoader } from '../dataloaders/index.js'
+import { ReviewLoader }    from '../dataloaders/index.js'
+import { UserLoader }      from '../dataloaders/index.js'
+import { Specialist }      from '../types/index.js'
 
 @Injectable()
 @Resolver((of) => Specialist)
