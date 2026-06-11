@@ -4,8 +4,8 @@
   "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "scripts": {
-    "build": "yarn service build && yarn next build src && cp -r src/.next dist/.next",
-    "dev": "yarn next dev src",
+    "build": "yarn renderer build",
+    "dev": "yarn renderer dev",
     "start": "node dist/index.js"
   },
   "dependencies": {

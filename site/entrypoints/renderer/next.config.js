@@ -1,3 +1,6 @@
+const { existsSync } = require('node:fs')
+const { join } = require('node:path')
+
 const { withExtractIntlMessages } = require('@atls/next-config-with-extract-intl-messages')
 const withPlugins = require('next-compose-plugins')
 const withImages = require('next-images')
@@ -16,9 +19,27 @@ const withWorkspaces = (() => {
 const nextConfig = {
   experimental: {
     externalDir: true,
+    outputFileTracingRoot: join(__dirname, '../../..'),
+    outputStandalone: true,
     swcFileReading: false,
     workerThreads: true,
     esmExternals: 'loose',
+  },
+  webpack: (config, { webpack }) => {
+    config.plugins.push(
+      new webpack.NormalModuleReplacementPlugin(/^\.\.?\/.*\.js$/, (resource) => {
+        const request = resource.request.slice(0, -3)
+
+        for (const extension of ['.tsx', '.ts', '.jsx']) {
+          if (existsSync(join(resource.context, `${request}${extension}`))) {
+            resource.request = `${request}${extension}`
+            break
+          }
+        }
+      })
+    )
+
+    return config
   },
 }
 
