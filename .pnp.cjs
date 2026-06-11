@@ -6785,6 +6785,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:17.0.8"],\
           ["@types/react-dom", "npm:16.9.8"],\
           ["@ui/theme", "virtual:407796a16718a4fda8dd8ca4622ae409c5d0b34880247fbb102552a3a87ee8fed6fa2df28d452518d1557434fc1ccbb1060145502d5dffacfb5127d20bded249#workspace:ui/theme"],\
+          ["axios", "npm:0.21.4"],\
           ["body-parser", "npm:1.19.0"],\
           ["connect-redis", "npm:3.4.2"],\
           ["cookie", "npm:0.4.1"],\
