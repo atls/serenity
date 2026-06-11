@@ -12,7 +12,7 @@ import { NextLink as Link } from '@ui/link'
 import { RelativeTime }     from '@ui/relative-time'
 import { Text }             from '@ui/text'
 
-import messages             from './messages'
+import messages             from './messages.js'
 
 export const ProjectShort = ({
   intl,

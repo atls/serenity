@@ -5,7 +5,7 @@ import { Box }        from '@ui/layout'
 import { Column }     from '@ui/layout'
 import { Layout }     from '@ui/layout'
 
-import SignupComplete from './registration-complete'
+import SignupComplete from './registration-complete/index.js'
 
 export const RegistrationCompletePage = ({ accountUrl, siteUrl }: any) => (
   <Box bg='rgb(159, 159, 159)' height='100vh'>

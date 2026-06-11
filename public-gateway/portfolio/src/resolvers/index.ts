@@ -1,2 +1,2 @@
-export * from './PortfolioMutations'
-export * from './PortfolioResolver'
+export * from './PortfolioMutations.js'
+export * from './PortfolioResolver.js'

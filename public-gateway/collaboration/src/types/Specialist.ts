@@ -3,9 +3,9 @@ import { ObjectType }     from '@nestjs/graphql'
 import { Profile }        from '@public-gateway/identity'
 import { Portfolio }      from '@public-gateway/portfolio'
 
-import { Interaction }    from './Interaction'
-import { Review }         from './Review'
-import { Specialisation } from './Specialisation'
+import { Interaction }    from './Interaction.js'
+import { Review }         from './Review.js'
+import { Specialisation } from './Specialisation.js'
 
 @ObjectType()
 export class Specialist {

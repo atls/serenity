@@ -1,7 +1,7 @@
 import { useIntl }         from 'react-intl'
 import React               from 'react'
 
-import { ProjectCustomer } from './ProjectCustomer'
+import { ProjectCustomer } from './ProjectCustomer.js'
 
 const ProjectCustomerFragment = (data) => {
   const intl = useIntl()

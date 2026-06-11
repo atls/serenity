@@ -1,2 +1,2 @@
-export * from './terminus-options.service'
-export * from './health.module'
+export * from './terminus-options.service.js'
+export * from './health.module.js'

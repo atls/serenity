@@ -5,9 +5,9 @@ import { Entity }           from 'typeorm'
 import { PrimaryColumn }    from 'typeorm'
 import { UpdateDateColumn } from 'typeorm'
 
-import { Account }          from './Account'
-import { Interaction }      from './Interaction'
-import { Specialisation }   from './Specialisation'
+import { Account }          from './Account.js'
+import { Interaction }      from './Interaction.js'
+import { Specialisation }   from './Specialisation.js'
 
 @Entity()
 export class Specialist {

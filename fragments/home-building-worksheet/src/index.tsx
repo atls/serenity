@@ -1,7 +1,7 @@
 import { useIntl }               from 'react-intl'
 import React                     from 'react'
 
-import { HomeBuildingWorksheet } from './HomeBuildingWorksheet'
+import { HomeBuildingWorksheet } from './HomeBuildingWorksheet.js'
 
 const doNothing = (a) => {
   // do nothing

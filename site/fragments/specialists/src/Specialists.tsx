@@ -15,7 +15,7 @@ import { Option }           from '@ui/search'
 import { Search }           from '@ui/search'
 import { Text }             from '@ui/text'
 
-import messages             from './messages'
+import messages             from './messages.js'
 
 export const Specialists = ({
   intl,

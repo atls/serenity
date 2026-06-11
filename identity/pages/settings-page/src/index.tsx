@@ -1,7 +1,7 @@
 import React            from 'react'
 
-import { Seo }          from './Seo'
-import { SettingsPage } from './SettingsPage'
+import { Seo }          from './Seo.js'
+import { SettingsPage } from './SettingsPage.js'
 
 const Page = () => (
   <>

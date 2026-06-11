@@ -1,2 +1,2 @@
-export * from './Upload'
-export * from './File'
+export * from './Upload.js'
+export * from './File.js'

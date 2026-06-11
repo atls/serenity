@@ -9,10 +9,10 @@ import { ClientGrpc }              from '@nestjs/microservices'
 import { portfolio }               from '@protos/interfaces'
 import { clientOptions }           from '@protos/portfolio'
 
-import { CreatePortfolioInput }    from '../inputs'
-import { UpdatePortfolioInput }    from '../inputs'
-import { CreatePortfolioResponse } from '../types'
-import { UpdatePortfolioResponse } from '../types'
+import { CreatePortfolioInput }    from '../inputs/index.js'
+import { UpdatePortfolioInput }    from '../inputs/index.js'
+import { CreatePortfolioResponse } from '../types/index.js'
+import { UpdatePortfolioResponse } from '../types/index.js'
 
 @Injectable()
 export class PortfolioMutations implements OnModuleInit {

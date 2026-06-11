@@ -4,7 +4,7 @@ import { Repository }       from 'typeorm'
 import { Customer }         from '@collaboration/persistence'
 import { InjectRepository } from '@nestjs/typeorm'
 
-import { FindAllResponse }  from '../interfaces'
+import { FindAllResponse }  from '../interfaces/index.js'
 
 @Injectable()
 export class CustomerQueriesService {

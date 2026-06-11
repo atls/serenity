@@ -3,9 +3,9 @@ import React                   from 'react'
 
 import { ArrowDownIcon }       from '@ui/icons'
 
-import { dropdownStyles }      from './styles'
-import { selectRoundedStyles } from './styles'
-import { selectStyles }        from './styles'
+import { dropdownStyles }      from './styles.js'
+import { selectRoundedStyles } from './styles.js'
+import { selectStyles }        from './styles.js'
 
 export const Select = ({
   children,

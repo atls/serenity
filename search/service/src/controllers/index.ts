@@ -1,2 +1,2 @@
-export * from './project-search.controller'
-export * from './specialist-search.controller'
+export * from './project-search.controller.js'
+export * from './specialist-search.controller.js'

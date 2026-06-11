@@ -6,7 +6,7 @@ import { Row }       from '@ui/layout'
 import { Text }      from '@ui/text'
 import messages      from '@fragments/home-building-worksheet/src/messages'
 
-import { CheckItem } from './CheckItem'
+import { CheckItem } from './CheckItem.js'
 
 export const HomeBuilding = ({
   intl,

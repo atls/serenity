@@ -9,7 +9,7 @@ import { ClientGrpc }       from '@nestjs/microservices'
 import { clientOptions }    from '@protos/files'
 import { files }            from '@protos/interfaces'
 
-import { orderResultByKey } from './orderResultByKey'
+import { orderResultByKey } from './orderResultByKey.js'
 
 @Injectable()
 export class ImageLoader implements NestDataLoader, OnModuleInit {

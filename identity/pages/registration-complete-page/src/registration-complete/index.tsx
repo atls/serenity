@@ -1,7 +1,7 @@
 import { useIntl }              from 'react-intl'
 import React                    from 'react'
 
-import { RegistrationComplete } from './RegistrationComplete'
+import { RegistrationComplete } from './RegistrationComplete.js'
 
 const Page = (props: any) => {
   const intl = useIntl()

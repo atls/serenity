@@ -5,7 +5,7 @@ import { Column }             from '@ui/layout'
 import { Layout }             from '@ui/layout'
 import { Text }               from '@ui/text'
 
-import { FieldMessagesProps } from './messages.interfaces'
+import { FieldMessagesProps } from './messages.interfaces.js'
 
 const FieldMessages: FC<FieldMessagesProps> = ({ messages = [] }) => (
   <Column>

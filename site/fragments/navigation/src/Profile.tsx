@@ -11,7 +11,7 @@ import { Row }                    from '@ui/layout'
 import { NavLink as BaseNavLink } from '@ui/link'
 import { Text }                   from '@ui/text'
 
-import messages                   from './messages'
+import messages                   from './messages.js'
 
 export const Profile = ({
   intl,

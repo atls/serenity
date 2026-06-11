@@ -6,8 +6,8 @@ import { Reply }            from '@public-gateway/collaboration'
 import { SpecialistMember } from '@public-gateway/collaboration/src/types/SpecialistMember'
 import { Portfolio }        from '@public-gateway/portfolio'
 
-import { Email }            from './Email'
-import { Profile }          from './Profile'
+import { Email }            from './Email.js'
+import { Profile }          from './Profile.js'
 
 @ObjectType()
 export class User {

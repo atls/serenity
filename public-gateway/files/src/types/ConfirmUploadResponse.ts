@@ -1,7 +1,7 @@
 import { Field }      from '@nestjs/graphql'
 import { ObjectType } from '@nestjs/graphql'
 
-import { File }       from './File'
+import { File }       from './File.js'
 
 @ObjectType()
 export class ConfirmUploadResponse {

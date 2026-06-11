@@ -1,1 +1,1 @@
-export * from './field-messages.component'
+export * from './field-messages.component.js'

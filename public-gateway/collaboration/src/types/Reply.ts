@@ -1,8 +1,8 @@
 import { Field }      from '@nestjs/graphql'
 import { ObjectType } from '@nestjs/graphql'
 
-import { Discussion } from './Discussion'
-import { Project }    from './Project'
+import { Discussion } from './Discussion.js'
+import { Project }    from './Project.js'
 
 @ObjectType()
 export class Reply {

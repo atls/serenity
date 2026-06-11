@@ -13,8 +13,8 @@ import { contentWidth }      from '@ui/utils'
 import { useWindowSize }     from '@ui/utils'
 import styled                from '@emotion/styled'
 
-import { CloseButton }       from './Buttons'
-import { SlideButton }       from './Buttons'
+import { CloseButton }       from './Buttons.js'
+import { SlideButton }       from './Buttons.js'
 
 interface GalleryProps {
   transition: boolean

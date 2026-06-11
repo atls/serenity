@@ -7,7 +7,7 @@ import { UpdateDateColumn } from 'typeorm'
 import { BeginningOfWork }  from '@collaboration/domain'
 import { ProjectStatus }    from '@collaboration/domain'
 
-import { Address }          from './Address'
+import { Address }          from './Address.js'
 
 @Entity()
 export class Project {

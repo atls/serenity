@@ -1,10 +1,10 @@
 import { Module }             from '@nestjs/common'
 
-import { ImageLoader }        from './dataloaders'
-import { PortfolioMutations } from './resolvers'
-import { PortfolioResolver }  from './resolvers'
+import { ImageLoader }        from './dataloaders/index.js'
+import { PortfolioMutations } from './resolvers/index.js'
+import { PortfolioResolver }  from './resolvers/index.js'
 
-export * from './types'
+export * from './types/index.js'
 
 const loaderProviders = [ImageLoader]
 

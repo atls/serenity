@@ -12,11 +12,11 @@ import document              from 'global/document'
 
 import styled                from '@emotion/styled'
 
-import { isClientSide }      from './helpers'
-import { isDirectionBottom } from './helpers'
-import { isDirectionLeft }   from './helpers'
-import { isDirectionRight }  from './helpers'
-import { isDirectionTop }    from './helpers'
+import { isClientSide }      from './helpers.js'
+import { isDirectionBottom } from './helpers.js'
+import { isDirectionLeft }   from './helpers.js'
+import { isDirectionRight }  from './helpers.js'
+import { isDirectionTop }    from './helpers.js'
 
 const StyledDragDrawer = styled.div({
   position: 'fixed',

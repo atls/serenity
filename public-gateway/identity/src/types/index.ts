@@ -1,3 +1,3 @@
-export * from './UpdateProfileResponse'
-export * from './Profile'
-export * from './User'
+export * from './UpdateProfileResponse.js'
+export * from './Profile.js'
+export * from './User.js'

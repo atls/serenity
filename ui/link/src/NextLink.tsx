@@ -1,9 +1,9 @@
 import { withRouter }  from 'next/router'
 import React           from 'react'
 
-import { Link }        from './Link'
-import { NavLink }     from './NavLink'
-import { SidebarLink } from './SidebarLink'
+import { Link }        from './Link.js'
+import { NavLink }     from './NavLink.js'
+import { SidebarLink } from './SidebarLink.js'
 
 interface NextLinkProps {
   fontWeight?: string | number | string[] | number[]

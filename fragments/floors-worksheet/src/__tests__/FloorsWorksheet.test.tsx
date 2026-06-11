@@ -9,7 +9,7 @@ import React               from 'react'
 import { ThemeProvider }   from '@ui/theme'
 import { render }          from '@testing-library/react'
 
-import { FloorsWorksheet } from '../FloorsWorksheet'
+import { FloorsWorksheet } from '../FloorsWorksheet.js'
 
 const TestComponent = () => {
   const intl = useIntl()

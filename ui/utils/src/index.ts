@@ -1,2 +1,2 @@
-export * from './useWindowSize'
-export { contentWidth, widthWithMargin } from './getElementSize'
+export * from './useWindowSize.js'
+export { contentWidth, widthWithMargin } from './getElementSize.js'

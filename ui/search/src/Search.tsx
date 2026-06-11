@@ -7,9 +7,9 @@ import { ArrowForwardIcon } from '@ui/icons'
 import { SearchIcon }       from '@ui/icons'
 import styled               from '@emotion/styled'
 
-import { selectSizeLarge }  from './styles'
-import { selectSizeNormal } from './styles'
-import { selectStyles }     from './styles'
+import { selectSizeLarge }  from './styles.js'
+import { selectSizeNormal } from './styles.js'
+import { selectStyles }     from './styles.js'
 
 interface IconProps {
   size: 'normal' | 'large'

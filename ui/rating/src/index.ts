@@ -1,2 +1,2 @@
-export * from './Rating'
-export * from './ActiveRating'
+export * from './Rating.js'
+export * from './ActiveRating.js'

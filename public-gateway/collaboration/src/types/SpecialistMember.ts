@@ -1,9 +1,9 @@
 import { Field }          from '@nestjs/graphql'
 import { ObjectType }     from '@nestjs/graphql'
 
-import { Account }        from './Account'
-import { Interaction }    from './Interaction'
-import { Specialisation } from './Specialisation'
+import { Account }        from './Account.js'
+import { Interaction }    from './Interaction.js'
+import { Specialisation } from './Specialisation.js'
 
 @ObjectType()
 export class SpecialistMember {

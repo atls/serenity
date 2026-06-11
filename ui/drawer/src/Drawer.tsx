@@ -3,7 +3,7 @@ import React           from 'react'
 import { css }         from '@emotion/react'
 import styled          from '@emotion/styled'
 
-import ReactDragDrawer from './drag'
+import ReactDragDrawer from './drag/index.js'
 
 const DragDrawer: any = ReactDragDrawer
 

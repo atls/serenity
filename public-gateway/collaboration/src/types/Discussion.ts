@@ -2,7 +2,7 @@ import { Field }      from '@nestjs/graphql'
 import { ObjectType } from '@nestjs/graphql'
 import { User }       from '@public-gateway/identity'
 
-import { Message }    from './Message'
+import { Message }    from './Message.js'
 
 @ObjectType()
 export class Discussion {

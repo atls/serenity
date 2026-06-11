@@ -3,7 +3,7 @@ import React         from 'react'
 
 import { useTheme }  from '@emotion/react'
 
-import { IconProps } from '../icons.interfaces'
+import { IconProps } from '../icons.interfaces.js'
 
 export const StarIcon = (props: IconProps) => {
   const theme: any = useTheme()

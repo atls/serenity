@@ -4,8 +4,8 @@ import { useState }     from 'react'
 import { useIntl }      from 'react-intl'
 import React            from 'react'
 
-import { ProjectReply } from './ProjectReply'
-import { useCreate }    from './useCreate'
+import { ProjectReply } from './ProjectReply.js'
+import { useCreate }    from './useCreate.js'
 
 const TRAEFIK_LOCAL_PORTS = ['18880', '18443']
 

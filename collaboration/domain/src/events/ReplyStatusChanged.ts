@@ -1,6 +1,6 @@
 import { Event }       from '@node-ts/bus-messages'
 
-import { ReplyStatus } from '../model'
+import { ReplyStatus } from '../model/index.js'
 
 export class ReplyStatusChanged extends Event {
   static readonly NAME = 'collaboration/reply-status-changed'

@@ -4,7 +4,7 @@ import { Column }    from '@ui/layout'
 import { Layout }    from '@ui/layout'
 import messages      from '@fragments/welding-worksheet/src/messages'
 
-import { CheckItem } from './CheckItem'
+import { CheckItem } from './CheckItem.js'
 
 export const Welding = ({
   intl,

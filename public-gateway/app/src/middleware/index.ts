@@ -1,1 +1,1 @@
-export * from './activity.middleware'
+export * from './activity.middleware.js'

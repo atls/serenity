@@ -6,8 +6,8 @@ import compose                from 'recompose/compose'
 import { ThemeProvider }      from '@ui/theme'
 import { injectGlobalStyles } from '@ui/theme'
 
-import { withEmotion }        from '../providers'
-import { withIntl }           from '../providers'
+import { withEmotion }        from '../providers/index.js'
+import { withIntl }           from '../providers/index.js'
 
 if (typeof window !== 'undefined') {
   const { kratos }: any = require('@atls/next-identity-integration/dist/sdk')

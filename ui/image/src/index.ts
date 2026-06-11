@@ -1,3 +1,3 @@
-export * from './BackgroundImage'
-export * from './PreviewImage'
-export * from './Image'
+export * from './BackgroundImage.js'
+export * from './PreviewImage.js'
+export * from './Image.js'

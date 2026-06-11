@@ -6,8 +6,8 @@ import { RendererModule }           from '@mailer/renderer'
 import { TransportModule }          from '@mailer/transport'
 import { BusModule }                from '@monstrs/nestjs-bus'
 
-import { EmailVerificationHandler } from './handlers'
-import { ResetPasswordHandler }     from './handlers'
+import { EmailVerificationHandler } from './handlers/index.js'
+import { ResetPasswordHandler }     from './handlers/index.js'
 
 @Module({
   imports: [

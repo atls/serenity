@@ -1,2 +1,2 @@
-export * from './EmailVerificationHandler'
-export * from './ResetPasswordHandler'
+export * from './EmailVerificationHandler.js'
+export * from './ResetPasswordHandler.js'

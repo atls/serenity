@@ -1,7 +1,7 @@
 import { Module }        from '@nestjs/common'
 import { DynamicModule } from '@nestjs/common'
 
-import * as services     from '../services'
+import * as services     from '../services/index.js'
 
 @Module({})
 export class KratosAdapterModule {

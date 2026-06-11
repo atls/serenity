@@ -8,8 +8,8 @@ import { Layout }    from '@ui/layout'
 import { Text }      from '@ui/text'
 import ProjectsShort from '@fragments/project-short'
 
-import Worksheet     from './worksheet'
-import messages      from './messages'
+import Worksheet     from './worksheet/index.js'
+import messages      from './messages.js'
 
 export const ProjectsDetail = ({
   intl,

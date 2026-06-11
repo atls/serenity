@@ -9,7 +9,7 @@ import { Row }          from '@ui/layout'
 import { RelativeTime } from '@ui/relative-time'
 import { Text }         from '@ui/text'
 
-import messages         from './messages'
+import messages         from './messages.js'
 
 export const ProjectCustomer = ({ intl, profile, member, activity }: any) => (
   <Box

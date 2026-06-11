@@ -4,7 +4,7 @@ import { Module }                 from '@nestjs/common'
 import { BusHealthModule }        from '@monstrs/nestjs-bus-health'
 import { TerminusModule }         from '@nestjs/terminus'
 
-import { TerminusOptionsService } from './terminus-options.service'
+import { TerminusOptionsService } from './terminus-options.service.js'
 
 @Module({
   imports: [TerminusModule, BusHealthModule],

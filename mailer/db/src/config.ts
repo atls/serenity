@@ -1,7 +1,7 @@
 import { ConnectionOptions } from 'typeorm'
 
-import { Sending }           from './entities'
-import migrations            from './migrations'
+import { Sending }           from './entities/index.js'
+import migrations            from './migrations.js'
 
 const config: ConnectionOptions = {
   type: 'postgres',

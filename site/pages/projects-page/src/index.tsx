@@ -3,8 +3,8 @@ import { useState }                 from 'react'
 import { useIntl }                  from 'react-intl'
 import React                        from 'react'
 
-import { ProjectsPage as Projects } from './ProjectsPage'
-import { Seo }                      from './Seo'
+import { ProjectsPage as Projects } from './ProjectsPage.js'
+import { Seo }                      from './Seo.js'
 
 const ProjectsPage = () => {
   const intl = useIntl()

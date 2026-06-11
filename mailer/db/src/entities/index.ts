@@ -1,1 +1,1 @@
-export * from './Sending'
+export * from './Sending.js'

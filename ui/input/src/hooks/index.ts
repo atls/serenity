@@ -1,7 +1,7 @@
-import { useAttach }     from './useAttach'
-import { useMask }       from './useMask'
-import { useOnChange }   from './useOnChange'
-import { useOnKeyPress } from './useOnKeyPress'
+import { useAttach }     from './useAttach.js'
+import { useMask }       from './useMask.js'
+import { useOnChange }   from './useOnChange.js'
+import { useOnKeyPress } from './useOnKeyPress.js'
 
 const compose = (...items) =>
   (props) =>

@@ -2,11 +2,11 @@ import { useUser }                              from '@atls/react-user'
 import { useRouter }                            from 'next/router'
 import React                                    from 'react'
 
-import { ProjectsDetailPage as ProjectsDetail } from './ProjectsDetailPage'
-import { Seo }                                  from './Seo'
-import { Track }                                from './Track'
-import { useDataProjects }                      from './useData'
-import { useDataReplies }                       from './useData'
+import { ProjectsDetailPage as ProjectsDetail } from './ProjectsDetailPage.js'
+import { Seo }                                  from './Seo.js'
+import { Track }                                from './Track.js'
+import { useDataProjects }                      from './useData.js'
+import { useDataReplies }                       from './useData.js'
 
 const ProjectsDetailPage = () => {
   const router = useRouter()

@@ -7,7 +7,7 @@ import { Logger }                     from '@monstrs/nestjs-logger'
 import { WriteRepository }            from '@node-ts/ddd'
 import { Uuid }                       from '@node-ts/ddd-types'
 
-import { Customer }                   from '../entities'
+import { Customer }                   from '../entities/index.js'
 
 @Injectable()
 // @ts-ignore

@@ -1,7 +1,7 @@
 import { Field }      from '@nestjs/graphql'
 import { ObjectType } from '@nestjs/graphql'
 
-import { Phone }      from './Phone'
+import { Phone }      from './Phone.js'
 
 @ObjectType()
 export class ContactInformation {

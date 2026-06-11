@@ -1,1 +1,1 @@
-export * from './UserQueriesService'
+export * from './UserQueriesService.js'

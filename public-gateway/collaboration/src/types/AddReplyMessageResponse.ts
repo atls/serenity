@@ -1,8 +1,8 @@
 import { Field }                 from '@nestjs/graphql'
 import { ObjectType }            from '@nestjs/graphql'
 
-import { AddReplyMessageErrors } from './AddReplyMessageErrors'
-import { Message }               from './Message'
+import { AddReplyMessageErrors } from './AddReplyMessageErrors.js'
+import { Message }               from './Message.js'
 
 @ObjectType()
 export class AddReplyMessageResponse {

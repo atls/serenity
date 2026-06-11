@@ -1,2 +1,2 @@
-export * from './services'
-export * from './module'
+export * from './services/index.js'
+export * from './module.js'

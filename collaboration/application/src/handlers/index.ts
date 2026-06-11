@@ -1,3 +1,3 @@
-export * from './RecalculateRatingHandler'
-export * from './ProjectReplyCountHandler'
-export * from './SpecialistReviewCreatedHandler'
+export * from './RecalculateRatingHandler.js'
+export * from './ProjectReplyCountHandler.js'
+export * from './SpecialistReviewCreatedHandler.js'

@@ -1,8 +1,8 @@
 import { Field }                     from '@nestjs/graphql'
 import { ObjectType }                from '@nestjs/graphql'
 
-import { ConfirmProjectReplyErrors } from './ConfirmProjectReplyErrors'
-import { Reply }                     from './Reply'
+import { ConfirmProjectReplyErrors } from './ConfirmProjectReplyErrors.js'
+import { Reply }                     from './Reply.js'
 
 @ObjectType()
 export class ConfirmProjectReplyResponse {

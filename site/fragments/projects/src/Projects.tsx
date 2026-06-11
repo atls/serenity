@@ -8,7 +8,7 @@ import { Search }   from '@ui/search'
 import { Text }     from '@ui/text'
 import ProjectShort from '@fragments/project-short'
 
-import messages     from './messages'
+import messages     from './messages.js'
 
 export const Projects = ({ intl, projects = [], searchData = [], onSearch }: any) => (
   <Column>

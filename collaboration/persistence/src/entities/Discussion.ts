@@ -6,8 +6,8 @@ import { OneToOne }         from 'typeorm'
 import { PrimaryColumn }    from 'typeorm'
 import { UpdateDateColumn } from 'typeorm'
 
-import { Message }          from './Message'
-import { Reply }            from './Reply'
+import { Message }          from './Message.js'
+import { Reply }            from './Reply.js'
 
 @Entity()
 export class Discussion {

@@ -6,8 +6,8 @@ import React                    from 'react'
 
 import { useChat as useUiChat } from '@ui/chat'
 
-import { Chat }                 from './Chat'
-import { useChat }              from './useChat'
+import { Chat }                 from './Chat.js'
+import { useChat }              from './useChat.js'
 
 const ChatFragment = () => {
   const intl = useIntl()

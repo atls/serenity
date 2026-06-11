@@ -1,9 +1,9 @@
 import React           from 'react'
 
-import { Addons }      from './parts'
-import { Attachments } from './parts'
-import { StyledInput } from './parts'
-import { useHooks }    from './hooks'
+import { Addons }      from './parts/index.js'
+import { Attachments } from './parts/index.js'
+import { StyledInput } from './parts/index.js'
+import { useHooks }    from './hooks/index.js'
 
 const Input = (props: any) => {
   const hooksProps = useHooks(props)

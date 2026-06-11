@@ -1,1 +1,1 @@
-export * from './MailerService'
+export * from './MailerService.js'

@@ -2,8 +2,8 @@ import { useEffect } from 'react'
 import { useState }  from 'react'
 import React         from 'react'
 
-import { Filters }   from './Filters'
-import { useData }   from './useData'
+import { Filters }   from './Filters.js'
+import { useData }   from './useData.js'
 
 const doNothing = () => {
   // do nothing

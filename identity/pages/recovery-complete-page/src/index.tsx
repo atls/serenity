@@ -1,7 +1,7 @@
 import React                    from 'react'
 
-import { RecoveryCompletePage } from './RecoveryCompletePage'
-import { Seo }                  from './Seo'
+import { RecoveryCompletePage } from './RecoveryCompletePage.js'
+import { Seo }                  from './Seo.js'
 
 export default class Page extends React.Component {
   static async getInitialProps(context) {

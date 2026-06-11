@@ -3,8 +3,8 @@ import { Module }        from '@nestjs/common'
 
 import { TypeOrmModule } from '@nestjs/typeorm'
 
-import { Sending }       from './entities'
-import config            from './config'
+import { Sending }       from './entities/index.js'
+import config            from './config.js'
 
 const feature = TypeOrmModule.forFeature([Sending])
 

@@ -1,4 +1,4 @@
-import uuid from 'uuid/v4'
+import uuid from 'uuid/v4.js'
 
 export class Email {
   address: string

@@ -8,8 +8,8 @@ import { Root }             from '@nestjs/graphql'
 import { Category }         from '@public-gateway/catalog'
 import { collaboration }    from '@protos/interfaces'
 
-import { CategoriesLoader } from '../dataloaders'
-import { Specialisation }   from '../types'
+import { CategoriesLoader } from '../dataloaders/index.js'
+import { Specialisation }   from '../types/index.js'
 
 @Injectable()
 @Resolver((of) => Specialisation)

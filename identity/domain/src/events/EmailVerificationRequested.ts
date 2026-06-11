@@ -1,7 +1,7 @@
 import { Event } from '@node-ts/bus-messages'
 import { Uuid }  from '@node-ts/ddd-types'
 
-import { Email } from '../model'
+import { Email } from '../model/index.js'
 
 export class EmailVerificationRequested extends Event {
   static readonly NAME = 'identity/email-verification-requested'

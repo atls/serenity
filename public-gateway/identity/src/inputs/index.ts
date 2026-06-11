@@ -1,1 +1,1 @@
-export * from './UpdateProfileInput'
+export * from './UpdateProfileInput.js'

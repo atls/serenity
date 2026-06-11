@@ -1,2 +1,2 @@
-export * from './UploadCreated'
-export * from './FileCreated'
+export * from './UploadCreated.js'
+export * from './FileCreated.js'

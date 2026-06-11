@@ -1,7 +1,7 @@
 import { NestFactory }   from '@nestjs/core'
 import { serverOptions } from '@protos/search'
 
-import { ServiceModule } from './module'
+import { ServiceModule } from './module.js'
 
 declare const module: any
 

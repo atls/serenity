@@ -1,2 +1,2 @@
-export * from './Transport'
-export * from './module'
+export * from './Transport.js'
+export * from './module.js'

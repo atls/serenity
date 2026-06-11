@@ -9,7 +9,7 @@ import { ClientGrpc }       from '@nestjs/microservices'
 import { clientOptions }    from '@protos/identity'
 import { identity }         from '@protos/interfaces'
 
-import { orderResultByKey } from './orderResultByKey'
+import { orderResultByKey } from './orderResultByKey.js'
 
 @Injectable()
 export class UserLoader implements NestDataLoader, OnModuleInit {

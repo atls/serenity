@@ -1,15 +1,15 @@
 import { Module }               from '@nestjs/common'
 
-import { DiscussionsResolver }  from './resolvers'
-import { IdentityQueries }      from './resolvers'
-import { MemberResolver }       from './resolvers'
-import { PortfolioResolver }    from './resolvers'
-import { ProfileMutations }     from './resolvers'
-import { ProfilePhotoResolver } from './resolvers'
-import { ProjectsResolver }     from './resolvers'
-import { RepliesResolver }      from './resolvers'
+import { DiscussionsResolver }  from './resolvers/index.js'
+import { IdentityQueries }      from './resolvers/index.js'
+import { MemberResolver }       from './resolvers/index.js'
+import { PortfolioResolver }    from './resolvers/index.js'
+import { ProfileMutations }     from './resolvers/index.js'
+import { ProfilePhotoResolver } from './resolvers/index.js'
+import { ProjectsResolver }     from './resolvers/index.js'
+import { RepliesResolver }      from './resolvers/index.js'
 
-export * from './types'
+export * from './types/index.js'
 
 @Module({
   providers: [

@@ -1,10 +1,10 @@
 import React            from 'react'
 
-import { Ceilings }     from './Ceilings'
-import { Floors }       from './Floors'
-import { HomeBuilding } from './HomeBuilding'
-import { Wallpapering } from './Wallpapering'
-import { Welding }      from './Welding'
+import { Ceilings }     from './Ceilings.js'
+import { Floors }       from './Floors.js'
+import { HomeBuilding } from './HomeBuilding.js'
+import { Wallpapering } from './Wallpapering.js'
+import { Welding }      from './Welding.js'
 
 const Worksheet = ({ intl, value }) => {
   const data = value && JSON.parse(value)

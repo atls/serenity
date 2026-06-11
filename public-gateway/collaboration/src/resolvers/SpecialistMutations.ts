@@ -9,10 +9,10 @@ import { ClientGrpc }                from '@nestjs/microservices'
 import { clientOptions }             from '@protos/collaboration'
 import { collaboration }             from '@protos/interfaces'
 
-import { ChangeAccountTypeInput }    from '../inputs'
-import { UpdateSpecialistInput }     from '../inputs'
-import { ChangeAccountTypeResponse } from '../types'
-import { UpdateSpecialistResponse }  from '../types'
+import { ChangeAccountTypeInput }    from '../inputs/index.js'
+import { UpdateSpecialistInput }     from '../inputs/index.js'
+import { ChangeAccountTypeResponse } from '../types/index.js'
+import { UpdateSpecialistResponse }  from '../types/index.js'
 
 @Injectable()
 export class SpecialistMutations implements OnModuleInit {

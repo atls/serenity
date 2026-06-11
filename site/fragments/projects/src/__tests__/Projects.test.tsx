@@ -10,7 +10,7 @@ import React              from 'react'
 import { ThemeProvider }  from '@ui/theme'
 import { render }         from '@testing-library/react'
 
-import { Projects }       from '../Projects'
+import { Projects }       from '../Projects.js'
 
 const TestComponent = () => {
   const intl = useIntl()

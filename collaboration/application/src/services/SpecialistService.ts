@@ -6,8 +6,8 @@ import { PrivatePerson }              from '@collaboration/domain'
 import { Specialisation }             from '@collaboration/domain'
 import { SpecialistEntityRepository } from '@collaboration/persistence'
 
-import { ChangeAccountTypeCommand }   from '../commands'
-import { UpdateSpecialistCommand }    from '../commands'
+import { ChangeAccountTypeCommand }   from '../commands/index.js'
+import { UpdateSpecialistCommand }    from '../commands/index.js'
 
 @Injectable()
 export class SpecialistService {

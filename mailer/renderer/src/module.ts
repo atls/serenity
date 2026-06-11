@@ -1,6 +1,6 @@
 import { Module }   from '@nestjs/common'
 
-import { Renderer } from './Renderer'
+import { Renderer } from './Renderer.js'
 
 const renderer = {
   provide: Renderer,

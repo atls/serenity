@@ -1,3 +1,3 @@
-export * from './CategoryGroupMutations'
-export * from './CategoryGroupQueries'
-export * from './CategoryMutations'
+export * from './CategoryGroupMutations.js'
+export * from './CategoryGroupQueries.js'
+export * from './CategoryMutations.js'

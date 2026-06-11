@@ -9,7 +9,7 @@ import React                     from 'react'
 import { ThemeProvider }         from '@ui/theme'
 import { render }                from '@testing-library/react'
 
-import { WallpaperingWorksheet } from '../WallpaperingWorksheet'
+import { WallpaperingWorksheet } from '../WallpaperingWorksheet.js'
 
 const TestComponent = () => {
   const intl = useIntl()

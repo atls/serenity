@@ -6,7 +6,7 @@ import { Bus }                    from '@monstrs/nestjs-bus'
 import { Logger }                 from '@monstrs/nestjs-logger'
 import { WriteRepository }        from '@node-ts/ddd'
 
-import { Upload }                 from '../entities'
+import { Upload }                 from '../entities/index.js'
 
 @Injectable()
 // @ts-ignore

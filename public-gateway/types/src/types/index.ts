@@ -1,1 +1,1 @@
-export * from './PageInfo'
+export * from './PageInfo.js'

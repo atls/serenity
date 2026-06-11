@@ -6,10 +6,10 @@ import { ProjectEntityRepository }  from '@collaboration/persistence'
 import { ReplyEntityRepository }    from '@collaboration/persistence'
 import { ReviewEntityRepository }   from '@collaboration/persistence'
 
-import { CompleteProjectCommand }   from '../commands'
-import { CreateProjectCommand }     from '../commands'
-import { PublishProjectCommand }    from '../commands'
-import { ProjectIdService }         from './ProjectIdService'
+import { CompleteProjectCommand }   from '../commands/index.js'
+import { CreateProjectCommand }     from '../commands/index.js'
+import { PublishProjectCommand }    from '../commands/index.js'
+import { ProjectIdService }         from './ProjectIdService.js'
 
 @Injectable()
 export class CustomerService {

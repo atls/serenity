@@ -3,8 +3,8 @@ import { useCallback } from 'react'
 import { useIntl }     from 'react-intl'
 import React           from 'react'
 
-import { Main }        from './Main'
-import { useData }     from './useData'
+import { Main }        from './Main.js'
+import { useData }     from './useData.js'
 
 const MainFragment = () => {
   const intl = useIntl()

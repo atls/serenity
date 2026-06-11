@@ -1,7 +1,7 @@
 import React            from 'react'
 import createNumberMask from 'text-mask-addons/dist/createNumberMask'
 
-import { Input }        from './Input'
+import { Input }        from './Input.js'
 
 const doNothing = (...args) => {
   // do nothing

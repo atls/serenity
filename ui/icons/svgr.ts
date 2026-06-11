@@ -9,7 +9,7 @@ import path                from 'path'
 import parserBabel         from 'prettier/parser-babel'
 import parserTypescript    from 'prettier/parser-typescript'
 
-import { replacements }    from './replacements'
+import { replacements }    from './replacements.js'
 
 const TARGET_DIR = path.join(__dirname, 'src')
 
@@ -21,7 +21,7 @@ const svgrTemplate = ({ template }, opts, { componentName, jsx }) => {
   
  import React from 'react'
  import { useTheme } from '@emotion/react'
- import { IconProps } from '../icons.interfaces'
+ import { IconProps } from '../icons.interfaces.js'
     export const ${componentName} = (props: IconProps) => {
     const theme: any = useTheme()
     
@@ -73,7 +73,7 @@ const save = async (sources) =>
 const createIndex = (sources) =>
   fs.writeFileAsync(
     path.join(TARGET_DIR, 'index.ts'),
-    `${sources.map((source) => `export * from './${source.name}'`).join('\n')}\n`
+    `${sources.map((source) => `export * from './${source.name}.js'`).join('\n')}\n`
   )
 
 const build = async () => {

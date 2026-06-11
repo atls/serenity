@@ -7,8 +7,8 @@ import { Resolver }      from '@nestjs/graphql'
 import { Root }          from '@nestjs/graphql'
 import { collaboration } from '@protos/interfaces'
 
-import { ProjectLoader } from '../dataloaders'
-import { Reply }         from '../types'
+import { ProjectLoader } from '../dataloaders/index.js'
+import { Reply }         from '../types/index.js'
 
 @Injectable()
 @Resolver((of) => Reply)

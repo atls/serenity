@@ -1,10 +1,10 @@
 import { Field }               from '@nestjs/graphql'
 import { ObjectType }          from '@nestjs/graphql'
 
-import { Address }             from './Address'
-import { ContactInformation }  from './ContactInformation'
-import { PersonalInformation } from './PersonalInformation'
-import { Photo }               from './Photo'
+import { Address }             from './Address.js'
+import { ContactInformation }  from './ContactInformation.js'
+import { PersonalInformation } from './PersonalInformation.js'
+import { Photo }               from './Photo.js'
 
 @ObjectType()
 export class Profile {

@@ -13,7 +13,7 @@ import { contentWidth }      from '@ui/utils'
 import { widthWithMargin }   from '@ui/utils'
 import styled                from '@emotion/styled'
 
-import { SlideButton }       from './SlideButton'
+import { SlideButton }       from './SlideButton.js'
 
 const transition = ifProp('transition', { transition: '0.3s' })
 

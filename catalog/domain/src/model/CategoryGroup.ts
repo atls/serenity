@@ -2,9 +2,9 @@ import { AggregateRoot }           from '@node-ts/ddd'
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { AggregateRootProperties } from '@node-ts/ddd-types'
 
-import { CategoryGroupCreated }    from '../events'
-import { CategoryGroupDeleted }    from '../events'
-import { CategoryGroupUpdated }    from '../events'
+import { CategoryGroupCreated }    from '../events/index.js'
+import { CategoryGroupDeleted }    from '../events/index.js'
+import { CategoryGroupUpdated }    from '../events/index.js'
 
 export interface CategoryGroupProperties extends AggregateRootProperties {
   name: string

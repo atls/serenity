@@ -1,7 +1,7 @@
 import React            from 'react'
 
-import { Registration } from './Registration'
-import { Seo }          from './Seo'
+import { Registration } from './Registration.js'
+import { Seo }          from './Seo.js'
 
 const Page = () => (
   <>

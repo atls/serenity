@@ -2,8 +2,8 @@ import { oathkeeperAuth }     from '@monstrs/oathkeeper-auth'
 
 import { NestFactory }        from '@nestjs/core'
 
-import { ActivityMiddleware } from './middleware'
-import { ApplicationModule }  from './module'
+import { ActivityMiddleware } from './middleware/index.js'
+import { ApplicationModule }  from './module.js'
 
 declare const module: any
 

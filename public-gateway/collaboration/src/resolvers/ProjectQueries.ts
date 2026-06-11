@@ -11,8 +11,8 @@ import { Pager }             from '@public-gateway/utils'
 import { clientOptions }     from '@protos/collaboration'
 import { collaboration }     from '@protos/interfaces'
 
-import { ProjectsFilter }    from '../inputs'
-import { ProjectsList }      from '../types'
+import { ProjectsFilter }    from '../inputs/index.js'
+import { ProjectsList }      from '../types/index.js'
 
 @Injectable()
 export class ProjectQueries implements OnModuleInit {

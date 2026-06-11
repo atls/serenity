@@ -4,8 +4,8 @@ import { useEffect }   from 'react'
 import { useMemo }     from 'react'
 import { useState }    from 'react'
 
-import { ChatContext } from './ChatContext'
-import { ChatStore }   from './ChatStore'
+import { ChatContext } from './ChatContext.js'
+import { ChatStore }   from './ChatStore.js'
 
 export const useChat = (id) => {
   const store: ChatStore = useContext(ChatContext)

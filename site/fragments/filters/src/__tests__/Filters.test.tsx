@@ -8,7 +8,7 @@ import React              from 'react'
 import { ThemeProvider }  from '@ui/theme'
 import { render }         from '@testing-library/react'
 
-import { query }          from '../useData'
+import { query }          from '../useData.js'
 import Filters            from '..'
 
 const mocks = [

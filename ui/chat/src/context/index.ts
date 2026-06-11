@@ -1,2 +1,2 @@
-export * from './useChat'
-export * from './ChatContext'
+export * from './useChat.js'
+export * from './ChatContext.js'

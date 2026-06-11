@@ -7,7 +7,7 @@ import { ClientGrpc }     from '@nestjs/microservices'
 import { clientOptions }  from '@protos/catalog'
 import { catalog }        from '@protos/interfaces'
 
-import { CategoriesList } from '../types'
+import { CategoriesList } from '../types/index.js'
 
 @Injectable()
 export class CategoryQueries implements OnModuleInit {

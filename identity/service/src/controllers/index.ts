@@ -1,1 +1,1 @@
-export * from './UserQueriesController'
+export * from './UserQueriesController.js'

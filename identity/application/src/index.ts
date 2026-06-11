@@ -1,3 +1,3 @@
-export * from './services'
-export * from './module'
-export * from './constraints'
+export * from './services/index.js'
+export * from './module.js'
+export * from './constraints/index.js'

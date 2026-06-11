@@ -1,8 +1,8 @@
 import { useIntl }          from 'react-intl'
 import React                from 'react'
 
-import { SignUpProfile }    from './SignUpProfile'
-import { useSignUpProfile } from './useSignUpProfile'
+import { SignUpProfile }    from './SignUpProfile.js'
+import { useSignUpProfile } from './useSignUpProfile.js'
 
 const Page = () => {
   const intl = useIntl()

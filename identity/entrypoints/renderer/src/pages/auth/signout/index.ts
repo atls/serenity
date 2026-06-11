@@ -1,1 +1,1 @@
-export { default, getServerSideProps } from '../../signout'
+export { default, getServerSideProps } from '../../signout.js'

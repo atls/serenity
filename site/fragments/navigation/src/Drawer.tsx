@@ -10,7 +10,7 @@ import { Column }             from '@ui/layout'
 import { Layout }             from '@ui/layout'
 import { NextLink as Link }   from '@ui/link'
 
-import messages               from './messages'
+import messages               from './messages.js'
 
 export const Drawer = ({
   intl,

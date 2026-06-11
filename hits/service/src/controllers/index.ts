@@ -1,3 +1,3 @@
-export * from './CounterQueriesController'
-export * from './ActivityQueriesController'
-export * from './ActivityController'
+export * from './CounterQueriesController.js'
+export * from './ActivityQueriesController.js'
+export * from './ActivityController.js'

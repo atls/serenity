@@ -1,8 +1,8 @@
 import { Field }               from '@nestjs/graphql'
 import { ObjectType }          from '@nestjs/graphql'
 
-import { Project }             from './Project'
-import { UpdateProjectErrors } from './UpdateProjectErrors'
+import { Project }             from './Project.js'
+import { UpdateProjectErrors } from './UpdateProjectErrors.js'
 
 @ObjectType()
 export class UpdateProjectResponse {

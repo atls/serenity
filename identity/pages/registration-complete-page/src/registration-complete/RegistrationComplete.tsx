@@ -7,7 +7,7 @@ import { Layout } from '@ui/layout'
 import { Link }   from '@ui/link'
 import { Text }   from '@ui/text'
 
-import messages   from './messages'
+import messages   from './messages.js'
 
 export const RegistrationComplete = ({ intl, accountUrl, siteUrl }: any) => (
   <Box width={400} mx={[32, 0]}>

@@ -3,7 +3,7 @@ import React         from 'react'
 import { CheckIcon } from '@ui/icons'
 import { Text }      from '@ui/text'
 
-import { Button }    from './Button'
+import { Button }    from './Button.js'
 
 export const CheckButton = ({ active = false, name, text, onClick }) => (
   <Button

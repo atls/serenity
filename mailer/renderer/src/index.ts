@@ -1,2 +1,2 @@
-export * from './Renderer'
-export * from './module'
+export * from './Renderer.js'
+export * from './module.js'

@@ -3,8 +3,8 @@ import { Injectable }                from '@nestjs/common'
 import { Portfolio }                 from '@portfolio/domain'
 import { PortfolioEntityRepository } from '@portfolio/persistence'
 
-import { CreatePortfolioCommand }    from '../commands'
-import { UpdatePortfolioCommand }    from '../commands'
+import { CreatePortfolioCommand }    from '../commands/index.js'
+import { UpdatePortfolioCommand }    from '../commands/index.js'
 
 @Injectable()
 export class PortfolioService {

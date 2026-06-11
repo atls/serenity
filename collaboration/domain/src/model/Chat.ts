@@ -1,8 +1,8 @@
-import uuid              from 'uuid/v4'
+import uuid              from 'uuid/v4.js'
 
 import { AggregateRoot } from '@node-ts/ddd'
 
-import { ChatCreated }   from '../events'
+import { ChatCreated }   from '../events/index.js'
 
 export class Chat extends AggregateRoot {
   customerId: string

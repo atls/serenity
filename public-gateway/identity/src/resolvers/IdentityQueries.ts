@@ -9,7 +9,7 @@ import { ClientGrpc }    from '@nestjs/microservices'
 import { clientOptions } from '@protos/identity'
 import { identity }      from '@protos/interfaces'
 
-import { User }          from '../types'
+import { User }          from '../types/index.js'
 
 @Injectable()
 export class IdentityQueries implements OnModuleInit {

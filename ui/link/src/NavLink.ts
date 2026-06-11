@@ -1,6 +1,6 @@
 import styled   from '@emotion/styled'
 
-import { Link } from './Link'
+import { Link } from './Link.js'
 
 export const NavLink = styled(Link)(({ theme }: any) => ({
   display: 'flex',

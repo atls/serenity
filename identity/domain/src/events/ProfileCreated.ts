@@ -1,7 +1,7 @@
 import { Event }   from '@node-ts/bus-messages'
 import { Uuid }    from '@node-ts/ddd-types'
 
-import { Profile } from '../model'
+import { Profile } from '../model/index.js'
 
 export class ProfileCreated extends Event {
   static readonly NAME = 'identity/profile-created'

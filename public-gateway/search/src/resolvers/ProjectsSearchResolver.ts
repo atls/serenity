@@ -12,8 +12,8 @@ import { collaboration }                               from '@protos/interfaces'
 import { search }                                      from '@protos/interfaces'
 import { clientOptions as searchClientOptions }        from '@protos/search'
 
-import { SearchProjectsFilter }                        from '../inputs'
-import { Search }                                      from '../types'
+import { SearchProjectsFilter }                        from '../inputs/index.js'
+import { Search }                                      from '../types/index.js'
 
 @Injectable()
 @Resolver((of) => Search)

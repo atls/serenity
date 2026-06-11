@@ -12,8 +12,8 @@ import { clientOptions as identityClientOptions } from '@protos/identity'
 import { collaboration }                          from '@protos/interfaces'
 import { identity }                               from '@protos/interfaces'
 
-import { AddDiscussionMessageInput }              from '../inputs'
-import { AddDiscussionMessageResponse }           from '../types'
+import { AddDiscussionMessageInput }              from '../inputs/index.js'
+import { AddDiscussionMessageResponse }           from '../types/index.js'
 
 @Injectable()
 export class DiscussionMutations implements OnModuleInit {

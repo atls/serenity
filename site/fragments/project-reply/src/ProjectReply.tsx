@@ -20,7 +20,7 @@ import { Select }            from '@ui/select'
 import { Text }              from '@ui/text'
 import ChooseSpecialistModal from '@fragments/choose-specialist-modal'
 
-import messages              from './messages'
+import messages              from './messages.js'
 
 export const ProjectReply = ({
   intl,
