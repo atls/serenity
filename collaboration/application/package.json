@@ -2,6 +2,7 @@
   "name": "@collaboration/application",
   "version": "0.0.1",
   "license": "BSD-3-Clause",
+  "type": "module",
   "main": "src/index.ts",
   "dependencies": {
     "@collaboration/domain": "0.0.1",

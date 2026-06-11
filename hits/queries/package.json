@@ -2,6 +2,7 @@
   "name": "@hits/queries",
   "version": "0.0.1",
   "license": "BSD-3-Clause",
+  "type": "module",
   "main": "src/index.ts",
   "dependencies": {
     "@hits/persistence": "0.0.1",

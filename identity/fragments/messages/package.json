@@ -2,6 +2,7 @@
   "name": "@identity/messages-fragment",
   "version": "0.0.0",
   "license": "BSD-3-Clause",
+  "type": "module",
   "main": "src/index.ts",
   "devDependencies": {
     "@emotion/react": "^11.9.0",
