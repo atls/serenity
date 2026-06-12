@@ -270,9 +270,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls/code-runtime@npm:2.1.32":
-  version: 2.1.32
-  resolution: "@atls/code-runtime@npm:2.1.32"
+"@atls/code-runtime@npm:2.1.33":
+  version: 2.1.33
+  resolution: "@atls/code-runtime@npm:2.1.33"
   dependencies:
     "@atls/config-eslint": "npm:2.0.15"
     "@atls/config-prettier": "npm:2.0.4"
@@ -286,7 +286,7 @@ __metadata:
     ts-loader: "npm:9.5.2"
     typescript: "npm:5.5.4"
     webpack: "npm:5.98.0"
-  checksum: 10/9cbc552c74946276d6736e903fb3d66d36ee0092018139fdcf083449da7e7dee889b8aaf3618ca5532c9a8eea63930322d314980dec2cfb5b5530e063c9980e3
+  checksum: 10/421ef42859204cb4ccc8562bf168a00ca2db0b9026a664db3419dc0d850eeb3ffc3f96223ffe7f9f94fa4b3c7de6bdcc978766571bcc3449669edfa2748d04ae
   languageName: node
   linkType: hard
 
@@ -24150,7 +24150,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@atls/code-runtime": "npm:2.1.32"
+    "@atls/code-runtime": "npm:2.1.33"
     "@jest/core": "npm:^27.4.7"
     "@types/eslint": "npm:^8"
     "@types/jest": "npm:^26.0.23"
