@@ -20,7 +20,7 @@ services:
     volumes:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache
-    entrypoint: ['/workspace/.yarn/bin/yarn']
+    entrypoint: ['yarn']
     profiles:
       - tools
 
@@ -156,7 +156,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - renderer
       - dev
     environment:
@@ -180,7 +180,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - renderer
       - dev
     environment:
@@ -204,7 +204,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - renderer
       - dev
     environment:
@@ -238,7 +238,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - renderer
       - dev
     environment:
@@ -262,7 +262,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - renderer
       - dev
     environment:
@@ -288,7 +288,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - service
       - dev
     environment:
@@ -311,7 +311,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - service
       - dev
     environment:
@@ -329,7 +329,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - service
       - dev
     environment:
@@ -351,7 +351,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - service
       - dev
     environment:
@@ -373,7 +373,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - service
       - dev
     environment:
@@ -396,7 +396,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - service
       - dev
     environment:
@@ -421,7 +421,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - service
       - dev
     environment:
@@ -446,7 +446,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - service
       - dev
     environment:
@@ -471,7 +471,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - service
       - dev
     environment:
@@ -494,7 +494,7 @@ services:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint:
-      - /workspace/.yarn/bin/yarn
+      - yarn
       - service
       - dev
     environment:
