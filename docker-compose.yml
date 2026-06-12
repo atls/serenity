@@ -15,11 +15,14 @@ services:
 
   yarn:
     image: node:24
+    init: true
     working_dir: /workspace
     volumes:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache
-    entrypoint: yarn
+    entrypoint: ['/workspace/.yarn/bin/yarn']
+    profiles:
+      - tools
 
   elastic:
     image: elasticsearch:7.17.0
@@ -147,15 +150,17 @@ services:
 
   site:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/site/entrypoints/renderer
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @site/renderer-entrypoint dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - renderer
+      - dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
-      - NODE_ICU_DATA=/workspace/node_modules/full-icu
       - PUBLIC_GATEWAY_URL=${PUBLIC_GATEWAY_URL}
     depends_on:
       - oathkeeper
@@ -169,15 +174,17 @@ services:
 
   site-local:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/site/entrypoints/renderer
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @site/renderer-entrypoint dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - renderer
+      - dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
-      - NODE_ICU_DATA=/workspace/node_modules/full-icu
       - PUBLIC_GATEWAY_URL=http://localhost:4000/
       - DEV_AUTH_TOKEN=${DEV_AUTH_TOKEN}
       - DEV_AUTH_USER=${DEV_AUTH_USER}
@@ -191,12 +198,15 @@ services:
 
   identity:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/identity/entrypoints/renderer
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @identity/renderer-entrypoint dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - renderer
+      - dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - KRATOS_PUBLIC_URL=http://kratos:4433/
@@ -222,12 +232,15 @@ services:
 
   cookie-store:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/identity/entrypoints/renderer
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @identity/renderer-entrypoint dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - renderer
+      - dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - OAUTH_AUTHORIZATION_URL=https://sso.serenity.local.atls.tech/oauth2/auth
@@ -243,15 +256,17 @@ services:
 
   email:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/email/entrypoints/renderer
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @email/renderer-entrypoint dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - renderer
+      - dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
-      - NODE_ICU_DATA=/workspace/node_modules/full-icu
       - PUBLIC_GATEWAY_URL=${PUBLIC_GATEWAY_URL}
       - WEB_VERSION_URL=https://email.serenity.local.atls.tech/s
       - ACCOUNTS_URL=https://accounts.serenity.local.atls.tech
@@ -267,11 +282,17 @@ services:
 
   public-gateway:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/public-gateway/app
     volumes:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @public-gateway/app dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - service
+      - dev
+    environment:
+      - NODE_OPTIONS=--require=/workspace/.pnp.cjs --loader=file:///workspace/.pnp.loader.mjs
     depends_on:
       - oathkeeper
       - catalog-service
@@ -284,12 +305,17 @@ services:
 
   private-gateway:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/private-gateway/app
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @private-gateway/app dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - service
+      - dev
+    environment:
+      - NODE_OPTIONS=--require=/workspace/.pnp.cjs --loader=file:///workspace/.pnp.loader.mjs
     ports:
       - 3001:3000
     depends_on:
@@ -297,13 +323,17 @@ services:
 
   catalog-service:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/catalog/service
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @catalog/service dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - service
+      - dev
     environment:
+      - NODE_OPTIONS=--require=/workspace/.pnp.cjs --loader=file:///workspace/.pnp.loader.mjs
       - DB_HOST=${DB_HOST:-db}
       - DB_NAME=${DB_NAME:-db}
       - DB_USERNAME=${DB_USERNAME:-postgres}
@@ -315,13 +345,17 @@ services:
 
   identity-service:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/identity/service
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @identity/service dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - service
+      - dev
     environment:
+      - NODE_OPTIONS=--require=/workspace/.pnp.cjs --loader=file:///workspace/.pnp.loader.mjs
       - KRATOS_PUBLIC_URL=http://kratos:4433/
       - DB_HOST=${DB_HOST:-db}
       - DB_NAME=${DB_NAME:-db}
@@ -333,13 +367,17 @@ services:
 
   mailer-service:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/mailer/service
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @mailer/service dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - service
+      - dev
     environment:
+      - NODE_OPTIONS=--require=/workspace/.pnp.cjs --loader=file:///workspace/.pnp.loader.mjs
       - DB_HOST=${DB_HOST:-db}
       - DB_NAME=${DB_NAME:-db}
       - DB_USERNAME=${DB_USERNAME:-postgres}
@@ -352,12 +390,17 @@ services:
 
   collaboration:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/collaboration/service
     volumes:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @collaboration/service dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - service
+      - dev
     environment:
+      - NODE_OPTIONS=--require=/workspace/.pnp.cjs --loader=file:///workspace/.pnp.loader.mjs
       - DB_HOST=${DB_HOST:-db}
       - DB_NAME=${DB_NAME:-db}
       - DB_USERNAME=${DB_USERNAME:-postgres}
@@ -372,12 +415,17 @@ services:
 
   hits:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/hits/service
     volumes:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @hits/service dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - service
+      - dev
     environment:
+      - NODE_OPTIONS=--require=/workspace/.pnp.cjs --loader=file:///workspace/.pnp.loader.mjs
       - DB_HOST=${DB_HOST:-db}
       - DB_NAME=${DB_NAME:-db}
       - DB_USERNAME=${DB_USERNAME:-postgres}
@@ -392,12 +440,17 @@ services:
 
   portfolio:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/portfolio/service
     volumes:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @portfolio/service dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - service
+      - dev
     environment:
+      - NODE_OPTIONS=--require=/workspace/.pnp.cjs --loader=file:///workspace/.pnp.loader.mjs
       - DB_HOST=${DB_HOST:-db}
       - DB_NAME=${DB_NAME:-db}
       - DB_USERNAME=${DB_USERNAME:-postgres}
@@ -412,12 +465,17 @@ services:
 
   search-service:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/search/service
     volumes:
       - ./:/workspace
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @search/service dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - service
+      - dev
     environment:
+      - NODE_OPTIONS=--require=/workspace/.pnp.cjs --loader=file:///workspace/.pnp.loader.mjs
       - DB_HOST=${DB_HOST:-db}
       - DB_NAME=${DB_NAME:-db}
       - DB_USERNAME=${DB_USERNAME:-postgres}
@@ -430,13 +488,17 @@ services:
 
   files-service:
     image: node:24-alpine
-    working_dir: /workspace
+    init: true
+    working_dir: /workspace/files/service
     volumes:
       - ./:/workspace
-      - modules:/workspace/node_modules
       - ../.yarn/berry/cache:/.yarn/berry/cache:ro
-    entrypoint: yarn workspace @files/service dev
+    entrypoint:
+      - /workspace/.yarn/bin/yarn
+      - service
+      - dev
     environment:
+      - NODE_OPTIONS=--require=/workspace/.pnp.cjs --loader=file:///workspace/.pnp.loader.mjs
       - DB_HOST=${DB_HOST:-db}
       - DB_NAME=${DB_NAME:-db}
       - DB_USERNAME=${DB_USERNAME:-postgres}
@@ -454,11 +516,6 @@ services:
       - db
     extra_hosts:
       - 's3.serenity.local.atls.tech:172.16.101.99'
-
-volumes:
-  modules:
-  yarncache:
-  unplugged:
 
 networks:
   traefik:
