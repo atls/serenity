@@ -1,13 +1,15 @@
+import { Controller }         from '@nestjs/common'
+import { EventPattern }       from '@nestjs/microservices'
+
 import { ProjectUpdated }     from '@collaboration/domain'
-import { HandlesMessage }     from '@serenity/nestjs-bus'
-import { Handler }            from '@node-ts/bus-core'
 
 import { ProjectDataService } from '../services/index.js'
 
-@HandlesMessage(ProjectUpdated)
-export class ProjectUpdatedHandler implements Handler<ProjectUpdated> {
+@Controller()
+export class ProjectUpdatedHandler {
   constructor(private readonly projectDataService: ProjectDataService) {}
 
+  @EventPattern(ProjectUpdated.NAME)
   async handle(event: ProjectUpdated): Promise<void> {
     await this.projectDataService.handle(event.projectId)
   }

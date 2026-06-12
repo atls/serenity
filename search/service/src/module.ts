@@ -26,6 +26,10 @@ import { SpecialistIndexService }       from './services/index.js'
     ProjectDataService,
     SpecialistIndexService,
     SpecialistDataService,
+  ],
+  controllers: [
+    ProjectSearchController,
+    SpecialistSearchController,
     SpecialistUpdatedHandler,
     ProjectUpdatedHandler,
     ProjectCompletedHandler,
@@ -34,6 +38,5 @@ import { SpecialistIndexService }       from './services/index.js'
     ProjectCreatedHandler,
     ProjectPublishedHandler,
   ],
-  controllers: [ProjectSearchController, SpecialistSearchController],
 })
 export class ServiceModule {}
