@@ -1,33 +1,22 @@
 import { Injectable }             from '@nestjs/common'
-
-import { BusHealthIndicator }     from '@monstrs/nestjs-bus-health'
 import { TerminusModuleOptions }  from '@nestjs/terminus'
 import { TerminusOptionsFactory } from '@nestjs/terminus'
 import { TypeOrmHealthIndicator } from '@nestjs/terminus'
 
 @Injectable()
 export class TerminusOptionsService implements TerminusOptionsFactory {
-  constructor(
-    private readonly db: TypeOrmHealthIndicator,
-    private readonly bus: BusHealthIndicator
-  ) {}
+  constructor(private readonly db: TypeOrmHealthIndicator) {}
 
   public createTerminusOptions(): TerminusModuleOptions {
     return {
       endpoints: [
         {
           url: '/health/alive',
-          healthIndicators: [
-            async () => this.db.pingCheck('database', { timeout: 300 }),
-            async () => this.bus.pingCheck('bus'),
-          ],
+          healthIndicators: [async () => this.db.pingCheck('database', { timeout: 300 })],
         },
         {
           url: '/health/ready',
-          healthIndicators: [
-            async () => this.db.pingCheck('database', { timeout: 300 }),
-            async () => this.bus.pingCheck('bus'),
-          ],
+          healthIndicators: [async () => this.db.pingCheck('database', { timeout: 300 })],
         },
       ],
     }

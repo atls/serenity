@@ -7,8 +7,6 @@
   "dependencies": {
     "@catalog/domain": "0.1.1",
     "@godaddy/terminus": "^4.10.2",
-    "@monstrs/nestjs-bus": "0.1.4",
-    "@monstrs/nestjs-logger": "0.1.2",
     "@nestjs/typeorm": "8.0.3",
     "@node-ts/ddd": "^0.1.6",
     "@node-ts/ddd-types": "^0.1.4",

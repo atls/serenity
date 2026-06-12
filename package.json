@@ -45,7 +45,7 @@
     "typescript": "5.5.4"
   },
   "devDependencies": {
-    "@atls/code-runtime": "2.1.32",
+    "@atls/code-runtime": "2.1.33",
     "@jest/core": "^27.4.7",
     "@types/eslint": "^8",
     "@types/jest": "^26.0.23",

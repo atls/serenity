@@ -1,21 +1,21 @@
 import { Injectable }                 from '@nestjs/common'
+import { WriteRepository }            from '@node-ts/ddd'
+import { Uuid }                       from '@node-ts/ddd-types'
 import { Connection }                 from 'typeorm'
 
 import { Customer as CustomerEntity } from '@collaboration/domain'
-import { Bus }                        from '@monstrs/nestjs-bus'
-import { Logger }                     from '@monstrs/nestjs-logger'
-import { WriteRepository }            from '@node-ts/ddd'
-import { Uuid }                       from '@node-ts/ddd-types'
 
 import { Customer }                   from '../entities/index.js'
+import { DomainEventPublisher }       from '../events/index.js'
+import { WriteRepositoryLogger }               from '../events/index.js'
 
 @Injectable()
 // @ts-ignore
 export class CustomerEntityRepository extends WriteRepository<CustomerEntity, Customer> {
   constructor(
     private readonly connection: Connection,
-    private readonly logger: Logger,
-    private readonly bus: Bus
+    private readonly logger: WriteRepositoryLogger,
+    private readonly bus: DomainEventPublisher
   ) {
     // @ts-ignore
     super(CustomerEntity, Customer, connection, bus, logger)

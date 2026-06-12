@@ -1,18 +1,16 @@
 import 'reflect-metadata'
 
-import { Test }             from '@nestjs/testing'
-import { firstValueFrom }   from 'rxjs'
-import uuid                 from 'uuid/v4.js'
+import { ClientsModule }        from '@nestjs/microservices'
+import { NestMicroservice }     from '@nestjs/microservices'
+import { Test }                 from '@nestjs/testing'
+import { firstValueFrom }       from 'rxjs'
+import uuid                     from 'uuid/v4.js'
 
-import { ServiceModule }    from '@collaboration/service/src/module'
-import { Logger }           from '@monstrs/nestjs-logger'
-import { ClientsModule }    from '@nestjs/microservices'
-import { NestMicroservice } from '@nestjs/microservices'
-import { BUS_SYMBOLS }      from '@node-ts/bus-core'
-import { MemoryQueue }      from '@node-ts/bus-core/dist/transport'
-import { clientOptions }    from '@protos/collaboration'
-import { serverOptions }    from '@protos/collaboration'
-import { collaboration }    from '@protos/interfaces'
+import { DomainEventPublisher } from '@collaboration/persistence'
+import { ServiceModule }        from '@collaboration/service/src/module'
+import { clientOptions }        from '@protos/collaboration'
+import { serverOptions }        from '@protos/collaboration'
+import { collaboration }        from '@protos/interfaces'
 
 describe('project reply', () => {
   let app: NestMicroservice
@@ -31,9 +29,8 @@ describe('project reply', () => {
     const module: any = await Test.createTestingModule({
       imports: [ServiceModule, ClientsModule.register([collaborationClientOptions])],
     })
-      .overrideProvider(BUS_SYMBOLS.Transport)
-      // @ts-ignore
-      .useValue(new MemoryQueue(new Logger()))
+      .overrideProvider(DomainEventPublisher)
+      .useValue({ publish: async () => undefined })
       .compile()
 
     app = module.createNestMicroservice(serverOptions)

@@ -1,15 +1,15 @@
+import { Controller }             from '@nestjs/common'
+import { EventPattern }           from '@nestjs/microservices'
+import { InjectRepository }       from '@nestjs/typeorm'
 import { Repository }             from 'typeorm'
 
 import { ResetPasswordRequested } from '@identity/domain/src/events/ResetPasswordRequested'
 import { Sending }                from '@mailer/db'
 import { Renderer }               from '@mailer/renderer'
 import { Transport }              from '@mailer/transport'
-import { HandlesMessage }         from '@monstrs/nestjs-bus'
-import { InjectRepository }       from '@nestjs/typeorm'
-import { Handler }                from '@node-ts/bus-core'
 
-@HandlesMessage(ResetPasswordRequested)
-export class ResetPasswordHandler implements Handler<ResetPasswordRequested> {
+@Controller()
+export class ResetPasswordHandler {
   constructor(
     @InjectRepository(Sending)
     private readonly sendingRepository: Repository<Sending>,
@@ -17,6 +17,7 @@ export class ResetPasswordHandler implements Handler<ResetPasswordRequested> {
     private renderer: Renderer
   ) {}
 
+  @EventPattern(ResetPasswordRequested.NAME)
   async handle({ email, resetToken }: ResetPasswordRequested): Promise<void> {
     const sending = await this.sendingRepository.save(
       this.sendingRepository.create({
