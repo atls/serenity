@@ -19,14 +19,11 @@
     "@nestjs/core": "8.4.2",
     "@nestjs/microservices": "8.4.2",
     "@protos/hits": "0.0.1",
-    "@serenity/nestjs-bus": "workspace:0.0.0",
-    "amqplib": "^0.8.0",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3"
   },
   "devDependencies": {
     "@protos/common": "workspace:^",
-    "@types/amqplib": "^0",
     "@types/node": "12.12.14",
     "typescript": "5.5.4"
   }

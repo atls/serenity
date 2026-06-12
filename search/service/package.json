@@ -21,12 +21,10 @@
     "@nestjs/elasticsearch": "8.0.0",
     "@nestjs/microservices": "8.4.2",
     "@nestjs/terminus": "8.0.6",
-    "@node-ts/bus-core": "0.4.9",
     "@protos/catalog": "0.1.1",
     "@protos/collaboration": "0.0.1",
     "@protos/interfaces": "0.1.1",
     "@protos/search": "0.0.0",
-    "@serenity/nestjs-bus": "workspace:0.0.0",
     "amqplib": "^0.9.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3"

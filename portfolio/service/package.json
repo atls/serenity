@@ -18,15 +18,12 @@
     "@portfolio/application": "workspace:0.0.0",
     "@portfolio/persistence": "workspace:0.0.0",
     "@protos/portfolio": "workspace:0.0.0",
-    "@serenity/nestjs-bus": "workspace:0.0.0",
-    "amqplib": "^0.9.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3"
   },
   "devDependencies": {
     "@portfolio/domain": "workspace:0.0.0",
     "@protos/common": "workspace:^",
-    "@types/amqplib": "^0",
     "@types/node": "12.12.14",
     "typescript": "5.5.4"
   }
