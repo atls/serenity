@@ -21324,6 +21324,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./private-gateway/app/",\
         "packageDependencies": [\
           ["@atls/nestjs-dataloader", "virtual:0e3d080cb17f27afbeb72ef8f8d0c6a68803f871b55732aa265d2b205a04437deb4ef15f2e06ad939125906f2159532dbde80498871f349c330d4b8ffba25915#npm:0.0.3"],\
+          ["@grpc/grpc-js", "npm:1.5.3"],\
+          ["@grpc/proto-loader", "npm:0.6.9"],\
           ["@nestjs/common", "virtual:5555dfeafebad57024fa761523d5586005035b492a086da1575bbc01ba47f616de96fe523cc848756887ea8ed55b2b0959223c22333301bb023c916864aeaa39#npm:8.4.2"],\
           ["@nestjs/core", "virtual:0e3d080cb17f27afbeb72ef8f8d0c6a68803f871b55732aa265d2b205a04437deb4ef15f2e06ad939125906f2159532dbde80498871f349c330d4b8ffba25915#npm:8.4.2"],\
           ["@nestjs/graphql", "virtual:0e3d080cb17f27afbeb72ef8f8d0c6a68803f871b55732aa265d2b205a04437deb4ef15f2e06ad939125906f2159532dbde80498871f349c330d4b8ffba25915#npm:9.1.2"],\

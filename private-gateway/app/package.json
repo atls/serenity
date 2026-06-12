@@ -10,12 +10,10 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@atls/nestjs-dataloader": "^0.0.3",
-    "@nestjs/common": "8.4.2",
-    "@nestjs/core": "8.4.2",
-    "@nestjs/graphql": "9.1.2",
-    "@nestjs/platform-express": "8.4.2",
-    "@private-gateway/catalog": "0.1.1",
+    "@grpc/grpc-js": "^1.5.3",
+    "@grpc/proto-loader": "^0.6.9",
+    "@protos/catalog": "workspace:^",
+    "@protos/common": "workspace:^",
     "apollo-server-core": "3.6.2",
     "apollo-server-express": "2.14.3",
     "dataloader": "2.0.0",
@@ -26,8 +24,12 @@
     "type-graphql": "1.0.0"
   },
   "devDependencies": {
-    "@protos/catalog": "workspace:^",
-    "@protos/common": "workspace:^",
+    "@atls/nestjs-dataloader": "^0.0.3",
+    "@nestjs/common": "8.4.2",
+    "@nestjs/core": "8.4.2",
+    "@nestjs/graphql": "9.1.2",
+    "@nestjs/platform-express": "8.4.2",
+    "@private-gateway/catalog": "0.1.1",
     "@types/node": "12.12.14",
     "ts-node": "^10.7.0",
     "typescript": "5.5.4"

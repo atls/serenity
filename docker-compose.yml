@@ -18,7 +18,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache
+      - ../.yarn/berry/cache:/.yarn/berry/cache
     entrypoint: yarn
 
   elastic:
@@ -151,7 +151,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @site/renderer-entrypoint dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
@@ -173,7 +173,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @site/renderer-entrypoint dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
@@ -195,7 +195,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @identity/renderer-entrypoint dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
@@ -226,7 +226,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @identity/renderer-entrypoint dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
@@ -247,7 +247,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @email/renderer-entrypoint dev
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
@@ -270,7 +270,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @public-gateway/app dev
     depends_on:
       - oathkeeper
@@ -288,7 +288,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @private-gateway/app dev
     ports:
       - 3001:3000
@@ -301,7 +301,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @catalog/service dev
     environment:
       - DB_HOST=${DB_HOST:-db}
@@ -319,7 +319,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @identity/service dev
     environment:
       - KRATOS_PUBLIC_URL=http://kratos:4433/
@@ -337,7 +337,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @mailer/service dev
     environment:
       - DB_HOST=${DB_HOST:-db}
@@ -355,7 +355,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @collaboration/service dev
     environment:
       - DB_HOST=${DB_HOST:-db}
@@ -375,7 +375,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @hits/service dev
     environment:
       - DB_HOST=${DB_HOST:-db}
@@ -395,7 +395,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @portfolio/service dev
     environment:
       - DB_HOST=${DB_HOST:-db}
@@ -415,7 +415,7 @@ services:
     working_dir: /workspace
     volumes:
       - ./:/workspace
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @search/service dev
     environment:
       - DB_HOST=${DB_HOST:-db}
@@ -434,7 +434,7 @@ services:
     volumes:
       - ./:/workspace
       - modules:/workspace/node_modules
-      - ${HOME}/.yarn/berry/cache:/root/.yarn/berry/cache:ro
+      - ../.yarn/berry/cache:/.yarn/berry/cache:ro
     entrypoint: yarn workspace @files/service dev
     environment:
       - DB_HOST=${DB_HOST:-db}
