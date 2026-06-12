@@ -13,5 +13,8 @@
   "devDependencies": {
     "@types/node": "12.12.14",
     "typescript": "5.5.4"
+  },
+  "peerDependencies": {
+    "@nestjs/core": "*"
   }
 }
