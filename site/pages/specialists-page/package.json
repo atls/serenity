@@ -5,8 +5,8 @@
   "type": "module",
   "main": "src/index.tsx",
   "dependencies": {
-    "next": "12.1.0",
-    "react": "16.13.1",
+    "next": "16.2.9",
+    "react": "19.2.7",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {

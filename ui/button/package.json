@@ -5,14 +5,14 @@
   "type": "module",
   "main": "src/index.ts",
   "dependencies": {
-    "react": "^17.0.2",
+    "react": "19.2.7",
     "styled-system": "^5.1.0"
   },
   "devDependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@styled-system/should-forward-prop": "5.1.5",
-    "@types/react": "^17.0.6",
+    "@types/react": "19.2.17",
     "@types/styled-system": "5.1.4",
     "@ui/icons": "0.1.1",
     "@ui/text": "0.3.1",
