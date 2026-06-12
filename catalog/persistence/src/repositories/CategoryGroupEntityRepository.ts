@@ -1,12 +1,12 @@
 import { Injectable }                           from '@nestjs/common'
+import { WriteRepository }                      from '@node-ts/ddd'
 import { Connection }                           from 'typeorm'
 
 import { CategoryGroup as CategoryGroupEntity } from '@catalog/domain'
-import { Bus }                                  from '@serenity/nestjs-bus'
-import { Logger }                               from '@serenity/nestjs-bus'
-import { WriteRepository }                      from '@node-ts/ddd'
 
 import { CategoryGroup }                        from '../entities/index.js'
+import { DomainEventPublisher }                 from '../events/index.js'
+import { DomainLogger }                         from '../events/index.js'
 
 @Injectable()
 // @ts-ignore
@@ -16,8 +16,8 @@ export class CategoryGroupEntityRepository extends WriteRepository<
 > {
   constructor(
     private readonly connection: Connection,
-    private readonly logger: Logger,
-    private readonly bus: Bus
+    private readonly logger: DomainLogger,
+    private readonly bus: DomainEventPublisher
   ) {
     // @ts-ignore
     super(CategoryGroupEntity, CategoryGroup, connection, bus, logger)

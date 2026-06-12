@@ -1,8 +1,7 @@
 import { Global }                     from '@nestjs/common'
 import { Module }                     from '@nestjs/common'
-
-import { BusModule }                  from '@serenity/nestjs-bus'
-import { LoggerModule }               from '@serenity/nestjs-bus'
+import { ClientsModule }              from '@nestjs/microservices'
+import { Transport }                  from '@nestjs/microservices'
 import { TypeOrmModule }              from '@nestjs/typeorm'
 
 import { Chat }                       from './entities/index.js'
@@ -14,6 +13,9 @@ import { ProjectId }                  from './entities/index.js'
 import { Reply }                      from './entities/index.js'
 import { Review }                     from './entities/index.js'
 import { Specialist }                 from './entities/index.js'
+import { DomainEventPublisher }       from './events/index.js'
+import { DomainLogger }               from './events/index.js'
+import { SEARCH_EVENTS_CLIENT }       from './events/index.js'
 import { ChatEntityRepository }       from './repositories/index.js'
 import { CustomerEntityRepository }   from './repositories/index.js'
 import { DiscussionEntityRepository } from './repositories/index.js'
@@ -36,21 +38,30 @@ const feature = TypeOrmModule.forFeature([
   ProjectId,
 ])
 
+const busUrl =
+  process.env.BUS_URL || 'amqp://local:password@rabbitmq:5672/?heartbeat=30&frameMax=8192'
+
 @Global()
 @Module({
   imports: [
-    LoggerModule,
     feature.module,
     TypeOrmModule.forRoot(config),
-    BusModule.forRabbitMq({
-      queueName: 'catalog',
-      connectionString:
-        process.env.BUS_URL || 'amqp://local:password@rabbitmq:5672/?heartbeat=30&frameMax=8192',
-    }),
+    ClientsModule.register([
+      {
+        name: SEARCH_EVENTS_CLIENT,
+        transport: Transport.RMQ,
+        options: {
+          urls: [busUrl],
+          queue: process.env.SEARCH_EVENTS_QUEUE || 'search',
+        },
+      },
+    ]),
   ],
   providers: [
     // @ts-ignore
     ...feature.providers,
+    DomainLogger,
+    DomainEventPublisher,
     SpecialistEntityRepository,
     CustomerEntityRepository,
     ProjectEntityRepository,
