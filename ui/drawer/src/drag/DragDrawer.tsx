@@ -1,4 +1,5 @@
 import { Component }         from 'react'
+import type { ReactNode }    from 'react'
 import { Motion }            from 'react-motion'
 import { TouchScrollable }   from 'react-scrolllock'
 import { createPortal }      from 'react-dom'
@@ -40,20 +41,20 @@ const StyledDragDrawer = styled.div({
 interface DragDrawerProps {
   open: boolean
   disable: boolean
-  children: object | [] | JSX.Element
-  onRequestClose: () => void
-  onDrag: (e) => void
-  onOpen: () => void
-  allowClose: boolean
-  notifyWillClose: (e) => void
-  direction: string
-  modalElementClass: string
-  containerElementClass: string
-  getContainerRef: () => void
-  getModalRef: (e) => {}
-  dontApplyListeners: boolean
-  id: string
-  parentElement: any
+  children?: ReactNode
+  onRequestClose?: () => void
+  onDrag?: (e: any) => void
+  onOpen?: () => void
+  allowClose?: boolean
+  notifyWillClose?: (e: any) => void
+  direction?: string
+  modalElementClass?: string
+  containerElementClass?: string
+  getContainerRef?: () => void
+  getModalRef?: (e: any) => {}
+  dontApplyListeners?: boolean
+  id?: string
+  parentElement?: any
 }
 
 const doNothing = (...args) => {

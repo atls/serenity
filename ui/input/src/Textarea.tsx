@@ -9,19 +9,22 @@ const Input = ({ onChange, ...props }) => (
   <StyledInput {...props} onChange={({ target: { value } }) => onChange && onChange(value)} />
 )
 
-const Textarea = styled(Input)(
-  () => ({
-    padding: '17px 20px',
-    resize: 'none',
-    height: 'auto',
-  }),
-  boxShadow
+const Textarea = Object.assign(
+  styled(Input)(
+    () => ({
+      padding: '17px 20px',
+      resize: 'none',
+      height: 'auto',
+    }),
+    boxShadow
+  ),
+  {
+    defaultProps: {
+      ...StyledInput.defaultProps,
+      as: 'textarea',
+      size: 'normal',
+    },
+  }
 )
-
-Textarea.defaultProps = {
-  ...StyledInput.defaultProps,
-  as: 'textarea',
-  size: 'normal',
-}
 
 export { Textarea }

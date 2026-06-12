@@ -9,7 +9,7 @@ interface AvatarProps {
   src?: string
 }
 
-const Avatar = styled.div<AvatarProps>(
+const StyledAvatar = styled.div<AvatarProps>(
   ({ theme, color, src }: any) => ({
     background: src ? `url(${src})` : theme.colors[color],
     borderRadius: '50%',
@@ -20,12 +20,8 @@ const Avatar = styled.div<AvatarProps>(
   layout
 )
 
-Avatar.defaultProps = {
-  // @ts-ignore
-  src: null,
-  width: 40,
-  height: 40,
-  color: 'alto',
-}
+const Avatar = ({ color = 'alto', height = 40, src, width = 40, ...props }: AvatarProps) => (
+  <StyledAvatar {...props} color={color} height={height} src={src} width={width} />
+)
 
 export { Avatar }

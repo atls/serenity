@@ -3,12 +3,12 @@ import { ifProp } from 'styled-tools'
 import styled     from '@emotion/styled'
 
 interface SidebarProps {
-  children: any
+  children?: any
   href?: string
   active?: boolean
 }
 
-export const SidebarLink = styled.a<SidebarProps>(
+export const SidebarLink: any = styled.a<SidebarProps>(
   ({ theme }: any) => ({
     display: 'flex',
     alignItems: 'center',

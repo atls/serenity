@@ -5,9 +5,10 @@ import { Attachments } from './parts/index.js'
 import { StyledInput } from './parts/index.js'
 import { useHooks }    from './hooks/index.js'
 
-const Input = (props: any) => {
-  const hooksProps = useHooks(props)
-  const finalProps = { ...props, ...hooksProps }
+const Input = ({ size = 'normal', ...props }: any) => {
+  const inputProps = { size, ...props }
+  const hooksProps = useHooks(inputProps)
+  const finalProps = { ...inputProps, ...hooksProps }
 
   return (
     <Addons {...finalProps}>
@@ -16,10 +17,6 @@ const Input = (props: any) => {
       </Attachments>
     </Addons>
   )
-}
-
-Input.defaultProps = {
-  size: 'normal',
 }
 
 export { Input }

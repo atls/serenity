@@ -1,4 +1,5 @@
 import { withRouter } from 'next/router'
+import type { ReactNode } from 'react'
 import React          from 'react'
 
 import { Link }       from '@ui/link'
@@ -6,7 +7,7 @@ import styled         from '@emotion/styled'
 
 interface ItemProps {
   href?: string
-  children: any
+  children?: ReactNode
   router: any
   icon?: any
   onClick?: () => void
