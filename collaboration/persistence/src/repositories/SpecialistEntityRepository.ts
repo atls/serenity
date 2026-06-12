@@ -7,14 +7,14 @@ import { Specialist as SpecialistEntity } from '@collaboration/domain'
 
 import { Specialist }                     from '../entities/index.js'
 import { DomainEventPublisher }           from '../events/index.js'
-import { DomainLogger }                   from '../events/index.js'
+import { WriteRepositoryLogger }                   from '../events/index.js'
 
 @Injectable()
 // @ts-ignore
 export class SpecialistEntityRepository extends WriteRepository<SpecialistEntity, Specialist> {
   constructor(
     private readonly connection: Connection,
-    private readonly logger: DomainLogger,
+    private readonly logger: WriteRepositoryLogger,
     private readonly bus: DomainEventPublisher
   ) {
     // @ts-ignore

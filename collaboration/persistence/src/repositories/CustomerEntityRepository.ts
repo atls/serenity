@@ -7,14 +7,14 @@ import { Customer as CustomerEntity } from '@collaboration/domain'
 
 import { Customer }                   from '../entities/index.js'
 import { DomainEventPublisher }       from '../events/index.js'
-import { DomainLogger }               from '../events/index.js'
+import { WriteRepositoryLogger }               from '../events/index.js'
 
 @Injectable()
 // @ts-ignore
 export class CustomerEntityRepository extends WriteRepository<CustomerEntity, Customer> {
   constructor(
     private readonly connection: Connection,
-    private readonly logger: DomainLogger,
+    private readonly logger: WriteRepositoryLogger,
     private readonly bus: DomainEventPublisher
   ) {
     // @ts-ignore

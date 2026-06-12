@@ -1,2 +1,2 @@
-export * from './domain.logger.js'
+export * from './write-repository.logger.js'
 export * from './domain.publisher.js'

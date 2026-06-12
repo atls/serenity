@@ -6,7 +6,7 @@ import { CategoryGroup as CategoryGroupEntity } from '@catalog/domain'
 
 import { CategoryGroup }                        from '../entities/index.js'
 import { DomainEventPublisher }                 from '../events/index.js'
-import { DomainLogger }                         from '../events/index.js'
+import { WriteRepositoryLogger }                         from '../events/index.js'
 
 @Injectable()
 // @ts-ignore
@@ -16,7 +16,7 @@ export class CategoryGroupEntityRepository extends WriteRepository<
 > {
   constructor(
     private readonly connection: Connection,
-    private readonly logger: DomainLogger,
+    private readonly logger: WriteRepositoryLogger,
     private readonly bus: DomainEventPublisher
   ) {
     // @ts-ignore

@@ -5,7 +5,7 @@ import { TypeOrmModule }          from '@nestjs/typeorm'
 import { File }                   from './entities/index.js'
 import { Upload }                 from './entities/index.js'
 import { DomainEventPublisher }   from './events/index.js'
-import { DomainLogger }           from './events/index.js'
+import { WriteRepositoryLogger }           from './events/index.js'
 import { FileEntityRepository }   from './repositories/index.js'
 import { UploadEntityRepository } from './repositories/index.js'
 import config                     from './config.js'
@@ -18,7 +18,7 @@ const feature = TypeOrmModule.forFeature([Upload, File])
   // @ts-ignore
   providers: [
     ...feature.providers,
-    DomainLogger,
+    WriteRepositoryLogger,
     DomainEventPublisher,
     UploadEntityRepository,
     FileEntityRepository,

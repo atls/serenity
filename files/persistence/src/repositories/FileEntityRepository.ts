@@ -6,14 +6,14 @@ import { File as FileEntity }   from '@files/domain'
 
 import { File }                 from '../entities/index.js'
 import { DomainEventPublisher } from '../events/index.js'
-import { DomainLogger }         from '../events/index.js'
+import { WriteRepositoryLogger }         from '../events/index.js'
 
 @Injectable()
 // @ts-ignore
 export class FileEntityRepository extends WriteRepository<FileEntity, File> {
   constructor(
     private readonly connection: Connection,
-    private readonly logger: DomainLogger,
+    private readonly logger: WriteRepositoryLogger,
     private readonly bus: DomainEventPublisher
   ) {
     // @ts-ignore

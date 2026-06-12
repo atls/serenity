@@ -7,14 +7,14 @@ import { Chat as ChatEntity }   from '@collaboration/domain'
 
 import { Chat }                 from '../entities/index.js'
 import { DomainEventPublisher } from '../events/index.js'
-import { DomainLogger }         from '../events/index.js'
+import { WriteRepositoryLogger }         from '../events/index.js'
 
 @Injectable()
 // @ts-ignore
 export class ChatEntityRepository extends WriteRepository<ChatEntity, Chat> {
   constructor(
     private readonly connection: Connection,
-    private readonly logger: DomainLogger,
+    private readonly logger: WriteRepositoryLogger,
     private readonly bus: DomainEventPublisher
   ) {
     // @ts-ignore

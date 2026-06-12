@@ -14,7 +14,7 @@ import { Reply }                      from './entities/index.js'
 import { Review }                     from './entities/index.js'
 import { Specialist }                 from './entities/index.js'
 import { DomainEventPublisher }       from './events/index.js'
-import { DomainLogger }               from './events/index.js'
+import { WriteRepositoryLogger }               from './events/index.js'
 import { SEARCH_EVENTS_CLIENT }       from './events/index.js'
 import { ChatEntityRepository }       from './repositories/index.js'
 import { CustomerEntityRepository }   from './repositories/index.js'
@@ -60,7 +60,7 @@ const busUrl =
   providers: [
     // @ts-ignore
     ...feature.providers,
-    DomainLogger,
+    WriteRepositoryLogger,
     DomainEventPublisher,
     SpecialistEntityRepository,
     CustomerEntityRepository,

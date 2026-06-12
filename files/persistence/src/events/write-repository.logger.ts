@@ -2,10 +2,10 @@ import { Injectable }           from '@nestjs/common'
 import { Logger as NestLogger } from '@nestjs/common'
 
 @Injectable()
-export class DomainLogger {
+export class WriteRepositoryLogger {
   private readonly logger = new NestLogger('WriteRepository')
 
-  debug(message: string): void {
+  debug(message: string, _data?: unknown): void {
     this.logger.debug(message)
   }
 }
