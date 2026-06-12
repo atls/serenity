@@ -1,8 +1,8 @@
 import { Global }                    from '@nestjs/common'
 import { Module }                    from '@nestjs/common'
 
-import { BusModule }                 from '@monstrs/nestjs-bus'
-import { LoggerModule }              from '@monstrs/nestjs-logger'
+import { BusModule }                 from '@serenity/nestjs-bus'
+import { LoggerModule }              from '@serenity/nestjs-bus'
 import { TypeOrmModule }             from '@nestjs/typeorm'
 
 import { Portfolio }                 from './entities/index.js'

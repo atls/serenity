@@ -14,11 +14,11 @@
     "@files/application": "workspace:0.0.2",
     "@files/persistence": "workspace:0.0.2",
     "@grpc/proto-loader": "0.5.5",
-    "@monstrs/nestjs-bus": "0.1.4",
     "@nestjs/common": "8.4.2",
     "@nestjs/core": "8.4.2",
     "@nestjs/microservices": "8.4.2",
     "@protos/files": "0.0.2",
+    "@serenity/nestjs-bus": "workspace:0.0.0",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3"
   },

@@ -343,15 +343,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls/logger@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@atls/logger@npm:0.0.1"
-  dependencies:
-    pino: "npm:^6.11.3"
-  checksum: 10/e5d87cb284bfac5c4afb71081097aa34e894867b02fa3cbc5ee1a6f5ae21b780df3c5ee3e2ba301441faaa6f8fa88a6f5861034daaa0ae8a60a60a4d53621859
-  languageName: node
-  linkType: hard
-
 "@atls/nestjs-dataloader@npm:^0.0.3":
   version: 0.0.3
   resolution: "@atls/nestjs-dataloader@npm:0.0.3"
@@ -362,20 +353,6 @@ __metadata:
     dataloader: ^2.0.0
     rxjs: ^7.2.0
   checksum: 10/4a14ee954c82692ab2c9bd03db7a12665eae7b8fbab036c36ef9490d93630584cb6e38d054f27eb0db3c50d0d66f217cdf91dddb0c162a9f34291be5105fa0b2
-  languageName: node
-  linkType: hard
-
-"@atls/nestjs-logger@npm:^0.2.37":
-  version: 0.2.37
-  resolution: "@atls/nestjs-logger@npm:0.2.37"
-  dependencies:
-    "@atls/logger": "npm:^0.0.1"
-  peerDependencies:
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    reflect-metadata: ^0.1.12
-    rxjs: ^6.3.3
-  checksum: 10/c5120143e8f7b82f55157a5cc6ef4e5e228e873865341f9bb1cbe43a52f5767661ef662790a53bcb84f5bc729b08f6876b311322957628c5bf1d5e9677666777
   languageName: node
   linkType: hard
 
@@ -1675,13 +1652,12 @@ __metadata:
   dependencies:
     "@catalog/domain": "npm:0.1.1"
     "@godaddy/terminus": "npm:^4.10.2"
-    "@monstrs/nestjs-bus": "npm:0.1.4"
-    "@monstrs/nestjs-logger": "npm:0.1.2"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:^8.4.3"
     "@nestjs/typeorm": "npm:8.0.3"
     "@node-ts/ddd": "npm:^0.1.6"
     "@node-ts/ddd-types": "npm:^0.1.4"
+    "@serenity/nestjs-bus": "workspace:0.0.0"
     "@types/node": "npm:12.12.14"
     pg: "npm:8.5.1"
     reflect-metadata: "npm:^0.1.13"
@@ -1704,14 +1680,13 @@ __metadata:
     "@catalog/persistence": "npm:0.1.1"
     "@godaddy/terminus": "npm:^4.10.2"
     "@grpc/proto-loader": "npm:0.5.5"
-    "@monstrs/nestjs-bus": "npm:0.1.4"
-    "@monstrs/nestjs-bus-health": "npm:0.1.0"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"
     "@nestjs/microservices": "npm:8.4.2"
     "@nestjs/terminus": "npm:8.0.6"
     "@protos/catalog": "npm:0.1.1"
     "@protos/common": "workspace:^"
+    "@serenity/nestjs-bus": "workspace:0.0.0"
     "@types/amqplib": "npm:^0"
     "@types/node": "npm:12.12.14"
     amqplib: "npm:^0.8.0"
@@ -1767,14 +1742,13 @@ __metadata:
   resolution: "@collaboration/ee2@workspace:collaboration/ee2"
   dependencies:
     "@collaboration/service": "npm:0.0.1"
-    "@monstrs/nestjs-bus": "npm:0.1.4"
-    "@monstrs/nestjs-logger": "npm:0.1.2"
     "@nestjs/core": "npm:^8.4.2"
     "@nestjs/microservices": "npm:8.4.2"
     "@nestjs/testing": "npm:8.4.2"
     "@node-ts/bus-core": "npm:^0.4.0"
     "@protos/collaboration": "npm:0.0.1"
     "@protos/interfaces": "npm:0.1.1"
+    "@serenity/nestjs-bus": "workspace:0.0.0"
     reflect-metadata: "npm:0.1.13"
     rxjs: "npm:^7.5.5"
     uuid: "npm:3.4.0"
@@ -1786,12 +1760,11 @@ __metadata:
   resolution: "@collaboration/persistence@workspace:collaboration/persistence"
   dependencies:
     "@collaboration/domain": "npm:0.0.1"
-    "@monstrs/nestjs-bus": "npm:0.1.4"
-    "@monstrs/nestjs-logger": "npm:0.1.2"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/typeorm": "npm:8.0.3"
     "@node-ts/ddd": "npm:^0.1.6"
     "@node-ts/ddd-types": "npm:^0.1.4"
+    "@serenity/nestjs-bus": "workspace:0.0.0"
     "@types/node": "npm:12.12.14"
     pg: "npm:8.5.1"
     rxjs: "npm:^7.0.1"
@@ -1806,19 +1779,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@collaboration/service@workspace:collaboration/service"
   dependencies:
-    "@atls/nestjs-logger": "npm:^0.2.37"
     "@atls/nestjs-map-errors-interceptor": "npm:^0.1.36"
     "@collaboration/application": "workspace:0.0.1"
     "@collaboration/domain": "workspace:0.0.1"
     "@collaboration/persistence": "workspace:0.0.1"
     "@grpc/proto-loader": "npm:0.5.3"
-    "@monstrs/nestjs-bus": "npm:0.1.4"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"
     "@nestjs/microservices": "npm:8.4.2"
     "@node-ts/bus-core": "npm:0.4.9"
     "@protos/collaboration": "npm:0.0.1"
     "@protos/common": "workspace:^"
+    "@serenity/nestjs-bus": "workspace:0.0.0"
     "@types/amqplib": "npm:^0"
     "@types/node": "npm:12.12.14"
     amqplib: "npm:^0.8.0"
@@ -2466,11 +2438,10 @@ __metadata:
   resolution: "@files/persistence@workspace:files/persistence"
   dependencies:
     "@files/domain": "workspace:0.0.2"
-    "@monstrs/nestjs-bus": "npm:0.1.4"
-    "@monstrs/nestjs-logger": "npm:0.1.2"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/typeorm": "npm:8.0.3"
     "@node-ts/ddd": "npm:^0.1.6"
+    "@serenity/nestjs-bus": "workspace:0.0.0"
     "@types/node": "npm:12.12.14"
     pg: "npm:8.5.1"
     rxjs: "npm:^7.0.1"
@@ -2489,11 +2460,11 @@ __metadata:
     "@files/application": "workspace:0.0.2"
     "@files/persistence": "workspace:0.0.2"
     "@grpc/proto-loader": "npm:0.5.5"
-    "@monstrs/nestjs-bus": "npm:0.1.4"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"
     "@nestjs/microservices": "npm:8.4.2"
     "@protos/files": "npm:0.0.2"
+    "@serenity/nestjs-bus": "workspace:0.0.0"
     "@types/node": "npm:12.12.14"
     reflect-metadata: "npm:0.1.13"
     rxjs: "npm:6.5.3"
@@ -3110,13 +3081,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hapi/bourne@npm:^1.3.2":
-  version: 1.3.2
-  resolution: "@hapi/bourne@npm:1.3.2"
-  checksum: 10/8403a2e8297fbb49a0e4fca30e874590d96ecaf7165740804037ff30625f3fdea6353d9f7f4422607eb069a3f471900a3037df34285a95135d15c6a8b10094b0
-  languageName: node
-  linkType: hard
-
 "@hits/app@workspace:hits/app":
   version: 0.0.0-use.local
   resolution: "@hits/app@workspace:hits/app"
@@ -3158,11 +3122,10 @@ __metadata:
   resolution: "@hits/persistence@workspace:hits/persistence"
   dependencies:
     "@files/domain": "npm:0.0.2"
-    "@monstrs/nestjs-bus": "npm:0.1.4"
-    "@monstrs/nestjs-logger": "npm:0.1.2"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/typeorm": "npm:8.0.3"
     "@node-ts/ddd": "npm:^0.1.6"
+    "@serenity/nestjs-bus": "workspace:0.0.0"
     "@types/node": "npm:12.12.14"
     pg: "npm:8.5.1"
     typeorm: "npm:0.3.3"
@@ -3193,12 +3156,12 @@ __metadata:
     "@hits/commands": "npm:0.0.1"
     "@hits/persistence": "npm:0.0.1"
     "@hits/queries": "npm:0.0.1"
-    "@monstrs/nestjs-bus": "npm:0.1.4"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"
     "@nestjs/microservices": "npm:8.4.2"
     "@protos/common": "workspace:^"
     "@protos/hits": "npm:0.0.1"
+    "@serenity/nestjs-bus": "workspace:0.0.0"
     "@types/amqplib": "npm:^0"
     "@types/node": "npm:12.12.14"
     amqplib: "npm:^0.8.0"
@@ -4068,14 +4031,13 @@ __metadata:
     "@mailer/db": "workspace:^"
     "@mailer/renderer": "workspace:^"
     "@mailer/transport": "workspace:^"
-    "@monstrs/nestjs-bus": "npm:0.1.4"
-    "@monstrs/nestjs-logger": "npm:0.1.2"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"
     "@nestjs/microservices": "npm:8.4.2"
     "@nestjs/typeorm": "npm:8.0.3"
     "@node-ts/bus-core": "npm:0.6.3"
     "@protos/mailer": "workspace:^"
+    "@serenity/nestjs-bus": "workspace:0.0.0"
     "@types/node": "npm:12.12.14"
     class-validator: "npm:0.11.0"
     reflect-metadata: "npm:0.1.13"
@@ -4095,50 +4057,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/logger@npm:^0.0.6":
-  version: 0.0.6
-  resolution: "@monstrs/logger@npm:0.0.6"
-  dependencies:
-    pino: "npm:^6.11.3"
-  checksum: 10/187be5d0f85ac1328859dd4ef233cff5e7558a382076ead3bbabb0865aa708b11d58508f7fff86bd8273ece9497257d5e424a6541f0952c38e3e424366614df5
-  languageName: node
-  linkType: hard
-
-"@monstrs/nestjs-bus-health@npm:0.1.0":
-  version: 0.1.0
-  resolution: "@monstrs/nestjs-bus-health@npm:0.1.0"
-  peerDependencies:
-    "@godaddy/terminus": ^4.2.1
-    "@monstrs/nestjs-bus": ^0.1.0
-    "@nestjs/common": ^6.0.2
-    "@nestjs/core": ^6.0.2
-    "@nestjs/terminus": ^6.0.2
-    reflect-metadata: ^0.1.12
-    rxjs: ^6.3.3
-  checksum: 10/e76b27741fc25b1f028e1a8d7db68e8eb6c118a0eacd7d04278d433fd9bc9bf4e42f441fccd344e9cce57041d11ca5ddc490acb0b3c79da3a47ac3a52d142a11
-  languageName: node
-  linkType: hard
-
-"@monstrs/nestjs-bus@npm:0.1.4":
-  version: 0.1.4
-  resolution: "@monstrs/nestjs-bus@npm:0.1.4"
-  dependencies:
-    "@node-ts/bus-core": "npm:^0.4.7"
-    "@node-ts/bus-messages": "npm:^0.1.10"
-    "@node-ts/bus-rabbitmq": "npm:^0.3.7"
-    "@node-ts/logger-core": "npm:^0.1.0"
-    amqplib: "npm:^0.5.5"
-    inversify: "npm:^5.0.1"
-  peerDependencies:
-    "@monstrs/nestjs-logger": ^0.1.0
-    "@nestjs/common": ^6.0.2
-    "@nestjs/core": ^6.0.2
-    reflect-metadata: ^0.1.12
-    rxjs: ^6.3.3
-  checksum: 10/78dc8187e71fe2ffcff3c32954dc357e7d324a5bf37319d26e2cc4969078333edb072c9889976df423efc02a90d6cba27a65b9604b310bb9fe12e0ae1369b79e
-  languageName: node
-  linkType: hard
-
 "@monstrs/nestjs-elasticsearch-indicator@npm:0.1.1":
   version: 0.1.1
   resolution: "@monstrs/nestjs-elasticsearch-indicator@npm:0.1.1"
@@ -4151,35 +4069,6 @@ __metadata:
     reflect-metadata: ^0.1.12
     rxjs: ^6.3.3
   checksum: 10/e2b62e027d8ccae094b9df735c0bc70333f6e82e1a33185373a363a2f11481596243cc70dc320b4eb8f6e1b032474930aa162d3d2505c7729c1942f6be19dc3e
-  languageName: node
-  linkType: hard
-
-"@monstrs/nestjs-logger@npm:*":
-  version: 0.2.16
-  resolution: "@monstrs/nestjs-logger@npm:0.2.16"
-  dependencies:
-    "@monstrs/logger": "npm:^0.0.6"
-  peerDependencies:
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    reflect-metadata: ^0.1.12
-    rxjs: ^6.3.3
-  checksum: 10/5a8104ce942a1646d261033f752fd118d35c902a2cc55560f1d165b7f28d6478192b4abc523bb9f0160cd30a5894bb306f2c7c20ceed608b6e79489a30bfb92c
-  languageName: node
-  linkType: hard
-
-"@monstrs/nestjs-logger@npm:0.1.2":
-  version: 0.1.2
-  resolution: "@monstrs/nestjs-logger@npm:0.1.2"
-  dependencies:
-    pino: "npm:^5.13.2"
-    pino-pretty: "npm:^3.2.1"
-  peerDependencies:
-    "@nestjs/common": ^6.0.2
-    "@nestjs/core": ^6.0.2
-    reflect-metadata: ^0.1.12
-    rxjs: ^6.3.3
-  checksum: 10/7bf112ce2d59622880e6d95276cf3b45ed78160ede67f089417503e532ad7e022d23d1fa16048fe6560a3d07b52a1362a19b5948bb91643899b129e732100e03
   languageName: node
   linkType: hard
 
@@ -4970,7 +4859,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@node-ts/bus-core@npm:0.4.9, @node-ts/bus-core@npm:^0.4.0, @node-ts/bus-core@npm:^0.4.7, @node-ts/bus-core@npm:^0.4.9":
+"@node-ts/bus-core@npm:0.4.9, @node-ts/bus-core@npm:^0.4.0, @node-ts/bus-core@npm:^0.4.9":
   version: 0.4.9
   resolution: "@node-ts/bus-core@npm:0.4.9"
   dependencies:
@@ -5160,7 +5049,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@node-ts/logger-core@npm:*, @node-ts/logger-core@npm:^0.1.0":
+"@node-ts/logger-core@npm:*":
   version: 0.1.1
   resolution: "@node-ts/logger-core@npm:0.1.1"
   peerDependencies:
@@ -5331,12 +5220,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@portfolio/persistence@workspace:portfolio/persistence"
   dependencies:
-    "@monstrs/nestjs-bus": "npm:0.1.4"
-    "@monstrs/nestjs-logger": "npm:0.1.2"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/typeorm": "npm:8.0.3"
     "@node-ts/ddd": "npm:0.1.4"
     "@portfolio/domain": "workspace:0.0.0"
+    "@serenity/nestjs-bus": "workspace:0.0.0"
     "@types/node": "npm:12.12.14"
     pg: "npm:8.5.1"
     typeorm: "npm:0.3.3"
@@ -5352,7 +5240,6 @@ __metadata:
   dependencies:
     "@atls/nestjs-map-errors-interceptor": "npm:^0.1.36"
     "@grpc/proto-loader": "npm:0.5.3"
-    "@monstrs/nestjs-bus": "npm:0.1.4"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"
     "@nestjs/microservices": "npm:8.4.2"
@@ -5361,6 +5248,7 @@ __metadata:
     "@portfolio/persistence": "workspace:0.0.0"
     "@protos/common": "workspace:^"
     "@protos/portfolio": "workspace:0.0.0"
+    "@serenity/nestjs-bus": "workspace:0.0.0"
     "@types/amqplib": "npm:^0"
     "@types/node": "npm:12.12.14"
     amqplib: "npm:^0.9.1"
@@ -5833,8 +5721,6 @@ __metadata:
     "@elastic/elasticsearch": "npm:7.5.0"
     "@godaddy/terminus": "npm:4.3.1"
     "@grpc/proto-loader": "npm:0.5.3"
-    "@monstrs/nestjs-bus": "npm:0.1.4"
-    "@monstrs/nestjs-bus-health": "npm:0.1.0"
     "@monstrs/nestjs-elasticsearch-indicator": "npm:0.1.1"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"
@@ -5847,6 +5733,7 @@ __metadata:
     "@protos/common": "workspace:^"
     "@protos/interfaces": "npm:0.1.1"
     "@protos/search": "npm:0.0.0"
+    "@serenity/nestjs-bus": "workspace:0.0.0"
     "@types/amqplib": "npm:^0"
     "@types/elasticsearch": "npm:5.0.36"
     "@types/node": "npm:12.12.14"
@@ -5854,6 +5741,34 @@ __metadata:
     reflect-metadata: "npm:0.1.13"
     rxjs: "npm:6.5.3"
     typescript: "npm:5.5.4"
+  languageName: unknown
+  linkType: soft
+
+"@serenity/nestjs-bus@workspace:0.0.0, @serenity/nestjs-bus@workspace:backend/nestjs-bus":
+  version: 0.0.0-use.local
+  resolution: "@serenity/nestjs-bus@workspace:backend/nestjs-bus"
+  dependencies:
+    "@godaddy/terminus": "npm:^4.10.2"
+    "@nestjs/common": "npm:8.4.2"
+    "@nestjs/core": "npm:8.4.2"
+    "@nestjs/terminus": "npm:7"
+    "@node-ts/bus-core": "npm:0.4.9"
+    "@node-ts/bus-messages": "npm:0.1.10"
+    "@node-ts/bus-rabbitmq": "npm:^0.3.7"
+    "@node-ts/logger-core": "npm:0.1.0"
+    "@types/node": "npm:22.13.10"
+    amqplib: "npm:^0.5.5"
+    inversify: "npm:^5.0.1"
+    pino: "npm:6.13.4"
+    reflect-metadata: "npm:^0.1.13"
+    rxjs: "npm:7.2.0"
+    serialize-error: "npm:4.1.0"
+    typescript: "npm:5.5.4"
+  peerDependencies:
+    "@nestjs/common": "*"
+    "@nestjs/core": "*"
+    "@nestjs/terminus": "*"
+    rxjs: "*"
   languageName: unknown
   linkType: soft
 
@@ -12855,13 +12770,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dateformat@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "dateformat@npm:3.0.3"
-  checksum: 10/0504baf50c3777ad333c96c37d1673d67efcb7dd071563832f70b5cbf7f3f4753f18981d44bfd8f665d5e5a511d2fc0af8e0ead8b585b9b3ddaa90067864d3f0
-  languageName: node
-  linkType: hard
-
 "dateformat@npm:^4.6.3":
   version: 4.6.3
   resolution: "dateformat@npm:4.6.3"
@@ -18696,17 +18604,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jmespath@npm:0.15.0, jmespath@npm:^0.15.0":
+"jmespath@npm:0.15.0":
   version: 0.15.0
   resolution: "jmespath@npm:0.15.0"
   checksum: 10/575eea08816166004fbd3c0a0d1aa1ae3368fb7f60f6a97022d247082009d7c4d3d295c9ed318495ef005e496ec77150a8a48a7787e00c1f9128cc38c5dbef7e
-  languageName: node
-  linkType: hard
-
-"joycon@npm:^2.2.5":
-  version: 2.2.5
-  resolution: "joycon@npm:2.2.5"
-  checksum: 10/b74643ac9f0705b29e26aa49e0da547b537cb9fc34b490eba251bf47f0692bbbe7bf063994946bc428ee5ae05e91d5b417311aeca774b1fce7eca06eabc04a27
   languageName: node
   linkType: hard
 
@@ -22485,27 +22386,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pino-pretty@npm:^3.2.1":
-  version: 3.6.1
-  resolution: "pino-pretty@npm:3.6.1"
-  dependencies:
-    "@hapi/bourne": "npm:^1.3.2"
-    args: "npm:^5.0.1"
-    chalk: "npm:^2.4.2"
-    dateformat: "npm:^3.0.3"
-    fast-safe-stringify: "npm:^2.0.7"
-    jmespath: "npm:^0.15.0"
-    joycon: "npm:^2.2.5"
-    pump: "npm:^3.0.0"
-    readable-stream: "npm:^3.4.0"
-    split2: "npm:^3.1.1"
-    strip-json-comments: "npm:^3.0.1"
-  bin:
-    pino-pretty: bin.js
-  checksum: 10/52a9c787545cfd336744177c0b45bef7218068b733e3a1d3640473a293871c1d12695e3c306362a68636998d410fcb8fabc403b2b73d37da79af4a3b86b00188
-  languageName: node
-  linkType: hard
-
 "pino-std-serializers@npm:^3.1.0":
   version: 3.2.0
   resolution: "pino-std-serializers@npm:3.2.0"
@@ -25369,7 +25249,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"split2@npm:^3.1.0, split2@npm:^3.1.1":
+"split2@npm:^3.1.0":
   version: 3.2.2
   resolution: "split2@npm:3.2.2"
   dependencies:
@@ -25769,7 +25649,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strip-json-comments@npm:3.1.1, strip-json-comments@npm:^3.0.1, strip-json-comments@npm:^3.1.0, strip-json-comments@npm:^3.1.1":
+"strip-json-comments@npm:3.1.1, strip-json-comments@npm:^3.1.0, strip-json-comments@npm:^3.1.1":
   version: 3.1.1
   resolution: "strip-json-comments@npm:3.1.1"
   checksum: 10/492f73e27268f9b1c122733f28ecb0e7e8d8a531a6662efbd08e22cccb3f9475e90a1b82cab06a392f6afae6d2de636f977e231296400d0ec5304ba70f166443

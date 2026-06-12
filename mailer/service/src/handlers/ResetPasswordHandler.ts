@@ -4,7 +4,7 @@ import { ResetPasswordRequested } from '@identity/domain/src/events/ResetPasswor
 import { Sending }                from '@mailer/db'
 import { Renderer }               from '@mailer/renderer'
 import { Transport }              from '@mailer/transport'
-import { HandlesMessage }         from '@monstrs/nestjs-bus'
+import { HandlesMessage }         from '@serenity/nestjs-bus'
 import { InjectRepository }       from '@nestjs/typeorm'
 import { Handler }                from '@node-ts/bus-core'
 

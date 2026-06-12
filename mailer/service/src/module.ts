@@ -4,7 +4,7 @@ import { ApiModule }                from '@mailer/api'
 import { DbModule }                 from '@mailer/db'
 import { RendererModule }           from '@mailer/renderer'
 import { TransportModule }          from '@mailer/transport'
-import { BusModule }                from '@monstrs/nestjs-bus'
+import { BusModule }                from '@serenity/nestjs-bus'
 
 import { EmailVerificationHandler } from './handlers/index.js'
 import { ResetPasswordHandler }     from './handlers/index.js'

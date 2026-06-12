@@ -6,12 +6,11 @@
   "main": "src/index.ts",
   "dependencies": {
     "@collaboration/domain": "0.0.1",
-    "@monstrs/nestjs-bus": "0.1.4",
-    "@monstrs/nestjs-logger": "0.1.2",
     "@nestjs/common": "8.4.2",
     "@nestjs/typeorm": "8.0.3",
     "@node-ts/ddd": "^0.1.6",
     "@node-ts/ddd-types": "^0.1.4",
+    "@serenity/nestjs-bus": "workspace:0.0.0",
     "pg": "8.5.1",
     "typeorm": "0.3.3"
   },

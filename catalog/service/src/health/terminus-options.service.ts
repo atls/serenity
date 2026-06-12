@@ -1,6 +1,6 @@
 import { Injectable }             from '@nestjs/common'
 
-import { BusHealthIndicator }     from '@monstrs/nestjs-bus-health'
+import { BusHealthIndicator }     from '@serenity/nestjs-bus'
 import { TerminusModuleOptions }  from '@nestjs/terminus'
 import { TerminusOptionsFactory } from '@nestjs/terminus'
 import { TypeOrmHealthIndicator } from '@nestjs/terminus'

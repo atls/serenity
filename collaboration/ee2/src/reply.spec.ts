@@ -5,7 +5,7 @@ import { firstValueFrom }   from 'rxjs'
 import uuid                 from 'uuid/v4.js'
 
 import { ServiceModule }    from '@collaboration/service/src/module'
-import { Logger }           from '@monstrs/nestjs-logger'
+import { Logger }           from '@serenity/nestjs-bus'
 import { ClientsModule }    from '@nestjs/microservices'
 import { NestMicroservice } from '@nestjs/microservices'
 import { BUS_SYMBOLS }      from '@node-ts/bus-core'

@@ -2,8 +2,8 @@ import { Injectable }           from '@nestjs/common'
 import { Connection }           from 'typeorm'
 
 import { Reply as ReplyEntity } from '@collaboration/domain'
-import { Bus }                  from '@monstrs/nestjs-bus'
-import { Logger }               from '@monstrs/nestjs-logger'
+import { Bus }                  from '@serenity/nestjs-bus'
+import { Logger }               from '@serenity/nestjs-bus'
 import { WriteRepository }      from '@node-ts/ddd'
 
 import { Reply }                from '../entities/index.js'

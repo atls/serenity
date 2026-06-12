@@ -12,13 +12,13 @@
   "dependencies": {
     "@atls/nestjs-map-errors-interceptor": "^0.1.36",
     "@grpc/proto-loader": "0.5.3",
-    "@monstrs/nestjs-bus": "0.1.4",
     "@nestjs/common": "8.4.2",
     "@nestjs/core": "8.4.2",
     "@nestjs/microservices": "8.4.2",
     "@portfolio/application": "workspace:0.0.0",
     "@portfolio/persistence": "workspace:0.0.0",
     "@protos/portfolio": "workspace:0.0.0",
+    "@serenity/nestjs-bus": "workspace:0.0.0",
     "amqplib": "^0.9.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3"
