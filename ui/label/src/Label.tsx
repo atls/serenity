@@ -32,24 +32,27 @@ const size = switchProp('size', () => ({
   },
 }))
 
-const Label = styled.div<LabelProps>(
-  () => ({
-    display: 'flex',
-    alignItems: 'center',
-    textTransform: 'uppercase',
-    lineHeight: 1,
-    whiteSpace: 'nowrap',
-  }),
-  typography,
-  color,
-  size
+const Label = Object.assign(
+  styled.div<LabelProps>(
+    () => ({
+      display: 'flex',
+      alignItems: 'center',
+      textTransform: 'uppercase',
+      lineHeight: 1,
+      whiteSpace: 'nowrap',
+    }),
+    typography,
+    color,
+    size
+  ),
+  {
+    defaultProps: {
+      color: 'black',
+      size: 'normal',
+      fontFamily: 'primary',
+      fontWeight: 'bold',
+    },
+  }
 )
-
-Label.defaultProps = {
-  color: 'black',
-  size: 'normal',
-  fontFamily: 'primary',
-  fontWeight: 'bold',
-}
 
 export { Label }

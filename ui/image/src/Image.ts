@@ -1,4 +1,5 @@
 import { ImgHTMLAttributes } from 'react'
+import type { Key }          from 'react'
 import { LayoutProps }       from 'styled-system'
 import { SpaceProps }        from 'styled-system'
 import { createElement }     from 'react'
@@ -15,6 +16,7 @@ interface ImageProps
   pointerEvents?: string
   cursor?: string
   height?: any
+  key?: Key
   width?: any
 }
 

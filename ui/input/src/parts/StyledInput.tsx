@@ -70,25 +70,28 @@ const shouldForwardProp = createShouldForwardProp([
   'prefix',
 ])
 
-const StyledInput = styled('input', { shouldForwardProp })(
-  clear,
-  base,
-  typography,
-  border,
-  color,
-  size,
-  offset,
-  attach,
-  invalid
+const StyledInput = Object.assign(
+  styled('input', { shouldForwardProp })(
+    clear,
+    base,
+    typography,
+    border,
+    color,
+    size,
+    offset,
+    attach,
+    invalid
+  ),
+  {
+    defaultProps: {
+      fontFamily: 'primary',
+      fontWeight: 'medium',
+      borderRadius: 'extra',
+      border: 'black',
+      color: 'black',
+      bg: 'white',
+    },
+  }
 )
-
-StyledInput.defaultProps = {
-  fontFamily: 'primary',
-  fontWeight: 'medium',
-  borderRadius: 'extra',
-  border: 'black',
-  color: 'black',
-  bg: 'white',
-}
 
 export { StyledInput }

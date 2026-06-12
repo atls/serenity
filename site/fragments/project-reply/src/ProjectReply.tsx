@@ -1,6 +1,8 @@
-import { WithUser }          from '@atls/react-user'
-import { WithoutUser }       from '@atls/react-user'
-import React                 from 'react'
+import { WithUser as BaseWithUser }       from '@atls/react-user'
+import { WithoutUser as BaseWithoutUser } from '@atls/react-user'
+import type { ComponentType }             from 'react'
+import type { PropsWithChildren }         from 'react'
+import React                              from 'react'
 
 import { Avatar }            from '@ui/avatar'
 import { Button }            from '@ui/button'
@@ -21,6 +23,9 @@ import { Text }              from '@ui/text'
 import ChooseSpecialistModal from '@fragments/choose-specialist-modal'
 
 import messages              from './messages.js'
+
+const WithUser = BaseWithUser as ComponentType<PropsWithChildren>
+const WithoutUser = BaseWithoutUser as ComponentType<PropsWithChildren>
 
 export const ProjectReply = ({
   intl,

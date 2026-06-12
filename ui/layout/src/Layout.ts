@@ -11,24 +11,24 @@ const boxSizing = system({
   boxSizing: true,
 })
 
-export const Column = styled.div(layout, space, flexbox, position, boxSizing)
+export const Column = Object.assign(styled.div(layout, space, flexbox, position, boxSizing), {
+  defaultProps: {
+    width: '100%',
+    flexDirection: 'column',
+    display: 'flex',
+  },
+})
 
-Column.defaultProps = {
-  width: '100%',
-  flexDirection: 'column',
-  display: 'flex',
-}
+export const Row = Object.assign(styled.div(layout, space, flexbox, position, boxSizing), {
+  defaultProps: {
+    width: '100%',
+    flexDirection: 'row',
+    display: 'flex',
+  },
+})
 
-export const Row = styled.div(layout, space, flexbox, position, boxSizing)
-
-Row.defaultProps = {
-  width: '100%',
-  flexDirection: 'row',
-  display: 'flex',
-}
-
-export const Layout = styled.div(layout, space, flexbox, position, color, boxSizing)
-
-Layout.defaultProps = {
-  display: 'flex',
-}
+export const Layout = Object.assign(styled.div(layout, space, flexbox, position, color, boxSizing), {
+  defaultProps: {
+    display: 'flex',
+  },
+})

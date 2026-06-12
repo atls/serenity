@@ -1,10 +1,12 @@
+import { createElement } from 'react'
+import type { ComponentProps } from 'react'
 import { background } from 'styled-system'
 import { layout }     from 'styled-system'
 import { space }      from 'styled-system'
 
 import styled         from '@emotion/styled'
 
-export const PreviewImage = styled.div(
+const StyledPreviewImage = styled.div(
   ({ theme }) => ({
     width: 120,
     height: 120,
@@ -18,6 +20,14 @@ export const PreviewImage = styled.div(
   background
 )
 
+export const PreviewImage = (props: ComponentProps<typeof StyledPreviewImage>) =>
+  createElement(StyledPreviewImage, {
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    ...props,
+  })
+
 export const PreviewImageContainer = styled.div({
   boxSizing: 'border-box',
   flexDirection: 'column',
@@ -28,9 +38,3 @@ export const PreviewImageContainer = styled.div({
     marginRight: 0,
   },
 })
-
-PreviewImage.defaultProps = {
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: 'cover',
-}

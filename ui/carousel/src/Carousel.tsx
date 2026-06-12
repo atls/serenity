@@ -1,7 +1,9 @@
+import { Children }          from 'react'
 import { useCallback }       from 'react'
 import { useEffect }         from 'react'
 import { useRef }            from 'react'
 import { useState }          from 'react'
+import type { ReactNode }    from 'react'
 import { useSwipeable }      from 'react-swipeable'
 import { layout }            from 'styled-system'
 import { ifProp }            from 'styled-tools'
@@ -44,7 +46,12 @@ const Screen = styled.div(
   layout
 )
 
-export const Carousel = ({ children, disableButton = false }) => {
+interface CarouselProps {
+  children?: ReactNode
+  disableButton?: boolean
+}
+
+export const Carousel = ({ children, disableButton = false }: CarouselProps) => {
   const [enableTransition, setEnableTransition] = useState(true)
   const [innerWidth, setInnerWidth] = useState(0)
   const [fullWidth, setFullWidth] = useState(0)
@@ -87,7 +94,7 @@ export const Carousel = ({ children, disableButton = false }) => {
     return undefined
   }, [disableButton, setWidth])
 
-  const swiping = (data) => {
+  const swiping = (data: any) => {
     if (innerWidth >= fullWidth) {
       return
     }
@@ -114,7 +121,7 @@ export const Carousel = ({ children, disableButton = false }) => {
     setEnableTransition(false)
   }
 
-  const handleClick = (direction) => {
+  const handleClick = (direction: string) => {
     let activeSlide = 0
     let activeLeft = 0
     for (;;) {
@@ -168,7 +175,7 @@ export const Carousel = ({ children, disableButton = false }) => {
   })
 
   return (
-    <Container show={children.length !== 0}>
+    <Container show={Children.count(children) !== 0}>
       <SlideButton
         onClick={() => handleClick('left')}
         disabled={disableButton || buttonLeftDisabled}

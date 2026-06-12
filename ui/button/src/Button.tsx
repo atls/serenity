@@ -5,6 +5,7 @@ import { system }                  from 'styled-system'
 import { typography }              from 'styled-system'
 import { ifProp }                  from 'styled-tools'
 import { switchProp }              from 'styled-tools'
+import type { ReactNode }          from 'react'
 import React                       from 'react'
 
 import styled                      from '@emotion/styled'
@@ -106,15 +107,28 @@ const ContentPart = styled.span({
   display: 'flex',
 })
 
-const Button = ({ children, ...props }) => (
-  <StyledButton {...props}>{divideChildren(children, ContentPart)}</StyledButton>
-)
-
-Button.defaultProps = {
-  borderRadius: 'normal',
-  justifyContent: 'center',
-  color: 'white',
-  size: 'normal',
+interface ButtonProps extends StyledButtonProps {
+  [key: string]: any
+  children?: ReactNode
 }
+
+const Button = ({
+  borderRadius = 'normal',
+  children,
+  color = 'white',
+  justifyContent = 'center',
+  size = 'normal',
+  ...props
+}: ButtonProps) => (
+  <StyledButton
+    {...props}
+    borderRadius={borderRadius}
+    color={color}
+    justifyContent={justifyContent}
+    size={size}
+  >
+    {divideChildren(children, ContentPart)}
+  </StyledButton>
+)
 
 export { Button }
