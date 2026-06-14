@@ -17,13 +17,11 @@ const withWorkspaces = (() => {
 })()
 
 const nextConfig = {
+  output: 'standalone',
+  outputFileTracingRoot: join(__dirname, '../../..'),
   experimental: {
     externalDir: true,
-    outputFileTracingRoot: join(__dirname, '../../..'),
-    outputStandalone: true,
-    swcFileReading: false,
     workerThreads: true,
-    esmExternals: 'loose',
   },
   webpack: (config, { webpack }) => {
     config.plugins.push(

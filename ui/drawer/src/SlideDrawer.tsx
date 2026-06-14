@@ -1,4 +1,5 @@
 import { motion }       from 'framer-motion'
+import type { ReactNode } from 'react'
 import { useEffect }    from 'react'
 import { useState }     from 'react'
 import { createPortal } from 'react-dom'
@@ -51,7 +52,30 @@ const StyledContainer = styled(motion.div)<any>(
   color
 )
 
-export const SlideDrawer = ({ children, visible, lockScroll = true, direction = '', ...props }) => {
+const defaultContainerProps = {
+  top: 0,
+  bottom: 0,
+  left: 0,
+  right: 0,
+  overflowY: 'auto',
+  bg: 'white',
+}
+
+interface SlideDrawerProps {
+  [key: string]: any
+  children?: ReactNode
+  visible?: boolean
+  lockScroll?: boolean
+  direction?: string
+}
+
+export const SlideDrawer = ({
+  children,
+  visible = false,
+  lockScroll = true,
+  direction = 'top',
+  ...props
+}: SlideDrawerProps) => {
   const [open, setOpen] = useState(false)
   const [close, setClose] = useState(false)
 
@@ -75,6 +99,7 @@ export const SlideDrawer = ({ children, visible, lockScroll = true, direction = 
             animate={open ? 'visible' : 'hidden'}
             variants={variants}
             custom={direction}
+            {...defaultContainerProps}
             {...props}
           >
             {children}
@@ -85,15 +110,4 @@ export const SlideDrawer = ({ children, visible, lockScroll = true, direction = 
     }
   }
   return null
-}
-
-SlideDrawer.defaultProps = {
-  visible: 'false',
-  direction: 'top',
-  top: 0,
-  bottom: 0,
-  left: 0,
-  right: 0,
-  overflowY: 'auto',
-  bg: 'white',
 }

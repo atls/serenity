@@ -12,7 +12,7 @@
     "@ui/relative-time": "workspace:ui/relative-time",
     "@ui/text": "workspace:ui/text",
     "@ui/theme": "workspace:ui/theme",
-    "react": "16.13.1",
+    "react": "19.2.7",
     "react-intl": "5.3.2"
   },
   "devDependencies": {

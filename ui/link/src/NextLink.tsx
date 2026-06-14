@@ -1,9 +1,14 @@
 import { withRouter }  from 'next/router'
+import type { ReactNode } from 'react'
 import React           from 'react'
 
 import { Link }        from './Link.js'
 import { NavLink }     from './NavLink.js'
 import { SidebarLink } from './SidebarLink.js'
+
+const BaseLink: any = Link
+const BaseNavLink: any = NavLink
+const BaseSidebarLink: any = SidebarLink
 
 interface NextLinkProps {
   fontWeight?: string | number | string[] | number[]
@@ -11,18 +16,18 @@ interface NextLinkProps {
   fontSize?: string | number | string[] | number[]
   color?: string
   href: string
-  children: any
+  children?: ReactNode
   router: any
 }
 
 interface NextSidebarLinkProps {
   href?: string
-  children: any
+  children?: ReactNode
   router: any
 }
 
 export const NextLink = withRouter(({ router, href, children, ...props }: NextLinkProps) => (
-  <Link
+  <BaseLink
     {...props}
     href={href}
     onClick={(event) => {
@@ -34,11 +39,11 @@ export const NextLink = withRouter(({ router, href, children, ...props }: NextLi
     }}
   >
     {children}
-  </Link>
+  </BaseLink>
 ))
 
 export const NextNavLink = withRouter(({ router, href, children, ...props }: NextLinkProps) => (
-  <NavLink
+  <BaseNavLink
     {...props}
     href={href}
     active={router && router.pathname === href}
@@ -51,7 +56,7 @@ export const NextNavLink = withRouter(({ router, href, children, ...props }: Nex
     }}
   >
     {children}
-  </NavLink>
+  </BaseNavLink>
 ))
 
 export const NextSidebarLink = withRouter(({
@@ -60,7 +65,7 @@ export const NextSidebarLink = withRouter(({
   children,
   ...props
 }: NextSidebarLinkProps) => (
-  <SidebarLink
+  <BaseSidebarLink
     {...props}
     href={href}
     active={router && router.asPath === href}
@@ -73,5 +78,5 @@ export const NextSidebarLink = withRouter(({
     }}
   >
     {children}
-  </SidebarLink>
+  </BaseSidebarLink>
 ))

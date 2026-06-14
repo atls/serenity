@@ -48,16 +48,19 @@ const position: styleFn = switchProp('position', () => ({
   },
 }))
 
-const Addon = styled.span<AddonProps | any>(base, typography, border, color, size, position)
-
-Addon.defaultProps = {
-  position: 'before',
-  fontFamily: 'primary',
-  fontWeight: 'medium',
-  borderRadius: 'extra',
-  border: 'black',
-  color: 'black',
-  bg: 'white',
-}
+const Addon = Object.assign(
+  styled.span<AddonProps | any>(base, typography, border, color, size, position),
+  {
+    defaultProps: {
+      position: 'before',
+      fontFamily: 'primary',
+      fontWeight: 'medium',
+      borderRadius: 'extra',
+      border: 'black',
+      color: 'black',
+      bg: 'white',
+    },
+  }
+)
 
 export { Addon }

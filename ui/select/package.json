@@ -7,7 +7,7 @@
   "main": "src/index.ts",
   "dependencies": {
     "@emotion/react": "^11.4.0",
-    "react": "16.13.1"
+    "react": "19.2.7"
   },
   "devDependencies": {
     "@ui/icons": "0.1.1",

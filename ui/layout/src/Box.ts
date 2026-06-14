@@ -9,22 +9,25 @@ import { system }    from 'styled-system'
 
 import styled        from '@emotion/styled'
 
-export const Box = styled.div(
-  system({
-    boxSizing: true,
-    overflowX: true,
-    overflowY: true,
-  }),
-  layout,
-  space,
-  color,
-  flexbox,
-  boxShadow,
-  position,
-  border
+export const Box = Object.assign(
+  styled.div(
+    system({
+      boxSizing: true,
+      overflowX: true,
+      overflowY: true,
+    }),
+    layout,
+    space,
+    color,
+    flexbox,
+    boxShadow,
+    position,
+    border
+  ),
+  {
+    defaultProps: {
+      display: 'flex',
+      boxSizing: 'border-box',
+    },
+  }
 )
-
-Box.defaultProps = {
-  display: 'flex',
-  boxSizing: 'border-box',
-}

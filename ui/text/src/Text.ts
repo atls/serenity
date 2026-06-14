@@ -5,7 +5,14 @@ import { typography } from 'styled-system'
 
 import styled         from '@emotion/styled'
 
-export const Text = styled.span(
+const textDefaultProps = {
+  fontFamily: 'primary',
+  fontWeight: 'normal',
+  fontSize: 'normal',
+}
+
+export const Text = Object.assign(
+  styled.span(
   system({
     wordBreak: true,
     whiteSpace: true,
@@ -16,10 +23,8 @@ export const Text = styled.span(
   color,
   space,
   typography
+  ),
+  {
+    defaultProps: textDefaultProps,
+  }
 )
-
-Text.defaultProps = {
-  fontFamily: 'primary',
-  fontWeight: 'normal',
-  fontSize: 'normal',
-}

@@ -7,14 +7,14 @@
   "main": "src/index.ts",
   "dependencies": {
     "events": "^3.3.0",
-    "react": "^17.0.2",
+    "react": "19.2.7",
     "styled-tools": "1.7.0"
   },
   "devDependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@types/events": "^3",
-    "@types/react": "^17.0.6",
+    "@types/react": "19.2.17",
     "@ui/avatar": "0.0.1",
     "@ui/button": "0.3.1",
     "@ui/divider": "0.0.1",

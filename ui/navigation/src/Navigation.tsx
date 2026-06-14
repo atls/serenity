@@ -1,6 +1,7 @@
 import { styleFn }    from 'styled-system'
 import { ifProp }     from 'styled-tools'
 import { switchProp } from 'styled-tools'
+import type { ReactNode } from 'react'
 import React          from 'react'
 
 import styled         from '@emotion/styled'
@@ -31,18 +32,18 @@ const Container = styled.div(
 
 const StyledNavigation = styled.div(base, sizes, fixedPosition)
 
-const Navigation = ({ size, fixed, children }) => (
+interface NavigationProps {
+  children?: ReactNode
+  fixed?: boolean
+  size?: string
+}
+
+const Navigation = ({ size = 'normal', fixed = true, children }: NavigationProps) => (
   <Container size={size}>
     <StyledNavigation fixed={fixed} size={size}>
       {children}
     </StyledNavigation>
   </Container>
 )
-
-Navigation.defaultProps = {
-  size: 'normal',
-  fixed: true,
-  lift: false,
-}
 
 export { Navigation }

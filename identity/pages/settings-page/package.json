@@ -9,12 +9,12 @@
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@identity/settings-fragment": "workspace:identity/fragments/settings-fragment",
-    "@types/react": "^17.0.6",
+    "@types/react": "19.2.17",
     "@types/react-helmet": "^6",
     "@ui/icons": "workspace:ui/icons",
     "@ui/layout": "workspace:ui/layout",
     "@ui/link": "workspace:ui/link",
-    "react": "^17.0.2",
+    "react": "19.2.7",
     "react-helmet": "^6.1.0",
     "react-intl": "^5.24.4"
   },
@@ -22,7 +22,7 @@
     "@atls/next-identity-integration": "*",
     "@emotion/react": "*",
     "@emotion/styled": "*",
-    "react": "16.14.0",
+    "react": "19.2.7",
     "react-helmet": "^5.2.0",
     "react-intl": "*"
   }

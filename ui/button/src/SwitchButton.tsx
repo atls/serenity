@@ -1,5 +1,6 @@
 import { Children }     from 'react'
 import { cloneElement } from 'react'
+import type { ReactNode } from 'react'
 import { flexbox }      from 'styled-system'
 import { switchProp }   from 'styled-tools'
 import React            from 'react'
@@ -41,7 +42,19 @@ const cloneChild = (child, value, onChange = (f) => f) => {
   return cloneElement(child, props)
 }
 
-const SwitchButton = ({ children, color, value, onChange }) => {
+interface SwitchButtonProps {
+  children?: ReactNode
+  color?: string
+  value: any
+  onChange?: (value: any) => void
+}
+
+const SwitchButton = ({
+  children,
+  color = 'stormdust',
+  value,
+  onChange,
+}: SwitchButtonProps) => {
   const width = `${100 / Children.count(children)}%`
 
   return (
@@ -51,10 +64,6 @@ const SwitchButton = ({ children, color, value, onChange }) => {
       ))}
     </StyledSwitchButton>
   )
-}
-
-SwitchButton.defaultProps = {
-  color: 'stormdust',
 }
 
 export { SwitchButton }

@@ -1,5 +1,5 @@
 export type ButtonSizes = 'small' | 'normal' | 'large' | 'huge'
-export type ButtonColors = 'chicago' | 'stormdust' | 'white' | 'whiteBlack'
+export type ButtonColors = 'chicago' | 'chicagolite' | 'stormdust' | 'white' | 'whiteBlack'
 
 export interface StyledButtonProps {
   borderRadius?: string | number

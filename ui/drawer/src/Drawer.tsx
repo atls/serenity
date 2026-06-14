@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import React           from 'react'
 
 import { css }         from '@emotion/react'
@@ -7,7 +8,7 @@ import ReactDragDrawer from './drag/index.js'
 
 const DragDrawer: any = ReactDragDrawer
 
-const Container = (fill) =>
+const Container = (fill: boolean) =>
   css({
     minHeight: '100%',
     width: fill ? '100%' : 'calc(100% - 80px)',
@@ -30,6 +31,15 @@ const doNothing = () => {
   // do nothing
 }
 
+interface DrawerProps {
+  children?: ReactNode
+  fill?: boolean
+  direction?: string
+  visible?: boolean
+  onClose?: () => void
+  disable?: boolean
+}
+
 export const Drawer = ({
   children,
   fill = false,
@@ -37,7 +47,7 @@ export const Drawer = ({
   visible = false,
   onClose = doNothing,
   disable = false,
-}) => (
+}: DrawerProps) => (
   <DragDrawer
     open={visible}
     direction={direction}

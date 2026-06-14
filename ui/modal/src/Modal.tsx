@@ -1,4 +1,5 @@
 import { motion }       from 'framer-motion'
+import type { ReactNode } from 'react'
 import { useRef }       from 'react'
 import { createPortal } from 'react-dom'
 import { ifProp }       from 'styled-tools'
@@ -50,12 +51,19 @@ const StyledContainer = styled(motion.nav)<ContainerProps>(
   opacities
 )
 
-export const Modal = ({ children, visible, onClose, opacity = 'large' }) => {
+interface ModalProps {
+  children?: ReactNode
+  visible?: boolean
+  onClose?: () => void
+  opacity?: string
+}
+
+export const Modal = ({ children, visible = false, onClose, opacity = 'large' }: ModalProps) => {
   const node = useRef(null)
   if (typeof window !== 'undefined') {
     const handleClick = (event) => {
       if (!(node.current && node.current.children[0].contains(event.target))) {
-        onClose()
+        onClose?.()
       }
     }
 

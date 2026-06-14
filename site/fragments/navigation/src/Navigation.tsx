@@ -1,6 +1,8 @@
-import { WithUser }                   from '@atls/react-user'
-import { WithoutUser }                from '@atls/react-user'
-import React                          from 'react'
+import { WithUser as BaseWithUser }            from '@atls/react-user'
+import { WithoutUser as BaseWithoutUser }      from '@atls/react-user'
+import type { ComponentType }                  from 'react'
+import type { PropsWithChildren }              from 'react'
+import React                                   from 'react'
 
 import { Button }                     from '@ui/button'
 import { DrawerProvider }             from '@ui/drawer'
@@ -18,6 +20,9 @@ import Chat                           from '@fragments/chat'
 import { Drawer }                     from './Drawer.js'
 import { Profile }                    from './Profile.js'
 import messages                       from './messages.js'
+
+const WithUser = BaseWithUser as ComponentType<PropsWithChildren>
+const WithoutUser = BaseWithoutUser as ComponentType<PropsWithChildren>
 
 export const Navigation = ({
   intl,
