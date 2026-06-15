@@ -11,7 +11,7 @@ export class Message extends AggregateRoot {
 
   read: boolean = false
 
-  constructor(uuid, discussionId: string, authorId: string, content: string) {
+  constructor(uuid: string, discussionId: string, authorId: string, content: string) {
     super(uuid)
 
     this.discussionId = discussionId

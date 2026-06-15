@@ -1,7 +1,6 @@
-import uuid                        from 'uuid/v4.js'
-
 import { AggregateRoot }           from '@node-ts/ddd'
 import { AggregateRootProperties } from '@node-ts/ddd-types'
+import uuid                        from 'uuid'
 
 import { ReviewCreated }           from '../events/index.js'
 

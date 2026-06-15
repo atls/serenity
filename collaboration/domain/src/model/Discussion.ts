@@ -1,6 +1,5 @@
-import uuid                  from 'uuid/v4.js'
-
 import { AggregateRoot }     from '@node-ts/ddd'
+import uuid                  from 'uuid'
 
 import { DiscussionCreated } from '../events/index.js'
 import { Message }           from './Message.js'
@@ -18,7 +17,7 @@ export class Discussion extends AggregateRoot {
     return discussion
   }
 
-  message(authorId, content): Message {
+  message(authorId: string, content: string): Message {
     return new Message(uuid(), this.id, authorId, content)
   }
 

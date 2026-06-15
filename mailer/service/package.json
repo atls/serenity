@@ -20,6 +20,7 @@
     "@nestjs/core": "8.4.2",
     "@nestjs/microservices": "8.4.2",
     "@nestjs/typeorm": "8.0.3",
+    "@protos/mailer": "workspace:^",
     "amqplib": "^0.9.1",
     "class-validator": "0.11.0",
     "reflect-metadata": "0.1.13",
@@ -27,7 +28,6 @@
     "typeorm": "0.3.3"
   },
   "devDependencies": {
-    "@protos/mailer": "workspace:^",
     "@types/node": "12.12.14",
     "typescript": "5.5.4"
   }

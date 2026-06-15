@@ -1,6 +1,5 @@
-import uuid              from 'uuid/v4.js'
-
 import { AggregateRoot } from '@node-ts/ddd'
+import uuid              from 'uuid'
 
 import { ChatCreated }   from '../events/index.js'
 

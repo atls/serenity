@@ -1,6 +1,6 @@
 import { IsUUID }    from 'class-validator'
 import { MinLength } from 'class-validator'
-import uuid          from 'uuid/v4.js'
+import uuid          from 'uuid'
 
 export class CreateCategoryCommand {
   id: string = uuid()

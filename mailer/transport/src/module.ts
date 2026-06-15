@@ -2,13 +2,16 @@ import { Module }    from '@nestjs/common'
 
 import { Transport } from './Transport.js'
 
-declare const __non_webpack_require__: any
+type AwsSdkModule = typeof import('aws-sdk')
 
-const getAwsSdk = () => {
-  const runtimeRequire =
-    typeof __non_webpack_require__ !== 'undefined' ? __non_webpack_require__ : require
+type AwsSdkImport = AwsSdkModule & {
+  default?: AwsSdkModule
+}
 
-  return runtimeRequire('aws-sdk')
+const getAwsSdk = async (): Promise<AwsSdkModule> => {
+  const awsSdk = (await import('aws-sdk')) as AwsSdkImport
+
+  return awsSdk.default || awsSdk
 }
 
 const getMailhogOptions = () => ({
@@ -21,8 +24,8 @@ const getMailhogOptions = () => ({
   },
 })
 
-const getSesOptions = () => {
-  const { SES } = getAwsSdk()
+const getSesOptions = async () => {
+  const { SES } = await getAwsSdk()
 
   return {
     SES: new SES({
@@ -36,10 +39,10 @@ const getSesOptions = () => {
 
 const transport = {
   provide: Transport,
-  useFactory: () =>
+  useFactory: async () =>
     new Transport(
       process.env.SENDER || 'no-reply@example.com',
-      process.env.NODE_ENV === 'production' ? getSesOptions() : getMailhogOptions()
+      process.env.NODE_ENV === 'production' ? await getSesOptions() : getMailhogOptions()
     ),
 }
 

@@ -1,5 +1,5 @@
 import argon2 from 'argon2'
-import uuid   from 'uuid/v4.js'
+import uuid   from 'uuid'
 
 export class Credentials {
   password: string
@@ -14,11 +14,11 @@ export class Credentials {
     this.password = await argon2.hash(this.password)
   }
 
-  async changePassword(password) {
+  async changePassword(password: string) {
     this.password = await argon2.hash(password)
   }
 
-  verifyPassword(password) {
+  verifyPassword(password: string) {
     return argon2.verify(this.password, password)
   }
 
