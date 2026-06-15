@@ -1678,7 +1678,6 @@ __metadata:
     "@catalog/domain": "npm:0.1.1"
     "@catalog/persistence": "npm:0.1.1"
     "@godaddy/terminus": "npm:^4.10.2"
-    "@grpc/proto-loader": "npm:0.5.5"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"
     "@nestjs/microservices": "npm:8.4.2"
@@ -1779,7 +1778,6 @@ __metadata:
     "@collaboration/application": "workspace:0.0.1"
     "@collaboration/domain": "workspace:0.0.1"
     "@collaboration/persistence": "workspace:0.0.1"
-    "@grpc/proto-loader": "npm:0.5.3"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"
     "@nestjs/microservices": "npm:8.4.2"
@@ -2459,7 +2457,6 @@ __metadata:
     "@atls/nestjs-map-errors-interceptor": "npm:^0.1.36"
     "@files/application": "workspace:0.0.2"
     "@files/persistence": "workspace:0.0.2"
-    "@grpc/proto-loader": "npm:0.5.5"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"
     "@nestjs/microservices": "npm:8.4.2"
@@ -3035,7 +3032,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@grpc/proto-loader@npm:*, @grpc/proto-loader@npm:^0.6.4, @grpc/proto-loader@npm:^0.6.9":
+"@grpc/proto-loader@npm:*, @grpc/proto-loader@npm:^0.6.4":
   version: 0.6.9
   resolution: "@grpc/proto-loader@npm:0.6.9"
   dependencies:
@@ -3047,16 +3044,6 @@ __metadata:
   bin:
     proto-loader-gen-types: build/bin/proto-loader-gen-types.js
   checksum: 10/1abae34be393dff3f910cdec3e87c0341c9d3efae2cf25456f4b21a60a1423febc9df0875038b4c3bedfb2f3790f632d8f2ecfb8d5ac6c0de10b64cf4865144b
-  languageName: node
-  linkType: hard
-
-"@grpc/proto-loader@npm:0.5.3":
-  version: 0.5.3
-  resolution: "@grpc/proto-loader@npm:0.5.3"
-  dependencies:
-    lodash.camelcase: "npm:^4.3.0"
-    protobufjs: "npm:^6.8.6"
-  checksum: 10/bff1f874d5ed70bcc120aef7bc81e2c8cffcd5f0c88181d1fe152ad5b20d26d597a22e3d00f9a776249428dccd1748ab75d5caa9c0ae3a8d376d1eb0541aecf6
   languageName: node
   linkType: hard
 
@@ -3150,7 +3137,6 @@ __metadata:
   resolution: "@hits/service@workspace:hits/service"
   dependencies:
     "@atls/nestjs-map-errors-interceptor": "npm:^0.1.36"
-    "@grpc/proto-loader": "npm:0.5.3"
     "@hits/commands": "npm:0.0.1"
     "@hits/persistence": "npm:0.0.1"
     "@hits/queries": "npm:0.0.1"
@@ -3591,7 +3577,6 @@ __metadata:
   resolution: "@identity/service@workspace:identity/service"
   dependencies:
     "@atlantis-lab/nestjs-map-errors-interceptor": "npm:0.1.4"
-    "@grpc/proto-loader": "npm:0.5.5"
     "@identity/application": "npm:0.3.1"
     "@identity/domain": "npm:0.3.1"
     "@nestjs/common": "npm:8.4.2"
@@ -4247,7 +4232,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mailer/service@workspace:mailer/service"
   dependencies:
-    "@grpc/proto-loader": "npm:0.5.5"
     "@identity/domain": "workspace:^"
     "@mailer/api": "workspace:^"
     "@mailer/db": "workspace:^"
@@ -5245,7 +5229,6 @@ __metadata:
   resolution: "@portfolio/service@workspace:portfolio/service"
   dependencies:
     "@atls/nestjs-map-errors-interceptor": "npm:^0.1.36"
-    "@grpc/proto-loader": "npm:0.5.3"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"
     "@nestjs/microservices": "npm:8.4.2"
@@ -5266,8 +5249,6 @@ __metadata:
   resolution: "@private-gateway/app@workspace:private-gateway/app"
   dependencies:
     "@atls/nestjs-dataloader": "npm:^0.0.3"
-    "@grpc/grpc-js": "npm:^1.5.3"
-    "@grpc/proto-loader": "npm:^0.6.9"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"
     "@nestjs/graphql": "npm:9.1.2"
@@ -5497,8 +5478,6 @@ __metadata:
   resolution: "@public-gateway/app@workspace:public-gateway/app"
   dependencies:
     "@atls/nestjs-dataloader": "npm:^0.0.3"
-    "@grpc/grpc-js": "npm:^1.5.3"
-    "@grpc/proto-loader": "npm:^0.6.9"
     "@monstrs/oathkeeper-auth": "npm:0.1.0"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"
@@ -5723,7 +5702,6 @@ __metadata:
     "@collaboration/domain": "npm:0.0.1"
     "@elastic/elasticsearch": "npm:7.5.0"
     "@godaddy/terminus": "npm:4.3.1"
-    "@grpc/proto-loader": "npm:0.5.3"
     "@monstrs/nestjs-elasticsearch-indicator": "npm:0.1.1"
     "@nestjs/common": "npm:8.4.2"
     "@nestjs/core": "npm:8.4.2"

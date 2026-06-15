@@ -10,7 +10,6 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@grpc/proto-loader": "0.5.5",
     "@identity/domain": "workspace:^",
     "@mailer/api": "workspace:^",
     "@mailer/db": "workspace:^",

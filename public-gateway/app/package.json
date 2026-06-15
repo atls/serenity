@@ -10,8 +10,6 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@grpc/grpc-js": "^1.5.3",
-    "@grpc/proto-loader": "^0.6.9",
     "@monstrs/oathkeeper-auth": "0.1.0",
     "@protos/catalog": "workspace:^",
     "@protos/collaboration": "workspace:^",

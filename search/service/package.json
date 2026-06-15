@@ -14,7 +14,6 @@
     "@collaboration/domain": "0.0.1",
     "@elastic/elasticsearch": "7.5.0",
     "@godaddy/terminus": "4.3.1",
-    "@grpc/proto-loader": "0.5.3",
     "@monstrs/nestjs-elasticsearch-indicator": "0.1.1",
     "@nestjs/common": "8.4.2",
     "@nestjs/core": "8.4.2",

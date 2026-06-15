@@ -10,8 +10,6 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@grpc/grpc-js": "^1.5.3",
-    "@grpc/proto-loader": "^0.6.9",
     "@protos/catalog": "workspace:^",
     "@protos/common": "workspace:^",
     "apollo-server-core": "3.6.2",
