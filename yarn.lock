@@ -5624,6 +5624,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@private-gateway/catalog@workspace:private-gateway/catalog"
   dependencies:
+    "@grpc/grpc-js": "npm:^1.5.3"
+    "@grpc/proto-loader": "npm:0.5.5"
     "@nestjs/common": "npm:10.4.22"
     "@nestjs/core": "npm:10.4.22"
     "@nestjs/graphql": "npm:12.2.2"
@@ -5830,6 +5832,8 @@ __metadata:
   dependencies:
     "@apollo/server": "npm:4.13.0"
     "@atls/nestjs-dataloader": "npm:0.0.14"
+    "@grpc/grpc-js": "npm:^1.5.3"
+    "@grpc/proto-loader": "npm:0.5.5"
     "@monstrs/oathkeeper-auth": "npm:0.1.0"
     "@nestjs/apollo": "npm:12.2.2"
     "@nestjs/common": "npm:10.4.22"
@@ -5865,6 +5869,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@public-gateway/catalog@workspace:public-gateway/catalog"
   dependencies:
+    "@grpc/grpc-js": "npm:^1.5.3"
+    "@grpc/proto-loader": "npm:0.5.5"
     "@nestjs/common": "npm:10.4.22"
     "@nestjs/core": "npm:10.4.22"
     "@nestjs/graphql": "npm:12.2.2"
@@ -5887,6 +5893,8 @@ __metadata:
   resolution: "@public-gateway/collaboration@workspace:public-gateway/collaboration"
   dependencies:
     "@atls/nestjs-dataloader": "npm:0.0.14"
+    "@grpc/grpc-js": "npm:^1.5.3"
+    "@grpc/proto-loader": "npm:0.5.5"
     "@nestjs/common": "npm:10.4.22"
     "@nestjs/core": "npm:10.4.22"
     "@nestjs/graphql": "npm:12.2.2"
@@ -5921,6 +5929,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@public-gateway/files@workspace:public-gateway/files"
   dependencies:
+    "@grpc/grpc-js": "npm:^1.5.3"
+    "@grpc/proto-loader": "npm:0.5.5"
     "@nestjs/common": "npm:10.4.22"
     "@nestjs/core": "npm:10.4.22"
     "@nestjs/graphql": "npm:12.2.2"
@@ -5942,6 +5952,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@public-gateway/identity@workspace:public-gateway/identity"
   dependencies:
+    "@grpc/grpc-js": "npm:^1.5.3"
+    "@grpc/proto-loader": "npm:0.5.5"
     "@nestjs/common": "npm:10.4.22"
     "@nestjs/core": "npm:10.4.22"
     "@nestjs/graphql": "npm:12.2.2"
@@ -5969,6 +5981,8 @@ __metadata:
   resolution: "@public-gateway/portfolio@workspace:public-gateway/portfolio"
   dependencies:
     "@atls/nestjs-dataloader": "npm:0.0.14"
+    "@grpc/grpc-js": "npm:^1.5.3"
+    "@grpc/proto-loader": "npm:0.5.5"
     "@nestjs/common": "npm:10.4.22"
     "@nestjs/core": "npm:10.4.22"
     "@nestjs/graphql": "npm:12.2.2"
@@ -5994,6 +6008,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@public-gateway/search@workspace:public-gateway/search"
   dependencies:
+    "@grpc/grpc-js": "npm:^1.5.3"
+    "@grpc/proto-loader": "npm:0.5.5"
     "@nestjs/common": "npm:10.4.22"
     "@nestjs/core": "npm:10.4.22"
     "@nestjs/graphql": "npm:12.2.2"
