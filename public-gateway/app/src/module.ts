@@ -2,6 +2,8 @@ import { Module }                from '@nestjs/common'
 import { join }                  from 'path'
 
 import { DataLoaderInterceptor } from '@atls/nestjs-dataloader'
+import { ApolloDriver }          from '@nestjs/apollo'
+import { ApolloDriverConfig }    from '@nestjs/apollo'
 import { APP_INTERCEPTOR }       from '@nestjs/core'
 import { GraphQLModule }         from '@nestjs/graphql'
 import { CatalogModule }         from '@public-gateway/catalog'
@@ -25,10 +27,10 @@ const playground =
 
 @Module({
   imports: [
-    GraphQLModule.forRoot({
+    GraphQLModule.forRoot<ApolloDriverConfig>({
+      driver: ApolloDriver,
       introspection: true,
       playground: true,
-      installSubscriptionHandlers: false,
       autoSchemaFile: join(__dirname, './schema.gql'),
       path: '//',
       cors: true,
