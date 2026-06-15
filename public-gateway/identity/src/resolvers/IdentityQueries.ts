@@ -1,6 +1,6 @@
 import { Injectable }    from '@nestjs/common'
 import { OnModuleInit }  from '@nestjs/common'
-import { map }           from 'rxjs/operators'
+import { map }           from 'rxjs'
 
 import { Context }       from '@nestjs/graphql'
 import { Query }         from '@nestjs/graphql'

@@ -1,6 +1,6 @@
 import { Injectable }       from '@nestjs/common'
 import { OnModuleInit }     from '@nestjs/common'
-import { map }              from 'rxjs/operators'
+import { map }              from 'rxjs'
 import DataLoader           from 'dataloader'
 
 import { NestDataLoader }   from '@atls/nestjs-dataloader'
