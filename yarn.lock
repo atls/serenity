@@ -5907,6 +5907,7 @@ __metadata:
     "@types/node": "npm:22.13.10"
     dataloader: "npm:2.2.2"
     graphql: "npm:16.14.2"
+    reflect-metadata: "npm:0.2.2"
     rxjs: "npm:7.8.2"
     typescript: "npm:5.5.4"
   peerDependencies:
