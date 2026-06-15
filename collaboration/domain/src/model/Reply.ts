@@ -1,6 +1,5 @@
-import uuid                   from 'uuid/v4.js'
-
 import { AggregateRoot }      from '@node-ts/ddd'
+import uuid                   from 'uuid'
 
 import { ReplyCreated }       from '../events/index.js'
 import { ReplyStatusChanged } from '../events/index.js'
