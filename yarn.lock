@@ -5633,6 +5633,8 @@ __metadata:
     "@protos/catalog": "npm:0.1.1"
     "@protos/interfaces": "npm:0.1.1"
     "@types/node": "npm:22.13.10"
+    class-transformer: "npm:0.5.1"
+    class-validator: "npm:0.13.1"
     graphql: "npm:16.14.2"
     rxjs: "npm:7.8.2"
     typescript: "npm:5.5.4"
@@ -12194,7 +12196,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"class-transformer@npm:*":
+"class-transformer@npm:*, class-transformer@npm:0.5.1":
   version: 0.5.1
   resolution: "class-transformer@npm:0.5.1"
   checksum: 10/750327e3e9a5cf233c5234252f4caf6b06c437bf68a24acbdcfb06c8e0bfff7aa97c30428184813e38e08111b42871f20c5cf669ea4490f8ae837c09f08b31e7
