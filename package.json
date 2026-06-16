@@ -23,7 +23,6 @@
     "seed:local": "bash ./devops/seed/apply.local.seed.sh"
   },
   "resolutions": {
-    "@nestjs/core": "8.4.2",
     "@nestjs/terminus": "7",
     "@types/jest": "^26.0.23",
     "@types/node": "22.13.10",
@@ -33,19 +32,16 @@
     "apollo-server-fastify": "3.6.2",
     "class-validator": "0.13.1",
     "eslint-plugin-import": "2.22.0",
-    "graphql": "15",
     "grpc@npm:^1.18.0": "npm:@grpc/grpc-js@1.5.3",
     "pino": "6.13.4",
     "react": "19.2.7",
     "react-dom": "19.2.7",
     "react-intl": "5.18.3",
-    "rxjs": "7.2.0",
-    "type-graphql": "1.0.0",
     "typeorm": "0.2.37",
     "typescript": "5.5.4"
   },
   "devDependencies": {
-    "@atls/code-runtime": "2.1.33",
+    "@atls/code-runtime": "2.1.34",
     "@jest/core": "^27.4.7",
     "@types/eslint": "^8",
     "@types/jest": "^26.0.23",
@@ -63,7 +59,7 @@
       "unplugged": true
     }
   },
-  "packageManager": "yarn@4.16.0",
+  "packageManager": "yarn@4.17.0",
   "linterIgnorePatterns": [
     "project.types.d.ts"
   ]

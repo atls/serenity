@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@atlantis-lab/nestjs-map-errors-interceptor": "0.1.4",
-    "@grpc/proto-loader": "0.5.5",
     "@identity/application": "0.3.1",
     "@nestjs/common": "8.4.2",
     "@nestjs/core": "8.4.2",
