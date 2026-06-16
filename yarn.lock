@@ -398,9 +398,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls/code-runtime@npm:2.1.33":
-  version: 2.1.33
-  resolution: "@atls/code-runtime@npm:2.1.33"
+"@atls/code-runtime@npm:2.1.34":
+  version: 2.1.34
+  resolution: "@atls/code-runtime@npm:2.1.34"
   dependencies:
     "@atls/config-eslint": "npm:2.0.15"
     "@atls/config-prettier": "npm:2.0.4"
@@ -414,7 +414,7 @@ __metadata:
     ts-loader: "npm:9.5.2"
     typescript: "npm:5.5.4"
     webpack: "npm:5.98.0"
-  checksum: 10/421ef42859204cb4ccc8562bf168a00ca2db0b9026a664db3419dc0d850eeb3ffc3f96223ffe7f9f94fa4b3c7de6bdcc978766571bcc3449669edfa2748d04ae
+  checksum: 10/eeed3d474799b422dbb60c0ecce5c534c1ae9c60c4cbf8387af0aca0c039a42ef4d236f245d7959efa34e318da386313da7a7922465e51c447dd841b23507ffe
   languageName: node
   linkType: hard
 
@@ -5602,10 +5602,13 @@ __metadata:
   dependencies:
     "@apollo/server": "npm:4.13.0"
     "@atls/nestjs-dataloader": "npm:0.0.14"
+    "@grpc/grpc-js": "npm:^1.5.3"
+    "@grpc/proto-loader": "npm:0.5.5"
     "@nestjs/apollo": "npm:12.2.2"
     "@nestjs/common": "npm:10.4.22"
     "@nestjs/core": "npm:10.4.22"
     "@nestjs/graphql": "npm:12.2.2"
+    "@nestjs/microservices": "npm:10.4.22"
     "@nestjs/platform-express": "npm:10.4.22"
     "@private-gateway/catalog": "npm:0.1.1"
     "@protos/catalog": "workspace:^"
@@ -24087,7 +24090,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@atls/code-runtime": "npm:2.1.33"
+    "@atls/code-runtime": "npm:2.1.34"
     "@jest/core": "npm:^27.4.7"
     "@types/eslint": "npm:^8"
     "@types/jest": "npm:^26.0.23"
