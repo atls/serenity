@@ -5,9 +5,9 @@
   "type": "module",
   "main": "src/index.ts",
   "scripts": {
-    "build": "$PROJECT_CWD/.yarn/bin/yarn service build",
-    "dev": "$PROJECT_CWD/.yarn/bin/yarn service dev",
-    "start": "node dist/index.js"
+    "build": "yarn service build",
+    "dev": "yarn service dev",
+    "start": "yarn node dist/index.js"
   },
   "dependencies": {
     "@apollo/server": "4.13.0",
@@ -30,7 +30,6 @@
   "devDependencies": {
     "@private-gateway/catalog": "0.1.1",
     "@types/node": "22.13.10",
-    "ts-node": "^10.7.0",
     "typescript": "5.5.4"
   }
 }
