@@ -6,7 +6,7 @@
   "scripts": {
     "build": "yarn renderer build",
     "dev": "yarn renderer dev",
-    "start": "node dist/index.js"
+    "start": "yarn node dist/index.js"
   },
   "dependencies": {
     "@atls/next-config-with-extract-intl-messages": "^0.0.1",
@@ -46,7 +46,6 @@
     "react-helmet": "5.2.1",
     "react-intl": "5.3.2",
     "recompose": "0.30.0",
-    "ts-node": "8.10.2",
     "typescript": "5.5.4",
     "universal-cookie": "4.0.4"
   }

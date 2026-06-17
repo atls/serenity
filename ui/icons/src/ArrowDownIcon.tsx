@@ -1,10 +1,9 @@
+import { useTheme }  from '@emotion/react'
+
 /* eslint-disable */
 import React         from 'react'
 
-import { useTheme }  from '@emotion/react'
-
 import { IconProps } from '../icons.interfaces.js'
-
 export const ArrowDownIcon = (props: IconProps) => {
   const theme: any = useTheme()
   return (

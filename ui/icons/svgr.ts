@@ -1,17 +1,20 @@
 import * as prettierPlugin from '@atls/prettier-plugin'
-import prettierConfig      from '@atls/config-prettier'
-import svgr                from '@svgr/core'
-import { format }          from 'prettier/standalone'
+import prettierConfigModule from '@atls/config-prettier'
+import svgrModule          from '@svgr/core'
+import prettierStandalone  from 'prettier/standalone.js'
 import camelcase           from 'camelcase'
 import fs                  from 'fs-extra-promise'
 import glob                from 'glob-promise'
 import path                from 'path'
-import parserBabel         from 'prettier/parser-babel'
-import parserTypescript    from 'prettier/parser-typescript'
+import parserBabel         from 'prettier/parser-babel.js'
+import parserTypescript    from 'prettier/parser-typescript.js'
 
-import { replacements }    from './replacements.js'
+import { replacements }    from './replacements.ts'
 
-const TARGET_DIR = path.join(__dirname, 'src')
+const TARGET_DIR = path.join(import.meta.dirname, 'src')
+const prettierConfig = prettierConfigModule.default
+const { format } = prettierStandalone
+const svgr = svgrModule.default
 
 const svgrTemplate = ({ template }, opts, { componentName, jsx }) => {
   const typeScriptTpl = template.smart({ plugins: ['typescript', 'prettier'] })
