@@ -30,7 +30,6 @@
   "devDependencies": {
     "@private-gateway/catalog": "0.1.1",
     "@types/node": "22.13.10",
-    "ts-node": "^10.7.0",
     "typescript": "5.5.4"
   }
 }

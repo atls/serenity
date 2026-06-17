@@ -1928,22 +1928,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cspotcode/source-map-consumer@npm:0.8.0":
-  version: 0.8.0
-  resolution: "@cspotcode/source-map-consumer@npm:0.8.0"
-  checksum: 10/dfe1399712e4d54e1d53b0c7782f929647ff8675c37ae7637ce2ffdbcc8bad06fea969bcbec6147e7ea70a89257cfc86695a3702c1946a1c334454480937b966
-  languageName: node
-  linkType: hard
-
-"@cspotcode/source-map-support@npm:0.7.0":
-  version: 0.7.0
-  resolution: "@cspotcode/source-map-support@npm:0.7.0"
-  dependencies:
-    "@cspotcode/source-map-consumer": "npm:0.8.0"
-  checksum: 10/d58b31640c4b1438c0caf8ed7eb46647674c042a625919660d9fb2d76f3621875520082934bae88ef54a75d53e8f9cafb506160bb02403a19e7155aa5f4ac59b
-  languageName: node
-  linkType: hard
-
 "@elastic/elasticsearch@npm:7.5.0":
   version: 7.5.0
   resolution: "@elastic/elasticsearch@npm:7.5.0"
@@ -5618,7 +5602,6 @@ __metadata:
     graphql: "npm:16.14.2"
     reflect-metadata: "npm:0.2.2"
     rxjs: "npm:7.8.2"
-    ts-node: "npm:^10.7.0"
     typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
@@ -5725,10 +5708,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protos/catalog@workspace:protos/catalog"
   dependencies:
-    "@nestjs/microservices": "npm:8.4.2"
+    "@nestjs/common": "npm:10.4.22"
+    "@nestjs/core": "npm:10.4.22"
+    "@nestjs/microservices": "npm:10.4.22"
     "@protos/common": "npm:0.3.1"
+    reflect-metadata: "npm:0.2.2"
+    rxjs: "npm:7.8.2"
   peerDependencies:
     "@nestjs/core": "*"
+    "@nestjs/microservices": "*"
   languageName: unknown
   linkType: soft
 
@@ -5736,10 +5724,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protos/collaboration@workspace:protos/collaboration"
   dependencies:
-    "@nestjs/microservices": "npm:8.4.2"
+    "@nestjs/common": "npm:10.4.22"
+    "@nestjs/core": "npm:10.4.22"
+    "@nestjs/microservices": "npm:10.4.22"
     "@protos/common": "npm:0.3.1"
+    reflect-metadata: "npm:0.2.2"
+    rxjs: "npm:7.8.2"
   peerDependencies:
     "@nestjs/core": "*"
+    "@nestjs/microservices": "*"
   languageName: unknown
   linkType: soft
 
@@ -5755,10 +5748,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protos/files@workspace:protos/files"
   dependencies:
-    "@nestjs/microservices": "npm:8.4.2"
+    "@nestjs/common": "npm:10.4.22"
+    "@nestjs/core": "npm:10.4.22"
+    "@nestjs/microservices": "npm:10.4.22"
     "@protos/common": "npm:0.3.1"
+    reflect-metadata: "npm:0.2.2"
+    rxjs: "npm:7.8.2"
   peerDependencies:
     "@nestjs/core": "*"
+    "@nestjs/microservices": "*"
   languageName: unknown
   linkType: soft
 
@@ -5766,10 +5764,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protos/hits@workspace:protos/hits"
   dependencies:
-    "@nestjs/microservices": "npm:8.4.2"
+    "@nestjs/common": "npm:10.4.22"
+    "@nestjs/core": "npm:10.4.22"
+    "@nestjs/microservices": "npm:10.4.22"
     "@protos/common": "npm:0.3.1"
+    reflect-metadata: "npm:0.2.2"
+    rxjs: "npm:7.8.2"
   peerDependencies:
     "@nestjs/core": "*"
+    "@nestjs/microservices": "*"
   languageName: unknown
   linkType: soft
 
@@ -5779,10 +5782,15 @@ __metadata:
   dependencies:
     "@grpc/grpc-js": "npm:^1.5.3"
     "@grpc/proto-loader": "npm:0.5.5"
-    "@nestjs/microservices": "npm:8.4.2"
+    "@nestjs/common": "npm:10.4.22"
+    "@nestjs/core": "npm:10.4.22"
+    "@nestjs/microservices": "npm:10.4.22"
     "@protos/common": "npm:0.3.1"
+    reflect-metadata: "npm:0.2.2"
+    rxjs: "npm:7.8.2"
   peerDependencies:
     "@nestjs/core": "*"
+    "@nestjs/microservices": "*"
   languageName: unknown
   linkType: soft
 
@@ -5802,10 +5810,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protos/mailer@workspace:protos/mailer"
   dependencies:
-    "@nestjs/microservices": "npm:8.4.2"
+    "@nestjs/common": "npm:10.4.22"
+    "@nestjs/core": "npm:10.4.22"
+    "@nestjs/microservices": "npm:10.4.22"
     "@protos/common": "npm:0.3.1"
+    reflect-metadata: "npm:0.2.2"
+    rxjs: "npm:7.8.2"
   peerDependencies:
     "@nestjs/core": "*"
+    "@nestjs/microservices": "*"
   languageName: unknown
   linkType: soft
 
@@ -5813,10 +5826,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protos/portfolio@workspace:protos/portfolio"
   dependencies:
-    "@nestjs/microservices": "npm:8.4.2"
+    "@nestjs/common": "npm:10.4.22"
+    "@nestjs/core": "npm:10.4.22"
+    "@nestjs/microservices": "npm:10.4.22"
     "@protos/common": "npm:0.3.1"
+    reflect-metadata: "npm:0.2.2"
+    rxjs: "npm:7.8.2"
   peerDependencies:
     "@nestjs/core": "*"
+    "@nestjs/microservices": "*"
   languageName: unknown
   linkType: soft
 
@@ -5824,10 +5842,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protos/search@workspace:protos/search"
   dependencies:
-    "@nestjs/microservices": "npm:8.4.2"
+    "@nestjs/common": "npm:10.4.22"
+    "@nestjs/core": "npm:10.4.22"
+    "@nestjs/microservices": "npm:10.4.22"
     "@protos/common": "npm:0.3.1"
+    reflect-metadata: "npm:0.2.2"
+    rxjs: "npm:7.8.2"
   peerDependencies:
     "@nestjs/core": "*"
+    "@nestjs/microservices": "*"
   languageName: unknown
   linkType: soft
 
@@ -6038,10 +6061,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@public-gateway/types@workspace:public-gateway/types"
   dependencies:
+    "@nestjs/common": "npm:10.4.22"
     "@nestjs/core": "npm:10.4.22"
     "@nestjs/graphql": "npm:12.2.2"
     "@types/node": "npm:22.13.10"
     graphql: "npm:16.14.2"
+    reflect-metadata: "npm:0.2.2"
+    rxjs: "npm:7.8.2"
   peerDependencies:
     "@nestjs/core": "*"
     "@nestjs/graphql": "*"
@@ -7145,34 +7171,6 @@ __metadata:
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
   checksum: 10/ad87447820dd3f24825d2d947ebc03072b20a42bfc96cbafec16bff8bbda6c1a81fcb0be56d5b21968560c5359a0af4038a68ba150c3e1694fe4c109a063bed8
-  languageName: node
-  linkType: hard
-
-"@tsconfig/node10@npm:^1.0.7":
-  version: 1.0.8
-  resolution: "@tsconfig/node10@npm:1.0.8"
-  checksum: 10/b8d5fffbc6b17ef64ef74f7fdbccee02a809a063ade785c3648dae59406bc207f70ea2c4296f92749b33019fa36a5ae716e42e49cc7f1bbf0fd147be0d6b970a
-  languageName: node
-  linkType: hard
-
-"@tsconfig/node12@npm:^1.0.7":
-  version: 1.0.9
-  resolution: "@tsconfig/node12@npm:1.0.9"
-  checksum: 10/a01b2400ab3582b86b589c6d31dcd0c0656f333adecde85d6d7d4086adb059808b82692380bb169546d189bf771ae21d02544a75b57bd6da4a5dd95f8567bec9
-  languageName: node
-  linkType: hard
-
-"@tsconfig/node14@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "@tsconfig/node14@npm:1.0.1"
-  checksum: 10/976345e896c0f059867f94f8d0f6ddb8b1844fb62bf36b727de8a9a68f024857e5db97ed51d3325e23e0616a5e48c034ff51a8d595b3fe7e955f3587540489be
-  languageName: node
-  linkType: hard
-
-"@tsconfig/node16@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "@tsconfig/node16@npm:1.0.2"
-  checksum: 10/ca94d3639714672bbfd55f03521d3f56bb6a25479bd425da81faf21f13e1e9d15f40f97377dedbbf477a5841c5b0c8f4cd1b391f33553d750b9202c54c2c07aa
   languageName: node
   linkType: hard
 
@@ -9080,13 +9078,6 @@ __metadata:
   version: 7.2.0
   resolution: "acorn-walk@npm:7.2.0"
   checksum: 10/4d3e186f729474aed3bc3d0df44692f2010c726582655b20a23347bef650867655521c48ada444cb4fda241ee713dcb792da363ec74c6282fa884fb7144171bb
-  languageName: node
-  linkType: hard
-
-"acorn-walk@npm:^8.1.1":
-  version: 8.2.0
-  resolution: "acorn-walk@npm:8.2.0"
-  checksum: 10/e69f7234f2adfeb16db3671429a7c80894105bd7534cb2032acf01bb26e6a847952d11a062d071420b43f8d82e33d2e57f26fe87d9cce0853e8143d8910ff1de
   languageName: node
   linkType: hard
 
@@ -12854,13 +12845,6 @@ __metadata:
     loose-envify: "npm:^1.3.1"
     object-assign: "npm:^4.1.1"
   checksum: 10/e845cb275c6b59c1fc4c4037e3d5caf4f42a258ef21f5cd9c86cd7ef476f933998f5c363a9e4b36970f682c30b122637d41474742abc85d8b931aef8041da8a3
-  languageName: node
-  linkType: hard
-
-"create-require@npm:^1.1.0":
-  version: 1.1.1
-  resolution: "create-require@npm:1.1.1"
-  checksum: 10/a9a1503d4390d8b59ad86f4607de7870b39cad43d929813599a23714831e81c520bddf61bcdd1f8e30f05fd3a2b71ae8538e946eb2786dc65c2bbc520f692eff
   languageName: node
   linkType: hard
 
@@ -26516,44 +26500,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:^10.7.0":
-  version: 10.7.0
-  resolution: "ts-node@npm:10.7.0"
-  dependencies:
-    "@cspotcode/source-map-support": "npm:0.7.0"
-    "@tsconfig/node10": "npm:^1.0.7"
-    "@tsconfig/node12": "npm:^1.0.7"
-    "@tsconfig/node14": "npm:^1.0.0"
-    "@tsconfig/node16": "npm:^1.0.2"
-    acorn: "npm:^8.4.1"
-    acorn-walk: "npm:^8.1.1"
-    arg: "npm:^4.1.0"
-    create-require: "npm:^1.1.0"
-    diff: "npm:^4.0.1"
-    make-error: "npm:^1.1.1"
-    v8-compile-cache-lib: "npm:^3.0.0"
-    yn: "npm:3.1.1"
-  peerDependencies:
-    "@swc/core": ">=1.2.50"
-    "@swc/wasm": ">=1.2.50"
-    "@types/node": "*"
-    typescript: ">=2.7"
-  peerDependenciesMeta:
-    "@swc/core":
-      optional: true
-    "@swc/wasm":
-      optional: true
-  bin:
-    ts-node: dist/bin.js
-    ts-node-cwd: dist/bin-cwd.js
-    ts-node-esm: dist/bin-esm.js
-    ts-node-script: dist/bin-script.js
-    ts-node-transpile-only: dist/bin-transpile.js
-    ts-script: dist/bin-script-deprecated.js
-  checksum: 10/5c2b3a43ea3c4071a256f255c9b6ec42996108aa7ed7a52be6c25b117907b6035bf0896af63f7866e8ba9fa618937ff61a35d41f4c91fa02b85812705293fdff
-  languageName: node
-  linkType: hard
-
 "tsconfig-paths@npm:^3.9.0":
   version: 3.15.0
   resolution: "tsconfig-paths@npm:3.15.0"
@@ -27284,13 +27230,6 @@ __metadata:
   bin:
     uuid: dist/bin/uuid
   checksum: 10/9d0b6adb72b736e36f2b1b53da0d559125ba3e39d913b6072f6f033e0c87835b414f0836b45bcfaf2bdf698f92297fea1c3cc19b0b258bc182c9c43cc0fab9f2
-  languageName: node
-  linkType: hard
-
-"v8-compile-cache-lib@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "v8-compile-cache-lib@npm:3.0.0"
-  checksum: 10/90cfbe591c47e0b69c3ddf6b224dd3cfd4e00e67aedd71c35896d5edf72312410cf223230048176a93d6621c78c00e38b9f62edbe125b2454484a84f3092f7e7
   languageName: node
   linkType: hard
 
