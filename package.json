@@ -23,21 +23,21 @@
     "seed:local": "bash ./devops/seed/apply.local.seed.sh"
   },
   "resolutions": {
-    "@nestjs/terminus": "7",
+    "@nestjs/terminus": "11.1.1",
     "@types/jest": "^26.0.23",
     "@types/node": "22.13.10",
     "@types/react": "19.2.17",
     "apollo-server-core": "3.6.2",
     "apollo-server-express": "3.6.2",
     "apollo-server-fastify": "3.6.2",
-    "class-validator": "0.13.1",
+    "class-validator": "0.15.1",
     "eslint-plugin-import": "2.22.0",
     "grpc@npm:^1.18.0": "npm:@grpc/grpc-js@1.5.3",
     "pino": "6.13.4",
     "react": "19.2.7",
     "react-dom": "19.2.7",
     "react-intl": "5.18.3",
-    "typeorm": "0.2.37",
+    "typeorm": "1.0.0",
     "typescript": "5.5.4"
   },
   "devDependencies": {
