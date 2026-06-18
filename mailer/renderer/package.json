@@ -5,7 +5,7 @@
   "type": "module",
   "main": "src/index.ts",
   "dependencies": {
-    "@nestjs/common": "8.4.2",
+    "@nestjs/common": "11.1.27",
     "html-to-text": "5.1.1",
     "isomorphic-fetch": "2.2.1",
     "qs": "6.9.1"

@@ -5,13 +5,13 @@
   "type": "module",
   "main": "src/index.ts",
   "dependencies": {
-    "@nestjs/common": "10.4.22",
+    "@nestjs/common": "11.1.27",
     "reflect-metadata": "0.2.2",
     "rxjs": "7.8.2"
   },
   "devDependencies": {
-    "@nestjs/core": "10.4.22",
-    "@nestjs/graphql": "12.2.2",
+    "@nestjs/core": "11.1.27",
+    "@nestjs/graphql": "13.4.2",
     "@types/node": "22.13.10",
     "graphql": "16.14.2"
   },

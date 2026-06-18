@@ -5,15 +5,15 @@
   "dependencies": {
     "@collaboration/persistence": "workspace:0.0.1",
     "@collaboration/service": "0.0.1",
-    "@nestjs/microservices": "8.4.2",
-    "@nestjs/testing": "8.4.2",
+    "@nestjs/microservices": "11.1.27",
+    "@nestjs/testing": "11.1.27",
     "@protos/collaboration": "0.0.1",
     "@protos/interfaces": "0.1.1",
     "reflect-metadata": "0.1.13",
     "uuid": "3.4.0"
   },
   "devDependencies": {
-    "@nestjs/core": "^8.4.2",
+    "@nestjs/core": "11.1.27",
     "rxjs": "^7.5.5"
   }
 }

@@ -15,16 +15,16 @@
     "@mailer/db": "workspace:^",
     "@mailer/renderer": "workspace:^",
     "@mailer/transport": "workspace:^",
-    "@nestjs/common": "8.4.2",
-    "@nestjs/core": "8.4.2",
-    "@nestjs/microservices": "8.4.2",
-    "@nestjs/typeorm": "8.0.3",
+    "@nestjs/common": "11.1.27",
+    "@nestjs/core": "11.1.27",
+    "@nestjs/microservices": "11.1.27",
+    "@nestjs/typeorm": "11.0.2",
     "@protos/mailer": "workspace:^",
     "amqplib": "^0.9.1",
-    "class-validator": "0.11.0",
+    "class-validator": "0.15.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3",
-    "typeorm": "0.3.3"
+    "typeorm": "1.0.0"
   },
   "devDependencies": {
     "@types/node": "12.12.14",
