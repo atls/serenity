@@ -6,7 +6,7 @@ import { Upload as UploadEntity } from '@files/domain'
 
 import { Upload }                 from '../entities/index.js'
 import { DomainEventPublisher }   from '../events/index.js'
-import { EntityNotFoundError }        from './errors.js'
+import { UploadEntityNotFoundError }          from './errors.js'
 
 @Injectable()
 // @ts-ignore
@@ -24,7 +24,7 @@ export class UploadEntityRepository {
     const writeModel = await (this.repository as any).findOne(id)
 
     if (!writeModel) {
-      throw new EntityNotFoundError('UploadEntity', id)
+      throw new UploadEntityNotFoundError(id)
     }
 
     return this.toAggregateRoot(writeModel)

@@ -6,7 +6,7 @@ import { File as FileEntity }   from '@files/domain'
 
 import { File }                 from '../entities/index.js'
 import { DomainEventPublisher } from '../events/index.js'
-import { EntityNotFoundError }        from './errors.js'
+import { FileEntityNotFoundError }            from './errors.js'
 
 @Injectable()
 // @ts-ignore
@@ -24,7 +24,7 @@ export class FileEntityRepository {
     const writeModel = await (this.repository as any).findOne(id)
 
     if (!writeModel) {
-      throw new EntityNotFoundError('FileEntity', id)
+      throw new FileEntityNotFoundError(id)
     }
 
     return this.toAggregateRoot(writeModel)

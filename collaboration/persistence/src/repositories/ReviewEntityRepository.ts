@@ -6,7 +6,7 @@ import { Review as ReviewEntity } from '@collaboration/domain'
 
 import { Review }                 from '../entities/index.js'
 import { DomainEventPublisher }   from '../events/index.js'
-import { EntityNotFoundError }        from './errors.js'
+import { ReviewEntityNotFoundError }          from './errors.js'
 
 @Injectable()
 // @ts-ignore
@@ -24,7 +24,7 @@ export class ReviewEntityRepository {
     const writeModel = await (this.repository as any).findOne(id)
 
     if (!writeModel) {
-      throw new EntityNotFoundError('ReviewEntity', id)
+      throw new ReviewEntityNotFoundError(id)
     }
 
     return this.toAggregateRoot(writeModel)

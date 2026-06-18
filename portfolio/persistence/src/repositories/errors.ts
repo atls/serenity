@@ -1,6 +1,6 @@
-export class EntityNotFoundError extends Error {
-  constructor(entityName: string, id: string) {
-    super(`${entityName} with id ${id} was not found`)
-    this.name = 'EntityNotFoundError'
+export class PortfolioEntityNotFoundError extends Error {
+  constructor(id: string) {
+    super(`PortfolioEntity with id ${id} was not found`)
+    this.name = 'PortfolioEntityNotFoundError'
   }
 }

@@ -6,7 +6,7 @@ import { Project as ProjectEntity } from '@collaboration/domain'
 
 import { Project }                  from '../entities/index.js'
 import { DomainEventPublisher }     from '../events/index.js'
-import { EntityNotFoundError }        from './errors.js'
+import { ProjectEntityNotFoundError }         from './errors.js'
 
 @Injectable()
 // @ts-ignore
@@ -24,7 +24,7 @@ export class ProjectEntityRepository {
     const writeModel = await (this.repository as any).findOne(id)
 
     if (!writeModel) {
-      throw new EntityNotFoundError('ProjectEntity', id)
+      throw new ProjectEntityNotFoundError(id)
     }
 
     return this.toAggregateRoot(writeModel)

@@ -6,7 +6,7 @@ import { Chat as ChatEntity }   from '@collaboration/domain'
 
 import { Chat }                 from '../entities/index.js'
 import { DomainEventPublisher } from '../events/index.js'
-import { EntityNotFoundError }        from './errors.js'
+import { ChatEntityNotFoundError }            from './errors.js'
 
 @Injectable()
 // @ts-ignore
@@ -24,7 +24,7 @@ export class ChatEntityRepository {
     const writeModel = await (this.repository as any).findOne(id)
 
     if (!writeModel) {
-      throw new EntityNotFoundError('ChatEntity', id)
+      throw new ChatEntityNotFoundError(id)
     }
 
     return this.toAggregateRoot(writeModel)

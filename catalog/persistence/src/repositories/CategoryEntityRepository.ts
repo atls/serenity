@@ -6,7 +6,7 @@ import { Category as CategoryEntity } from '@catalog/domain'
 
 import { Category }                   from '../entities/index.js'
 import { DomainEventPublisher }       from '../events/index.js'
-import { EntityNotFoundError }        from './errors.js'
+import { CategoryEntityNotFoundError }        from './errors.js'
 
 @Injectable()
 // @ts-ignore
@@ -24,7 +24,7 @@ export class CategoryEntityRepository {
     const writeModel = await (this.repository as any).findOne(id)
 
     if (!writeModel) {
-      throw new EntityNotFoundError('CategoryEntity', id)
+      throw new CategoryEntityNotFoundError(id)
     }
 
     return this.toAggregateRoot(writeModel)
