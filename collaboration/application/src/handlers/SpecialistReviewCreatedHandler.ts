@@ -1,8 +1,7 @@
 import { ReviewCreated }              from '@collaboration/domain'
 import { SpecialistEntityRepository } from '@collaboration/persistence'
-import { Handler }                    from '@node-ts/bus-core'
 
-export class SpecialistReviewCreatedHandler implements Handler<ReviewCreated> {
+export class SpecialistReviewCreatedHandler {
   constructor(private readonly specialistRepository: SpecialistEntityRepository) {}
 
   async handle(event: ReviewCreated): Promise<void> {

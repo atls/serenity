@@ -6,7 +6,6 @@ import { Activity }             from './entities/index.js'
 import { Counter }              from './entities/index.js'
 import { View }                 from './entities/index.js'
 import { DomainEventPublisher } from './events/index.js'
-import { WriteRepositoryLogger }         from './events/index.js'
 import config                   from './config.js'
 
 const feature = TypeOrmModule.forFeature([Counter, View, Activity])
@@ -15,7 +14,7 @@ const feature = TypeOrmModule.forFeature([Counter, View, Activity])
 @Module({
   imports: [feature.module, TypeOrmModule.forRoot(config)],
   // @ts-ignore
-  providers: [...feature.providers, WriteRepositoryLogger, DomainEventPublisher],
+  providers: [...feature.providers, DomainEventPublisher],
   // @ts-ignore
   exports: [...feature.exports],
 })

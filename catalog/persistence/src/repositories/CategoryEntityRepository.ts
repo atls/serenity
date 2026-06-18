@@ -1,22 +1,66 @@
 import { Injectable }                 from '@nestjs/common'
-import { WriteRepository }            from '@node-ts/ddd'
 import { Connection }                 from 'typeorm'
+import { Repository }                 from 'typeorm'
 
 import { Category as CategoryEntity } from '@catalog/domain'
 
 import { Category }                   from '../entities/index.js'
 import { DomainEventPublisher }       from '../events/index.js'
-import { WriteRepositoryLogger }               from '../events/index.js'
 
 @Injectable()
 // @ts-ignore
-export class CategoryEntityRepository extends WriteRepository<CategoryEntity, Category> {
+export class CategoryEntityRepository {
+  protected readonly repository: Repository<Category>
+
   constructor(
-    private readonly connection: Connection,
-    private readonly logger: WriteRepositoryLogger,
+    connection: Connection,
     private readonly bus: DomainEventPublisher
   ) {
-    // @ts-ignore
-    super(CategoryEntity, Category, connection, bus, logger)
+    this.repository = connection.getRepository(Category)
+  }
+
+  async getById(id: string): Promise<CategoryEntity> {
+    const writeModel = await (this.repository as any).findOne(id)
+
+    if (!writeModel) {
+      throw new Error(`CategoryEntity with id ${id} was not found`)
+    }
+
+    return this.toAggregateRoot(writeModel)
+  }
+
+  async save(aggregateRoot: CategoryEntity): Promise<void> {
+    const events = aggregateRoot.pullDomainEvents?.() || []
+
+    if (aggregateRoot.isDeleted?.()) {
+      await (this.repository as any).delete(aggregateRoot.id)
+    } else {
+      await this.repository.save(this.toWriteModel(aggregateRoot) as any)
+    }
+
+    for (const event of events) {
+      await this.bus.publish(event)
+    }
+  }
+
+  private toAggregateRoot(writeModel: Category): CategoryEntity {
+    const aggregateRoot = new CategoryEntity(writeModel.id)
+
+    Object.assign(aggregateRoot, writeModel)
+    aggregateRoot.pullDomainEvents?.()
+
+    return aggregateRoot
+  }
+
+  private toWriteModel(aggregateRoot: CategoryEntity): Category {
+    const writeModel = this.repository.create() as Category
+
+    for (const [key, value] of Object.entries(aggregateRoot)) {
+      if (key !== 'domainEvents' && key !== 'removed') {
+        ;(writeModel as any)[key] = value
+      }
+    }
+
+    return writeModel
   }
 }
