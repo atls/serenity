@@ -8,7 +8,6 @@
     "@collaboration/domain": "0.0.1",
     "@collaboration/persistence": "0.0.1",
     "@nestjs/typeorm": "11.0.2",
-    "@node-ts/bus-core": "0.4.9",
     "class-validator": "0.15.1",
     "typeorm": "1.0.0"
   },

@@ -8,8 +8,6 @@
     "@catalog/domain": "0.1.1",
     "@godaddy/terminus": "^4.10.2",
     "@nestjs/typeorm": "11.0.2",
-    "@node-ts/ddd": "0.2.0",
-    "@node-ts/ddd-types": "0.2.0",
     "pg": "8.5.1",
     "typeorm": "1.0.0"
   },
