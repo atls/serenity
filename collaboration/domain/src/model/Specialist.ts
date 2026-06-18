@@ -1,11 +1,10 @@
-import { AggregateRoot }           from '@node-ts/ddd'
-/* eslint-disable no-underscore-dangle */
-import { AggregateRootProperties } from '@node-ts/ddd-types'
-
 import { SpecialistRatingUpdated } from '../events/index.js'
 import { SpecialistUpdated }       from '../events/index.js'
 import { Account }                 from './Account.js'
 import { AccountType }             from './AccountType.js'
+import { AggregateRoot }           from './AggregateRoot.js'
+/* eslint-disable no-underscore-dangle */
+import { AggregateRootProperties } from './AggregateRoot.js'
 import { Company }                 from './Company.js'
 import { FormOfWork }              from './FormOfWork.js'
 import { PrivatePerson }           from './PrivatePerson.js'

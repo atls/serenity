@@ -1,10 +1,7 @@
-import { Event }           from '@node-ts/bus-messages'
-import { Uuid }            from '@node-ts/ddd-types'
-
 import { Address }         from '../model/index.js'
 import { BeginningOfWork } from '../model/index.js'
 
-export class ProjectUpdated extends Event {
+export class ProjectUpdated {
   static readonly NAME = 'collaboration/project-updated'
 
   $name = ProjectUpdated.NAME
@@ -12,7 +9,7 @@ export class ProjectUpdated extends Event {
   $version = 0
 
   constructor(
-    readonly projectId: Uuid,
+    readonly projectId: string,
     readonly name: string,
     readonly photos: string[],
     readonly address: Address,
@@ -21,7 +18,5 @@ export class ProjectUpdated extends Event {
     readonly legalEntitiesOnly: boolean,
     readonly worksheet: string,
     readonly description?: string
-  ) {
-    super()
-  }
+  ) {}
 }

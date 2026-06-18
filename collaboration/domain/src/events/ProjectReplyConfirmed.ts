@@ -1,7 +1,4 @@
-import { Event } from '@node-ts/bus-messages'
-import { Uuid }  from '@node-ts/ddd-types'
-
-export class ProjectReplyConfirmed extends Event {
+export class ProjectReplyConfirmed {
   static readonly NAME = 'collaboration/project-reply-confirmed'
 
   $name = ProjectReplyConfirmed.NAME
@@ -9,9 +6,7 @@ export class ProjectReplyConfirmed extends Event {
   $version = 0
 
   constructor(
-    readonly projectId: Uuid,
+    readonly projectId: string,
     readonly replyId: string
-  ) {
-    super()
-  }
+  ) {}
 }

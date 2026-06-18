@@ -1,10 +1,7 @@
 import type { Credentials } from '../model/Credentials.js'
 import type { Email }       from '../model/Email.js'
 
-import { Event }            from '@node-ts/bus-messages'
-import { Uuid }             from '@node-ts/ddd-types'
-
-export class UserRegistered extends Event {
+export class UserRegistered {
   static readonly NAME = 'identity/user-registered'
 
   $name = UserRegistered.NAME
@@ -12,10 +9,8 @@ export class UserRegistered extends Event {
   $version = 0
 
   constructor(
-    readonly userId: Uuid,
+    readonly userId: string,
     readonly email: Email,
     readonly credentials: Credentials
-  ) {
-    super()
-  }
+  ) {}
 }

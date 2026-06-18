@@ -1,8 +1,8 @@
-import { AggregateRoot }      from '@node-ts/ddd'
 import uuid                   from 'uuid'
 
 import { ReplyCreated }       from '../events/index.js'
 import { ReplyStatusChanged } from '../events/index.js'
+import { AggregateRoot }      from './AggregateRoot.js'
 import { ReplyStatus }        from './ReplyStatus.js'
 
 export class Reply extends AggregateRoot {

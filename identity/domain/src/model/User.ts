@@ -1,8 +1,3 @@
-import { AggregateRoot }              from '@node-ts/ddd'
-/* eslint-disable @typescript-eslint/no-empty-function */
-import { AggregateRootProperties }    from '@node-ts/ddd-types'
-import { Uuid }                       from '@node-ts/ddd-types'
-
 import { EmailVerificationComplete }  from '../events/index.js'
 import { EmailVerificationRequested } from '../events/index.js'
 import { ProfileCreated }             from '../events/index.js'
@@ -10,6 +5,9 @@ import { ResetPasswordComplete }      from '../events/index.js'
 import { ResetPasswordRequested }     from '../events/index.js'
 import { UserRegistered }             from '../events/index.js'
 import { Address }                    from './Address.js'
+import { AggregateRoot }              from './AggregateRoot.js'
+/* eslint-disable @typescript-eslint/no-empty-function */
+import { AggregateRootProperties }    from './AggregateRoot.js'
 import { ContactInformation }         from './ContactInformation.js'
 import { Credentials }                from './Credentials.js'
 import { Email }                      from './Email.js'
@@ -29,7 +27,7 @@ export class User extends AggregateRoot implements UserProperties {
 
   profile: Profile
 
-  static async register(id: Uuid, email: Email, credentials: Credentials): Promise<User> {
+  static async register(id: string, email: Email, credentials: Credentials): Promise<User> {
     const user = new User(id)
 
     await credentials.encryptPassword()

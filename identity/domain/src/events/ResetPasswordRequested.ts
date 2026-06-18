@@ -1,9 +1,6 @@
 import type { Email } from '../model/Email.js'
 
-import { Event }      from '@node-ts/bus-messages'
-import { Uuid }       from '@node-ts/ddd-types'
-
-export class ResetPasswordRequested extends Event {
+export class ResetPasswordRequested {
   static readonly NAME = 'identity/reset-password-requested'
 
   $name = ResetPasswordRequested.NAME
@@ -11,10 +8,8 @@ export class ResetPasswordRequested extends Event {
   $version = 0
 
   constructor(
-    readonly userId: Uuid,
+    readonly userId: string,
     readonly email: Email,
     readonly resetToken: string
-  ) {
-    super()
-  }
+  ) {}
 }

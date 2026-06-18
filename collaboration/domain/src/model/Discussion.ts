@@ -1,7 +1,7 @@
-import { AggregateRoot }     from '@node-ts/ddd'
 import uuid                  from 'uuid'
 
 import { DiscussionCreated } from '../events/index.js'
+import { AggregateRoot }     from './AggregateRoot.js'
 import { Message }           from './Message.js'
 
 export class Discussion extends AggregateRoot {

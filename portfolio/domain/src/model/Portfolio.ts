@@ -1,8 +1,7 @@
-import { AggregateRoot }           from '@node-ts/ddd'
-import { AggregateRootProperties } from '@node-ts/ddd-types'
-
 import { PortfolioCreated }        from '../events/index.js'
 import { PortfolioUpdated }        from '../events/index.js'
+import { AggregateRoot }           from './AggregateRoot.js'
+import { AggregateRootProperties } from './AggregateRoot.js'
 
 export interface PortfolioProperties extends AggregateRootProperties {
   userId: string
