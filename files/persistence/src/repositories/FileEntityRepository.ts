@@ -6,7 +6,7 @@ import { File as FileEntity }   from '@files/domain'
 
 import { File }                 from '../entities/index.js'
 import { DomainEventPublisher } from '../events/index.js'
-import { FileEntityNotFoundError }            from './errors.js'
+import { FileEntityNotFoundError }        from './file-entity-not-found.error.js'
 
 @Injectable()
 // @ts-ignore

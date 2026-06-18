@@ -6,7 +6,7 @@ import { Project as ProjectEntity } from '@collaboration/domain'
 
 import { Project }                  from '../entities/index.js'
 import { DomainEventPublisher }     from '../events/index.js'
-import { ProjectEntityNotFoundError }         from './errors.js'
+import { ProjectEntityNotFoundError }     from './project-entity-not-found.error.js'
 
 @Injectable()
 // @ts-ignore

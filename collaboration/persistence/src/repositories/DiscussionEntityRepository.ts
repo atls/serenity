@@ -6,7 +6,7 @@ import { Discussion as DiscussionEntity } from '@collaboration/domain'
 
 import { Discussion }                     from '../entities/index.js'
 import { DomainEventPublisher }           from '../events/index.js'
-import { DiscussionEntityNotFoundError }      from './errors.js'
+import { DiscussionEntityNotFoundError }  from './discussion-entity-not-found.error.js'
 
 @Injectable()
 // @ts-ignore

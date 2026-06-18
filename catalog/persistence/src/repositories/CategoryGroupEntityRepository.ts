@@ -6,7 +6,7 @@ import { CategoryGroup as CategoryGroupEntity } from '@catalog/domain'
 
 import { CategoryGroup }                        from '../entities/index.js'
 import { DomainEventPublisher }                 from '../events/index.js'
-import { CategoryGroupEntityNotFoundError }   from './errors.js'
+import { CategoryGroupEntityNotFoundError } from './category-group-entity-not-found.error.js'
 
 @Injectable()
 // @ts-ignore
