@@ -6,6 +6,7 @@ import { Portfolio as PortfolioEntity } from '@portfolio/domain'
 
 import { Portfolio }                    from '../entities/index.js'
 import { DomainEventPublisher }         from '../events/index.js'
+import { EntityNotFoundError }        from './errors.js'
 
 @Injectable()
 // @ts-ignore
@@ -23,7 +24,7 @@ export class PortfolioEntityRepository {
     const writeModel = await (this.repository as any).findOne(id)
 
     if (!writeModel) {
-      throw new Error(`PortfolioEntity with id ${id} was not found`)
+      throw new EntityNotFoundError('PortfolioEntity', id)
     }
 
     return this.toAggregateRoot(writeModel)

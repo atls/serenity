@@ -6,6 +6,7 @@ import { Reply as ReplyEntity } from '@collaboration/domain'
 
 import { Reply }                from '../entities/index.js'
 import { DomainEventPublisher } from '../events/index.js'
+import { EntityNotFoundError }        from './errors.js'
 
 @Injectable()
 // @ts-ignore
@@ -23,7 +24,7 @@ export class ReplyEntityRepository {
     const writeModel = await (this.repository as any).findOne(id)
 
     if (!writeModel) {
-      throw new Error(`ReplyEntity with id ${id} was not found`)
+      throw new EntityNotFoundError('ReplyEntity', id)
     }
 
     return this.toAggregateRoot(writeModel)

@@ -6,6 +6,7 @@ import { Message as MessageEntity } from '@collaboration/domain'
 
 import { Message }                  from '../entities/index.js'
 import { DomainEventPublisher }     from '../events/index.js'
+import { EntityNotFoundError }        from './errors.js'
 
 @Injectable()
 // @ts-ignore
@@ -23,7 +24,7 @@ export class MessageEntityRepository {
     const writeModel = await (this.repository as any).findOne(id)
 
     if (!writeModel) {
-      throw new Error(`MessageEntity with id ${id} was not found`)
+      throw new EntityNotFoundError('MessageEntity', id)
     }
 
     return this.toAggregateRoot(writeModel)
