@@ -6,7 +6,7 @@ import { Upload as UploadEntity } from '@files/domain'
 
 import { Upload }                 from '../entities/index.js'
 import { DomainEventPublisher }   from '../events/index.js'
-import { UploadEntityNotFoundError }      from './upload-entity-not-found.error.js'
+import { UploadEntityNotFoundError }      from './errors/upload-entity-not-found.error.js'
 
 @Injectable()
 // @ts-ignore

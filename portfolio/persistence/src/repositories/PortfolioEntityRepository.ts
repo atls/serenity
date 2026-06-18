@@ -6,7 +6,7 @@ import { Portfolio as PortfolioEntity } from '@portfolio/domain'
 
 import { Portfolio }                    from '../entities/index.js'
 import { DomainEventPublisher }         from '../events/index.js'
-import { PortfolioEntityNotFoundError }   from './portfolio-entity-not-found.error.js'
+import { PortfolioEntityNotFoundError }   from './errors/portfolio-entity-not-found.error.js'
 
 @Injectable()
 // @ts-ignore

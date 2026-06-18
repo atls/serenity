@@ -6,7 +6,7 @@ import { Chat as ChatEntity }   from '@collaboration/domain'
 
 import { Chat }                 from '../entities/index.js'
 import { DomainEventPublisher } from '../events/index.js'
-import { ChatEntityNotFoundError }        from './chat-entity-not-found.error.js'
+import { ChatEntityNotFoundError }        from './errors/chat-entity-not-found.error.js'
 
 @Injectable()
 // @ts-ignore

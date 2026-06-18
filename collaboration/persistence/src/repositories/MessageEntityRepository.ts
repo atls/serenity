@@ -6,7 +6,7 @@ import { Message as MessageEntity } from '@collaboration/domain'
 
 import { Message }                  from '../entities/index.js'
 import { DomainEventPublisher }     from '../events/index.js'
-import { MessageEntityNotFoundError }     from './message-entity-not-found.error.js'
+import { MessageEntityNotFoundError }     from './errors/message-entity-not-found.error.js'
 
 @Injectable()
 // @ts-ignore

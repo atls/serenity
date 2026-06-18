@@ -6,7 +6,7 @@ import { Reply as ReplyEntity } from '@collaboration/domain'
 
 import { Reply }                from '../entities/index.js'
 import { DomainEventPublisher } from '../events/index.js'
-import { ReplyEntityNotFoundError }       from './reply-entity-not-found.error.js'
+import { ReplyEntityNotFoundError }       from './errors/reply-entity-not-found.error.js'
 
 @Injectable()
 // @ts-ignore

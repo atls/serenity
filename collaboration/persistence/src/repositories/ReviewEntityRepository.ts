@@ -6,7 +6,7 @@ import { Review as ReviewEntity } from '@collaboration/domain'
 
 import { Review }                 from '../entities/index.js'
 import { DomainEventPublisher }   from '../events/index.js'
-import { ReviewEntityNotFoundError }      from './review-entity-not-found.error.js'
+import { ReviewEntityNotFoundError }      from './errors/review-entity-not-found.error.js'
 
 @Injectable()
 // @ts-ignore
