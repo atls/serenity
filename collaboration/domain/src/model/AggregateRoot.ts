@@ -23,6 +23,7 @@ export abstract class AggregateRoot implements AggregateRootProperties {
 
   protected when(event: DomainEvent): void {
     this.apply(event)
+    this.version += 1
     this.domainEvents.push(event)
   }
 
