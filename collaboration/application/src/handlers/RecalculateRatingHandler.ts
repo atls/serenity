@@ -1,10 +1,9 @@
 import { ReviewCreated }              from '@collaboration/domain'
 import { SpecialistEntityRepository } from '@collaboration/persistence'
-import { Handler }                    from '@node-ts/bus-core'
 
 import { ReviewQueriesService }       from '../services/index.js'
 
-export class RecalculateRatingHandler implements Handler<ReviewCreated> {
+export class RecalculateRatingHandler {
   constructor(
     private readonly reviewService: ReviewQueriesService,
     private readonly specialistRepository: SpecialistEntityRepository

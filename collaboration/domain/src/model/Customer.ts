@@ -1,6 +1,5 @@
-import { AggregateRoot }   from '@node-ts/ddd'
-
 import { Address }         from './Address.js'
+import { AggregateRoot }   from './AggregateRoot.js'
 import { BeginningOfWork } from './BeginningOfWork.js'
 import { Project }         from './Project.js'
 import { Reply }           from './Reply.js'

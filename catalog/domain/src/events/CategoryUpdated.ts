@@ -1,7 +1,4 @@
-import { Event } from '@node-ts/bus-messages'
-import { Uuid }  from '@node-ts/ddd-types'
-
-export class CategoryUpdated extends Event {
+export class CategoryUpdated {
   static readonly NAME = 'catalog/category-updated'
 
   $name = CategoryUpdated.NAME
@@ -9,9 +6,7 @@ export class CategoryUpdated extends Event {
   $version = 0
 
   constructor(
-    readonly categoryId: Uuid,
+    readonly categoryId: string,
     readonly name: string
-  ) {
-    super()
-  }
+  ) {}
 }

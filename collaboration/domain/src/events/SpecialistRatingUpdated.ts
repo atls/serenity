@@ -1,7 +1,4 @@
-import { Event } from '@node-ts/bus-messages'
-import { Uuid }  from '@node-ts/ddd-types'
-
-export class SpecialistRatingUpdated extends Event {
+export class SpecialistRatingUpdated {
   static readonly NAME = 'collaboration/specialist-rating-updated'
 
   $name = SpecialistRatingUpdated.NAME
@@ -9,9 +6,7 @@ export class SpecialistRatingUpdated extends Event {
   $version = 0
 
   constructor(
-    readonly specialistId: Uuid,
+    readonly specialistId: string,
     readonly rating: number
-  ) {
-    super()
-  }
+  ) {}
 }

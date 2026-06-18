@@ -6,13 +6,6 @@
   "main": "src/index.ts",
   "dependencies": {
     "@nestjs/common": "11.1.27",
-    "@node-ts/bus-core": "0.4.9",
-    "@node-ts/bus-messages": "0.1.10",
-    "@node-ts/bus-postgres": "0.3.10",
-    "@node-ts/bus-workflow": "0.4.9",
-    "@node-ts/ddd": "0.2.0",
-    "@node-ts/ddd-types": "0.2.0",
-    "@node-ts/logger-core": "0.1.0",
     "uuid": "3.4.0"
   }
 }

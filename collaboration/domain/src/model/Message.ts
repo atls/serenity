@@ -1,4 +1,4 @@
-import { AggregateRoot } from '@node-ts/ddd'
+import { AggregateRoot } from './AggregateRoot.js'
 
 export class Message extends AggregateRoot {
   discussionId: string

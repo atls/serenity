@@ -1,6 +1,4 @@
-import { Event } from '@node-ts/bus-messages'
-
-export class ReviewCreated extends Event {
+export class ReviewCreated {
   static readonly NAME = 'collaboration/review-created'
 
   $name = ReviewCreated.NAME
@@ -15,7 +13,5 @@ export class ReviewCreated extends Event {
     readonly specialistId: string,
     readonly rating: number,
     readonly comment: string
-  ) {
-    super()
-  }
+  ) {}
 }

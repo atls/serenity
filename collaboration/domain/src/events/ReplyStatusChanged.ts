@@ -1,8 +1,6 @@
-import { Event }       from '@node-ts/bus-messages'
-
 import { ReplyStatus } from '../model/index.js'
 
-export class ReplyStatusChanged extends Event {
+export class ReplyStatusChanged {
   static readonly NAME = 'collaboration/reply-status-changed'
 
   $name = ReplyStatusChanged.NAME
@@ -12,7 +10,5 @@ export class ReplyStatusChanged extends Event {
   constructor(
     readonly replyId: string,
     readonly status: ReplyStatus
-  ) {
-    super()
-  }
+  ) {}
 }

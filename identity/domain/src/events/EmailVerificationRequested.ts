@@ -1,9 +1,6 @@
-import { Event } from '@node-ts/bus-messages'
-import { Uuid }  from '@node-ts/ddd-types'
-
 import { Email } from '../model/index.js'
 
-export class EmailVerificationRequested extends Event {
+export class EmailVerificationRequested {
   static readonly NAME = 'identity/email-verification-requested'
 
   $name = EmailVerificationRequested.NAME
@@ -11,9 +8,7 @@ export class EmailVerificationRequested extends Event {
   $version = 0
 
   constructor(
-    readonly userId: Uuid,
+    readonly userId: string,
     readonly email: Email
-  ) {
-    super()
-  }
+  ) {}
 }

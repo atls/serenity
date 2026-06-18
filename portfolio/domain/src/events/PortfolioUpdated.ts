@@ -1,7 +1,4 @@
-import { Event } from '@node-ts/bus-messages'
-import { Uuid }  from '@node-ts/ddd-types'
-
-export class PortfolioUpdated extends Event {
+export class PortfolioUpdated {
   static readonly NAME = 'portfolio/portfolio-updated'
 
   $name = PortfolioUpdated.NAME
@@ -9,11 +6,9 @@ export class PortfolioUpdated extends Event {
   $version = 0
 
   constructor(
-    readonly portfolioId: Uuid,
-    readonly userId: Uuid,
+    readonly portfolioId: string,
+    readonly userId: string,
     readonly name: string,
     readonly images: string[]
-  ) {
-    super()
-  }
+  ) {}
 }
