@@ -1,9 +1,8 @@
-import { oathkeeperAuth }     from '@monstrs/oathkeeper-auth'
+import { OathkeeperIdentityMiddleware } from '@atls/nestjs-oathkeeper'
+import { NestFactory }                  from '@nestjs/core'
 
-import { NestFactory }        from '@nestjs/core'
-
-import { ActivityMiddleware } from './middleware/index.js'
-import { ApplicationModule }  from './module.js'
+import { ActivityMiddleware }           from './middleware/index.js'
+import { ApplicationModule }            from './module.js'
 
 declare const module: any
 
@@ -71,16 +70,25 @@ const resolveUserFromKratos = async (req: any, _res: any, next: () => void) => {
   next()
 }
 
+const useOptionalOathkeeperAuth = (middleware: OathkeeperIdentityMiddleware) =>
+  async (req: any, res: any, next: () => void) => {
+    if (getHeader(req, 'authorization')) {
+      next()
+      return
+    }
+
+    try {
+      await middleware.use(req, res, next)
+    } catch (error) {
+      next()
+    }
+  }
+
 const bootstrap = async () => {
   const app = await NestFactory.create(ApplicationModule)
 
   if (process.env.NODE_ENV !== 'production') {
-    app.use(
-      oathkeeperAuth(
-        process.env.OATHKEEPER_DECISIONS_URL || 'http://serenity-oathkeeper-api:4456/decisions',
-        { host: 'serenity.aunited.dev' }
-      )
-    )
+    app.use(useOptionalOathkeeperAuth(app.get(OathkeeperIdentityMiddleware)))
   }
 
   app.use(resolveUserFromKratos)

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@apollo/link-error": "^2.0.0-beta.3",
+    "@atls/nestjs-oathkeeper": "0.1.1",
     "@atls/next-app-with-apollo": "^0.2.67",
     "@atls/next-config-with-extract-intl-messages": "^0.0.1",
     "@atls/next-config-with-pnp-workspaces": "^0.0.1",
@@ -19,7 +20,8 @@
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@formatjs/intl-relativetimeformat": "4.4.3",
-    "@monstrs/oathkeeper-auth": "0.1.0",
+    "@nestjs/common": "11.1.27",
+    "@nestjs/core": "11.1.27",
     "@site/specialists-detail-page": "0.0.1",
     "events": "^3.3.0",
     "express": "^4.17.1",
@@ -27,7 +29,9 @@
     "next": "16.2.9",
     "next-compose-plugins": "^2.2.0",
     "next-fonts": "0.19.0",
-    "next-images": "1.2.0"
+    "next-images": "1.2.0",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2"
   },
   "devDependencies": {
     "@apollo/client": "3.5.8",
