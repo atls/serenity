@@ -12,9 +12,9 @@
   "dependencies": {
     "@apollo/server": "4.13.0",
     "@atls/nestjs-dataloader": "0.0.14",
+    "@atls/nestjs-oathkeeper": "0.1.1",
     "@grpc/grpc-js": "^1.5.3",
     "@grpc/proto-loader": "0.5.5",
-    "@monstrs/oathkeeper-auth": "0.1.0",
     "@nestjs/apollo": "13.2.1",
     "@nestjs/common": "11.1.27",
     "@nestjs/core": "11.1.27",

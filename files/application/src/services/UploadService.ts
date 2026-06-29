@@ -1,4 +1,4 @@
-import { SignedUrlService }       from '@monstrs/nestjs-signed-url'
+import { SignedUrlSigner }        from '@atls/nestjs-signed-url'
 import { Injectable }             from '@nestjs/common'
 import { extname }                from 'path'
 import { format }                 from 'path'
@@ -15,7 +15,7 @@ export class UploadService {
   constructor(
     private readonly uploadRepository: UploadEntityRepository,
     private readonly fileRepository: FileEntityRepository,
-    private readonly signedUrlService: SignedUrlService
+    private readonly signedUrlSigner: SignedUrlSigner
   ) {}
 
   async create(command: CreateUploadCommand): Promise<any> {
@@ -24,9 +24,13 @@ export class UploadService {
       ext: extname(command.name),
     })
 
-    const { url, fields } = await this.signedUrlService.generateWriteUrl(filename, {
-      type: command.type,
-    })
+    const { url, fields } = await this.signedUrlSigner.generateWriteUrl(
+      process.env.GCS_BUCKET,
+      filename,
+      {
+        contentType: command.type,
+      }
+    )
 
     const upload = Upload.create(command.id, command.type, command.name, url, fields)
 
