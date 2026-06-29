@@ -72,11 +72,6 @@ const resolveUserFromKratos = async (req: any, _res: any, next: () => void) => {
 
 const useOptionalOathkeeperAuth = (middleware: OathkeeperIdentityMiddleware) =>
   async (req: any, res: any, next: () => void) => {
-    if (getHeader(req, 'authorization')) {
-      next()
-      return
-    }
-
     try {
       await middleware.use(req, res, next)
     } catch (error) {

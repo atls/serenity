@@ -13,20 +13,6 @@ const oathkeeperApiUrl =
   process.env.OATHKEEPER_DECISIONS_URL?.replace(/\/decisions\/?$/, '') ||
   'http://serenity-oathkeeper-api:4456'
 
-const getHeader = (req: Request, name: string): string | undefined => {
-  if (typeof req.get === 'function') {
-    return req.get(name)
-  }
-
-  const value = req.headers?.[name.toLowerCase()]
-
-  if (Array.isArray(value)) {
-    return value[0]
-  }
-
-  return value
-}
-
 const createOathkeeperDecisionClient = (apiUrl: string) => ({
   async decide(headers: OathkeeperHeaders) {
     const response = await fetch(new URL('/decisions', apiUrl).toString(), {
@@ -60,11 +46,6 @@ const createOathkeeperAuth = (forwardedHost: string) => {
   )
 
   return async (req: Request, _res: Response, next: () => void) => {
-    if (getHeader(req, 'authorization')) {
-      next()
-      return
-    }
-
     try {
       const decision = await decisions.decide({
         headers: req.headers,
