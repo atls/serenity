@@ -9,26 +9,103 @@ on:
 jobs:
   run:
     name: Version
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: master
+          ref: '${{ github.event.pull_request.base.sha }}'
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '24'
 
+      - name: Select workspaces
+        env:
+          BASE_SHA: '${{ github.event.pull_request.base.sha }}'
+          PR_NUMBER: '${{ github.event.pull_request.number }}'
+        run: |
+          raw_workspace_set="$RUNNER_TEMP/version-workspaces.ndjson"
+          workspace_set="$RUNNER_TEMP/version-workspaces.txt"
+          base_sha="$(git rev-parse HEAD)"
+
+          if [[ -z "$BASE_SHA" || -z "$GITHUB_SHA" || "$base_sha" != "$BASE_SHA" ]]; then
+            echo "::error::Pull request source is unavailable or base checkout resolved to $base_sha instead of $BASE_SHA."
+            exit 1
+          fi
+
+          if ! git fetch --no-tags --no-recurse-submodules origin "$GITHUB_SHA"; then
+            echo "::error::Failed to fetch merged head $GITHUB_SHA for pull request #$PR_NUMBER."
+            exit 1
+          fi
+
+          if ! git checkout -B master "$GITHUB_SHA"; then
+            echo "::error::Failed to check out merged head $GITHUB_SHA for pull request #$PR_NUMBER."
+            exit 1
+          fi
+
+          head_sha="$(git rev-parse HEAD)"
+
+          if [[ "$head_sha" != "$GITHUB_SHA" ]]; then
+            echo "::error::Merged head checkout resolved to $head_sha instead of $GITHUB_SHA."
+            exit 1
+          fi
+
+          if ! git merge-base --is-ancestor "$BASE_SHA" "$GITHUB_SHA"; then
+            echo "::error::Pull request source $BASE_SHA is not an ancestor of merged head $GITHUB_SHA."
+            exit 1
+          fi
+
+          if ! yarn workspaces list --since="$BASE_SHA" --recursive --no-private --json > "$raw_workspace_set"; then
+            echo "::error::Failed to select workspaces for pull request #$PR_NUMBER ($BASE_SHA..$GITHUB_SHA)."
+            exit 1
+          fi
+
+          if ! jq -r 'if (.name | type) == "string" and (.name | length) > 0 then .name else error("selected workspace has no name") end' \
+            "$raw_workspace_set" > "$workspace_set"; then
+            echo "::error::Yarn returned an invalid workspace selection for pull request #$PR_NUMBER."
+            exit 1
+          fi
+
+          if [[ -s "$workspace_set" ]]; then
+            echo "::group::Selected workspaces"
+            cat "$workspace_set"
+            echo "::endgroup::"
+          else
+            echo "::notice::No non-private workspaces selected for pull request #$PR_NUMBER."
+          fi
+
       - name: Install
         run: yarn install
 
       - name: Version
         run: |
+          workspace_set="$RUNNER_TEMP/version-workspaces.txt"
+
+          if [[ ! -r "$workspace_set" ]]; then
+            echo "::error::Selected workspace set is unavailable."
+            exit 1
+          fi
+
           yarn version apply --all
-          yarn workspaces changed foreach --no-private --verbose version patch --deferred
+
+          if [[ ! -s "$workspace_set" ]]; then
+            echo "::notice::Deferred patch skipped because the selected workspace set is empty."
+            exit 0
+          fi
+
+          mapfile -t workspaces < "$workspace_set"
+          foreach_args=(workspaces foreach --all --no-private --verbose)
+
+          for workspace in "${workspaces[@]}"; do
+            foreach_args+=(--include "$workspace")
+          done
+
+          yarn "${foreach_args[@]}" version patch --deferred
+          echo "::notice::Deferred patch prepared for ${#workspaces[@]} non-private workspaces."
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
 
