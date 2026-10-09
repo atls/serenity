@@ -1,9 +1,8 @@
 name: Publish image
 
 on:
-  pull_request:
-    types:
-      - closed
+  workflow_dispatch:
+  push:
     branches:
       - master
     paths-ignore:
@@ -11,12 +10,13 @@ on:
 
 jobs:
   publish:
-    if: github.event.pull_request.merged == true
+    if: github.ref == 'refs/heads/master'
     uses: atls/shared/.github/workflows/pack-image.yaml@master
     permissions: write-all
     with:
       registryURL: 'ghcr.io'
       registryUser: ${{ github.repository_owner }}
       project: ${{ github.repository_owner }}
+      include: ${{ github.event_name == 'workflow_dispatch' && '**' || '' }}
     secrets:
       registryKey: ${{ secrets.GITHUB_TOKEN }}
